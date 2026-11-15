@@ -1,0 +1,48 @@
+[gd_scene load_steps=4 format=3]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1"]
+[ext_resource type="PackedScene" path="res://assets/weapons/lc01/lc01.tscn" id="2"]
+[sub_resource type="CapsuleShape3D" id="Capsule"]
+radius = 0.32
+height = 1.8
+[node name="Player" type="CharacterBody3D"]
+collision_layer = 2
+collision_mask = 5
+floor_snap_length = 0.3
+floor_constant_speed = true
+script = ExtResource("1")
+[node name="Collider" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("Capsule")
+[node name="Head" type="Node3D" parent="."]
+position = Vector3(0, 1.65, 0)
+[node name="Camera" type="Camera3D" parent="Head"]
+current = true
+fov = 72.0
+near = 0.03
+cull_mask = 1
+[node name="WeaponLayer" type="CanvasLayer" parent="."]
+layer = 1
+[node name="Container" type="SubViewportContainer" parent="WeaponLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+stretch = true
+[node name="Viewport" type="SubViewport" parent="WeaponLayer/Container"]
+transparent_bg = true
+own_world_3d = true
+size = Vector2i(1440, 900)
+render_target_update_mode = 4
+msaa_3d = 2
+[node name="Camera" type="Camera3D" parent="WeaponLayer/Container/Viewport"]
+current = true
+fov = 62.0
+near = 0.01
+[node name="Key" type="DirectionalLight3D" parent="WeaponLayer/Container/Viewport"]
+rotation_degrees = Vector3(-25, -35, 0)
+light_energy = 0.8
+[node name="Fill" type="DirectionalLight3D" parent="WeaponLayer/Container/Viewport"]
+rotation_degrees = Vector3(15, 130, 0)
+light_energy = 0.4
+[node name="Weapon" parent="WeaponLayer/Container/Viewport" instance=ExtResource("2")]
+position = Vector3(0.22, -0.235, -0.40)

@@ -1,0 +1,156 @@
+{
+	"checks": [
+		{
+			"check": "mesh_parts",
+			"detail": "17",
+			"passed": true
+		},
+		{
+			"check": "triangle_budget",
+			"detail": "19658",
+			"passed": true
+		},
+		{
+			"check": "cell_is_two_parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_BaseColor",
+			"detail": "(2048.0, 2048.0)",
+			"passed": true
+		},
+		{
+			"check": "texture_NormalGL",
+			"detail": "(2048.0, 2048.0)",
+			"passed": true
+		},
+		{
+			"check": "texture_ORM",
+			"detail": "(2048.0, 2048.0)",
+			"passed": true
+		},
+		{
+			"check": "texture_Emission",
+			"detail": "(2048.0, 2048.0)",
+			"passed": true
+		},
+		{
+			"check": "real_bake_loaded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "orm_channels",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "opaque_with_backface_culling",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "weapon_glow_enabled",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "local_coil_spill",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "energy_switch_off",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "energy_switch_on",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_11-range-hip",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "red_dot_center",
+			"detail": "error_px=0.0001",
+			"passed": true
+		},
+		{
+			"check": "hud_cross_hidden",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_12-range-ads",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "red_dot_rendered",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_13-range-dot-unlit",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "red_dot_independent_of_lights",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_target_hit",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_16-range-dot-clear-background",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "cell_animates",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_14-range-reload",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "cell_returns",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ultrawide_dot_center",
+			"detail": "0.00009155273438",
+			"passed": true
+		},
+		{
+			"check": "capture_15-range-ultrawide-ads",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ultrawide_dot_rendered",
+			"detail": "",
+			"passed": true
+		}
+	],
+	"display": "macOS",
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"frame_ms_p95": 10.236,
+	"note": "Short automated native render/interaction test, not long-duration performance acceptance.",
+	"platform": "macOS",
+	"seconds": 6.256
+}

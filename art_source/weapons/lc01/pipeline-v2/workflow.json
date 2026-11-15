@@ -1,0 +1,31 @@
+{
+  "stage": "complete_in_godot",
+  "parent": "pipeline-v1",
+  "new_remote_tasks": [],
+  "additional_tripo_credits": 0,
+  "cumulative_tripo_credits": 115,
+  "repaired_high_parts": [
+    0,
+    2,
+    7,
+    8,
+    12,
+    14,
+    15
+  ],
+  "repaired_low_parts": [
+    2,
+    8,
+    12,
+    14,
+    15
+  ],
+  "normal_and_AO_rebaked": true,
+  "runtime": "assets/weapons/lc01/lc01.glb",
+  "report": "docs/validation/rifle-pipeline-v2/README.md",
+  "checks": {
+    "headless": 19,
+    "native": 29,
+    "failures": 0
+  }
+}

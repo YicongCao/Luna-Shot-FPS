@@ -1,0 +1,108 @@
+{
+  "scale": 0.9231598563267774,
+  "normalization": "Blender +Y forward, +Z up; Godot -Z forward +Y up",
+  "parts": [
+    {
+      "name": "T00_CoreGrip_high",
+      "vertices_before": 258632,
+      "vertices_after": 258632,
+      "triangles": 514157
+    },
+    {
+      "name": "T01_FrontShroud_high",
+      "vertices_before": 115539,
+      "vertices_after": 115531,
+      "triangles": 228657
+    },
+    {
+      "name": "T02_CoilAssembly_high",
+      "vertices_before": 100958,
+      "vertices_after": 100954,
+      "triangles": 200145
+    },
+    {
+      "name": "T03_ReceiverShell_high",
+      "vertices_before": 80907,
+      "vertices_after": 80903,
+      "triangles": 159564
+    },
+    {
+      "name": "T04_EnergyCell_high",
+      "vertices_before": 58422,
+      "vertices_after": 58414,
+      "triangles": 115643
+    },
+    {
+      "name": "T05_Optic_high",
+      "vertices_before": 85633,
+      "vertices_after": 85621,
+      "triangles": 170446
+    },
+    {
+      "name": "T06_Muzzle_high",
+      "vertices_before": 60997,
+      "vertices_after": 60989,
+      "triangles": 121572
+    },
+    {
+      "name": "T07_TopRail_high",
+      "vertices_before": 48064,
+      "vertices_after": 47934,
+      "triangles": 94634
+    },
+    {
+      "name": "T08_StockShell_high",
+      "vertices_before": 58258,
+      "vertices_after": 58244,
+      "triangles": 114816
+    },
+    {
+      "name": "T09_StockBrace_high",
+      "vertices_before": 29583,
+      "vertices_after": 29577,
+      "triangles": 58494
+    },
+    {
+      "name": "T10_ButtPad_high",
+      "vertices_before": 28014,
+      "vertices_after": 27986,
+      "triangles": 55426
+    },
+    {
+      "name": "T11_CellSide_high",
+      "vertices_before": 18057,
+      "vertices_after": 18053,
+      "triangles": 35175
+    },
+    {
+      "name": "T12_Foregrip_high",
+      "vertices_before": 13807,
+      "vertices_after": 13807,
+      "triangles": 25981
+    },
+    {
+      "name": "T13_CheekRest_high",
+      "vertices_before": 7467,
+      "vertices_after": 7467,
+      "triangles": 14451
+    },
+    {
+      "name": "T14_FrontBracket_high",
+      "vertices_before": 7078,
+      "vertices_after": 7078,
+      "triangles": 13622
+    },
+    {
+      "name": "T15_RailInset_high",
+      "vertices_before": 3113,
+      "vertices_after": 3109,
+      "triangles": 6061
+    },
+    {
+      "name": "T16_FrontLatch_high",
+      "vertices_before": 2854,
+      "vertices_after": 2854,
+      "triangles": 5433
+    }
+  ]
+}

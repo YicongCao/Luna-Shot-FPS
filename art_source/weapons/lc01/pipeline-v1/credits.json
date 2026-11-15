@@ -1,0 +1,30 @@
+{
+  "total_entries": 3,
+  "returned_entries": 3,
+  "truncated": false,
+  "total_credits": 115,
+  "usage": [
+    {
+      "type": "texture_model",
+      "status": "success",
+      "task_id": "2b83d979-e7a8-492c-9861-024e1e0bb4e6",
+      "created_at": "2026-11-15T06:29:41.725721Z",
+      "credits_consumed": 20
+    },
+    {
+      "type": "highpoly_to_lowpoly",
+      "status": "success",
+      "task_id": "db8a68c0-6b4e-415c-9143-718ea2c58ded",
+      "created_at": "2026-11-15T06:25:45.841507Z",
+      "credits_consumed": 35
+    },
+    {
+      "type": "image_to_model",
+      "status": "success",
+      "task_id": "9f05c9ff-9cad-4990-a11b-d68f59441e3b",
+      "created_at": "2026-11-15T06:20:50.050372Z",
+      "credits_consumed": 60
+    }
+  ],
+  "missed": []
+}

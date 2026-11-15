@@ -1,0 +1,138 @@
+{
+  "meshes": [
+    {
+      "name": "T05_Optic_low",
+      "triangles": 1774,
+      "boundary_edges": 63,
+      "nonmanifold_nonboundary_edges": 3,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T08_StockShell_low",
+      "triangles": 1156,
+      "boundary_edges": 93,
+      "nonmanifold_nonboundary_edges": 5,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T09_StockBrace_low",
+      "triangles": 574,
+      "boundary_edges": 48,
+      "nonmanifold_nonboundary_edges": 0,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T11_CellSide_low",
+      "triangles": 393,
+      "boundary_edges": 96,
+      "nonmanifold_nonboundary_edges": 5,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T12_Foregrip_low",
+      "triangles": 373,
+      "boundary_edges": 151,
+      "nonmanifold_nonboundary_edges": 0,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T16_FrontLatch_low",
+      "triangles": 359,
+      "boundary_edges": 63,
+      "nonmanifold_nonboundary_edges": 0,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T15_RailInset_low",
+      "triangles": 445,
+      "boundary_edges": 29,
+      "nonmanifold_nonboundary_edges": 0,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T00_CoreGrip_low",
+      "triangles": 4801,
+      "boundary_edges": 276,
+      "nonmanifold_nonboundary_edges": 11,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T01_FrontShroud_low",
+      "triangles": 2233,
+      "boundary_edges": 188,
+      "nonmanifold_nonboundary_edges": 9,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T04_EnergyCell_low",
+      "triangles": 1102,
+      "boundary_edges": 90,
+      "nonmanifold_nonboundary_edges": 5,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T02_CoilAssembly_low",
+      "triangles": 1891,
+      "boundary_edges": 126,
+      "nonmanifold_nonboundary_edges": 3,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T03_ReceiverShell_low",
+      "triangles": 1392,
+      "boundary_edges": 188,
+      "nonmanifold_nonboundary_edges": 26,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T06_Muzzle_low",
+      "triangles": 1125,
+      "boundary_edges": 29,
+      "nonmanifold_nonboundary_edges": 3,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T07_TopRail_low",
+      "triangles": 745,
+      "boundary_edges": 121,
+      "nonmanifold_nonboundary_edges": 3,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T13_CheekRest_low",
+      "triangles": 421,
+      "boundary_edges": 85,
+      "nonmanifold_nonboundary_edges": 0,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T14_FrontBracket_low",
+      "triangles": 442,
+      "boundary_edges": 76,
+      "nonmanifold_nonboundary_edges": 1,
+      "degenerate_faces": 0
+    },
+    {
+      "name": "T10_ButtPad_low",
+      "triangles": 432,
+      "boundary_edges": 30,
+      "nonmanifold_nonboundary_edges": 0,
+      "degenerate_faces": 0
+    }
+  ],
+  "NormalGL": {
+    "covered_pixels": 943028,
+    "black_pixels": 0,
+    "min": 0.0,
+    "max": 1.0,
+    "length_p01": 0.9955766201019287,
+    "length_p99": 1.0041896104812622,
+    "flat_normal_fraction": 0.049612524760664585
+  },
+  "AO": {
+    "covered_pixels": 943028,
+    "black_pixels": 4933,
+    "min": 0.0,
+    "max": 1.0
+  }
+}

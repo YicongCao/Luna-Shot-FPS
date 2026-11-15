@@ -1,0 +1,171 @@
+{
+  "resolution": [
+    2048,
+    2048
+  ],
+  "engine": "CYCLES",
+  "device": "CPU",
+  "selected_to_active": true,
+  "normal_space": "TANGENT +X +Y +Z",
+  "margin_px": 16,
+  "cage_extrusion_m": 0.006,
+  "max_ray_distance_m": 0.018,
+  "pairs": [
+    {
+      "low": "T05_Optic_low",
+      "high": "T05_Optic_high",
+      "low_triangles": 1774,
+      "high_triangles": 170446,
+      "surface_distance_p95_mm": 0.8617497660452498,
+      "surface_distance_max_mm": 7.016049697995186,
+      "seconds": 1.451941728591919
+    },
+    {
+      "low": "T08_StockShell_low",
+      "high": "T08_StockShell_high",
+      "low_triangles": 1156,
+      "high_triangles": 114816,
+      "surface_distance_p95_mm": 1.0235462046693995,
+      "surface_distance_max_mm": 2.8860382735729218,
+      "seconds": 1.1704928874969482
+    },
+    {
+      "low": "T09_StockBrace_low",
+      "high": "T09_StockBrace_high",
+      "low_triangles": 574,
+      "high_triangles": 58494,
+      "surface_distance_p95_mm": 0.6603092770092188,
+      "surface_distance_max_mm": 1.39671063516289,
+      "seconds": 1.0226919651031494
+    },
+    {
+      "low": "T11_CellSide_low",
+      "high": "T11_CellSide_high",
+      "low_triangles": 393,
+      "high_triangles": 35175,
+      "surface_distance_p95_mm": 0.771008664742112,
+      "surface_distance_max_mm": 1.3271794887259603,
+      "seconds": 0.9552171230316162
+    },
+    {
+      "low": "T12_Foregrip_low",
+      "high": "T12_Foregrip_high",
+      "low_triangles": 373,
+      "high_triangles": 25981,
+      "surface_distance_p95_mm": 0.982967612799257,
+      "surface_distance_max_mm": 2.1754540503025055,
+      "seconds": 1.0023632049560547
+    },
+    {
+      "low": "T16_FrontLatch_low",
+      "high": "T16_FrontLatch_high",
+      "low_triangles": 359,
+      "high_triangles": 5433,
+      "surface_distance_p95_mm": 0.5746303068008273,
+      "surface_distance_max_mm": 0.8866799180395901,
+      "seconds": 0.9084720611572266
+    },
+    {
+      "low": "T15_RailInset_low",
+      "high": "T15_RailInset_high",
+      "low_triangles": 445,
+      "high_triangles": 6061,
+      "surface_distance_p95_mm": 0.4356296878540888,
+      "surface_distance_max_mm": 0.7969689322635531,
+      "seconds": 0.9123389720916748
+    },
+    {
+      "low": "T00_CoreGrip_low",
+      "high": "T00_CoreGrip_high",
+      "low_triangles": 4801,
+      "high_triangles": 514157,
+      "surface_distance_p95_mm": 1.3632875925395638,
+      "surface_distance_max_mm": 7.207833230495453,
+      "seconds": 2.392206907272339
+    },
+    {
+      "low": "T01_FrontShroud_low",
+      "high": "T01_FrontShroud_high",
+      "low_triangles": 2233,
+      "high_triangles": 228657,
+      "surface_distance_p95_mm": 0.9551923372782766,
+      "surface_distance_max_mm": 4.364590626209974,
+      "seconds": 1.4957599639892578
+    },
+    {
+      "low": "T04_EnergyCell_low",
+      "high": "T04_EnergyCell_high",
+      "low_triangles": 1102,
+      "high_triangles": 115643,
+      "surface_distance_p95_mm": 0.9457031934289258,
+      "surface_distance_max_mm": 3.302857745438814,
+      "seconds": 1.2100670337677002
+    },
+    {
+      "low": "T02_CoilAssembly_low",
+      "high": "T02_CoilAssembly_high",
+      "low_triangles": 1891,
+      "high_triangles": 200145,
+      "surface_distance_p95_mm": 1.092994713690132,
+      "surface_distance_max_mm": 2.111848909407854,
+      "seconds": 1.4917938709259033
+    },
+    {
+      "low": "T03_ReceiverShell_low",
+      "high": "T03_ReceiverShell_high",
+      "low_triangles": 1392,
+      "high_triangles": 159564,
+      "surface_distance_p95_mm": 1.3047621119767425,
+      "surface_distance_max_mm": 3.751385025680065,
+      "seconds": 1.350383996963501
+    },
+    {
+      "low": "T06_Muzzle_low",
+      "high": "T06_Muzzle_high",
+      "low_triangles": 1125,
+      "high_triangles": 121572,
+      "surface_distance_p95_mm": 0.6812547828303649,
+      "surface_distance_max_mm": 2.2442464251071215,
+      "seconds": 1.2866692543029785
+    },
+    {
+      "low": "T07_TopRail_low",
+      "high": "T07_TopRail_high",
+      "low_triangles": 745,
+      "high_triangles": 94634,
+      "surface_distance_p95_mm": 1.2252100044861431,
+      "surface_distance_max_mm": 3.928664606064558,
+      "seconds": 1.229264736175537
+    },
+    {
+      "low": "T13_CheekRest_low",
+      "high": "T13_CheekRest_high",
+      "low_triangles": 421,
+      "high_triangles": 14451,
+      "surface_distance_p95_mm": 0.4662900086259469,
+      "surface_distance_max_mm": 1.2417054967954755,
+      "seconds": 0.9665689468383789
+    },
+    {
+      "low": "T14_FrontBracket_low",
+      "high": "T14_FrontBracket_high",
+      "low_triangles": 442,
+      "high_triangles": 13622,
+      "surface_distance_p95_mm": 0.7192987104644999,
+      "surface_distance_max_mm": 1.2661181390285492,
+      "seconds": 0.9620208740234375
+    },
+    {
+      "low": "T10_ButtPad_low",
+      "high": "T10_ButtPad_high",
+      "low_triangles": 432,
+      "high_triangles": 55426,
+      "surface_distance_p95_mm": 0.8050515985814851,
+      "surface_distance_max_mm": 2.2479589097201824,
+      "seconds": 1.0797650814056396
+    }
+  ],
+  "completed": true,
+  "high_triangles": 1934277,
+  "low_triangles": 19658
+}

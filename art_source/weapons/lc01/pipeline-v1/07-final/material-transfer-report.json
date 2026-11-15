@@ -1,0 +1,147 @@
+{
+  "source": "Tripo PBR -> triangle-correspondence transfer into fixed low UV",
+  "normal_source": "05-bake/NormalGL.png, real high-to-low Cycles projection",
+  "parts": [
+    {
+      "name": "T05_Optic_low",
+      "triangles": 1774,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 82839
+    },
+    {
+      "name": "T08_StockShell_low",
+      "triangles": 1156,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 58889
+    },
+    {
+      "name": "T09_StockBrace_low",
+      "triangles": 574,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 31517
+    },
+    {
+      "name": "T11_CellSide_low",
+      "triangles": 393,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 20137
+    },
+    {
+      "name": "T12_Foregrip_low",
+      "triangles": 373,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 16455
+    },
+    {
+      "name": "T16_FrontLatch_low",
+      "triangles": 359,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 2890
+    },
+    {
+      "name": "T15_RailInset_low",
+      "triangles": 445,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 2570
+    },
+    {
+      "name": "T00_CoreGrip_low",
+      "triangles": 4801,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 206862
+    },
+    {
+      "name": "T01_FrontShroud_low",
+      "triangles": 2233,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 117123
+    },
+    {
+      "name": "T04_EnergyCell_low",
+      "triangles": 1102,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 63407
+    },
+    {
+      "name": "T02_CoilAssembly_low",
+      "triangles": 1891,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 81452
+    },
+    {
+      "name": "T03_ReceiverShell_low",
+      "triangles": 1392,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 89973
+    },
+    {
+      "name": "T06_Muzzle_low",
+      "triangles": 1125,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 62473
+    },
+    {
+      "name": "T07_TopRail_low",
+      "triangles": 745,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 55616
+    },
+    {
+      "name": "T13_CheekRest_low",
+      "triangles": 421,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 10038
+    },
+    {
+      "name": "T14_FrontBracket_low",
+      "triangles": 442,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 5313
+    },
+    {
+      "name": "T10_ButtPad_low",
+      "triangles": 432,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 35683
+    }
+  ],
+  "tripo_uv_changed": false,
+  "unmatched_triangles": 0,
+  "uv_out_of_bounds_triangles": 0,
+  "strict_interior_overlap_pixels": 202,
+  "uv_coverage_fraction": 0.22483539581298828,
+  "final_triangles": 19658,
+  "texture_resolution": [
+    2048,
+    2048
+  ],
+  "material_slots": 1,
+  "semantic_corrections": "Reassigned white grip to rubber, dark cell to orange, orange muzzle to metal; removed strong generated lettering via low-contrast albedo detail; added exactly 3 cyan bands.",
+  "material_statistics": {
+    "1": {
+      "pixels": 264683,
+      "mean_roughness": 0.44237175583839417,
+      "mean_metallic": 0.0
+    },
+    "2": {
+      "pixels": 103024,
+      "mean_roughness": 0.35226312279701233,
+      "mean_metallic": 0.0
+    },
+    "3": {
+      "pixels": 443044,
+      "mean_roughness": 0.2684287130832672,
+      "mean_metallic": 0.9499998688697815
+    },
+    "4": {
+      "pixels": 122639,
+      "mean_roughness": 0.8267156481742859,
+      "mean_metallic": 0.0
+    },
+    "5": {
+      "pixels": 9638,
+      "mean_roughness": 0.22210529446601868,
+      "mean_metallic": 0.10000001639127731
+    }
+  }
+}

@@ -1,0 +1,306 @@
+[
+  {
+    "name": "P01_Chassis",
+    "position": [
+      0,
+      0.055,
+      -0.17
+    ],
+    "size": [
+      0.085,
+      0.12,
+      0.5
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P02_LeftShell",
+    "position": [
+      -0.058,
+      0.085,
+      -0.13
+    ],
+    "size": [
+      0.035,
+      0.14,
+      0.35
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P03_RightShell",
+    "position": [
+      0.058,
+      0.085,
+      -0.13
+    ],
+    "size": [
+      0.035,
+      0.14,
+      0.35
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P04_ForeShroud",
+    "position": [
+      0,
+      0.065,
+      -0.47
+    ],
+    "size": [
+      0.14,
+      0.14,
+      0.23
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P05_Stock",
+    "position": [
+      0,
+      0.025,
+      0.16
+    ],
+    "size": [
+      0.12,
+      0.18,
+      0.16
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P06_Grip",
+    "position": [
+      0,
+      -0.09,
+      0.015
+    ],
+    "size": [
+      0.075,
+      0.18,
+      0.085
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P07_Cell",
+    "position": [
+      0,
+      -0.095,
+      -0.15
+    ],
+    "size": [
+      0.09,
+      0.2,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P08_SightBase",
+    "position": [
+      0,
+      0.17,
+      -0.12
+    ],
+    "size": [
+      0.08,
+      0.025,
+      0.105
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P09_SightLeft",
+    "position": [
+      -0.044,
+      0.215,
+      -0.12
+    ],
+    "size": [
+      0.012,
+      0.075,
+      0.07
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P09_SightRight",
+    "position": [
+      0.044,
+      0.215,
+      -0.12
+    ],
+    "size": [
+      0.012,
+      0.075,
+      0.07
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P09_SightTop",
+    "position": [
+      0,
+      0.2525,
+      -0.12
+    ],
+    "size": [
+      0.1,
+      0.012,
+      0.07
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P10_TriggerGuard",
+    "position": [
+      0,
+      -0.055,
+      -0.055
+    ],
+    "size": [
+      0.025,
+      0.025,
+      0.065
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P11_Muzzle",
+    "position": [
+      0,
+      0.065,
+      -0.625
+    ],
+    "size": [
+      0.088,
+      0.08,
+      0.088
+    ],
+    "rotation": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P12_Coil0",
+    "position": [
+      0,
+      0.065,
+      -0.31
+    ],
+    "size": [
+      0.146,
+      0.018,
+      0.146
+    ],
+    "rotation": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P12_Coil1",
+    "position": [
+      0,
+      0.065,
+      -0.353
+    ],
+    "size": [
+      0.146,
+      0.018,
+      0.146
+    ],
+    "rotation": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "P12_Coil2",
+    "position": [
+      0,
+      0.065,
+      -0.396
+    ],
+    "size": [
+      0.146,
+      0.018,
+      0.146
+    ],
+    "rotation": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "collision": false
+  }
+]

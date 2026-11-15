@@ -1,0 +1,116 @@
+{
+	"checks": [
+		{
+			"part": "P01_Chassis",
+			"passed": true,
+			"position_error_m": 0.0000000111758708953857
+		},
+		{
+			"part": "P02_LeftShell",
+			"passed": true,
+			"position_error_m": 0.00000000745058059692383
+		},
+		{
+			"part": "P03_RightShell",
+			"passed": true,
+			"position_error_m": 0.00000000745058059692383
+		},
+		{
+			"part": "P04_ForeShroud",
+			"passed": true,
+			"position_error_m": 0.0000000372529029846191
+		},
+		{
+			"part": "P05_Stock",
+			"passed": true,
+			"position_error_m": 0.0000000111758708953857
+		},
+		{
+			"part": "P06_Grip",
+			"passed": true,
+			"position_error_m": 0.00000000651925802230835
+		},
+		{
+			"part": "P07_Cell",
+			"passed": true,
+			"position_error_m": 0.0000000149011611938477
+		},
+		{
+			"part": "P08_SightBase",
+			"passed": true,
+			"position_error_m": 0.0000000210734238947907
+		},
+		{
+			"part": "P09_SightLeft",
+			"passed": true,
+			"position_error_m": 0.0000000210734238947907
+		},
+		{
+			"part": "P09_SightRight",
+			"passed": true,
+			"position_error_m": 0.0000000210734238947907
+		},
+		{
+			"part": "P09_SightTop",
+			"passed": true,
+			"position_error_m": 0.0000000223517417907715
+		},
+		{
+			"part": "P10_TriggerGuard",
+			"passed": true,
+			"position_error_m": 0.00000000526835597369768
+		},
+		{
+			"part": "P11_Muzzle",
+			"passed": true,
+			"position_error_m": 0.000000044703483581543
+		},
+		{
+			"part": "P12_Coil0",
+			"passed": true,
+			"position_error_m": 0.0000000223517417907715
+		},
+		{
+			"part": "P12_Coil1",
+			"passed": true,
+			"position_error_m": 0.0000000298023223876953
+		},
+		{
+			"part": "P12_Coil2",
+			"passed": true,
+			"position_error_m": 0.0000000298023223876953
+		},
+		{
+			"part": "MuzzleSocket",
+			"passed": true,
+			"position_error_m": 0.0000000521540641784668
+		},
+		{
+			"part": "SightRear",
+			"passed": true,
+			"position_error_m": 0.0000000149011611938477
+		},
+		{
+			"part": "SightFront",
+			"passed": true,
+			"position_error_m": 0.0000000210734238947907
+		},
+		{
+			"part": "GripR",
+			"passed": true,
+			"position_error_m": 0.00000000558793544769287
+		},
+		{
+			"part": "GripL",
+			"passed": true,
+			"position_error_m": 0.0000000335276126861572
+		},
+		{
+			"part": "CellSocket",
+			"passed": true,
+			"position_error_m": 0.0000000111758708953857
+		}
+	],
+	"description": "Godot proxy vs Blender-exported GLB: part names, centers, world bounds, socket positions; tolerance 0.1 mm.",
+	"failures": 0
+}

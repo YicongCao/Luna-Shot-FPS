@@ -1,0 +1,9 @@
+.godot/
+.DS_Store
+*.log
+artifacts/
+# Blender automatic backup copies; editable .blend sources are tracked.
+*.blend[0-9]*
+# Python caches
+__pycache__/
+*.py[cod]

@@ -1,0 +1,465 @@
+{
+  "description": "Delivered stage files and runtime textures; SHA-256, relative to project root",
+  "files": [
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/00-whitebox/lc01-whitebox-b1.blend",
+      "bytes": 103967,
+      "sha256": "fac18ebbc92671950467efe571395283d771c5c29e38a119489602eef941e6f9"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/00-whitebox/lc01-whitebox-b1.glb",
+      "bytes": 35644,
+      "sha256": "6a2b3c76b60015d9d8e3285b8541b5f109d4332ec5af66fc5005345c3f58d72f"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/00-whitebox/whitebox-hero.png",
+      "bytes": 955569,
+      "sha256": "751b7e83ba7628491a603e4f87f7c5b3e435f5e892bff742aa7305146dcfb091"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/00-whitebox/whitebox-side.png",
+      "bytes": 956649,
+      "sha256": "516dba43472678fcc19f3296b6aedc40afd00a10b08af99d079df73da4e0dcbc"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/02-high/clay-ads.png",
+      "bytes": 798165,
+      "sha256": "cfbb805ef250a05ebbe2d3012ea47e43b1b357244a963574cbbf8e8d9678a342"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/02-high/clay-back.png",
+      "bytes": 987428,
+      "sha256": "dcf236ea6231f8f3088715893046c71f7c5d392c9f84a7237824cbc0c61be664"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/02-high/clay-hero.png",
+      "bytes": 976870,
+      "sha256": "d9d23dc3ac6f9928565776f88aa9a2ec36a9b596c0dbf2064c04e6f8ca3fc26e"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/02-high/clay-side.png",
+      "bytes": 990721,
+      "sha256": "faa50462afacf6d4a219a8167ca5c018139a4fd4db673a220aa6d9b3891f7101"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/02-high/geometry-report.json",
+      "bytes": 2457,
+      "sha256": "335b72e8293e67362d6a5ba8f39e4061b8d4bb4290dc6a677a13388a8df86a28"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/02-high/lc01-high.blend",
+      "bytes": 49907256,
+      "sha256": "18df757ceab85ec38aa857dccaa37c9f3905425caaa6e8f54da6c22e58fb8aff"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/02-high/lc01-high.glb",
+      "bytes": 42711124,
+      "sha256": "c83fba75e86841424a13a5c15c90a8a6df3dec693a46f62dab150d862b6ab477"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/lc01-low-import.blend",
+      "bytes": 783920,
+      "sha256": "cb8fe352ffc1f5e9fb8b036582d110596ad9971713195cfe92af777f739892b8"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/lc01-low.blend",
+      "bytes": 817370,
+      "sha256": "a8d3d4f24d15097474910d8338c80e5d0b91a581104a434a5c44c7e947e23f63"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/lc01-low.glb",
+      "bytes": 641076,
+      "sha256": "e5e4c50631ee8fbe1cbc0f6895b2aaaf9ff3d2b2e3837409db56f5589328f458"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/low-hero.png",
+      "bytes": 972515,
+      "sha256": "d029941e3dcba6ef80f80c9d6f0ea375c1075a2f77c4a30095f637fd82fa421e"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/low-report.json",
+      "bytes": 1918,
+      "sha256": "4af03eccb939a048c2239a3bc5012164c32475c1f87c73b09605cf50019cdf99"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/low-side.png",
+      "bytes": 981393,
+      "sha256": "b39c0278a46a1fea30e81f6de9ae8f8859fa03ddd2d6175f350138e10356ea41"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/raw-low-inspection.json",
+      "bytes": 6109,
+      "sha256": "ab20340d3826380751bd22aab323f91fd62f52b429587296e2f00554fbbca551"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/source-audit.json",
+      "bytes": 3260,
+      "sha256": "4ef721abd8d1bc9b0a129525b17732d4c82654d4e660b360d7ff48cb1a0ebe87"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/04-low/uv-checker.png",
+      "bytes": 1376945,
+      "sha256": "c273c4663dfd53932d2ef117df746dc9b43d6b6c5cdb5c9ecd1c232b3a166d34"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/05-bake/AO.png",
+      "bytes": 2355007,
+      "sha256": "cf9730728e5303102456ed4334c9e5be5ff3eff8529d257e84699c215bc71e5c"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/05-bake/NormalGL.png",
+      "bytes": 3638644,
+      "sha256": "5dfb973c5043172679a53ec84e9c3255fddebc14f6c7003495e44f97cf6b920c"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/05-bake/bake-progress.json",
+      "bytes": 5079,
+      "sha256": "a8ea4c7ce21b0063bd02c0828b70a7ad0085a7ab4db68122752cee807dcfbd09"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/05-bake/bake-report.json",
+      "bytes": 5155,
+      "sha256": "a46e75c315799bc7fbfd6f5a576bf409fb6cf010e7cb28fed9794d41abea6d7e"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/05-bake/lc01-bake-pairs.blend",
+      "bytes": 50651201,
+      "sha256": "3694829a55bb0bfcfd34c92ebe786472953718e685a89c493b3fd9ea10dc7383"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/lc01-final.blend",
+      "bytes": 6507621,
+      "sha256": "23afafd7fc38b47b5d2f27207a9d18d020df9384d9669ec3f7f59b9d0248c64d"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/lc01-final.glb",
+      "bytes": 6399196,
+      "sha256": "c4fbfd5e0d640f9cf8a0b120394fec4666ff4c740a9c307faf8681588dcf0949"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/material-transfer-report.json",
+      "bytes": 3881,
+      "sha256": "81429ea6875544650c65e6a09a4224c31747e6f67fdcafc64d82c9a7e5211c89"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/pbr-inspection.json",
+      "bytes": 46808,
+      "sha256": "e87e8e5ce6dcc7a8fef0c76f66d96e1361c38ac5a3943c5a3b858f132255e9c9"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/textures/BaseColor.png",
+      "bytes": 657526,
+      "sha256": "ac6302401310ba5e6415467375a0674209d02baf388b7cc8c38fd66914fad7a8"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/textures/Emission.png",
+      "bytes": 86350,
+      "sha256": "17b16585165563d9803775daccc457983909695ed24ba5265c10ab1b1210e15e"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/textures/NormalGL.png",
+      "bytes": 3638644,
+      "sha256": "5dfb973c5043172679a53ec84e9c3255fddebc14f6c7003495e44f97cf6b920c"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/textures/ORM.png",
+      "bytes": 1374782,
+      "sha256": "a77c01edab7af08022c0a85e36af5f98a6eea59c6570b95191d637f4bd8d7f84"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/textures/TripoBaseColorTransferred.png",
+      "bytes": 1852201,
+      "sha256": "cf84d14f7e1c36c1cff6d959413ed4e9fa6f0a43d69a6e2a530cde316efeeed9"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T00_CoreGrip_low_base_color.png",
+      "bytes": 710295,
+      "sha256": "7ab474c6e2f675447322d0e6d605ba3ae3b1a3dbd9976fe0b410f4a252b46ebd"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T00_CoreGrip_low_metallic-T00_CoreGrip_low_roughness.png",
+      "bytes": 609444,
+      "sha256": "78ba6585eca77756d340bbd450a5bc76b25964bc74a9b342f02d9e9771706a5a"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T00_CoreGrip_low_normal.png",
+      "bytes": 772770,
+      "sha256": "1c12d36dda489bdc9345ab83fa462b726de9646184fb077fc5087a229df56d34"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T01_FrontShroud_low_base_color.png",
+      "bytes": 266515,
+      "sha256": "e1f77aca177955a4b1c2428df6b7f9bc2688bf440796f83f52a8f672c968d999"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T01_FrontShroud_low_metallic-T01_FrontShroud_low_roughness.png",
+      "bytes": 215244,
+      "sha256": "df7c1305c64f834da5d9d4f6276c829be6b0546b282c67bcda9a1e2062793f77"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T01_FrontShroud_low_normal.png",
+      "bytes": 274377,
+      "sha256": "e20a3f915f7372973f62f14b190bc719c029e0369f6c48d56bd6d352f001ea27"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T02_CoilAssembly_low_base_color.png",
+      "bytes": 198344,
+      "sha256": "a17165be382da12a58943c76da0f4f336b663c4d059abbabae7f628171c4c11d"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T02_CoilAssembly_low_metallic-T02_CoilAssembly_low_roughness.png",
+      "bytes": 163965,
+      "sha256": "8b87d77deaf90af8b10e2eb11fa8f1963930ad4c87289aa5cd4544233e33a01a"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T02_CoilAssembly_low_normal.png",
+      "bytes": 198695,
+      "sha256": "4a7a6e7fb340f1a57d4b90bc41e4a459a1387b8940df780fa4877bdffe9912bf"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T03_ReceiverShell_low_base_color.png",
+      "bytes": 262525,
+      "sha256": "47af5996ac4e5a73660e31d3a53c31c8afd11b06cab6ff9bf34c778b01740d5e"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T03_ReceiverShell_low_metallic-T03_ReceiverShell_low_roughness.png",
+      "bytes": 201842,
+      "sha256": "bb7d6a2a17ed8d023406846733a0ed9643b98d03492f261bc85161b4ef57fe17"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T03_ReceiverShell_low_normal.png",
+      "bytes": 275817,
+      "sha256": "dd07ec527f7df24dc60da0d0892503e42d08f1bf1ae098be7109796a91448261"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T04_EnergyCell_low_base_color.png",
+      "bytes": 170862,
+      "sha256": "6da06ece0d9e4f89cb3ad33e83c98c63837048cf9ea04603f2f429b31f3d66e2"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T04_EnergyCell_low_metallic-T04_EnergyCell_low_roughness.png",
+      "bytes": 142206,
+      "sha256": "91b94968fd92ffb50bd1b5d6cdd905815834faec3e38b1e5b22107f1a90118a9"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T04_EnergyCell_low_normal.png",
+      "bytes": 192925,
+      "sha256": "0778d711820fc81b6d698dbf2c068f3403d35b8479efd406a9964f849d7cf0f2"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T05_Optic_low_base_color.png",
+      "bytes": 215457,
+      "sha256": "6eb58e040daf264049a695bf5eafd2fe0d96674634fc8afd721c3506a9a90c3f"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T05_Optic_low_metallic-T05_Optic_low_roughness.png",
+      "bytes": 165842,
+      "sha256": "086f0f5e5d2b73f5a6f9a460a4b65a4e35fc5bd961f13271bc50c3fcd77aa84b"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T05_Optic_low_normal.png",
+      "bytes": 227461,
+      "sha256": "7ba5493aab914898226a25e844e19b8909b10163afb86f0ec5d8236da985e94c"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T06_Muzzle_low_base_color.png",
+      "bytes": 213795,
+      "sha256": "ef41cd05a687b3516b5425396db75b2e33d8bf4b0a3f70371dcbad60fa032449"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T06_Muzzle_low_metallic-T06_Muzzle_low_roughness.png",
+      "bytes": 133522,
+      "sha256": "943c81771128b58cd9f7ebe8de0bd8820ca3bef1c6808cb93282fad6bfdb99d6"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T06_Muzzle_low_normal.png",
+      "bytes": 161836,
+      "sha256": "da2521a031ed664193be8fb3128478212d2582f12f46ec0e27be9236c9de183c"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T07_TopRail_low_base_color.png",
+      "bytes": 122094,
+      "sha256": "7563cea007ea5bc3d0f0ca203332ecd82abb8f7e6f99ed452ce7c721d9df73f5"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T07_TopRail_low_metallic-T07_TopRail_low_roughness.png",
+      "bytes": 93270,
+      "sha256": "471700ed42ae5c691ba39b4fb060f4ffa6e6479cfe1dd9b0a7c87091a823d455"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T07_TopRail_low_normal.png",
+      "bytes": 117820,
+      "sha256": "785b9a41e7a9b58a1543bc57d47cb446a3f480851ba8339bf3f4fa05c02219b1"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T08_StockShell_low_base_color.png",
+      "bytes": 137948,
+      "sha256": "899ce91eeefa63950209af950d8ab44791195d11e97ac8f9417b95239146d729"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T08_StockShell_low_metallic-T08_StockShell_low_roughness.png",
+      "bytes": 114618,
+      "sha256": "1009a9e71736a2b621dad8de971a4f34a02ac6ea2cee01628f5128009c853b0e"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T08_StockShell_low_normal.png",
+      "bytes": 140227,
+      "sha256": "0f44640eef0e7d29cd4967d700825ca2a4c03ad861d4e9b4d757d2b52912ea00"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T09_StockBrace_low_base_color.png",
+      "bytes": 62685,
+      "sha256": "99eb055cced32f13e7d05ae2a8be5c8da8d426fd1c9639242febb1e631afa63a"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T09_StockBrace_low_metallic-T09_StockBrace_low_roughness.png",
+      "bytes": 56227,
+      "sha256": "2fe5b12f2a13df6c1bfc63684e52569f052f668fae5e40cf053ba3be9098fa5b"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T09_StockBrace_low_normal.png",
+      "bytes": 65127,
+      "sha256": "2f8742d690ab613149963f0a40137f6d323fff1fd83f5fbfc5fa0591fa85e22a"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T10_ButtPad_low_base_color.png",
+      "bytes": 53961,
+      "sha256": "68881b05970027fa1ce3d6a63f3a500a7dbbf6afeaf4db763294548a99b1fad9"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T10_ButtPad_low_metallic-T10_ButtPad_low_roughness.png",
+      "bytes": 50187,
+      "sha256": "977cecec01cb2d18b0728f444af5152ed686daa61edc169af11fe8bd8d09b899"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T10_ButtPad_low_normal.png",
+      "bytes": 56540,
+      "sha256": "c136b93c4b2a7d9ac8e573463ccd8c4168d59c96b536756779b6e30a4ec56bec"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T11_CellSide_low_base_color.png",
+      "bytes": 47425,
+      "sha256": "8813c3848e744c87f61a58fb65d8418ebda306c9c73c054be9afa7c37f111604"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T11_CellSide_low_metallic-T11_CellSide_low_roughness.png",
+      "bytes": 36532,
+      "sha256": "aa4c5be62ffb63eb1502cc8a44e7e36703bea809cf5fc0b0d8bbe735110c5d64"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T11_CellSide_low_normal.png",
+      "bytes": 52839,
+      "sha256": "c8a3d6a047ab9e25623b57c51b5d928ba163641d904596610e539f145b6267b8"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T12_Foregrip_low_base_color.png",
+      "bytes": 35579,
+      "sha256": "100ae822bd23aa82eb80db6221de08ff96bb426477f52333f3e3850ed0b4c209"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T12_Foregrip_low_metallic-T12_Foregrip_low_roughness.png",
+      "bytes": 26434,
+      "sha256": "48cc71cf72d77cea7860c811ff75228ae8ca1caf6b004eac8ebc15d34203a813"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T12_Foregrip_low_normal.png",
+      "bytes": 32838,
+      "sha256": "30e4c9900d59cb4f6fefd3379a5e6efef7b8cd17e9902281d2d5903f5db82091"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T13_CheekRest_low_base_color.png",
+      "bytes": 23039,
+      "sha256": "8836bb3bbaa09482fb004a79e12f07d7bc1c67926b11ced4aa699888ae8a4bbe"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T13_CheekRest_low_metallic-T13_CheekRest_low_roughness.png",
+      "bytes": 19427,
+      "sha256": "d5088cefd6e4fc278e2c06ed3761d2c2c026b4c90d668132e2b6ae6f32b91461"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T13_CheekRest_low_normal.png",
+      "bytes": 26859,
+      "sha256": "0204fefcf1780cd93a4c31db354d12a4439526ddac6da1f54ecf204c5b7d58b9"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T14_FrontBracket_low_base_color.png",
+      "bytes": 18044,
+      "sha256": "5bf75b2cac385af2d20fcd593e0a22f3bb6a46362fc4b7b8b6895a81d3a696f8"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T14_FrontBracket_low_metallic-T14_FrontBracket_low_roughness.png",
+      "bytes": 12324,
+      "sha256": "eb41c1599bed0c725f525063b3b3109d690cd1d53e6cc9a0757cd8627bc1c031"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T14_FrontBracket_low_normal.png",
+      "bytes": 18315,
+      "sha256": "4411cd710475c2a6726be9c218dbf7ab1a09976dee730b5d9cd92995f23db9f7"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T15_RailInset_low_base_color.png",
+      "bytes": 8320,
+      "sha256": "e98f2c673cda05d71dfba0ce465a8a25f59ed41d8836f90eb9b24812ab2924c2"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T15_RailInset_low_metallic-T15_RailInset_low_roughness.png",
+      "bytes": 6541,
+      "sha256": "994658b91c1fcb020d785fff3a1c2bcc87ac3999aa7b9befb56393b1a1d17d90"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T15_RailInset_low_normal.png",
+      "bytes": 8941,
+      "sha256": "03128b2d5732f395d3f7194504d8f542bdb9361f8885b383ba4f5fd144297c4f"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T16_FrontLatch_low_base_color.png",
+      "bytes": 13827,
+      "sha256": "463044c748425e86b6edaf349cc6eb36c033f13fe10eaf5dff1c9ecfae8036c0"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T16_FrontLatch_low_metallic-T16_FrontLatch_low_roughness.png",
+      "bytes": 8463,
+      "sha256": "d7b3167d8d57709c1e8cab78d2faf250caa400c48451a6dffb9ba1e1f5868550"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-T16_FrontLatch_low_normal.png",
+      "bytes": 11337,
+      "sha256": "f97cd44e05f941f83f18ecb3ff1eaf5806d85509e421eee9ac4865a6edc3d8bc"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-Viewer Node.png",
+      "bytes": 1406,
+      "sha256": "6d7a6773f3d33f6afa30c9b4ebdd16f1aad246e7be3bea53740c136fa5659f2a"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v1/07-final/tripo-pbr-import.blend",
+      "bytes": 4082251,
+      "sha256": "27736d2441e9ff21fd56c845a19bcf0aa7c87d0937e700b571ecb47a349bf3fe"
+    },
+    {
+      "path": "assets/weapons/lc01/BaseColor.png",
+      "bytes": 657526,
+      "sha256": "ac6302401310ba5e6415467375a0674209d02baf388b7cc8c38fd66914fad7a8"
+    },
+    {
+      "path": "assets/weapons/lc01/Emission.png",
+      "bytes": 86350,
+      "sha256": "17b16585165563d9803775daccc457983909695ed24ba5265c10ab1b1210e15e"
+    },
+    {
+      "path": "assets/weapons/lc01/NormalGL.png",
+      "bytes": 3638644,
+      "sha256": "5dfb973c5043172679a53ec84e9c3255fddebc14f6c7003495e44f97cf6b920c"
+    },
+    {
+      "path": "assets/weapons/lc01/ORM.png",
+      "bytes": 1374782,
+      "sha256": "a77c01edab7af08022c0a85e36af5f98a6eea59c6570b95191d637f4bd8d7f84"
+    },
+    {
+      "path": "assets/weapons/lc01/lc01.glb",
+      "bytes": 640636,
+      "sha256": "142d897fc2b61b889e773f68004c10f3f9a94411ba81afa34099618a3c2defed"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "stage": "complete_in_godot_with_documented_art_quality_limits",
+  "reference": "art_source/weapons/lc01/pipeline-v1/input/lc01-single-reference.png",
+  "sha256": "55c4ac26b3ddf6b7f72d260e959087f6e8250b7f1f8b0fc9649c7a96a3c0ea28",
+  "generation": {
+    "model": "v3.1-20260211",
+    "texture": false,
+    "pbr": false,
+    "geometry_quality": "detailed",
+    "generate_parts": true,
+    "export_uv": false,
+    "model_seed": 20261115
+  },
+  "expected_credits": {
+    "geometry": 60,
+    "retopology_uv": 35,
+    "texture_hd": 20,
+    "total": 115
+  },
+  "task_ids": [
+    "9f05c9ff-9cad-4990-a11b-d68f59441e3b",
+    "db8a68c0-6b4e-415c-9143-718ea2c58ded",
+    "2b83d979-e7a8-492c-9861-024e1e0bb4e6"
+  ],
+  "approved_credits": 115,
+  "actual_credits": 115,
+  "report": "docs/validation/rifle-pipeline-v1/README.md",
+  "runtime": "assets/weapons/lc01/lc01.glb",
+  "normal_is_real_bake": true,
+  "normal_runtime_sha256": "5dfb973c5043172679a53ec84e9c3255fddebc14f6c7003495e44f97cf6b920c",
+  "quality_notes": [
+    "Automatic mesh retains local facets/seams and 74 nonboundary nonmanifold edges",
+    "UV occupancy 22.48%; 202 interior raster overlap samples",
+    "B1 control proxy is a review update; high geometry comes from approved reference image task"
+  ],
+  "superseded_by": "pipeline-v2: repaired outward face orientation and rebaked, added glow"
+}

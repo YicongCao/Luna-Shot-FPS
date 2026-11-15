@@ -1,0 +1,247 @@
+{
+  "reason": "Backface culling exposed inverted exterior faces; no alpha transparency was enabled.",
+  "stages": {
+    "high": [
+      {
+        "part": "T00_CoreGrip_high",
+        "faces": 514157,
+        "flipped": true,
+        "exterior_side_normal_before": -0.60629434425726,
+        "exterior_side_normal_after": 0.6062943441453154
+      },
+      {
+        "part": "T01_FrontShroud_high",
+        "faces": 228657,
+        "flipped": false,
+        "exterior_side_normal_before": 0.6184818248279432,
+        "exterior_side_normal_after": 0.6184818248279432
+      },
+      {
+        "part": "T02_CoilAssembly_high",
+        "faces": 200145,
+        "flipped": true,
+        "exterior_side_normal_before": -0.6324889902957275,
+        "exterior_side_normal_after": 0.6324889901630261
+      },
+      {
+        "part": "T03_ReceiverShell_high",
+        "faces": 159564,
+        "flipped": false,
+        "exterior_side_normal_before": 0.632775738790073,
+        "exterior_side_normal_after": 0.632775738790073
+      },
+      {
+        "part": "T04_EnergyCell_high",
+        "faces": 115643,
+        "flipped": false,
+        "exterior_side_normal_before": 0.6998598476541389,
+        "exterior_side_normal_after": 0.6998598476541389
+      },
+      {
+        "part": "T05_Optic_high",
+        "faces": 170446,
+        "flipped": false,
+        "exterior_side_normal_before": 0.4386971210596532,
+        "exterior_side_normal_after": 0.4386971210596532
+      },
+      {
+        "part": "T06_Muzzle_high",
+        "faces": 121572,
+        "flipped": false,
+        "exterior_side_normal_before": 0.6654412274764919,
+        "exterior_side_normal_after": 0.6654412274764919
+      },
+      {
+        "part": "T07_TopRail_high",
+        "faces": 94634,
+        "flipped": true,
+        "exterior_side_normal_before": -0.5309895646725014,
+        "exterior_side_normal_after": 0.5309895650603677
+      },
+      {
+        "part": "T08_StockShell_high",
+        "faces": 114816,
+        "flipped": true,
+        "exterior_side_normal_before": -0.6644476025091175,
+        "exterior_side_normal_after": 0.6644476027203041
+      },
+      {
+        "part": "T09_StockBrace_high",
+        "faces": 58494,
+        "flipped": false,
+        "exterior_side_normal_before": 0.7513581022517978,
+        "exterior_side_normal_after": 0.7513581022517978
+      },
+      {
+        "part": "T10_ButtPad_high",
+        "faces": 55426,
+        "flipped": false,
+        "exterior_side_normal_before": 0.6387913754714201,
+        "exterior_side_normal_after": 0.6387913754714201
+      },
+      {
+        "part": "T11_CellSide_high",
+        "faces": 35175,
+        "flipped": false,
+        "exterior_side_normal_before": 0.7186776280093294,
+        "exterior_side_normal_after": 0.7186776280093294
+      },
+      {
+        "part": "T12_Foregrip_high",
+        "faces": 25981,
+        "flipped": true,
+        "exterior_side_normal_before": -0.5277297340794299,
+        "exterior_side_normal_after": 0.5277297338498452
+      },
+      {
+        "part": "T13_CheekRest_high",
+        "faces": 14451,
+        "flipped": false,
+        "exterior_side_normal_before": 0.7937634922905468,
+        "exterior_side_normal_after": 0.7937634922905468
+      },
+      {
+        "part": "T14_FrontBracket_high",
+        "faces": 13622,
+        "flipped": true,
+        "exterior_side_normal_before": -0.5418865754524396,
+        "exterior_side_normal_after": 0.5418865762291895
+      },
+      {
+        "part": "T15_RailInset_high",
+        "faces": 6061,
+        "flipped": true,
+        "exterior_side_normal_before": -0.8847733569104593,
+        "exterior_side_normal_after": 0.8847733562142983
+      },
+      {
+        "part": "T16_FrontLatch_high",
+        "faces": 5433,
+        "flipped": false,
+        "exterior_side_normal_before": 0.11722864344944628,
+        "exterior_side_normal_after": 0.11722864344944628
+      }
+    ],
+    "low": [
+      {
+        "part": "T05_Optic_low",
+        "faces": 1774,
+        "flipped": false,
+        "exterior_side_normal_before": 0.42802240825249266,
+        "exterior_side_normal_after": 0.42802240825249266
+      },
+      {
+        "part": "T08_StockShell_low",
+        "faces": 1156,
+        "flipped": true,
+        "exterior_side_normal_before": -0.529098319533184,
+        "exterior_side_normal_after": 0.5290983212542845
+      },
+      {
+        "part": "T09_StockBrace_low",
+        "faces": 574,
+        "flipped": false,
+        "exterior_side_normal_before": 0.7610829637615361,
+        "exterior_side_normal_after": 0.7610829637615361
+      },
+      {
+        "part": "T11_CellSide_low",
+        "faces": 393,
+        "flipped": false,
+        "exterior_side_normal_before": 0.5300794148351997,
+        "exterior_side_normal_after": 0.5300794148351997
+      },
+      {
+        "part": "T12_Foregrip_low",
+        "faces": 373,
+        "flipped": true,
+        "exterior_side_normal_before": -0.4551109076349944,
+        "exterior_side_normal_after": 0.45511090274673277
+      },
+      {
+        "part": "T16_FrontLatch_low",
+        "faces": 359,
+        "flipped": false,
+        "exterior_side_normal_before": 0.06275296667679721,
+        "exterior_side_normal_after": 0.06275296667679721
+      },
+      {
+        "part": "T15_RailInset_low",
+        "faces": 445,
+        "flipped": true,
+        "exterior_side_normal_before": -0.870868778028408,
+        "exterior_side_normal_after": 0.8708687760248905
+      },
+      {
+        "part": "T00_CoreGrip_low",
+        "faces": 4801,
+        "flipped": false,
+        "exterior_side_normal_before": 0.5173033209236348,
+        "exterior_side_normal_after": 0.5173033209236348
+      },
+      {
+        "part": "T01_FrontShroud_low",
+        "faces": 2233,
+        "flipped": false,
+        "exterior_side_normal_before": 0.5029994953764412,
+        "exterior_side_normal_after": 0.5029994953764412
+      },
+      {
+        "part": "T04_EnergyCell_low",
+        "faces": 1102,
+        "flipped": false,
+        "exterior_side_normal_before": 0.5959142572292827,
+        "exterior_side_normal_after": 0.5959142572292827
+      },
+      {
+        "part": "T02_CoilAssembly_low",
+        "faces": 1891,
+        "flipped": true,
+        "exterior_side_normal_before": -0.5161008032486302,
+        "exterior_side_normal_after": 0.5161007997834217
+      },
+      {
+        "part": "T03_ReceiverShell_low",
+        "faces": 1392,
+        "flipped": false,
+        "exterior_side_normal_before": 0.47955528677638537,
+        "exterior_side_normal_after": 0.47955528677638537
+      },
+      {
+        "part": "T06_Muzzle_low",
+        "faces": 1125,
+        "flipped": false,
+        "exterior_side_normal_before": 0.5394434302279929,
+        "exterior_side_normal_after": 0.5394434302279929
+      },
+      {
+        "part": "T07_TopRail_low",
+        "faces": 745,
+        "flipped": false,
+        "exterior_side_normal_before": 0.5019061018700723,
+        "exterior_side_normal_after": 0.5019061018700723
+      },
+      {
+        "part": "T13_CheekRest_low",
+        "faces": 421,
+        "flipped": false,
+        "exterior_side_normal_before": 0.741679060798988,
+        "exterior_side_normal_after": 0.741679060798988
+      },
+      {
+        "part": "T14_FrontBracket_low",
+        "faces": 442,
+        "flipped": true,
+        "exterior_side_normal_before": -0.4959296028487957,
+        "exterior_side_normal_after": 0.49592960219830273
+      },
+      {
+        "part": "T10_ButtPad_low",
+        "faces": 432,
+        "flipped": false,
+        "exterior_side_normal_before": 0.5296737755124469,
+        "exterior_side_normal_after": 0.5296737755124469
+      }
+    ]
+  }
+}

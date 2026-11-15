@@ -1,0 +1,28 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>LC01 · Godot 实机材料检查</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,sans-serif;background:#101519;color:#e7edf0}body{max-width:1200px;margin:auto;padding:32px 20px 70px}h1{font-weight:650;font-size:36px;margin-bottom:12px}p{color:#b1c0c9;line-height:1.75}a{color:#75d6dd}.tag{letter-spacing:.15em;font-size:12px;color:#ebaa6b}button{border:1px solid #3c4a51;background:#202b31;color:#dae7ed;border-radius:7px;padding:10px 16px;margin:4px;cursor:pointer}button.active{border-color:#6be1e6;background:#26444b;color:white}.viewer{position:relative;margin:18px 0;background:#080b0e;border:1px solid #34424b;border-radius:10px;overflow:hidden}.viewer img{display:block;width:100%;height:auto}.viewer .overlay{position:absolute;inset:0;clip-path:inset(0 50% 0 0)}.divider{position:absolute;top:0;bottom:0;left:50%;width:2px;background:#8ce6e5;pointer-events:none}.slider{width:100%;accent-color:#80e4e4}.labels{display:flex;justify-content:space-between;color:#9dc1c9;font-size:14px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.card{background:#182229;border:1px solid #34424b;border-radius:10px;overflow:hidden}.card img{width:100%;display:block}.card p{padding:0 16px}.metrics{display:flex;gap:14px;flex-wrap:wrap}.metrics span{padding:14px 22px;border:1px solid #3b4e57;border-radius:10px}h2{margin-top:44px}.note{border-left:3px solid #d3a071;padding:10px 20px;background:#211f1a;color:#e0d2be}code{color:#c1e9e8}.small{font-size:13px}@media(max-width:700px){.grid{grid-template-columns:1fr}body{padding:22px 12px}h1{font-size:28px}}
+</style>
+<div class="tag">LUNA SHOT / LC–01 / PIPELINE V1</div><h1>枪械材料与红点 · Godot 实机</h1>
+<p>这里展示的是 Godot 4.7.2 原生渲染截图。切换相同相机下的材质与光照，检查变化来自表面响应，而非概念图润色。<a href="README.md">完整报告、费用与限制</a></p>
+<div class="metrics"><span>19,658 三角面</span><span>17 部件 / 2K 贴图</span><span>真实高 → 低模烘焙</span><span>115 Tripo 积分</span></div>
+<h2>固定镜头对照</h2><div id="buttons"></div><div class="viewer"><img id="main" src="01-hero-pbr.png" alt="Godot 实机材质对照"></div><p id="explanation"></p>
+<h2>拖动比较：真实烘焙法线</h2><div class="labels"><span>左：启用烘焙法线</span><span>右：关闭法线</span></div>
+<div class="viewer"><img src="02-hero-no-normal.png" alt="法线关闭"><img id="overlay" class="overlay" src="01-hero-pbr.png" alt="法线开启"><div class="divider" id="divider"></div></div><label>分割位置 <input class="slider" id="slider" type="range" min="0" max="100" value="50" aria-label="法线开关对比分割位置"></label>
+<p>法线恢复了高模上的平面、倒角与凹槽。固定区域中，关闭法线使约 52.6% 像素产生明显变化；统一金属度/粗糙度使约 47.6% 像素产生明显变化。这是参数生效证据，不是画质分数。</p>
+<h2>第一人称验证</h2><div class="grid">
+<div class="card"><img src="16-range-dot-clear-background.png" alt="开镜红点"><p>瞄具内 3D 红点与软边光效；开镜隐藏 HUD 十字。中心投影误差小于 1 像素。</p></div>
+<div class="card"><img src="11-range-hip.png" alt="腰射"><p>训练场保持白模，枪械为本轮最终 PBR。右键瞄准、R 换弹。</p></div>
+<div class="card"><img src="14-range-reload.png" alt="能源匣换弹"><p>能源匣主体与侧盖作为同一组移动，回装后恢复弹药。</p></div>
+<div class="card"><img src="15-range-ultrawide-ads.png" alt="超宽窗口瞄准"><p>1600 × 700 原生窗口；瞄具红点仍居中。</p></div></div>
+<h2>源资产阶段</h2><p>下面是 Blender 诊断渲染，明确区别于上方 Godot 实机。B0 为先行白模；B1 是检查生成高模后更新的控制代理。高模来自无材质生成任务，并非由 B1 细分伪造。</p><div class="grid">
+<div class="card"><img src="../../../art_source/weapons/lc01/pipeline-v1/00-whitebox/whitebox-hero.png" alt="白模控制代理"><p>B1 控制代理 · 更新光轴和能源匣位置。</p></div>
+<div class="card"><img src="../../../art_source/weapons/lc01/pipeline-v1/02-high/clay-hero.png" alt="高模灰模"><p>H1 清理高模 · 1,934,277 三角面。</p></div>
+<div class="card"><img src="../../../art_source/weapons/lc01/pipeline-v1/04-low/low-hero.png" alt="低模灰模"><p>L1 固定低模 · 19,658 三角面。</p></div>
+<div class="card"><img src="../../../art_source/weapons/lc01/pipeline-v1/04-low/uv-checker.png" alt="低模 UV 检查"><p>UV checker · 布局有效但碎岛较多、利用率约 22.48%。</p></div></div>
+<h2>判断边界</h2><p class="note">整条管线与 Godot 功能验证已完成。自动网格仍有局部折面、凹痕、接缝与模糊刻字；UV 有少量内部重叠采样，尚未做逐面手工重拓扑。该版本是可编辑、可实测的精修基线，不宣称已经达到概念图的最终质量。</p>
+<p>运行 <code>launch-weapon-lab.command</code>，或训练场按 F3。检查室内：拖动旋转、滚轮缩放、1–4 切换材质模式、L 切换灯光、F3 返回。</p><p class="small">macOS · Apple M5 · Godot Compatibility。训练场原生回归 40/40，枪械原生专项 24/24。短时自动验证，不是长时间性能验收。</p>
+<script>
+const modes=[['最终 PBR','01-hero-pbr','陶瓷外壳、金属骨架、橡胶握把、橙色涂层及青色状态带使用不同表面参数。'],['关闭法线','02-hero-no-normal','只关闭高低模烘焙法线，其它条件保持一致。比较倒角、凹槽与平面明暗。'],['统一材质响应','03-hero-uniform-response','保留颜色、法线和光照，统一 metallic=0、roughness=0.55。比较金属反射与橡胶的变化。'],['灰模','04-hero-clay','移除颜色、法线、发光与 AO，查看低模基本几何。'],['暖侧光','05-hero-warm','更低角度的暖色主光，检查表面的高光宽度与接缝。'],['冷逆光','06-hero-cool','改变主光方向和颜色，验证反光不是烘死在 BaseColor 中。'],['背面','08-reverse','另一侧的实际几何与 PBR。'],['近景','09-surface-close','近景会同时暴露真实烘焙细节与自动网格的残余瑕疵。']];
+const buttons=document.querySelector('#buttons');modes.forEach((m,i)=>{const b=document.createElement('button');b.textContent=m[0];b.onclick=()=>{document.querySelector('#main').src=m[1]+'.png';document.querySelector('#explanation').textContent=m[2];buttons.querySelectorAll('button').forEach(x=>x.classList.remove('active'));b.classList.add('active')};buttons.append(b);if(i===0)b.click()});
+document.querySelector('#slider').oninput=e=>{const v=e.target.value;document.querySelector('#overlay').style.clipPath=`inset(0 ${100-v}% 0 0)`;document.querySelector('#divider').style.left=v+'%'};
+</script></html>

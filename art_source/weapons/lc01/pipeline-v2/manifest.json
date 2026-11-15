@@ -1,0 +1,124 @@
+{
+  "files": [
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/02-high/lc01-high.blend",
+      "bytes": 50049950,
+      "sha256": "99dc531033ed7081a3af61bdec728fe167076cf399cf55064fe2c3d1fb70103a"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/02-high/lc01-high.glb",
+      "bytes": 42714860,
+      "sha256": "bc53750928d747201fe19c9f32ff27fb8e4d25406b16cf72fcc9c1bbb4672afb"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/04-low/lc01-low.blend",
+      "bytes": 814564,
+      "sha256": "4ec448f85e9108aef7698aaf09e1dec6935a3b8a169f7b16fb34c38975492874"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/04-low/lc01-low.glb",
+      "bytes": 641076,
+      "sha256": "558793995bf1d072bfc5eb5744d9db1cd3622fbe2700ad161570cde2e0032fe9"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/04-low/source-audit.json",
+      "bytes": 3261,
+      "sha256": "3b970addac5dd1469928186238916d38dd01771d402f59d40e50f2747ab16f3f"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/04-low/uv-checker.png",
+      "bytes": 1376921,
+      "sha256": "4f2ff82d4683163db74fc7f0417fb60ffd6c69f54dacab82805c7660809f83f4"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/05-bake/AO.png",
+      "bytes": 2105217,
+      "sha256": "8eae2440862a9ddeb0d85ca30fe7e50ae0ba9436d53299994ab28d1f9397ea51"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/05-bake/NormalGL.png",
+      "bytes": 3656617,
+      "sha256": "182d33c58410d1537c4254edf6c08ad676f5c5b6d14d0d42d0db3479f19cd9dd"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/05-bake/bake-progress.json",
+      "bytes": 5077,
+      "sha256": "615c73199eae24f3ab757dc546c59a40ddd7490dd30b9673e6d4008fc1a4df56"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/05-bake/bake-report.json",
+      "bytes": 5153,
+      "sha256": "71a859e5c782a9606b8fd8599db0d7f0a1cd6a061f6cb9d14e3e462c5842a991"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/05-bake/lc01-bake-pairs.blend",
+      "bytes": 50794109,
+      "sha256": "6ffacd6ee9ffe27dd5311f71b78e3b9b4b53eeaf4f31985e90ec15f7047b91fb"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/lc01-final.blend",
+      "bytes": 6459273,
+      "sha256": "a8826d426067920ada82d0bde5620863123c58010817e4ed215e64bfea9be8d5"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/lc01-final.glb",
+      "bytes": 6355876,
+      "sha256": "ef22dea656e0dc172b624742b8715b997f8363c415a62e95fbec81da74c6cb3d"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/material-transfer-report.json",
+      "bytes": 3881,
+      "sha256": "81429ea6875544650c65e6a09a4224c31747e6f67fdcafc64d82c9a7e5211c89"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/textures/BaseColor.png",
+      "bytes": 657526,
+      "sha256": "ac6302401310ba5e6415467375a0674209d02baf388b7cc8c38fd66914fad7a8"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/textures/Emission.png",
+      "bytes": 86350,
+      "sha256": "17b16585165563d9803775daccc457983909695ed24ba5265c10ab1b1210e15e"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/textures/NormalGL.png",
+      "bytes": 3656617,
+      "sha256": "182d33c58410d1537c4254edf6c08ad676f5c5b6d14d0d42d0db3479f19cd9dd"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/textures/ORM.png",
+      "bytes": 1313485,
+      "sha256": "c48d530af93e2a3b7c93ff010d2eb475bea58974a5c02a93c2da7d25f2325415"
+    },
+    {
+      "path": "art_source/weapons/lc01/pipeline-v2/07-final/textures/TripoBaseColorTransferred.png",
+      "bytes": 1852192,
+      "sha256": "7958cfac584177e7e10930ded89e8adfdcc8783753bdafa3ed58c061b90bb35f"
+    },
+    {
+      "path": "assets/weapons/lc01/BaseColor.png",
+      "bytes": 657526,
+      "sha256": "ac6302401310ba5e6415467375a0674209d02baf388b7cc8c38fd66914fad7a8"
+    },
+    {
+      "path": "assets/weapons/lc01/Emission.png",
+      "bytes": 86350,
+      "sha256": "17b16585165563d9803775daccc457983909695ed24ba5265c10ab1b1210e15e"
+    },
+    {
+      "path": "assets/weapons/lc01/NormalGL.png",
+      "bytes": 3656617,
+      "sha256": "182d33c58410d1537c4254edf6c08ad676f5c5b6d14d0d42d0db3479f19cd9dd"
+    },
+    {
+      "path": "assets/weapons/lc01/ORM.png",
+      "bytes": 1313485,
+      "sha256": "c48d530af93e2a3b7c93ff010d2eb475bea58974a5c02a93c2da7d25f2325415"
+    },
+    {
+      "path": "assets/weapons/lc01/lc01.glb",
+      "bytes": 640636,
+      "sha256": "5d43cd1f63ba22c7393d8e90896e7884dc92e0779dc8c2cf77fb84cf0881eb3c"
+    }
+  ]
+}

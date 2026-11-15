@@ -1,0 +1,99 @@
+{
+  "triangles": 19658,
+  "parts": [
+    {
+      "name": "T05_Optic_low",
+      "vertices": 914,
+      "triangles": 1774
+    },
+    {
+      "name": "T08_StockShell_low",
+      "vertices": 622,
+      "triangles": 1156
+    },
+    {
+      "name": "T09_StockBrace_low",
+      "vertices": 312,
+      "triangles": 574
+    },
+    {
+      "name": "T11_CellSide_low",
+      "vertices": 244,
+      "triangles": 393
+    },
+    {
+      "name": "T12_Foregrip_low",
+      "vertices": 259,
+      "triangles": 373
+    },
+    {
+      "name": "T16_FrontLatch_low",
+      "vertices": 212,
+      "triangles": 359
+    },
+    {
+      "name": "T15_RailInset_low",
+      "vertices": 238,
+      "triangles": 445
+    },
+    {
+      "name": "T00_CoreGrip_low",
+      "vertices": 2516,
+      "triangles": 4801
+    },
+    {
+      "name": "T01_FrontShroud_low",
+      "vertices": 1205,
+      "triangles": 2233
+    },
+    {
+      "name": "T04_EnergyCell_low",
+      "vertices": 592,
+      "triangles": 1102
+    },
+    {
+      "name": "T02_CoilAssembly_low",
+      "vertices": 1003,
+      "triangles": 1891
+    },
+    {
+      "name": "T03_ReceiverShell_low",
+      "vertices": 772,
+      "triangles": 1392
+    },
+    {
+      "name": "T06_Muzzle_low",
+      "vertices": 568,
+      "triangles": 1125
+    },
+    {
+      "name": "T07_TopRail_low",
+      "vertices": 428,
+      "triangles": 745
+    },
+    {
+      "name": "T13_CheekRest_low",
+      "vertices": 254,
+      "triangles": 421
+    },
+    {
+      "name": "T14_FrontBracket_low",
+      "vertices": 260,
+      "triangles": 442
+    },
+    {
+      "name": "T10_ButtPad_low",
+      "vertices": 232,
+      "triangles": 432
+    }
+  ],
+  "remote_normalization_reversed": {
+    "scale": 0.9049425012644322,
+    "offset": [
+      -3.506794018903747e-05,
+      0.2123681902885437,
+      0.034325070679187775
+    ]
+  },
+  "uv_repack": "Tripo charts, global equalized texel density and pack, 0.008 margin"
+}

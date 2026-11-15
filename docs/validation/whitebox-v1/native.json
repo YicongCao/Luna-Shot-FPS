@@ -1,0 +1,211 @@
+{
+	"checks": [
+		{
+			"check": "spawn_floor",
+			"detail": "(0.0, 0.000107, 18.0)",
+			"passed": true
+		},
+		{
+			"check": "screenshot_01-spawn",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_02-overview",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "loop_south",
+			"detail": "end=(-17.88991, 0.000107, 19.98777), planar_error=0.111",
+			"passed": true
+		},
+		{
+			"check": "west_entry",
+			"detail": "end=(-19.97418, 0.000107, 10.12222), planar_error=0.125",
+			"passed": true
+		},
+		{
+			"check": "west_ship_clearance",
+			"detail": "end=(-19.99986, 0.000107, -11.87776), planar_error=0.122",
+			"passed": true
+		},
+		{
+			"check": "north_ship_path",
+			"detail": "end=(-8.083827, 0.000107, -11.99915), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "ramp_side_path",
+			"detail": "end=(-8.00107, 0.000107, -5.583017), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "north_crossing",
+			"detail": "end=(-5.085516, 0.000107, -5.502366), planar_error=0.086",
+			"passed": true
+		},
+		{
+			"check": "central_crossing",
+			"detail": "end=(7.876869, 0.000107, -6.490613), planar_error=0.123",
+			"passed": true
+		},
+		{
+			"check": "east_entry",
+			"detail": "end=(11.71019, 0.000107, -6.499785), planar_error=0.090",
+			"passed": true
+		},
+		{
+			"check": "east_service_path",
+			"detail": "end=(11.79952, 0.000107, 8.916638), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "south_crossing",
+			"detail": "end=(3.148564, 0.000107, 11.94794), planar_error=0.157",
+			"passed": true
+		},
+		{
+			"check": "loop_return",
+			"detail": "end=(0.071741, 0.000107, 17.8621), planar_error=0.155",
+			"passed": true
+		},
+		{
+			"check": "west_ramp_ascent",
+			"detail": "end=(-5.0, 2.400246, -15.89332), planar_error=0.107",
+			"passed": true
+		},
+		{
+			"check": "deck_height",
+			"detail": "2.40024638175964",
+			"passed": true
+		},
+		{
+			"check": "screenshot_03-deck",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "deck_crossing",
+			"detail": "end=(4.916104, 2.400246, -15.9991), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "east_ramp_descent",
+			"detail": "end=(4.999162, 0.000833, -6.099918), planar_error=0.100",
+			"passed": true
+		},
+		{
+			"check": "east_ramp_ascent",
+			"detail": "end=(4.999993, 2.40044, -15.91169), planar_error=0.088",
+			"passed": true
+		},
+		{
+			"check": "deck_return",
+			"detail": "end=(-4.916291, 2.40044, -15.99926), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "west_ramp_descent",
+			"detail": "end=(-4.999163, 0.000852, -6.099955), planar_error=0.100",
+			"passed": true
+		},
+		{
+			"check": "boundary_(-1.0, 0.0, 0.0)",
+			"detail": "(-21.67907, 0.316993, 18.0)",
+			"passed": true
+		},
+		{
+			"check": "boundary_(1.0, 0.0, 0.0)",
+			"detail": "(21.67907, 0.316898, 18.0)",
+			"passed": true
+		},
+		{
+			"check": "boundary_(0.0, 0.0, 1.0)",
+			"detail": "(0.0, 0.316853, 23.67907)",
+			"passed": true
+		},
+		{
+			"check": "boundary_(0.0, 0.0, -1.0)",
+			"detail": "(-19.0, 0.316941, -23.67907)",
+			"passed": true
+		},
+		{
+			"check": "target_hit",
+			"detail": "hits=1 ammo=19",
+			"passed": true
+		},
+		{
+			"check": "cooldown",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "sight_axis",
+			"detail": "(0.000001, -0.0, -0.57)",
+			"passed": true
+		},
+		{
+			"check": "screenshot_04-ads",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reload_fire_lock",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_05-reload",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reload_complete",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "empty_lock",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "architecture_occludes",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "pause_freezes",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reset_state",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_06-reset",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_07-ultrawide",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ultrawide_aspect",
+			"detail": "(2057.0, 900.0)",
+			"passed": true
+		}
+	],
+	"display": "macOS",
+	"elapsed_seconds": 48.249,
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"frame_ms_p95": 16.3553333333333,
+	"note": "Automated native traversal and rendering; not human playtest or long-duration performance acceptance.",
+	"platform": "macOS"
+}

@@ -1,0 +1,2242 @@
+{
+  "objects": [
+    {
+      "name": "T00_CoreGrip_low",
+      "verts": 3265,
+      "tris": 4801,
+      "min": [
+        -0.0627281591296196,
+        -0.31346026062965393,
+        -0.20094561576843262
+      ],
+      "max": [
+        0.06290074437856674,
+        0.22600503265857697,
+        0.04503365978598595
+      ],
+      "uv": 14403,
+      "materials": [
+        "T00_CoreGrip_low_material"
+      ]
+    },
+    {
+      "name": "T03_ReceiverShell_low",
+      "verts": 1348,
+      "tris": 1392,
+      "min": [
+        -0.06122161075472832,
+        -0.2644084692001343,
+        -0.02183392457664013
+      ],
+      "max": [
+        0.06138002127408981,
+        0.11073781549930573,
+        0.09342628717422485
+      ],
+      "uv": 4176,
+      "materials": [
+        "T03_ReceiverShell_low_material"
+      ]
+    },
+    {
+      "name": "T04_EnergyCell_low",
+      "verts": 1021,
+      "tris": 1102,
+      "min": [
+        -0.06278972327709198,
+        -0.021741941571235657,
+        -0.14885903894901276
+      ],
+      "max": [
+        0.06301237642765045,
+        0.21202127635478973,
+        -0.04958973452448845
+      ],
+      "uv": 3306,
+      "materials": [
+        "T04_EnergyCell_low_material"
+      ]
+    },
+    {
+      "name": "T09_StockBrace_low",
+      "verts": 401,
+      "tris": 574,
+      "min": [
+        -0.03140759468078613,
+        -0.4407317042350769,
+        -0.10289470851421356
+      ],
+      "max": [
+        0.030262628570199013,
+        -0.31905800104141235,
+        0.009730841964483261
+      ],
+      "uv": 1722,
+      "materials": [
+        "T09_StockBrace_low_material"
+      ]
+    },
+    {
+      "name": "T11_CellSide_low",
+      "verts": 393,
+      "tris": 393,
+      "min": [
+        0.026295075193047523,
+        -0.023162901401519775,
+        -0.14114488661289215
+      ],
+      "max": [
+        0.060198474675416946,
+        0.17149589955806732,
+        -0.04933907091617584
+      ],
+      "uv": 1179,
+      "materials": [
+        "T11_CellSide_low_material"
+      ]
+    },
+    {
+      "name": "T14_FrontBracket_low",
+      "verts": 390,
+      "tris": 442,
+      "min": [
+        -0.047705166041851044,
+        0.3466998338699341,
+        -0.071168452501297
+      ],
+      "max": [
+        0.04831194132566452,
+        0.3773276209831238,
+        -0.010852430015802383
+      ],
+      "uv": 1326,
+      "materials": [
+        "T14_FrontBracket_low_material"
+      ]
+    },
+    {
+      "name": "T15_RailInset_low",
+      "verts": 307,
+      "tris": 445,
+      "min": [
+        -0.011613565497100353,
+        0.30793774127960205,
+        0.10014010965824127
+      ],
+      "max": [
+        0.011789873242378235,
+        0.3662751317024231,
+        0.10870233178138733
+      ],
+      "uv": 1335,
+      "materials": [
+        "T15_RailInset_low_material"
+      ]
+    },
+    {
+      "name": "T02_CoilAssembly_low",
+      "verts": 1506,
+      "tris": 1891,
+      "min": [
+        -0.047404006123542786,
+        0.07575772702693939,
+        -0.018937479704618454
+      ],
+      "max": [
+        0.0474429652094841,
+        0.3559126853942871,
+        0.0660410225391388
+      ],
+      "uv": 5673,
+      "materials": [
+        "T02_CoilAssembly_low_material"
+      ]
+    },
+    {
+      "name": "T01_FrontShroud_low",
+      "verts": 1962,
+      "tris": 2233,
+      "min": [
+        -0.06099751964211464,
+        0.21217511594295502,
+        -0.08583419024944305
+      ],
+      "max": [
+        0.060927171260118484,
+        0.40996408462524414,
+        0.10885824263095856
+      ],
+      "uv": 6699,
+      "materials": [
+        "T01_FrontShroud_low_material"
+      ]
+    },
+    {
+      "name": "T05_Optic_low",
+      "verts": 1517,
+      "tris": 1774,
+      "min": [
+        -0.06706264615058899,
+        -0.21364080905914307,
+        0.0734642893075943
+      ],
+      "max": [
+        0.06706263870000839,
+        -0.0014487653970718384,
+        0.20094561576843262
+      ],
+      "uv": 5322,
+      "materials": [
+        "T05_Optic_low_material"
+      ]
+    },
+    {
+      "name": "T06_Muzzle_low",
+      "verts": 1033,
+      "tris": 1125,
+      "min": [
+        -0.04669063910841942,
+        0.37708956003189087,
+        -0.02615521103143692
+      ],
+      "max": [
+        0.046875182539224625,
+        0.5,
+        0.09627412259578705
+      ],
+      "uv": 3375,
+      "materials": [
+        "T06_Muzzle_low_material"
+      ]
+    },
+    {
+      "name": "T07_TopRail_low",
+      "verts": 600,
+      "tris": 745,
+      "min": [
+        -0.05362635850906372,
+        -0.01896721124649048,
+        0.0427420549094677
+      ],
+      "max": [
+        0.05365850776433945,
+        0.35397541522979736,
+        0.10842666029930115
+      ],
+      "uv": 2235,
+      "materials": [
+        "T07_TopRail_low_material"
+      ]
+    },
+    {
+      "name": "T08_StockShell_low",
+      "verts": 900,
+      "tris": 1156,
+      "min": [
+        -0.04313482344150543,
+        -0.4650292992591858,
+        -0.11473487317562103
+      ],
+      "max": [
+        0.043140992522239685,
+        -0.272509902715683,
+        0.07627752423286438
+      ],
+      "uv": 3468,
+      "materials": [
+        "T08_StockShell_low_material"
+      ]
+    },
+    {
+      "name": "T10_ButtPad_low",
+      "verts": 286,
+      "tris": 432,
+      "min": [
+        -0.042531006038188934,
+        -0.5,
+        -0.1128787249326706
+      ],
+      "max": [
+        0.04254702851176262,
+        -0.4456549882888794,
+        0.07864053547382355
+      ],
+      "uv": 1296,
+      "materials": [
+        "T10_ButtPad_low_material"
+      ]
+    },
+    {
+      "name": "T12_Foregrip_low",
+      "verts": 329,
+      "tris": 373,
+      "min": [
+        -0.04817824065685272,
+        0.10134489834308624,
+        -0.07735371589660645
+      ],
+      "max": [
+        0.047964371740818024,
+        0.2895781397819519,
+        -0.0018394030630588531
+      ],
+      "uv": 1119,
+      "materials": [
+        "T12_Foregrip_low_material"
+      ]
+    },
+    {
+      "name": "T13_CheekRest_low",
+      "verts": 320,
+      "tris": 421,
+      "min": [
+        -0.03630207106471062,
+        -0.340171217918396,
+        0.03661506995558739
+      ],
+      "max": [
+        0.03623645380139351,
+        -0.26079821586608887,
+        0.07342797517776489
+      ],
+      "uv": 1263,
+      "materials": [
+        "T13_CheekRest_low_material"
+      ]
+    },
+    {
+      "name": "T16_FrontLatch_low",
+      "verts": 283,
+      "tris": 359,
+      "min": [
+        -0.03948980197310448,
+        0.38287317752838135,
+        -0.043531354516744614
+      ],
+      "max": [
+        0.0395519994199276,
+        0.40298163890838623,
+        -0.018627775833010674
+      ],
+      "uv": 1077,
+      "materials": [
+        "T16_FrontLatch_low_material"
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "T00_CoreGrip_low_base_color",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T00_CoreGrip_low_metallic-T00_CoreGrip_low_roughness",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T00_CoreGrip_low_normal",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T01_FrontShroud_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T01_FrontShroud_low_metallic-T01_FrontShroud_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T01_FrontShroud_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T02_CoilAssembly_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T02_CoilAssembly_low_metallic-T02_CoilAssembly_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T02_CoilAssembly_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T03_ReceiverShell_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T03_ReceiverShell_low_metallic-T03_ReceiverShell_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T03_ReceiverShell_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T04_EnergyCell_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T04_EnergyCell_low_metallic-T04_EnergyCell_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T04_EnergyCell_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T05_Optic_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T05_Optic_low_metallic-T05_Optic_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T05_Optic_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T06_Muzzle_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T06_Muzzle_low_metallic-T06_Muzzle_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T06_Muzzle_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T07_TopRail_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T07_TopRail_low_metallic-T07_TopRail_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T07_TopRail_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T08_StockShell_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T08_StockShell_low_metallic-T08_StockShell_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T08_StockShell_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T09_StockBrace_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T09_StockBrace_low_metallic-T09_StockBrace_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T09_StockBrace_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T10_ButtPad_low_base_color",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T10_ButtPad_low_metallic-T10_ButtPad_low_roughness",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T10_ButtPad_low_normal",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T11_CellSide_low_base_color",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T11_CellSide_low_metallic-T11_CellSide_low_roughness",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T11_CellSide_low_normal",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T12_Foregrip_low_base_color",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T12_Foregrip_low_metallic-T12_Foregrip_low_roughness",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T12_Foregrip_low_normal",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T13_CheekRest_low_base_color",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T13_CheekRest_low_metallic-T13_CheekRest_low_roughness",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T13_CheekRest_low_normal",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T14_FrontBracket_low_base_color",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T14_FrontBracket_low_metallic-T14_FrontBracket_low_roughness",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T14_FrontBracket_low_normal",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T15_RailInset_low_base_color",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T15_RailInset_low_metallic-T15_RailInset_low_roughness",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T15_RailInset_low_normal",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T16_FrontLatch_low_base_color",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "sRGB"
+    },
+    {
+      "name": "T16_FrontLatch_low_metallic-T16_FrontLatch_low_roughness",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "T16_FrontLatch_low_normal",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": "Non-Color"
+    },
+    {
+      "name": "Viewer Node",
+      "size": [
+        256,
+        256
+      ],
+      "colorspace": ""
+    }
+  ],
+  "materials": [
+    {
+      "name": "Dots Stroke",
+      "nodes": [
+        {
+          "type": "FRAME",
+          "name": "Frame",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output.001",
+          "image": null
+        },
+        {
+          "type": "BSDF_DIFFUSE",
+          "name": "Diffuse BSDF",
+          "image": null
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Diffuse BSDF",
+          "BSDF",
+          "Material Output.001",
+          "Surface"
+        ]
+      ]
+    },
+    {
+      "name": "Material",
+      "nodes": [
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ]
+      ]
+    },
+    {
+      "name": "T00_CoreGrip_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T00_CoreGrip_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T00_CoreGrip_low_metallic-T00_CoreGrip_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T00_CoreGrip_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T01_FrontShroud_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T01_FrontShroud_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T01_FrontShroud_low_metallic-T01_FrontShroud_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T01_FrontShroud_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T02_CoilAssembly_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T02_CoilAssembly_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T02_CoilAssembly_low_metallic-T02_CoilAssembly_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T02_CoilAssembly_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T03_ReceiverShell_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T03_ReceiverShell_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T03_ReceiverShell_low_metallic-T03_ReceiverShell_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T03_ReceiverShell_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T04_EnergyCell_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T04_EnergyCell_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T04_EnergyCell_low_metallic-T04_EnergyCell_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T04_EnergyCell_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T05_Optic_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T05_Optic_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T05_Optic_low_metallic-T05_Optic_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T05_Optic_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T06_Muzzle_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T06_Muzzle_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T06_Muzzle_low_metallic-T06_Muzzle_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T06_Muzzle_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T07_TopRail_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T07_TopRail_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T07_TopRail_low_metallic-T07_TopRail_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T07_TopRail_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T08_StockShell_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T08_StockShell_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T08_StockShell_low_metallic-T08_StockShell_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T08_StockShell_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T09_StockBrace_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T09_StockBrace_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T09_StockBrace_low_metallic-T09_StockBrace_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T09_StockBrace_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T10_ButtPad_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T10_ButtPad_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T10_ButtPad_low_metallic-T10_ButtPad_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T10_ButtPad_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T11_CellSide_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T11_CellSide_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T11_CellSide_low_metallic-T11_CellSide_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T11_CellSide_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T12_Foregrip_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T12_Foregrip_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T12_Foregrip_low_metallic-T12_Foregrip_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T12_Foregrip_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T13_CheekRest_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T13_CheekRest_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T13_CheekRest_low_metallic-T13_CheekRest_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T13_CheekRest_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T14_FrontBracket_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T14_FrontBracket_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T14_FrontBracket_low_metallic-T14_FrontBracket_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T14_FrontBracket_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T15_RailInset_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T15_RailInset_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T15_RailInset_low_metallic-T15_RailInset_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T15_RailInset_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "T16_FrontLatch_low_material",
+      "nodes": [
+        {
+          "type": "BSDF_PRINCIPLED",
+          "name": "Principled BSDF",
+          "image": null
+        },
+        {
+          "type": "OUTPUT_MATERIAL",
+          "name": "Material Output",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture",
+          "image": "T16_FrontLatch_low_base_color"
+        },
+        {
+          "type": "SEPARATE_COLOR",
+          "name": "Separate Color",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.001",
+          "image": "T16_FrontLatch_low_metallic-T16_FrontLatch_low_roughness"
+        },
+        {
+          "type": "NORMAL_MAP",
+          "name": "Normal Map",
+          "image": null
+        },
+        {
+          "type": "TEX_IMAGE",
+          "name": "Image Texture.002",
+          "image": "T16_FrontLatch_low_normal"
+        }
+      ],
+      "links": [
+        [
+          "Principled BSDF",
+          "BSDF",
+          "Material Output",
+          "Surface"
+        ],
+        [
+          "Image Texture",
+          "Color",
+          "Principled BSDF",
+          "Base Color"
+        ],
+        [
+          "Separate Color",
+          "Blue",
+          "Principled BSDF",
+          "Metallic"
+        ],
+        [
+          "Separate Color",
+          "Green",
+          "Principled BSDF",
+          "Roughness"
+        ],
+        [
+          "Image Texture.001",
+          "Color",
+          "Separate Color",
+          "Color"
+        ],
+        [
+          "Normal Map",
+          "Normal",
+          "Principled BSDF",
+          "Normal"
+        ],
+        [
+          "Image Texture.002",
+          "Color",
+          "Normal Map",
+          "Color"
+        ]
+      ]
+    }
+  ]
+}

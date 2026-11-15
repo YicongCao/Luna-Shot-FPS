@@ -1,0 +1,3099 @@
+[
+  {
+    "name": "Ground",
+    "position": [
+      0,
+      -0.3,
+      0
+    ],
+    "size": [
+      44,
+      0.6,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "GridX0",
+    "position": [
+      -22,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX1",
+    "position": [
+      -21,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX2",
+    "position": [
+      -20,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX3",
+    "position": [
+      -19,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX4",
+    "position": [
+      -18,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX5",
+    "position": [
+      -17,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX6",
+    "position": [
+      -16,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX7",
+    "position": [
+      -15,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX8",
+    "position": [
+      -14,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX9",
+    "position": [
+      -13,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX10",
+    "position": [
+      -12,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX11",
+    "position": [
+      -11,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX12",
+    "position": [
+      -10,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX13",
+    "position": [
+      -9,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX14",
+    "position": [
+      -8,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX15",
+    "position": [
+      -7,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX16",
+    "position": [
+      -6,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX17",
+    "position": [
+      -5,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX18",
+    "position": [
+      -4,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX19",
+    "position": [
+      -3,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX20",
+    "position": [
+      -2,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX21",
+    "position": [
+      -1,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX22",
+    "position": [
+      0,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX23",
+    "position": [
+      1,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX24",
+    "position": [
+      2,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX25",
+    "position": [
+      3,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX26",
+    "position": [
+      4,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX27",
+    "position": [
+      5,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX28",
+    "position": [
+      6,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX29",
+    "position": [
+      7,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX30",
+    "position": [
+      8,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX31",
+    "position": [
+      9,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX32",
+    "position": [
+      10,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX33",
+    "position": [
+      11,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX34",
+    "position": [
+      12,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX35",
+    "position": [
+      13,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX36",
+    "position": [
+      14,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX37",
+    "position": [
+      15,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX38",
+    "position": [
+      16,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX39",
+    "position": [
+      17,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX40",
+    "position": [
+      18,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX41",
+    "position": [
+      19,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX42",
+    "position": [
+      20,
+      0.003,
+      0
+    ],
+    "size": [
+      0.025,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX43",
+    "position": [
+      21,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridX44",
+    "position": [
+      22,
+      0.003,
+      0
+    ],
+    "size": [
+      0.009,
+      0.005,
+      48
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ0",
+    "position": [
+      0,
+      0.003,
+      -24
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ1",
+    "position": [
+      0,
+      0.003,
+      -23
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ2",
+    "position": [
+      0,
+      0.003,
+      -22
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ3",
+    "position": [
+      0,
+      0.003,
+      -21
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ4",
+    "position": [
+      0,
+      0.003,
+      -20
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ5",
+    "position": [
+      0,
+      0.003,
+      -19
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ6",
+    "position": [
+      0,
+      0.003,
+      -18
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ7",
+    "position": [
+      0,
+      0.003,
+      -17
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ8",
+    "position": [
+      0,
+      0.003,
+      -16
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ9",
+    "position": [
+      0,
+      0.003,
+      -15
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ10",
+    "position": [
+      0,
+      0.003,
+      -14
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ11",
+    "position": [
+      0,
+      0.003,
+      -13
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ12",
+    "position": [
+      0,
+      0.003,
+      -12
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ13",
+    "position": [
+      0,
+      0.003,
+      -11
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ14",
+    "position": [
+      0,
+      0.003,
+      -10
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ15",
+    "position": [
+      0,
+      0.003,
+      -9
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ16",
+    "position": [
+      0,
+      0.003,
+      -8
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ17",
+    "position": [
+      0,
+      0.003,
+      -7
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ18",
+    "position": [
+      0,
+      0.003,
+      -6
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ19",
+    "position": [
+      0,
+      0.003,
+      -5
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ20",
+    "position": [
+      0,
+      0.003,
+      -4
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ21",
+    "position": [
+      0,
+      0.003,
+      -3
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ22",
+    "position": [
+      0,
+      0.003,
+      -2
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ23",
+    "position": [
+      0,
+      0.003,
+      -1
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ24",
+    "position": [
+      0,
+      0.003,
+      0
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ25",
+    "position": [
+      0,
+      0.003,
+      1
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ26",
+    "position": [
+      0,
+      0.003,
+      2
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ27",
+    "position": [
+      0,
+      0.003,
+      3
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ28",
+    "position": [
+      0,
+      0.003,
+      4
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ29",
+    "position": [
+      0,
+      0.003,
+      5
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ30",
+    "position": [
+      0,
+      0.003,
+      6
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ31",
+    "position": [
+      0,
+      0.003,
+      7
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ32",
+    "position": [
+      0,
+      0.003,
+      8
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ33",
+    "position": [
+      0,
+      0.003,
+      9
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ34",
+    "position": [
+      0,
+      0.003,
+      10
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ35",
+    "position": [
+      0,
+      0.003,
+      11
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ36",
+    "position": [
+      0,
+      0.003,
+      12
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ37",
+    "position": [
+      0,
+      0.003,
+      13
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ38",
+    "position": [
+      0,
+      0.003,
+      14
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ39",
+    "position": [
+      0,
+      0.003,
+      15
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ40",
+    "position": [
+      0,
+      0.003,
+      16
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ41",
+    "position": [
+      0,
+      0.003,
+      17
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ42",
+    "position": [
+      0,
+      0.003,
+      18
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ43",
+    "position": [
+      0,
+      0.003,
+      19
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ44",
+    "position": [
+      0,
+      0.003,
+      20
+    ],
+    "size": [
+      44,
+      0.005,
+      0.025
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ45",
+    "position": [
+      0,
+      0.003,
+      21
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ46",
+    "position": [
+      0,
+      0.003,
+      22
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ47",
+    "position": [
+      0,
+      0.003,
+      23
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "GridZ48",
+    "position": [
+      0,
+      0.003,
+      24
+    ],
+    "size": [
+      44,
+      0.005,
+      0.009
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "BoundaryWest",
+    "position": [
+      -22.4,
+      1.5,
+      0
+    ],
+    "size": [
+      0.8,
+      3,
+      49
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "BoundaryEast",
+    "position": [
+      22.4,
+      1.5,
+      0
+    ],
+    "size": [
+      0.8,
+      3,
+      49
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "BoundaryNorth",
+    "position": [
+      0,
+      1.5,
+      -24.4
+    ],
+    "size": [
+      44,
+      3,
+      0.8
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "BoundarySouth",
+    "position": [
+      0,
+      1.5,
+      24.4
+    ],
+    "size": [
+      44,
+      3,
+      0.8
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Deck",
+    "position": [
+      0,
+      1.2,
+      -16.5
+    ],
+    "size": [
+      28,
+      2.4,
+      3
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/MainBlock",
+    "position": [
+      0,
+      3.5,
+      -21
+    ],
+    "size": [
+      20,
+      7,
+      6
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/WestModule",
+    "position": [
+      -11.5,
+      2.6,
+      -21
+    ],
+    "size": [
+      5,
+      5.2,
+      6
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/EastModule",
+    "position": [
+      11.5,
+      2.6,
+      -21
+    ],
+    "size": [
+      5,
+      5.2,
+      6
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/UpperBlock",
+    "position": [
+      0,
+      7.6,
+      -21
+    ],
+    "size": [
+      12,
+      1.2,
+      5
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/WindowBand",
+    "position": [
+      0,
+      5.5,
+      -17.96
+    ],
+    "size": [
+      17,
+      1,
+      0.1
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/AirlockBack",
+    "position": [
+      0,
+      3.7,
+      -17.85
+    ],
+    "size": [
+      3.2,
+      2.6,
+      0.2
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/DoorJamb-1.95",
+    "position": [
+      -1.95,
+      3.8,
+      -17.55
+    ],
+    "size": [
+      0.65,
+      2.8,
+      0.65
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/DoorJamb1.95",
+    "position": [
+      1.95,
+      3.8,
+      -17.55
+    ],
+    "size": [
+      0.65,
+      2.8,
+      0.65
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/DoorHeader",
+    "position": [
+      0,
+      5.25,
+      -17.55
+    ],
+    "size": [
+      4.5,
+      0.5,
+      0.65
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Ramp-5",
+    "position": [
+      -5,
+      1.123373897182308,
+      -11.022987830845308
+    ],
+    "size": [
+      3,
+      0.16,
+      8.35224520712844
+    ],
+    "rotation": [
+      0.2914567944778671,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/RampRail-5-1.65",
+    "position": [
+      -6.65,
+      2.15,
+      -11
+    ],
+    "size": [
+      0.1,
+      0.12,
+      8.35224520712844
+    ],
+    "rotation": [
+      0.2914567944778671,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post-5-1.65-7",
+    "position": [
+      -6.65,
+      0.45,
+      -7
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post-5-1.65-11",
+    "position": [
+      -6.65,
+      1.65,
+      -11
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post-5-1.65-15",
+    "position": [
+      -6.65,
+      2.85,
+      -15
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/RampRail-51.65",
+    "position": [
+      -3.35,
+      2.15,
+      -11
+    ],
+    "size": [
+      0.1,
+      0.12,
+      8.35224520712844
+    ],
+    "rotation": [
+      0.2914567944778671,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post-51.65-7",
+    "position": [
+      -3.35,
+      0.45,
+      -7
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post-51.65-11",
+    "position": [
+      -3.35,
+      1.65,
+      -11
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post-51.65-15",
+    "position": [
+      -3.35,
+      2.85,
+      -15
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Ramp5",
+    "position": [
+      5,
+      1.123373897182308,
+      -11.022987830845308
+    ],
+    "size": [
+      3,
+      0.16,
+      8.35224520712844
+    ],
+    "rotation": [
+      0.2914567944778671,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/RampRail5-1.65",
+    "position": [
+      3.35,
+      2.15,
+      -11
+    ],
+    "size": [
+      0.1,
+      0.12,
+      8.35224520712844
+    ],
+    "rotation": [
+      0.2914567944778671,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post5-1.65-7",
+    "position": [
+      3.35,
+      0.45,
+      -7
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post5-1.65-11",
+    "position": [
+      3.35,
+      1.65,
+      -11
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post5-1.65-15",
+    "position": [
+      3.35,
+      2.85,
+      -15
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/RampRail51.65",
+    "position": [
+      6.65,
+      2.15,
+      -11
+    ],
+    "size": [
+      0.1,
+      0.12,
+      8.35224520712844
+    ],
+    "rotation": [
+      0.2914567944778671,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post51.65-7",
+    "position": [
+      6.65,
+      0.45,
+      -7
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post51.65-11",
+    "position": [
+      6.65,
+      1.65,
+      -11
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/Post51.65-15",
+    "position": [
+      6.65,
+      2.85,
+      -15
+    ],
+    "size": [
+      0.12,
+      0.9,
+      0.12
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/DeckRail-10.5",
+    "position": [
+      -10.5,
+      3.4,
+      -14.94
+    ],
+    "size": [
+      7,
+      0.14,
+      0.14
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/DeckRail0",
+    "position": [
+      0,
+      3.4,
+      -14.94
+    ],
+    "size": [
+      6,
+      0.14,
+      0.14
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A01_Base/DeckRail10.5",
+    "position": [
+      10.5,
+      3.4,
+      -14.94
+    ],
+    "size": [
+      7,
+      0.14,
+      0.14
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/LandingPad",
+    "position": [
+      0,
+      -0.06,
+      0
+    ],
+    "size": [
+      12,
+      0.12,
+      14
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/ClosedBelly",
+    "position": [
+      0,
+      0.85,
+      0
+    ],
+    "size": [
+      3.3,
+      1.6,
+      7
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Hull",
+    "position": [
+      0,
+      2,
+      0
+    ],
+    "size": [
+      3.7,
+      1.5,
+      7.5
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Nose",
+    "position": [
+      0,
+      1.75,
+      4.4
+    ],
+    "size": [
+      2.2,
+      0.9,
+      2.2
+    ],
+    "rotation": [
+      0.15,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Cockpit",
+    "position": [
+      0,
+      2.9,
+      1
+    ],
+    "size": [
+      2.5,
+      0.65,
+      3
+    ],
+    "rotation": [
+      0.12,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Wing-1",
+    "position": [
+      -3.6,
+      1.65,
+      -0.2
+    ],
+    "size": [
+      4.1,
+      0.45,
+      4.5
+    ],
+    "rotation": [
+      0,
+      -0.24,
+      -0.04
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Fin-1",
+    "position": [
+      -2,
+      3.8,
+      -3
+    ],
+    "size": [
+      0.25,
+      3.2,
+      1.8
+    ],
+    "rotation": [
+      0.2,
+      0,
+      0.15
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Engine-1",
+    "position": [
+      -2,
+      2,
+      -3.4
+    ],
+    "size": [
+      1.2,
+      2.7,
+      1.2
+    ],
+    "rotation": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Wing1",
+    "position": [
+      3.6,
+      1.65,
+      -0.2
+    ],
+    "size": [
+      4.1,
+      0.45,
+      4.5
+    ],
+    "rotation": [
+      0,
+      0.24,
+      0.04
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Fin1",
+    "position": [
+      2,
+      3.8,
+      -3
+    ],
+    "size": [
+      0.25,
+      3.2,
+      1.8
+    ],
+    "rotation": [
+      0.2,
+      0,
+      -0.15
+    ],
+    "collision": true
+  },
+  {
+    "name": "A02_Ship/Engine1",
+    "position": [
+      2,
+      2,
+      -3.4
+    ],
+    "size": [
+      1.2,
+      2.7,
+      1.2
+    ],
+    "rotation": [
+      1.5707963267948966,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/Foot14",
+    "position": [
+      14,
+      0.4,
+      -10
+    ],
+    "size": [
+      3.2,
+      0.8,
+      4
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/Tower14",
+    "position": [
+      14,
+      4.2,
+      -10
+    ],
+    "size": [
+      2.7,
+      7,
+      2.7
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/Collar14",
+    "position": [
+      14,
+      6.8,
+      -10
+    ],
+    "size": [
+      3.0,
+      0.35,
+      3.0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/Foot18",
+    "position": [
+      18,
+      0.4,
+      -10
+    ],
+    "size": [
+      3.2,
+      0.8,
+      4
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/Tower18",
+    "position": [
+      18,
+      4.2,
+      -10
+    ],
+    "size": [
+      2.7,
+      7,
+      2.7
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/Collar18",
+    "position": [
+      18,
+      6.8,
+      -10
+    ],
+    "size": [
+      3.0,
+      0.35,
+      3.0
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/Header",
+    "position": [
+      16,
+      7.5,
+      -10
+    ],
+    "size": [
+      0.54,
+      4,
+      0.54
+    ],
+    "rotation": [
+      0,
+      0,
+      1.5707963267948966
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/HorizontalTank",
+    "position": [
+      16,
+      1.65,
+      -1
+    ],
+    "size": [
+      2.2,
+      6,
+      2.2
+    ],
+    "rotation": [
+      0,
+      0,
+      1.5707963267948966
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/TankSupport",
+    "position": [
+      16,
+      0.35,
+      -1
+    ],
+    "size": [
+      7,
+      0.7,
+      2.6
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/SolarPanel",
+    "position": [
+      18.5,
+      7,
+      -17
+    ],
+    "size": [
+      5,
+      0.15,
+      3.5
+    ],
+    "rotation": [
+      0.35,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A03_Oxygen/SolarMast",
+    "position": [
+      18.5,
+      3.5,
+      -17
+    ],
+    "size": [
+      0.3,
+      7,
+      0.3
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A04_Cover0",
+    "position": [
+      -3,
+      0.525,
+      3
+    ],
+    "size": [
+      3,
+      1.05,
+      0.9
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A04_Cover1",
+    "position": [
+      4,
+      0.525,
+      7
+    ],
+    "size": [
+      0.9,
+      1.05,
+      3
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A04_Cover2",
+    "position": [
+      -4,
+      0.45,
+      10
+    ],
+    "size": [
+      3,
+      0.9,
+      0.9
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A04_Cover3",
+    "position": [
+      9,
+      0.6,
+      -4
+    ],
+    "size": [
+      1,
+      1.2,
+      3
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A05_Service0",
+    "position": [
+      -10,
+      0.9,
+      16
+    ],
+    "size": [
+      4,
+      1.8,
+      2.4
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A05_Service1",
+    "position": [
+      -13.3,
+      0.55,
+      16
+    ],
+    "size": [
+      2,
+      1.1,
+      2
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "A05_Service2",
+    "position": [
+      11,
+      1.25,
+      16
+    ],
+    "size": [
+      5,
+      2.5,
+      3
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": true
+  },
+  {
+    "name": "Distance10",
+    "position": [
+      0,
+      0.015,
+      8
+    ],
+    "size": [
+      4,
+      0.02,
+      0.08
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "Distance20",
+    "position": [
+      0,
+      0.015,
+      -2
+    ],
+    "size": [
+      4,
+      0.02,
+      0.08
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "Distance30",
+    "position": [
+      0,
+      0.015,
+      -12
+    ],
+    "size": [
+      4,
+      0.02,
+      0.08
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  },
+  {
+    "name": "FiringLine",
+    "position": [
+      0,
+      0.02,
+      18
+    ],
+    "size": [
+      5,
+      0.03,
+      0.15
+    ],
+    "rotation": [
+      0,
+      0,
+      0
+    ],
+    "collision": false
+  }
+]

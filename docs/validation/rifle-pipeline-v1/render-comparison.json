@@ -1,0 +1,48 @@
+{
+  "method": "same camera and geometry; gun ROI excludes HUD and flat backdrop",
+  "comparisons": {
+    "baked_normal": {
+      "mean_absolute_rgb_change": 0.05822498757099598,
+      "fraction_over_2_percent": 0.5256338792051464
+    },
+    "material_response": {
+      "mean_absolute_rgb_change": 0.0810529988092379,
+      "fraction_over_2_percent": 0.47635476143845007
+    },
+    "warm_rig": {
+      "mean_absolute_rgb_change": 0.19498487595268107,
+      "fraction_over_2_percent": 0.9588562303207436
+    },
+    "cool_rig": {
+      "mean_absolute_rgb_change": 0.1597199242473252,
+      "fraction_over_2_percent": 0.7885412115642466
+    }
+  },
+  "mean_linear_basecolor": {
+    "1": [
+      0.6309554157907057,
+      0.600919242138519,
+      0.5395943483053074
+    ],
+    "2": [
+      0.8002631188411581,
+      0.11222215462108558,
+      0.017446509350483204
+    ],
+    "3": [
+      0.11730917827959066,
+      0.1563260852937926,
+      0.20527036421128514
+    ],
+    "4": [
+      0.013952005092420863,
+      0.018860206314042758,
+      0.025032769980047866
+    ],
+    "5": [
+      0.017140323588485627,
+      0.5450113697185685,
+      0.7164633917169344
+    ]
+  }
+}
