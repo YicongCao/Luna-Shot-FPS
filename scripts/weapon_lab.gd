@@ -1,6 +1,6 @@
 extends Node3D
-const OUT := "res://docs/validation/rifle-pipeline-v2/"
-const MODES := ["FINAL PBR", "BAKED NORMAL OFF", "UNIFORM MATERIAL RESPONSE", "CLAY"]
+var OUT: String = "res://" + OS.get_environment("LUNA_QA_OUTPUT") + "/" if OS.has_environment("LUNA_QA_OUTPUT") else "res://docs/validation/rifle-pipeline-v2/"
+const MODES := ["FINAL PBR", "BAKED NORMAL OFF", "UNIFORM MATERIAL RESPONSE", "CLAY", "BASE COLOR", "METALLIC", "ROUGHNESS", "AO", "BAKED NORMAL ONLY"]
 const LIGHTS := ["NEUTRAL STUDIO", "WARM GRAZING", "COOL REVERSE"]
 var gun: Node3D
 var camera: Camera3D
@@ -40,7 +40,8 @@ func _ready() -> void:
 	layer.add_child(label)
 	var footer := Label.new()
 	footer.position = Vector2(30,810)
-	footer.text = "DRAG  Orbit     WHEEL  Zoom     1–4  Surface modes     L  Lighting     B  Energy on/off     F3  Training range\nLC01  /  19,658 triangles  /  17 parts  /  2K textures  /  actual Godot render"
+	footer.text = "DRAG  Orbit     WHEEL  Zoom     1–9  Surface modes     L  Lighting     B  Energy on/off     F3  Training range\nLS01  /  LAYERED METAL  /  ML07  /  actual Godot render"
+	if not gun.ls01:footer.text=footer.text.replace("1–9", "1–4").replace("LS01  /  LAYERED METAL  /  ML07", "LC01  /  ML06 BASELINE")
 	footer.add_theme_font_size_override("font_size",16)
 	layer.add_child(footer)
 	set_rig(0)
@@ -48,7 +49,7 @@ func _ready() -> void:
 	update_label()
 	if qa: run_qa.call_deferred()
 func update_label() -> void:
-	label.text = "LC–01  /  MATERIAL STUDIO\n%s   ·   %s" % [MODES[mode],LIGHTS[rig]] + ("   ·   ENERGY OFF" if not gun.energy_enabled else "")
+	label.text = ("LS01  /  MATERIAL STUDIO\n%s   ·   %s" if gun.ls01 else "LC01  /  ML06 BASELINE\n%s   ·   %s") % [MODES[mode],LIGHTS[rig]] + ("   ·   ENERGY OFF" if not gun.energy_enabled else "")
 func update_camera() -> void:
 	camera.position = center + Vector3(cos(pitch)*sin(yaw),sin(pitch),cos(pitch)*cos(yaw))*distance
 	camera.look_at(center)
@@ -71,7 +72,7 @@ func _unhandled_input(event: InputEvent) -> void:
 		yaw -= event.relative.x*.008
 		pitch = clampf(pitch+event.relative.y*.008,-1.3,1.3)
 	if event is InputEventKey and event.pressed:
-		if event.physical_keycode >= KEY_1 and event.physical_keycode <= KEY_4:
+		if event.physical_keycode >= KEY_1 and event.physical_keycode <= (KEY_9 if gun.ls01 else KEY_4):
 			mode = event.physical_keycode-KEY_1
 			gun.set_surface_mode(mode)
 		if event.physical_keycode == KEY_L: set_rig((rig+1)%3)

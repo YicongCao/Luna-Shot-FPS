@@ -1,0 +1,650 @@
+[
+  {
+    "path": "/Users/cong/Documents/Projects/Luna-Shot-FPS/assets/weapons/lc01/lc01.glb",
+    "sha256": "5d43cd1f63ba22c7393d8e90896e7884dc92e0779dc8c2cf77fb84cf0881eb3c",
+    "meshes": [
+      {
+        "index": 0,
+        "name": "T00_CoreGrip_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 14403,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "42bd8761327536719100a1dbdbd9ffe66c0291e776a64cef704283cf63d7e9d7"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 3265,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "e41fb9cf922b0deaa16738d1c92abff4f74309e99b75d9cf0d92b101354446c9"
+              },
+              "NORMAL": {
+                "count": 3265,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "8a1982730907f75f054d315c6cf32d62de5d1218bbce0f9f54adfb9b41e64412"
+              },
+              "TEXCOORD_0": {
+                "count": 3265,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "b4a4878e51a5111841734165c67836ed8a2f354ca02385a8a0002c666d1f46b9"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "name": "T01_FrontShroud_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 6699,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "614e66bf418e48331b2d0f5ad02bae135056522e11cda7a5f517bab24aa9de26"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 1962,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "182e22bf6e0b7e98356d7a771c09ab3e30013fbfc034b90e7905616f2f598f2d"
+              },
+              "NORMAL": {
+                "count": 1962,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "6fcc76fac7ebccb463a65b7de1910c009cf7440193ca8ebeb8d202bb0c809bc4"
+              },
+              "TEXCOORD_0": {
+                "count": 1962,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "727bcddef79fb44df5df93102a9b4deb41ee3c6872d47cecd83226f94ee607d0"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "name": "T02_CoilAssembly_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 5673,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "fb9def64e9076c743c9a8a2fb1744d6925dd996b86411a020f189d4869be4b2d"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 1506,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "aab3cae72cbc0a3beea9364b27d1a2d09377314a31b856eb453dc3622fd89de4"
+              },
+              "NORMAL": {
+                "count": 1506,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "35db3199b27deec2acf09f0d9e5995dffcf873b8d65ee936a9c73c1688a045df"
+              },
+              "TEXCOORD_0": {
+                "count": 1506,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "f52a6f3f43c5dcbc531962e03c6c5ab8e1ff32c3f86e2ec515a7430d1ac05db5"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "name": "T03_ReceiverShell_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 4176,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "bdf846cb4fdf6d822f8d59c8edfb4171e91e4694a1bd0f9453f1d6fb1cb6a98e"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 1348,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "df74240ad240dcc4b509dbbfca7ee6ed3794a881e964c82d6079e29b87d775cf"
+              },
+              "NORMAL": {
+                "count": 1348,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "0f211963cdc4a7932a62389d6a43f824650dc3c60fd7f28eaea37551ac28d544"
+              },
+              "TEXCOORD_0": {
+                "count": 1348,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "b6f629db6108bde11c60b85deb55ca89df5b79ae61f427413fd7e996ce6d0c16"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "name": "T04_EnergyCell_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 3306,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "b633f3de41c026caea933a33d45c44f1d11f4b0a24026383fa842217da13e209"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 1021,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "892a79b1027e28bc7f50017048652219bff1b7ad2e2c052f53a737e0ddcc0ecd"
+              },
+              "NORMAL": {
+                "count": 1021,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "582aad0b7d70658a42f2bdbf9b98e9d593baa395e9df53339c236c5be02f9fbf"
+              },
+              "TEXCOORD_0": {
+                "count": 1021,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "255d70b432607d7af2cc76881efc444baf02922b9745b06816bc146f374fd86f"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "name": "T05_Optic_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 5322,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "0dd20df787565213b75ac4c90ea7bab7b0f9082db082309afa6e8ff21fc97e09"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 1517,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "cb7cbb6c4c43515148d0706e9a60cda4d53339479103386d58a294599da6f746"
+              },
+              "NORMAL": {
+                "count": 1517,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "83234522e5c0574c22679c45b61ccb800526d38245b20241b13b931afd790ffe"
+              },
+              "TEXCOORD_0": {
+                "count": 1517,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "f0dc3376bdf1adc0d5e061708ddf37d1cc0f0d7ff52092a48f537dbc7ffcc06e"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "name": "T06_Muzzle_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 3375,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "06c47c011c337f786aa09742ac560d2ea3872b453056d00eef96fcac40772a98"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 1033,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "783949a1c606ea3e933bc0bffa7aa1c90de5fa45ee11d89bcc6825c5fda77b36"
+              },
+              "NORMAL": {
+                "count": 1033,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "ebe068d40c855b5de34166750ed5cb63c8602d53311d553c9364fa39ace105c2"
+              },
+              "TEXCOORD_0": {
+                "count": 1033,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "65535a73e09f0abe7fd29b36174b46b331ef33bdc27edb94ba588a44721ac841"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "name": "T07_TopRail_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 2235,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "0603a41d0c8b3304b4b923582076b200712c0997fd3235116652bb1f3348c15f"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 600,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "a930aa662567d0c6ee545d562312ea32840accdc8e3a787fcd79739ccbb07a65"
+              },
+              "NORMAL": {
+                "count": 600,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "612ba83985880ad7cd1a84e67e5855aada1170061030a88073c6ad44a0dfdb75"
+              },
+              "TEXCOORD_0": {
+                "count": 600,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "580af1de7621ead66f1146c68292ecd719463b8d8c667466d01d9d91bc1afe98"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "name": "T08_StockShell_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 3468,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "307f4e3b623d15b545b632961653fbb79e000f4d05d6a497764b654364d97471"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 900,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "1d6b4efc3e13cda35045dbca8dd1a6a70a20145e8b2ad19e21ca1dfce2dde122"
+              },
+              "NORMAL": {
+                "count": 900,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "127d870064fd33d14245f3c9e19fe0b1d33d258c91d4c55bf042c2d0aeb2ca20"
+              },
+              "TEXCOORD_0": {
+                "count": 900,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "361d66b7a7c101cc1840aff454375d8ff7bfc6718fd387ad7494206ff672f556"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "name": "T09_StockBrace_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1722,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "92ad56701c1c89b28a93c84f3a5901b56e161cf6bf16a3942b75541dc9134436"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 401,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "7ea9f2e2f9676c656e3515be0c313921fea95fa26fd3f94336221d2e02951c57"
+              },
+              "NORMAL": {
+                "count": 401,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "b26ea820788cc7c8879b8c086da5ecf61f6c78da23fd892feba566bf9961eed3"
+              },
+              "TEXCOORD_0": {
+                "count": 401,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "4df9f6c820886953a2f6df30551377ba0b1e18502536785c9059cb60e8746c20"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "name": "T10_ButtPad_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1296,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "eb7b286547490758bdca85ebfec21af1a5ad589c3a1be30030810412fa5e03bf"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 286,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "d42651a358aafc07c58b899c022f53d1e72b0f7dea8dd44580729a3bc559b855"
+              },
+              "NORMAL": {
+                "count": 286,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "cf09fe9ac3fcf0ad97338ce59a03f308b3a5d0b818acc531098b447f75bfe7a0"
+              },
+              "TEXCOORD_0": {
+                "count": 286,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "c13c994e22f33986c606ec840a94c5582ce08b1bc99dab5de13ea557975a8204"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "name": "T11_CellSide_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1179,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "e014c7876141a90f350d94aa5f4993289368f0f2a1ac2ecd7fb6b222b1828732"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 393,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "22eb2c310b28a825d12e42338d0990e33966a24347d8d8c983555491c1de7285"
+              },
+              "NORMAL": {
+                "count": 393,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "08d036eaadc253841ad1039b91d5c3c2e0dcf8b1424d050062ec865b9d9f0d79"
+              },
+              "TEXCOORD_0": {
+                "count": 393,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "903384e602e048964d318acd0480ca3601b34d0d8825a75be52fb4c8a5f8a903"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "name": "T12_Foregrip_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1119,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "178df6289df337ccd47982be49eed8951ded6f5e2eed6908a0aa1d3309a8d80a"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 329,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "9fa1bdc00371e80ccf93d14f4723047d3af60c69b4cc1b1a3213559c9e24f055"
+              },
+              "NORMAL": {
+                "count": 329,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "ef153d30ae0e82a34fdb96acde34d4a32e24911a87aab3a23afeed10acf8d94c"
+              },
+              "TEXCOORD_0": {
+                "count": 329,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "a15bf2cbad89eeb08c7dabe4d44806430b0c5d980e5c59aea589763814700f53"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 13,
+        "name": "T13_CheekRest_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1263,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "71a1ad0cb47c0f2d6af2bad79dedf7477c5bfa2fe4c311f449223ab6f20b5b7e"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 320,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "1b5113506b05479d1d60bc785cf28f31e91853f47c13065255565f7bd868c9d2"
+              },
+              "NORMAL": {
+                "count": 320,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "759b795222f536fab06336f9980a9019fcc8198eac550dc9dd7a8655984c249d"
+              },
+              "TEXCOORD_0": {
+                "count": 320,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "dea5c35f7ea6b58d8b9f31b407da58efbf024fb9abcaeb56b55f9b8163355776"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 14,
+        "name": "T14_FrontBracket_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1326,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "875fe80b24e96e7cfb7f17acf90296d64f8d0d48501309f1ed662e053796ee0b"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 390,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "1ef2737a04d84cd0c94b1556312940e599a731efa5ab3931497b71bd11787ae6"
+              },
+              "NORMAL": {
+                "count": 390,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "ec5c71c603e55bc9ba450548f46fd1e566377347ff603d3cca52859eedabb37e"
+              },
+              "TEXCOORD_0": {
+                "count": 390,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "e6b6b366ebf7e8106a776cb33bdb74a0aa74a0e64165d3d8aaf3624b3727d14e"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 15,
+        "name": "T15_RailInset_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1335,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "3207953d79bcf4a23cf28c32c7429a07d59a0f4cd37e36d26b56c9f283829e7e"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 307,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "eb46e70ce355d66bd1a733ff7c99ce6b4b2072a383982d19eb483d15fe6e210e"
+              },
+              "NORMAL": {
+                "count": 307,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "4e5dd4ad7585a697758911ef2728fa79e18b3b90043577f8c8f28ed81cdea3ea"
+              },
+              "TEXCOORD_0": {
+                "count": 307,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "a9fcfaa2b37397f54d408f1dbe8211e58957de5715b1210e51d1ed5be9e93851"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "name": "T16_FrontLatch_high.001",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 1077,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "132ea8c1bd8bb99790934b912583fe9f7387fb0acd3bdc658b09ecb805a37e82"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 283,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "fc43f8f648e48a7e35f10b9a22533d096785c3db21e616fea986a00ab2a4cfa2"
+              },
+              "NORMAL": {
+                "count": 283,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "16d024c726cdb6b29e3f9ab6abb27788c806d6fb02190331313b7a323f60216e"
+              },
+              "TEXCOORD_0": {
+                "count": 283,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "56837f126d752f139f1f94bf8ef4af2ba292d3716d105e12649c0b3d68c85461"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "path": "/Users/cong/Documents/Projects/Luna-Shot-FPS/assets/environment/A/A.glb",
+    "sha256": "b52119e180569d3b8b335e1d0c7fbdec3a55bb433516f158db60726b8d8d8943",
+    "meshes": [
+      {
+        "index": 0,
+        "name": "Cube.150",
+        "primitives": [
+          {
+            "mode": 4,
+            "indices": {
+              "count": 15540,
+              "type": "SCALAR",
+              "component_type": 5123,
+              "sha256": "4feb5e2dbfcdb4941458382d6452f1e07ee3ea0d5dda07ac9588c2c457a3ab4c"
+            },
+            "attributes": {
+              "POSITION": {
+                "count": 10142,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "e5e73884f733378ef1096cc89845de9166b7ffdcb13fcd24aa422ef60011e2be"
+              },
+              "NORMAL": {
+                "count": 10142,
+                "type": "VEC3",
+                "component_type": 5126,
+                "sha256": "88e93324e95a327ff7665c1437aa55bb3b66846bd0723ea83158090b2b16291b"
+              },
+              "TEXCOORD_0": {
+                "count": 10142,
+                "type": "VEC2",
+                "component_type": 5126,
+                "sha256": "635e62c3e51fd89a3c9f32590bbe34914056abce6af76806246e5ecc13e8d502"
+              },
+              "TANGENT": {
+                "count": 10142,
+                "type": "VEC4",
+                "component_type": 5126,
+                "sha256": "ed3e1c4de74ba9fc394d623004cebbd3c5174fe4faa162f2b8e2c8e83d7c4aaf"
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

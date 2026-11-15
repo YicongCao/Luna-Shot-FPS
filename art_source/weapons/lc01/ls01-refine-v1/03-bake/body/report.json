@@ -1,0 +1,90 @@
+{
+  "contract": {
+    "source_sha256": "255a193e6e10707b66f664408a247f6fdcc1d3ac80cd17f6d37ac1badb977589",
+    "resolution": 4096,
+    "normal": "OpenGL +Y",
+    "explicit_cage": true,
+    "margin_px": 32
+  },
+  "group": "body",
+  "resolution": 4096,
+  "device": "Apple M5 Metal GPU",
+  "actual_cycles_bake": true,
+  "selected_to_active": true,
+  "explicit_cage": true,
+  "exploded_pairs": 57,
+  "source_batch": "joined high; per-part object-coordinate anchors preserved",
+  "margin_px": 32,
+  "maps": [
+    {
+      "name": "NormalGL",
+      "seconds": 6.935379981994629,
+      "bake_type": "NORMAL"
+    },
+    {
+      "name": "AO",
+      "seconds": 7.328910827636719,
+      "bake_type": "AO"
+    },
+    {
+      "name": "BaseColor",
+      "seconds": 5.7171430587768555,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Roughness",
+      "seconds": 5.520309925079346,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Metallic",
+      "seconds": 5.625097036361694,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Curvature",
+      "seconds": 5.510118246078491,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Position",
+      "seconds": 6.438822031021118,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "WorldNormal",
+      "seconds": 6.011938095092773,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "MaterialID",
+      "seconds": 5.911034107208252,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "WearMask",
+      "seconds": 6.7753541469573975,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "OilMask",
+      "seconds": 12.082488775253296,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Curvature",
+      "seconds": 7.0502541065216064,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Position",
+      "seconds": 5.318895101547241,
+      "bake_type": "EMIT"
+    }
+  ],
+  "curvature_encoding": "Cycles high-mesh Pointiness, .5 flat; not a signed metric curvature",
+  "edge_mask": "controlled edge-distance wear proxy, distinct from Curvature",
+  "ao_scope": "per-part local AO; exploded to avoid unrelated parts",
+  "position_encoding": "Blender source xyz + (.5,.5,.5)",
+  "completed": true
+}

@@ -1,0 +1,8 @@
+{
+  "oil": "Use case: stylized-concept. Asset type: grayscale mask source for procedural PBR game material, NOT a rendered object. Create a square flat orthographic texture sheet of irregular machine oil smears, wiped lubricant films and partial fingerprints: white oily areas on black clean background. Several broad softly broken wiped patches with subtle directional streaks, substantial clean gaps, varied scales. No lighting, shadows, highlights, perspective, text, frames or panels. Seamless edges if possible. This is an artistic mask, not a measured height map.",
+  "wear": "Use case: stylized-concept. Asset type: square grayscale wear-mask source for game PBR materials, NOT a rendered object. Flat orthographic white marks on black clean background. Sparse naturally irregular chipped paint flecks, tiny pitting clusters and short thin directional scuffs, with a few longer tapered scrape groups. Leave 75 percent black clean space. Broad variation, avoid uniform speckles, avoid repeated parallel hatch patterns. No lighting, shadows, highlights, perspective, text, frame, actual weapon, or panels. Edge continuity suitable for repeating. Artistic coverage mask only.",
+  "tool": "built-in image_gen",
+  "calls": 2,
+  "tripo_calls": 0,
+  "cost": "Tool does not return monetary charges; do not estimate as actual."
+}

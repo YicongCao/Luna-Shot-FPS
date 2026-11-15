@@ -1,0 +1,276 @@
+{
+  "source": "Tripo PBR -> triangle-correspondence transfer into fixed low UV",
+  "normal_source": "05-bake/NormalGL.png, real high-to-low Cycles projection",
+  "parts": [
+    {
+      "name": "B1_P00_low",
+      "triangles": 1204,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 198109
+    },
+    {
+      "name": "B1_P02_low",
+      "triangles": 574,
+      "uv_max_change": 0,
+      "rasterized_pixels": 96029
+    },
+    {
+      "name": "B1_P01_low",
+      "triangles": 821,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 169783
+    },
+    {
+      "name": "B1_P05_low",
+      "triangles": 458,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 93576
+    },
+    {
+      "name": "B1_P11_low",
+      "triangles": 256,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 45268
+    },
+    {
+      "name": "B1_P17_low",
+      "triangles": 255,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4414
+    },
+    {
+      "name": "B1_P19_low",
+      "triangles": 225,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4592
+    },
+    {
+      "name": "B1_P25_low",
+      "triangles": 288,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4524
+    },
+    {
+      "name": "B1_P26_low",
+      "triangles": 267,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4396
+    },
+    {
+      "name": "B1_P27_low",
+      "triangles": 205,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4401
+    },
+    {
+      "name": "B1_P37_low",
+      "triangles": 239,
+      "uv_max_change": 0,
+      "rasterized_pixels": 2881
+    },
+    {
+      "name": "B1_P04_low",
+      "triangles": 408,
+      "uv_max_change": 0.8342418670654297,
+      "rasterized_pixels": 94038
+    },
+    {
+      "name": "B1_P07_low",
+      "triangles": 774,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 124536
+    },
+    {
+      "name": "B1_P10_low",
+      "triangles": 234,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 44702
+    },
+    {
+      "name": "B1_P16_low",
+      "triangles": 253,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4462
+    },
+    {
+      "name": "B1_P20_low",
+      "triangles": 240,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4507
+    },
+    {
+      "name": "B1_P22_low",
+      "triangles": 273,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4642
+    },
+    {
+      "name": "B1_P24_low",
+      "triangles": 276,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4496
+    },
+    {
+      "name": "B1_P29_low",
+      "triangles": 210,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4463
+    },
+    {
+      "name": "B1_P33_low",
+      "triangles": 268,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 3998
+    },
+    {
+      "name": "B1_P34_low",
+      "triangles": 256,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4505
+    },
+    {
+      "name": "B1_P39_low",
+      "triangles": 293,
+      "uv_max_change": 0,
+      "rasterized_pixels": 2872
+    },
+    {
+      "name": "B1_P36_low",
+      "triangles": 261,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4068
+    },
+    {
+      "name": "B1_P13_low",
+      "triangles": 236,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4600
+    },
+    {
+      "name": "B1_P14_low",
+      "triangles": 256,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4540
+    },
+    {
+      "name": "B1_P15_low",
+      "triangles": 260,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4543
+    },
+    {
+      "name": "B1_P12_low",
+      "triangles": 256,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 43495
+    },
+    {
+      "name": "B1_P23_low",
+      "triangles": 223,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4429
+    },
+    {
+      "name": "B1_P32_low",
+      "triangles": 223,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4052
+    },
+    {
+      "name": "B1_P35_low",
+      "triangles": 226,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 3978
+    },
+    {
+      "name": "B1_P38_low",
+      "triangles": 240,
+      "uv_max_change": 0,
+      "rasterized_pixels": 2951
+    },
+    {
+      "name": "B1_P03_low",
+      "triangles": 448,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 180165
+    },
+    {
+      "name": "B1_P06_low",
+      "triangles": 698,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 156001
+    },
+    {
+      "name": "B1_P08_low",
+      "triangles": 196,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 46686
+    },
+    {
+      "name": "B1_P09_low",
+      "triangles": 296,
+      "uv_max_change": 0,
+      "rasterized_pixels": 133787
+    },
+    {
+      "name": "B1_P18_low",
+      "triangles": 190,
+      "uv_max_change": 0.9397240877151489,
+      "rasterized_pixels": 8471
+    },
+    {
+      "name": "B1_P21_low",
+      "triangles": 305,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4509
+    },
+    {
+      "name": "B1_P28_low",
+      "triangles": 281,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4490
+    },
+    {
+      "name": "B1_P30_low",
+      "triangles": 235,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 4452
+    },
+    {
+      "name": "B1_P31_low",
+      "triangles": 292,
+      "uv_max_change": 0,
+      "rasterized_pixels": 4386
+    },
+    {
+      "name": "B1_P40_low",
+      "triangles": 288,
+      "uv_max_change": 0,
+      "rasterized_pixels": 2844
+    }
+  ],
+  "tripo_uv_changed": true,
+  "unmatched_triangles": 0,
+  "uv_out_of_bounds_triangles": 0,
+  "strict_interior_overlap_pixels": 34,
+  "uv_coverage_fraction": 0.36897706985473633,
+  "final_triangles": 13685,
+  "texture_resolution": [
+    2048,
+    2048
+  ],
+  "material_slots": 1,
+  "semantic_corrections": "Retained Tripo PBR color/material variation; bounded roughness .22-.9 and albedo .012-.82; genuine high-to-low normal/AO.",
+  "material_statistics": {
+    "1": {
+      "pixels": 608254,
+      "mean_roughness": 0.5516434907913208,
+      "mean_metallic": 0.0
+    },
+    "3": {
+      "pixels": 939348,
+      "mean_roughness": 0.35701027512550354,
+      "mean_metallic": 0.8500000834465027
+    }
+  }
+}

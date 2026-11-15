@@ -1,0 +1,48 @@
+00:00.282  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/pipeline-v2/02-high/lc01-high.blend"
+00:00.857  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/pipeline-v2/04-low/lc01-low.blend"
+BlenderMCP addon registered
+Info: Saved as "lc01-high.blend"
+Info: Saved as "lc01-low.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+22:46:22 | INFO: Starting glTF 2.0 export
+22:46:22 | INFO: Extracting primitive: T00_CoreGrip_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T01_FrontShroud_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T02_CoilAssembly_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T03_ReceiverShell_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T04_EnergyCell_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T05_Optic_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T06_Muzzle_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T07_TopRail_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T08_StockShell_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T09_StockBrace_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T10_ButtPad_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T11_CellSide_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T12_Foregrip_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T13_CheekRest_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T14_FrontBracket_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T15_RailInset_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Extracting primitive: T16_FrontLatch_high.001
+22:46:22 | INFO: Primitives created: 1
+22:46:22 | INFO: Finished glTF 2.0 export in 0.0205380916595459 s
+
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

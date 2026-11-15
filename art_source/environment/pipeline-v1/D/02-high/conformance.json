@@ -1,0 +1,17 @@
+{
+  "asset": "D",
+  "changes": [
+    {
+      "part": "D_P00_high",
+      "action": "Exact 8 m rise/2.4 m ramp and 4 m landing, bevels and 36 high-poly shallow tread ribs"
+    },
+    {
+      "part": "D_P06_high",
+      "action": "Grounded dense generated landing support, top 2.25 m"
+    },
+    {
+      "part": "D_P07_high",
+      "action": "Grounded dense generated landing support, top 2.25 m"
+    }
+  ]
+}

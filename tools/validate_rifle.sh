@@ -2,8 +2,9 @@
 set -eu
 cd "${0:A:h:h}"
 GODOT="${GODOT_BIN:-/Applications/Godot.app/Contents/MacOS/Godot}"
-OUT="docs/validation/rifle-pipeline-v2"
+OUT="${LUNA_QA_OUTPUT:-docs/validation/environment-pipeline-v1/rifle}"
 mkdir -p "$OUT"
+export LUNA_QA_OUTPUT="$OUT"
 "$GODOT" --headless --path . --editor --import --quit > "$OUT/import.log" 2>&1
 if rg 'SCRIPT ERROR|Parse Error|ERROR:' "$OUT/import.log"; then exit 1; fi
 "$GODOT" --headless --path . --fixed-fps 60 -- --rifle-qa > "$OUT/headless.log" 2>&1

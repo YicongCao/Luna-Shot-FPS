@@ -1,0 +1,11 @@
+{
+  "task_id": "f7ac912d-85a0-4356-ba2c-8e221e6dd036",
+  "tool": "tripo_text_to_3d",
+  "model": "v3.1-20260211",
+  "geometry_quality": "detailed",
+  "texture": false,
+  "status": "success",
+  "credits_consumed": 30,
+  "download": "tripo_download timed out twice; resumed/verified the same model URL without generating another task",
+  "acceptance": "Reference only. Fin arrangement and ribbon proportions differ from approved concept; locally rebuilt regular geometry is the runtime asset."
+}

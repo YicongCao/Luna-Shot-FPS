@@ -1,0 +1,14 @@
+00:00.277  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v1/02-geometry/paired.blend"
+BlenderMCP addon registered
+BAKE_DEVICE [('Apple M5', 'CPU', False), ('Apple M5 (GPU - 10 cores)', 'METAL', True)]
+/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/bake.py:52: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('BakeTarget');mat.use_nodes=True;lo.data.materials.clear();lo.data.materials.append(mat)
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body Curvature 7.051027059555054
+BAKE_CACHED EdgeMask
+Info: Saved as "bake-pairs.blend"
+BAKE_COMPLETE
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

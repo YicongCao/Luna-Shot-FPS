@@ -1,0 +1,186 @@
+{
+  "asset": "C",
+  "stage": "high",
+  "source": "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/C/01-tripo-high/model.glb",
+  "source_bounds": [
+    [
+      -0.274996280670166,
+      -0.48952004313468933,
+      -0.2682349681854248
+    ],
+    [
+      0.2747962772846222,
+      0.48923176527023315,
+      0.26821011304855347
+    ]
+  ],
+  "target_bounds": [
+    [
+      -2.0,
+      -4.0,
+      0.0
+    ],
+    [
+      2.0,
+      4.0,
+      3.4099998474121094
+    ]
+  ],
+  "scale": [
+    7.275471210479736,
+    8.173675537109375,
+    6.356661796569824
+  ],
+  "parts": [
+    {
+      "name": "C_P00_high",
+      "raw_name": "tripo_part_0",
+      "triangles": 1117342,
+      "bounds": [
+        [
+          -2.0,
+          -3.974388360977173,
+          2.194701671600342
+        ],
+        [
+          1.999999761581421,
+          3.9684362411499023,
+          2.4954299926757812
+        ]
+      ]
+    },
+    {
+      "name": "C_P01_high",
+      "raw_name": "tripo_part_1",
+      "triangles": 276416,
+      "bounds": [
+        [
+          1.6159019470214844,
+          -3.735063076019287,
+          2.470752239227295
+        ],
+        [
+          1.9509305953979492,
+          3.999999523162842,
+          3.4099998474121094
+        ]
+      ]
+    },
+    {
+      "name": "C_P02_high",
+      "raw_name": "tripo_part_2",
+      "triangles": 272553,
+      "bounds": [
+        [
+          -1.954293131828308,
+          -4.0,
+          2.3827240467071533
+        ],
+        [
+          -1.6252455711364746,
+          3.7420687675476074,
+          3.289884090423584
+        ]
+      ]
+    },
+    {
+      "name": "C_P03_high",
+      "raw_name": "tripo_part_3",
+      "triangles": 61386,
+      "bounds": [
+        [
+          1.654550552368164,
+          -3.4658076763153076,
+          0.05627450719475746
+        ],
+        [
+          1.9255928993225098,
+          -3.1495440006256104,
+          2.3071255683898926
+        ]
+      ]
+    },
+    {
+      "name": "C_P04_high",
+      "raw_name": "tripo_part_4",
+      "triangles": 61105,
+      "bounds": [
+        [
+          -1.919605016708374,
+          3.1480441093444824,
+          0.0
+        ],
+        [
+          -1.6469733715057373,
+          3.472384452819824,
+          2.210937976837158
+        ]
+      ]
+    },
+    {
+      "name": "C_P05_high",
+      "raw_name": "tripo_part_5",
+      "triangles": 61056,
+      "bounds": [
+        [
+          1.572859287261963,
+          3.4686975479125977,
+          0.0565035417675972
+        ],
+        [
+          1.8460783958435059,
+          3.7862181663513184,
+          2.307058572769165
+        ]
+      ]
+    },
+    {
+      "name": "C_P06_high",
+      "raw_name": "tripo_part_6",
+      "triangles": 60332,
+      "bounds": [
+        [
+          -1.8294382095336914,
+          -3.7786178588867188,
+          0.0011196098057553172
+        ],
+        [
+          -1.561189889907837,
+          -3.4557337760925293,
+          2.212599515914917
+        ]
+      ]
+    }
+  ],
+  "triangles": 797172,
+  "conformance_changes": [
+    {
+      "part": "C_P00_high",
+      "action": "Rebuilt exact 2.4 m deck and shallow anti-slip ribs; 2.25 m underside"
+    },
+    {
+      "part": "C_P01_high",
+      "action": "Restored side guardrail bounds and open end ports"
+    },
+    {
+      "part": "C_P02_high",
+      "action": "Restored side guardrail bounds and open end ports"
+    },
+    {
+      "part": "C_P03_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    },
+    {
+      "part": "C_P04_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    },
+    {
+      "part": "C_P05_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    },
+    {
+      "part": "C_P06_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "source": "Tripo PBR -> triangle-correspondence transfer into fixed low UV",
+  "normal_source": "05-bake/NormalGL.png, real high-to-low Cycles projection",
+  "parts": [
+    {
+      "name": "A_P00_low",
+      "triangles": 2690,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 1032352
+    },
+    {
+      "name": "A_P04_low",
+      "triangles": 363,
+      "uv_max_change": 0,
+      "rasterized_pixels": 39768
+    },
+    {
+      "name": "A_P01_low",
+      "triangles": 1275,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 682986
+    },
+    {
+      "name": "A_P02_low",
+      "triangles": 881,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 330308
+    },
+    {
+      "name": "A_P03_low",
+      "triangles": 381,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 149285
+    },
+    {
+      "name": "A_P05_low",
+      "triangles": 379,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 39176
+    },
+    {
+      "name": "A_P06_low",
+      "triangles": 460,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 39095
+    },
+    {
+      "name": "A_P07_low",
+      "triangles": 404,
+      "uv_max_change": 0,
+      "rasterized_pixels": 39135
+    },
+    {
+      "name": "A_P08_low",
+      "triangles": 505,
+      "uv_max_change": 0,
+      "rasterized_pixels": 38314
+    },
+    {
+      "name": "A_P09_low",
+      "triangles": 445,
+      "uv_max_change": 0,
+      "rasterized_pixels": 39636
+    }
+  ],
+  "tripo_uv_changed": false,
+  "unmatched_triangles": 0,
+  "uv_out_of_bounds_triangles": 0,
+  "strict_interior_overlap_pixels": 5,
+  "uv_coverage_fraction": 0.579369068145752,
+  "final_triangles": 7783,
+  "texture_resolution": [
+    2048,
+    2048
+  ],
+  "material_slots": 1,
+  "semantic_corrections": "Retained Tripo PBR color/material variation; bounded roughness .22-.9 and albedo .012-.82; genuine high-to-low normal/AO.",
+  "material_statistics": {
+    "1": {
+      "pixels": 1011779,
+      "mean_roughness": 0.5799989104270935,
+      "mean_metallic": 0.0
+    },
+    "3": {
+      "pixels": 1418271,
+      "mean_roughness": 0.44577768445014954,
+      "mean_metallic": 0.6434453725814819
+    }
+  }
+}

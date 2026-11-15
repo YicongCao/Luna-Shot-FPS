@@ -1,0 +1,188 @@
+{
+  "asset": "B2",
+  "stage": "high",
+  "source": "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/B2/01-tripo-high/model.glb",
+  "source_bounds": [
+    [
+      -0.28966447710990906,
+      -0.27165037393569946,
+      -0.49017876386642456
+    ],
+    [
+      0.2895127236843109,
+      0.2715902328491211,
+      0.4902256727218628
+    ]
+  ],
+  "target_bounds": [
+    [
+      -1.899999976158142,
+      -1.899999976158142,
+      0.0
+    ],
+    [
+      1.899999976158142,
+      1.899999976158142,
+      6.0
+    ]
+  ],
+  "scale": [
+    6.561031818389893,
+    6.995058536529541,
+    6.119923114776611
+  ],
+  "parts": [
+    {
+      "name": "B2_P00_high",
+      "raw_name": "tripo_part_0",
+      "triangles": 213480
+    },
+    {
+      "name": "B2_P01_high",
+      "raw_name": "tripo_part_1",
+      "triangles": 290935
+    },
+    {
+      "name": "B2_P02_high",
+      "raw_name": "tripo_part_2",
+      "triangles": 145111
+    },
+    {
+      "name": "B2_P03_high",
+      "raw_name": "tripo_part_3",
+      "triangles": 177920
+    },
+    {
+      "name": "B2_P04_high",
+      "raw_name": "tripo_part_4",
+      "triangles": 99525
+    },
+    {
+      "name": "B2_P05_high",
+      "raw_name": "tripo_part_5",
+      "triangles": 89660
+    },
+    {
+      "name": "B2_P06_high",
+      "raw_name": "tripo_part_6",
+      "triangles": 50766
+    },
+    {
+      "name": "B2_P07_high",
+      "raw_name": "tripo_part_7",
+      "triangles": 118239
+    },
+    {
+      "name": "B2_P08_high",
+      "raw_name": "tripo_part_8",
+      "triangles": 100807
+    },
+    {
+      "name": "B2_P09_high",
+      "raw_name": "tripo_part_9",
+      "triangles": 58216
+    },
+    {
+      "name": "B2_P10_high",
+      "raw_name": "tripo_part_10",
+      "triangles": 48114
+    },
+    {
+      "name": "B2_P11_high",
+      "raw_name": "tripo_part_11",
+      "triangles": 43084
+    },
+    {
+      "name": "B2_P12_high",
+      "raw_name": "tripo_part_12",
+      "triangles": 30494
+    },
+    {
+      "name": "B2_P13_high",
+      "raw_name": "tripo_part_13",
+      "triangles": 28866
+    },
+    {
+      "name": "B2_P14_high",
+      "raw_name": "tripo_part_14",
+      "triangles": 39357
+    },
+    {
+      "name": "B2_P15_high",
+      "raw_name": "tripo_part_15",
+      "triangles": 28483
+    },
+    {
+      "name": "B2_P16_high",
+      "raw_name": "tripo_part_16",
+      "triangles": 27936
+    },
+    {
+      "name": "B2_P17_high",
+      "raw_name": "tripo_part_17",
+      "triangles": 80955
+    },
+    {
+      "name": "B2_P18_high",
+      "raw_name": "tripo_part_18",
+      "triangles": 43891
+    },
+    {
+      "name": "B2_P19_high",
+      "raw_name": "tripo_part_19",
+      "triangles": 42082
+    },
+    {
+      "name": "B2_P20_high",
+      "raw_name": "tripo_part_20",
+      "triangles": 39999
+    },
+    {
+      "name": "B2_P21_high",
+      "raw_name": "tripo_part_21",
+      "triangles": 37005
+    },
+    {
+      "name": "B2_P22_high",
+      "raw_name": "tripo_part_22",
+      "triangles": 26285
+    },
+    {
+      "name": "B2_P23_high",
+      "raw_name": "tripo_part_23",
+      "triangles": 22144
+    },
+    {
+      "name": "B2_P24_high",
+      "raw_name": "tripo_part_24",
+      "triangles": 15520
+    },
+    {
+      "name": "B2_P25_high",
+      "raw_name": "tripo_part_25",
+      "triangles": 14739
+    },
+    {
+      "name": "B2_P26_high",
+      "raw_name": "tripo_part_26",
+      "triangles": 14440
+    },
+    {
+      "name": "B2_P27_high",
+      "raw_name": "tripo_part_27",
+      "triangles": 14205
+    },
+    {
+      "name": "B2_P28_high",
+      "raw_name": "tripo_part_28",
+      "triangles": 13118
+    },
+    {
+      "name": "B2_P29_high",
+      "raw_name": "tripo_part_29",
+      "triangles": 2918
+    }
+  ],
+  "triangles": 1967626,
+  "authored_details": "Coolant risers with bevelled collars and frame bolts"
+}

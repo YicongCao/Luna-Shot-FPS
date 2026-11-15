@@ -1,0 +1,61 @@
+{
+  "asset": "C",
+  "selected_to_active": true,
+  "resolution": 2048,
+  "samples": 16,
+  "device": "CPU",
+  "margin_px": 16,
+  "extrusion_m": 0.025,
+  "max_ray_distance_m": 0.075,
+  "pairs": [
+    {
+      "low": "C_P00_low",
+      "high": "C_P00_high",
+      "seconds": 2.6545920372009277,
+      "low_triangles": 404,
+      "high_triangles": 4324
+    },
+    {
+      "low": "C_P02_low",
+      "high": "C_P02_high",
+      "seconds": 1.147763967514038,
+      "low_triangles": 4844,
+      "high_triangles": 272553
+    },
+    {
+      "low": "C_P01_low",
+      "high": "C_P01_high",
+      "seconds": 1.1779708862304688,
+      "low_triangles": 4733,
+      "high_triangles": 276416
+    },
+    {
+      "low": "C_P03_low",
+      "high": "C_P03_high",
+      "seconds": 0.7529981136322021,
+      "low_triangles": 1038,
+      "high_triangles": 61386
+    },
+    {
+      "low": "C_P04_low",
+      "high": "C_P04_high",
+      "seconds": 0.7612311840057373,
+      "low_triangles": 1058,
+      "high_triangles": 61105
+    },
+    {
+      "low": "C_P05_low",
+      "high": "C_P05_high",
+      "seconds": 0.7609760761260986,
+      "low_triangles": 1082,
+      "high_triangles": 61056
+    },
+    {
+      "low": "C_P06_low",
+      "high": "C_P06_high",
+      "seconds": 0.767096757888794,
+      "low_triangles": 914,
+      "high_triangles": 60332
+    }
+  ]
+}

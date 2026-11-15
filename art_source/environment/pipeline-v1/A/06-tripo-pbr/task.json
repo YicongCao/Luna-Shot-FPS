@@ -1,0 +1,31 @@
+{
+  "task_id": "0bbff151-9e24-4a02-801f-93e61e3e1dbb",
+  "type": "texture_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "bake": true,
+    "delight": true,
+    "texture": true,
+    "model_version": "v3.5-20260815",
+    "texture_prompt": {
+      "text": "Lunar industrial power distribution unit, coherent hard science fiction facility. Light grey coated metal inspection panels, dark graphite metal plinth and frame, dark rubber seals, small orange safety labels. Subtle machined metal detail, restrained edge wear. Neutral base color without baked lighting, no strong painted highlights, no heavy dirt, no camouflage, no new geometry. Clearly distinct rough painted metal, exposed brushed metal fittings, rubber. Preserve existing parts and UV layout."
+    },
+    "texture_quality": "detailed",
+    "original_model_id": "e60aace7-a2a3-4570-b04d-5d806e67c9d2",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url"
+  ],
+  "normalize_scale": 0.2631578897835476,
+  "credits_consumed": 20,
+  "created_at": "2026-11-15T08:44:33.331931Z",
+  "completed_at": "2026-11-15T08:45:46.442317Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "preview.png"
+  ]
+}

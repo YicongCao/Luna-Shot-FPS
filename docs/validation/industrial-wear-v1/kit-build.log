@@ -1,0 +1,87 @@
+BlenderMCP addon registered
+22:45:12 | INFO: Data are loaded, start creating Blender stuff
+22:45:12 | INFO: Blender create Mesh node 0
+22:45:12 | INFO: Blender create Mesh node 1
+22:45:12 | INFO: Blender create Mesh node 2
+22:45:12 | INFO: Blender create Mesh node 3
+22:45:12 | INFO: Blender create Mesh node 4
+22:45:12 | INFO: Blender create Mesh node 5
+22:45:12 | INFO: Blender create Mesh node 6
+22:45:12 | INFO: Blender create Mesh node 7
+22:45:12 | INFO: Blender create Mesh node 8
+22:45:12 | INFO: Blender create Mesh node 9
+22:45:12 | INFO: Blender create Mesh node 10
+22:45:12 | INFO: Blender create Mesh node 11
+22:45:12 | INFO: Blender create Mesh node 12
+22:45:12 | INFO: Blender create Mesh node 13
+22:45:12 | INFO: Blender create Mesh node 14
+22:45:12 | INFO: Blender create Mesh node 15
+22:45:12 | INFO: Blender create Mesh node 16
+22:45:12 | INFO: Blender create Mesh node 17
+22:45:12 | INFO: Blender create Mesh node 18
+22:45:12 | INFO: Blender create Mesh node 19
+22:45:12 | INFO: Blender create Mesh node 20
+22:45:12 | INFO: Blender create Mesh node 21
+22:45:12 | INFO: Blender create Mesh node 22
+22:45:12 | INFO: Blender create Mesh node 23
+22:45:12 | INFO: Blender create Mesh node 24
+22:45:12 | INFO: Blender create Mesh node 25
+22:45:12 | INFO: Blender create Mesh node 26
+22:45:12 | INFO: Blender create Mesh node 27
+22:45:12 | INFO: Blender create Mesh node 28
+22:45:12 | INFO: Blender create Mesh node 29
+22:45:12 | INFO: Blender create Mesh node 30
+22:45:12 | INFO: Blender create Mesh node 31
+22:45:12 | INFO: Blender create Mesh node 32
+22:45:12 | INFO: Blender create Mesh node 33
+22:45:12 | INFO: Blender create Mesh node 34
+22:45:12 | INFO: Blender create Mesh node 35
+22:45:12 | INFO: Blender create Mesh node 36
+22:45:12 | INFO: Blender create Mesh node 37
+22:45:12 | INFO: Blender create Mesh node 38
+22:45:12 | INFO: Blender create Mesh node 39
+22:45:12 | INFO: Blender create Mesh node 40
+22:45:12 | INFO: Blender create Mesh node 41
+22:45:12 | INFO: Blender create Mesh node 42
+22:45:12 | INFO: Blender create Mesh node 43
+22:45:12 | INFO: Blender create Mesh node 44
+22:45:12 | INFO: Blender create Mesh node 45
+22:45:12 | INFO: Blender create Mesh node 46
+22:45:12 | INFO: Blender create Mesh node 47
+22:45:12 | INFO: Blender create Mesh node 48
+22:45:12 | INFO: Blender create Mesh node 49
+22:45:12 | INFO: Blender create Mesh node 50
+22:45:12 | INFO: Blender create Mesh node 51
+22:45:12 | INFO: Blender create Mesh node 52
+22:45:12 | INFO: Blender create Mesh node 53
+22:45:12 | INFO: Blender create Mesh node 54
+22:45:12 | INFO: Blender create Mesh node 55
+22:45:12 | INFO: Blender create Mesh node 56
+22:45:12 | INFO: Blender create Mesh node 57
+22:45:12 | INFO: Blender create Mesh node 58
+22:45:12 | INFO: Blender create Mesh node 59
+22:45:12 | INFO: Blender create Mesh node 60
+22:45:12 | INFO: Blender create Mesh node 61
+22:45:12 | INFO: Blender create Mesh node 62
+22:45:12 | INFO: Blender create Mesh node 63
+22:45:12 | INFO: Blender create Mesh node 64
+22:45:12 | INFO: Blender create Mesh node 65
+22:45:12 | INFO: Blender create Mesh node 66
+22:45:12 | INFO: Blender create Mesh node 67
+22:45:12 | INFO: Blender create Mesh node 68
+22:45:12 | INFO: Blender create Mesh node 69
+22:45:12 | INFO: Blender create Mesh node 70
+22:45:12 | INFO: Blender create Mesh node 71
+22:45:12 | INFO: Blender create Mesh node 72
+22:45:12 | INFO: Blender create Mesh node 73
+22:45:12 | INFO: Blender create Mesh node 74
+22:45:12 | INFO: Blender create Mesh node 75
+22:45:12 | INFO: Blender create Mesh node 76
+22:45:12 | INFO: Blender create Mesh node 77
+22:45:12 | INFO: glTF import finished in 0.02s
+Info: Saved as "A-high.blend"
+Info: Saved as "A-low.blend"
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

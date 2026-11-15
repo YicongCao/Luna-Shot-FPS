@@ -1,0 +1,774 @@
+{
+  "asset": "D",
+  "method": "Closed shells: signed volume; open shells: area-weighted nearest B0 normal votes, not blind volume flip",
+  "stages": {
+    "high": [
+      {
+        "name": "D_P00_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005483439361266097,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005492817624220425,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005492536092788214,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005495262157637652,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.000548717524755678,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005474755351239472,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005493136844355196,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.00055030374399697,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005502678329018353,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005486880399985215,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005479388346429912,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005490259482788413,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005510651972144867,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005491124799542995,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005482422711793329,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005483579892218893,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005512467372075987,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005488690761315705,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005516698777986103,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005490165188651505,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005510943689538756,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005486559395346053,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005495866838221777,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005494009598123729,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005511929630301942,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005500238104711268,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.000550509542032768,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.000549831907221685,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005489147027522774,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005503612400540683,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005490201586629457,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005494574223803295,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005491440488943517,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005492647695935682,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 5.345122132025224,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005490898920470476,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 2.3997985159280684,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 98,
+            "closed": true,
+            "signed_volume": 0.0005492757202318911,
+            "reference_vote": 0.0,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P01_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 66298,
+            "closed": false,
+            "signed_volume": 0.15716973486722927,
+            "reference_vote": 0.9648226266375122,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P02_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 64081,
+            "closed": false,
+            "signed_volume": 0.10038023962925517,
+            "reference_vote": 0.890490830648837,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P03_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 63417,
+            "closed": false,
+            "signed_volume": 0.08500453574860482,
+            "reference_vote": 0.8284671135960305,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P04_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 60952,
+            "closed": false,
+            "signed_volume": 0.1725713586152248,
+            "reference_vote": 0.8888654152586986,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P05_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 55174,
+            "closed": false,
+            "signed_volume": 0.13605216977525933,
+            "reference_vote": 0.968094295549174,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P06_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 50010,
+            "closed": false,
+            "signed_volume": 0.17278023372673582,
+            "reference_vote": 0.9886016781550031,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P07_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 49456,
+            "closed": false,
+            "signed_volume": 0.17471620514543762,
+            "reference_vote": 0.9854461781720283,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P08_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 57675,
+            "closed": false,
+            "signed_volume": 0.17076101957993237,
+            "reference_vote": 0.8615899210898182,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P09_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 8817,
+            "closed": false,
+            "signed_volume": 0.007340165173009913,
+            "reference_vote": 0.9701976087787298,
+            "flipped": false
+          }
+        ]
+      }
+    ],
+    "low": [
+      {
+        "name": "D_P00_low",
+        "flipped_faces": 28,
+        "shells": [
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 1.1175870895385742e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 1.3659397760969194e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 3.675619761125959e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 4.2219956716479934e-08,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 1.4901161193847656e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 2.66979138068002e-08,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 1.812974611825613e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 8,
+            "closed": true,
+            "signed_volume": 0.0009870957583188976,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 3.750125567095197e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 1.614292462689959e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 8,
+            "closed": true,
+            "signed_volume": 0.0009873751550912816,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 6,
+            "closed": false,
+            "signed_volume": 0.6541067014137905,
+            "reference_vote": 0.8717878412903881,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 1.6142924626205701e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": -9.251137574398105e-08,
+            "reference_vote": 0.0,
+            "flipped": true
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": -1.9868214927443173e-08,
+            "reference_vote": 0.0,
+            "flipped": true
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": -5.4637591044397193e-08,
+            "reference_vote": 0.0,
+            "flipped": true
+          },
+          {
+            "faces": 8,
+            "closed": true,
+            "signed_volume": 0.0009871156265338309,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 8,
+            "closed": true,
+            "signed_volume": 0.000987049192190184,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 12,
+            "closed": true,
+            "signed_volume": 0.0019741359477241887,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 8,
+            "closed": true,
+            "signed_volume": 0.0009870695260663922,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 59,
+            "closed": false,
+            "signed_volume": 8.762287909776205,
+            "reference_vote": 0.9998575345032754,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 2.7318795524367e-08,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 4.470348358154297e-08,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 12,
+            "closed": true,
+            "signed_volume": 0.0019742182145516033,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 4.9670537315138485e-08,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 8,
+            "closed": true,
+            "signed_volume": 0.0009870914121468885,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": -4.470348358154297e-08,
+            "reference_vote": 0.0,
+            "flipped": true
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 4.501392444899999e-08,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 5.665545662388721e-09,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 2.135833104544016e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 7.202227910313441e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": -4.842877388000488e-07,
+            "reference_vote": 0.0,
+            "flipped": true
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": 2.135833104544016e-07,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": -1.6887982685898084e-07,
+            "reference_vote": 0.0,
+            "flipped": true
+          },
+          {
+            "faces": 4,
+            "closed": true,
+            "signed_volume": -1.6887982685898084e-07,
+            "reference_vote": 0.0,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "D_P01_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 2370,
+            "closed": false,
+            "signed_volume": 0.15701481500582304,
+            "reference_vote": 0.5784620580178049,
+            "flipped": false
+          },
+          {
+            "faces": 2,
+            "closed": false,
+            "signed_volume": 8.548307232558727e-05,
+            "reference_vote": 0.9578261971473694,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P04_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 2094,
+            "closed": false,
+            "signed_volume": 0.1789144736297506,
+            "reference_vote": 0.6573844283156115,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P03_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 2237,
+            "closed": false,
+            "signed_volume": 0.07798362989039258,
+            "reference_vote": 0.6895141170317133,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P02_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 2754,
+            "closed": false,
+            "signed_volume": 0.09524338383562281,
+            "reference_vote": 0.8918166608643089,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P05_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 2192,
+            "closed": false,
+            "signed_volume": 0.12740149311017981,
+            "reference_vote": 0.7613316350930481,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P06_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 1704,
+            "closed": false,
+            "signed_volume": 0.16889626287320425,
+            "reference_vote": 0.9807921652498722,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P07_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 1711,
+            "closed": false,
+            "signed_volume": 0.17400058496817414,
+            "reference_vote": 0.8732038020304838,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P08_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 2094,
+            "closed": false,
+            "signed_volume": 0.16872480251671126,
+            "reference_vote": 0.7726284966377658,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "D_P09_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 398,
+            "closed": false,
+            "signed_volume": 0.006631323538992244,
+            "reference_vote": 0.8675479266517199,
+            "flipped": false
+          }
+        ]
+      }
+    ]
+  }
+}

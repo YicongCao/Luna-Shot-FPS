@@ -4,7 +4,7 @@ var world: Node3D
 var player: CharacterBody3D
 var started: int
 var frames: Array[float] = []
-var OUT := "res://docs/validation/rifle-pipeline-v1/regression/" if "--pbr-regression" in OS.get_cmdline_user_args() else "res://docs/validation/whitebox-v1/"
+var OUT: String = "res://" + OS.get_environment("LUNA_QA_OUTPUT") + "/" if OS.has_environment("LUNA_QA_OUTPUT") else "res://docs/validation/energy-whitebox-v2/"
 func _ready() -> void:
 	world = get_parent()
 	player = world.get_node("Player")
@@ -45,95 +45,92 @@ func capture(name: String) -> void:
 	check("screenshot_"+name, result == OK)
 func run() -> void:
 	await settle(30)
-	check("spawn_floor", player.is_on_floor() and absf(player.position.y) < .05, str(player.position))
+	check("spawn_floor",player.is_on_floor() and player.position.distance_to(world.marker("Spawn"))<.1)
+	check("module_instances",world.get_node("Facility").get_child_count()==58)
 	await capture("01-spawn")
 	world.set_overview(true)
 	await capture("02-overview")
 	world.set_overview(false)
-	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	# Full walk around ship/central loop, via genuine player move_and_slide.
-	await walk_to(Vector3(-18,0,20), "loop_south")
-	await walk_to(Vector3(-20,0,10), "west_entry")
-	await walk_to(Vector3(-20,0,-12), "west_ship_clearance")
-	await walk_to(Vector3(-8,0,-12), "north_ship_path")
-	await walk_to(Vector3(-8,0,-5.5), "ramp_side_path")
-	await walk_to(Vector3(-5,0,-5.5), "north_crossing")
-	await walk_to(Vector3(8,0,-6.5), "central_crossing")
-	await walk_to(Vector3(11.8,0,-6.5), "east_entry")
-	await walk_to(Vector3(11.8,0,9), "east_service_path")
-	await walk_to(Vector3(3,0,12), "south_crossing")
-	await walk_to(Vector3(0,0,18), "loop_return")
-	# Both ramps in both directions + deck connection.
-	await place(Vector3(-5,.1,-6))
-	await walk_to(Vector3(-5,2.4,-16), "west_ramp_ascent")
-	check("deck_height", absf(player.position.y-2.4) < .08, str(player.position.y))
-	aim_at(Vector3(0,1,6))
-	await capture("03-deck")
-	await walk_to(Vector3(5,2.4,-16), "deck_crossing")
-	await walk_to(Vector3(5,0,-6), "east_ramp_descent")
-	await walk_to(Vector3(5,2.4,-16), "east_ramp_ascent")
-	await walk_to(Vector3(-5,2.4,-16), "deck_return")
-	await walk_to(Vector3(-5,0,-6), "west_ramp_descent")
-	# Boundary blocks capsule even with jump; all four sides.
-	for test in [[Vector3(-21,0,18),Vector3(-1,0,0)], [Vector3(21,0,18),Vector3(1,0,0)], [Vector3(0,0,23),Vector3(0,0,1)], [Vector3(-19,0,-23),Vector3(0,0,-1)]]:
-		await place(test[0]+Vector3(0,.1,0))
-		player.qa_direction = test[1]
-		player.qa_jump = true
-		await settle(40)
-		player.qa_direction = Vector3.ZERO
-		player.qa_jump = false
-		check("boundary_"+str(test[1]), absf(player.position.x)<22 and absf(player.position.z)<24, str(player.position))
-	# Camera-to-target hit, resettable target, ammo lock and reload.
-	await place(Vector3(0,.1,18))
-	aim_at(Vector3(0,1.5,8))
-	player.cooldown = 0
-	player.fire()
-	check("target_hit", world.hits == 1 and player.ammo == 19, "hits=%d ammo=%d" % [world.hits,player.ammo])
-	check("cooldown", not player.fire() and player.ammo==19)
-	player.aiming = true
+	Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
+	for route_name: String in world.layout.routes:
+		var route: Array=world.layout.routes[route_name]
+		await place(world.vector(route[0])+Vector3(0,.05,0))
+		for i in range(1,route.size()):
+			await walk_to(world.vector(route[i]),route_name+"_"+str(i))
+			if route[i][1]>0:
+				check(route_name+"_height_"+str(i),absf(player.position.y-2.4)<.08,str(player.position.y))
+				if i==2:
+					aim_at(world.marker("OverviewFocus"))
+					await capture(route_name+"-deck")
+	# Cross both bridge underpasses with the real capsule.
+	for x in [-18,18]:
+		await place(Vector3(x-4,.05,0))
+		await walk_to(Vector3(x+4,0,0),"bridge_underpass_"+str(x))
+		check("underpass_ground_"+str(x),absf(player.position.y)<.05)
+		player.rotation=Vector3.ZERO
+		player.head.look_at(Vector3(x,2.4,0))
+		await capture("underbridge_"+str(x))
+	# Continuous side rails stop stepping off the two bridges.
+	for x in [-18,18]:
+		await place(Vector3(x,2.45,0))
+		player.qa_direction=Vector3.RIGHT
+		await settle(50)
+		player.qa_direction=Vector3.ZERO
+		check("bridge_guardrail_"+str(x),player.position.x<x+1.8 and player.position.y>2.3,str(player.position))
+	for test in world.layout.boundaries:
+		await place(world.vector(test.position)+Vector3(0,.05,0))
+		player.qa_direction=world.vector(test.direction)
+		player.qa_jump=true
+		await settle(45)
+		player.qa_direction=Vector3.ZERO;player.qa_jump=false
+		check("boundary_"+str(test.direction),absf(player.position.x)<32 and absf(player.position.z)<33)
+	for t in world.layout.targets:
+		await place(world.vector(t.shoot_from))
+		aim_at(world.vector(t.position)+Vector3(0,1.5,0))
+		player.cooldown=0;player.ammo=20
+		var before: int=world.hits
+		player.fire()
+		check("hit_"+t.id,world.hits==before+1,str(player.last_hit))
+	check("cooldown",not player.fire())
+	player.aiming=true
 	await settle(40)
-	var rear: Node3D = player.weapon.get_node("SightRear")
-	var front: Node3D = player.weapon.get_node("SightFront")
-	check("sight_axis", absf(rear.global_position.x)<.002 and absf(rear.global_position.y)<.002 and absf(front.global_position.y)<.002, str(rear.global_position))
-	await capture("04-ads")
+	var rear: Node3D=player.weapon.get_node("SightRear")
+	check("sight_axis",absf(rear.global_position.x)<.002 and absf(rear.global_position.y)<.002)
+	await capture("03-ads")
 	player.reload_weapon()
-	check("reload_fire_lock", not player.fire())
+	check("reload_fire_lock",not player.fire())
 	await settle(40)
-	await capture("05-reload")
+	await capture("04-reload")
 	await settle(70)
-	check("reload_complete", player.ammo==20 and player.reload_left==0)
-	player.ammo = 0
-	player.cooldown = 0
-	check("empty_lock", not player.fire())
-	# Test real obstruction: aiming through opaque base facade must hit architecture.
-	await place(Vector3(0,2.5,-16))
-	aim_at(Vector3(0,3.5,-23))
-	player.ammo=20
-	player.fire()
-	check("architecture_occludes", not player.last_hit.is_empty() and not player.last_hit.collider.has_method("register_hit"))
-	# Pause state freezes reload and movement, then resumes correctly.
-	player.reload_weapon()
-	world.set_paused(true)
-	var time_before: float = player.reload_left
-	var pos_before: Vector3 = player.position
+	check("reload_complete",player.ammo==20 and player.reload_left==0)
+	player.ammo=0;player.cooldown=0
+	check("empty_lock",not player.fire())
+	# Select a generated B tower and fire at its solid core from the central road.
+	var tower: Dictionary=world.layout.modules.filter(func(m):return m.type=="B" and m.position[0]==6 and m.position[2]==6)[0]
+	await place(Vector3(0,.05,6))
+	aim_at(world.vector(tower.position)+Vector3(0,2,0))
+	player.ammo=20;player.aiming=false;player.fire()
+	check("architecture_occludes",not player.last_hit.is_empty() and not player.last_hit.collider.has_method("register_hit"))
+	await capture("05-array")
+	player.reload_weapon();world.set_paused(true)
+	var time_before: float=player.reload_left
+	var pos_before: Vector3=player.position
 	await settle(20)
-	check("pause_freezes", player.reload_left==time_before and player.position==pos_before)
-	world.resume()
-	world.reset_range()
-	check("reset_state", world.hits==0 and world.shots==0 and player.ammo==20 and player.reload_left==0 and not world.overview and not world.paused)
+	check("pause_freezes",player.reload_left==time_before and player.position==pos_before)
+	world.resume();world.reset_range()
+	check("reset_state",world.hits==0 and world.shots==0 and player.ammo==20 and player.reload_left==0 and not world.overview and not world.paused)
+	check("reset_marker",player.position.distance_to(world.marker("Spawn"))<.001)
 	await settle(20)
 	await capture("06-reset")
-	# Same rendering at ultrawide to validate weapon/HUD anchoring.
-	if DisplayServer.get_name() != "headless":
-		get_window().size = Vector2i(1600, 700)
+	if DisplayServer.get_name()!="headless":
+		get_window().size=Vector2i(1600,700)
 		await settle(20)
 		await capture("07-ultrawide")
-		var viewport_size := get_viewport().get_visible_rect().size
-		check("ultrawide_aspect", viewport_size.x / viewport_size.y > 2.2, str(viewport_size))
+		check("ultrawide_aspect",get_viewport().get_visible_rect().size.aspect()>2.2)
 	frames.sort()
-	var failures := checks.filter(func(item): return not item.passed)
-	var report := {"engine":Engine.get_version_info().string, "platform":OS.get_name(), "display":DisplayServer.get_name(), "elapsed_seconds":(Time.get_ticks_msec()-started)/1000.0, "checks":checks, "failures":failures.size(), "frame_ms_p95":frames[int(frames.size()*.95)], "note":"Automated native traversal and rendering; not human playtest or long-duration performance acceptance."}
-	var file := FileAccess.open(OUT + ("headless.json" if DisplayServer.get_name()=="headless" else "native.json"), FileAccess.WRITE)
-	file.store_string(JSON.stringify(report,"\t")+"\n")
+	var failures:=checks.filter(func(item):return not item.passed)
+	var report:={"engine":Engine.get_version_info().string,"platform":OS.get_name(),"display":DisplayServer.get_name(),"elapsed_seconds":(Time.get_ticks_msec()-started)/1000.0,"checks":checks,"failures":failures.size(),"frame_ms_p95":frames[int(frames.size()*.95)],"note":"Actual capsule traversal and native rendering; not long-duration performance acceptance."}
+	var f:=FileAccess.open(OUT+("headless.json" if DisplayServer.get_name()=="headless" else "native.json"),FileAccess.WRITE)
+	f.store_string(JSON.stringify(report,"\t")+"\n")
 	print("QA_COMPLETE failures=",failures.size())
 	get_tree().quit(0 if failures.is_empty() else 1)

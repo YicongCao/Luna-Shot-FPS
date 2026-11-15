@@ -1,0 +1,175 @@
+{
+  "asset": "D",
+  "stage": "high",
+  "checks": [
+    {
+      "x": -1.4,
+      "y": -5.8,
+      "expected": 0.06000000000000005,
+      "error": 0.007290782928466744,
+      "passed": true
+    },
+    {
+      "x": -1.4,
+      "y": -4,
+      "expected": 0.6,
+      "error": 0.059951162338256814,
+      "passed": false
+    },
+    {
+      "x": -1.4,
+      "y": -2,
+      "expected": 1.2,
+      "error": 0.08322401046752925,
+      "passed": false
+    },
+    {
+      "x": -1.4,
+      "y": 0,
+      "expected": 1.7999999999999998,
+      "error": 0.09361033439636213,
+      "passed": false
+    },
+    {
+      "x": -1.4,
+      "y": 1.8,
+      "expected": 2.34,
+      "error": 0.11702760696411119,
+      "passed": false
+    },
+    {
+      "x": -1.4,
+      "y": 2.2,
+      "expected": 2.4,
+      "error": 0.0848888397216796,
+      "passed": false
+    },
+    {
+      "x": -1.4,
+      "y": 4,
+      "expected": 2.4,
+      "error": 0.08450450897216788,
+      "passed": false
+    },
+    {
+      "x": -1.4,
+      "y": 5.8,
+      "expected": 2.4,
+      "error": 0.002076053619384677,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "y": -5.8,
+      "expected": 0.06000000000000005,
+      "error": 0.006516399383544869,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "y": -4,
+      "expected": 0.6,
+      "error": 0.07173643112182615,
+      "passed": false
+    },
+    {
+      "x": 0,
+      "y": -2,
+      "expected": 1.2,
+      "error": 0.09496111869812007,
+      "passed": false
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "expected": 1.7999999999999998,
+      "error": 0.09700160026550275,
+      "passed": false
+    },
+    {
+      "x": 0,
+      "y": 1.8,
+      "expected": 2.34,
+      "error": 0.11931690216064439,
+      "passed": false
+    },
+    {
+      "x": 0,
+      "y": 2.2,
+      "expected": 2.4,
+      "error": 0.0859264373779296,
+      "passed": false
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "expected": 2.4,
+      "error": 0.08897032737731925,
+      "passed": false
+    },
+    {
+      "x": 0,
+      "y": 5.8,
+      "expected": 2.4,
+      "error": 0.00283946990966788,
+      "passed": true
+    },
+    {
+      "x": 1.4,
+      "y": -5.8,
+      "expected": 0.06000000000000005,
+      "error": 0.008688392639160103,
+      "passed": true
+    },
+    {
+      "x": 1.4,
+      "y": -4,
+      "expected": 0.6,
+      "error": 0.058332538604736306,
+      "passed": false
+    },
+    {
+      "x": 1.4,
+      "y": -2,
+      "expected": 1.2,
+      "error": 0.081110668182373,
+      "passed": false
+    },
+    {
+      "x": 1.4,
+      "y": 0,
+      "expected": 1.7999999999999998,
+      "error": 0.0919893264770506,
+      "passed": false
+    },
+    {
+      "x": 1.4,
+      "y": 1.8,
+      "expected": 2.34,
+      "error": 0.11474927902221665,
+      "passed": false
+    },
+    {
+      "x": 1.4,
+      "y": 2.2,
+      "expected": 2.4,
+      "error": 0.08365883827209464,
+      "passed": false
+    },
+    {
+      "x": 1.4,
+      "y": 4,
+      "expected": 2.4,
+      "error": 0.0818532943725585,
+      "passed": false
+    },
+    {
+      "x": 1.4,
+      "y": 5.8,
+      "expected": 2.4,
+      "error": 0.001955413818359286,
+      "passed": true
+    }
+  ],
+  "failures": 18
+}

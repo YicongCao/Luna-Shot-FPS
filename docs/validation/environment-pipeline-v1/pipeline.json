@@ -1,0 +1,67 @@
+{
+  "independent_assets": 6,
+  "instances": 59,
+  "assets": [
+    {
+      "asset": "A",
+      "instances": 40,
+      "high_triangles": 1948880,
+      "runtime_triangles": 7783,
+      "uv_coverage": 0.579369068145752,
+      "uv_overlap_pixels": 5,
+      "actual_bake": true,
+      "material_slots": 1
+    },
+    {
+      "asset": "B1",
+      "instances": 6,
+      "high_triangles": 1922196,
+      "runtime_triangles": 13685,
+      "uv_coverage": 0.36897706985473633,
+      "uv_overlap_pixels": 34,
+      "actual_bake": true,
+      "material_slots": 1
+    },
+    {
+      "asset": "B2",
+      "instances": 6,
+      "high_triangles": 1967626,
+      "runtime_triangles": 13695,
+      "uv_coverage": 0.40903806686401367,
+      "uv_overlap_pixels": 34,
+      "actual_bake": true,
+      "material_slots": 1
+    },
+    {
+      "asset": "C",
+      "instances": 2,
+      "high_triangles": 797172,
+      "runtime_triangles": 14073,
+      "uv_coverage": 0.4946160316467285,
+      "uv_overlap_pixels": 8,
+      "actual_bake": true,
+      "material_slots": 1
+    },
+    {
+      "asset": "D",
+      "instances": 4,
+      "high_triangles": 483024,
+      "runtime_triangles": 17793,
+      "uv_coverage": 0.48184871673583984,
+      "uv_overlap_pixels": 0,
+      "actual_bake": true,
+      "material_slots": 1
+    },
+    {
+      "asset": "E",
+      "instances": 1,
+      "high_triangles": 1975946,
+      "runtime_triangles": 19567,
+      "uv_coverage": 0.4050147533416748,
+      "uv_overlap_pixels": 130,
+      "actual_bake": true,
+      "material_slots": 1
+    }
+  ],
+  "instanced_triangles": 594485
+}

@@ -1,0 +1,286 @@
+{
+	"checks": [
+		{
+			"check": "C01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "C02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D03_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D04_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B03_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B04_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B05_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B06_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B07_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B08_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B09_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B10_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B11_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B12_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A03_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A04_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A05_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A06_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A07_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A08_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A09_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A10_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A11_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A12_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A13_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A14_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A15_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A16_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A17_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A18_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A19_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A20_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A21_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A22_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A23_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A24_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A25_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A26_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A27_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A28_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A29_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A30_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A31_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A32_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A33_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A34_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A35_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A36_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A37_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A38_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A39_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A40_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "five_module_resources_with_B_subtypes",
+			"passed": true
+		},
+		{
+			"check": "six_each_thermal_subtype",
+			"passed": true
+		},
+		{
+			"check": "signal_at_center",
+			"passed": true
+		},
+		{
+			"check": "three_metre_side_clearance",
+			"passed": true
+		},
+		{
+			"check": "socket_D01",
+			"passed": true
+		},
+		{
+			"check": "socket_D02",
+			"passed": true
+		},
+		{
+			"check": "socket_D03",
+			"passed": true
+		},
+		{
+			"check": "socket_D04",
+			"passed": true
+		},
+		{
+			"check": "C01_headroom",
+			"metres": 2.25000004470348,
+			"passed": true
+		},
+		{
+			"check": "C02_headroom",
+			"metres": 2.25000004470348,
+			"passed": true
+		}
+	],
+	"failures": 0,
+	"sources": [
+		"res://assets/industrial/module_C.tscn",
+		"res://assets/industrial/module_D.tscn",
+		"res://assets/industrial/module_B1.tscn",
+		"res://assets/industrial/module_B2.tscn",
+		"res://assets/industrial/module_A.tscn"
+	]
+}

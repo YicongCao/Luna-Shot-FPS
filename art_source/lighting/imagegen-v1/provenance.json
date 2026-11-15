@@ -1,0 +1,32 @@
+{
+  "generator": "built-in imagegen",
+  "originals_preserved": true,
+  "assets": [
+    {
+      "name": "streak",
+      "size": [
+        2172,
+        724
+      ],
+      "mode": "RGBA",
+      "sha256": "eea96011b023e2de1706e25861ad95d0bd261c839756e8bcee0f3775dbf48843",
+      "alpha_range": [
+        0,
+        252
+      ]
+    },
+    {
+      "name": "halo",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA",
+      "sha256": "dc7b95540a18a9f573a58d1a23117006609eaf3ba177b1591a252f0812cfef42",
+      "alpha_range": [
+        0,
+        253
+      ]
+    }
+  ]
+}

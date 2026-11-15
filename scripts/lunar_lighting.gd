@@ -1,0 +1,120 @@
+extends Node3D
+# Lighting lives with the range; the independent F3 studio never inherits these nodes.
+var world: Node3D
+var player: CharacterBody3D
+var environment: Environment
+var weapon_environment: Environment
+var sun: DirectionalLight3D
+var fixtures: Array[Dictionary]=[]
+var flare_layer: CanvasLayer
+var flare_pass: Control
+var bloom_enabled := true
+var flares_enabled := true
+var facility_enabled := true
+var sun_visibility := 1.0
+var sun_target_visibility := 1.0
+var weapon_key: DirectionalLight3D
+var shadow_clock := 0.0
+var weapon_bloom: CanvasLayer
+
+func _ready() -> void:
+	world=get_parent();player=world.get_node("Player")
+	sun=world.get_node("Sun")
+	sun.rotation_degrees=Vector3(-18,-32,0)
+	sun.light_color=Color(1,.94,.84);sun.light_energy=1.15
+	sun.shadow_enabled=true;sun.directional_shadow_max_distance=100
+	environment=world.get_node("Environment").environment
+	environment.background_mode=Environment.BG_SKY
+	var sky:=Sky.new();var sky_mat:=ShaderMaterial.new()
+	sky_mat.shader=load("res://assets/lighting/lunar_sky.gdshader")
+	sky_mat.set_shader_parameter("sun_direction",sun.global_basis.z)
+	sky.sky_material=sky_mat;environment.sky=sky
+	environment.ambient_light_source=Environment.AMBIENT_SOURCE_COLOR
+	environment.ambient_light_color=Color(.38,.47,.61);environment.ambient_light_energy=.24
+	environment.reflected_light_source=Environment.REFLECTION_SOURCE_SKY
+	environment.tonemap_mode=Environment.TONE_MAPPER_FILMIC
+	environment.tonemap_exposure=1.0
+	environment.glow_hdr_threshold=2.0;environment.glow_hdr_scale=1.3
+	environment.glow_intensity=.8;environment.glow_bloom=0
+	weapon_environment=player.get_node("WeaponLayer/Container/Viewport/WeaponEnvironment").environment
+	weapon_environment.ambient_light_energy=.24
+	weapon_environment.glow_hdr_threshold=1.8;weapon_environment.glow_hdr_scale=1.4
+	weapon_environment.glow_intensity=1.0
+	weapon_key=player.get_node("WeaponLayer/Container/Viewport/Key")
+	player.get_node("WeaponLayer/Container/Viewport/Fill").light_energy=.08
+	for x in [-19.75,19.75]:
+		for z in [-15.6,15.6]:add_fixture(Vector3(x,1.2,z),Color(.28,.76,1),true,"Ramp")
+	add_fixture(Vector3(0,1.35,1.03),Color(.25,.9,1),false,"Control")
+	add_fixture(Vector3(0,14.27,0),Color(1,.29,.075),false,"Beacon")
+	for x in [-17,17]:
+		var probe:=ReflectionProbe.new();probe.name="StaticFacilityReflection"
+		probe.position=Vector3(x,3,0);probe.size=Vector3(32,16,64)
+		probe.origin_offset=Vector3(0,0,0);probe.update_mode=ReflectionProbe.UPDATE_ONCE
+		probe.max_distance=55;probe.intensity=.7;probe.box_projection=true
+		add_child(probe)
+	flare_layer=CanvasLayer.new();flare_layer.name="OpticalEffects";flare_layer.layer=3;add_child(flare_layer)
+	flare_pass=Control.new();flare_pass.set_script(load("res://scripts/lens_flare.gd"))
+	flare_pass.lighting=self;flare_layer.add_child(flare_pass)
+	flare_pass.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	weapon_bloom=CanvasLayer.new();weapon_bloom.name="WeaponBloom"
+	weapon_bloom.set_script(load("res://scripts/weapon_bloom.gd"))
+	weapon_bloom.source=player.get_node("WeaponLayer/Container/Viewport")
+	add_child(weapon_bloom)
+	set_bloom(true)
+
+func add_fixture(pos: Vector3, color: Color, post: bool, label: String) -> void:
+	var mesh:=MeshInstance3D.new();var shape:=SphereMesh.new()
+	shape.radius=.075;shape.height=.15;shape.radial_segments=12;shape.rings=6;mesh.mesh=shape
+	mesh.position=pos;mesh.name=label+str(fixtures.size());mesh.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	var mat:=StandardMaterial3D.new();mat.albedo_color=color
+	mat.emission_enabled=true;mat.emission=color;mat.emission_energy_multiplier=7
+	mesh.material_override=mat;add_child(mesh)
+	if post:
+		var support:=MeshInstance3D.new();var box:=BoxMesh.new();box.size=Vector3(.1,1.12,.1)
+		support.mesh=box;support.position=pos-Vector3(0,.64,0)
+		var steel:=StandardMaterial3D.new();steel.albedo_color=Color(.08,.11,.14);steel.metallic=.8;steel.roughness=.4
+		support.material_override=steel;add_child(support)
+	var light:=OmniLight3D.new();light.position=pos;light.light_color=color
+	light.light_energy=1.2;light.omni_range=3.0;light.omni_attenuation=1.4;light.shadow_enabled=false
+	add_child(light)
+	fixtures.append({"mesh":mesh,"light":light,"material":mat,"color":color,"label":label})
+
+func set_bloom(value: bool) -> void:
+	bloom_enabled=value
+	if environment:environment.glow_enabled=value
+	if weapon_environment:weapon_environment.glow_enabled=false
+
+func set_facility_enabled(value: bool) -> void:
+	facility_enabled=value
+	for fixture in fixtures:
+		fixture.light.visible=value;fixture.material.emission_enabled=value
+
+func world_visible(point: Vector3, cam: Camera3D) -> bool:
+	var origin:=cam.global_position
+	var direction:=point-origin
+	var end:=point-direction.normalized()*.1
+	var query:=PhysicsRayQueryParameters3D.create(origin,end,1,[player.get_rid()])
+	return get_world_3d().direct_space_state.intersect_ray(query).is_empty()
+
+func _physics_process(delta: float) -> void:
+	if not is_instance_valid(player):return
+	shadow_clock-=delta
+	if shadow_clock<=0:
+		shadow_clock=.08
+		sun_target_visibility=1.0 if world_visible(player.camera.global_position+sun.global_basis.z*180,player.camera) else 0.0
+	sun_visibility=lerpf(sun_visibility,sun_target_visibility,1-exp(-12*delta))
+
+func _process(_delta: float) -> void:
+	if not weapon_key:return
+	weapon_bloom.set_active(bloom_enabled and not world.overview and player.weapon.energy_enabled,.8 if player.aiming else 1.6)
+	weapon_key.basis=player.camera.global_basis.inverse()*sun.global_basis
+	weapon_key.light_color=sun.light_color
+	weapon_key.light_energy=sun.light_energy*lerpf(.12,1.0,sun_visibility)
+
+func _unhandled_key_input(event: InputEvent) -> void:
+	if not event is InputEventKey or not event.pressed or event.echo:return
+	match event.physical_keycode:
+		KEY_F6:player.weapon.set_energy_enabled(not player.weapon.energy_enabled)
+		KEY_F7:set_bloom(not bloom_enabled)
+		KEY_F8:flares_enabled=not flares_enabled
+		KEY_F9:player.weapon.set_spill_enabled(not player.weapon.spill_enabled)

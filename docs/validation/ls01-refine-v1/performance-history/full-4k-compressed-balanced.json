@@ -1,0 +1,115 @@
+{
+  "before": [
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 278,
+      "ls01": false,
+      "objects": 1553,
+      "p50_ms": 10.547,
+      "p95_ms": 15.941,
+      "primitives": 1037758,
+      "process_ms": 20.314,
+      "texture_memory": 925531774,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 189,
+      "ls01": false,
+      "objects": 1553,
+      "p50_ms": 12.511,
+      "p95_ms": 18.884,
+      "primitives": 1037758,
+      "process_ms": 20.237,
+      "texture_memory": 925531774,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 220,
+      "ls01": false,
+      "objects": 1553,
+      "p50_ms": 13.895,
+      "p95_ms": 20.753,
+      "primitives": 1037758,
+      "process_ms": 21.366,
+      "texture_memory": 925531774,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 435,
+      "ls01": false,
+      "objects": 1553,
+      "p50_ms": 29.862,
+      "p95_ms": 44.882,
+      "primitives": 1037758,
+      "process_ms": 47.652,
+      "texture_memory": 925531774,
+      "viewport": "1600x1000"
+    }
+  ],
+  "after": [
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 169,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 9.906,
+      "p95_ms": 16.082,
+      "primitives": 1049134,
+      "process_ms": 20.404,
+      "texture_memory": 872404104,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 192,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 10.075,
+      "p95_ms": 16.168,
+      "primitives": 1049134,
+      "process_ms": 20.412,
+      "texture_memory": 872404104,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 368,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 22.76,
+      "p95_ms": 34.464,
+      "primitives": 1049134,
+      "process_ms": 31.596,
+      "texture_memory": 872404104,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 216,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 27.605,
+      "p95_ms": 40.455,
+      "primitives": 1049134,
+      "process_ms": 35.259,
+      "texture_memory": 872404104,
+      "viewport": "1600x1000"
+    }
+  ],
+  "before_p95_median_ms": 19.8185,
+  "after_p95_median_ms": 25.316,
+  "increase_fraction": 0.27739233544415565,
+  "within_10_percent": false,
+  "order": "ABBA ABBA; 4 runs per version; 600 measured + 150 warmup frames each"
+}

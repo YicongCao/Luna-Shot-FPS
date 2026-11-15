@@ -1,0 +1,1848 @@
+{
+  "seed": 20261115,
+  "pairs": [
+    {
+      "name": "T03_ReceiverShell",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "T03_ReceiverShell_low",
+      "high": "T03_ReceiverShell_high",
+      "cage": "T03_ReceiverShell_cage",
+      "triangles": 84
+    },
+    {
+      "name": "T04_EnergyCell",
+      "group": "body",
+      "cage_distance": 0.002,
+      "low": "T04_EnergyCell_low",
+      "high": "T04_EnergyCell_high",
+      "cage": "T04_EnergyCell_cage",
+      "triangles": 56
+    },
+    {
+      "name": "T11_CellSide",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "T11_CellSide_low",
+      "high": "T11_CellSide_high",
+      "cage": "T11_CellSide_cage",
+      "triangles": 44
+    },
+    {
+      "name": "T08_StockShell",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "T08_StockShell_low",
+      "high": "T08_StockShell_high",
+      "cage": "T08_StockShell_cage",
+      "triangles": 76
+    },
+    {
+      "name": "T07_TopRail",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "T07_TopRail_low",
+      "high": "T07_TopRail_high",
+      "cage": "T07_TopRail_cage",
+      "triangles": 64
+    },
+    {
+      "name": "RailLug00",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "RailLug00_low",
+      "high": "RailLug00_high",
+      "cage": "RailLug00_cage",
+      "triangles": 44
+    },
+    {
+      "name": "RailLug01",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "RailLug01_low",
+      "high": "RailLug01_high",
+      "cage": "RailLug01_cage",
+      "triangles": 44
+    },
+    {
+      "name": "RailLug02",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "RailLug02_low",
+      "high": "RailLug02_high",
+      "cage": "RailLug02_cage",
+      "triangles": 44
+    },
+    {
+      "name": "RailLug03",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "RailLug03_low",
+      "high": "RailLug03_high",
+      "cage": "RailLug03_cage",
+      "triangles": 44
+    },
+    {
+      "name": "RailLug04",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "RailLug04_low",
+      "high": "RailLug04_high",
+      "cage": "RailLug04_cage",
+      "triangles": 44
+    },
+    {
+      "name": "RailLug05",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "RailLug05_low",
+      "high": "RailLug05_high",
+      "cage": "RailLug05_cage",
+      "triangles": 44
+    },
+    {
+      "name": "T05_Optic",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "T05_Optic_low",
+      "high": "T05_Optic_high",
+      "cage": "T05_Optic_cage",
+      "triangles": 144
+    },
+    {
+      "name": "OpticFoot",
+      "group": "body",
+      "cage_distance": 0.0018,
+      "low": "OpticFoot_low",
+      "high": "OpticFoot_high",
+      "cage": "OpticFoot_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Receiver_-1_0",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_-1_0_low",
+      "high": "Receiver_-1_0_high",
+      "cage": "Receiver_-1_0_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_-1_0_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_-1_0_seat_low",
+      "high": "Receiver_-1_0_seat_high",
+      "cage": "Receiver_-1_0_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_-1_1",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_-1_1_low",
+      "high": "Receiver_-1_1_high",
+      "cage": "Receiver_-1_1_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_-1_1_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_-1_1_seat_low",
+      "high": "Receiver_-1_1_seat_high",
+      "cage": "Receiver_-1_1_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_-1_2",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_-1_2_low",
+      "high": "Receiver_-1_2_high",
+      "cage": "Receiver_-1_2_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_-1_2_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_-1_2_seat_low",
+      "high": "Receiver_-1_2_seat_high",
+      "cage": "Receiver_-1_2_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_-1_3",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_-1_3_low",
+      "high": "Receiver_-1_3_high",
+      "cage": "Receiver_-1_3_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_-1_3_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_-1_3_seat_low",
+      "high": "Receiver_-1_3_seat_high",
+      "cage": "Receiver_-1_3_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_-1_4",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_-1_4_low",
+      "high": "Receiver_-1_4_high",
+      "cage": "Receiver_-1_4_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_-1_4_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_-1_4_seat_low",
+      "high": "Receiver_-1_4_seat_high",
+      "cage": "Receiver_-1_4_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_-1_5",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_-1_5_low",
+      "high": "Receiver_-1_5_high",
+      "cage": "Receiver_-1_5_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_-1_5_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_-1_5_seat_low",
+      "high": "Receiver_-1_5_seat_high",
+      "cage": "Receiver_-1_5_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Stock_-1_0",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Stock_-1_0_low",
+      "high": "Stock_-1_0_high",
+      "cage": "Stock_-1_0_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Stock_-1_0_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Stock_-1_0_seat_low",
+      "high": "Stock_-1_0_seat_high",
+      "cage": "Stock_-1_0_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Stock_-1_1",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Stock_-1_1_low",
+      "high": "Stock_-1_1_high",
+      "cage": "Stock_-1_1_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Stock_-1_1_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Stock_-1_1_seat_low",
+      "high": "Stock_-1_1_seat_high",
+      "cage": "Stock_-1_1_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Stock_-1_2",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Stock_-1_2_low",
+      "high": "Stock_-1_2_high",
+      "cage": "Stock_-1_2_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Stock_-1_2_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Stock_-1_2_seat_low",
+      "high": "Stock_-1_2_seat_high",
+      "cage": "Stock_-1_2_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Cell_-1_0",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Cell_-1_0_low",
+      "high": "Cell_-1_0_high",
+      "cage": "Cell_-1_0_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Cell_-1_0_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Cell_-1_0_seat_low",
+      "high": "Cell_-1_0_seat_high",
+      "cage": "Cell_-1_0_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Cell_-1_1",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Cell_-1_1_low",
+      "high": "Cell_-1_1_high",
+      "cage": "Cell_-1_1_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Cell_-1_1_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Cell_-1_1_seat_low",
+      "high": "Cell_-1_1_seat_high",
+      "cage": "Cell_-1_1_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_1_0",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_1_0_low",
+      "high": "Receiver_1_0_high",
+      "cage": "Receiver_1_0_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_1_0_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_1_0_seat_low",
+      "high": "Receiver_1_0_seat_high",
+      "cage": "Receiver_1_0_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_1_1",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_1_1_low",
+      "high": "Receiver_1_1_high",
+      "cage": "Receiver_1_1_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_1_1_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_1_1_seat_low",
+      "high": "Receiver_1_1_seat_high",
+      "cage": "Receiver_1_1_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_1_2",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_1_2_low",
+      "high": "Receiver_1_2_high",
+      "cage": "Receiver_1_2_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_1_2_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_1_2_seat_low",
+      "high": "Receiver_1_2_seat_high",
+      "cage": "Receiver_1_2_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_1_3",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_1_3_low",
+      "high": "Receiver_1_3_high",
+      "cage": "Receiver_1_3_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_1_3_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_1_3_seat_low",
+      "high": "Receiver_1_3_seat_high",
+      "cage": "Receiver_1_3_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_1_4",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_1_4_low",
+      "high": "Receiver_1_4_high",
+      "cage": "Receiver_1_4_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_1_4_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_1_4_seat_low",
+      "high": "Receiver_1_4_seat_high",
+      "cage": "Receiver_1_4_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Receiver_1_5",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Receiver_1_5_low",
+      "high": "Receiver_1_5_high",
+      "cage": "Receiver_1_5_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Receiver_1_5_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Receiver_1_5_seat_low",
+      "high": "Receiver_1_5_seat_high",
+      "cage": "Receiver_1_5_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Stock_1_0",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Stock_1_0_low",
+      "high": "Stock_1_0_high",
+      "cage": "Stock_1_0_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Stock_1_0_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Stock_1_0_seat_low",
+      "high": "Stock_1_0_seat_high",
+      "cage": "Stock_1_0_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Stock_1_1",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Stock_1_1_low",
+      "high": "Stock_1_1_high",
+      "cage": "Stock_1_1_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Stock_1_1_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Stock_1_1_seat_low",
+      "high": "Stock_1_1_seat_high",
+      "cage": "Stock_1_1_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Stock_1_2",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Stock_1_2_low",
+      "high": "Stock_1_2_high",
+      "cage": "Stock_1_2_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Stock_1_2_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Stock_1_2_seat_low",
+      "high": "Stock_1_2_seat_high",
+      "cage": "Stock_1_2_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Cell_1_0",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Cell_1_0_low",
+      "high": "Cell_1_0_high",
+      "cage": "Cell_1_0_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Cell_1_0_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Cell_1_0_seat_low",
+      "high": "Cell_1_0_seat_high",
+      "cage": "Cell_1_0_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Cell_1_1",
+      "group": "body",
+      "cage_distance": 0.0007,
+      "low": "Cell_1_1_low",
+      "high": "Cell_1_1_high",
+      "cage": "Cell_1_1_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Cell_1_1_seat",
+      "group": "body",
+      "cage_distance": 0.0005,
+      "low": "Cell_1_1_seat_low",
+      "high": "Cell_1_1_seat_high",
+      "cage": "Cell_1_1_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "ScreenArmor",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "ScreenArmor_low",
+      "high": "ScreenArmor_high",
+      "cage": "ScreenArmor_cage",
+      "triangles": 68
+    },
+    {
+      "name": "ScreenBezel",
+      "group": "kit",
+      "cage_distance": 0.0008,
+      "low": "ScreenBezel_low",
+      "high": "ScreenBezel_high",
+      "cage": "ScreenBezel_cage",
+      "triangles": 144
+    },
+    {
+      "name": "ScreenGlass",
+      "group": "kit",
+      "cage_distance": 0.0004,
+      "low": "ScreenGlass_low",
+      "high": "ScreenGlass_high",
+      "cage": "ScreenGlass_cage",
+      "triangles": 68
+    },
+    {
+      "name": "Screen_-0.043_-0.012",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "Screen_-0.043_-0.012_low",
+      "high": "Screen_-0.043_-0.012_high",
+      "cage": "Screen_-0.043_-0.012_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Screen_-0.043_-0.012_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "Screen_-0.043_-0.012_seat_low",
+      "high": "Screen_-0.043_-0.012_seat_high",
+      "cage": "Screen_-0.043_-0.012_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Screen_-0.043_0.012",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "Screen_-0.043_0.012_low",
+      "high": "Screen_-0.043_0.012_high",
+      "cage": "Screen_-0.043_0.012_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Screen_-0.043_0.012_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "Screen_-0.043_0.012_seat_low",
+      "high": "Screen_-0.043_0.012_seat_high",
+      "cage": "Screen_-0.043_0.012_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Screen_0.043_-0.012",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "Screen_0.043_-0.012_low",
+      "high": "Screen_0.043_-0.012_high",
+      "cage": "Screen_0.043_-0.012_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Screen_0.043_-0.012_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "Screen_0.043_-0.012_seat_low",
+      "high": "Screen_0.043_-0.012_seat_high",
+      "cage": "Screen_0.043_-0.012_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Screen_0.043_0.012",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "Screen_0.043_0.012_low",
+      "high": "Screen_0.043_0.012_high",
+      "cage": "Screen_0.043_0.012_cage",
+      "triangles": 124
+    },
+    {
+      "name": "Screen_0.043_0.012_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "Screen_0.043_0.012_seat_low",
+      "high": "Screen_0.043_0.012_seat_high",
+      "cage": "Screen_0.043_0.012_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "ConductorWell-1",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "ConductorWell-1_low",
+      "high": "ConductorWell-1_high",
+      "cage": "ConductorWell-1_cage",
+      "triangles": 44
+    },
+    {
+      "name": "CopperTube-1_0",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube-1_0_low",
+      "high": "CopperTube-1_0_high",
+      "cage": "CopperTube-1_0_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube-1_1",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube-1_1_low",
+      "high": "CopperTube-1_1_high",
+      "cage": "CopperTube-1_1_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube-1_2",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube-1_2_low",
+      "high": "CopperTube-1_2_high",
+      "cage": "CopperTube-1_2_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube-1_3",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube-1_3_low",
+      "high": "CopperTube-1_3_high",
+      "cage": "CopperTube-1_3_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube-1_4",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube-1_4_low",
+      "high": "CopperTube-1_4_high",
+      "cage": "CopperTube-1_4_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube-1_5",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube-1_5_low",
+      "high": "CopperTube-1_5_high",
+      "cage": "CopperTube-1_5_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "Clamp-1_0.064",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "Clamp-1_0.064_low",
+      "high": "Clamp-1_0.064_high",
+      "cage": "Clamp-1_0.064_cage",
+      "triangles": 44
+    },
+    {
+      "name": "ClampScrew-1_0.064_0.045",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew-1_0.064_0.045_low",
+      "high": "ClampScrew-1_0.064_0.045_high",
+      "cage": "ClampScrew-1_0.064_0.045_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew-1_0.064_0.045_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew-1_0.064_0.045_seat_low",
+      "high": "ClampScrew-1_0.064_0.045_seat_high",
+      "cage": "ClampScrew-1_0.064_0.045_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "ClampScrew-1_0.064_0.068",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew-1_0.064_0.068_low",
+      "high": "ClampScrew-1_0.064_0.068_high",
+      "cage": "ClampScrew-1_0.064_0.068_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew-1_0.064_0.068_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew-1_0.064_0.068_seat_low",
+      "high": "ClampScrew-1_0.064_0.068_seat_high",
+      "cage": "ClampScrew-1_0.064_0.068_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Clamp-1_0.209",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "Clamp-1_0.209_low",
+      "high": "Clamp-1_0.209_high",
+      "cage": "Clamp-1_0.209_cage",
+      "triangles": 44
+    },
+    {
+      "name": "ClampScrew-1_0.209_0.045",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew-1_0.209_0.045_low",
+      "high": "ClampScrew-1_0.209_0.045_high",
+      "cage": "ClampScrew-1_0.209_0.045_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew-1_0.209_0.045_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew-1_0.209_0.045_seat_low",
+      "high": "ClampScrew-1_0.209_0.045_seat_high",
+      "cage": "ClampScrew-1_0.209_0.045_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "ClampScrew-1_0.209_0.068",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew-1_0.209_0.068_low",
+      "high": "ClampScrew-1_0.209_0.068_high",
+      "cage": "ClampScrew-1_0.209_0.068_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew-1_0.209_0.068_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew-1_0.209_0.068_seat_low",
+      "high": "ClampScrew-1_0.209_0.068_seat_high",
+      "cage": "ClampScrew-1_0.209_0.068_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "HeatsinkBase-1",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "HeatsinkBase-1_low",
+      "high": "HeatsinkBase-1_high",
+      "cage": "HeatsinkBase-1_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_0",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_0_low",
+      "high": "Fin-1_0_high",
+      "cage": "Fin-1_0_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_1",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_1_low",
+      "high": "Fin-1_1_high",
+      "cage": "Fin-1_1_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_2",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_2_low",
+      "high": "Fin-1_2_high",
+      "cage": "Fin-1_2_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_3",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_3_low",
+      "high": "Fin-1_3_high",
+      "cage": "Fin-1_3_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_4",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_4_low",
+      "high": "Fin-1_4_high",
+      "cage": "Fin-1_4_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_5",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_5_low",
+      "high": "Fin-1_5_high",
+      "cage": "Fin-1_5_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_6",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_6_low",
+      "high": "Fin-1_6_high",
+      "cage": "Fin-1_6_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin-1_7",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin-1_7_low",
+      "high": "Fin-1_7_high",
+      "cage": "Fin-1_7_cage",
+      "triangles": 44
+    },
+    {
+      "name": "ConductorWell1",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "ConductorWell1_low",
+      "high": "ConductorWell1_high",
+      "cage": "ConductorWell1_cage",
+      "triangles": 44
+    },
+    {
+      "name": "CopperTube1_0",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube1_0_low",
+      "high": "CopperTube1_0_high",
+      "cage": "CopperTube1_0_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube1_1",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube1_1_low",
+      "high": "CopperTube1_1_high",
+      "cage": "CopperTube1_1_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube1_2",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube1_2_low",
+      "high": "CopperTube1_2_high",
+      "cage": "CopperTube1_2_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube1_3",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube1_3_low",
+      "high": "CopperTube1_3_high",
+      "cage": "CopperTube1_3_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube1_4",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube1_4_low",
+      "high": "CopperTube1_4_high",
+      "cage": "CopperTube1_4_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "CopperTube1_5",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "CopperTube1_5_low",
+      "high": "CopperTube1_5_high",
+      "cage": "CopperTube1_5_cage",
+      "triangles": 1036
+    },
+    {
+      "name": "Clamp1_0.064",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "Clamp1_0.064_low",
+      "high": "Clamp1_0.064_high",
+      "cage": "Clamp1_0.064_cage",
+      "triangles": 44
+    },
+    {
+      "name": "ClampScrew1_0.064_0.045",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew1_0.064_0.045_low",
+      "high": "ClampScrew1_0.064_0.045_high",
+      "cage": "ClampScrew1_0.064_0.045_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew1_0.064_0.045_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew1_0.064_0.045_seat_low",
+      "high": "ClampScrew1_0.064_0.045_seat_high",
+      "cage": "ClampScrew1_0.064_0.045_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "ClampScrew1_0.064_0.068",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew1_0.064_0.068_low",
+      "high": "ClampScrew1_0.064_0.068_high",
+      "cage": "ClampScrew1_0.064_0.068_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew1_0.064_0.068_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew1_0.064_0.068_seat_low",
+      "high": "ClampScrew1_0.064_0.068_seat_high",
+      "cage": "ClampScrew1_0.064_0.068_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "Clamp1_0.209",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "Clamp1_0.209_low",
+      "high": "Clamp1_0.209_high",
+      "cage": "Clamp1_0.209_cage",
+      "triangles": 44
+    },
+    {
+      "name": "ClampScrew1_0.209_0.045",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew1_0.209_0.045_low",
+      "high": "ClampScrew1_0.209_0.045_high",
+      "cage": "ClampScrew1_0.209_0.045_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew1_0.209_0.045_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew1_0.209_0.045_seat_low",
+      "high": "ClampScrew1_0.209_0.045_seat_high",
+      "cage": "ClampScrew1_0.209_0.045_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "ClampScrew1_0.209_0.068",
+      "group": "kit",
+      "cage_distance": 0.0007,
+      "low": "ClampScrew1_0.209_0.068_low",
+      "high": "ClampScrew1_0.209_0.068_high",
+      "cage": "ClampScrew1_0.209_0.068_cage",
+      "triangles": 124
+    },
+    {
+      "name": "ClampScrew1_0.209_0.068_seat",
+      "group": "kit",
+      "cage_distance": 0.0005,
+      "low": "ClampScrew1_0.209_0.068_seat_low",
+      "high": "ClampScrew1_0.209_0.068_seat_high",
+      "cage": "ClampScrew1_0.209_0.068_seat_cage",
+      "triangles": 156
+    },
+    {
+      "name": "HeatsinkBase1",
+      "group": "kit",
+      "cage_distance": 0.0018,
+      "low": "HeatsinkBase1_low",
+      "high": "HeatsinkBase1_high",
+      "cage": "HeatsinkBase1_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_0",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_0_low",
+      "high": "Fin1_0_high",
+      "cage": "Fin1_0_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_1",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_1_low",
+      "high": "Fin1_1_high",
+      "cage": "Fin1_1_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_2",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_2_low",
+      "high": "Fin1_2_high",
+      "cage": "Fin1_2_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_3",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_3_low",
+      "high": "Fin1_3_high",
+      "cage": "Fin1_3_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_4",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_4_low",
+      "high": "Fin1_4_high",
+      "cage": "Fin1_4_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_5",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_5_low",
+      "high": "Fin1_5_high",
+      "cage": "Fin1_5_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_6",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_6_low",
+      "high": "Fin1_6_high",
+      "cage": "Fin1_6_cage",
+      "triangles": 44
+    },
+    {
+      "name": "Fin1_7",
+      "group": "kit",
+      "cage_distance": 0.0006,
+      "low": "Fin1_7_low",
+      "high": "Fin1_7_high",
+      "cage": "Fin1_7_cage",
+      "triangles": 44
+    }
+  ],
+  "fasteners": [
+    {
+      "name": "Receiver_-1_0",
+      "center": [
+        -0.0551,
+        0.015,
+        0.083
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_-1_1",
+      "center": [
+        -0.0551,
+        0.085,
+        0.091
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_-1_2",
+      "center": [
+        -0.0551,
+        0.19,
+        0.091
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_-1_3",
+      "center": [
+        -0.0551,
+        0.267,
+        0.064
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_-1_4",
+      "center": [
+        -0.0551,
+        0.015,
+        0.039
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_-1_5",
+      "center": [
+        -0.0551,
+        0.25,
+        0.036
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Stock_-1_0",
+      "center": [
+        -0.0385,
+        -0.18,
+        0.071
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Stock_-1_1",
+      "center": [
+        -0.0385,
+        -0.071,
+        0.068
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Stock_-1_2",
+      "center": [
+        -0.0385,
+        -0.17,
+        -0.04
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Cell_-1_0",
+      "center": [
+        -0.0571,
+        0.225,
+        -0.039
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.002
+    },
+    {
+      "name": "Cell_-1_1",
+      "center": [
+        -0.0571,
+        0.365,
+        -0.065
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.002
+    },
+    {
+      "name": "Receiver_1_0",
+      "center": [
+        0.0551,
+        0.015,
+        0.083
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_1_1",
+      "center": [
+        0.0551,
+        0.085,
+        0.091
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_1_2",
+      "center": [
+        0.0551,
+        0.19,
+        0.091
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_1_3",
+      "center": [
+        0.0551,
+        0.267,
+        0.064
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_1_4",
+      "center": [
+        0.0551,
+        0.015,
+        0.039
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Receiver_1_5",
+      "center": [
+        0.0551,
+        0.25,
+        0.036
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Stock_1_0",
+      "center": [
+        0.0385,
+        -0.18,
+        0.071
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Stock_1_1",
+      "center": [
+        0.0385,
+        -0.071,
+        0.068
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Stock_1_2",
+      "center": [
+        0.0385,
+        -0.17,
+        -0.04
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0025
+    },
+    {
+      "name": "Cell_1_0",
+      "center": [
+        0.0571,
+        0.225,
+        -0.039
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.002
+    },
+    {
+      "name": "Cell_1_1",
+      "center": [
+        0.0571,
+        0.365,
+        -0.065
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.002
+    },
+    {
+      "name": "Screen_-0.043_-0.012",
+      "center": [
+        -0.043,
+        -0.03137436867076458,
+        0.10140380592228744
+      ],
+      "normal": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0018
+    },
+    {
+      "name": "Screen_-0.043_0.012",
+      "center": [
+        -0.043,
+        -0.01440380592228744,
+        0.11837436867076458
+      ],
+      "normal": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0018
+    },
+    {
+      "name": "Screen_0.043_-0.012",
+      "center": [
+        0.043,
+        -0.03137436867076458,
+        0.10140380592228744
+      ],
+      "normal": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0018
+    },
+    {
+      "name": "Screen_0.043_0.012",
+      "center": [
+        0.043,
+        -0.01440380592228744,
+        0.11837436867076458
+      ],
+      "normal": [
+        0,
+        -0.7071067811865476,
+        0.7071067811865476
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0018
+    },
+    {
+      "name": "ClampScrew-1_0.064_0.045",
+      "center": [
+        -0.0685,
+        0.064,
+        0.045
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    },
+    {
+      "name": "ClampScrew-1_0.064_0.068",
+      "center": [
+        -0.0685,
+        0.064,
+        0.068
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    },
+    {
+      "name": "ClampScrew-1_0.209_0.045",
+      "center": [
+        -0.0685,
+        0.209,
+        0.045
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    },
+    {
+      "name": "ClampScrew-1_0.209_0.068",
+      "center": [
+        -0.0685,
+        0.209,
+        0.068
+      ],
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    },
+    {
+      "name": "ClampScrew1_0.064_0.045",
+      "center": [
+        0.0685,
+        0.064,
+        0.045
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    },
+    {
+      "name": "ClampScrew1_0.064_0.068",
+      "center": [
+        0.0685,
+        0.064,
+        0.068
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    },
+    {
+      "name": "ClampScrew1_0.209_0.045",
+      "center": [
+        0.0685,
+        0.209,
+        0.045
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    },
+    {
+      "name": "ClampScrew1_0.209_0.068",
+      "center": [
+        0.0685,
+        0.209,
+        0.068
+      ],
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "type": "steel countersunk Phillips",
+      "radius": 0.0017
+    }
+  ],
+  "replaced_prefixes": [
+    "T03",
+    "T04",
+    "T05",
+    "T07",
+    "T08",
+    "T11"
+  ],
+  "new_triangles": 24064,
+  "imagegen_calls": 2,
+  "tripo_calls": 0,
+  "units": "metres; Blender X right Y forward Z up",
+  "uv_version": "ls01-v1; unchanged parts keep old atlas",
+  "reused_fasteners": {
+    "count": 8,
+    "location": "front-shroud side depth survey; front-depth.npz",
+    "prototype": "Receiver \u00b11 0 head + seat",
+    "intentional_shared_uv": true,
+    "uniform_scale": 1.5,
+    "normal_basis_preserved": true,
+    "instances": [
+      {
+        "name": "FrontPhillips-1_0",
+        "center": [
+          -0.046,
+          0.428,
+          -0.013
+        ],
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_-1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      },
+      {
+        "name": "FrontPhillips-1_1",
+        "center": [
+          -0.0525,
+          0.554,
+          0.034
+        ],
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_-1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      },
+      {
+        "name": "FrontPhillips-1_2",
+        "center": [
+          -0.0395,
+          0.545,
+          0.111
+        ],
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_-1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      },
+      {
+        "name": "FrontPhillips-1_3",
+        "center": [
+          -0.04,
+          0.532,
+          0.006
+        ],
+        "normal": [
+          -1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_-1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      },
+      {
+        "name": "FrontPhillips1_0",
+        "center": [
+          0.046,
+          0.428,
+          -0.013
+        ],
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      },
+      {
+        "name": "FrontPhillips1_1",
+        "center": [
+          0.0525,
+          0.554,
+          0.034
+        ],
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      },
+      {
+        "name": "FrontPhillips1_2",
+        "center": [
+          0.0395,
+          0.545,
+          0.111
+        ],
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      },
+      {
+        "name": "FrontPhillips1_3",
+        "center": [
+          0.04,
+          0.532,
+          0.006
+        ],
+        "normal": [
+          1,
+          0,
+          0
+        ],
+        "radius": 0.00375,
+        "prototype": "Receiver_1_0",
+        "scale": 1.5,
+        "intentional_shared_uv": true
+      }
+    ]
+  },
+  "runtime_triangles": 39400,
+  "retained_parts": [
+    "T00_CoreGrip_low",
+    "T01_FrontShroud_low",
+    "T02_CoilAssembly_low",
+    "T06_Muzzle_low",
+    "T09_StockBrace_low",
+    "T10_ButtPad_low",
+    "T12_Foregrip_low",
+    "T13_CheekRest_low",
+    "T14_FrontBracket_low",
+    "T15_RailInset_low",
+    "T16_FrontLatch_low"
+  ],
+  "runtime_meshes": 15,
+  "material_ids": {
+    "white": 0.1,
+    "orange": 0.2,
+    "dark": 0.3,
+    "steel": 0.4,
+    "copper": 0.5,
+    "rubber": 0.6,
+    "glass": 0.7,
+    "black": 0.8
+  },
+  "runtime_resolution": {
+    "body": 2048,
+    "body_normal": 4096,
+    "kit": 2048,
+    "retained": 2048,
+    "reason": "Only body normal needs 4K for Phillips grooves; base/ORM 2K to reduce bandwidth"
+  },
+  "bake_outputs": {
+    "body": {
+      "directory": "03-bake/body",
+      "contract": {
+        "source_sha256": "255a193e6e10707b66f664408a247f6fdcc1d3ac80cd17f6d37ac1badb977589",
+        "resolution": 4096,
+        "normal": "OpenGL +Y",
+        "explicit_cage": true,
+        "margin_px": 32
+      },
+      "maps": [
+        "AO.png",
+        "BaseColor.png",
+        "Curvature.png",
+        "EdgeMask.png",
+        "MaterialID.png",
+        "Metallic.png",
+        "NormalGL.png",
+        "OilMask.png",
+        "Position.png",
+        "Roughness.png",
+        "WearMask.png",
+        "WorldNormal.png"
+      ]
+    },
+    "kit": {
+      "directory": "03-bake/kit",
+      "contract": {
+        "source_sha256": "255a193e6e10707b66f664408a247f6fdcc1d3ac80cd17f6d37ac1badb977589",
+        "resolution": 4096,
+        "normal": "OpenGL +Y",
+        "explicit_cage": true,
+        "margin_px": 32
+      },
+      "maps": [
+        "AO.png",
+        "BaseColor.png",
+        "Curvature.png",
+        "EdgeMask.png",
+        "MaterialID.png",
+        "Metallic.png",
+        "NormalGL.png",
+        "OilMask.png",
+        "Position.png",
+        "Roughness.png",
+        "WearMask.png",
+        "WorldNormal.png"
+      ]
+    }
+  },
+  "build_parameters": {
+    "seed": 20261115,
+    "uv_pack_margin_fraction": 0.008,
+    "master_size": 4096,
+    "runtime_mipmaps": true,
+    "runtime_anisotropic": true,
+    "normal_convention": "OpenGL +Y",
+    "orm": "R AO; G Roughness; B Metallic",
+    "uv_version": "ls01-v1; unchanged parts keep old atlas"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "completed": true,
+  "selected_to_active": true,
+  "high_source": "01-high/A-high.blend",
+  "low_source": "02-low/A-low.blend",
+  "resolution": 2048,
+  "margin_px": 8,
+  "extrusion_m": 0.025,
+  "max_distance_m": 0.065,
+  "samples": 16,
+  "maps": [
+    {
+      "map": "NormalGL",
+      "kind": "NORMAL",
+      "seconds": 2.652794122695923
+    },
+    {
+      "map": "AO",
+      "kind": "AO",
+      "seconds": 10.415303945541382
+    },
+    {
+      "map": "Roughness",
+      "kind": "ROUGHNESS",
+      "seconds": 8.198256731033325
+    },
+    {
+      "map": "BaseColor",
+      "kind": "EMIT material channel",
+      "seconds": 3.6683309078216553
+    },
+    {
+      "map": "Metallic",
+      "kind": "EMIT material channel",
+      "seconds": 3.744345188140869
+    },
+    {
+      "map": "Emission",
+      "kind": "EMIT material channel",
+      "seconds": 3.9900102615356445
+    }
+  ]
+}

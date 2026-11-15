@@ -1,3 +1,2 @@
 #!/bin/zsh
-cd "${0:A:h}"
-exec /Applications/Godot.app/Contents/MacOS/Godot --path "$PWD" "$@"
+exec "${0:A:h}/tools/launch_game.sh" training "$@"

@@ -1,0 +1,94 @@
+{
+	"checks": [
+		{
+			"check": "gun_emissive_triangle_candidates",
+			"details": 32,
+			"passed": true
+		},
+		{
+			"check": "gun_visible_emissive_samples",
+			"details": 2,
+			"passed": true
+		},
+		{
+			"check": "gun_mesh_occlusion",
+			"details": null,
+			"passed": true
+		},
+		{
+			"check": "ads_active",
+			"details": null,
+			"passed": true
+		},
+		{
+			"check": "energy_off_suppresses_gun_flare",
+			"details": null,
+			"passed": true
+		},
+		{
+			"check": "lamps_off_suppress_flares",
+			"details": null,
+			"passed": true
+		},
+		{
+			"check": "sun_facing_visible",
+			"details": 0.997229911472757,
+			"passed": true
+		},
+		{
+			"check": "sun_occluded_fades",
+			"details": 0.0000849095487782921,
+			"passed": true
+		},
+		{
+			"check": "gun_key_shadow_attenuates",
+			"details": 0.000409734978135259,
+			"passed": true
+		},
+		{
+			"check": "sun_side_offscreen",
+			"details": null,
+			"passed": true
+		},
+		{
+			"check": "sun_behind_suppressed",
+			"details": null,
+			"passed": true
+		},
+		{
+			"check": "overview_camera_used",
+			"details": null,
+			"passed": true
+		},
+		{
+			"check": "ultrawide_flare_layout",
+			"details": null,
+			"passed": true
+		}
+	],
+	"display": "macOS",
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"frame_timing": "Monotonic wall clock between rendered frames, not fixed physics delta; warmup excluded",
+	"performance": {
+		"off": {
+			"effects": false,
+			"frames": 600,
+			"max_ms": 16.661,
+			"p50_ms": 8.321,
+			"p95_ms": 10.241,
+			"route": "central corridor x=3, z=20 to -20, same 600 render frames"
+		},
+		"on": {
+			"effects": true,
+			"frames": 600,
+			"max_ms": 12.023,
+			"p50_ms": 8.334,
+			"p95_ms": 10.136,
+			"route": "central corridor x=3, z=20 to -20, same 600 render frames"
+		},
+		"target_met": true,
+		"target_p95_ms": 16.7
+	},
+	"platform": "macOS"
+}

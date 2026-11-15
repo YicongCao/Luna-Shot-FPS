@@ -1,0 +1,468 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/module_visual.gd" id="environment_art"]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+albedo_color = Color(0.76, 0.78, 0.78, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R2"]
+albedo_color = Color(0.9, 0.9, 0.87, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R3"]
+albedo_color = Color(0.46, 0.51, 0.54, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R4"]
+albedo_color = Color(0.18, 0.23, 0.27, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R5"]
+albedo_color = Color(0.36, 0.4, 0.43, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R6"]
+albedo_color = Color(0.67, 0.47, 0.31, 1)
+roughness = 0.88
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(3.800000, 0.400000, 3.800000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(3.800000, 0.400000, 3.800000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R10"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R12"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R14"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R16"]
+size = Vector3(0.250000, 5.800000, 0.250000)
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(3.200000, 0.550000, 2.600000)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R18"]
+size = Vector3(3.200000, 0.550000, 2.600000)
+
+[sub_resource type="BoxMesh" id="R19"]
+size = Vector3(0.380000, 4.500000, 0.450000)
+material = SubResource("R4")
+
+[sub_resource type="BoxShape3D" id="R20"]
+size = Vector3(0.380000, 4.500000, 0.450000)
+
+[sub_resource type="BoxMesh" id="R21"]
+size = Vector3(0.650000, 3.700000, 2.650000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R22"]
+size = Vector3(0.650000, 3.700000, 2.650000)
+
+[sub_resource type="BoxMesh" id="R23"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R24"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R25"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R26"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R27"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R28"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R29"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R30"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R31"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R32"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R33"]
+size = Vector3(1.300000, 0.220000, 3.300000)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R34"]
+size = Vector3(1.300000, 0.220000, 3.300000)
+
+[sub_resource type="BoxMesh" id="R35"]
+size = Vector3(0.650000, 3.700000, 2.650000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R36"]
+size = Vector3(0.650000, 3.700000, 2.650000)
+
+[sub_resource type="BoxMesh" id="R37"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R38"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R39"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R40"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R41"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R42"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R43"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R44"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R45"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+material = SubResource("R2")
+
+[sub_resource type="BoxShape3D" id="R46"]
+size = Vector3(0.100000, 3.800000, 3.200000)
+
+[sub_resource type="BoxMesh" id="R47"]
+size = Vector3(1.300000, 0.220000, 3.300000)
+material = SubResource("R1")
+
+[sub_resource type="BoxShape3D" id="R48"]
+size = Vector3(1.300000, 0.220000, 3.300000)
+
+[sub_resource type="BoxMesh" id="R49"]
+size = Vector3(3.200000, 0.200000, 0.400000)
+material = SubResource("R3")
+
+[sub_resource type="BoxShape3D" id="R50"]
+size = Vector3(3.200000, 0.200000, 0.400000)
+
+[node name="ModuleB2" type="Node3D"]
+script = ExtResource("environment_art")
+asset_id = "B2"
+metadata/module_type = "B"
+metadata/footprint = Vector2(4, 4)
+metadata/subtype = "B2"
+
+[node name="Foot" type="StaticBody3D" parent="."]
+position = Vector3(0.000000, 0.200000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Foot"]
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="Foot"]
+shape = SubResource("R8")
+
+[node name="Frame-1.5-1.5" type="StaticBody3D" parent="."]
+position = Vector3(-1.500000, 3.100000, -1.500000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Frame-1.5-1.5"]
+mesh = SubResource("R9")
+
+[node name="Collision" type="CollisionShape3D" parent="Frame-1.5-1.5"]
+shape = SubResource("R10")
+
+[node name="Frame-1.51.5" type="StaticBody3D" parent="."]
+position = Vector3(-1.500000, 3.100000, 1.500000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Frame-1.51.5"]
+mesh = SubResource("R11")
+
+[node name="Collision" type="CollisionShape3D" parent="Frame-1.51.5"]
+shape = SubResource("R12")
+
+[node name="Frame1.5-1.5" type="StaticBody3D" parent="."]
+position = Vector3(1.500000, 3.100000, -1.500000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Frame1.5-1.5"]
+mesh = SubResource("R13")
+
+[node name="Collision" type="CollisionShape3D" parent="Frame1.5-1.5"]
+shape = SubResource("R14")
+
+[node name="Frame1.51.5" type="StaticBody3D" parent="."]
+position = Vector3(1.500000, 3.100000, 1.500000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Frame1.51.5"]
+mesh = SubResource("R15")
+
+[node name="Collision" type="CollisionShape3D" parent="Frame1.51.5"]
+shape = SubResource("R16")
+
+[node name="Manifold" type="StaticBody3D" parent="."]
+position = Vector3(0.000000, 0.800000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Manifold"]
+mesh = SubResource("R17")
+
+[node name="Collision" type="CollisionShape3D" parent="Manifold"]
+shape = SubResource("R18")
+
+[node name="Spine" type="StaticBody3D" parent="."]
+position = Vector3(0.000000, 2.700000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Spine"]
+mesh = SubResource("R19")
+
+[node name="Collision" type="CollisionShape3D" parent="Spine"]
+shape = SubResource("R20")
+
+[node name="Wing-1" type="Node3D" parent="."]
+position = Vector3(-1.050000, 0.000000, 0.000000)
+
+[node name="WingCore" type="StaticBody3D" parent="Wing-1"]
+position = Vector3(0.000000, 2.900000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing-1/WingCore"]
+mesh = SubResource("R21")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing-1/WingCore"]
+shape = SubResource("R22")
+
+[node name="VerticalFin0" type="StaticBody3D" parent="Wing-1"]
+position = Vector3(-0.560000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing-1/VerticalFin0"]
+mesh = SubResource("R23")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing-1/VerticalFin0"]
+shape = SubResource("R24")
+
+[node name="VerticalFin1" type="StaticBody3D" parent="Wing-1"]
+position = Vector3(-0.280000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing-1/VerticalFin1"]
+mesh = SubResource("R25")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing-1/VerticalFin1"]
+shape = SubResource("R26")
+
+[node name="VerticalFin2" type="StaticBody3D" parent="Wing-1"]
+position = Vector3(0.000000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing-1/VerticalFin2"]
+mesh = SubResource("R27")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing-1/VerticalFin2"]
+shape = SubResource("R28")
+
+[node name="VerticalFin3" type="StaticBody3D" parent="Wing-1"]
+position = Vector3(0.280000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing-1/VerticalFin3"]
+mesh = SubResource("R29")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing-1/VerticalFin3"]
+shape = SubResource("R30")
+
+[node name="VerticalFin4" type="StaticBody3D" parent="Wing-1"]
+position = Vector3(0.560000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing-1/VerticalFin4"]
+mesh = SubResource("R31")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing-1/VerticalFin4"]
+shape = SubResource("R32")
+
+[node name="Cap" type="StaticBody3D" parent="Wing-1"]
+position = Vector3(0.000000, 5.020000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing-1/Cap"]
+mesh = SubResource("R33")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing-1/Cap"]
+shape = SubResource("R34")
+
+[node name="Wing1" type="Node3D" parent="."]
+position = Vector3(1.050000, 0.000000, 0.000000)
+
+[node name="WingCore" type="StaticBody3D" parent="Wing1"]
+position = Vector3(0.000000, 2.900000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing1/WingCore"]
+mesh = SubResource("R35")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing1/WingCore"]
+shape = SubResource("R36")
+
+[node name="VerticalFin0" type="StaticBody3D" parent="Wing1"]
+position = Vector3(-0.560000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing1/VerticalFin0"]
+mesh = SubResource("R37")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing1/VerticalFin0"]
+shape = SubResource("R38")
+
+[node name="VerticalFin1" type="StaticBody3D" parent="Wing1"]
+position = Vector3(-0.280000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing1/VerticalFin1"]
+mesh = SubResource("R39")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing1/VerticalFin1"]
+shape = SubResource("R40")
+
+[node name="VerticalFin2" type="StaticBody3D" parent="Wing1"]
+position = Vector3(0.000000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing1/VerticalFin2"]
+mesh = SubResource("R41")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing1/VerticalFin2"]
+shape = SubResource("R42")
+
+[node name="VerticalFin3" type="StaticBody3D" parent="Wing1"]
+position = Vector3(0.280000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing1/VerticalFin3"]
+mesh = SubResource("R43")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing1/VerticalFin3"]
+shape = SubResource("R44")
+
+[node name="VerticalFin4" type="StaticBody3D" parent="Wing1"]
+position = Vector3(0.560000, 3.050000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing1/VerticalFin4"]
+mesh = SubResource("R45")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing1/VerticalFin4"]
+shape = SubResource("R46")
+
+[node name="Cap" type="StaticBody3D" parent="Wing1"]
+position = Vector3(0.000000, 5.020000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Wing1/Cap"]
+mesh = SubResource("R47")
+
+[node name="Collision" type="CollisionShape3D" parent="Wing1/Cap"]
+shape = SubResource("R48")
+
+[node name="TopLink" type="StaticBody3D" parent="."]
+position = Vector3(0.000000, 5.700000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="TopLink"]
+mesh = SubResource("R49")
+
+[node name="Collision" type="CollisionShape3D" parent="TopLink"]
+shape = SubResource("R50")
+
+[node name="ID" type="Label3D" parent="."]
+position = Vector3(0.000000, 0.650000, 1.930000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+text = "B2 / THERMAL"
+font_size = 21
+pixel_size = 0.012
+modulate = Color(0.16, 0.21, 0.24, 1)
+outline_size = 0
+no_depth_test = false

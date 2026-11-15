@@ -1,0 +1,302 @@
+[
+	{
+		"check": "ammo and luminous cells 20",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 20",
+		"passed": true
+	},
+	{
+		"check": "fire 0",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 19",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 19",
+		"passed": true
+	},
+	{
+		"check": "fire 1",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 18",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 18",
+		"passed": true
+	},
+	{
+		"check": "fire 2",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 17",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 17",
+		"passed": true
+	},
+	{
+		"check": "fire 3",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 16",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 16",
+		"passed": true
+	},
+	{
+		"check": "fire 4",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 15",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 15",
+		"passed": true
+	},
+	{
+		"check": "fire 5",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 14",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 14",
+		"passed": true
+	},
+	{
+		"check": "fire 6",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 13",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 13",
+		"passed": true
+	},
+	{
+		"check": "fire 7",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 12",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 12",
+		"passed": true
+	},
+	{
+		"check": "fire 8",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 11",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 11",
+		"passed": true
+	},
+	{
+		"check": "fire 9",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 10",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 10",
+		"passed": true
+	},
+	{
+		"check": "fire 10",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 9",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 9",
+		"passed": true
+	},
+	{
+		"check": "fire 11",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 8",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 8",
+		"passed": true
+	},
+	{
+		"check": "fire 12",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 7",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 7",
+		"passed": true
+	},
+	{
+		"check": "fire 13",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 6",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 6",
+		"passed": true
+	},
+	{
+		"check": "fire 14",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 5",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 5",
+		"passed": true
+	},
+	{
+		"check": "fire 15",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 4",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 4",
+		"passed": true
+	},
+	{
+		"check": "fire 16",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 3",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 3",
+		"passed": true
+	},
+	{
+		"check": "fire 17",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 2",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 2",
+		"passed": true
+	},
+	{
+		"check": "fire 18",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 1",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 1",
+		"passed": true
+	},
+	{
+		"check": "fire 19",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 0",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 0",
+		"passed": true
+	},
+	{
+		"check": "empty blocks firing",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 0",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 0",
+		"passed": true
+	},
+	{
+		"check": "reload does not fill early",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 20",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 20",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 3",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 3",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 20",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 20",
+		"passed": true
+	},
+	{
+		"check": "ammo and luminous cells 4",
+		"passed": true
+	},
+	{
+		"check": "numeric readout 4",
+		"passed": true
+	},
+	{
+		"check": "low ammo amber",
+		"passed": true
+	}
+]

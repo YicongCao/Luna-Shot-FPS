@@ -1,0 +1,88 @@
+{
+  "asset": "A",
+  "stage": "high",
+  "source": "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/A/01-tripo-high/model.glb",
+  "source_bounds": [
+    [
+      -0.488837867975235,
+      -0.48915353417396545,
+      -0.1924736052751541
+    ],
+    [
+      0.48881301283836365,
+      0.48974499106407166,
+      0.1923397332429886
+    ]
+  ],
+  "target_bounds": [
+    [
+      -1.899999976158142,
+      -1.899999976158142,
+      0.0
+    ],
+    [
+      1.899999976158142,
+      1.899999976158142,
+      1.1999999284744263
+    ]
+  ],
+  "scale": [
+    3.8868680000305176,
+    3.8819141387939453,
+    3.1183948516845703
+  ],
+  "parts": [
+    {
+      "name": "A_P00_high",
+      "raw_name": "tripo_part_0",
+      "triangles": 743571
+    },
+    {
+      "name": "A_P01_high",
+      "raw_name": "tripo_part_1",
+      "triangles": 477822
+    },
+    {
+      "name": "A_P02_high",
+      "raw_name": "tripo_part_2",
+      "triangles": 332526
+    },
+    {
+      "name": "A_P03_high",
+      "raw_name": "tripo_part_3",
+      "triangles": 112686
+    },
+    {
+      "name": "A_P04_high",
+      "raw_name": "tripo_part_4",
+      "triangles": 48435
+    },
+    {
+      "name": "A_P05_high",
+      "raw_name": "tripo_part_5",
+      "triangles": 46707
+    },
+    {
+      "name": "A_P06_high",
+      "raw_name": "tripo_part_6",
+      "triangles": 44742
+    },
+    {
+      "name": "A_P07_high",
+      "raw_name": "tripo_part_7",
+      "triangles": 45476
+    },
+    {
+      "name": "A_P08_high",
+      "raw_name": "tripo_part_8",
+      "triangles": 43061
+    },
+    {
+      "name": "A_P09_high",
+      "raw_name": "tripo_part_9",
+      "triangles": 47758
+    }
+  ],
+  "authored_details": "12 surface-snapped bevelled inspection-cover fasteners; not subdivision of low mesh",
+  "triangles": 1948880
+}

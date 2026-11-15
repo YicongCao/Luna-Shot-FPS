@@ -1,0 +1,954 @@
+{
+  "asset": "E",
+  "method": "Closed shells: signed volume; open shells: area-weighted nearest B0 normal votes, not blind volume flip",
+  "stages": {
+    "high": [
+      {
+        "name": "E_P00_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 189696,
+            "closed": false,
+            "signed_volume": 0.6446917268200737,
+            "reference_vote": 0.940607728056415,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P01_high",
+        "flipped_faces": 27273,
+        "shells": [
+          {
+            "faces": 27273,
+            "closed": false,
+            "signed_volume": -0.06003353148914906,
+            "reference_vote": -0.9260520895361916,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P02_high",
+        "flipped_faces": 248889,
+        "shells": [
+          {
+            "faces": 248889,
+            "closed": false,
+            "signed_volume": -2.40384530308888,
+            "reference_vote": -0.984522005466146,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P03_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 305825,
+            "closed": false,
+            "signed_volume": 3.3261163196415304,
+            "reference_vote": 0.9410258671525502,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.00015161890814852086,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.00015218538737826748,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.00015245769266887996,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.00015173099048600605,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.000151695620540219,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.00015146656126792854,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.00015168957704266478,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 226,
+            "closed": true,
+            "signed_volume": 0.00015353443581034304,
+            "reference_vote": 0.0,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P04_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 52786,
+            "closed": false,
+            "signed_volume": 0.24923745906259379,
+            "reference_vote": 0.9262294439185544,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P05_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 52268,
+            "closed": false,
+            "signed_volume": 0.25975608855511706,
+            "reference_vote": 0.9129506296871273,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P06_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 46667,
+            "closed": false,
+            "signed_volume": 0.2525775326070061,
+            "reference_vote": 0.9263707971817482,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P07_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 40743,
+            "closed": false,
+            "signed_volume": 0.248697357973505,
+            "reference_vote": 0.9859329638346114,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P08_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 39880,
+            "closed": false,
+            "signed_volume": 0.23723586536193864,
+            "reference_vote": 0.983638746350921,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P09_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 40890,
+            "closed": false,
+            "signed_volume": 0.241167471615654,
+            "reference_vote": 0.9738970015318619,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P10_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 189659,
+            "closed": false,
+            "signed_volume": 0.6340128823446911,
+            "reference_vote": 0.9227632843435346,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P11_high",
+        "flipped_faces": 177468,
+        "shells": [
+          {
+            "faces": 177468,
+            "closed": false,
+            "signed_volume": -0.2078918839523395,
+            "reference_vote": -0.8665884785198711,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P12_high",
+        "flipped_faces": 164834,
+        "shells": [
+          {
+            "faces": 164834,
+            "closed": false,
+            "signed_volume": -1.6374861401406546,
+            "reference_vote": -0.9039072745428751,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P13_high",
+        "flipped_faces": 26788,
+        "shells": [
+          {
+            "faces": 26788,
+            "closed": false,
+            "signed_volume": -0.06954784459700629,
+            "reference_vote": -0.9100123221431461,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P14_high",
+        "flipped_faces": 26589,
+        "shells": [
+          {
+            "faces": 26589,
+            "closed": false,
+            "signed_volume": -0.05882542170765248,
+            "reference_vote": -0.904512373997608,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P15_high",
+        "flipped_faces": 26447,
+        "shells": [
+          {
+            "faces": 26447,
+            "closed": false,
+            "signed_volume": -0.06509033897625116,
+            "reference_vote": -0.8396651436138534,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P16_high",
+        "flipped_faces": 26361,
+        "shells": [
+          {
+            "faces": 26361,
+            "closed": false,
+            "signed_volume": -0.05430338893470813,
+            "reference_vote": -0.8711977520497312,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P17_high",
+        "flipped_faces": 26292,
+        "shells": [
+          {
+            "faces": 26292,
+            "closed": false,
+            "signed_volume": -0.060635061756750964,
+            "reference_vote": -0.7798157417462399,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P18_high",
+        "flipped_faces": 26088,
+        "shells": [
+          {
+            "faces": 26088,
+            "closed": false,
+            "signed_volume": -0.06612955305406842,
+            "reference_vote": -0.8593754264348343,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P19_high",
+        "flipped_faces": 25897,
+        "shells": [
+          {
+            "faces": 25897,
+            "closed": false,
+            "signed_volume": -0.06545975660624492,
+            "reference_vote": -0.8484876039902477,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P20_high",
+        "flipped_faces": 25883,
+        "shells": [
+          {
+            "faces": 25883,
+            "closed": false,
+            "signed_volume": -0.061667525026142776,
+            "reference_vote": -0.9142002759712647,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P21_high",
+        "flipped_faces": 25765,
+        "shells": [
+          {
+            "faces": 25765,
+            "closed": false,
+            "signed_volume": -0.06204040385253625,
+            "reference_vote": -0.9423209203753148,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P22_high",
+        "flipped_faces": 25716,
+        "shells": [
+          {
+            "faces": 25716,
+            "closed": false,
+            "signed_volume": -0.06011314923206612,
+            "reference_vote": -0.8469691694923965,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P23_high",
+        "flipped_faces": 25603,
+        "shells": [
+          {
+            "faces": 25603,
+            "closed": false,
+            "signed_volume": -0.06863922550183925,
+            "reference_vote": -0.9294876151981861,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P24_high",
+        "flipped_faces": 16086,
+        "shells": [
+          {
+            "faces": 16086,
+            "closed": false,
+            "signed_volume": -0.04835935687501092,
+            "reference_vote": -0.8501838371432316,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P25_high",
+        "flipped_faces": 16081,
+        "shells": [
+          {
+            "faces": 16081,
+            "closed": false,
+            "signed_volume": -0.045150838469912934,
+            "reference_vote": -0.8624790513239857,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P26_high",
+        "flipped_faces": 15860,
+        "shells": [
+          {
+            "faces": 15860,
+            "closed": false,
+            "signed_volume": -0.049340351222781464,
+            "reference_vote": -0.8626310593728559,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P27_high",
+        "flipped_faces": 15580,
+        "shells": [
+          {
+            "faces": 15580,
+            "closed": false,
+            "signed_volume": -0.0442590827791823,
+            "reference_vote": -0.9126257130888071,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P28_high",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 11235,
+            "closed": false,
+            "signed_volume": 0.09060687997087769,
+            "reference_vote": 0.9149950144834789,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P29_high",
+        "flipped_faces": 11066,
+        "shells": [
+          {
+            "faces": 11066,
+            "closed": false,
+            "signed_volume": -0.09137710425224672,
+            "reference_vote": -0.8618076625131156,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P30_high",
+        "flipped_faces": 10938,
+        "shells": [
+          {
+            "faces": 10938,
+            "closed": false,
+            "signed_volume": -0.09354826728807009,
+            "reference_vote": -0.9395878480872308,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P31_high",
+        "flipped_faces": 10729,
+        "shells": [
+          {
+            "faces": 10729,
+            "closed": false,
+            "signed_volume": -0.08843784245597064,
+            "reference_vote": -0.9078908395957843,
+            "flipped": true
+          }
+        ]
+      }
+    ],
+    "low": [
+      {
+        "name": "E_P02_low",
+        "flipped_faces": 1822,
+        "shells": [
+          {
+            "faces": 1822,
+            "closed": false,
+            "signed_volume": -2.3966506290876732,
+            "reference_vote": -0.9821189478972905,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P06_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 532,
+            "closed": false,
+            "signed_volume": 0.258516959339128,
+            "reference_vote": 0.9388210858223657,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P07_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 405,
+            "closed": false,
+            "signed_volume": 0.2595247577396549,
+            "reference_vote": 0.9866277203572562,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P14_low",
+        "flipped_faces": 361,
+        "shells": [
+          {
+            "faces": 361,
+            "closed": false,
+            "signed_volume": -0.05990447505047314,
+            "reference_vote": -0.930517855163304,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P11_low",
+        "flipped_faces": 1379,
+        "shells": [
+          {
+            "faces": 1379,
+            "closed": false,
+            "signed_volume": -0.15942823479321105,
+            "reference_vote": -0.8341397288198872,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P13_low",
+        "flipped_faces": 305,
+        "shells": [
+          {
+            "faces": 305,
+            "closed": false,
+            "signed_volume": -0.07064092862613809,
+            "reference_vote": -0.9113130196441779,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P22_low",
+        "flipped_faces": 332,
+        "shells": [
+          {
+            "faces": 332,
+            "closed": false,
+            "signed_volume": -0.062464988206102134,
+            "reference_vote": -0.9110549614830372,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P23_low",
+        "flipped_faces": 319,
+        "shells": [
+          {
+            "faces": 319,
+            "closed": false,
+            "signed_volume": -0.06777218996009064,
+            "reference_vote": -0.9384151154097401,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P31_low",
+        "flipped_faces": 382,
+        "shells": [
+          {
+            "faces": 382,
+            "closed": false,
+            "signed_volume": -0.08917857313832538,
+            "reference_vote": -0.9254922137389794,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P05_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 482,
+            "closed": false,
+            "signed_volume": 0.2595961549081948,
+            "reference_vote": 0.9024702461411074,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P08_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 480,
+            "closed": false,
+            "signed_volume": 0.23801741868642645,
+            "reference_vote": 0.9878993460624061,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P09_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 470,
+            "closed": false,
+            "signed_volume": 0.24358895324522697,
+            "reference_vote": 0.9777203423194267,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P16_low",
+        "flipped_faces": 306,
+        "shells": [
+          {
+            "faces": 306,
+            "closed": false,
+            "signed_volume": -0.05594404500880046,
+            "reference_vote": -0.9206248121388683,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P18_low",
+        "flipped_faces": 364,
+        "shells": [
+          {
+            "faces": 364,
+            "closed": false,
+            "signed_volume": -0.06906713900114407,
+            "reference_vote": -0.8633695338591858,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P10_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 1609,
+            "closed": false,
+            "signed_volume": 0.6214973224685613,
+            "reference_vote": 0.96107624169507,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P19_low",
+        "flipped_faces": 355,
+        "shells": [
+          {
+            "faces": 355,
+            "closed": false,
+            "signed_volume": -0.06630264409529711,
+            "reference_vote": -0.8623501550126957,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P27_low",
+        "flipped_faces": 330,
+        "shells": [
+          {
+            "faces": 330,
+            "closed": false,
+            "signed_volume": -0.04465412174788715,
+            "reference_vote": -0.8909069464612743,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P30_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 370,
+            "closed": false,
+            "signed_volume": 0.09392086002977369,
+            "reference_vote": 0.9459625604322353,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P04_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 495,
+            "closed": false,
+            "signed_volume": 0.24835583816295895,
+            "reference_vote": 0.9782272712369133,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P01_low",
+        "flipped_faces": 390,
+        "shells": [
+          {
+            "faces": 390,
+            "closed": false,
+            "signed_volume": -0.06353270275873986,
+            "reference_vote": -0.8754423297198267,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P17_low",
+        "flipped_faces": 360,
+        "shells": [
+          {
+            "faces": 360,
+            "closed": false,
+            "signed_volume": -0.06174656367860365,
+            "reference_vote": -0.7192135623283783,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P15_low",
+        "flipped_faces": 327,
+        "shells": [
+          {
+            "faces": 327,
+            "closed": false,
+            "signed_volume": -0.06602733669645508,
+            "reference_vote": -0.8151993764355757,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P24_low",
+        "flipped_faces": 317,
+        "shells": [
+          {
+            "faces": 317,
+            "closed": false,
+            "signed_volume": -0.0499789578913834,
+            "reference_vote": -0.8602825184690097,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P25_low",
+        "flipped_faces": 341,
+        "shells": [
+          {
+            "faces": 341,
+            "closed": false,
+            "signed_volume": -0.043577416270636604,
+            "reference_vote": -0.8822977765332314,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P29_low",
+        "flipped_faces": 366,
+        "shells": [
+          {
+            "faces": 366,
+            "closed": false,
+            "signed_volume": -0.0921706832004728,
+            "reference_vote": -0.844023993741474,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P00_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 1590,
+            "closed": false,
+            "signed_volume": 0.656854585362737,
+            "reference_vote": 0.9255821554733017,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P03_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 2021,
+            "closed": false,
+            "signed_volume": 3.2747319838062032,
+            "reference_vote": 0.8950585984098794,
+            "flipped": false
+          },
+          {
+            "faces": 22,
+            "closed": true,
+            "signed_volume": 0.00016632180935379395,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 24,
+            "closed": true,
+            "signed_volume": 0.00016630711061083026,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 28,
+            "closed": true,
+            "signed_volume": 0.0001512089123328527,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 28,
+            "closed": true,
+            "signed_volume": 0.0001513247067729633,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 22,
+            "closed": true,
+            "signed_volume": 0.00016632646138011375,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 24,
+            "closed": true,
+            "signed_volume": 0.0001662895100812041,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 28,
+            "closed": true,
+            "signed_volume": 0.00015118066221475612,
+            "reference_vote": 0.0,
+            "flipped": false
+          },
+          {
+            "faces": 28,
+            "closed": true,
+            "signed_volume": 0.00015114441824456065,
+            "reference_vote": 0.0,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P12_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 1293,
+            "closed": false,
+            "signed_volume": 1.6347896042789216,
+            "reference_vote": 0.8695102536423156,
+            "flipped": false
+          }
+        ]
+      },
+      {
+        "name": "E_P20_low",
+        "flipped_faces": 300,
+        "shells": [
+          {
+            "faces": 300,
+            "closed": false,
+            "signed_volume": -0.0628793908872467,
+            "reference_vote": -0.9465181708113294,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P21_low",
+        "flipped_faces": 324,
+        "shells": [
+          {
+            "faces": 324,
+            "closed": false,
+            "signed_volume": -0.06388644772016505,
+            "reference_vote": -0.9511959937044363,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P26_low",
+        "flipped_faces": 346,
+        "shells": [
+          {
+            "faces": 346,
+            "closed": false,
+            "signed_volume": -0.04969658942229671,
+            "reference_vote": -0.8240782267611801,
+            "flipped": true
+          }
+        ]
+      },
+      {
+        "name": "E_P28_low",
+        "flipped_faces": 0,
+        "shells": [
+          {
+            "faces": 290,
+            "closed": false,
+            "signed_volume": 0.09076616884582715,
+            "reference_vote": 0.9199886835622448,
+            "flipped": false
+          }
+        ]
+      }
+    ]
+  }
+}

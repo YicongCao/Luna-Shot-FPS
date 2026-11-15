@@ -1,0 +1,10 @@
+{
+  "engine": "4.7.2-stable (official)",
+  "frames": 600,
+  "objects": 1556,
+  "p50_ms": 10.462,
+  "p95_ms": 13.89,
+  "primitives": 1037764,
+  "texture_memory": 925531774,
+  "viewport": "1600x1000"
+}

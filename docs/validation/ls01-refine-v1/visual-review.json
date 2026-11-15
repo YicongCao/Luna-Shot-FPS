@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-16",
+  "reviewer": "implementation agent; actual native images inspected",
+  "scope": "ML07 rebuilt parts and integration, not complete concept equivalence",
+  "user_acceptance": "pending",
+  "concept_equivalence": "open",
+  "issues": [
+    {
+      "id": "R01",
+      "title": "弹夹凹痕与油污",
+      "implementation_review": "pass",
+      "judgement": "弹夹主壳与可见侧板均有真实高模浅压伤；法线、油膜低粗糙度和干漆区域分别成立。",
+      "evidence": [
+        "magazine.png",
+        "magazine-light-1.png",
+        "magazine-light-2.png",
+        "magazine-channel-6.png",
+        "magazine-channel-8.png"
+      ],
+      "remaining": "第一人称下细小凹坑比近景弱，不能把材质台放大效果等同正常游玩尺寸。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R02",
+      "title": "掉漆／露底／氧化",
+      "implementation_review": "pass",
+      "judgement": "露底在底色、金属度与粗糙度通道共用遮罩；钢、涂层和铜分层。未把铝壳画成大面积红锈。",
+      "evidence": [
+        "magazine-channel-4.png",
+        "magazine-channel-5.png",
+        "magazine-channel-6.png",
+        "kit-close.png"
+      ],
+      "remaining": "氧化采用局部暗化和粗糙度变化，未追求概念图每一处锈斑的逐像素还原。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R03",
+      "title": "金属材料识别",
+      "implementation_review": "pass",
+      "judgement": "中性光下钢螺钉、铜管、涂漆壳与橡胶反射不同；关卡使用原独立武器视口的反射环境。",
+      "evidence": [
+        "studio-0.png",
+        "studio-1.png",
+        "studio-2.png",
+        "ammo-13.png"
+      ],
+      "remaining": "月面硬光与概念的柔和暗调不同；白漆应保留非金属面层，不能全壳设 metallic=1。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R04",
+      "title": "钢色十字紧固件",
+      "implementation_review": "pass",
+      "judgement": "42 颗有清册；高模真实交叉切槽，主体 4K 法线可辨十字；补齐左右前罩各四颗。",
+      "evidence": [
+        "screw-close.png",
+        "screen-close.png",
+        "front-fasteners.png",
+        "front-fasteners-reverse.png"
+      ],
+      "remaining": "前罩原有涂漆孔缘保留，因此钢头外仍有浅色壳体孔缘；不能将其误记为整颗钢头发白。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R05",
+      "title": "弯曲圆截面铜管",
+      "implementation_review": "pass",
+      "judgement": "两侧各六管，端部弯入夹具，弯曲和圆截面在低模几何中，镜面高光沿管轴连续。",
+      "evidence": [
+        "kit-close.png",
+        "reverse.png"
+      ],
+      "remaining": "弯曲幅度服从原枪侧凹槽空间，不是大幅外露软管。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R06",
+      "title": "LS01 字标",
+      "implementation_review": "pass",
+      "judgement": "左右矢量 LS01 可读且无镜像；HUD、材料室与窗口使用 LS01，lc01 路径保留。",
+      "evidence": [
+        "kit-close.png",
+        "reverse.png",
+        "ammo-13.png"
+      ],
+      "remaining": "字形为手工工业线性字形；并非识别出概念图的原始字体，字重仍有概念差异。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R07",
+      "title": "六边形弹药屏",
+      "implementation_review": "pass",
+      "judgement": "六边形外框、内嵌玻璃、四角钢螺钉成立；20 格与 20/13/4/1/0 及换弹同步。",
+      "evidence": [
+        "screen-close.png",
+        "ammo-20.png",
+        "ammo-13.png",
+        "ammo-04.png",
+        "ammo-01.png",
+        "ammo-00.png"
+      ],
+      "remaining": "保留现有枪托和开镜接口，外框比例为本轮工程尺寸，未宣称与概念完全相同。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R08",
+      "title": "警示条相位",
+      "implementation_review": "pass",
+      "judgement": "独立平面标记按相同条宽和相位裁切，不跨机匣折面；修正橙色偏暗发紫。",
+      "evidence": [
+        "kit-close.png",
+        "reverse.png"
+      ],
+      "remaining": "标记保持完整印刷区域，本轮未给独立矢量贴纸新增单独剥落贴图。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R09",
+      "title": "磨损分区",
+      "implementation_review": "pass",
+      "judgement": "删除大平面迷彩和硬阈值脏点；边界距离控制断续露底，长向刮擦、浅压伤、微坑与低频油膜分层。",
+      "evidence": [
+        "magazine.png",
+        "kit-close.png",
+        "studio-0.png"
+      ],
+      "remaining": "接触故事仍为规则与艺术遮罩组合；个别边缘磨损较规则，后续手工遮罩精修继续开放。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R10",
+      "title": "UV 与烘焙",
+      "implementation_review": "pass",
+      "judgement": "独立 cage、固定三角和切线；新 UV 无严格重叠，2K 换算岛间最小约 33px；4K 主体对照提高槽口可读性。",
+      "evidence": [
+        "clay.png",
+        "screw-close.png",
+        "magazine-channel-8.png"
+      ],
+      "remaining": "保留件沿用旧 atlas，不因旧 UV 相同而宣称其像素利用率已改善。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R11",
+      "title": "受控低模轮廓",
+      "implementation_review": "pass",
+      "judgement": "机匣、两件弹夹、枪托、瞄具、顶轨及附件使用受控几何，灰模平面和窄倒角稳定。",
+      "evidence": [
+        "clay.png",
+        "studio-1.png",
+        "reverse.png"
+      ],
+      "remaining": "T01 前罩、T06 枪口、T14 前支架等保留件仍能看到生成网格的软边；属于仍开放的概念差距，未标为全枪精确重拓扑完成。",
+      "user_acceptance": "pending"
+    },
+    {
+      "id": "R12",
+      "title": "验收证据分离",
+      "implementation_review": "pass",
+      "judgement": "每项挂接原生截图、判断和局限；功能、实施视觉复查和用户验收分别记录，拒绝轮次保留。",
+      "evidence": [
+        "review.html"
+      ],
+      "remaining": "用户验收 pending；实现复查通过只适用于已说明的本轮范围，概念一致性未全部关闭。",
+      "user_acceptance": "pending"
+    }
+  ],
+  "open_concept_gaps": [
+    "R11: retained front parts still have soft source silhouettes",
+    "R06: vector lettering differs in weight from concept",
+    "R09: rule-based wear needs further artistic contact-specific tuning",
+    "R03: current level hard-light mood differs from concept; environment unchanged"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "retained": {
+    "T00_CoreGrip_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T01_FrontShroud_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T02_CoilAssembly_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T06_Muzzle_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T09_StockBrace_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T10_ButtPad_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T12_Foregrip_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T13_CheekRest_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T14_FrontBracket_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T15_RailInset_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    },
+    "T16_FrontLatch_low": {
+      "geometry_and_uv_equal": true,
+      "tangents_exported": true
+    }
+  },
+  "environment_unchanged": true,
+  "triangles": 39400,
+  "meshes": 15,
+  "failures": []
+}

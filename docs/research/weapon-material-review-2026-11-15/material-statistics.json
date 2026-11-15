@@ -1,0 +1,58 @@
+{
+  "scope": "Whole semantic-class masks, not only visible screenshot regions; pixel values /255, no sRGB conversion for ORM data",
+  "source": "assets/weapons/lc01/ORM.png",
+  "classes": {
+    "white_coating": {
+      "pixels": 264683,
+      "metallic_p5_p50_p95": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "roughness_p5_p50_p95": [
+        0.43529411764705883,
+        0.44313725490196076,
+        0.49019607843137253
+      ]
+    },
+    "orange_coating": {
+      "pixels": 103024,
+      "metallic_p5_p50_p95": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "roughness_p5_p50_p95": [
+        0.33725490196078434,
+        0.3568627450980392,
+        0.36470588235294116
+      ]
+    },
+    "metal": {
+      "pixels": 443044,
+      "metallic_p5_p50_p95": [
+        0.9490196078431372,
+        0.9490196078431372,
+        0.9490196078431372
+      ],
+      "roughness_p5_p50_p95": [
+        0.2549019607843137,
+        0.27058823529411763,
+        0.2823529411764706
+      ]
+    },
+    "rubber": {
+      "pixels": 122639,
+      "metallic_p5_p50_p95": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "roughness_p5_p50_p95": [
+        0.8156862745098039,
+        0.8235294117647058,
+        0.8392156862745098
+      ]
+    }
+  }
+}

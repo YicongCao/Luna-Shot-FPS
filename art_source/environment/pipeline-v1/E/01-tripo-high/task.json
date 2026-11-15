@@ -1,0 +1,35 @@
+{
+  "task_id": "ac67c173-87bd-4c28-b54a-a16038f484c6",
+  "type": "image_to_model",
+  "status": "success",
+  "input": {
+    "pbr": false,
+    "file": {
+      "type": "jpeg",
+      "object": {
+        "key": "tcli_adf7d0e534da4f1b8458c52beb03e2d2/20261115/ac67c173-87bd-4c28-b54a-a16038f484c6/image.jpeg",
+        "bucket": "tripo-data"
+      }
+    },
+    "quad": false,
+    "texture": false,
+    "export_uv": false,
+    "model_seed": 20261120,
+    "model_version": "v3.1-20260211",
+    "generate_parts": true,
+    "geometry_quality": "detailed",
+    "enable_image_autofix": false
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url"
+  ],
+  "credits_consumed": 60,
+  "created_at": "2026-11-15T09:32:54.921251Z",
+  "completed_at": "2026-11-15T09:33:41.256914Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "preview.png"
+  ]
+}

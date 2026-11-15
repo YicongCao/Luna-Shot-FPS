@@ -1,0 +1,32 @@
+[
+  {
+    "asset": "A",
+    "normal_toggle_mean_pixel_difference": 2.085610948739258,
+    "material_toggle_mean_pixel_difference": 10.190533772826733
+  },
+  {
+    "asset": "B1",
+    "normal_toggle_mean_pixel_difference": 4.307134761867109,
+    "material_toggle_mean_pixel_difference": 40.86201945125326
+  },
+  {
+    "asset": "B2",
+    "normal_toggle_mean_pixel_difference": 2.309758091052872,
+    "material_toggle_mean_pixel_difference": 24.135495429193483
+  },
+  {
+    "asset": "C",
+    "normal_toggle_mean_pixel_difference": 5.222039362167693,
+    "material_toggle_mean_pixel_difference": 23.858783754630572
+  },
+  {
+    "asset": "D",
+    "normal_toggle_mean_pixel_difference": 5.429478011815003,
+    "material_toggle_mean_pixel_difference": 17.18156508739212
+  },
+  {
+    "asset": "E",
+    "normal_toggle_mean_pixel_difference": 3.0322949187819557,
+    "material_toggle_mean_pixel_difference": 30.21151757839012
+  }
+]

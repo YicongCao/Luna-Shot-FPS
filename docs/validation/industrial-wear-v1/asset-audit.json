@@ -1,0 +1,121 @@
+{
+  "rifle_original_uv_and_topology_preserved": true,
+  "rifle_parts": {
+    "T05_Optic_low": {
+      "uv_hash": "6184715d412370c97f46931d4117a9bd2965665fa1f0044a020b3715d903dc40",
+      "indices_hash": "f430455b7504a28cd0bdeeba834b24e3ba557aa867847436550735388e43e6ca",
+      "triangles": 1774,
+      "uv_oob": 0
+    },
+    "T08_StockShell_low": {
+      "uv_hash": "c3cb9f08736088e0b854efb51cf5de22f6f42ab64bc3b58be879cc54e6b9451b",
+      "indices_hash": "d427eea0156767f3b07ff3781a506c8f668e47e93f3c2e3338830685ed9d3835",
+      "triangles": 1156,
+      "uv_oob": 0
+    },
+    "T09_StockBrace_low": {
+      "uv_hash": "a804fbb50693b367e7387682d2575ddb16f06ff9f6d9f54344a7c9b2d73f1c19",
+      "indices_hash": "08b406119297577b332659b700ae5c664e9dd14aef3e549c5db104dd106e4bfb",
+      "triangles": 574,
+      "uv_oob": 0
+    },
+    "T11_CellSide_low": {
+      "uv_hash": "3beb3e61b7ddc245da8537d2cf1e1adb4e8b2f7f3a27588171eb7b299a275f18",
+      "indices_hash": "bbdf638694a53dfb38245d9eba62f87d456a87c4857497c106bee921d2aef02b",
+      "triangles": 393,
+      "uv_oob": 0
+    },
+    "T12_Foregrip_low": {
+      "uv_hash": "ff95e1ee91244c620b44b8c54c6430e86687df6c4a9a89ffc1e662251beb6b0b",
+      "indices_hash": "d0f22780cc70dd21f49f4b8f1beec6b9ad3d6edc67495d0eac052063f3641a50",
+      "triangles": 373,
+      "uv_oob": 0
+    },
+    "T16_FrontLatch_low": {
+      "uv_hash": "130816d33f873d8757c6f16f8870207ddf409091820953e131043ecbdff49064",
+      "indices_hash": "3bb78dc0c32cfc8fe76c76812b6c631a7d9f8f15c58a9279aa2d2910e1687aff",
+      "triangles": 359,
+      "uv_oob": 0
+    },
+    "T15_RailInset_low": {
+      "uv_hash": "f803340eee69c23e466263f8b86306e467fa4e25ebbee93fd351877c3b4eb51d",
+      "indices_hash": "9d8ea3853e3d23d3c99982be8f38be155ba255e45f9375958e9b78a53a3e8b1f",
+      "triangles": 445,
+      "uv_oob": 0
+    },
+    "T00_CoreGrip_low": {
+      "uv_hash": "d16cc537a9a7f91d043f1e08550b1b9780b59f3566b61a863f443ae6646e8153",
+      "indices_hash": "e21a270263cc99387e44bc77351293b4aaf660d864beef325e17e00b86571b7e",
+      "triangles": 4801,
+      "uv_oob": 0
+    },
+    "T01_FrontShroud_low": {
+      "uv_hash": "35486bea039a234e48192716e06bec03c8f882fcc51fc37dcd76570f47dc8f3c",
+      "indices_hash": "5d0164f22235df2159004fc898133008a28a7dd77b737ce014274d76f34a5933",
+      "triangles": 2233,
+      "uv_oob": 0
+    },
+    "T04_EnergyCell_low": {
+      "uv_hash": "3d50100def409da86c5e91e2df86c574aa0eb315d36a17df041533ae0ee55a1a",
+      "indices_hash": "4cf2b28900fff72c72f3838d86bafc53e38b4d29eccaff2f9b12b453a7fd3f08",
+      "triangles": 1102,
+      "uv_oob": 0
+    },
+    "T02_CoilAssembly_low": {
+      "uv_hash": "a2307836e1f06fe544ca090f8f1819f4584d60bf5b9cf15912b3906216ebf26e",
+      "indices_hash": "b3004e43eea68b506b9d60e323b3ca51bc3e06fd402924d2ab9d262ab5d3e23f",
+      "triangles": 1891,
+      "uv_oob": 0
+    },
+    "T03_ReceiverShell_low": {
+      "uv_hash": "29a8bb3b5f3116befe4905c24cc139e645e304802ee5435896f36631cc86bb6b",
+      "indices_hash": "80bd7b86ec828a727345cc54c81527ec1b370ff946febc5fe34eb420a61a5955",
+      "triangles": 1392,
+      "uv_oob": 0
+    },
+    "T06_Muzzle_low": {
+      "uv_hash": "0c006e2dc26683a3f600aecb4ae26f53067f11632241fbf4433b6619d640ea1b",
+      "indices_hash": "5efbef8a67c973e3496ef7979b78afcb293e625af72491ada0f89e7549e9d41f",
+      "triangles": 1125,
+      "uv_oob": 0
+    },
+    "T07_TopRail_low": {
+      "uv_hash": "d013d4b9e960c039519381382ccf62041fc911e9a55489a715b09ec099d6263c",
+      "indices_hash": "fa2699ee5094572186f1d1a259e48af96a82961c4ce4136f861a57ad4627acc8",
+      "triangles": 745,
+      "uv_oob": 0
+    },
+    "T13_CheekRest_low": {
+      "uv_hash": "0f57a406b79b91a8dc77d70f3b4d3a6883f8ce8c1efaac0fb880d906d8e46b05",
+      "indices_hash": "667da7daa2e7a6077e73b075f4b7827287b0ae71bf079d6ee893313b082c47f0",
+      "triangles": 421,
+      "uv_oob": 0
+    },
+    "T14_FrontBracket_low": {
+      "uv_hash": "c947bffc686bd7feab750c453a96841f6ace9d4918f2f2eb350350386cc7388a",
+      "indices_hash": "dbc8d126e8d9cb5ec66c2fea9a5abbf0827f189c3fdba2d6371e4564b4c14776",
+      "triangles": 442,
+      "uv_oob": 0
+    },
+    "T10_ButtPad_low": {
+      "uv_hash": "390fd97d74bc977ac0592d64c4e81c876b0345758dfdb476027677ae9adbef35",
+      "indices_hash": "e6fb9c172e3f33f5e295a679701ea551e4112723c0f477058be5cd1fbd9dd66f",
+      "triangles": 432,
+      "uv_oob": 0
+    }
+  },
+  "A_original_uv_topology_preserved": true,
+  "kit": {
+    "A_low": {
+      "uv_hash": "209a31ac60657b239720687580ed7cc64a573e3cadec2742db5111aec55e7d8d",
+      "indices_hash": "b0b2948894294fb857d81021ed9820ebd33835e4eeb15f1c55198a18fdb32707",
+      "triangles": 8472,
+      "uv_oob": 0
+    }
+  },
+  "tripo_download": {
+    "bytes": 53783964,
+    "sha256": "28468f71ef32a4776f23cbe619b998a86bcf46f7e979710e1f4e19f545f04b4a",
+    "valid_glb_length": true
+  }
+}

@@ -1,0 +1,448 @@
+{
+  "seeds": [
+    {
+      "seed": 20261115,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2753,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "a2fed0e1970e3d7fba49a11290a3bf7153fb710994fbc1266d3d706c3b9d71e5"
+    },
+    {
+      "seed": 20261116,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2771,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "16cc87e22b935811ba589d9ee60f8022abaf08decdcd5f3d058225e27de6e364"
+    },
+    {
+      "seed": 20261117,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2836,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "adfa37da99fe3f5eb678c73392714b05da9dc80053efce9ec27b3e2afd501892"
+    },
+    {
+      "seed": 20261118,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2784,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "5b4b68b0257d35a05adc89bdf9f7961ed5731d4f9a295f65888802211caf8d40"
+    },
+    {
+      "seed": 20261119,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2786,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "2804efc06a35ce593bb3336fdc34f6bb74251003bdc99b37113580c5c3ccc63c"
+    },
+    {
+      "seed": 20261120,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2737,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "c638b5f85e5796f9e7859ab2f39ef00a681406e1b66d1dea9a367a3ec844d9a6"
+    },
+    {
+      "seed": 20261121,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2782,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "80f79d9c4c8d55534cb9a749ec8171d27a1772418986023272ef76d9f750db25"
+    },
+    {
+      "seed": 20261122,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2772,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "60dbabc130a0c6978f818fe9c9f42bab906976243cdce145ab7b7ee05557c0f1"
+    },
+    {
+      "seed": 20261123,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2795,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "74d549a45663a07883765ac29ff676be260a9ce0f0c06c425e684b9ef8099999"
+    },
+    {
+      "seed": 20261124,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2764,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "49d7a30c2a2cfb433e8ca192eae9c0fe25fc51207413616a7a902cdecd325745"
+    },
+    {
+      "seed": 20261125,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2769,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "29d3112f76e1f9eaa609f191f8ddc987cbd52e4a948c24600354465c4246b694"
+    },
+    {
+      "seed": 20261126,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2788,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "733f4f95d14e5d996274a6213cbb6276a3646f7301227e1d39d18e47b1835a23"
+    },
+    {
+      "seed": 20261127,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2775,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "5f5ab2238bf031a24a19fcc3c59737236501fcccd7aa792213f6c15e6bbad02e"
+    },
+    {
+      "seed": 20261128,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2809,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "48b41b3ae36743c34f3b44858cbfe2c1bed3540024da217fe5aae0a8600ace44"
+    },
+    {
+      "seed": 20261129,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2796,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "c9cd106e5c9f05a12142c1c35c8eaeb49af4f4dcdfbc9095ff8e7a091466833e"
+    },
+    {
+      "seed": 20261130,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2788,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "f7fdb0f397694067cc740266a0ce0acd54b97e81126b7335d4f522df4b5fac36"
+    },
+    {
+      "seed": 20261131,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2735,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "8f85bc5b7d85d9eb017f9db9d2617b2cc7b4c348804e3517be9ee70de67589ff"
+    },
+    {
+      "seed": 20261132,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2774,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "99aa281acb387bb66de90bdcf68f6ca2533151cb60072b90ee88770f4d06f7b1"
+    },
+    {
+      "seed": 20261133,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2786,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "a3f384904a3fdc6ec0b1bddbd3623fed3d3e7243b5ae36004137ce443375a330"
+    },
+    {
+      "seed": 20261134,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "unique_theme_resources": 4,
+      "instances": 58,
+      "reachable_ground_samples": 2776,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "05d8797e06fb5551ea0da64005969b5d7a40cadbfdfd481a07ef855fdabbf2a9"
+    }
+  ],
+  "deterministic": true,
+  "different_seeds_vary": true,
+  "invalid_layout_preserves_scene": true,
+  "weapon_generation_isolated": true
+}

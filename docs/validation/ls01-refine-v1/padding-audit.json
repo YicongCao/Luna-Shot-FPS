@@ -1,0 +1,17 @@
+{
+  "body": {
+    "islands": 382,
+    "minimum_separation_px_at_2k": 33.0,
+    "bake_dilation_px_at_2k": 16,
+    "raster_uncertainty_px": 2,
+    "passed": true
+  },
+  "kit": {
+    "islands": 406,
+    "minimum_separation_px_at_2k": 33.0,
+    "bake_dilation_px_at_2k": 16,
+    "raster_uncertainty_px": 2,
+    "passed": true
+  },
+  "failures": []
+}

@@ -18,6 +18,7 @@ var qa_direction := Vector3.ZERO
 var qa_jump := false
 var last_hit: Dictionary = {}
 var steps: float = 0
+var spawn_position := Vector3.ZERO
 
 func _ready() -> void:
 	var lighting := WorldEnvironment.new()
@@ -57,6 +58,7 @@ func _physics_process(delta: float) -> void:
 	if position.y < -5: reset_position()
 
 func _process(delta: float) -> void:
+	if is_instance_valid(weapon.field_kit): weapon.field_kit.set_ammo(ammo, CAPACITY)
 	if blocked: return
 	recoil = move_toward(recoil, 0, delta * .25)
 	var target := ADS if aiming and reload_left == 0 else HIP
@@ -90,8 +92,7 @@ func fire() -> bool:
 			last_hit = obstruction
 		distance = origin.distance_to(last_hit.position)
 		if last_hit.collider.has_method("register_hit"):
-			last_hit.collider.register_hit()
-			hit = true
+			hit = last_hit.collider.register_hit()
 	shot.emit(hit, distance)
 	return true
 
@@ -101,7 +102,7 @@ func reload_weapon() -> void:
 		aiming = false
 
 func reset_position() -> void:
-	position = Vector3(0, .05, 18)
+	position = spawn_position
 	rotation = Vector3.ZERO
 	head.rotation = Vector3.ZERO
 	velocity = Vector3.ZERO

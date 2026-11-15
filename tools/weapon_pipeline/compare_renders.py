@@ -1,8 +1,8 @@
 """Analyze actual Godot screenshots; never synthesize the reported render results."""
 from PIL import Image
-import numpy as np,json
+import numpy as np,json,os
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/validation/rifle-pipeline-v2'
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/os.environ.get('LUNA_QA_OUTPUT','docs/validation/rifle-pipeline-v2')
 def load(n):return np.array(Image.open(OUT/(n+'.png')).convert('RGB')).astype(float)/255
 final=load('01-hero-pbr');h,w=final.shape[:2]
 roi=np.zeros((h,w),bool);roi[int(h*.2):int(h*.84),int(w*.15):int(w*.85)]=True

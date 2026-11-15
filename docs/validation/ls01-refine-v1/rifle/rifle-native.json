@@ -1,0 +1,271 @@
+{
+	"checks": [
+		{
+			"check": "mesh_parts",
+			"detail": "15",
+			"passed": true
+		},
+		{
+			"check": "triangle_budget",
+			"detail": "39400",
+			"passed": true
+		},
+		{
+			"check": "cell_is_two_parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_body_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_body_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_body_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_body_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_body_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_body_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_body_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_body_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_body_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_kit_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_kit_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_kit_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_kit_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_kit_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_kit_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_kit_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_kit_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_kit_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_retained_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_retained_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_retained_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_retained_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_retained_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_retained_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_exists_retained_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_size_retained_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_retained_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "real_bake_loaded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "orm_channels",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "opaque_with_backface_culling",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "weapon_bloom_enabled",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "local_coil_spill",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "energy_switch_off",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "energy_switch_on",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_11-range-hip",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "red_dot_center",
+			"detail": "error_px=0.0001",
+			"passed": true
+		},
+		{
+			"check": "hud_cross_hidden",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_12-range-ads",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "red_dot_rendered",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_13-range-dot-unlit",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "red_dot_independent_of_lights",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_target_hit",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_16-range-dot-clear-background",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "cell_animates",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "capture_14-range-reload",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "cell_returns",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ultrawide_dot_center",
+			"detail": "0.00006103515625",
+			"passed": true
+		},
+		{
+			"check": "capture_15-range-ultrawide-ads",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ultrawide_dot_rendered",
+			"detail": "",
+			"passed": true
+		}
+	],
+	"display": "macOS",
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"frame_ms_p95": 16.6666666666667,
+	"note": "Short automated native render/interaction test, not long-duration performance acceptance.",
+	"platform": "macOS",
+	"seconds": 6.503
+}

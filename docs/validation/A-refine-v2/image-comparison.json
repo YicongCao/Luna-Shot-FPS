@@ -1,0 +1,65 @@
+[
+  {
+    "view": "0-front",
+    "changed_pixels": 266618,
+    "mean_rgb_change": 14.105371744791666
+  },
+  {
+    "view": "0-back",
+    "changed_pixels": 243924,
+    "mean_rgb_change": 12.711722330729167
+  },
+  {
+    "view": "0-left",
+    "changed_pixels": 147298,
+    "mean_rgb_change": 9.04950390625
+  },
+  {
+    "view": "0-right",
+    "changed_pixels": 175495,
+    "mean_rgb_change": 9.026435221354166
+  },
+  {
+    "view": "0-top",
+    "changed_pixels": 328549,
+    "mean_rgb_change": 17.30171516927083
+  },
+  {
+    "view": "range-3m",
+    "changed_pixels": 558301,
+    "mean_rgb_change": 35.170866861979164
+  },
+  {
+    "view": "range-interface",
+    "changed_pixels": 219420,
+    "mean_rgb_change": 12.210215169270834
+  },
+  {
+    "view": "overview",
+    "changed_pixels": 24500,
+    "mean_rgb_change": 0.93381640625
+  },
+  {
+    "view": "distance-3m",
+    "changed_pixels": 135243,
+    "mean_rgb_change": 7.911346028645833
+  },
+  {
+    "view": "distance-10m",
+    "changed_pixels": 13388,
+    "mean_rgb_change": 0.9025592447916667
+  },
+  {
+    "view": "distance-20m",
+    "changed_pixels": 3380,
+    "mean_rgb_change": 0.23355436197916668
+  },
+  {
+    "native_material_mode": 1,
+    "mean_difference_on_object": 2.9430646770848026
+  },
+  {
+    "native_material_mode": 2,
+    "mean_difference_on_object": 8.17212913473043
+  }
+]

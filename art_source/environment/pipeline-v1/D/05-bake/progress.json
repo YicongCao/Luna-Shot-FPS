@@ -1,0 +1,82 @@
+{
+  "asset": "D",
+  "selected_to_active": true,
+  "resolution": 2048,
+  "samples": 16,
+  "device": "CPU",
+  "margin_px": 16,
+  "extrusion_m": 0.025,
+  "max_ray_distance_m": 0.075,
+  "pairs": [
+    {
+      "low": "D_P00_low",
+      "high": "D_P00_high",
+      "seconds": 4.0876219272613525,
+      "low_triangles": 237,
+      "high_triangles": 7144
+    },
+    {
+      "low": "D_P01_low",
+      "high": "D_P01_high",
+      "seconds": 0.9162678718566895,
+      "low_triangles": 2372,
+      "high_triangles": 66298
+    },
+    {
+      "low": "D_P04_low",
+      "high": "D_P04_high",
+      "seconds": 0.9228179454803467,
+      "low_triangles": 2094,
+      "high_triangles": 60952
+    },
+    {
+      "low": "D_P03_low",
+      "high": "D_P03_high",
+      "seconds": 0.8659970760345459,
+      "low_triangles": 2237,
+      "high_triangles": 63417
+    },
+    {
+      "low": "D_P02_low",
+      "high": "D_P02_high",
+      "seconds": 0.7719578742980957,
+      "low_triangles": 2754,
+      "high_triangles": 64081
+    },
+    {
+      "low": "D_P05_low",
+      "high": "D_P05_high",
+      "seconds": 0.8437018394470215,
+      "low_triangles": 2192,
+      "high_triangles": 55174
+    },
+    {
+      "low": "D_P06_low",
+      "high": "D_P06_high",
+      "seconds": 0.7551350593566895,
+      "low_triangles": 1704,
+      "high_triangles": 50010
+    },
+    {
+      "low": "D_P07_low",
+      "high": "D_P07_high",
+      "seconds": 0.7886011600494385,
+      "low_triangles": 1711,
+      "high_triangles": 49456
+    },
+    {
+      "low": "D_P08_low",
+      "high": "D_P08_high",
+      "seconds": 0.7970700263977051,
+      "low_triangles": 2094,
+      "high_triangles": 57675
+    },
+    {
+      "low": "D_P09_low",
+      "high": "D_P09_high",
+      "seconds": 0.6882951259613037,
+      "low_triangles": 398,
+      "high_triangles": 8817
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/industrial_wear/prepare_a.py:13: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  bpy.ops.mesh.primitive_cone_add(vertices=24,radius1=.012,radius2=.029,depth=.022,location=(x+dx,y+dy,1.190));cutters.append(bpy.context.object)
+BlenderMCP addon registered
+Info: Saved as "A-high.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+22:48:18 | INFO: Starting glTF 2.0 export
+22:48:18 | INFO: Extracting primitive: Cube.001
+22:48:18 | INFO: Primitives created: 1
+22:48:18 | INFO: Finished glTF 2.0 export in 0.024857759475708008 s
+
+A_BUILD high 64172
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

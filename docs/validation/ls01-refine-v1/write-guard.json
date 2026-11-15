@@ -1,0 +1,13 @@
+{
+  "checks": [
+    {
+      "entry": "body",
+      "protected": true
+    },
+    {
+      "entry": "tools/ls01_refine/export.py",
+      "protected": true
+    }
+  ],
+  "runtime_unchanged": true
+}

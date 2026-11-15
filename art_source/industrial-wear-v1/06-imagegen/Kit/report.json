@@ -1,0 +1,11 @@
+{
+  "source": "imagegen source-height.png",
+  "amplitude_m": 4.5e-05,
+  "tile_period_m": 0.16,
+  "pixels_affected": 563043,
+  "UV_changed": false,
+  "triangles_added": 0,
+  "normal_composition": "RNM",
+  "excluded": "rubber/emissive on main rifle; dark glass on kit",
+  "seam_treatment": "3 percent fade-to-zero and 8px atlas padding"
+}

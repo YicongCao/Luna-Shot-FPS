@@ -1,0 +1,140 @@
+[
+  {
+    "asset": "A",
+    "result": {
+      "dry_run": true,
+      "model": "v3.1-20260211",
+      "model_name": "v3.1",
+      "cost_estimate": "60 credits (official list price)",
+      "authorization": "advisory_only",
+      "endpoint": "/v3/generation/image-to-model",
+      "payload": {
+        "input": "<upload:/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/00-whitebox/A-reference.png>",
+        "texture": false,
+        "pbr": false,
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "export_uv": false,
+        "model_seed": 20261115,
+        "model": "v3.1-20260211"
+      },
+      "notes": [],
+      "next": "no task was created and no credits were spent — review model, cost_estimate, payload and notes (stripped or adjusted params are listed there; a removed requirement is not fulfilled); fix the request if needed, and once the user has confirmed this model and cost call the same tool again without dry_run to submit"
+    }
+  },
+  {
+    "asset": "B1",
+    "result": {
+      "dry_run": true,
+      "model": "v3.1-20260211",
+      "model_name": "v3.1",
+      "cost_estimate": "60 credits (official list price)",
+      "authorization": "advisory_only",
+      "endpoint": "/v3/generation/image-to-model",
+      "payload": {
+        "input": "<upload:/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/00-whitebox/B1-reference.png>",
+        "texture": false,
+        "pbr": false,
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "export_uv": false,
+        "model_seed": 20261116,
+        "model": "v3.1-20260211"
+      },
+      "notes": [],
+      "next": "no task was created and no credits were spent — review model, cost_estimate, payload and notes (stripped or adjusted params are listed there; a removed requirement is not fulfilled); fix the request if needed, and once the user has confirmed this model and cost call the same tool again without dry_run to submit"
+    }
+  },
+  {
+    "asset": "B2",
+    "result": {
+      "dry_run": true,
+      "model": "v3.1-20260211",
+      "model_name": "v3.1",
+      "cost_estimate": "60 credits (official list price)",
+      "authorization": "advisory_only",
+      "endpoint": "/v3/generation/image-to-model",
+      "payload": {
+        "input": "<upload:/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/00-whitebox/B2-reference.png>",
+        "texture": false,
+        "pbr": false,
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "export_uv": false,
+        "model_seed": 20261117,
+        "model": "v3.1-20260211"
+      },
+      "notes": [],
+      "next": "no task was created and no credits were spent — review model, cost_estimate, payload and notes (stripped or adjusted params are listed there; a removed requirement is not fulfilled); fix the request if needed, and once the user has confirmed this model and cost call the same tool again without dry_run to submit"
+    }
+  },
+  {
+    "asset": "C",
+    "result": {
+      "dry_run": true,
+      "model": "v3.1-20260211",
+      "model_name": "v3.1",
+      "cost_estimate": "60 credits (official list price)",
+      "authorization": "advisory_only",
+      "endpoint": "/v3/generation/image-to-model",
+      "payload": {
+        "input": "<upload:/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/00-whitebox/C-reference.png>",
+        "texture": false,
+        "pbr": false,
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "export_uv": false,
+        "model_seed": 20261118,
+        "model": "v3.1-20260211"
+      },
+      "notes": [],
+      "next": "no task was created and no credits were spent — review model, cost_estimate, payload and notes (stripped or adjusted params are listed there; a removed requirement is not fulfilled); fix the request if needed, and once the user has confirmed this model and cost call the same tool again without dry_run to submit"
+    }
+  },
+  {
+    "asset": "D",
+    "result": {
+      "dry_run": true,
+      "model": "v3.1-20260211",
+      "model_name": "v3.1",
+      "cost_estimate": "60 credits (official list price)",
+      "authorization": "advisory_only",
+      "endpoint": "/v3/generation/image-to-model",
+      "payload": {
+        "input": "<upload:/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/00-whitebox/D-reference.png>",
+        "texture": false,
+        "pbr": false,
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "export_uv": false,
+        "model_seed": 20261119,
+        "model": "v3.1-20260211"
+      },
+      "notes": [],
+      "next": "no task was created and no credits were spent — review model, cost_estimate, payload and notes (stripped or adjusted params are listed there; a removed requirement is not fulfilled); fix the request if needed, and once the user has confirmed this model and cost call the same tool again without dry_run to submit"
+    }
+  },
+  {
+    "asset": "E",
+    "result": {
+      "dry_run": true,
+      "model": "v3.1-20260211",
+      "model_name": "v3.1",
+      "cost_estimate": "60 credits (official list price)",
+      "authorization": "advisory_only",
+      "endpoint": "/v3/generation/image-to-model",
+      "payload": {
+        "input": "<upload:/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/00-whitebox/E-reference.png>",
+        "texture": false,
+        "pbr": false,
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "export_uv": false,
+        "model_seed": 20261120,
+        "model": "v3.1-20260211"
+      },
+      "notes": [],
+      "next": "no task was created and no credits were spent — review model, cost_estimate, payload and notes (stripped or adjusted params are listed there; a removed requirement is not fulfilled); fix the request if needed, and once the user has confirmed this model and cost call the same tool again without dry_run to submit"
+    }
+  }
+]

@@ -1,0 +1,90 @@
+{
+  "triangles": 5180,
+  "strict_interior_uv_overlap_pixels": 0,
+  "uv_coverage_fraction": 0.5655276775360107,
+  "non_manifold_edges": 0,
+  "uv": {
+    "out_of_bounds": 0,
+    "degenerate_uv_triangles": 0,
+    "triangles": 5180
+  },
+  "geometry": {
+    "high": {
+      "triangles": 65252,
+      "bounds": [
+        [
+          -1.8900001049041748,
+          -1.8949999809265137,
+          0.0
+        ],
+        [
+          1.8574998378753662,
+          1.8949999809265137,
+          1.2000000476837158
+        ]
+      ],
+      "vertices": 33064,
+      "materials": 8
+    },
+    "low": {
+      "triangles": 5180,
+      "bounds": [
+        [
+          -1.8900001049041748,
+          -1.8949999809265137,
+          0.0
+        ],
+        [
+          1.8574998378753662,
+          1.8949999809265137,
+          1.2000000476837158
+        ]
+      ],
+      "vertices": 2820,
+      "materials": 8
+    }
+  },
+  "bake": {
+    "completed": true,
+    "selected_to_active": true,
+    "high_source": "01-high/A-high.blend",
+    "low_source": "02-low/A-low.blend",
+    "resolution": 2048,
+    "margin_px": 8,
+    "extrusion_m": 0.025,
+    "max_distance_m": 0.065,
+    "samples": 16,
+    "maps": [
+      {
+        "map": "NormalGL",
+        "kind": "NORMAL",
+        "seconds": 2.652794122695923
+      },
+      {
+        "map": "AO",
+        "kind": "AO",
+        "seconds": 10.415303945541382
+      },
+      {
+        "map": "Roughness",
+        "kind": "ROUGHNESS",
+        "seconds": 8.198256731033325
+      },
+      {
+        "map": "BaseColor",
+        "kind": "EMIT material channel",
+        "seconds": 3.6683309078216553
+      },
+      {
+        "map": "Metallic",
+        "kind": "EMIT material channel",
+        "seconds": 3.744345188140869
+      },
+      {
+        "map": "Emission",
+        "kind": "EMIT material channel",
+        "seconds": 3.9900102615356445
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "LC01": {
+    "normal_changed_pixels": 1095416,
+    "shape_unchanged": true,
+    "normal_mean_abs_byte_change": 1.898389418919881,
+    "excluded_class_4_changed_pixels": 0,
+    "excluded_class_5_changed_pixels": 0
+  },
+  "Kit": {
+    "normal_changed_pixels": 766856,
+    "shape_unchanged": true,
+    "normal_mean_abs_byte_change": 1.2486445903778076
+  },
+  "emission_unchanged": true
+}

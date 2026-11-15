@@ -1,0 +1,37 @@
+{
+  "revision": "ML07 LS01",
+  "default_enabled": true,
+  "user_acceptance": "pending",
+  "implementation_review": "pass within declared rebuilt scope",
+  "concept_equivalence": "open",
+  "open_concept_gaps": [
+    "R11: retained front parts still have soft source silhouettes",
+    "R06: vector lettering differs in weight from concept",
+    "R09: rule-based wear needs further artistic contact-specific tuning",
+    "R03: current level hard-light mood differs from concept; environment unchanged"
+  ],
+  "assets": {
+    "weapon.glb": "60bf4dbd4edb2b5cf5b5a288e8b27a216aa1a00f6a46c59b639cf4e1085fe9f9",
+    "bindings.json": "63970c6c43fd896387c28ebc89ad74e8a7876451d22aaed3e368f8e0dc0cd4dd",
+    "resolution.json": "e9e2c5d791816f6b829ce35c88fb27377530aa4d87c1e0071603018f4adf023a",
+    "body/BaseColor.png": "a801bc52b1af51cb96f700e50b387bbc24716257af4739bf670a7806d986401c",
+    "body/Metallic.png": "b3b5256eb2ec39c93643b97026f679189153f801abba770cea76cc043b5383be",
+    "body/NormalGL.png": "6660c9d4b2331bc5bebc3df7f11a9c8d50c6046a1e1655eb34606b7c85325d77",
+    "body/AO.png": "d546b486ddbdee8e8768daf9789b4df3cdba7a83061dc267cd7b5828aa136b2e",
+    "body/Roughness.png": "64846cc79de8652509f2551e6138bca3199b8aac849ac66c600c88da3dd95be1",
+    "body/ORM.png": "62febd64a87ab6d7d6998ae055268127d8ab1d34dda1f130222c7903adfd1d44",
+    "kit/BaseColor.png": "3e14e5f207d1020adc8c82dee270af39a43c98b698841fbc0426bfd6165a4bda",
+    "kit/Metallic.png": "35c31811e24437f2ae0ce81ad7db5d7e21224b9bd62f76336ade5e0dc1c7ab62",
+    "kit/NormalGL.png": "0e293c76931c0eda62acfdd21ee3dd9255c22d5de95438484618bf9e92039dd7",
+    "kit/AO.png": "1ee455fc7bd825156ceab1e993438d13b0d22ef2d4853c7a4240951717a1bb6a",
+    "kit/Roughness.png": "55babdd152db3a660e7b61d4404a23ae64abc038739a8d70be6c059977e65bf0",
+    "kit/ORM.png": "6c7b2d764e7ffe4641662b6a03edf2181e53c53fa91585f4b45aaf1760457e1e",
+    "retained/BaseColor.png": "61536c3b3154362cbcb2864f5b3ef4ba38b3108461616caf6eb0a3557187f12b",
+    "retained/Metallic.png": "04b4f43b663c7e22d03416941b25f615c553d244bd5fb32c196bd89fd3026a08",
+    "retained/NormalGL.png": "03da6e652a16aae53f244abd20c25e00c2a414d4d874b13e6e3577c3f5279ee5",
+    "retained/AO.png": "3faebbba6c24d6ea8d135484dceeb69465dd73e810f6475a243b55892fa239ed",
+    "retained/Roughness.png": "d50a8a6e5972e82351845215fdbd4dad35e5601b641a257f9fb6d260f4746cf0",
+    "retained/ORM.png": "c4d507e55e8d27fc1cf231544e25182fe6cae1cd7386381d6983415f27955b6c",
+    "retained/Emission.png": "17b16585165563d9803775daccc457983909695ed24ba5265c10ab1b1210e15e"
+  }
+}

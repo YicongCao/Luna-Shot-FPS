@@ -1,0 +1,7 @@
+{
+  "body": 2048,
+  "body_normal": 4096,
+  "kit": 2048,
+  "retained": 2048,
+  "reason": "Only body normal needs 4K for Phillips grooves; base/ORM 2K to reduce bandwidth"
+}

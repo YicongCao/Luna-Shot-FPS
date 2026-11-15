@@ -1,0 +1,12 @@
+{
+  "label3d_font_material_not_counted": true,
+  "materials": [
+    "LC01 ceramic / metal / rubber / coating",
+    "ShaderMaterial",
+    "StandardMaterial3D",
+    "StandardMaterial3D"
+  ],
+  "mesh_instances": 39,
+  "triangles_including_runtime_meshes": 28372,
+  "unique_materials": 4
+}

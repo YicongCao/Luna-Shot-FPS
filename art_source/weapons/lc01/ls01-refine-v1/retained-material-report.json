@@ -1,0 +1,7 @@
+{
+  "preserved_uv": true,
+  "normal_source": "industrial-wear-v1/05-bake/NormalGL.png",
+  "masks": "original MaterialID + fixed low source position + smooth triplanar image masks + normal-derived curvature proxy",
+  "limitation": "normal-derived curvature is a proxy for retained generated geometry, not new geometric curvature bake",
+  "retained_pixels": 572229
+}

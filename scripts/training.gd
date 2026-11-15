@@ -14,14 +14,30 @@ var ammo_label: Label
 var pause_panel: PanelContainer
 var reticle: Label
 var qa_mode := false
+var layout: Dictionary = {}
+var lighting: Node3D
+
+func vector(values: Array) -> Vector3:
+	return Vector3(values[0],values[1],values[2])
+
+func marker(name: String) -> Vector3:
+	return get_node("Markers/"+name).global_position
 
 func _ready() -> void:
+	layout = JSON.parse_string(FileAccess.get_file_as_string(get_meta("layout_path")))
 	configure_input()
 	player = $Player
-	$Overview.look_at(Vector3(0, 0, -1))
+	$Overview.position = marker("OverviewCamera")
+	$Overview.look_at(marker("OverviewFocus"))
+	player.spawn_position = marker("Spawn")
+	player.reset_position()
 	player.shot.connect(on_shot)
 	qa_mode = "--qa" in OS.get_cmdline_user_args() or "--rifle-qa" in OS.get_cmdline_user_args()
 	build_hud()
+	lighting=Node3D.new()
+	lighting.name="LunarLighting"
+	lighting.set_script(load("res://scripts/lunar_lighting.gd"))
+	add_child(lighting)
 	if qa_mode:
 		player.qa_mode = true
 		var qa := Node.new()
@@ -67,7 +83,7 @@ func build_hud() -> void:
 	layer.add_child(hud)
 	hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	title = text_label("LUNA SHOT / TRAINING", 25, Vector2(28,22), hud)
-	text_label("WB—01   /   LUNAR EXTERIOR   /   44 × 48 m", 13, Vector2(29,57), hud)
+	text_label("ML—04   /   LUNAR ENERGY   /   %d × %d m" % [layout.size[0],layout.size[1]], 13, Vector2(29,57), hud)
 	status = text_label("", 17, Vector2(28,92), hud)
 	help = text_label("WASD  Move     SHIFT  Sprint     SPACE  Jump     LMB  Fire     RMB  Aim     R  Reload\nF2  Survey view     F3  Material studio     F5  Reset range     ESC  Release mouse", 15, Vector2.ZERO, hud)
 	help.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_LEFT)
@@ -75,6 +91,8 @@ func build_hud() -> void:
 	help.offset_top = -65
 	help.offset_right = 1000
 	help.offset_bottom = -15
+	var effect_help:=text_label("F6 Energy  /  F7 Bloom  /  F8 Flares  /  F9 Local spill",12,Vector2(29,77),hud)
+	effect_help.modulate=Color(.65,.73,.8)
 	ammo_label = text_label("", 29, Vector2.ZERO, hud)
 	ammo_label.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_RIGHT)
 	ammo_label.offset_left = -235
@@ -122,7 +140,7 @@ func _process(delta: float) -> void:
 	reticle.modulate = Color(1,.65,.35) if hit_time > 0 else Color.WHITE
 	reticle.visible = not overview and not paused and not player.aiming
 	status.text = "%s   |   HITS %02d / SHOTS %02d   |   %.1f m" % ["SURVEY" if overview else "FREE PRACTICE", hits, shots, last_distance]
-	ammo_label.text = "RELOADING" if player.reload_left > 0 else "%02d / ∞\nLC–01" % player.ammo
+	ammo_label.text = "RELOADING" if player.reload_left > 0 else "%02d / ∞\nLS01" % player.ammo
 
 func _unhandled_input(event: InputEvent) -> void:
 	if qa_mode: return
@@ -137,6 +155,8 @@ func _unhandled_input(event: InputEvent) -> void:
 
 func set_paused(value: bool) -> void:
 	paused = value
+	for target in get_tree().get_nodes_in_group("targets"):
+		target.animation_paused = value
 	player.blocked = paused or overview
 	pause_panel.visible = value
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE if paused or overview else Input.MOUSE_MODE_CAPTURED

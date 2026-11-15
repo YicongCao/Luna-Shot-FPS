@@ -15,24 +15,26 @@ material = SubResource("White")
 collision_layer = 4
 collision_mask = 0
 script = ExtResource("1")
-[node name="Board" type="MeshInstance3D" parent="."]
-position = Vector3(0, 1.325, 0)
+[node name="Pivot" type="Node3D" parent="."]
+position = Vector3(0, 0.06, 0)
+[node name="Board" type="MeshInstance3D" parent="Pivot"]
+position = Vector3(0, 1.265, 0)
 mesh = SubResource("Board")
 [node name="Collision" type="CollisionShape3D" parent="."]
 position = Vector3(0, 1.325, 0)
 shape = SubResource("Shape")
-[node name="Post" type="MeshInstance3D" parent="."]
-position = Vector3(0, 0.35, 0)
+[node name="Post" type="MeshInstance3D" parent="Pivot"]
+position = Vector3(0, 0.29, 0)
 mesh = SubResource("Post")
-[node name="Bullseye" type="Label3D" parent="."]
-position = Vector3(0, 1.5, 0.065)
+[node name="Bullseye" type="Label3D" parent="Pivot"]
+position = Vector3(0, 1.44, 0.065)
 text = "＋"
 font_size = 100
 pixel_size = 0.006
 modulate = Color(0.19, 0.24, 0.27, 1)
 outline_size = 0
-[node name="ID" type="Label3D" parent="."]
-position = Vector3(0, 0.98, 0.065)
+[node name="ID" type="Label3D" parent="Pivot"]
+position = Vector3(0, 0.92, 0.065)
 font_size = 30
 pixel_size = 0.008
 modulate = Color(0.19, 0.24, 0.27, 1)

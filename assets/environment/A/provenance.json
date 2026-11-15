@@ -1,0 +1,10 @@
+{
+  "asset": "A",
+  "revision": "concept-refine-v2",
+  "triangles": 5180,
+  "source": "art_source/environment/A-refine-v2/04-final",
+  "normal": "genuine selected-to-active bake from separately authored high geometry",
+  "texture_resolution": 2048,
+  "material_slots": 1,
+  "tripo_credits_this_revision": 0
+}

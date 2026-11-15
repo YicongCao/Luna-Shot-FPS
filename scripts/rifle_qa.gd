@@ -1,5 +1,5 @@
 extends Node
-const OUT := "res://docs/validation/rifle-pipeline-v2/"
+var OUT: String = "res://" + OS.get_environment("LUNA_QA_OUTPUT") + "/" if OS.has_environment("LUNA_QA_OUTPUT") else "res://docs/validation/energy-whitebox-v2/rifle/"
 var checks: Array = []
 var world: Node3D
 var player: CharacterBody3D
@@ -30,29 +30,40 @@ func dot_visible(image: Image) -> bool:
 			if color.r>.65 and color.r>color.g*2.5 and color.r>color.b*2.5: return true
 	return false
 func run() -> void:
+	player.position = world.vector(world.layout.targets[0].shoot_from)
 	await settle()
 	var weapon: Node3D=player.weapon
-	check("mesh_parts",weapon.meshes.size()==17,str(weapon.meshes.size()))
+	check("mesh_parts",weapon.meshes.size()==(15 if weapon.ls01 else 17),str(weapon.meshes.size()))
 	var tris := 0
 	for mesh: MeshInstance3D in weapon.meshes:
 		for surface in mesh.mesh.get_surface_count():
 			tris += mesh.mesh.surface_get_array_index_len(surface)/3
-	check("triangle_budget",tris==19658,str(tris))
+	check("triangle_budget",(tris>19658 and tris<=60000) if weapon.ls01 else tris==19658,str(tris))
 	check("cell_is_two_parts",weapon.get_node("P07_Cell").get_child_count()==2)
-	for path in ["BaseColor","NormalGL","ORM","Emission"]:
-		var tex: Texture2D=load("res://assets/weapons/lc01/"+path+".png")
-		check("texture_"+path,tex.get_size()==Vector2(2048,2048),str(tex.get_size()))
+	if weapon.ls01:
+		for atlas in ["body","kit","retained"]:
+			for path in ["BaseColor","NormalGL","ORM"]:
+				var resource="res://assets/weapons/lc01/ls01_v1/"+atlas+"/"+path+".png"
+				check("texture_exists_"+atlas+"_"+path,ResourceLoader.exists(resource))
+				if ResourceLoader.exists(resource):
+					var tex: Texture2D=load(resource)
+					check("texture_size_"+atlas+"_"+path,tex.get_width() in [2048,4096] and tex.get_height()==tex.get_width())
+					check("mipmaps_"+atlas+"_"+path,tex.get_image().has_mipmaps())
+	else:
+		for path in ["BaseColor","NormalGL","ORM","Emission"]:
+			var tex: Texture2D=load("res://assets/weapons/lc01/"+path+".png")
+			check("texture_"+path,tex.get_size()==Vector2(2048,2048),str(tex.get_size()))
 	check("real_bake_loaded",weapon.material.normal_enabled and weapon.material.normal_texture.resource_path.ends_with("NormalGL.png"))
 	check("orm_channels",weapon.material.ao_texture_channel==0 and weapon.material.roughness_texture_channel==1 and weapon.material.metallic_texture_channel==2)
 	check("opaque_with_backface_culling", weapon.material.transparency == BaseMaterial3D.TRANSPARENCY_DISABLED and weapon.material.cull_mode == BaseMaterial3D.CULL_BACK)
-	check("weapon_glow_enabled", player.get_node("WeaponLayer/Container/Viewport/WeaponEnvironment").environment.glow_enabled)
+	check("weapon_bloom_enabled", world.lighting.bloom_enabled and world.lighting.weapon_bloom.visible and world.lighting.weapon_bloom.source==player.get_node("WeaponLayer/Container/Viewport"))
 	check("local_coil_spill", weapon.energy_lights.size() == 2 and weapon.energy_lights[0].visible)
 	weapon.set_energy_enabled(false)
 	check("energy_switch_off", not weapon.material.emission_enabled and not weapon.energy_lights[0].visible)
 	weapon.set_energy_enabled(true)
 	check("energy_switch_on", weapon.material.emission_enabled and weapon.energy_lights[0].visible)
 	await capture("11-range-hip")
-	player.rotation=Vector3.ZERO;player.head.look_at(Vector3(0,1.5,8));player.aiming=true
+	player.rotation=Vector3.ZERO;player.head.look_at(world.get_node("Target1").position+Vector3(0,1.5,0));player.aiming=true
 	await settle(60)
 	var point: Vector2=player.weapon_camera.unproject_position(weapon.get_node("RedDot").global_position)
 	var expected: Vector2=player.weapon_camera.get_viewport().size/2.0
@@ -69,7 +80,7 @@ func run() -> void:
 	player.fire()
 	check("ads_target_hit",world.hits==1 and player.ammo==19)
 	await settle(35)
-	player.head.look_at(Vector3(0,4.7,-20))
+	player.head.look_at(world.marker("OverviewFocus")+Vector3(0,6,0))
 	await capture("16-range-dot-clear-background")
 	player.reload_weapon()
 	await settle(42)

@@ -7,3 +7,11 @@ artifacts/
 # Python caches
 __pycache__/
 *.py[cod]
+
+# Documentation screenshots are not runtime texture assets.
+docs/**/*.import
+
+# Rejected bake binaries remain local; review screenshots and failure reports are versioned.
+art_source/**/03-bake-rejected/
+# Validation logs are evidence, unlike transient engine/build logs.
+!docs/validation/**/*.log

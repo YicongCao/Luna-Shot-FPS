@@ -1,0 +1,67 @@
+{
+  "source": "Tripo PBR -> triangle-correspondence transfer into fixed low UV",
+  "normal_source": "05-bake/NormalGL.png, real high-to-low Cycles projection",
+  "parts": [
+    {
+      "name": "C_P00_low",
+      "triangles": 404,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 1478060
+    },
+    {
+      "name": "C_P02_low",
+      "triangles": 4844,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 205774
+    },
+    {
+      "name": "C_P01_low",
+      "triangles": 4733,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 201483
+    },
+    {
+      "name": "C_P03_low",
+      "triangles": 1038,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 48132
+    },
+    {
+      "name": "C_P04_low",
+      "triangles": 1058,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 46677
+    },
+    {
+      "name": "C_P05_low",
+      "triangles": 1082,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 46875
+    },
+    {
+      "name": "C_P06_low",
+      "triangles": 914,
+      "uv_max_change": 2.9802322387695312e-08,
+      "rasterized_pixels": 47577
+    }
+  ],
+  "tripo_uv_changed": false,
+  "unmatched_triangles": 0,
+  "uv_out_of_bounds_triangles": 0,
+  "strict_interior_overlap_pixels": 8,
+  "uv_coverage_fraction": 0.4946160316467285,
+  "final_triangles": 14073,
+  "texture_resolution": [
+    2048,
+    2048
+  ],
+  "material_slots": 1,
+  "semantic_corrections": "Retained Tripo PBR color/material variation; bounded roughness .22-.9 and albedo .012-.82; genuine high-to-low normal/AO.",
+  "material_statistics": {
+    "3": {
+      "pixels": 2074570,
+      "mean_roughness": 0.5978330969810486,
+      "mean_metallic": 0.484099417924881
+    }
+  }
+}

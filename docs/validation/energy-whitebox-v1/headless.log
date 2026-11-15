@@ -1,0 +1,68 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+QA PASS spawn_floor 
+QA PASS module_instances 
+QA PASS perimeter_1 end=(0.0, 0.000195, 26.08331), planar_error=0.083
+QA PASS perimeter_2 end=(25.91645, 0.000195, 26.00027), planar_error=0.084
+QA PASS perimeter_3 end=(25.99986, 0.000195, -25.91645), planar_error=0.084
+QA PASS perimeter_4 end=(-25.91685, 0.000195, -25.99987), planar_error=0.083
+QA PASS perimeter_5 end=(-25.99987, 0.000195, 25.91685), planar_error=0.083
+QA PASS perimeter_6 end=(-0.083418, 0.000195, 25.99973), planar_error=0.083
+QA PASS cross_1 end=(0.0, 0.000195, 14.08327), planar_error=0.083
+QA PASS cross_2 end=(2.915545, 0.000195, 14.00234), planar_error=0.084
+QA PASS cross_3 end=(2.999819, 0.000195, -25.9143), planar_error=0.086
+QA PASS cross_4 end=(0.084341, 0.000195, -25.99759), planar_error=0.084
+QA PASS cross_5 end=(0.000285, 0.000195, -2.081135), planar_error=0.081
+QA PASS cross_6 end=(-25.91617, 0.000195, -2.000262), planar_error=0.084
+QA PASS cross_7 end=(25.91727, 0.000195, -2.0), planar_error=0.083
+QA PASS west_service_1 end=(-10.0, 0.000195, -25.91671), planar_error=0.083
+QA PASS east_service_1 end=(10.0, 0.000195, -25.91671), planar_error=0.083
+QA PASS west_elevated_1 end=(-18.0, 2.400294, 6.106517), planar_error=0.107
+QA PASS west_elevated_height_1 2.40029382705688
+QA PASS west_elevated_2 end=(-18.0, 2.400294, 0.106514), planar_error=0.107
+QA PASS west_elevated_height_2 2.40029382705688
+QA PASS west_elevated_3 end=(-18.0, 2.400294, -5.893488), planar_error=0.107
+QA PASS west_elevated_height_3 2.40029382705688
+QA PASS west_elevated_4 end=(-18.0, 0.000856, -17.87435), planar_error=0.126
+QA PASS west_elevated_5 end=(-18.0, 2.400027, -6.142368), planar_error=0.142
+QA PASS west_elevated_height_5 2.40002703666687
+QA PASS west_elevated_6 end=(-18.0, 2.400027, 5.857637), planar_error=0.142
+QA PASS west_elevated_height_6 2.40002703666687
+QA PASS west_elevated_7 end=(-18.0, 0.000813, 17.92293), planar_error=0.077
+QA PASS east_elevated_1 end=(18.0, 2.400294, 6.106517), planar_error=0.107
+QA PASS east_elevated_height_1 2.40029382705688
+QA PASS east_elevated_2 end=(18.0, 2.400294, 0.106514), planar_error=0.107
+QA PASS east_elevated_height_2 2.40029382705688
+QA PASS east_elevated_3 end=(18.0, 2.400294, -5.893488), planar_error=0.107
+QA PASS east_elevated_height_3 2.40029382705688
+QA PASS east_elevated_4 end=(18.0, 0.000856, -17.87435), planar_error=0.126
+QA PASS east_elevated_5 end=(18.0, 2.400027, -6.142368), planar_error=0.142
+QA PASS east_elevated_height_5 2.40002703666687
+QA PASS east_elevated_6 end=(18.0, 2.400027, 5.857637), planar_error=0.142
+QA PASS east_elevated_height_6 2.40002703666687
+QA PASS east_elevated_7 end=(18.0, 0.000849, 17.92293), planar_error=0.077
+QA PASS bridge_underpass_-18 end=(-14.0833, 0.000195, 0.0), planar_error=0.083
+QA PASS underpass_ground_-18 
+QA PASS bridge_underpass_18 end=(21.9167, 0.000195, 0.0), planar_error=0.083
+QA PASS underpass_ground_18 
+QA PASS bridge_guardrail_-18 (-16.58332, 2.400195, 0.0)
+QA PASS bridge_guardrail_18 (19.41668, 2.400195, 0.0)
+QA PASS boundary_[-1.0, 0.0, 0.0] 
+QA PASS boundary_[1.0, 0.0, 0.0] 
+QA PASS boundary_[0.0, 0.0, 1.0] 
+QA PASS boundary_[0.0, 0.0, -1.0] 
+QA PASS hit_Target1 { "position": (0.0, 1.500901, 10.06), "normal": (0.0, 0.0, 1.0), "face_index": -1, "collider_id": 64307072544, "collider": Target1:<StaticBody3D#64307072544>, "shape": 0, "rid": RID(6532645257592) }
+QA PASS hit_Target2 { "position": (1.5, 1.500451, 0.059999), "normal": (0.0, 0.0, 1.0), "face_index": -1, "collider_id": 64407735846, "collider": Target2:<StaticBody3D#64407735846>, "shape": 0, "rid": RID(6575594930553) }
+QA PASS hit_Target3 { "position": (-1.5, 1.5003, -9.940001), "normal": (0.0, 0.0, 1.0), "face_index": -1, "collider_id": 64508399148, "collider": Target3:<StaticBody3D#64508399148>, "shape": 0, "rid": RID(6614249636218) }
+QA PASS hit_Target4 { "position": (-11.3, 1.500452, -7.940001), "normal": (0.0, 0.0, 1.0), "face_index": -1, "collider_id": 64609062450, "collider": Target4:<StaticBody3D#64609062450>, "shape": 0, "rid": RID(6652904341883) }
+QA PASS hit_Target5 { "position": (11.3, 1.500452, -7.940001), "normal": (0.0, 0.0, 1.0), "face_index": -1, "collider_id": 64709725752, "collider": Target5:<StaticBody3D#64709725752>, "shape": 0, "rid": RID(6691559047548) }
+QA PASS cooldown 
+QA PASS sight_axis 
+QA PASS reload_fire_lock 
+QA PASS reload_complete 
+QA PASS empty_lock 
+QA PASS architecture_occludes 
+QA PASS pause_freezes 
+QA PASS reset_state 
+QA PASS reset_marker 
+QA_COMPLETE failures=0

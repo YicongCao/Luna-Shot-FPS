@@ -1,0 +1,130 @@
+{
+  "asset": "C",
+  "stage": "low",
+  "checks": [
+    {
+      "x": -1.4,
+      "y": -3.8,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "x": -1.4,
+      "y": -2,
+      "expected": 2.4,
+      "error": 0.004817390441894442,
+      "passed": true
+    },
+    {
+      "x": -1.4,
+      "y": 0,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "x": -1.4,
+      "y": 2,
+      "expected": 2.4,
+      "error": 0.004816913604736239,
+      "passed": true
+    },
+    {
+      "x": -1.4,
+      "y": 3.8,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "y": -3.8,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "y": -2,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "y": 0,
+      "expected": 2.4,
+      "error": 0.004816913604736239,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "y": 2,
+      "expected": 2.4,
+      "error": 0.004816913604736239,
+      "passed": true
+    },
+    {
+      "x": 0,
+      "y": 3.8,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "x": 1.4,
+      "y": -3.8,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "x": 1.4,
+      "y": -2,
+      "expected": 2.4,
+      "error": 0.004817390441894442,
+      "passed": true
+    },
+    {
+      "x": 1.4,
+      "y": 0,
+      "expected": 2.4,
+      "error": 0.004816913604736239,
+      "passed": true
+    },
+    {
+      "x": 1.4,
+      "y": 2,
+      "expected": 2.4,
+      "error": 0.004816913604736239,
+      "passed": true
+    },
+    {
+      "x": 1.4,
+      "y": 3.8,
+      "expected": 2.4,
+      "error": 0.004817152023315341,
+      "passed": true
+    },
+    {
+      "check": "underpass",
+      "x": -1.4,
+      "ceiling": 2.2545828819274902,
+      "passed": true
+    },
+    {
+      "check": "underpass",
+      "x": 0,
+      "ceiling": 2.2545828819274902,
+      "passed": true
+    },
+    {
+      "check": "underpass",
+      "x": 1.4,
+      "ceiling": 2.2545828819274902,
+      "passed": true
+    }
+  ],
+  "failures": 0
+}

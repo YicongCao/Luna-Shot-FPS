@@ -1,0 +1,10 @@
+BlenderMCP addon registered
+22:47:12 | INFO: Data are loaded, start creating Blender stuff
+22:47:12 | INFO: Blender create Mesh node tripo_mesh_f7ac912d-85a0-4356-ba2c-8e221e6dd036
+22:47:14 | INFO: glTF import finished in 1.98s
+00:03.136  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/industrial-wear-v1/00-tripo/inspection.png'
+TRIPO_BOUNDS (-0.1213475689291954, -0.49170321226119995, -0.4903668165206909) (0.12214243412017822, 0.49041175842285156, 0.49037647247314453) 1839468
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

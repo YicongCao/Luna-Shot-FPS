@@ -1,0 +1,34 @@
+[
+  {
+    "stage": "high",
+    "part": "T03_ReceiverShell_high",
+    "vertices_fitted": 34251,
+    "max_displacement_m": 0.0014996440112590784,
+    "topology_preserved": true,
+    "uv_preserved": true
+  },
+  {
+    "stage": "high",
+    "part": "T08_StockShell_high",
+    "vertices_fitted": 12679,
+    "max_displacement_m": 0.0014998003840446458,
+    "topology_preserved": true,
+    "uv_preserved": true
+  },
+  {
+    "stage": "low",
+    "part": "T08_StockShell_low",
+    "vertices_fitted": 112,
+    "max_displacement_m": 0.0014965444803237901,
+    "topology_preserved": true,
+    "uv_preserved": true
+  },
+  {
+    "stage": "low",
+    "part": "T03_ReceiverShell_low",
+    "vertices_fitted": 299,
+    "max_displacement_m": 0.001440627038478852,
+    "topology_preserved": true,
+    "uv_preserved": true
+  }
+]

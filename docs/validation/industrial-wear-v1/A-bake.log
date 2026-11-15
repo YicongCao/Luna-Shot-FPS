@@ -1,0 +1,32 @@
+00:00.266  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/industrial-wear-v1/A/02-low/A-low.blend"
+BlenderMCP addon registered
+Info: Baking map saved to internal image, save it externally or pack it
+A_BAKED NormalGL
+Info: Baking map saved to internal image, save it externally or pack it
+A_BAKED AO
+Info: Baking map saved to internal image, save it externally or pack it
+A_BAKED Roughness
+Info: Baking map saved to internal image, save it externally or pack it
+A_BAKED BaseColor
+Info: Baking map saved to internal image, save it externally or pack it
+A_BAKED Metallic
+Info: Baking map saved to internal image, save it externally or pack it
+A_BAKED Emission
+00:20.975  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/industrial-wear-v1/A/02-low/A-low.blend"
+/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/industrial_wear/bake_a.py:47: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('A_v2_Atlas');mat.use_nodes=True;bs=mat.node_tree.nodes.get('Principled BSDF');links=mat.node_tree.links;nodes=mat.node_tree.nodes
+Info: Saved as "A-bake-pairs.blend"
+Info: Packed 4 file(s)
+Info: Saved as "A-final.blend"
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+22:48:40 | INFO: Starting glTF 2.0 export
+22:48:40 | INFO: Extracting primitive: Cube.150
+22:48:40 | INFO: Primitives created: 1
+22:48:40 | INFO: Finished glTF 2.0 export in 0.009444236755371094 s
+
+A_FINAL_COMPLETE 5180
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

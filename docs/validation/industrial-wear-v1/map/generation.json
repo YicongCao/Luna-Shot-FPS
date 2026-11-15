@@ -1,0 +1,528 @@
+{
+  "seeds": [
+    {
+      "seed": 20261115,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2744,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "31d2852c338e554c316b80ca87a5ce7f489b1c4505c31d18b50cc3fd714452ca"
+    },
+    {
+      "seed": 20261116,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2762,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "0350e8542225a8c40d0c0eac875ff3a2e36fffc86e55c0a485c9809b89864ef9"
+    },
+    {
+      "seed": 20261117,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2827,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "ee2140006d5cadfd60dcc33905825101ef94cb60fd78483d4f4c47654dafb327"
+    },
+    {
+      "seed": 20261118,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2775,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "930be4b7f666eabc0bba68564e86b6b8cce44369598c71dee168d34860cccc90"
+    },
+    {
+      "seed": 20261119,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2777,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "04ad8314642b8b63689882b5e9141ec45453ba11a0e6e9f09d5e86bb0704e925"
+    },
+    {
+      "seed": 20261120,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2728,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "ab4db25409f4945f114475dba8b865fc1a3ade94ef52477cb6666608b367d79d"
+    },
+    {
+      "seed": 20261121,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2773,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "a045600ed63a84f8eb8081147bba85db321b2d544885e77a6c304415871a033b"
+    },
+    {
+      "seed": 20261122,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2763,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "eb4b136083ed3ba2b13f4a81e6ad619478d39a32b541303ee52d00221d10449f"
+    },
+    {
+      "seed": 20261123,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2786,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "0cb5a46638e1500172d94835ed8f34c05f87140b720c7a67e268d78f741ed8a5"
+    },
+    {
+      "seed": 20261124,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2755,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "b999ebfa2694545532a84a899fe93675119074372c9f9d45542318a5a966db5b"
+    },
+    {
+      "seed": 20261125,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2760,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "e836a2667bec2e0c0b08931217da3643aa94983cd81ccb6a5067e0304a68e822"
+    },
+    {
+      "seed": 20261126,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2779,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "a61e4e8e57b5898f084e0b4254a310c535acad7e11ce65885654f69a3c873a62"
+    },
+    {
+      "seed": 20261127,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2766,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "65b8f1fe47ecb4e214c3d15f5c883cfbace98f0d6202bc2629a7de5255f65674"
+    },
+    {
+      "seed": 20261128,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2800,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "0c88692866de81ff49e91ace49ba404f65be73b7e8f4e6a21e713069f1dc5534"
+    },
+    {
+      "seed": 20261129,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2787,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "024253256b259e448f9d64e10e3cbd1b8c1787a28314819f9e183d8a09a1451b"
+    },
+    {
+      "seed": 20261130,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2779,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "9561970ddf2ececf954983e45f3eb680b3f314a2beb7a9a693543a25f96fad81"
+    },
+    {
+      "seed": 20261131,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2726,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "0f684bb4717ce0e0e029c00ac850eabba615652db03c7551870b448c1b0c4702"
+    },
+    {
+      "seed": 20261132,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2765,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "e75278370089bf6548f2b7eb9223e02f43fdd451a6c13b9bdb154ac27e52ff8b"
+    },
+    {
+      "seed": 20261133,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2777,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "4f1f87039e63bb555d100b3294e8ff8ea28b734c3ec43f0322b5170490e25a7b"
+    },
+    {
+      "seed": 20261134,
+      "counts": {
+        "C": 2,
+        "D": 4,
+        "B": 12,
+        "A": 40
+      },
+      "thermal_subtypes": {
+        "B1": 6,
+        "B2": 6
+      },
+      "unique_theme_resources": 6,
+      "instances": 59,
+      "reachable_ground_samples": 2767,
+      "checks": [
+        "counts",
+        "bounds",
+        "overlaps",
+        "reserved_corridors",
+        "ground_connectivity",
+        "shooting_lanes",
+        "elevated_sockets"
+      ],
+      "sha256": "ea9b054112a13a952b4416a7e907880d767f07833e2c88f056388666bf8231aa"
+    }
+  ],
+  "deterministic": true,
+  "different_seeds_vary": true,
+  "invalid_layout_preserves_scene": true,
+  "weapon_generation_isolated": true
+}

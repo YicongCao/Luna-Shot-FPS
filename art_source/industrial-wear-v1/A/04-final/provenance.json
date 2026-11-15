@@ -1,0 +1,10 @@
+{
+  "asset": "A",
+  "revision": "industrial-wear-v1",
+  "triangles": 5180,
+  "source": "art_source/industrial-wear-v1/A/04-final",
+  "normal": "genuine selected-to-active bake from separately authored high geometry",
+  "texture_resolution": 2048,
+  "material_slots": 1,
+  "tripo_credits_this_revision": 0
+}

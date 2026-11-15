@@ -1,0 +1,87 @@
+{
+  "asset": "A",
+  "stage": "low",
+  "source": "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/A/03-tripo-low/model.glb",
+  "source_bounds": [
+    [
+      -0.4990234673023224,
+      -0.4990234375,
+      -0.15799136459827423
+    ],
+    [
+      0.4990234673023224,
+      0.4990234971046448,
+      0.15792450308799744
+    ]
+  ],
+  "target_bounds": [
+    [
+      -1.899999976158142,
+      -1.899999976158142,
+      0.0
+    ],
+    [
+      1.899999976158142,
+      1.899999976158142,
+      1.1999999284744263
+    ]
+  ],
+  "scale": [
+    3.807436227798462,
+    3.807436227798462,
+    3.7984795570373535
+  ],
+  "parts": [
+    {
+      "name": "A_P00_low",
+      "raw_name": "A_P00_high",
+      "triangles": 2690
+    },
+    {
+      "name": "A_P04_low",
+      "raw_name": "A_P04_high",
+      "triangles": 363
+    },
+    {
+      "name": "A_P01_low",
+      "raw_name": "A_P01_high",
+      "triangles": 1275
+    },
+    {
+      "name": "A_P02_low",
+      "raw_name": "A_P02_high",
+      "triangles": 881
+    },
+    {
+      "name": "A_P03_low",
+      "raw_name": "A_P03_high",
+      "triangles": 381
+    },
+    {
+      "name": "A_P05_low",
+      "raw_name": "A_P05_high",
+      "triangles": 379
+    },
+    {
+      "name": "A_P06_low",
+      "raw_name": "A_P06_high",
+      "triangles": 460
+    },
+    {
+      "name": "A_P07_low",
+      "raw_name": "A_P07_high",
+      "triangles": 404
+    },
+    {
+      "name": "A_P08_low",
+      "raw_name": "A_P08_high",
+      "triangles": 505
+    },
+    {
+      "name": "A_P09_low",
+      "raw_name": "A_P09_high",
+      "triangles": 445
+    }
+  ],
+  "triangles": 7783
+}

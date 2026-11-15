@@ -1,0 +1,189 @@
+{
+  "asset": "B2",
+  "stage": "low",
+  "source": "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/environment/pipeline-v1/B2/03-tripo-low/model.glb",
+  "source_bounds": [
+    [
+      -0.31604817509651184,
+      -0.31604817509651184,
+      -0.5005735158920288
+    ],
+    [
+      0.31604817509651184,
+      0.31604817509651184,
+      0.49985775351524353
+    ]
+  ],
+  "target_bounds": [
+    [
+      -1.899999976158142,
+      -1.899999976158142,
+      0.0
+    ],
+    [
+      1.899999976158142,
+      1.899999976158142,
+      6.0
+    ]
+  ],
+  "scale": [
+    6.011741638183594,
+    6.011741638183594,
+    5.997413635253906
+  ],
+  "parts": [
+    {
+      "name": "B2_P06_low",
+      "raw_name": "B2_P06_high",
+      "triangles": 251
+    },
+    {
+      "name": "B2_P10_low",
+      "raw_name": "B2_P10_high",
+      "triangles": 380
+    },
+    {
+      "name": "B2_P12_low",
+      "raw_name": "B2_P12_high",
+      "triangles": 490
+    },
+    {
+      "name": "B2_P13_low",
+      "raw_name": "B2_P13_high",
+      "triangles": 310
+    },
+    {
+      "name": "B2_P16_low",
+      "raw_name": "B2_P16_high",
+      "triangles": 326
+    },
+    {
+      "name": "B2_P14_low",
+      "raw_name": "B2_P14_high",
+      "triangles": 465
+    },
+    {
+      "name": "B2_P19_low",
+      "raw_name": "B2_P19_high",
+      "triangles": 340
+    },
+    {
+      "name": "B2_P21_low",
+      "raw_name": "B2_P21_high",
+      "triangles": 337
+    },
+    {
+      "name": "B2_P22_low",
+      "raw_name": "B2_P22_high",
+      "triangles": 381
+    },
+    {
+      "name": "B2_P26_low",
+      "raw_name": "B2_P26_high",
+      "triangles": 410
+    },
+    {
+      "name": "B2_P01_low",
+      "raw_name": "B2_P01_high",
+      "triangles": 1870
+    },
+    {
+      "name": "B2_P04_low",
+      "raw_name": "B2_P04_high",
+      "triangles": 613
+    },
+    {
+      "name": "B2_P15_low",
+      "raw_name": "B2_P15_high",
+      "triangles": 257
+    },
+    {
+      "name": "B2_P20_low",
+      "raw_name": "B2_P20_high",
+      "triangles": 367
+    },
+    {
+      "name": "B2_P18_low",
+      "raw_name": "B2_P18_high",
+      "triangles": 420
+    },
+    {
+      "name": "B2_P00_low",
+      "raw_name": "B2_P00_high",
+      "triangles": 1272
+    },
+    {
+      "name": "B2_P03_low",
+      "raw_name": "B2_P03_high",
+      "triangles": 967
+    },
+    {
+      "name": "B2_P05_low",
+      "raw_name": "B2_P05_high",
+      "triangles": 572
+    },
+    {
+      "name": "B2_P07_low",
+      "raw_name": "B2_P07_high",
+      "triangles": 710
+    },
+    {
+      "name": "B2_P08_low",
+      "raw_name": "B2_P08_high",
+      "triangles": 695
+    },
+    {
+      "name": "B2_P17_low",
+      "raw_name": "B2_P17_high",
+      "triangles": 493
+    },
+    {
+      "name": "B2_P11_low",
+      "raw_name": "B2_P11_high",
+      "triangles": 220
+    },
+    {
+      "name": "B2_P23_low",
+      "raw_name": "B2_P23_high",
+      "triangles": 332
+    },
+    {
+      "name": "B2_P24_low",
+      "raw_name": "B2_P24_high",
+      "triangles": 464
+    },
+    {
+      "name": "B2_P28_low",
+      "raw_name": "B2_P28_high",
+      "triangles": 584
+    },
+    {
+      "name": "B2_P09_low",
+      "raw_name": "B2_P09_high",
+      "triangles": 460
+    },
+    {
+      "name": "B2_P27_low",
+      "raw_name": "B2_P27_high",
+      "triangles": 464
+    },
+    {
+      "name": "B2_P25_low",
+      "raw_name": "B2_P25_high",
+      "triangles": 548
+    },
+    {
+      "name": "B2_P29_low",
+      "raw_name": "B2_P29_high",
+      "triangles": 319
+    },
+    {
+      "name": "B2_P02_low",
+      "raw_name": "B2_P02_high",
+      "triangles": 881
+    }
+  ],
+  "remote_triangles": 16198,
+  "local_budget_correction": true,
+  "triangles": 13695
+}

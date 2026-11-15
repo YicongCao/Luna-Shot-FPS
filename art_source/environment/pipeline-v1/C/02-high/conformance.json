@@ -1,0 +1,33 @@
+{
+  "asset": "C",
+  "changes": [
+    {
+      "part": "C_P00_high",
+      "action": "Rebuilt exact 2.4 m deck and shallow anti-slip ribs; 2.25 m underside"
+    },
+    {
+      "part": "C_P01_high",
+      "action": "Restored side guardrail bounds and open end ports"
+    },
+    {
+      "part": "C_P02_high",
+      "action": "Restored side guardrail bounds and open end ports"
+    },
+    {
+      "part": "C_P03_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    },
+    {
+      "part": "C_P04_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    },
+    {
+      "part": "C_P05_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    },
+    {
+      "part": "C_P06_high",
+      "action": "Aligned original dense support to approved footprint and ground"
+    }
+  ]
+}
