@@ -58,3 +58,18 @@ ML01 枪械阶段实际使用 115 Tripo 积分（60 + 35 + 20），没有重抽�
 当前 LS01 返修资源在 `assets/weapons/lc01/ls01_v1`，可编辑高低模、独立 cage 和材质源在 `art_source/weapons/lc01/ls01-refine-v1`。`APPROVED` 标记仅代表本轮技术与实施复查，不代表用户已验收。原 LC01/ML06 资源保留，双击 `launch-weapon-baseline.command` 可对照。
 
 [新旧原生画面对照](docs/validation/ls01-refine-v1/review.html) · [检查报告与开放差距](docs/validation/ls01-refine-v1/REPORT.md) · [逐件规格](docs/art/ls01-refine-v1/PARTS.md) · [复现步骤](tools/ls01_refine/README.md) · [ML07 日志](docs/logs/ML07-枪械精确几何与分层材质返修.md)。
+
+## GitHub 与获取资产
+
+私有仓库：[YicongCao/Luna-Shot-FPS](https://github.com/YicongCao/Luna-Shot-FPS)。需要仓库访问权限及 Git LFS，模型和贴图不能仅靠 ZIP 中的 LFS 指针运行。
+
+```sh
+# 先安装 Git LFS（macOS 可用 brew install git-lfs）
+git lfs install
+git clone git@github.com:YicongCao/Luna-Shot-FPS.git
+cd Luna-Shot-FPS
+git lfs pull
+./launch.command
+```
+
+源文件、有效烘焙与验证证据已版本化；失败烘焙的重复二进制、缓存和临时产物留在本地。工作经验与提交约定见 [ML08](docs/logs/ML08-资产管线复盘与版本归档.md)。
