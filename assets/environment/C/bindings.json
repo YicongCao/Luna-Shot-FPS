@@ -1,0 +1,54 @@
+{
+  "version": "ml15-v1",
+  "asset": "C",
+  "meshes": {
+    "C_Static": "body"
+  },
+  "atlases": {
+    "body": "body"
+  },
+  "fixtures": {
+    "mounts": [
+      {
+        "kind": "blue",
+        "position": [
+          -1.978,
+          2.57,
+          -2
+        ],
+        "rotation_x": 0,
+        "side": -1
+      },
+      {
+        "kind": "blue",
+        "position": [
+          -1.978,
+          2.57,
+          2
+        ],
+        "rotation_x": 0,
+        "side": -1
+      },
+      {
+        "kind": "blue",
+        "position": [
+          1.978,
+          2.57,
+          -2
+        ],
+        "rotation_x": 0,
+        "side": 1
+      },
+      {
+        "kind": "blue",
+        "position": [
+          1.978,
+          2.57,
+          2
+        ],
+        "rotation_x": 0,
+        "side": 1
+      }
+    ]
+  }
+}

@@ -1,6 +1,7 @@
 @tool
 extends Node3D
 var asset_id := "B1"
+var mounts: Array = []
 var fixtures: Array[Dictionary] = []
 var elapsed := 0.0
 var phase := 0.0
@@ -15,6 +16,8 @@ func _ready() -> void:
 	if asset_id in ["B1", "B2"]:
 		for x in [-1.5, 1.5]:
 			for z in [-1.5, 1.5]: add_red(Vector3(x, 5.82, z))
+	if asset_id in ["C", "D"]:
+		for mount in mounts: add_blue(Vector3(mount.position[0],mount.position[1],mount.position[2]), mount.rotation_x, mount.side)
 	add_to_group("facility_lamp_modules")
 	set_process(not Engine.is_editor_hint())
 	refresh()
@@ -39,7 +42,7 @@ func add_red(pos: Vector3) -> void:
 	mat.albedo_color = Color(.22, .006, .003); mat.roughness = .22
 	mat.emission_enabled = true; mat.emission = Color(1, .015, .005)
 	lens.material_override = mat; add_child(lens)
-	fixtures.append({"mesh":lens, "material":mat, "color":Color(1,.025,.008), "range":1.4, "level":0.0})
+	fixtures.append({"mesh":lens, "material":mat, "color":Color(1,.025,.008), "range":1.4, "level":0.0,"kind":"red","spill_offset":Vector3(0,.07,0)})
 
 func _process(delta: float) -> void:
 	if is_instance_valid(training) and training.get("paused") == true: return
@@ -49,7 +52,16 @@ func _process(delta: float) -> void:
 func refresh() -> void:
 	var t := fposmod(elapsed + phase, 2.0)
 	var level := smoothstep(0.0, .06, t) * (1.0 - smoothstep(.24, .30, t))
+	if asset_id in ["C", "D"]: level = 1.0
 	if forced_level >= 0: level = forced_level
 	for fixture in fixtures:
 		fixture.level = level
 		fixture.material.emission_energy_multiplier = level * 7.0
+
+func add_blue(pos: Vector3, angle: float, side: float) -> void:
+	var lens:=MeshInstance3D.new();var shape:=BoxMesh.new();shape.size=Vector3(.015,.05,1.20)
+	lens.mesh=shape;lens.position=pos;lens.rotation.x=angle;lens.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	var mat:=StandardMaterial3D.new();mat.albedo_color=Color(.005,.10,.20);mat.roughness=.24
+	mat.emission_enabled=true;mat.emission=Color(.015,.34,1);mat.emission_energy_multiplier=7
+	lens.material_override=mat;add_child(lens)
+	fixtures.append({"mesh":lens,"material":mat,"color":Color(.025,.36,1),"range":2.0,"level":1.0,"kind":"blue","spill_offset":Vector3(side*.12,.03,0)})

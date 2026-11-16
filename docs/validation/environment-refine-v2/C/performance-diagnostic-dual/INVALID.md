@@ -1,0 +1,1 @@
+无效诊断：Compatibility不支持Dual Paraboloid，原生报错，性能数字不得用于验收。已撤销，保留CubeMap真实阴影，改为最多两个近距离补光同时激活。

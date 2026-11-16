@@ -6,6 +6,7 @@ var started: int
 var frames: Array[float] = []
 var OUT: String = "res://" + OS.get_environment("LUNA_QA_OUTPUT") + "/" if OS.has_environment("LUNA_QA_OUTPUT") else "res://docs/validation/energy-whitebox-v2/"
 func _ready() -> void:
+	DirAccess.make_dir_recursive_absolute(OUT)
 	world = get_parent()
 	player = world.get_node("Player")
 	started = Time.get_ticks_msec()

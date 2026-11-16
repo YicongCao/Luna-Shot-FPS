@@ -1,0 +1,11 @@
+{
+	"engine": "4.7.2-stable (official)",
+	"frames": 4914,
+	"objects_last_frame": 1122,
+	"p50_ms": 10.766,
+	"p95_ms": 21.395,
+	"primitives_last_frame": 1502040,
+	"seconds": 60.007,
+	"texture_bytes": 847796524,
+	"viewport": "1600x1000"
+}

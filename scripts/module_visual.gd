@@ -33,6 +33,7 @@ func _ready() -> void:
 		var lamps := Node3D.new()
 		lamps.set_script(load("res://scripts/facility_lamps.gd"))
 		lamps.asset_id = asset_id
+		lamps.mounts = bindings.fixtures.get("mounts", [])
 		add_child(lamps)
 	# Added after whitebox hiding/material binding so animated parts stay visible
 	# and keep their own metal/paint materials. Regenerating the map retains this.

@@ -7,7 +7,7 @@ R=Path(__file__).resolve().parents[2]
 a=argparse.ArgumentParser();a.add_argument('--asset',required=True,choices=['B1','B2','C','D','E']);a.add_argument('--out');a.add_argument('--seed',type=int,default=20261116)
 args=a.parse_args(sys.argv[sys.argv.index('--')+1:]);A=args.asset;O=Path(args.out or R/'art_source/environment/refine-v2'/A);O.mkdir(parents=True,exist_ok=True)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
-M={k:create(k) for k in ['coat','dark','steel','rubber','yellow','core']};parts=[];current=[];groups={};HIGH=False
+M={k:create(k) for k in ['coat','dark','steel','rubber','yellow','core','tread']};parts=[];current=[];groups={};HIGH=False
 
 def active(o):
  bpy.ops.object.select_all(action='DESELECT');o.select_set(True);bpy.context.view_layer.objects.active=o
@@ -142,7 +142,10 @@ def build():
   group('Frame',b2_frame);group('BaseCabinet',cabinet)
   for sign in [-1,1]:group('VerticalBank'+str(sign),lambda sign=sign:b2_bank(sign),.005)
   group('PipesAndMounts',b2_pipes,.018)
- else:raise RuntimeError('Asset recipe not authored yet; do not fall back to generic geometry')
+ elif A in ['C','D','E']:
+  import other_recipes as extra;extra.configure(globals())
+  if A=='E':extra.signal()
+  else:extra.walkway(A=='D')
 
 for HIGH in [True,False]:build()
 # Fixed triangles and common atlas layout across all groups.
@@ -160,7 +163,8 @@ for name,p in groups.items():
  records.append({'name':name,'group':'body','low':lo.name,'high':hi.name,'cage':ca.name,'cage_distance':p['cage_distance'],'triangles':len(lo.data.polygons)})
 points=[v.co for lo in lows for v in lo.data.vertices];bounds=[[min(v[i] for v in points) for i in range(3)],[max(v[i] for v in points) for i in range(3)]]
 triangles=sum(p['triangles'] for p in records);assert triangles<=dict(B1=20000,B2=20000,C=12000,D=16000,E=24000)[A],triangles
-assert bounds[0][0]>=-2 and bounds[1][0]<=2 and bounds[0][1]>=-2 and bounds[1][1]<=2 and bounds[1][2]<=6,bounds
+extent=dict(B1=(2,2,6),B2=(2,2,6),C=(2,4.01,3.5),D=(2,6.03,3.5),E=(1.91,1.01,14.2))[A]
+assert all(bounds[0][i]>=-extent[i]-.0001 and bounds[1][i]<=extent[i]+.0001 for i in [0,1]) and bounds[1][2]<=extent[2],bounds
 (O/'02-geometry').mkdir(exist_ok=True);bpy.ops.wm.save_as_mainfile(filepath=str(O/'02-geometry/paired.blend'))
 manifest={'asset':A,'seed':args.seed,'pairs':records,'triangles':triangles,'bounds_blender':bounds,'uv_version':'ml15-v1','tripo_role':'Shape reference; precise open assemblies authored locally; generated candidate archived separately','materials':list(M),'high_triangles':sum(sum(len(f.vertices)-2 for f in p['high'].data.polygons) for p in groups.values())}
 (O/'manifest.json').write_text(json.dumps(manifest,indent=2));print('ENV_BUILD_COMPLETE',A,triangles,len(records),flush=True)

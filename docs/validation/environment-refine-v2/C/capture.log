@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M5
+
+ENV_CHECK capture_range true
+ENV_CHECK fixture_count true
+ENV_CHECK capture_lights-on-no-bloom true
+ENV_CHECK capture_emission-only true
+ENV_CHECK real_local_spill_pixels true
+ENV_CHECK capture_lights-off true
+ENV_CHECK capture_lights-bloom true
+ENV_CHECK blue_constant true
+ENV_CHECK pause_freezes_phase true
+ENV_CHECK capture_gray-front true
+ENV_CHECK capture_gray-back true
+ENV_CHECK capture_gray-left true
+ENV_CHECK capture_gray-right true
+ENV_CHECK capture_pbr-front true
+ENV_CHECK capture_pbr-back true
+ENV_CHECK capture_pbr-left true
+ENV_CHECK capture_pbr-right true
+ENV_CHECK capture_pbr-grazing true
+ENV_CHECK capture_distance-3 true
+ENV_CHECK capture_distance-10 true
+ENV_CHECK capture_distance-20 true
+ENV_CAPTURE_COMPLETE candidate failures=0

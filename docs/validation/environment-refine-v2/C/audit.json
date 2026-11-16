@@ -1,0 +1,98 @@
+{
+  "asset": "C",
+  "triangles": 7520,
+  "high_triangles": 27920,
+  "pairs": 3,
+  "non_manifold_edges": 0,
+  "degenerate_uv_triangles": 0,
+  "uv_oob": 0,
+  "overlap_pixels": 0,
+  "coverage": 0.21040606498718262,
+  "cage_mismatch": 0,
+  "bake": {
+    "contract": {
+      "source_sha256": "0b9ced3cee5abad8ebbedd0bb273644cbf666cc46460b0a2106654700feae12d",
+      "resolution": 4096,
+      "normal": "OpenGL +Y",
+      "explicit_cage": true,
+      "margin_px": 32
+    },
+    "group": "body",
+    "resolution": 4096,
+    "device": "Apple M5 Metal GPU",
+    "actual_cycles_bake": true,
+    "selected_to_active": true,
+    "explicit_cage": true,
+    "exploded_pairs": 3,
+    "source_batch": "joined high; per-part object-coordinate anchors preserved",
+    "margin_px": 32,
+    "maps": [
+      {
+        "name": "NormalGL",
+        "seconds": 6.729417085647583,
+        "bake_type": "NORMAL"
+      },
+      {
+        "name": "AO",
+        "seconds": 7.1891701221466064,
+        "bake_type": "AO"
+      },
+      {
+        "name": "BaseColor",
+        "seconds": 6.464256048202515,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "Roughness",
+        "seconds": 6.620393991470337,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "Metallic",
+        "seconds": 8.679037094116211,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "Curvature",
+        "seconds": 9.71624207496643,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "EdgeMask",
+        "seconds": 11.676988363265991,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "Position",
+        "seconds": 9.922211170196533,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "WorldNormal",
+        "seconds": 9.795762300491333,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "MaterialID",
+        "seconds": 10.063291072845459,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "WearMask",
+        "seconds": 9.95291781425476,
+        "bake_type": "EMIT"
+      },
+      {
+        "name": "OilMask",
+        "seconds": 10.145254850387573,
+        "bake_type": "EMIT"
+      }
+    ],
+    "curvature_encoding": "Cycles high-mesh Pointiness, .5 flat; not a signed metric curvature",
+    "edge_mask": "controlled edge-distance wear proxy, distinct from Curvature",
+    "ao_scope": "per-part local AO; exploded to avoid unrelated parts",
+    "position_encoding": "Blender source xyz + (.5,.5,.5)",
+    "completed": true
+  },
+  "passed": true
+}

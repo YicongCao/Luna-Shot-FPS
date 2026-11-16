@@ -1,0 +1,406 @@
+{
+  "checks": [
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -3.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -2.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -1.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -0.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 0.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 1.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -3.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -2.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -1.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -0.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 0.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 1.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -3.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -2.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -1.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -0.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 0.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 1.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -3.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -2.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -1.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -0.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 0.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 1.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": -1.49,
+        "y": -3.5,
+        "ceiling": 2.299999952316284
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": -1.49,
+        "y": 0,
+        "ceiling": null
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": -1.49,
+        "y": 3.5,
+        "ceiling": 2.299999952316284
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": 0,
+        "y": -3.5,
+        "ceiling": null
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": 0,
+        "y": 0,
+        "ceiling": null
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": 0,
+        "y": 3.5,
+        "ceiling": null
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": 1.49,
+        "y": -3.5,
+        "ceiling": 2.299999952316284
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": 1.49,
+        "y": 0,
+        "ceiling": null
+      }
+    },
+    {
+      "check": "underbridge_3m_width_2_2m_height",
+      "passed": true,
+      "detail": {
+        "x": 1.49,
+        "y": 3.5,
+        "ceiling": 2.299999952316284
+      }
+    }
+  ],
+  "failures": 0
+}

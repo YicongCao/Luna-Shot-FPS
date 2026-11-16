@@ -20,6 +20,8 @@ var module_light_pool: Array[OmniLight3D] = []
 
 func _ready() -> void:
 	world=get_parent();player=world.get_node("Player")
+	# Small 1.4–2m local pools do not need the default full-range shadow atlas.
+	get_viewport().positional_shadow_atlas_size=1024
 	sun=world.get_node("Sun")
 	sun.rotation_degrees=Vector3(-18,-32,0)
 	sun.light_color=Color(1,.94,.84);sun.light_energy=1.15
@@ -43,10 +45,13 @@ func _ready() -> void:
 	weapon_environment.glow_intensity=1.0
 	weapon_key=player.get_node("WeaponLayer/Container/Viewport/Key")
 	player.get_node("WeaponLayer/Container/Viewport/Fill").light_energy=.08
-	for x in [-19.75,19.75]:
-		for z in [-15.6,15.6]:add_fixture(Vector3(x,1.2,z),Color(.28,.76,1),true,"Ramp")
-	add_fixture(Vector3(0,1.35,1.03),Color(.25,.9,1),false,"Control")
-	add_fixture(Vector3(0,14.27,0),Color(1,.29,.075),false,"Beacon")
+	var installed:=get_tree().get_nodes_in_group("facility_lamp_modules")
+	if not installed.any(func(m):return m.asset_id in ["C","D"]):
+		for x in [-19.75,19.75]:
+			for z in [-15.6,15.6]:add_fixture(Vector3(x,1.2,z),Color(.28,.76,1),true,"Ramp")
+		add_fixture(Vector3(0,1.35,1.03),Color(.25,.9,1),false,"Control")
+	if not installed.any(func(m):return m.asset_id=="E"):
+		add_fixture(Vector3(0,14.27,0),Color(1,.29,.075),false,"Beacon")
 	for x in [-17,17]:
 		var probe:=ReflectionProbe.new();probe.name="StaticFacilityReflection"
 		probe.position=Vector3(x,3,0);probe.size=Vector3(32,16,64)
@@ -128,19 +133,36 @@ func update_module_lights() -> void:
 		for fixture: Dictionary in module.fixtures:
 			fixture.material.emission_enabled = facility_enabled
 			var distance: float = camera.global_position.distance_squared_to(fixture.mesh.global_position)
-			if fixture.level > .001 and distance < 8.0 * 8.0:
-				candidates.append({"fixture":fixture,"distance":distance})
+			var max_distance:=4.5 if fixture.get("kind", "red")=="blue" else 8.0
+			if distance < max_distance * max_distance:
+				candidates.append({"fixture":fixture,"distance":distance,"max_distance":max_distance})
 	candidates.sort_custom(func(a, b): return a.distance < b.distance)
+	# Stable fixture-to-slot ownership keeps blink phases from moving all shadow maps.
+	candidates=candidates.slice(0,8)
+	var used: Array[int]=[]
+	var slots: Dictionary={}
+	for candidate in candidates:
+		var id: int=candidate.fixture.mesh.get_instance_id()
+		for i in module_light_pool.size():
+			if module_light_pool[i].get_meta("fixture_id",0)==id:
+				slots[id]=i;used.append(i);break
+	for candidate in candidates:
+		var id: int=candidate.fixture.mesh.get_instance_id()
+		if slots.has(id):continue
+		for i in module_light_pool.size():
+			if i not in used:
+				slots[id]=i;used.append(i);module_light_pool[i].set_meta("fixture_id",id);break
 	for i in module_light_pool.size():
-		var light := module_light_pool[i]
-		light.visible = facility_enabled and i < mini(candidates.size(), 4)
-		if not light.visible: continue
-		var fixture: Dictionary = candidates[i].fixture
-		light.global_position = fixture.mesh.global_position + Vector3(0,.07,0)
-		light.light_color = fixture.color
-		light.light_energy = .45 * fixture.level * (1.0 - smoothstep(7.0, 8.0, sqrt(candidates[i].distance)))
-		light.omni_attenuation = 2.0
-		light.omni_range = fixture.range
+		if i not in used:module_light_pool[i].visible=false
+	var activated:=0
+	for candidate in candidates:
+		var fixture: Dictionary=candidate.fixture
+		var light: OmniLight3D=module_light_pool[slots[fixture.mesh.get_instance_id()]]
+		light.global_position=fixture.mesh.global_position+fixture.get("spill_offset",Vector3(0,.07,0))
+		light.light_color=fixture.color;light.omni_range=fixture.range;light.omni_attenuation=2.0
+		light.light_energy=.45*fixture.level*(1.0-smoothstep(candidate.max_distance-1.0,candidate.max_distance,sqrt(candidate.distance)))
+		light.visible=facility_enabled and fixture.level>.001 and activated<2
+		if light.visible:activated+=1
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if not event is InputEventKey or not event.pressed or event.echo:return

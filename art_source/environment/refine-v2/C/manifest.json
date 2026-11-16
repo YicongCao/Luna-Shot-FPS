@@ -1,0 +1,58 @@
+{
+  "asset": "C",
+  "seed": 20261118,
+  "pairs": [
+    {
+      "name": "Deck",
+      "group": "body",
+      "low": "Deck_low",
+      "high": "Deck_high",
+      "cage": "Deck_cage",
+      "cage_distance": 0.008,
+      "triangles": 4480
+    },
+    {
+      "name": "Services-1",
+      "group": "body",
+      "low": "Services-1_low",
+      "high": "Services-1_high",
+      "cage": "Services-1_cage",
+      "cage_distance": 0.012,
+      "triangles": 1520
+    },
+    {
+      "name": "Services1",
+      "group": "body",
+      "low": "Services1_low",
+      "high": "Services1_high",
+      "cage": "Services1_cage",
+      "cage_distance": 0.012,
+      "triangles": 1520
+    }
+  ],
+  "triangles": 7520,
+  "bounds_blender": [
+    [
+      -1.9950000047683716,
+      -4.0,
+      0.0
+    ],
+    [
+      1.9950000047683716,
+      4.0,
+      3.385000228881836
+    ]
+  ],
+  "uv_version": "ml15-v1",
+  "tripo_role": "Shape reference; precise open assemblies authored locally; generated candidate archived separately",
+  "materials": [
+    "coat",
+    "dark",
+    "steel",
+    "rubber",
+    "yellow",
+    "core",
+    "tread"
+  ],
+  "high_triangles": 27920
+}
