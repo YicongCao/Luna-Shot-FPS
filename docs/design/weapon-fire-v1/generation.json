@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "calls": 3,
+  "iterations": 0,
+  "tripo_calls": 0,
+  "status": "concept only; not implemented",
+  "references": [
+    "docs/validation/ls01-refine-v2/default-native.png",
+    "docs/validation/ls01-refine-v2/ml09-pbr-hero.png"
+  ],
+  "outputs": [
+    {
+      "file": "A-focused-magnetic-pulse.png",
+      "original": "/Users/cong/.codex/generated_images/01a1ddc4-aed5-7200-b029-3736ce9fc2ac/exec-687eeec4-c7e4-4029-a2e1-72e7668128a0.png",
+      "sha256": "0713c2cb8eb40a907172ad7c8a3cc9de35796f0ba6ecd367e8ceb04866ee6e06"
+    },
+    {
+      "file": "B-compressed-plasma.png",
+      "original": "/Users/cong/.codex/generated_images/01a1ddc4-aed5-7200-b029-3736ce9fc2ac/exec-85800874-d9bf-458d-a8e5-86b9cece4885.png",
+      "sha256": "ee9923631666ce6aa3e4e99805e4e9f2b1af43a4315b8b3d95010030b3bbee1c"
+    },
+    {
+      "file": "C-pulsed-ion-arc.png",
+      "original": "/Users/cong/.codex/generated_images/01a1ddc4-aed5-7200-b029-3736ce9fc2ac/exec-65a50340-3081-4936-a016-c4b1d611e55c.png",
+      "sha256": "2d664171e8707caad5f59e1890f24da5bf002b9bc2022ff57e46595e50602022"
+    }
+  ]
+}

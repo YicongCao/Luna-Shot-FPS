@@ -1,0 +1,28 @@
+{
+  "tool": "built-in image_gen",
+  "reference_images": [
+    "docs/validation/ls01-refine-v2/default-native.png",
+    "docs/validation/ls01-refine-v2/ml09-pbr-hero.png"
+  ],
+  "common": "Use case: stylized-concept. Asset type: fictional science-fiction FPS firing VFX design board for Luna-Shot-FPS, LS01 / ML09.\nInput image 1 is a reference for the first-person camera, lunar industrial training range, and gun placement. Input image 2 is a reference for the exact existing gun design, NOT an additional weapon to place in the scene.\nKeep the current LS01 gun: worn ivory painted metal, orange segmented energy magazine, black tapered octagonal sight with front/rear mounting fins, bronze side tubes, cyan coil rings, irregular hexagonal cyan ammunition display. Preserve the recognizable geometry and proportions. No new scopes, barrels, accessories, characters or enemies.\nLandscape polished game VFX concept board: upper 75% a large FIRST PERSON hero view, weapon anchored lower-right, muzzle pointing toward the central training target. Lower 25% three close-up time-sequence panels of the same muzzle, labeled exactly \"01 ENERGIZE\", \"02 FIRE\", \"03 DECAY\". Effects originate at the actual FRONT MUZZLE, not the rear sight or ammo screen. No duplicate guns within the hero scene. Same lunar industrial setting and camera as reference; black vacuum sky, industrial metal surfaces. Use controlled cinematic material lighting, high readability, narrow cyan anamorphic flare and local spill on the gun, but keep the target and sight aperture readable, do not wash the whole gun white. No billowing smoke in lunar vacuum. Remove gameplay HUD and original screenshot labels.\nAdd restrained clear title at top and a small exact footer \"VFX CONCEPT / NOT IN-GAME\". Show the moment of discharge, not a generic glowing idle weapon. Main projectile direction must align with the barrel.",
+  "variants": [
+    {
+      "id": "A",
+      "file": "A-focused-magnetic-pulse.png",
+      "title": "A / FOCUSED MAGNETIC PULSE",
+      "detail": "Effect A: precise, economical magnetic pulse. At muzzle a compact sharp cyan-white spearhead flash only about 1.5 muzzle diameters wide. A THIN straight white-hot tracer core wrapped in cyan travels toward the target, with a faint rapidly breaking wake; not a thick continuous laser hose. Tiny pale amber metal sparks are very sparse. The existing three coil rings flash progressively toward the muzzle, creating tightly contained cyan reflected highlights on copper and panel edges. Hero mood is crisp, fast, controlled industrial machinery. Sequence: rings pulse; small pointed flash and needle projectile; tracer fragments fade to near-empty air. Do not add a vortex, expanding energy donut, branching lightning, large blast ball or explosions."
+    },
+    {
+      "id": "B",
+      "file": "B-compressed-plasma.png",
+      "title": "B / COMPRESSED PLASMA",
+      "detail": "Effect B: visibly volumetric compressed plasma discharge, a heavier energetic pulse. At the muzzle a compact rounded teardrop/cocoon of luminous cyan plasma with bright white central knot, translucent layered turbulent blue edges. One thin elliptical plasma collar sheds just in front of the muzzle, perpendicular to the barrel; it is much smaller than the gun, not a giant magic portal. A short detached oval bolt moves downrange, with a tapered luminous wake, NOT a straight long laser beam. Several sparse flecks peel away and quickly extinguish. Cyan light wraps around the front shroud, bolt housing, copper tubes and orange magazine rim. Main difference from A is bulbous volume and a short lingering plasma wake. Sequence: compressed glowing knot; round plasma eruption and shedding collar; collar opens into fading wisps. No branching lightning, no huge smoke cloud, no explosive environment destruction."
+    },
+    {
+      "id": "C",
+      "file": "C-pulsed-ion-arc.png",
+      "title": "C / PULSED ION ARC",
+      "detail": "Effect C: industrial high-voltage pulse, distinctly angular and discontinuous. A thin, tightly bounded jagged cyan-white electrical channel leaves the muzzle toward the aimed central target, with just two or three very short secondary forks close to the main path. Bright knots at a few angular bends and tiny electric starlets near the muzzle; mostly dark space between small flashes, not a filled plasma cloud. A few tiny arcs crawl BETWEEN nearby existing coil-ring supports, showing the power transfer, never across the sight or ammo display. No chain lightning to other targets, no full-screen branching storm. Preserve the single aimed shot and low visual obstruction. Sequence: tiny local bridging arcs; sharp thin kinked pulse to target; a few detached fading blue arc fragments. Strong small specular flashes on steel screws and bronze tubes, most painted surfaces remain readable. No long solid laser beam, no plasma donut, no spherical fireball."
+    }
+  ]
+}
