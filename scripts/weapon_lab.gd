@@ -41,6 +41,7 @@ func _ready() -> void:
 	var footer := Label.new()
 	footer.position = Vector2(30,810)
 	footer.text = "DRAG  Orbit     WHEEL  Zoom     1–9  Surface modes     L  Lighting     B  Energy on/off     F3  Training range\nLS01  /  LAYERED METAL  /  ML07  /  actual Godot render"
+	if gun.revision=="ml09":footer.text=footer.text.replace("ML07", "ML09")
 	if not gun.ls01:footer.text=footer.text.replace("1–9", "1–4").replace("LS01  /  LAYERED METAL  /  ML07", "LC01  /  ML06 BASELINE")
 	footer.add_theme_font_size_override("font_size",16)
 	layer.add_child(footer)

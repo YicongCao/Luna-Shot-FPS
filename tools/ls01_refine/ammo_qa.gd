@@ -28,7 +28,7 @@ func run() -> void:
 	p.ammo=3;await display(p,3);world.reset_range();await display(p,20)
 	p.blocked=true;p.ammo=4;await display(p,4)
 	verify(p.weapon.field_kit.active_material.emission.r>p.weapon.field_kit.active_material.emission.b,"low ammo amber")
-	var f:=FileAccess.open("res://docs/validation/ls01-refine-v1/ammo-qa.json",FileAccess.WRITE);f.store_string(JSON.stringify(checks,"\t"));f.close()
+	var f:=FileAccess.open((OS.get_environment("LS01_REPORT_DIR")+"/" if OS.has_environment("LS01_REPORT_DIR") else "res://docs/validation/ls01-refine-v1/")+"ammo-qa.json",FileAccess.WRITE);f.store_string(JSON.stringify(checks,"\t"));f.close()
 	var failed:=false
 	for c in checks:failed=failed or not c.passed
 	print("FIELD_KIT_QA ",checks.size()," checks, failed=",failed);quit(1 if failed else 0)

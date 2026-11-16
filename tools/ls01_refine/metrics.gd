@@ -15,6 +15,6 @@ func run() -> void:
 	var w=load("res://scenes/training.tscn").instantiate();root.add_child(w)
 	for i in 20:await process_frame
 	visit(w.player.weapon)
-	var f=FileAccess.open("res://docs/validation/ls01-refine-v1/weapon-metrics-"+("after" if w.player.weapon.ls01 else "before")+".json",FileAccess.WRITE)
+	var f=FileAccess.open((OS.get_environment("LS01_REPORT_DIR")+"/" if OS.has_environment("LS01_REPORT_DIR") else "res://docs/validation/ls01-refine-v1/")+"weapon-metrics-"+("after" if w.player.weapon.ls01 else "before")+".json",FileAccess.WRITE)
 	f.store_string(JSON.stringify({"triangles_including_runtime_meshes":triangles,"mesh_instances":mesh_count,"unique_materials":materials.size(),"materials":materials.values(),"label3d_font_material_not_counted":true},"  "))
 	quit()

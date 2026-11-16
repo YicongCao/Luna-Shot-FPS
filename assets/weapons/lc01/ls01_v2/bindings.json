@@ -1,0 +1,67 @@
+{
+  "BodyRebuilt": {
+    "atlas": "body",
+    "moving_cell": false,
+    "retained": false
+  },
+  "T04_CellAssembly": {
+    "atlas": "body",
+    "moving_cell": true,
+    "retained": false
+  },
+  "T11_CellSide": {
+    "atlas": "body",
+    "moving_cell": true,
+    "retained": false
+  },
+  "IndustrialKit": {
+    "atlas": "kit",
+    "moving_cell": false,
+    "retained": false
+  },
+  "T00_CoreGrip_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T02_CoilAssembly_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T06_Muzzle_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T09_StockBrace_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T10_ButtPad_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T12_Foregrip_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T13_CheekRest_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T15_RailInset_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  },
+  "T16_FrontLatch_low": {
+    "atlas": "retained",
+    "moving_cell": false,
+    "retained": true
+  }
+}

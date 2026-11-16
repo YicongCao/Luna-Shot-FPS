@@ -12,6 +12,6 @@ func run() -> void:
 		push_error("Default asset interfaces mismatch");quit(1);return
 	if DisplayServer.get_name()!="headless":
 		await RenderingServer.frame_post_draw
-		root.get_texture().get_image().save_png("res://docs/validation/ls01-refine-v1/default-native.png")
+		root.get_texture().get_image().save_png((OS.get_environment("LS01_REPORT_DIR")+"/" if OS.has_environment("LS01_REPORT_DIR") else "res://docs/validation/ls01-refine-v1/")+"default-native.png")
 	print("DEFAULT_SELECTION_PASS ls01=",gun.ls01," expected=",expected)
 	quit()

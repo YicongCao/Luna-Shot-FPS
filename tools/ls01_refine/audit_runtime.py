@@ -1,6 +1,7 @@
 from pathlib import Path
 import json,struct,hashlib,numpy as np
-R=Path(__file__).resolve().parents[2];O=R/'art_source/weapons/lc01/ls01-refine-v1'
+from paths import parse
+args,R,O,D,REPORT=parse()
 def load(path):
  data=path.read_bytes();off=12;doc=None;binary=None
  while off<len(data):
@@ -19,7 +20,7 @@ def load(path):
    for tri in ind.reshape(-1,3):rows.append(sorted(tuple(np.round(np.r_[pos[i],uv[i]],6)) for i in tri))
   result[node['name']]={'triangles':sorted(rows),'has_tangents':tangents}
  return result
-old=load(O/'00-baseline/lc01/lc01.glb');new=load(R/'assets/weapons/lc01/ls01_v1/weapon.glb');bindings=json.loads((R/'assets/weapons/lc01/ls01_v1/bindings.json').read_text());records={};fail=[]
+old=load(O/'00-baseline/lc01/lc01.glb');new=load(D/'weapon.glb');bindings=json.loads((D/'bindings.json').read_text());records={};fail=[]
 for name,b in bindings.items():
  if not b['retained']:continue
  # glTF exporter may sanitize a period in names; use equivalent source identifier.
@@ -30,5 +31,5 @@ if any(not v['has_tangents'] for v in new.values()):fail.append('missing_tangent
 if sum(len(v['triangles']) for v in new.values())>60000:fail.append('triangle_budget')
 base=json.loads((O/'00-baseline/hashes.json').read_text());envsame=all(hashlib.sha256((R/p).read_bytes()).hexdigest()==h for p,h in base.items() if p.startswith(('assets/environment/','assets/industrial/')))
 if not envsame:fail.append('environment_changed')
-report={'retained':records,'environment_unchanged':envsame,'triangles':sum(len(v['triangles']) for v in new.values()),'meshes':len(new),'failures':fail};(R/'docs/validation/ls01-refine-v1/runtime-audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
+report={'retained':records,'environment_unchanged':envsame,'triangles':sum(len(v['triangles']) for v in new.values()),'meshes':len(new),'failures':fail};(REPORT/'runtime-audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
 assert not fail

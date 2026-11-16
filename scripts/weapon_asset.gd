@@ -3,15 +3,23 @@ extends Node3D
 const SIGHT_HEIGHT := 0.178
 var material: StandardMaterial3D
 var meshes: Array[MeshInstance3D] = []
-var energy_lights: Array[OmniLight3D] = []
+var energy_lights: Array[Light3D] = []
 var energy_enabled := true
 var spill_enabled := true
 var surface_mode := 0
 var field_kit: Node3D
 var ls01 := false
+var revision := "ml07"
+var asset_root := "res://assets/weapons/lc01/ls01_v1/"
 var atlas_materials: Dictionary = {}
 func _ready() -> void:
 	ls01 = OS.get_environment("LS01_BASELINE") != "1" and (OS.get_environment("LS01_CANDIDATE") == "1" or FileAccess.file_exists("res://assets/weapons/lc01/ls01_v1/APPROVED"))
+	for argument in OS.get_cmdline_user_args():
+		if argument.begins_with("--weapon-revision="):
+			revision=argument.trim_prefix("--weapon-revision=")
+			assert(revision in ["ml06","ml07","ml09"],"Unknown weapon revision")
+			ls01=revision!="ml06"
+	if revision=="ml09":asset_root="res://assets/weapons/lc01/ls01_v2/"
 	if ls01:
 		setup_ls01()
 		return
@@ -66,7 +74,7 @@ func set_surface_mode(mode: int) -> void:
 	# 0 final / 1 normal off / 2 constant response / 3 clay.
 	surface_mode = mode
 	if ls01:
-		for atlas in atlas_materials:load("res://scripts/ls01_materials.gd").mode(atlas_materials[atlas],atlas,mode)
+		for atlas in atlas_materials:load("res://scripts/ls01_materials.gd").mode(atlas_materials[atlas],atlas,mode,asset_root)
 		field_kit.set_surface_mode(mode)
 		set_energy_enabled(energy_enabled)
 		return
@@ -94,16 +102,16 @@ func set_spill_enabled(value: bool) -> void:
 
 func setup_ls01() -> void:
 	$Geometry.free()
-	var geo=load("res://assets/weapons/lc01/ls01_v1/weapon.glb").instantiate();geo.name="Geometry";add_child(geo)
-	var bindings=JSON.parse_string(FileAccess.get_file_as_string("res://assets/weapons/lc01/ls01_v1/bindings.json"))
-	for atlas in ["body","kit","retained"]:atlas_materials[atlas]=load("res://scripts/ls01_materials.gd").make(atlas)
+	var geo=load(asset_root+"weapon.glb").instantiate();geo.name="Geometry";add_child(geo)
+	var bindings=JSON.parse_string(FileAccess.get_file_as_string(asset_root+"bindings.json"))
+	for atlas in ["body","kit","retained"]:atlas_materials[atlas]=load("res://scripts/ls01_materials.gd").make(atlas,asset_root)
 	material=atlas_materials["retained"]
 	for mesh in geo.find_children("*","MeshInstance3D",true,false):
 		var key=String(mesh.name)
 		assert(bindings.has(key),"Missing LS01 binding: "+key)
 		var binding=bindings[key];mesh.material_override=atlas_materials[binding.atlas];meshes.append(mesh)
 		if binding.moving_cell:mesh.reparent($P07_Cell,true)
-	field_kit=Node3D.new();field_kit.name="IndustrialFieldKit";field_kit.set_script(load("res://scripts/ls01_field_kit.gd"));add_child(field_kit)
+	field_kit=Node3D.new();field_kit.name="IndustrialFieldKit";field_kit.set_script(load("res://scripts/ls01_field_kit.gd"));field_kit.asset_root=asset_root;add_child(field_kit)
 	var dot_material:=ShaderMaterial.new();dot_material.shader=load("res://assets/weapons/lc01/red_dot.gdshader");$RedDot.material_override=dot_material
 	for side in [-1,1]:
 		var light:=OmniLight3D.new();light.name="CoilSpillLeft" if side<0 else "CoilSpillRight";light.position=Vector3(side*.047,.058,-.402);light.light_color=Color(.03,.8,1);light.light_energy=.045;light.omni_range=.13;light.omni_attenuation=1.7;add_child(light);energy_lights.append(light)

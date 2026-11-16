@@ -1,4 +1,5 @@
 extends Node3D
+var asset_root := "res://assets/weapons/lc01/ls01_v1/"
 var cells: Array[MeshInstance3D] = []
 var readout: Label3D
 var shown_ammo := -1
@@ -16,13 +17,18 @@ func polygon(parent: Node3D,title: String,points: PackedVector3Array,m: Material
 		for k in [0,i,i+1]:st.add_vertex(points[k])
 	st.generate_normals();var n:=MeshInstance3D.new();n.name=title;n.mesh=st.commit();n.material_override=m;parent.add_child(n)
 func _ready() -> void:
-	var panel:=Node3D.new();panel.name="AmmoPanel";panel.position=Vector3(0,.106,.019);panel.rotation.x=-PI/4;add_child(panel)
+	var panel:=Node3D.new();panel.name="AmmoPanel";panel.position=Vector3(0,.106,.019);panel.rotation.x=-PI/4
+	var mount: Dictionary={}
+	if FileAccess.file_exists(asset_root+"screen.json"):
+		mount=JSON.parse_string(FileAccess.get_file_as_string(asset_root+"screen.json"))
+		panel.position=Vector3(mount.position[0],mount.position[1],mount.position[2]);panel.rotation.x=mount.rotation_x
+	add_child(panel)
 	active_material=mat(Color(.01,.7,.85));active_material.emission_enabled=true;active_material.emission=Color(.01,.8,1);active_material.emission_energy_multiplier=1.6
 	off_material=mat(Color(.014,.045,.052))
 	for i in 20:
 		var x: float=-.037+i*.0025+floori(i/4.0)*.0008
-		cells.append(box(panel,"AmmoCell%02d"%i,Vector3(x,0,.0041),Vector3(.0018,.010,.00010),off_material))
-	readout=Label3D.new();readout.name="AmmoDigits";readout.font_size=48;readout.pixel_size=.000085;readout.position=Vector3(.030,0,.0042);readout.outline_size=0;readout.modulate=Color(.02,.85,1);panel.add_child(readout)
+		cells.append(box(panel,"AmmoCell%02d"%i,Vector3(x,float(mount.get("cells_origin",[0,0,.0041])[1]),float(mount.get("cells_origin",[0,0,.0041])[2])),Vector3(.0018,.010,.00010),off_material))
+	readout=Label3D.new();readout.name="AmmoDigits";readout.font_size=48;readout.pixel_size=.000085;var rp=mount.get("readout_position",[.030,0,.0042]);readout.position=Vector3(rp[0],rp[1],rp[2]);readout.outline_size=0;readout.modulate=Color(.02,.85,1);panel.add_child(readout)
 	# Analytic planar markings, independent of generated UV phases.
 	var ink=mat(Color(.018,.022,.025),0,.58);ink.cull_mode=BaseMaterial3D.CULL_DISABLED
 	var orange=mat(Color(.95,.38,.035),0,.58);orange.cull_mode=BaseMaterial3D.CULL_DISABLED

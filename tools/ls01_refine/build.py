@@ -6,7 +6,7 @@ import bpy, bmesh, math, json, argparse, sys, random
 from pathlib import Path
 from mathutils import Vector, Matrix
 R=Path(__file__).resolve().parents[2]
-a=argparse.ArgumentParser();a.add_argument('--out',default=str(R/'art_source/weapons/lc01/ls01-refine-v1'));a.add_argument('--seed',type=int,default=20261115)
+a=argparse.ArgumentParser();a.add_argument('--out',default=str(R/'art_source/weapons/lc01/ls01-refine-v1'));a.add_argument('--seed',type=int,default=20261115);a.add_argument('--revision',choices=['ml07','ml09'],default='ml07')
 args=a.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
 O=Path(args.out);O.mkdir(parents=True,exist_ok=True);rng=random.Random(args.seed)
 bpy.ops.object.select_all(action='SELECT');bpy.ops.object.delete(use_global=False)
@@ -157,28 +157,31 @@ def receiver_seams(hi):
  for y in [.035,.145,.248]:
   cut=box('Top panel separation',(0,y,.1182),(.090,.00075,.001),'dark');boolean(hi,cut)
 
-# Core silhouettes retain original nominal bounds and animation roots.
-pair(profile('T03_ReceiverShell',[(-.027,.026),(-.027,.088),(.005,.118),(.255,.118),(.310,.086),(.310,.025),(.285,.014),(.012,.014)],.108,'white'),'body',.0012,.0018,receiver_seams)
-pair(profile('T04_EnergyCell',[(.194,-.018),(.210,-.098),(.372,-.098),(.402,-.075),(.402,-.018)],.112,'orange'),'body',.0011,.002,dents)
-# A separate inset panel on right side, attached to the same magazine animation.
-pair(box('T11_CellSide',(.0575,.29,-.052),(.002,.127,.055),'orange'),'body',.00065,.0018,panel_dents)
-pair(profile('T08_StockShell',[(-.208,-.065),(-.208,.090),(-.187,.102),(-.052,.102),(-.034,.072),(-.057,-.030),(-.177,-.070)],.075,'white'),'body',.0012)
-pair(profile('T07_TopRail',[(.195,.108),(.210,.132),(.490,.132),(.530,.112),(.530,.092),(.205,.092)],.075,'dark'),'body',.0007)
-# Recessed rail breaks, made as deliberate separate raised mechanical blocks.
-for i in range(6):pair(box('RailLug%02d'%i,(0,.230+i*.044,.135),(.087,.030,.008),'dark'),'body',.00065)
-# Hollow sight frame: front/back loops, closed thickness, no solid face across aperture.
-outer=[(-.060,.110),(-.060,.190),(-.043,.216),(.043,.216),(.060,.190),(.060,.110)]
-inner=[(-.047,.123),(-.047,.185),(-.036,.202),(.036,.202),(.047,.185),(.047,.123)]
-verts=[(x,y,z) for y in [.049,.066] for loop in [outer,inner] for x,z in loop];fs=[]
-for i in range(6):
- j=(i+1)%6;fs.extend([(i,j,j+12,i+12),(i+6,i+18,j+18,j+6),(i,i+6,j+6,j),(i+12,j+12,j+18,i+18)])
-pair(mesh('T05_Optic',verts,fs,'dark'),'body',.0009)
-pair(box('OpticFoot',(0,.063,.108),(.084,.070,.014),'dark'),'body',.0008)
+if args.revision=='ml09':
+ exec(compile((R/'tools/ls01_refine/structure_v2.py').read_text(),'structure_v2.py','exec'))
+else:
+ # Core silhouettes retain original nominal bounds and animation roots.
+ pair(profile('T03_ReceiverShell',[(-.027,.026),(-.027,.088),(.005,.118),(.255,.118),(.310,.086),(.310,.025),(.285,.014),(.012,.014)],.108,'white'),'body',.0012,.0018,receiver_seams)
+ pair(profile('T04_EnergyCell',[(.194,-.018),(.210,-.098),(.372,-.098),(.402,-.075),(.402,-.018)],.112,'orange'),'body',.0011,.002,dents)
+ # A separate inset panel on right side, attached to the same magazine animation.
+ pair(box('T11_CellSide',(.0575,.29,-.052),(.002,.127,.055),'orange'),'body',.00065,.0018,panel_dents)
+ pair(profile('T08_StockShell',[(-.208,-.065),(-.208,.090),(-.187,.102),(-.052,.102),(-.034,.072),(-.057,-.030),(-.177,-.070)],.075,'white'),'body',.0012)
+ pair(profile('T07_TopRail',[(.195,.108),(.210,.132),(.490,.132),(.530,.112),(.530,.092),(.205,.092)],.075,'dark'),'body',.0007)
+ # Recessed rail breaks, made as deliberate separate raised mechanical blocks.
+ for i in range(6):pair(box('RailLug%02d'%i,(0,.230+i*.044,.135),(.087,.030,.008),'dark'),'body',.00065)
+ # Hollow sight frame: front/back loops, closed thickness, no solid face across aperture.
+ outer=[(-.060,.110),(-.060,.190),(-.043,.216),(.043,.216),(.060,.190),(.060,.110)]
+ inner=[(-.047,.123),(-.047,.185),(-.036,.202),(.036,.202),(.047,.185),(.047,.123)]
+ verts=[(x,y,z) for y in [.049,.066] for loop in [outer,inner] for x,z in loop];fs=[]
+ for i in range(6):
+  j=(i+1)%6;fs.extend([(i,j,j+12,i+12),(i+6,i+18,j+18,j+6),(i,i+6,j+6,j),(i+12,j+12,j+18,i+18)])
+ pair(mesh('T05_Optic',verts,fs,'dark'),'body',.0009)
+ pair(box('OpticFoot',(0,.063,.108),(.084,.070,.014),'dark'),'body',.0008)
 # Main body screw inventory, placed on actual flat support faces.
 for side in [-1,1]:
  for i,(y,z) in enumerate([(.015,.083),(.085,.091),(.190,.091),(.267,.064),(.015,.039),(.250,.036)]):screw(f'Receiver_{side}_{i}',(side*.0551,y,z),(side,0,0),'body')
  for i,(y,z) in enumerate([(-.18,.071),(-.071,.068),(-.17,-.040)]):screw(f'Stock_{side}_{i}',(side*.0385,y,z),(side,0,0),'body')
- for i,(y,z) in enumerate([(.225,-.039),(.365,-.065)]):screw(f'Cell_{side}_{i}',(side*.0571,y,z),(side,0,0),'body',.002)
+ for i,(y,z) in enumerate([(.225,-.039),(.325,-.065)] if args.revision=='ml09' else [(.225,-.039),(.365,-.065)]):screw(f'Cell_{side}_{i}',(side*.0571,y,z),(side,0,0),'body',.002)
 
 # Kit panel local XYZ maps through Godot screen transform into Blender coordinates.
 def panel_point(v):
@@ -188,8 +191,9 @@ def panel_mesh(name,poly,front,back,kind):
 poly=[(-.052,-.016),(.052,-.016),(.044,.016),(-.044,.016),(-.054,.002),(-.054,-.004)]
 # Symmetric elongated hexagon, sloped ends.
 poly=[(-.054,0),(-.044,-.017),(.044,-.017),(.054,0),(.044,.017),(-.044,.017)]
+if args.revision=='ml09':poly=[(-.054,-.0102),(-.05076,-.017),(.05076,-.017),(.054,-.0102),(.04428,.017),(-.04428,.017)]
 inner=[(x*.83,y*.72) for x,y in poly]
-back=panel_mesh('ScreenArmor',poly,.003,-.003,'dark');pair(back,'kit',.0005)
+back=panel_mesh('ScreenArmor',poly,.003,-.005 if args.revision=='ml09' else -.003,'dark');pair(back,'kit',.0005)
 # Bezel ring around actual inner glass (closed polygon ring).
 v=[panel_point((x,y,z)) for z in [.003,.005] for loop in [poly,inner] for x,y in loop];fs=[]
 for i in range(6):
@@ -198,7 +202,7 @@ pair(mesh('ScreenBezel',v,fs,'dark'),'kit',.00025,.0008)
 pair(panel_mesh('ScreenGlass',inner,.0038,.0032,'glass'),'kit',.00012,.0004)
 n=(0,-math.sqrt(.5),math.sqrt(.5))
 for x in [-.043,.043]:
- for y in [-.012,.012]:screw(f'Screen_{x}_{y}',panel_point((x,y,.0055)),n,'kit',.0018)
+ for y in [-.014,.013] if args.revision=='ml09' else [-.012,.012]:screw(f'Screen_{x}_{y}',panel_point((x,y,.0055)),n,'kit',.0018)
 # Tubes sweep a rounded path. Ends curl down into clamps; shape is geometry.
 for side in [-1,1]:
  pair(box(f'ConductorWell{side}',(side*.0555,.139,.057),(.005,.170,.034),'dark'),'kit',.0007)
@@ -238,5 +242,8 @@ for p in pairs:
 (O/'02-geometry').mkdir(exist_ok=True)
 bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(O/'02-geometry/paired.blend'))
 records=[{**{k:v for k,v in p.items() if k not in ['low','high','cage']},**{k:p[k].name for k in ['low','high','cage']},'triangles':len(p['low'].data.polygons)} for p in pairs]
-(O/'manifest.json').write_text(json.dumps({'seed':args.seed,'pairs':records,'fasteners':screws,'replaced_prefixes':['T03','T04','T05','T07','T08','T11'],'new_triangles':sum(p['triangles'] for p in records),'imagegen_calls':2,'tripo_calls':0,'units':'metres; Blender X right Y forward Z up','uv_version':'ls01-v1; unchanged parts keep old atlas'},indent=2))
+(O/'manifest.json').write_text(json.dumps({'seed':args.seed,'pairs':records,'fasteners':screws,'replaced_prefixes':['T03','T04','T05','T07','T08','T11']+(['T01','T14'] if args.revision=='ml09' else []),'new_triangles':sum(p['triangles'] for p in records),'revision':args.revision,'imagegen_calls':0 if args.revision=='ml09' else 2,'reused_imagegen_masks':2,'tripo_calls':0,'units':'metres; Blender X right Y forward Z up','uv_version':('ls01-v2' if args.revision=='ml09' else 'ls01-v1')+'; unchanged parts keep old atlas'},indent=2))
 print('BUILD_COMPLETE',len(records),sum(p['triangles'] for p in records),flush=True)
+
+if args.revision=='ml09':
+ (O/'screen.json').write_text(json.dumps({'position':[0,.106,.019],'rotation_x':-math.pi/4,'contour':poly,'glass_contour':inner,'cells_origin':[-.037,0,.0041],'readout_position':[.030,0,.0042]},indent=2))

@@ -38,3 +38,7 @@ tools/ls01_refine/paired_performance.sh
 实施者看完实际截图后填写 `visual-review.json`，保留概念差距及用户验收状态；然后 `python3 tools/ls01_refine/publish.py`。它检查审计、原生日志、性能和视觉记录，再写 APPROVED；没有付费、上传、Git 提交或推送行为。
 
 默认启动使用 `launch.command`；材料室使用 `launch-weapon-lab.command`。`launch-weapon-baseline.command` 强制加载原 ML06 枪械，可与新版往返比较。移除 `assets/weapons/lc01/ls01_v1/APPROVED` 可撤销默认启用；`LS01_BASELINE=1` 的优先级高于候选变量和标记。历史资源没有被候选覆盖。
+
+## ML09 isolated revision
+
+`python3 tools/ls01_refine/run.py build --revision ml09` selects the explicit structural recipe and v2 source/runtime roots; the default remains ML07. `bake`, `export`, `pack`, `audit` accept the same revision and optional `--out`, `--runtime`, `--report-dir`. Auxiliary Python audit/import commands accept those roots via `paths.py`. Native tools accept `LS01_REPORT_DIR=res://docs/validation/ls01-refine-v2` and Godot `-- --weapon-revision=ml09`; ML06/ML07 explicit choices are also supported. `structure_capture.gd` captures native feature views; `ML09_VIEW=clay` disables final shading for silhouette review. No new Tripo/imagegen generation is needed.

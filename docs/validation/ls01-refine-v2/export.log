@@ -1,0 +1,58 @@
+00:00.242  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
+BlenderMCP addon registered
+08:06:09 | INFO: Data are loaded, start creating Blender stuff
+08:06:09 | INFO: Blender create Mesh node T00_CoreGrip_high.001
+08:06:09 | INFO: Blender create Mesh node T01_FrontShroud_high.001
+08:06:09 | INFO: Blender create Mesh node T02_CoilAssembly_high.001
+08:06:09 | INFO: Blender create Mesh node T03_ReceiverShell_high.001
+08:06:09 | INFO: Blender create Mesh node T04_EnergyCell_high.001
+08:06:09 | INFO: Blender create Mesh node T05_Optic_high.001
+08:06:09 | INFO: Blender create Mesh node T06_Muzzle_high.001
+08:06:09 | INFO: Blender create Mesh node T07_TopRail_high.001
+08:06:09 | INFO: Blender create Mesh node T08_StockShell_high.001
+08:06:09 | INFO: Blender create Mesh node T09_StockBrace_high.001
+08:06:09 | INFO: Blender create Mesh node T10_ButtPad_high.001
+08:06:09 | INFO: Blender create Mesh node T11_CellSide_high.001
+08:06:09 | INFO: Blender create Mesh node T12_Foregrip_high.001
+08:06:09 | INFO: Blender create Mesh node T13_CheekRest_high.001
+08:06:09 | INFO: Blender create Mesh node T14_FrontBracket_high.001
+08:06:09 | INFO: Blender create Mesh node T15_RailInset_high.001
+08:06:09 | INFO: Blender create Mesh node T16_FrontLatch_high.001
+08:06:09 | INFO: glTF import finished in 0.04s
+Warning: No mesh data to join
+INFO Draco is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_draco_bridge.dylib
+INFO MeshOptimizer is available, use library at /Applications/Blender.app/Contents/Resources/5.2/scripts/addons_core/io_scene_gltf2/libbf_intern_meshopt_bridge.dylib
+08:06:10 | INFO: Starting glTF 2.0 export
+08:06:10 | INFO: Extracting primitive: T03_ReceiverShell
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: ScreenArmor
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T00_CoreGrip_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T02_CoilAssembly_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T04_EnergyCell
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T06_Muzzle_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T09_StockBrace_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T10_ButtPad_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T11_CellSide
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T12_Foregrip_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T13_CheekRest_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T15_RailInset_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Extracting primitive: T16_FrontLatch_high.001
+08:06:10 | INFO: Primitives created: 1
+08:06:10 | INFO: Finished glTF 2.0 export in 0.0460052490234375 s
+
+EXPORT_COMPLETE 38797 9
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

@@ -1,7 +1,8 @@
 from pathlib import Path
 from PIL import Image
 import numpy as np,json
-R=Path(__file__).resolve().parents[2];O=R/'art_source/weapons/lc01/ls01-refine-v1';D=R/'assets/weapons/lc01/ls01_v1';report={};fail=[]
+from paths import parse
+args,R,O,D,REPORT=parse();report={};fail=[]
 for group in ['body','kit']:
  covered=np.flipud(np.load(O/(group+'-uv-coverage.npz'))['owners']>=0)
  # Erode strict raster mask to avoid filter / gutter boundaries in channel statistics.
@@ -25,4 +26,4 @@ for group in ['body','kit']:
   path=O/'03-bake'/group/(name+'.png')
   if not path.exists() or Image.open(path).size!=(4096,4096):fail.append(group+'_'+name+'_master')
  if not (O/'03-bake'/group/'Position.exr').exists():fail.append(group+'_position_exr')
-report['failures']=fail;(R/'docs/validation/ls01-refine-v1/bake-audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2));assert not fail
+report['failures']=fail;(REPORT/'bake-audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2));assert not fail

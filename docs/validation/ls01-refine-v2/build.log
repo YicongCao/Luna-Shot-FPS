@@ -1,0 +1,10 @@
+/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/build.py:17: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  m=bpy.data.materials.new('LS01_'+kind);m.use_nodes=True;n=m.node_tree.nodes;l=m.node_tree.links;n.clear()
+BlenderMCP addon registered
+Info: Packed 2 file(s)
+Info: Saved as "paired.blend"
+BUILD_COMPLETE 170 28376
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

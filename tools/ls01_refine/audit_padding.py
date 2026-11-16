@@ -2,7 +2,8 @@
 from pathlib import Path
 import numpy as np,json
 from scipy.ndimage import distance_transform_edt
-R=Path(__file__).resolve().parents[2];O=R/'art_source/weapons/lc01/ls01-refine-v1';report={};fail=[]
+from paths import parse
+args,R,O,D,REPORT=parse();report={};fail=[]
 for group in ['body','kit']:
  labels=np.load(O/(group+'-uv-coverage.npz'))['islands'];occupied=labels>0
  distance,indices=distance_transform_edt(~occupied,return_indices=True);near=labels[tuple(indices)];gaps=[]
@@ -13,4 +14,4 @@ for group in ['body','kit']:
  # Pixel-center approximation has a <=2px raster uncertainty; pack margin is 0.008 per side.
  minimum=min(gaps);report[group]={'islands':int(labels.max()),'minimum_separation_px_at_2k':minimum,'bake_dilation_px_at_2k':16,'raster_uncertainty_px':2,'passed':minimum>=30}
  if minimum<30:fail.append(group)
-report['failures']=fail;(R/'docs/validation/ls01-refine-v1/padding-audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2));assert not fail
+report['failures']=fail;(REPORT/'padding-audit.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2));assert not fail

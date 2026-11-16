@@ -27,14 +27,15 @@ for ob in new+retained:
 # Reuse already baked Phillips prototypes on retained front-bracket seats.
 # Translation only: tangent basis/UV stays identical; intentional shared UV is recorded.
 from mathutils import Vector
-for side in [-1,1]:
- for index,target in enumerate([(side*.046,.428,-.013),(side*.0525,.554,.034),(side*.0395,.545,.111),(side*.04,.532,.006)]):
-  for suffix in ['', '_seat']:
-   source=bpy.data.objects[f'Receiver_{side}_0{suffix}_low'];copy=source.copy();copy.data=source.data.copy();copy.name=f'FrontPhillips{side}_{index}{suffix}';bpy.context.collection.objects.link(copy)
-   source_center=Vector((side*.0551,.015,.083));target_center=Vector(target)
-   for v in copy.data.vertices:v.co=(v.co-source_center)*1.5+target_center
-   new.append(copy);bindings[copy.name]={'atlas':'body','moving_cell':False,'retained':False}
-m['reused_fasteners']={'count':8,'instances':[{'name':f'FrontPhillips{side}_{index}','center':list(target),'normal':[side,0,0],'radius':.00375,'prototype':f'Receiver_{side}_0','scale':1.5,'intentional_shared_uv':True} for side in [-1,1] for index,target in enumerate([(side*.046,.428,-.013),(side*.0525,.554,.034),(side*.0395,.545,.111),(side*.04,.532,.006)])],'location':'front-shroud side depth survey; front-depth.npz','prototype':'Receiver ±1 0 head + seat','intentional_shared_uv':True,'uniform_scale':1.5,'normal_basis_preserved':True}
+if m.get('revision')!='ml09':
+ for side in [-1,1]:
+  for index,target in enumerate([(side*.046,.428,-.013),(side*.0525,.554,.034),(side*.0395,.545,.111),(side*.04,.532,.006)]):
+   for suffix in ['', '_seat']:
+    source=bpy.data.objects[f'Receiver_{side}_0{suffix}_low'];copy=source.copy();copy.data=source.data.copy();copy.name=f'FrontPhillips{side}_{index}{suffix}';bpy.context.collection.objects.link(copy)
+    source_center=Vector((side*.0551,.015,.083));target_center=Vector(target)
+    for v in copy.data.vertices:v.co=(v.co-source_center)*1.5+target_center
+    new.append(copy);bindings[copy.name]={'atlas':'body','moving_cell':False,'retained':False}
+ m['reused_fasteners']={'count':8,'instances':[{'name':f'FrontPhillips{side}_{index}','center':list(target),'normal':[side,0,0],'radius':.00375,'prototype':f'Receiver_{side}_0','scale':1.5,'intentional_shared_uv':True} for side in [-1,1] for index,target in enumerate([(side*.046,.428,-.013),(side*.0525,.554,.034),(side*.0395,.545,.111),(side*.04,.532,.006)])],'location':'front-shroud side depth survey; front-depth.npz','prototype':'Receiver ±1 0 head + seat','intentional_shared_uv':True,'uniform_scale':1.5,'normal_basis_preserved':True}
 # Consolidate static parts by atlas and animation membership; source keeps per-part detail.
 merged=[];new_bindings={}
 for name,subset in [
@@ -56,3 +57,7 @@ bpy.context.view_layer.objects.active=merged[0]
 bpy.ops.export_scene.gltf(filepath=str(D/'weapon.glb'),export_format='GLB',use_selection=True,export_materials='EXPORT',export_tangents=True,export_extras=True)
 (D/'bindings.json').write_text(json.dumps(new_bindings,indent=2));m['runtime_triangles']=sum(len(o.data.polygons) for o in merged+retained);m['retained_parts']=[o.name for o in retained];m['runtime_meshes']=len(merged+retained);assert m['runtime_triangles']<=60000
 (O/'manifest.json').write_text(json.dumps(m,indent=2));print('EXPORT_COMPLETE',m['runtime_triangles'],len(retained))
+
+if (O/'screen.json').exists():
+ import shutil
+ shutil.copy2(O/'screen.json',D/'screen.json')

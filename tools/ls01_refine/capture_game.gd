@@ -1,5 +1,5 @@
 extends SceneTree
-var out="res://docs/validation/ls01-refine-v1/"+OS.get_environment("LS01_CAPTURE_PREFIX")
+var out=(OS.get_environment("LS01_REPORT_DIR")+"/" if OS.has_environment("LS01_REPORT_DIR") else "res://docs/validation/ls01-refine-v1/")+""+OS.get_environment("LS01_CAPTURE_PREFIX")
 func _initialize() -> void: run.call_deferred()
 func frames(n: int=25) -> void:
 	for i in n:await process_frame
