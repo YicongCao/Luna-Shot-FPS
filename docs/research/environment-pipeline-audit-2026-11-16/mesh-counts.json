@@ -1,0 +1,45 @@
+{
+  "method": "Sum TRIANGLES primitive index count / 3 across GLB mesh definitions; local counts from manifests. Excludes runtime lamps/fans.",
+  "assets": [
+    {
+      "asset": "B1",
+      "tripo_glb_triangles": 1723749,
+      "local_high_triangles": 51316,
+      "local_low_triangles": 13460,
+      "tripo_source": "art_source/environment/refine-v2/B1/01-tripo/model.glb",
+      "manifest_source": "art_source/environment/refine-v2/B1/manifest.json"
+    },
+    {
+      "asset": "B2",
+      "tripo_glb_triangles": 1862945,
+      "local_high_triangles": 32748,
+      "local_low_triangles": 8708,
+      "tripo_source": "art_source/environment/refine-v2/B2/01-tripo/model.glb",
+      "manifest_source": "art_source/environment/refine-v2/B2/manifest.json"
+    },
+    {
+      "asset": "C",
+      "tripo_glb_triangles": 1938002,
+      "local_high_triangles": 27920,
+      "local_low_triangles": 7520,
+      "tripo_source": "art_source/environment/refine-v2/C/01-tripo/model.glb",
+      "manifest_source": "art_source/environment/refine-v2/C/manifest.json"
+    },
+    {
+      "asset": "D",
+      "tripo_glb_triangles": 1899360,
+      "local_high_triangles": 42152,
+      "local_low_triangles": 11528,
+      "tripo_source": "art_source/environment/refine-v2/D/01-tripo/model.glb",
+      "manifest_source": "art_source/environment/refine-v2/D/manifest.json"
+    },
+    {
+      "asset": "E",
+      "tripo_glb_triangles": 1901879,
+      "local_high_triangles": 39392,
+      "local_low_triangles": 10336,
+      "tripo_source": "art_source/environment/refine-v2/E/01-tripo/model.glb",
+      "manifest_source": "art_source/environment/refine-v2/E/manifest.json"
+    }
+  ]
+}
