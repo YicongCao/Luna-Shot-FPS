@@ -1,0 +1,135 @@
+{
+  "source": "art_source/weapons/lc01/tripo-rebuild-v3/01-high-pbr/model.glb",
+  "source_sha256": "d538558f46c5892d7839c4ed5fda08e25fc59bf8b05a942a0e520700f4d34620",
+  "triangles": 1934290,
+  "renderer": "Blender Cycles Metal offline reference, NOT in-game",
+  "size": [
+    2048,
+    2048
+  ],
+  "length_m": 0.905,
+  "material": "Tripo high original PBR, no local repaint",
+  "coordinates": "Blender +Y muzzle, Z up; right camera +X, left -X; front muzzle +Y, back stock -Y",
+  "views": [
+    {
+      "id": "01-hero",
+      "camera_blender": [
+        2.0,
+        2.0,
+        1.0
+      ],
+      "ortho_scale": 1.04,
+      "rgba": "01-hero-rgba.png",
+      "white_background": "01-hero.png",
+      "foreground_bbox": [
+        349,
+        638,
+        1696,
+        1359
+      ]
+    },
+    {
+      "id": "02-right",
+      "camera_blender": [
+        2.9999985694885254,
+        0.0,
+        0.00299999862909317
+      ],
+      "ortho_scale": 1.04,
+      "rgba": "02-right-rgba.png",
+      "white_background": "02-right.png",
+      "foreground_bbox": [
+        132,
+        665,
+        1916,
+        1383
+      ]
+    },
+    {
+      "id": "03-left",
+      "camera_blender": [
+        -2.9999985694885254,
+        0.0,
+        0.00299999862909317
+      ],
+      "ortho_scale": 1.04,
+      "rgba": "03-left-rgba.png",
+      "white_background": "03-left.png",
+      "foreground_bbox": [
+        132,
+        665,
+        1916,
+        1383
+      ]
+    },
+    {
+      "id": "04-front-muzzle",
+      "camera_blender": [
+        0.0,
+        2.9999985694885254,
+        0.00299999862909317
+      ],
+      "ortho_scale": 1.04,
+      "rgba": "04-front-muzzle-rgba.png",
+      "white_background": "04-front-muzzle.png",
+      "foreground_bbox": [
+        903,
+        665,
+        1145,
+        1383
+      ]
+    },
+    {
+      "id": "05-back-stock",
+      "camera_blender": [
+        0.0,
+        -2.9999985694885254,
+        0.00299999862909317
+      ],
+      "ortho_scale": 1.04,
+      "rgba": "05-back-stock-rgba.png",
+      "white_background": "05-back-stock.png",
+      "foreground_bbox": [
+        903,
+        665,
+        1145,
+        1384
+      ]
+    },
+    {
+      "id": "06-top",
+      "camera_blender": [
+        0.0,
+        0.00299999862909317,
+        2.9999985694885254
+      ],
+      "ortho_scale": 1.04,
+      "rgba": "06-top-rgba.png",
+      "white_background": "06-top.png",
+      "foreground_bbox": [
+        903,
+        132,
+        1145,
+        1917
+      ]
+    },
+    {
+      "id": "07-hero-reverse",
+      "camera_blender": [
+        -2.0,
+        -2.0,
+        1.0
+      ],
+      "ortho_scale": 1.04,
+      "rgba": "07-hero-reverse-rgba.png",
+      "white_background": "07-hero-reverse.png",
+      "foreground_bbox": [
+        353,
+        675,
+        1700,
+        1483
+      ]
+    }
+  ],
+  "no_paid_calls": true
+}

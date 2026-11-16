@@ -65,3 +65,9 @@ ML15环境：imagegen概念/规格→Tripo详细分件高密度候选→归档�
 当前公开Tripo API重拓扑参数没有smooth=false/硬边角度；Studio文档有500–50k和Smart Mesh P1.0开关，不能混同API v3.0的20k上限或关闭平滑。通用博客提及Smoothing Pass，缺少对应本次接口字段，不能冒认已可调用。v1基础减面支持更高面数但缺少bake，后续需要另外规划预算；本次新增付费0。
 
 用户可在官方在线Viewer打开本地GLB查看；API平台History查任务/费用，Studio上传外部网格也可检查。未核实API资产自动同步Studio Models，不编造task_id直达链接。详细参数、官方来源、截图与完整FPS证据见[高模性能与平滑诊断](../validation/tripo-high-performance/review.html)及[核查文档](../validation/tripo-high-performance/PARAMETERS.md)。
+
+## Hunyuan3D试验参考图导出
+
+按用户要求，从ML17 Tripo高模PBR直接导出7个固定角度：双三分之四、左右侧、枪口正面、枪托背面、俯视。Cycles Metal离线渲染，每角2048×2048，提供纯白及RGBA透明背景共14张PNG，无文字/水印/地面投影；固定柔光与统一正交比例，保留Tripo材质，不改模型。源文件哈希、方向定义与机位保存在manifest。单图建议01-hero，拼图只用于浏览；未操作或测评Hunyuan3D。
+
+[素材图库](../art/hunyuan-rifle-input/review.html)，压缩包可由tools/hunyuan_export/package.py复现到artifacts/exports/hunyuan-rifle-input.zip。14图分辨率/alpha/边界、源哈希、静态链接与ZIP完整性检查通过，7角预览目视检查，无截断；无需游戏回归，默认资源未改变、付费调用0。
