@@ -1,0 +1,53 @@
+{
+  "same_triangle_count": true,
+  "matched_oriented_faces": 20901,
+  "unmatched_source_faces": 0,
+  "unmatched_output_faces": 0,
+  "position_max_error_after_service_normalization": 4.8818656539570805e-08,
+  "position_tolerance": 2e-06,
+  "geometry_preserved": true,
+  "uv": {
+    "max": 0.0,
+    "mean": 0.0,
+    "corners_above_tolerance": 0,
+    "tolerance": 2e-06
+  },
+  "normals": {
+    "max": 1.0000000123913835,
+    "mean": 0.0003653290814593931,
+    "corners_above_tolerance": 47798,
+    "tolerance": 2e-05
+  },
+  "normal_direction_analysis": {
+    "source_zero_length_corners": 18,
+    "output_zero_length_corners": 0,
+    "valid_direction_corners": 62685,
+    "angle_degrees_max": 26.167357339253165,
+    "angle_degrees_p50_p95_p99": [
+      0.0019914665154779176,
+      0.0037351876926093423,
+      0.004540183943559759
+    ],
+    "corners_angle_over_0_1_degrees": 6,
+    "note": "Most differences are small normalization/precision changes, but six nonzero-normal corners differ materially; 18 zero normals were replaced. Not byte-identical normals."
+  },
+  "source_vertices": 17971,
+  "output_vertices": 17981,
+  "source_triangles": 20901,
+  "output_triangles": 20901,
+  "service_normalize_scale": 0.8413944490346557,
+  "source_bounds_center": [
+    0.00024199485778808594,
+    0.23696801517280264,
+    -0.00859251618385315
+  ],
+  "normalization_note": "Service centers the source bounding box and uniformly scales it; comparison explicitly reverses recorded service scale, no shape fitting/remeshing.",
+  "input_sha256": "d7591f026d423e57339de505650690eeb8fd7da30e7871007a6662106bef8319",
+  "output_sha256": "5de90c7421d070870ee3bbd1c747e9cdb19eaadfbff1a6b818f6510d2d05d2f3",
+  "source_unchanged": true,
+  "uv_preserved": true,
+  "normals_preserved": false,
+  "pbr_bindings_present": true,
+  "geometry_uv_gate_passed": true,
+  "all_input_surface_data_preserved": false
+}

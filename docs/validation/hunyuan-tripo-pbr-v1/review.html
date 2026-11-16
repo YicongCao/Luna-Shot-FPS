@@ -1,0 +1,38 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ML19 · 混元低模 × Tripo PBR</title><style>body{max-width:1800px;margin:24px auto;padding:0 20px;background:#111b25;color:#edf2f6;font:16px/1.7 system-ui}a{color:#74dbe1}img{width:100%;display:block}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.maps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}figure{margin:0;background:#1b2937}figcaption{padding:9px}button{background:#273a4d;color:white;border:1px solid #526c85;padding:8px 15px;cursor:pointer}.note{padding:18px;background:#263a49}h2{margin-top:34px}code{overflow-wrap:anywhere}table{border-collapse:collapse}td,th{padding:8px;border:1px solid #506071}@media(max-width:900px){.grid,.maps{grid-template-columns:1fr}}</style><h1>ML19 · 混元低模 × Tripo PBR 同机位对照</h1>
+<p class="note"><b>生成与检查完成，实际20积分。</b>20,901个三角面全部逐角匹配，UV完全一致；未减面或重建。获得4K底色、法线、金属度/粗糙度。<b>视觉差距仍开放：</b>部分原白色区改成深色，反射偏亮滑，低模原有波浪高光更明显。不替换ML06默认。</p>
+<p><a href="REPORT.md">完整报告/费用/限制</a> · <a href="audit.json">逐角几何与UV审计</a> · <a href="channels.json">实际贴图绑定</a> · <a href="verification.json">验证汇总</a> · <a href="../../../docs/logs/ML19-混元低模Tripo材质试验.md">ML19日志</a></p>
+<p>以下为Godot 4.7.2 Compatibility原生独立材料场景，非概念图、非Blender渲染。统一1400×900、机位、环境和曝光；按0.905m枪长等比归一。比较主体，排除后加工业kit、动态屏幕和红点；Emission/Bloom关闭。不是完整游戏接入或性能测试。</p>
+<a href="comparison.jpg"><img src="comparison.jpg" alt="混元底色、Tripo PBR、ML06原生对比"></a>
+<h2>几何/UV与法线检查</h2><table><tr><th>项目</th><th>实际结果</th></tr><tr><td>三角面</td><td>20,901 → 20,901；全部保持角点对应与绕序</td></tr><tr><td>UV</td><td>每个匹配角点差值0</td></tr><tr><td>位置</td><td>服务进行了居中/等比缩放；逆变换后最大误差4.88e-8源单位</td></tr><tr><td>顶点</td><td>17,971 → 17,981；额外拆点，没有新增面或改变轮廓</td></tr><tr><td>顶点法线</td><td>并非完全保留；18个零法线角点变为非零，另6个有效角点方向变化超过0.1°，最大26.17°；其余变化很小</td></tr></table><p>几何与UV保持通过，不代表法线逐字节相同，也不代表材质美术验收通过。原文件未修改；没有把返回网格进行本地重建或再次减面。</p>
+<h2>中性光 · 完整材质</h2><p><button onclick="change('neutral','hero')">三分之四</button> <button onclick="change('neutral','side')">侧面</button> <button onclick="change('neutral','reverse')">反侧</button> <button onclick="change('neutral','detail')">弹夹近景</button> </p><div class="grid" id="neutral">
+<figure data-prefix="hy-original-neutral-pbr"><a href="hy-original-neutral-pbr-hero.png"><img src="hy-original-neutral-pbr-hero.png" loading="lazy"></a><figcaption>混元原底色版 · 8K BaseColor，金属度0/粗糙度1</figcaption></figure>
+<figure data-prefix="hy-tripo-neutral-pbr"><a href="hy-tripo-neutral-pbr-hero.png"><img src="hy-tripo-neutral-pbr-hero.png" loading="lazy"></a><figcaption>混元＋Tripo · 返回4K PBR，原样导入</figcaption></figure>
+<figure data-prefix="ml06-neutral-pbr"><a href="ml06-neutral-pbr-hero.png"><img src="ml06-neutral-pbr-hero.png" loading="lazy"></a><figcaption>当前ML06主体 · 现有材质</figcaption></figure>
+</div>
+<h2>掠射光 · 金属反射与表面起伏</h2><p><button onclick="change('grazing','hero')">全枪</button> <button onclick="change('grazing','detail')">弹夹近景</button> </p><div class="grid" id="grazing">
+<figure data-prefix="hy-original-grazing-pbr"><a href="hy-original-grazing-pbr-hero.png"><img src="hy-original-grazing-pbr-hero.png" loading="lazy"></a><figcaption>混元原底色版 · 8K BaseColor，金属度0/粗糙度1</figcaption></figure>
+<figure data-prefix="hy-tripo-grazing-pbr"><a href="hy-tripo-grazing-pbr-hero.png"><img src="hy-tripo-grazing-pbr-hero.png" loading="lazy"></a><figcaption>混元＋Tripo · 返回4K PBR，原样导入</figcaption></figure>
+<figure data-prefix="ml06-grazing-pbr"><a href="ml06-grazing-pbr-hero.png"><img src="ml06-grazing-pbr-hero.png" loading="lazy"></a><figcaption>当前ML06主体 · 现有材质</figcaption></figure>
+</div>
+<h2>同一灰材质 · 无贴图法线</h2><p><button onclick="change('clay','hero')">三分之四</button> <button onclick="change('clay','side')">侧面</button> </p><div class="grid" id="clay">
+<figure data-prefix="hy-original-neutral-clay"><a href="hy-original-neutral-clay-hero.png"><img src="hy-original-neutral-clay-hero.png" loading="lazy"></a><figcaption>混元原底色版 · 8K BaseColor，金属度0/粗糙度1</figcaption></figure>
+<figure data-prefix="hy-tripo-neutral-clay"><a href="hy-tripo-neutral-clay-hero.png"><img src="hy-tripo-neutral-clay-hero.png" loading="lazy"></a><figcaption>混元＋Tripo · 返回4K PBR，原样导入</figcaption></figure>
+<figure data-prefix="ml06-neutral-clay"><a href="ml06-neutral-clay-hero.png"><img src="ml06-neutral-clay-hero.png" loading="lazy"></a><figcaption>当前ML06主体 · 现有材质</figcaption></figure>
+</div>
+<h2>仅底色 · 排除反射干扰</h2><p><button onclick="change('color','hero')">三分之四</button> <button onclick="change('color','side')">侧面</button> </p><div class="grid" id="color">
+<figure data-prefix="hy-original-neutral-basecolor"><a href="hy-original-neutral-basecolor-hero.png"><img src="hy-original-neutral-basecolor-hero.png" loading="lazy"></a><figcaption>混元原底色版 · 8K BaseColor，金属度0/粗糙度1</figcaption></figure>
+<figure data-prefix="hy-tripo-neutral-basecolor"><a href="hy-tripo-neutral-basecolor-hero.png"><img src="hy-tripo-neutral-basecolor-hero.png" loading="lazy"></a><figcaption>混元＋Tripo · 返回4K PBR，原样导入</figcaption></figure>
+<figure data-prefix="ml06-neutral-basecolor"><a href="ml06-neutral-basecolor-hero.png"><img src="ml06-neutral-basecolor-hero.png" loading="lazy"></a><figcaption>当前ML06主体 · 现有材质</figcaption></figure>
+</div>
+<p>仅底色模式可确认：枪托上壳和部分机匣白色区被服务重绘为深色；这不是仅由环境反射导致。字标也未忠实保留。原图的白/橙/深色总体调色板仍在，但分区不能算完全保持。</p>
+<h2>关闭贴图法线 · 同一PBR响应</h2><p><button onclick="change('normaloff','hero')">三分之四</button> </p><div class="grid" id="normaloff">
+<figure data-prefix="hy-original-neutral-normal-off"><a href="hy-original-neutral-normal-off-hero.png"><img src="hy-original-neutral-normal-off-hero.png" loading="lazy"></a><figcaption>混元原底色版 · 8K BaseColor，金属度0/粗糙度1</figcaption></figure>
+<figure data-prefix="hy-tripo-neutral-normal-off"><a href="hy-tripo-neutral-normal-off-hero.png"><img src="hy-tripo-neutral-normal-off-hero.png" loading="lazy"></a><figcaption>混元＋Tripo · 返回4K PBR，原样导入</figcaption></figure>
+<figure data-prefix="ml06-neutral-normal-off"><a href="ml06-neutral-normal-off-hero.png"><img src="ml06-neutral-normal-off-hero.png" loading="lazy"></a><figcaption>当前ML06主体 · 现有材质</figcaption></figure>
+</div>
+<p>关闭法线图后仍有大平面波浪式高光，说明问题并非只由新法线贴图造成；低模/顶点法线与较强反射共同影响观感。材质通道齐全，不等于凹坑、油膜和涂漆金属已达到概念效果。</p><h2>Tripo原始4K贴图通道</h2><p>直接提取服务GLB图像；粗糙度取MR绿色、金属度取蓝色，仅缩小显示，未拉伸对比度或重绘。MR红通道全白且未绑定AO，不将其宣称为AO烘焙；没有独立Emission。</p><div class="maps">
+<figure><a href="textures/tripo/1.jpg"><img src="BaseColor-preview.png" loading="lazy"></a><figcaption>BaseColor · 4096² · <a href="textures/tripo/1.jpg">原始图</a></figcaption></figure>
+<figure><a href="textures/tripo/0.jpg"><img src="NormalGL-preview.png" loading="lazy"></a><figcaption>NormalGL · 4096² · <a href="textures/tripo/0.jpg">原始图</a></figcaption></figure>
+<figure><a href="textures/tripo/2.png"><img src="Roughness-preview.png" loading="lazy"></a><figcaption>Roughness · 4096² · <a href="textures/tripo/2.png">原始图</a></figcaption></figure>
+<figure><a href="textures/tripo/2.png"><img src="Metallic-preview.png" loading="lazy"></a><figcaption>Metallic · 4096² · <a href="textures/tripo/2.png">原始图</a></figcaption></figure>
+</div><h2>交付与边界</h2><p>原始生成GLB：<code>art_source/weapons/lc01/hunyuan-tripo-pbr-v1/01-tripo/model.glb</code>。独立验证入口：<code>tools/hunyuan_pbr/capture.gd</code>；保形审计和报告脚本同目录。全部源与截图归档，默认武器、环境和游戏代码未变。当前结果是一次已完成的材质试验，用户美术验收待定。</p><script>function change(id,v){document.querySelectorAll("#"+id+" figure").forEach(f=>{let p=f.dataset.prefix+"-"+v+".png";f.querySelector("img").src=p;f.querySelector("a").href=p})}</script></html>

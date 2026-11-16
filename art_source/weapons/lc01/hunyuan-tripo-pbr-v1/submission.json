@@ -1,0 +1,7 @@
+{
+  "task_id": "ee8cdeda-8240-4e85-b11f-b7677d662500",
+  "tool": "tripo_texture",
+  "status_at_submission": "queued",
+  "user_confirmed": true,
+  "request": "docs/design/ml19/texture-request.json"
+}

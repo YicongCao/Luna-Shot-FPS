@@ -1,0 +1,34 @@
+{
+  "native_record_count": 48,
+  "native_failures": 0,
+  "native_screenshots": 36,
+  "geometry_uv_gate_passed": true,
+  "vertex_normals_byte_identical": false,
+  "normal_toggle": [
+    {
+      "stage": "hy-original",
+      "mean_abs_rgb_0_255": 0.0,
+      "changed_pixels_over_5": 0
+    },
+    {
+      "stage": "hy-tripo",
+      "mean_abs_rgb_0_255": 0.9417553571428572,
+      "changed_pixels_over_5": 36303
+    },
+    {
+      "stage": "ml06",
+      "mean_abs_rgb_0_255": 3.2722336309523814,
+      "changed_pixels_over_5": 124790
+    }
+  ],
+  "clay_image_delta": {
+    "mean_abs_rgb_0_255": 0.005055654761904761,
+    "pixels_over_5": 248,
+    "note": "Includes renderer shading/zero-normal fallback, tiny coordinate differences; use face audit for geometric equivalence, not pixel equality."
+  },
+  "visual_status": "open; material/color differences documented; not promoted",
+  "paid_tasks": 1,
+  "actual_credits": 20,
+  "rerolls": 0,
+  "default_changed": false
+}

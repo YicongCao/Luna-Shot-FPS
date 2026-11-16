@@ -1,0 +1,35 @@
+{
+  "task_id": "ee8cdeda-8240-4e85-b11f-b7677d662500",
+  "type": "texture_model",
+  "status": "success",
+  "input": {
+    "pbr": true,
+    "bake": true,
+    "delight": true,
+    "texture": true,
+    "texture_seed": 20261116,
+    "model_version": "v3.5-20260815",
+    "texture_prompt": {
+      "text": "Material pass for the supplied fictional sci-fi rifle. Preserve the existing ivory armor, orange energy-cell casing, charcoal frame and black rubber grip color zones. Painted alloy armor is dielectric except sparse chipped edges exposing metal. Steel fasteners and exposed dark metal have credible metallic response; rubber stays nonmetallic. Subtle directional scuffs and localized oily roughness variation on the orange casing, with broad clean areas. Cyan coil strips remain localized. Do not add fake seams, panels, bolts or silhouette details in paint. Avoid heavy grunge, baked shadows, bright painted specular streaks and uniform chrome. Use the supplied reference for material palette.",
+      "style_image": {
+        "file_token": "file_7d717a94-5a56-48ea-87a9-62a02ee7bb9c"
+      }
+    },
+    "texture_quality": "detailed",
+    "original_model_id": "4e28e071-ad6f-42fc-b141-2195e5a4da23",
+    "texture_alignment": "geometry"
+  },
+  "output_fields": [
+    "model_url",
+    "rendered_image_url"
+  ],
+  "normalize_scale": 0.8413944490346557,
+  "credits_consumed": 20,
+  "created_at": "2026-11-16T11:16:20.016929Z",
+  "completed_at": "2026-11-16T11:17:16.359279Z",
+  "files": [
+    "model.glb",
+    "rendered_image.webp",
+    "preview.png"
+  ]
+}

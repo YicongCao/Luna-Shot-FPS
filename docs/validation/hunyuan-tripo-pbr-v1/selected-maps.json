@@ -1,0 +1,42 @@
+[
+  {
+    "name": "BaseColor",
+    "source": "textures/tripo/1.jpg",
+    "preview": "BaseColor-preview.png",
+    "channel": null,
+    "size": [
+      4096,
+      4096
+    ]
+  },
+  {
+    "name": "NormalGL",
+    "source": "textures/tripo/0.jpg",
+    "preview": "NormalGL-preview.png",
+    "channel": null,
+    "size": [
+      4096,
+      4096
+    ]
+  },
+  {
+    "name": "Roughness",
+    "source": "textures/tripo/2.png",
+    "preview": "Roughness-preview.png",
+    "channel": 1,
+    "size": [
+      4096,
+      4096
+    ]
+  },
+  {
+    "name": "Metallic",
+    "source": "textures/tripo/2.png",
+    "preview": "Metallic-preview.png",
+    "channel": 2,
+    "size": [
+      4096,
+      4096
+    ]
+  }
+]

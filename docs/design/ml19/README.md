@@ -13,3 +13,7 @@
 通过后在Godot独立材料场景与原混元底色版、ML06主体做统一机位/曝光/中性光及掠射光对照，分开灰模、最终材质与法线关闭模式；记录收益和差距。默认ML06、游戏机制和环境不变。结果、费用、验证证据与ML19实施日志随完成阶段提交。
 
 Tripo工具目前明文要求：“show the user the returned plan … then stop and wait for the user's explicit confirmation”。因此需展示工具计划后完成一次确认，之后本轮常规下载、检查、截图与commit不再重复询问。
+
+## 执行结果
+
+用户已确认，任务`ee8cdeda-8240-4e85-b11f-b7677d662500`成功，实际20积分。几何与UV保持通过，顶点法线有差异；Godot三版本比较完成，色块与亮滑问题保持开放，未替换默认。详见[ML19报告](../../validation/hunyuan-tripo-pbr-v1/REPORT.md)。本文件前述准备状态为执行前记录。

@@ -1,0 +1,194 @@
+[
+  {
+    "source": "art_source/weapons/lc01/hunyuan-v1/pbr.glb",
+    "bytes": 9931456,
+    "sha256": "d7591f026d423e57339de505650690eeb8fd7da30e7871007a6662106bef8319",
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 1.0,
+          "baseColorTexture": {
+            "index": 0,
+            "texCoord": 0
+          }
+        },
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "textures": [
+      {
+        "sampler": 0,
+        "source": 0
+      }
+    ],
+    "images": [
+      {
+        "index": 0,
+        "path": "textures/original/0.jpg",
+        "size": [
+          8192,
+          8192
+        ],
+        "sha256": "94a66454762ce25bb9ec934f35af4887037a38c5ab4a3b5bee9c58206a020ccb",
+        "channels": [
+          {
+            "min": 0,
+            "max": 255,
+            "mean": 73.57236696779728,
+            "std": 63.92208441315065
+          },
+          {
+            "min": 0,
+            "max": 245,
+            "mean": 63.430568769574165,
+            "std": 54.117506285467385
+          },
+          {
+            "min": 0,
+            "max": 241,
+            "mean": 63.421019434928894,
+            "std": 52.14412277797067
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "art_source/weapons/lc01/hunyuan-tripo-pbr-v1/01-tripo/model.glb",
+    "bytes": 19074580,
+    "sha256": "5de90c7421d070870ee3bbd1c747e9cdb19eaadfbff1a6b818f6510d2d05d2f3",
+    "materials": [
+      {
+        "doubleSided": true,
+        "name": "Mesh_0_material",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      }
+    ],
+    "textures": [
+      {
+        "sampler": 0,
+        "source": 0
+      },
+      {
+        "sampler": 0,
+        "source": 1
+      },
+      {
+        "sampler": 0,
+        "source": 2
+      }
+    ],
+    "images": [
+      {
+        "index": 0,
+        "path": "textures/tripo/0.jpg",
+        "size": [
+          4096,
+          4096
+        ],
+        "sha256": "b548bdbfc85b25d610300927e29e18f3ae9d37e966cbc4bc9a68bbbef55c6c3f",
+        "channels": [
+          {
+            "min": 0,
+            "max": 255,
+            "mean": 127.45756661891937,
+            "std": 11.692889258957416
+          },
+          {
+            "min": 0,
+            "max": 255,
+            "mean": 127.05707454681396,
+            "std": 13.179829934539478
+          },
+          {
+            "min": 86,
+            "max": 255,
+            "mean": 252.9444141983986,
+            "std": 9.209637502674148
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "path": "textures/tripo/1.jpg",
+        "size": [
+          4096,
+          4096
+        ],
+        "sha256": "11ef6edef1c05759ce7aaed701524fd529c33c7d290f87d53569b3f36d57ce4e",
+        "channels": [
+          {
+            "min": 0,
+            "max": 255,
+            "mean": 83.13514292240143,
+            "std": 71.91428655498476
+          },
+          {
+            "min": 0,
+            "max": 255,
+            "mean": 75.7382760643959,
+            "std": 59.09213906904024
+          },
+          {
+            "min": 0,
+            "max": 255,
+            "mean": 71.42488586902618,
+            "std": 55.511821099391014
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "path": "textures/tripo/2.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "sha256": "9ece614639031d8b33ba4a94be462fb926d25abfb6abb98ab0932555b10c5953",
+        "channels": [
+          {
+            "min": 255,
+            "max": 255,
+            "mean": 255.0,
+            "std": 0.0
+          },
+          {
+            "min": 0,
+            "max": 163,
+            "mean": 88.0337690114975,
+            "std": 10.468931293815249
+          },
+          {
+            "min": 0,
+            "max": 255,
+            "mean": 168.23944514989853,
+            "std": 94.71466398045054
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,5 +1,5 @@
 {
-  "status": "prepared_not_submitted",
+  "status": "completed_candidate_not_promoted",
   "input": "art_source/weapons/lc01/hunyuan-v1/pbr.glb",
   "input_sha256": "d7591f026d423e57339de505650690eeb8fd7da30e7871007a6662106bef8319",
   "estimated_credits": 20,
@@ -32,5 +32,12 @@
     "Same native camera, exposure, neutral light and grazing light; original Hunyuan and ML06 controls",
     "Keep ML06 default and all environment assets unchanged"
   ],
-  "tool_confirmation": "Tripo tool requires returned plan to be shown and explicitly confirmed before task creation."
+  "tool_confirmation": "Tripo tool requires returned plan to be shown and explicitly confirmed before task creation.",
+  "user_confirmed": true,
+  "task_id": "ee8cdeda-8240-4e85-b11f-b7677d662500",
+  "actual_credits": 20,
+  "geometry_uv_gate": "passed",
+  "normal_preservation": "not_identical_see_audit",
+  "visual": "open_color_partition_and_gloss_issues",
+  "default_replaced": false
 }
