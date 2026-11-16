@@ -1,0 +1,22 @@
+{
+  "version": "ml15-v1",
+  "asset": "E",
+  "meshes": {
+    "E_Static": "body"
+  },
+  "atlases": {
+    "body": "body"
+  },
+  "fixtures": {
+    "mounts": [
+      {
+        "kind": "amber",
+        "position": [
+          0,
+          14.075,
+          0
+        ]
+      }
+    ]
+  }
+}

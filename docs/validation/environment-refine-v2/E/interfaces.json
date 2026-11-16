@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "check": "open_lattice_axis_0",
+      "passed": true,
+      "detail": {
+        "clear": 44,
+        "samples": 50
+      }
+    },
+    {
+      "check": "open_lattice_axis_1",
+      "passed": true,
+      "detail": {
+        "clear": 44,
+        "samples": 50
+      }
+    }
+  ],
+  "failures": 0
+}

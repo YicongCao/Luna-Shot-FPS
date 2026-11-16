@@ -1,0 +1,67 @@
+{
+  "asset": "E",
+  "seed": 20261120,
+  "pairs": [
+    {
+      "name": "Base",
+      "group": "body",
+      "low": "Base_low",
+      "high": "Base_high",
+      "cage": "Base_cage",
+      "cage_distance": 0.014,
+      "triangles": 1292
+    },
+    {
+      "name": "Lattice",
+      "group": "body",
+      "low": "Lattice_low",
+      "high": "Lattice_high",
+      "cage": "Lattice_cage",
+      "cage_distance": 0.009,
+      "triangles": 5056
+    },
+    {
+      "name": "Antenna",
+      "group": "body",
+      "low": "Antenna_low",
+      "high": "Antenna_high",
+      "cage": "Antenna_cage",
+      "cage_distance": 0.012,
+      "triangles": 2028
+    },
+    {
+      "name": "Feeders",
+      "group": "body",
+      "low": "Feeders_low",
+      "high": "Feeders_high",
+      "cage": "Feeders_cage",
+      "cage_distance": 0.008,
+      "triangles": 1960
+    }
+  ],
+  "triangles": 10336,
+  "bounds_blender": [
+    [
+      -1.899999976158142,
+      -1.0,
+      0.0
+    ],
+    [
+      1.899999976158142,
+      1.0,
+      13.984999656677246
+    ]
+  ],
+  "uv_version": "ml15-v1",
+  "tripo_role": "Shape reference; precise open assemblies authored locally; generated candidate archived separately",
+  "materials": [
+    "coat",
+    "dark",
+    "steel",
+    "rubber",
+    "yellow",
+    "core",
+    "tread"
+  ],
+  "high_triangles": 39392
+}

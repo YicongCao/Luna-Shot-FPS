@@ -17,6 +17,8 @@ var weapon_key: DirectionalLight3D
 var shadow_clock := 0.0
 var weapon_bloom: CanvasLayer
 var module_light_pool: Array[OmniLight3D] = []
+var beacon_spot: SpotLight3D
+var module_spill_enabled:=true
 
 func _ready() -> void:
 	world=get_parent();player=world.get_node("Player")
@@ -73,6 +75,7 @@ func _ready() -> void:
 		light.shadow_enabled = true
 		add_child(light)
 		module_light_pool.append(light)
+	beacon_spot=SpotLight3D.new();beacon_spot.name="SignalBeaconSweep";beacon_spot.spot_range=3.5;beacon_spot.spot_angle=55;beacon_spot.spot_attenuation=1.5;beacon_spot.shadow_enabled=true;beacon_spot.visible=false;add_child(beacon_spot)
 	set_bloom(true)
 
 func add_fixture(pos: Vector3, color: Color, post: bool, label: String) -> void:
@@ -129,13 +132,27 @@ func update_module_lights() -> void:
 	var candidates: Array[Dictionary] = []
 	var camera: Camera3D = get_viewport().get_camera_3d()
 	if not camera: return
+	var amber: Dictionary={}
 	for module in get_tree().get_nodes_in_group("facility_lamp_modules"):
 		for fixture: Dictionary in module.fixtures:
 			if fixture.material.emission_enabled != facility_enabled: fixture.material.emission_enabled = facility_enabled
+			if fixture.get("kind", "red")=="amber":
+				amber=fixture;continue
 			var distance: float = camera.global_position.distance_squared_to(fixture.mesh.global_position)
 			var max_distance:=4.5 if fixture.get("kind", "red")=="blue" else 8.0
 			if distance < max_distance * max_distance:
 				candidates.append({"fixture":fixture,"distance":distance,"max_distance":max_distance})
+	var spot_visible:=false
+	if not amber.is_empty():
+		var beacon: Node3D=amber.beacon
+		if beacon.lens.material_override.emission_enabled!=facility_enabled:beacon.lens.material_override.emission_enabled=facility_enabled
+		spot_visible=facility_enabled and module_spill_enabled and camera.global_position.distance_to(beacon.global_position)<24
+		if spot_visible:
+			var direction: Vector3=beacon.rotor.global_basis.z
+			beacon_spot.global_position=beacon.global_position+direction*.18
+			beacon_spot.look_at(beacon_spot.global_position+direction-Vector3.UP*.65)
+			beacon_spot.light_color=amber.color;beacon_spot.light_energy=2.2*amber.level
+	beacon_spot.visible=spot_visible
 	candidates.sort_custom(func(a, b): return a.distance < b.distance)
 	# Stable fixture-to-slot ownership keeps blink phases from moving all shadow maps.
 	candidates=candidates.slice(0,8)
@@ -165,7 +182,7 @@ func update_module_lights() -> void:
 		if light.omni_attenuation!=2.0:light.omni_attenuation=2.0
 		var energy: float=.45*fixture.level*(1.0-smoothstep(candidate.max_distance-1.0,candidate.max_distance,sqrt(candidate.distance)))
 		if not is_equal_approx(light.light_energy,energy):light.light_energy=energy
-		light.visible=facility_enabled and fixture.level>.001 and activated<2
+		light.visible=facility_enabled and module_spill_enabled and fixture.level>.001 and activated<2
 		if light.visible:activated+=1
 
 func _unhandled_key_input(event: InputEvent) -> void:
@@ -174,4 +191,6 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		KEY_F6:player.weapon.set_energy_enabled(not player.weapon.energy_enabled)
 		KEY_F7:set_bloom(not bloom_enabled)
 		KEY_F8:flares_enabled=not flares_enabled
-		KEY_F9:player.weapon.set_spill_enabled(not player.weapon.spill_enabled)
+		KEY_F9:
+			player.weapon.set_spill_enabled(not player.weapon.spill_enabled)
+			module_spill_enabled=player.weapon.spill_enabled

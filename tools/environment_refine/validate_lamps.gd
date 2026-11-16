@@ -31,6 +31,15 @@ func run() -> void:
 			var p: Vector3=fixture.mesh.position
 			checks.append({"check":"blue_inside_boundary","passed":absf(p.x)+.0075<=2})
 	checks.append({"check":"tower_phase_variation","passed":phases.size()>1})
+	for module in modules:
+		if module.asset_id!="E":continue
+		checks.append({"check":"one_amber_beacon","passed":module.fixtures.size()==1})
+		module.set_process(false);module.phase=0;module.elapsed=.25;module.refresh()
+		var beacon: Node3D=module.fixtures[0].beacon
+		checks.append({"check":"beacon_14_2m_envelope","passed":beacon.position.y+.0875<=14.2})
+		checks.append({"check":"beacon_quarter_rotation","passed":is_equal_approx(beacon.rotor.rotation.y,PI*.5)})
+		module.elapsed=1.25;module.refresh();checks.append({"check":"beacon_period_one_second","passed":is_equal_approx(beacon.rotor.rotation.y,PI*.5)})
+		module.set_process(true)
 	checks.append({"check":"local_pool_limit","passed":world.lighting.module_light_pool.size()==8})
 	world.lighting.set_facility_enabled(false);await process_frame;await process_frame
 	checks.append({"check":"facility_switch_disables_spill","passed":world.lighting.module_light_pool.all(func(l):return not l.visible)})

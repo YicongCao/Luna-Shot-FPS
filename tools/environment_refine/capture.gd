@@ -29,7 +29,9 @@ func run() -> void:
 	var lamps:=tower.get_node_or_null("FacilityLamps")
 	if lamps:
 		check("fixture_count",lamps.fixtures.size()==({"B1":4,"B2":4,"C":4,"D":6,"E":1}[asset]))
-		lamps.set_process(false);lamps.forced_level=1;lamps.refresh()
+		lamps.set_process(false);lamps.forced_level=1
+		if asset=="E":lamps.phase=0;lamps.elapsed=.84
+		lamps.refresh()
 		world.lighting.set_bloom(false)
 		if asset in ["B1","B2"]:
 			cam.global_position=tower.to_global(Vector3(3.5,6.9,3.5));cam.look_at(tower.to_global(Vector3(0,5.7,0)));cam.fov=48
@@ -43,6 +45,7 @@ func run() -> void:
 		var lit:=root.get_texture().get_image()
 		world.lighting.set_process(false)
 		for light in world.lighting.module_light_pool:light.visible=false
+		world.lighting.beacon_spot.visible=false
 		var unlit:=await shot("emission-only")
 		var changed:=0
 		for y in range(0,900,2):
@@ -58,10 +61,34 @@ func run() -> void:
 			check("red_pulse_on",lamps.fixtures[0].level>.99)
 			lamps.elapsed=.5;lamps.refresh();check("red_pulse_off",lamps.fixtures[0].level==0)
 		elif asset in ["C","D"]:check("blue_constant",lamps.fixtures.all(func(f):return f.level==1))
+		elif asset=="E":
+			lamps.elapsed=.08;lamps.refresh();check("amber_pulse_peak",lamps.fixtures[0].level>.99)
+			lamps.elapsed=.5;lamps.refresh();check("amber_between_pulses",is_equal_approx(lamps.fixtures[0].level,.35))
+			lamps.elapsed=.25;lamps.refresh();check("one_revolution_per_second",is_equal_approx(lamps.fixtures[0].beacon.rotor.rotation.y,PI*.5))
+			var first: Image
+			for step in 4:
+				lamps.elapsed=.1+step*.25;lamps.refresh()
+				var phase_image:=await shot("beacon-phase-"+str(step))
+				if step==0:first=phase_image
+				if step==2:
+					var changed_pixels:=0
+					for y in range(0,900,2):
+						for x in range(0,1280,2):
+							if absf(first.get_pixel(x,y).r-phase_image.get_pixel(x,y).r)>.025:changed_pixels+=1
+					check("rotating_sector_visible_pixels",changed_pixels>30)
+			var beam_dir: Vector3=lamps.fixtures[0].beacon.rotor.global_basis.z-Vector3.UP*.65
+			check("spot_tracks_rotor",(-world.lighting.beacon_spot.global_basis.z).dot(beam_dir.normalized())>.999)
 		lamps.set_process(true);world.set_paused(true);var t: float=lamps.elapsed;await frames(10);check("pause_freezes_phase",lamps.elapsed==t);world.set_paused(false)
 		if "--demo" in OS.get_cmdline_user_args():
 			world.lighting.set_bloom(false)
-			await frames(300)
+			print("DEMO_START_FRAME ",Engine.get_process_frames())
+			if asset in ["C","D"]:
+				var start:=cam.global_position;var right:=cam.global_basis.x
+				var target: Vector3=lamps.fixtures[1 if asset=="D" else 0].mesh.global_position
+				for i in 300:
+					cam.global_position=start+right*.4*sin(float(i)/300.0*TAU);cam.look_at(target);await process_frame
+			else:await frames(300)
+			print("DEMO_END_FRAME ",Engine.get_process_frames())
 	world.queue_free();await frames(5)
 	var stage:=Node3D.new();root.add_child(stage)
 	var model:=Node3D.new();model.set_script(load("res://scripts/module_visual.gd"));model.asset_id=asset;stage.add_child(model)

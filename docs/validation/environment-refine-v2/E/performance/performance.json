@@ -1,0 +1,19 @@
+{
+	"active_omni_frames": {
+		"0": 6438,
+		"1": 147,
+		"2": 390
+	},
+	"blue_spill_frames": 0,
+	"engine": "4.7.2-stable (official)",
+	"frames": 6975,
+	"objects_last_frame": 984,
+	"p50_ms": 8.345,
+	"p95_ms": 9.835,
+	"primitives_last_frame": 1512086,
+	"seconds": 60.007,
+	"spot_spill_frames": 0,
+	"texture_bytes": 825426904,
+	"viewport": "1600x1000",
+	"vsync_disabled": false
+}
