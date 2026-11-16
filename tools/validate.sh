@@ -9,6 +9,8 @@ python3 tools/test_energy_layout.py
 if rg 'SCRIPT ERROR|Parse Error|ERROR:' artifacts/validation/import.log; then exit 1; fi
 "$GODOT" --headless --path . --script tools/validate_energy_modules.gd > artifacts/validation/modules.log 2>&1
 if rg 'SCRIPT ERROR|ERROR:' artifacts/validation/modules.log; then exit 1; fi
+"$GODOT" --headless --path . --script tools/validate_b2_fans.gd > artifacts/validation/b2-fans.log 2>&1
+if rg 'SCRIPT ERROR|ERROR:|FAN FAIL' artifacts/validation/b2-fans.log; then exit 1; fi
 "$GODOT" --headless --path . --script tools/validate_weapon.gd > artifacts/validation/weapon.log 2>&1
 if rg 'SCRIPT ERROR|ERROR:' artifacts/validation/weapon.log; then exit 1; fi
 "$GODOT" --headless --path . --fixed-fps 60 -- --qa > artifacts/validation/headless.log 2>&1

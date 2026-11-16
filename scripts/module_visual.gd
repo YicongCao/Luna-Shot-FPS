@@ -14,3 +14,9 @@ func _ready() -> void:
 	var material: StandardMaterial3D=load("res://scripts/environment_material.gd").create(asset_id)
 	for mesh: MeshInstance3D in visual.find_children("*","MeshInstance3D",true,false):mesh.material_override=material
 	add_child(visual)
+	# Added after whitebox hiding/material binding so animated parts stay visible
+	# and keep their own metal/paint materials. Regenerating the map retains this.
+	if asset_id == "B2" and not has_node("CoolingFans"):
+		var fans := Node3D.new()
+		fans.set_script(load("res://scripts/b2_cooling_fans.gd"))
+		add_child(fans)

@@ -39,3 +39,5 @@ ML09 结构还原候选/发布路径为 `art_source/weapons/lc01/ls01-refine-v2`
 验收必须写明相对基线的收益和损失；有某零件、面数/UV/cage通过、微细节更多不等于视觉升级。主要轮廓、镂空、色块或结构层次退步时停止推广；技术标记不得自动替换 ML06 默认。细节与历史误判见 docs/logs/ML11-枪械视觉倒退复盘与保形原则.md。
 
 ML13 默认开火效果为纯代码方案 C：scripts/pulsed_arc.gd 复用 ML12 magnetic_pulse.gd 的基础设施，ML06 几何/贴图保持。--fire-effect=a 仅作历史 A 对照；C 专项 tools/validate_pulsed_arc.sh，证据 docs/validation/pulsed-arc-v1。电弧偏移/分叉须检查实际场景遮挡，不新增追踪或伤害；旧 A 验证入口必须显式选择 A，避免覆盖历史证据。
+
+ML14 B2 侧面三风扇由 scripts/b2_cooling_fans.gd 程序化构建，module_visual.gd 在 final 视觉加载后挂载，6 塔共 18 叶轮。保留原 B2 GLB/UV/材质；固定护罩与旋转叶轮分离，附件不超出原 4×4 m 占地。专项 tools/validate_b2_fans.sh，证据 docs/validation/b2-cooling-fans。白模模式不加载该附件。
