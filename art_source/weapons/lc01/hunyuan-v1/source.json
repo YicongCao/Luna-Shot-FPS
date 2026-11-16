@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "archive": "art_source/weapons/lc01/hunyuan-v1/high.glb",
+      "original_path": "/Users/cong/Downloads/luna-shot-gun/\u9ad8\u6a21.glb",
+      "sha256": "eb2c9944710a4fc71ee969ed74fa68aa90c1677b117e4be74edd637261bd7f42"
+    },
+    {
+      "archive": "art_source/weapons/lc01/hunyuan-v1/low.glb",
+      "original_path": "/Users/cong/Downloads/luna-shot-gun/\u4f4e\u6a21.glb",
+      "sha256": "fb730d62c448733016d3d83d3f7d8a43dcc6abf7baa07f297c3651cb2bc4d825"
+    },
+    {
+      "archive": "art_source/weapons/lc01/hunyuan-v1/uv.fbx",
+      "original_path": "/Users/cong/Downloads/luna-shot-gun/uv\u5c55\u5f00.fbx",
+      "sha256": "8dbdd4ba55833c88dacce732ac19c753e18ed99d577ecc28de7a713b8f455219"
+    },
+    {
+      "archive": "art_source/weapons/lc01/hunyuan-v1/pbr.glb",
+      "original_path": "/Users/cong/Downloads/luna-shot-gun/pbr\u6750\u8d28.glb",
+      "sha256": "d7591f026d423e57339de505650690eeb8fd7da30e7871007a6662106bef8319"
+    }
+  ],
+  "provenance": "User supplied as Hunyuan3D output; generation version, input views, options, cost and job IDs not supplied. No service generation performed in this review.",
+  "runtime_replaced": false
+}

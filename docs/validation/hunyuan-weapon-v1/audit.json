@@ -1,0 +1,162 @@
+[
+  {
+    "stage": "hy-high",
+    "source": "art_source/weapons/lc01/hunyuan-v1/high.glb",
+    "sha256": "eb2c9944710a4fc71ee969ed74fa68aa90c1677b117e4be74edd637261bd7f42",
+    "bytes": 35856876,
+    "bounds_blender": [
+      [
+        -0.07979840040206909,
+        -0.571692705154419,
+        0.0
+      ],
+      [
+        0.08025190234184265,
+        0.6171936988830566,
+        0.47430941462516785
+      ]
+    ],
+    "parts": [
+      {
+        "name": "Mesh_0",
+        "vertices": 995797,
+        "triangles": 1992214,
+        "polygons": 1992214,
+        "boundary_edges": 0,
+        "nonmanifold_edges_gt2": 0,
+        "degenerate_faces_area_lt_1e14": 10,
+        "uv_layers": [],
+        "uv_loops": 0,
+        "uv_outside_01": 0,
+        "position_hash_round6": "6387758193e1cce418837b892c0e47db9194bdeeead7e43c35a18912a5637731",
+        "uv_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    ],
+    "triangles": 1992214,
+    "materials": 0,
+    "images": []
+  },
+  {
+    "stage": "hy-low",
+    "source": "art_source/weapons/lc01/hunyuan-v1/low.glb",
+    "sha256": "fb730d62c448733016d3d83d3f7d8a43dcc6abf7baa07f297c3651cb2bc4d825",
+    "bytes": 380700,
+    "bounds_blender": [
+      [
+        -0.07991969585418701,
+        -0.5856590270996094,
+        0.0
+      ],
+      [
+        0.08040366321802139,
+        0.6028441190719604,
+        0.4739357829093933
+      ]
+    ],
+    "parts": [
+      {
+        "name": "geometry_0",
+        "vertices": 10715,
+        "triangles": 20925,
+        "polygons": 20925,
+        "boundary_edges": 556,
+        "nonmanifold_edges_gt2": 133,
+        "degenerate_faces_area_lt_1e14": 20,
+        "uv_layers": [],
+        "uv_loops": 0,
+        "uv_outside_01": 0,
+        "position_hash_round6": "286f25176074b3ba3698ecac4b1e1b0b9f76f77e5a9daca7516534ec9e49ae5d",
+        "uv_hash": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    ],
+    "triangles": 20925,
+    "materials": 0,
+    "images": []
+  },
+  {
+    "stage": "hy-uv",
+    "source": "art_source/weapons/lc01/hunyuan-v1/uv.fbx",
+    "sha256": "8dbdd4ba55833c88dacce732ac19c753e18ed99d577ecc28de7a713b8f455219",
+    "bytes": 1529996,
+    "bounds_blender": [
+      [
+        -0.07992000132799149,
+        -0.5856590270996094,
+        -1.055134646321676e-07
+      ],
+      [
+        0.08040399104356766,
+        0.6028441786766052,
+        0.4739360213279724
+      ]
+    ],
+    "parts": [
+      {
+        "name": "mesh",
+        "vertices": 10715,
+        "triangles": 20901,
+        "polygons": 20474,
+        "boundary_edges": 610,
+        "nonmanifold_edges_gt2": 123,
+        "degenerate_faces_area_lt_1e14": 0,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "uv_loops": 61849,
+        "uv_outside_01": 0,
+        "position_hash_round6": "adbb7886376f69bbd7512e8fd5855513a4a2d787778998c2aee2e08b9adbb676",
+        "uv_hash": "75bb05c27da33b43258f88c05ed54b731357d2c909fce67a572d3a3dcf09b8f4"
+      }
+    ],
+    "triangles": 20901,
+    "materials": 0,
+    "images": []
+  },
+  {
+    "stage": "hy-pbr",
+    "source": "art_source/weapons/lc01/hunyuan-v1/pbr.glb",
+    "sha256": "d7591f026d423e57339de505650690eeb8fd7da30e7871007a6662106bef8319",
+    "bytes": 9931456,
+    "bounds_blender": [
+      [
+        -0.07992000132799149,
+        -0.5856590867042542,
+        -2.0784689525044087e-08
+      ],
+      [
+        0.08040399104356766,
+        0.6028441190719604,
+        0.4739360511302948
+      ]
+    ],
+    "parts": [
+      {
+        "name": "Mesh_0",
+        "vertices": 17971,
+        "triangles": 20901,
+        "polygons": 20901,
+        "boundary_edges": 11889,
+        "nonmanifold_edges_gt2": 0,
+        "degenerate_faces_area_lt_1e14": 0,
+        "uv_layers": [
+          "UVMap"
+        ],
+        "uv_loops": 62703,
+        "uv_outside_01": 0,
+        "position_hash_round6": "adbb7886376f69bbd7512e8fd5855513a4a2d787778998c2aee2e08b9adbb676",
+        "uv_hash": "79d01f0b282fc5e998dcd89fdb7973f26e2092cd9aa0cf05e86e154eaf52134e"
+      }
+    ],
+    "triangles": 20901,
+    "materials": 1,
+    "images": [
+      {
+        "name": "Image_0",
+        "size": [
+          8192,
+          8192
+        ]
+      }
+    ]
+  }
+]

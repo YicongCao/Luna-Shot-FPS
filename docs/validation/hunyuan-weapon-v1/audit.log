@@ -1,0 +1,28 @@
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+18:47:25 | INFO: Data are loaded, start creating Blender stuff
+18:47:25 | INFO: Blender create Mesh node 0
+18:47:39 | INFO: glTF import finished in 14.24s
+01:02.896  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-high-hero.png'
+01:04.253  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-high-side.png'
+01:05.768  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-high-reverse.png'
+18:48:26 | INFO: Data are loaded, start creating Blender stuff
+18:48:26 | INFO: Blender create Mesh node geometry_0
+18:48:26 | INFO: glTF import finished in 0.02s
+01:06.997  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-low-hero.png'
+01:07.309  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-low-side.png'
+01:07.592  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-low-reverse.png'
+01:08.682  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-uv-hero.png'
+01:09.067  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-uv-side.png'
+01:09.351  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-uv-reverse.png'
+FBX version: 7400
+18:48:29 | INFO: Data are loaded, start creating Blender stuff
+18:48:29 | INFO: Blender create Mesh node 0
+18:48:29 | INFO: glTF import finished in 0.10s
+01:11.362  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-pbr-hero.png'
+01:11.787  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-pbr-side.png'
+01:12.070  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/hy-pbr-reverse.png'
+AUDIT_DONE [('hy-high', 1992214), ('hy-low', 20925), ('hy-uv', 20901), ('hy-pbr', 20901)]
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

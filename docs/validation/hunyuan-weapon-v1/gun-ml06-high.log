@@ -1,0 +1,10 @@
+00:04.110  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/industrial-wear-v1/02-high/lc01-high.blend"
+00:14.242  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/gun-ml06-high-hero.png'
+00:15.530  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/gun-ml06-high-side.png'
+00:18.236  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/hunyuan-weapon-v1/gun-ml06-high-detail.png'
+BlenderMCP addon registered
+COMPARISON_RENDERED gun-ml06-high 1934277
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

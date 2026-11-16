@@ -1,0 +1,297 @@
+{
+	"checks": [
+		{
+			"id": "hy-high_import",
+			"passed": true
+		},
+		{
+			"id": "hy-high-native-clay-hero",
+			"passed": true
+		},
+		{
+			"id": "hy-high-native-clay-side",
+			"passed": true
+		},
+		{
+			"id": "hy-high-native-clay-reverse",
+			"passed": true
+		},
+		{
+			"id": "hy-high-native-clay-detail",
+			"passed": true
+		},
+		{
+			"bounds_before_normalize": "[P: (-0.079798, 0.0, -0.617194), S: (0.16005, 0.474309, 1.188886)]",
+			"id": "hy-high_metrics",
+			"passed": true,
+			"surfaces": 1,
+			"triangles": 1992214
+		},
+		{
+			"id": "hy-low_import",
+			"passed": true
+		},
+		{
+			"id": "hy-low-native-clay-hero",
+			"passed": true
+		},
+		{
+			"id": "hy-low-native-clay-side",
+			"passed": true
+		},
+		{
+			"id": "hy-low-native-clay-reverse",
+			"passed": true
+		},
+		{
+			"id": "hy-low-native-clay-detail",
+			"passed": true
+		},
+		{
+			"bounds_before_normalize": "[P: (-0.07992, 0.0, -0.602844), S: (0.160323, 0.473936, 1.188503)]",
+			"id": "hy-low_metrics",
+			"passed": true,
+			"surfaces": 1,
+			"triangles": 20945
+		},
+		{
+			"id": "hy-pbr_import",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-pbr-hero",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-pbr-side",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-pbr-reverse",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-pbr-detail",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-clay-hero",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-clay-side",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-clay-reverse",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-clay-detail",
+			"passed": true
+		},
+		{
+			"id": "hy-pbr-native-normal-off-hero",
+			"passed": true
+		},
+		{
+			"bounds_before_normalize": "[P: (-0.07992, -0.0, -0.602844), S: (0.160324, 0.473936, 1.188503)]",
+			"id": "hy-pbr_metrics",
+			"passed": true,
+			"surfaces": 1,
+			"triangles": 20901
+		},
+		{
+			"id": "tripo-high_import",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-pbr-hero",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-pbr-side",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-pbr-reverse",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-pbr-detail",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-clay-hero",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-clay-side",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-clay-reverse",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-clay-detail",
+			"passed": true
+		},
+		{
+			"id": "tripo-high-native-normal-off-hero",
+			"passed": true
+		},
+		{
+			"bounds_before_normalize": "[P: (-0.067226, -0.20099, -0.5), S: (0.134452, 0.401979, 1.0)]",
+			"id": "tripo-high_metrics",
+			"passed": true,
+			"surfaces": 18,
+			"triangles": 1934290
+		},
+		{
+			"id": "tripo-low_import",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-pbr-hero",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-pbr-side",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-pbr-reverse",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-pbr-detail",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-clay-hero",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-clay-side",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-clay-reverse",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-clay-detail",
+			"passed": true
+		},
+		{
+			"id": "tripo-low-native-normal-off-hero",
+			"passed": true
+		},
+		{
+			"bounds_before_normalize": "[P: (-0.067067, -0.200309, -0.499997), S: (0.134134, 0.400861, 1.000064)]",
+			"id": "tripo-low_metrics",
+			"passed": true,
+			"surfaces": 18,
+			"triangles": 20303
+		},
+		{
+			"id": "ml06_import",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-pbr-hero",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-pbr-side",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-pbr-reverse",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-pbr-detail",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-clay-hero",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-clay-side",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-clay-reverse",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-clay-detail",
+			"passed": true
+		},
+		{
+			"id": "ml06-native-normal-off-hero",
+			"passed": true
+		},
+		{
+			"bounds_before_normalize": "[P: (-0.060727, -0.147898, -0.664899), S: (0.121383, 0.363712, 0.905)]",
+			"id": "ml06_metrics",
+			"passed": true,
+			"surfaces": 17,
+			"triangles": 19658
+		},
+		{
+			"id": "ml07_import",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-pbr-hero",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-pbr-side",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-pbr-reverse",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-pbr-detail",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-clay-hero",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-clay-side",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-clay-reverse",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-clay-detail",
+			"passed": true
+		},
+		{
+			"id": "ml07-native-normal-off-hero",
+			"passed": true
+		},
+		{
+			"bounds_before_normalize": "[P: (-0.06, -0.147898, -0.664899), S: (0.12, 0.363898, 0.905)]",
+			"id": "ml07_metrics",
+			"passed": true,
+			"surfaces": 14,
+			"triangles": 22272
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"renderer": "gl_compatibility",
+	"scope": "static isolated native material scene, no gameplay or performance claim"
+}

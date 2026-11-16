@@ -9,3 +9,5 @@
 # Keep raw validation output unchanged, including engine trailing whitespace.
 docs/validation/**/*.log -whitespace
 *.mp4 filter=lfs diff=lfs merge=lfs -text
+
+*.fbx filter=lfs diff=lfs merge=lfs -text

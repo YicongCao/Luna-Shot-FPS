@@ -1,0 +1,2366 @@
+[
+  {
+    "id": "hy-high",
+    "source": "art_source/weapons/lc01/hunyuan-v1/high.glb",
+    "bytes": 35856876,
+    "triangles": 1992214,
+    "mesh_count": 1,
+    "material_count": 0,
+    "materials": [],
+    "textures": [],
+    "images": [],
+    "texture_bytes": 0,
+    "attributes": [
+      {
+        "POSITION": 995797
+      }
+    ],
+    "generator": "pygltflib"
+  },
+  {
+    "id": "hy-low",
+    "source": "art_source/weapons/lc01/hunyuan-v1/low.glb",
+    "bytes": 380700,
+    "triangles": 20945,
+    "mesh_count": 1,
+    "material_count": 0,
+    "materials": [],
+    "textures": [],
+    "images": [],
+    "texture_bytes": 0,
+    "attributes": [
+      {
+        "POSITION": 10715
+      }
+    ],
+    "generator": "https://github.com/mikedh/trimesh"
+  },
+  {
+    "id": "hy-pbr",
+    "source": "art_source/weapons/lc01/hunyuan-v1/pbr.glb",
+    "bytes": 9931456,
+    "triangles": 20901,
+    "mesh_count": 1,
+    "material_count": 1,
+    "materials": [
+      {
+        "pbrMetallicRoughness": {
+          "baseColorFactor": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "metallicFactor": 0.0,
+          "roughnessFactor": 1.0,
+          "baseColorTexture": {
+            "index": 0,
+            "texCoord": 0
+          }
+        },
+        "emissiveFactor": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "alphaMode": "OPAQUE",
+        "doubleSided": false
+      }
+    ],
+    "textures": [
+      {
+        "sampler": 0,
+        "source": 0
+      }
+    ],
+    "images": [
+      {
+        "index": 0,
+        "size": [
+          8192,
+          8192
+        ],
+        "bytes": 9103820,
+        "file": "textures/hy-pbr/0.jpg",
+        "sha256": "94a66454762ce25bb9ec934f35af4887037a38c5ab4a3b5bee9c58206a020ccb"
+      }
+    ],
+    "texture_bytes": 9103820,
+    "attributes": [
+      {
+        "POSITION": 17971,
+        "NORMAL": 17971,
+        "TEXCOORD_0": 17971
+      }
+    ],
+    "generator": "pygltflib@v1.16.5"
+  },
+  {
+    "id": "tripo-high",
+    "source": "art_source/weapons/lc01/tripo-rebuild-v3/01-high-pbr/model.glb",
+    "bytes": 67156068,
+    "triangles": 1934290,
+    "mesh_count": 18,
+    "material_count": 18,
+    "materials": [
+      {
+        "doubleSided": true,
+        "name": "tripo_part_0_material",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_12_material",
+        "normalTexture": {
+          "index": 3
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 4
+          },
+          "metallicRoughnessTexture": {
+            "index": 5
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_15_material",
+        "normalTexture": {
+          "index": 6
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 7
+          },
+          "metallicRoughnessTexture": {
+            "index": 8
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_16_material",
+        "normalTexture": {
+          "index": 9
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 10
+          },
+          "metallicRoughnessTexture": {
+            "index": 11
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_5_material",
+        "normalTexture": {
+          "index": 12
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 13
+          },
+          "metallicRoughnessTexture": {
+            "index": 14
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_2_material",
+        "normalTexture": {
+          "index": 15
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 16
+          },
+          "metallicRoughnessTexture": {
+            "index": 17
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_6_material",
+        "normalTexture": {
+          "index": 18
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 19
+          },
+          "metallicRoughnessTexture": {
+            "index": 20
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_4_material",
+        "normalTexture": {
+          "index": 21
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 22
+          },
+          "metallicRoughnessTexture": {
+            "index": 23
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_7_material",
+        "normalTexture": {
+          "index": 24
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 25
+          },
+          "metallicRoughnessTexture": {
+            "index": 26
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_9_material",
+        "normalTexture": {
+          "index": 27
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 28
+          },
+          "metallicRoughnessTexture": {
+            "index": 29
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_11_material",
+        "normalTexture": {
+          "index": 30
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 31
+          },
+          "metallicRoughnessTexture": {
+            "index": 32
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_1_material",
+        "normalTexture": {
+          "index": 33
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 34
+          },
+          "metallicRoughnessTexture": {
+            "index": 35
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_10_material",
+        "normalTexture": {
+          "index": 36
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 37
+          },
+          "metallicRoughnessTexture": {
+            "index": 38
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_13_material",
+        "normalTexture": {
+          "index": 39
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 40
+          },
+          "metallicRoughnessTexture": {
+            "index": 41
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_14_material",
+        "normalTexture": {
+          "index": 42
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 43
+          },
+          "metallicRoughnessTexture": {
+            "index": 44
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_17_material",
+        "normalTexture": {
+          "index": 45
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 46
+          },
+          "metallicRoughnessTexture": {
+            "index": 47
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_3_material",
+        "normalTexture": {
+          "index": 48
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 49
+          },
+          "metallicRoughnessTexture": {
+            "index": 50
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_8_material",
+        "normalTexture": {
+          "index": 51
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 52
+          },
+          "metallicRoughnessTexture": {
+            "index": 53
+          }
+        }
+      }
+    ],
+    "textures": [
+      {
+        "sampler": 0,
+        "source": 0
+      },
+      {
+        "sampler": 0,
+        "source": 1
+      },
+      {
+        "sampler": 0,
+        "source": 2
+      },
+      {
+        "sampler": 0,
+        "source": 3
+      },
+      {
+        "sampler": 0,
+        "source": 4
+      },
+      {
+        "sampler": 0,
+        "source": 5
+      },
+      {
+        "sampler": 0,
+        "source": 6
+      },
+      {
+        "sampler": 0,
+        "source": 7
+      },
+      {
+        "sampler": 0,
+        "source": 8
+      },
+      {
+        "sampler": 0,
+        "source": 9
+      },
+      {
+        "sampler": 0,
+        "source": 10
+      },
+      {
+        "sampler": 0,
+        "source": 11
+      },
+      {
+        "sampler": 0,
+        "source": 12
+      },
+      {
+        "sampler": 0,
+        "source": 13
+      },
+      {
+        "sampler": 0,
+        "source": 14
+      },
+      {
+        "sampler": 0,
+        "source": 15
+      },
+      {
+        "sampler": 0,
+        "source": 16
+      },
+      {
+        "sampler": 0,
+        "source": 17
+      },
+      {
+        "sampler": 0,
+        "source": 18
+      },
+      {
+        "sampler": 0,
+        "source": 19
+      },
+      {
+        "sampler": 0,
+        "source": 20
+      },
+      {
+        "sampler": 0,
+        "source": 21
+      },
+      {
+        "sampler": 0,
+        "source": 22
+      },
+      {
+        "sampler": 0,
+        "source": 23
+      },
+      {
+        "sampler": 0,
+        "source": 24
+      },
+      {
+        "sampler": 0,
+        "source": 25
+      },
+      {
+        "sampler": 0,
+        "source": 26
+      },
+      {
+        "sampler": 0,
+        "source": 27
+      },
+      {
+        "sampler": 0,
+        "source": 28
+      },
+      {
+        "sampler": 0,
+        "source": 29
+      },
+      {
+        "sampler": 0,
+        "source": 30
+      },
+      {
+        "sampler": 0,
+        "source": 31
+      },
+      {
+        "sampler": 0,
+        "source": 32
+      },
+      {
+        "sampler": 0,
+        "source": 33
+      },
+      {
+        "sampler": 0,
+        "source": 34
+      },
+      {
+        "sampler": 0,
+        "source": 35
+      },
+      {
+        "sampler": 0,
+        "source": 36
+      },
+      {
+        "sampler": 0,
+        "source": 37
+      },
+      {
+        "sampler": 0,
+        "source": 38
+      },
+      {
+        "sampler": 0,
+        "source": 39
+      },
+      {
+        "sampler": 0,
+        "source": 40
+      },
+      {
+        "sampler": 0,
+        "source": 41
+      },
+      {
+        "sampler": 0,
+        "source": 42
+      },
+      {
+        "sampler": 0,
+        "source": 43
+      },
+      {
+        "sampler": 0,
+        "source": 44
+      },
+      {
+        "sampler": 0,
+        "source": 45
+      },
+      {
+        "sampler": 0,
+        "source": 46
+      },
+      {
+        "sampler": 0,
+        "source": 47
+      },
+      {
+        "sampler": 0,
+        "source": 48
+      },
+      {
+        "sampler": 0,
+        "source": 49
+      },
+      {
+        "sampler": 0,
+        "source": 50
+      },
+      {
+        "sampler": 0,
+        "source": 51
+      },
+      {
+        "sampler": 0,
+        "source": 52
+      },
+      {
+        "sampler": 0,
+        "source": 53
+      }
+    ],
+    "images": [
+      {
+        "index": 0,
+        "size": [
+          2048,
+          2048
+        ],
+        "bytes": 721605,
+        "file": "textures/tripo-high/0.jpg",
+        "sha256": "5f7403769d0bd1e891346e3576582d633ed9827d0658dbb39fc365b90cf37f28"
+      },
+      {
+        "index": 1,
+        "size": [
+          2048,
+          2048
+        ],
+        "bytes": 811914,
+        "file": "textures/tripo-high/1.jpg",
+        "sha256": "54eb2db287b51b7a209036d67a54f5f08de0ef5bc0c17fa728f548fb880503a5"
+      },
+      {
+        "index": 2,
+        "size": [
+          2048,
+          2048
+        ],
+        "bytes": 2409558,
+        "file": "textures/tripo-high/2.png",
+        "sha256": "e5dd359a1cc3d1a939b1a0f05c17b7196fcfe8ac6e939a33f6dd646bc9a985b9"
+      },
+      {
+        "index": 3,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 49465,
+        "file": "textures/tripo-high/3.jpg",
+        "sha256": "ee14b3591467cee204a3f3b55fec8f2005e9829b0fb2f76e6eeb0e80f691f305"
+      },
+      {
+        "index": 4,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 57561,
+        "file": "textures/tripo-high/4.jpg",
+        "sha256": "e2a1f7a57d44158a083a6287a7e7c9661b27b8987c1d332c63bc616ba9bd8b06"
+      },
+      {
+        "index": 5,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 159227,
+        "file": "textures/tripo-high/5.png",
+        "sha256": "fd9ab0c3b26a8a3839c5f5fd2ad3263827c17a309867732f48c2550f7b6a5c85"
+      },
+      {
+        "index": 6,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 15933,
+        "file": "textures/tripo-high/6.jpg",
+        "sha256": "26b5f88e03b2f539f0c5678e0f7daf00d3b97742a805db2dca9959a7591b6038"
+      },
+      {
+        "index": 7,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 10239,
+        "file": "textures/tripo-high/7.jpg",
+        "sha256": "1d57a4530f780cbc079b43bfe0fc597c818ca33ce09c01f4919420433c1d91ff"
+      },
+      {
+        "index": 8,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 36753,
+        "file": "textures/tripo-high/8.png",
+        "sha256": "04f03e79626a772d8cd5a719c4b3131853b28f2a83de9d8f46f67857f29259eb"
+      },
+      {
+        "index": 9,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 11753,
+        "file": "textures/tripo-high/9.jpg",
+        "sha256": "945ef033490d4eac3b365cde445551573b5b6bb407d5b0cef69543cabb03bffb"
+      },
+      {
+        "index": 10,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 11296,
+        "file": "textures/tripo-high/10.jpg",
+        "sha256": "dab61a6417640344d00ffe45bad5e50b2e9e3289d9244658d18ba57660281043"
+      },
+      {
+        "index": 11,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 33811,
+        "file": "textures/tripo-high/11.png",
+        "sha256": "f349e6589c2fb8f8f72fe90c054d418b26e09df20315774be4adf06eeed82bd0"
+      },
+      {
+        "index": 12,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 211021,
+        "file": "textures/tripo-high/12.jpg",
+        "sha256": "4b41c05cf9be28c72e5a0c0801aa8849b09f419eccff758e1d216b2a6d762175"
+      },
+      {
+        "index": 13,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 224755,
+        "file": "textures/tripo-high/13.jpg",
+        "sha256": "4002d6fca3a858cad2cffc42c1c52a4b19ffbe262c735eb6bb9bf82a76a6e93c"
+      },
+      {
+        "index": 14,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 681856,
+        "file": "textures/tripo-high/14.png",
+        "sha256": "8bd8b0db333fd766e6dae8310da433987585e7287b32acc126ae08ce5ec3a01c"
+      },
+      {
+        "index": 15,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 204010,
+        "file": "textures/tripo-high/15.jpg",
+        "sha256": "dbe976bdf5b7a0dbea183c06ce8d4c41306d431a406001e9afe4d30a44d35463"
+      },
+      {
+        "index": 16,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 217935,
+        "file": "textures/tripo-high/16.jpg",
+        "sha256": "de263fba99903b5e8f64fd9d9175cb4e8d99028ef921e48480b19fd141c84bcc"
+      },
+      {
+        "index": 17,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 734507,
+        "file": "textures/tripo-high/17.png",
+        "sha256": "6ec8b3df49e0b8bbcd0e54fff1b595a09510efea6897e655dc49f148e8628f51"
+      },
+      {
+        "index": 18,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 195564,
+        "file": "textures/tripo-high/18.jpg",
+        "sha256": "14cf2bc1c4973ff4b0625760058d3918b8823e389b6466cb3e7b95f3294d9e8d"
+      },
+      {
+        "index": 19,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 188912,
+        "file": "textures/tripo-high/19.jpg",
+        "sha256": "a3443e5cfa6b750b21ce0f48519f358c017458ccca0a7301f601b4c9238831a8"
+      },
+      {
+        "index": 20,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 629452,
+        "file": "textures/tripo-high/20.png",
+        "sha256": "b7f1583912a4ddd190749487204bd23b6bc1a2224f290fbbe3c2b3b59474696f"
+      },
+      {
+        "index": 21,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 193704,
+        "file": "textures/tripo-high/21.jpg",
+        "sha256": "f9e04026015bb96398e73290e7b31b41e29ca95543198761becb7116f9ac1d42"
+      },
+      {
+        "index": 22,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 239850,
+        "file": "textures/tripo-high/22.jpg",
+        "sha256": "b5e2f15502fd21bf8ba29bd46fd7939dd14685616dee6c68b1fa75b78ee6bc9d"
+      },
+      {
+        "index": 23,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 613141,
+        "file": "textures/tripo-high/23.png",
+        "sha256": "e9dedef57e34a238ff3f2532edea6bcc92d276fd39a38b466192ff1e5104262f"
+      },
+      {
+        "index": 24,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 176172,
+        "file": "textures/tripo-high/24.jpg",
+        "sha256": "516d7277e95a0ea3af0f34a52bbeac1adac730e0739669313bf8c0fab3c20bbb"
+      },
+      {
+        "index": 25,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 178915,
+        "file": "textures/tripo-high/25.jpg",
+        "sha256": "ae33e145ab9d0732dfd3b79c6ae8584fd6886f909592be2f48eb8cc1a2aba18c"
+      },
+      {
+        "index": 26,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 568320,
+        "file": "textures/tripo-high/26.png",
+        "sha256": "abb051aace2da26fc85b258dc0c237cc226338857cae7170de4f8ab84c610f44"
+      },
+      {
+        "index": 27,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 125674,
+        "file": "textures/tripo-high/27.jpg",
+        "sha256": "34099e71f2b398348aedd39d1ce01e70479e8922840972bc249fc8967548be83"
+      },
+      {
+        "index": 28,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 112485,
+        "file": "textures/tripo-high/28.jpg",
+        "sha256": "75c79d44a5af8b0f9da0e134fc8e07cbd5332858f7d32c925667a6329667e271"
+      },
+      {
+        "index": 29,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 409492,
+        "file": "textures/tripo-high/29.png",
+        "sha256": "6151ac971f9dce2d9a1b95a67d8d3253ed8ed0024b1bf599917f2e6ae0cb0dda"
+      },
+      {
+        "index": 30,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 53337,
+        "file": "textures/tripo-high/30.jpg",
+        "sha256": "64fc6fdcff33c4eaf48762b2b10aac7d871d72726bf81ff6c33da250fda30477"
+      },
+      {
+        "index": 31,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 65653,
+        "file": "textures/tripo-high/31.jpg",
+        "sha256": "d208198cd60777962353c8a73fddfdac31b6ba89b9c32f91a2f76e759ffbf3a6"
+      },
+      {
+        "index": 32,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 164930,
+        "file": "textures/tripo-high/32.png",
+        "sha256": "b7a9011cb855b888b99baac90cd20139046e9b6327fd09587a9986370d153eb1"
+      },
+      {
+        "index": 33,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 291327,
+        "file": "textures/tripo-high/33.jpg",
+        "sha256": "80052b872ed077693907d575ce98bacdfab042dab2fa0f99f40dca153e5271c5"
+      },
+      {
+        "index": 34,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 292310,
+        "file": "textures/tripo-high/34.jpg",
+        "sha256": "3ccda42532fd36d33a89eb34b9c42af1a99a8ed757806a40869aa5050f94295b"
+      },
+      {
+        "index": 35,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 722644,
+        "file": "textures/tripo-high/35.png",
+        "sha256": "275ed8593b59f7e36c7dfda4e3ff1989f596ba7cdadd9cfcf1543549e9559f7c"
+      },
+      {
+        "index": 36,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 139106,
+        "file": "textures/tripo-high/36.jpg",
+        "sha256": "3c278090dd4cae84caed4c3558486039dff8d20b02f2fe6d2d9244753ce05a87"
+      },
+      {
+        "index": 37,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 141114,
+        "file": "textures/tripo-high/37.jpg",
+        "sha256": "ba361afd4ce701b407f1e12c13b3638162fa8cd7786221b7d59138c01978b88e"
+      },
+      {
+        "index": 38,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 404033,
+        "file": "textures/tripo-high/38.png",
+        "sha256": "a07172839af1c8e51a48e0921ec578a78cb12ac5fccfe6fbf5d8e04a2e8d3e90"
+      },
+      {
+        "index": 39,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 49751,
+        "file": "textures/tripo-high/39.jpg",
+        "sha256": "0fed30b68c684cc4c4659e14c1eef11bec9d7ef6d6afb6ec9830e6d211a40630"
+      },
+      {
+        "index": 40,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 40041,
+        "file": "textures/tripo-high/40.jpg",
+        "sha256": "efeb7bec47720d4a84341c7173f2955d225227d3e6dcf6b4d4a11773a7438798"
+      },
+      {
+        "index": 41,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 125726,
+        "file": "textures/tripo-high/41.png",
+        "sha256": "417ebc8f4919f2a27ae19a136f6ca6cfa7dc6b18d728363c1fde2394b46ac932"
+      },
+      {
+        "index": 42,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 16734,
+        "file": "textures/tripo-high/42.jpg",
+        "sha256": "0ab5c02c71101550ae0e0b9cb9964562f1be0ade47d3a92b842cfb4a58554462"
+      },
+      {
+        "index": 43,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 14744,
+        "file": "textures/tripo-high/43.jpg",
+        "sha256": "c8d06c96a411cc847025a43792eda49dda3b9b15cff0ad1d0bfa678930ab6ced"
+      },
+      {
+        "index": 44,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 44517,
+        "file": "textures/tripo-high/44.png",
+        "sha256": "71e1027dc1cad20a1d90213f5b82485e28559fe984df112a31d9f96c1e4d2e67"
+      },
+      {
+        "index": 45,
+        "size": [
+          32,
+          32
+        ],
+        "bytes": 651,
+        "file": "textures/tripo-high/45.jpg",
+        "sha256": "81716e473e0c71774b4cc40a716dafdd7db1738250e9ed96706bd0ae2f5356e2"
+      },
+      {
+        "index": 46,
+        "size": [
+          32,
+          32
+        ],
+        "bytes": 965,
+        "file": "textures/tripo-high/46.jpg",
+        "sha256": "24d43bf696b7e6782979fc6f38f30b8ba22b4f8ea050e22193f021ee8f72f49f"
+      },
+      {
+        "index": 47,
+        "size": [
+          32,
+          32
+        ],
+        "bytes": 1001,
+        "file": "textures/tripo-high/47.png",
+        "sha256": "933fbcba19b254f238e981de99394aba8660b46f2587932bdb8522185b4d6639"
+      },
+      {
+        "index": 48,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 281314,
+        "file": "textures/tripo-high/48.jpg",
+        "sha256": "3b61c66dfa66e89cb7e69c4f621a48c611a33950664ef60edab51fcff55952b5"
+      },
+      {
+        "index": 49,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 287839,
+        "file": "textures/tripo-high/49.jpg",
+        "sha256": "7c9a078a07bcfad0802f5ef13c4f438d189e60aab96757300232cd83e0000f80"
+      },
+      {
+        "index": 50,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 702683,
+        "file": "textures/tripo-high/50.png",
+        "sha256": "0817a2f27e1d59a847ae7d6d2f7f95cd1b04ea449c92d4b9399815276acba34c"
+      },
+      {
+        "index": 51,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 249633,
+        "file": "textures/tripo-high/51.jpg",
+        "sha256": "7fc95fec5ce9b6e4fd76c03febb5c0f1189676ef1ee38f7d8d77980563158fa9"
+      },
+      {
+        "index": 52,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 262128,
+        "file": "textures/tripo-high/52.jpg",
+        "sha256": "835c785e77e2ec800c9840cf58a0f1e7f58da5f52c43f7909ce998eb9e1824f2"
+      },
+      {
+        "index": 53,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 653012,
+        "file": "textures/tripo-high/53.png",
+        "sha256": "2f0cd8156045736e9dcf75ebdc3c6f394ac0ae96851e23cf7656c1a806619d1a"
+      }
+    ],
+    "texture_bytes": 15240073,
+    "attributes": [
+      {
+        "POSITION": 268740,
+        "NORMAL": 268740,
+        "TEXCOORD_0": 268740
+      },
+      {
+        "POSITION": 14446,
+        "NORMAL": 14446,
+        "TEXCOORD_0": 14446
+      },
+      {
+        "POSITION": 3134,
+        "NORMAL": 3134,
+        "TEXCOORD_0": 3134
+      },
+      {
+        "POSITION": 2956,
+        "NORMAL": 2956,
+        "TEXCOORD_0": 2956
+      },
+      {
+        "POSITION": 89081,
+        "NORMAL": 89081,
+        "TEXCOORD_0": 89081
+      },
+      {
+        "POSITION": 104917,
+        "NORMAL": 104917,
+        "TEXCOORD_0": 104917
+      },
+      {
+        "POSITION": 64341,
+        "NORMAL": 64341,
+        "TEXCOORD_0": 64341
+      },
+      {
+        "POSITION": 61420,
+        "NORMAL": 61420,
+        "TEXCOORD_0": 61420
+      },
+      {
+        "POSITION": 50584,
+        "NORMAL": 50584,
+        "TEXCOORD_0": 50584
+      },
+      {
+        "POSITION": 30812,
+        "NORMAL": 30812,
+        "TEXCOORD_0": 30812
+      },
+      {
+        "POSITION": 18886,
+        "NORMAL": 18886,
+        "TEXCOORD_0": 18886
+      },
+      {
+        "POSITION": 120256,
+        "NORMAL": 120256,
+        "TEXCOORD_0": 120256
+      },
+      {
+        "POSITION": 28998,
+        "NORMAL": 28998,
+        "TEXCOORD_0": 28998
+      },
+      {
+        "POSITION": 7756,
+        "NORMAL": 7756,
+        "TEXCOORD_0": 7756
+      },
+      {
+        "POSITION": 7466,
+        "NORMAL": 7466,
+        "TEXCOORD_0": 7466
+      },
+      {
+        "POSITION": 34,
+        "NORMAL": 34,
+        "TEXCOORD_0": 34
+      },
+      {
+        "POSITION": 85028,
+        "NORMAL": 85028,
+        "TEXCOORD_0": 85028
+      },
+      {
+        "POSITION": 61297,
+        "NORMAL": 61297,
+        "TEXCOORD_0": 61297
+      }
+    ],
+    "generator": "Tripo"
+  },
+  {
+    "id": "tripo-low",
+    "source": "art_source/weapons/lc01/tripo-rebuild-v3/02-low-pbr/model.glb",
+    "bytes": 6963768,
+    "triangles": 20303,
+    "mesh_count": 18,
+    "material_count": 18,
+    "materials": [
+      {
+        "doubleSided": true,
+        "name": "tripo_part_1_material.002",
+        "normalTexture": {
+          "index": 0
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 1
+          },
+          "metallicRoughnessTexture": {
+            "index": 2
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_13_material.002",
+        "normalTexture": {
+          "index": 3
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 4
+          },
+          "metallicRoughnessTexture": {
+            "index": 5
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_15_material.002",
+        "normalTexture": {
+          "index": 6
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 7
+          },
+          "metallicRoughnessTexture": {
+            "index": 8
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_17_material.002",
+        "normalTexture": {
+          "index": 9
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 10
+          },
+          "metallicRoughnessTexture": {
+            "index": 11
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_3_material.002",
+        "normalTexture": {
+          "index": 12
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 13
+          },
+          "metallicRoughnessTexture": {
+            "index": 14
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_5_material.002",
+        "normalTexture": {
+          "index": 15
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 16
+          },
+          "metallicRoughnessTexture": {
+            "index": 17
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_6_material.002",
+        "normalTexture": {
+          "index": 18
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 19
+          },
+          "metallicRoughnessTexture": {
+            "index": 20
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_7_material.002",
+        "normalTexture": {
+          "index": 21
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 22
+          },
+          "metallicRoughnessTexture": {
+            "index": 23
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_9_material.002",
+        "normalTexture": {
+          "index": 24
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 25
+          },
+          "metallicRoughnessTexture": {
+            "index": 26
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_0_material.002",
+        "normalTexture": {
+          "index": 27
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 28
+          },
+          "metallicRoughnessTexture": {
+            "index": 29
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_12_material.002",
+        "normalTexture": {
+          "index": 30
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 31
+          },
+          "metallicRoughnessTexture": {
+            "index": 32
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_10_material.002",
+        "normalTexture": {
+          "index": 33
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 34
+          },
+          "metallicRoughnessTexture": {
+            "index": 35
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_11_material.002",
+        "normalTexture": {
+          "index": 36
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 37
+          },
+          "metallicRoughnessTexture": {
+            "index": 38
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_14_material.002",
+        "normalTexture": {
+          "index": 39
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 40
+          },
+          "metallicRoughnessTexture": {
+            "index": 41
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_16_material.002",
+        "normalTexture": {
+          "index": 42
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 43
+          },
+          "metallicRoughnessTexture": {
+            "index": 44
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_2_material.002",
+        "normalTexture": {
+          "index": 45
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 46
+          },
+          "metallicRoughnessTexture": {
+            "index": 47
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_8_material.002",
+        "normalTexture": {
+          "index": 48
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 49
+          },
+          "metallicRoughnessTexture": {
+            "index": 50
+          }
+        }
+      },
+      {
+        "doubleSided": true,
+        "name": "tripo_part_4_material.002",
+        "normalTexture": {
+          "index": 51
+        },
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 52
+          },
+          "metallicRoughnessTexture": {
+            "index": 53
+          }
+        }
+      }
+    ],
+    "textures": [
+      {
+        "sampler": 0,
+        "source": 0
+      },
+      {
+        "sampler": 0,
+        "source": 1
+      },
+      {
+        "sampler": 0,
+        "source": 2
+      },
+      {
+        "sampler": 0,
+        "source": 3
+      },
+      {
+        "sampler": 0,
+        "source": 4
+      },
+      {
+        "sampler": 0,
+        "source": 5
+      },
+      {
+        "sampler": 0,
+        "source": 6
+      },
+      {
+        "sampler": 0,
+        "source": 7
+      },
+      {
+        "sampler": 0,
+        "source": 8
+      },
+      {
+        "sampler": 0,
+        "source": 9
+      },
+      {
+        "sampler": 0,
+        "source": 10
+      },
+      {
+        "sampler": 0,
+        "source": 11
+      },
+      {
+        "sampler": 0,
+        "source": 12
+      },
+      {
+        "sampler": 0,
+        "source": 13
+      },
+      {
+        "sampler": 0,
+        "source": 14
+      },
+      {
+        "sampler": 0,
+        "source": 15
+      },
+      {
+        "sampler": 0,
+        "source": 16
+      },
+      {
+        "sampler": 0,
+        "source": 17
+      },
+      {
+        "sampler": 0,
+        "source": 18
+      },
+      {
+        "sampler": 0,
+        "source": 19
+      },
+      {
+        "sampler": 0,
+        "source": 20
+      },
+      {
+        "sampler": 0,
+        "source": 21
+      },
+      {
+        "sampler": 0,
+        "source": 22
+      },
+      {
+        "sampler": 0,
+        "source": 23
+      },
+      {
+        "sampler": 0,
+        "source": 24
+      },
+      {
+        "sampler": 0,
+        "source": 25
+      },
+      {
+        "sampler": 0,
+        "source": 26
+      },
+      {
+        "sampler": 0,
+        "source": 27
+      },
+      {
+        "sampler": 0,
+        "source": 28
+      },
+      {
+        "sampler": 0,
+        "source": 29
+      },
+      {
+        "sampler": 0,
+        "source": 30
+      },
+      {
+        "sampler": 0,
+        "source": 31
+      },
+      {
+        "sampler": 0,
+        "source": 32
+      },
+      {
+        "sampler": 0,
+        "source": 33
+      },
+      {
+        "sampler": 0,
+        "source": 34
+      },
+      {
+        "sampler": 0,
+        "source": 35
+      },
+      {
+        "sampler": 0,
+        "source": 36
+      },
+      {
+        "sampler": 0,
+        "source": 37
+      },
+      {
+        "sampler": 0,
+        "source": 38
+      },
+      {
+        "sampler": 0,
+        "source": 39
+      },
+      {
+        "sampler": 0,
+        "source": 40
+      },
+      {
+        "sampler": 0,
+        "source": 41
+      },
+      {
+        "sampler": 0,
+        "source": 42
+      },
+      {
+        "sampler": 0,
+        "source": 43
+      },
+      {
+        "sampler": 0,
+        "source": 44
+      },
+      {
+        "sampler": 0,
+        "source": 45
+      },
+      {
+        "sampler": 0,
+        "source": 46
+      },
+      {
+        "sampler": 0,
+        "source": 47
+      },
+      {
+        "sampler": 0,
+        "source": 48
+      },
+      {
+        "sampler": 0,
+        "source": 49
+      },
+      {
+        "sampler": 0,
+        "source": 50
+      },
+      {
+        "sampler": 0,
+        "source": 51
+      },
+      {
+        "sampler": 0,
+        "source": 52
+      },
+      {
+        "sampler": 0,
+        "source": 53
+      }
+    ],
+    "images": [
+      {
+        "index": 0,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 105184,
+        "file": "textures/tripo-low/0.jpg",
+        "sha256": "497f1d0ee6e4a393ffa14c82eb190c57e5dc6b5af8233a21fbf554b5765ac428"
+      },
+      {
+        "index": 1,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 133592,
+        "file": "textures/tripo-low/1.jpg",
+        "sha256": "424573280c4ea6907388d69db92027d7e11ef8a3cf7cd46d329b182fad64f3dd"
+      },
+      {
+        "index": 2,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 291314,
+        "file": "textures/tripo-low/2.png",
+        "sha256": "86efefb5d4e1b13ee1bd7e8076e9bf9e081ba1305daa48438ff82b0a10801d49"
+      },
+      {
+        "index": 3,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 14825,
+        "file": "textures/tripo-low/3.jpg",
+        "sha256": "418a9d769f7c30d855b35c8f4534f599f47629a77499d778ca4a8a1208c50035"
+      },
+      {
+        "index": 4,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 15717,
+        "file": "textures/tripo-low/4.jpg",
+        "sha256": "aa0a24e01971a1bfaedc3798460ecdd9bb3e57a78c23d7c4e6bce89c387cc39c"
+      },
+      {
+        "index": 5,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 59356,
+        "file": "textures/tripo-low/5.png",
+        "sha256": "2f309785ad3ebde117d3c5b322777499c80d6069894660f98f0cb8e766def751"
+      },
+      {
+        "index": 6,
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 4813,
+        "file": "textures/tripo-low/6.jpg",
+        "sha256": "c2562ac66c5a81124babd7d4ad814b6124cd5aa4a0a3a57a265b3a10e2191f10"
+      },
+      {
+        "index": 7,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 4920,
+        "file": "textures/tripo-low/7.jpg",
+        "sha256": "83df35290634dda55d4fd04761a9a17aa12a3c70bb285a06365e1abdb62955e1"
+      },
+      {
+        "index": 8,
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 12476,
+        "file": "textures/tripo-low/8.png",
+        "sha256": "3d50e814ce77e35cb05a330495b9e3ec6b7206c11024af4c875d543394870f61"
+      },
+      {
+        "index": 9,
+        "size": [
+          16,
+          16
+        ],
+        "bytes": 798,
+        "file": "textures/tripo-low/9.jpg",
+        "sha256": "9f77fbfaccd59d01da29c2178c2b6b23eafb3cbc64a899bd5debc9419a258417"
+      },
+      {
+        "index": 10,
+        "size": [
+          32,
+          32
+        ],
+        "bytes": 811,
+        "file": "textures/tripo-low/10.jpg",
+        "sha256": "9f8e9b6b461569f16a3b6119342e988aa833fe3d6f97add1c2e483671358ee94"
+      },
+      {
+        "index": 11,
+        "size": [
+          16,
+          16
+        ],
+        "bytes": 522,
+        "file": "textures/tripo-low/11.png",
+        "sha256": "18bc2ef2dd03d16c328f2590fc352189f9e5ca0f15f530bac3bf8d590aa2762a"
+      },
+      {
+        "index": 12,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 77031,
+        "file": "textures/tripo-low/12.jpg",
+        "sha256": "426d759d0d03c72ef1cbcf157babcb1ae7a6b53dcaa1db95c395c2bfcab20a6d"
+      },
+      {
+        "index": 13,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 106804,
+        "file": "textures/tripo-low/13.jpg",
+        "sha256": "8aa34c8c98ce15768368c702904ea33aa849b7163d5b2a9ae710b2a2268b7bbb"
+      },
+      {
+        "index": 14,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 241798,
+        "file": "textures/tripo-low/14.png",
+        "sha256": "64e725d25367310901d38c85672f12fcae5de06fb6dbc48aeab26085edc35143"
+      },
+      {
+        "index": 15,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 103293,
+        "file": "textures/tripo-low/15.jpg",
+        "sha256": "5e2f63637396193a9082c51237216177126bce58a877e1c2d7671106b0d5050c"
+      },
+      {
+        "index": 16,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 110413,
+        "file": "textures/tripo-low/16.jpg",
+        "sha256": "be41fbd18fea6202912929eb4a807b5acfc32ec37a85b2df6069221f7069e884"
+      },
+      {
+        "index": 17,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 282333,
+        "file": "textures/tripo-low/17.png",
+        "sha256": "75fcaae6c5e156c690a339acfdc9365f2e347e5197beb1941f16cae57960346b"
+      },
+      {
+        "index": 18,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 77793,
+        "file": "textures/tripo-low/18.jpg",
+        "sha256": "e4183e1fcb61637e667dc73b285e180b23b6488b4d9caad49f9ea6e8b642110e"
+      },
+      {
+        "index": 19,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 75819,
+        "file": "textures/tripo-low/19.jpg",
+        "sha256": "d6a23af0bc674ea1b7dc5d0130549380310c078f71d22b676a9b72e1edf78fee"
+      },
+      {
+        "index": 20,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 262391,
+        "file": "textures/tripo-low/20.png",
+        "sha256": "09255f2eebabf5a9e8fb5353afc57f3554cd0b19e83c9a9d04e9bcbd92f1dbaa"
+      },
+      {
+        "index": 21,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 74192,
+        "file": "textures/tripo-low/21.jpg",
+        "sha256": "54f9dd0a812716a85d79c7b6d8bf80c08b426320c15ac98ac192a2218390f4cb"
+      },
+      {
+        "index": 22,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 72758,
+        "file": "textures/tripo-low/22.jpg",
+        "sha256": "b19bed8240d38d53e138750dfc1a5e0e5130bdb01005862f0952b3ecb4c5b340"
+      },
+      {
+        "index": 23,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 245447,
+        "file": "textures/tripo-low/23.png",
+        "sha256": "73a8c1cda78dc5f2e958ecaeaffe2eeb960e9465295a8cf987e3179456b93181"
+      },
+      {
+        "index": 24,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 29338,
+        "file": "textures/tripo-low/24.jpg",
+        "sha256": "4da356554fda679b161b91ee4787928d633c8183d208c37189ac86818024dc49"
+      },
+      {
+        "index": 25,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 31225,
+        "file": "textures/tripo-low/25.jpg",
+        "sha256": "ada1b99ddebb8b9f806db8750621fc1f6602a80b2b438b04f8ec26c9ecf9f95e"
+      },
+      {
+        "index": 26,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 111533,
+        "file": "textures/tripo-low/26.png",
+        "sha256": "4512ada02af355da99663d43e5a9b1a7de79366496b7979eb37430095fdb0d7c"
+      },
+      {
+        "index": 27,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 361254,
+        "file": "textures/tripo-low/27.jpg",
+        "sha256": "bc43e275e054900d5b40cb06942993b1818457e0f141b351d3720fce0a497cd3"
+      },
+      {
+        "index": 28,
+        "size": [
+          2048,
+          2048
+        ],
+        "bytes": 324774,
+        "file": "textures/tripo-low/28.jpg",
+        "sha256": "3d8cac5f53dcfb17893c5b5ff51507d1a406dd130a101025e04bfff341590f9e"
+      },
+      {
+        "index": 29,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 1085489,
+        "file": "textures/tripo-low/29.png",
+        "sha256": "4f8ad1ae7ff9570ac79c03ad781aabfa911ba4f9e942beb1807cc3ed88438ae4"
+      },
+      {
+        "index": 30,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 16474,
+        "file": "textures/tripo-low/30.jpg",
+        "sha256": "379197f8aa19ed112886465f010987c40d328e68d1a046df74d3f92555260e2b"
+      },
+      {
+        "index": 31,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 19696,
+        "file": "textures/tripo-low/31.jpg",
+        "sha256": "5581d61aafc7ade992d2e0719d6b6930b3d09623ed4f7f384d6556334dbf4702"
+      },
+      {
+        "index": 32,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 62835,
+        "file": "textures/tripo-low/32.png",
+        "sha256": "e607f161bad802aed3d5681c54155c8c78611067748dde4d8af1eae3cd831e9b"
+      },
+      {
+        "index": 33,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 60898,
+        "file": "textures/tripo-low/33.jpg",
+        "sha256": "64c906b264e38d779e82521d425861ddfcf6eb37de313fdca92f78282389c17c"
+      },
+      {
+        "index": 34,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 63108,
+        "file": "textures/tripo-low/34.jpg",
+        "sha256": "326a64f4473f72f096185fe9c065731dd720199467e9dc489af4a5518dbeeae9"
+      },
+      {
+        "index": 35,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 207677,
+        "file": "textures/tripo-low/35.png",
+        "sha256": "f603611db3c853301c44237f51a79667139b8197ed126e815a5f3de24af418f9"
+      },
+      {
+        "index": 36,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 20411,
+        "file": "textures/tripo-low/36.jpg",
+        "sha256": "58c360b2a09429264d4a3e879d4c2254a287b89b2c39a79a1968b060efaf9b11"
+      },
+      {
+        "index": 37,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 23937,
+        "file": "textures/tripo-low/37.jpg",
+        "sha256": "bd6aba3642800fbb09ed3af1c6d4821ae26b28c862d65216208a4ec798494aae"
+      },
+      {
+        "index": 38,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 69225,
+        "file": "textures/tripo-low/38.png",
+        "sha256": "2fec9b0d148bca8e0a928b94403dbac796484f8bb8336fb06174060e2095d7b7"
+      },
+      {
+        "index": 39,
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 4256,
+        "file": "textures/tripo-low/39.jpg",
+        "sha256": "7ac24f8308b1ac70a87920d0e9fb8fd684e991ddfaad06dc2135edb0da9e2f18"
+      },
+      {
+        "index": 40,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 4425,
+        "file": "textures/tripo-low/40.jpg",
+        "sha256": "f91c67f4ccf646a2ad7d86626209d7c1f6d9745c1bb12ddf8430e5894751414e"
+      },
+      {
+        "index": 41,
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 10715,
+        "file": "textures/tripo-low/41.png",
+        "sha256": "a56b5e96277e039b7702c94a609d1f5474442433f9d4d0485b3815f01857575c"
+      },
+      {
+        "index": 42,
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 7146,
+        "file": "textures/tripo-low/42.jpg",
+        "sha256": "d8a6302bb3d4c5d90c850cb86d25903d053c1d0f3c400ba9677b695553fdc422"
+      },
+      {
+        "index": 43,
+        "size": [
+          256,
+          256
+        ],
+        "bytes": 5844,
+        "file": "textures/tripo-low/43.jpg",
+        "sha256": "f674bd739af2f390ae6d815d92d88280763c62f843e180b9da644cc54f0c16c2"
+      },
+      {
+        "index": 44,
+        "size": [
+          128,
+          128
+        ],
+        "bytes": 16086,
+        "file": "textures/tripo-low/44.png",
+        "sha256": "df59f38c14db4d2152902bb39ee2ccc658e52b4c3b5f2c77d126a008f9c911a8"
+      },
+      {
+        "index": 45,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 93939,
+        "file": "textures/tripo-low/45.jpg",
+        "sha256": "cccbe5c9ca61e26c13a3e4dc6b51895410b120500eb6b63eeb299cd20e42af46"
+      },
+      {
+        "index": 46,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 88996,
+        "file": "textures/tripo-low/46.jpg",
+        "sha256": "6c4bc55ea856a0a07b2ffc74968e60ca8e3cd6476d87fe2d935b22468e062bde"
+      },
+      {
+        "index": 47,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 283660,
+        "file": "textures/tripo-low/47.png",
+        "sha256": "2b82ee2493bf86f3c6773ae3279616439bcfef0f08db7c6fbda7b9dcee06f53a"
+      },
+      {
+        "index": 48,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 88348,
+        "file": "textures/tripo-low/48.jpg",
+        "sha256": "78bbade9b88dfb88dd6dbf48b923c5e3ecac5b0b9d2ccb723d469eadc989c3e8"
+      },
+      {
+        "index": 49,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 109031,
+        "file": "textures/tripo-low/49.jpg",
+        "sha256": "09edcc51631b78680318aab46b874db2ef47790cef79fc5a15500d1522a6affc"
+      },
+      {
+        "index": 50,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 278022,
+        "file": "textures/tripo-low/50.png",
+        "sha256": "39cd9220af36668168fdc2320713f179864c4f946628fac6ea80446a75fb98dd"
+      },
+      {
+        "index": 51,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 85482,
+        "file": "textures/tripo-low/51.jpg",
+        "sha256": "cbfe0d93b6cd415fa50f36ee617df3e3bd19cb6a1ced7af132af3c5ffec32f75"
+      },
+      {
+        "index": 52,
+        "size": [
+          1024,
+          1024
+        ],
+        "bytes": 97368,
+        "file": "textures/tripo-low/52.jpg",
+        "sha256": "77ed4af2f3d0c5b452460c926b92f6f2f132524662883e664fc6073346774789"
+      },
+      {
+        "index": 53,
+        "size": [
+          512,
+          512
+        ],
+        "bytes": 276487,
+        "file": "textures/tripo-low/53.png",
+        "sha256": "108ea5b4c0d9b21f3201c6f2e789f3a001027da82ef60e84589e23e3329cfeaf"
+      }
+    ],
+    "texture_bytes": 6312079,
+    "attributes": [
+      {
+        "POSITION": 1945,
+        "NORMAL": 1945,
+        "TEXCOORD_0": 1945
+      },
+      {
+        "POSITION": 268,
+        "NORMAL": 268,
+        "TEXCOORD_0": 268
+      },
+      {
+        "POSITION": 300,
+        "NORMAL": 300,
+        "TEXCOORD_0": 300
+      },
+      {
+        "POSITION": 405,
+        "NORMAL": 405,
+        "TEXCOORD_0": 405
+      },
+      {
+        "POSITION": 1195,
+        "NORMAL": 1195,
+        "TEXCOORD_0": 1195
+      },
+      {
+        "POSITION": 1583,
+        "NORMAL": 1583,
+        "TEXCOORD_0": 1583
+      },
+      {
+        "POSITION": 965,
+        "NORMAL": 965,
+        "TEXCOORD_0": 965
+      },
+      {
+        "POSITION": 686,
+        "NORMAL": 686,
+        "TEXCOORD_0": 686
+      },
+      {
+        "POSITION": 375,
+        "NORMAL": 375,
+        "TEXCOORD_0": 375
+      },
+      {
+        "POSITION": 3382,
+        "NORMAL": 3382,
+        "TEXCOORD_0": 3382
+      },
+      {
+        "POSITION": 295,
+        "NORMAL": 295,
+        "TEXCOORD_0": 295
+      },
+      {
+        "POSITION": 378,
+        "NORMAL": 378,
+        "TEXCOORD_0": 378
+      },
+      {
+        "POSITION": 346,
+        "NORMAL": 346,
+        "TEXCOORD_0": 346
+      },
+      {
+        "POSITION": 263,
+        "NORMAL": 263,
+        "TEXCOORD_0": 263
+      },
+      {
+        "POSITION": 253,
+        "NORMAL": 253,
+        "TEXCOORD_0": 253
+      },
+      {
+        "POSITION": 1246,
+        "NORMAL": 1246,
+        "TEXCOORD_0": 1246
+      },
+      {
+        "POSITION": 891,
+        "NORMAL": 891,
+        "TEXCOORD_0": 891
+      },
+      {
+        "POSITION": 926,
+        "NORMAL": 926,
+        "TEXCOORD_0": 926
+      }
+    ],
+    "generator": "Tripo"
+  }
+]

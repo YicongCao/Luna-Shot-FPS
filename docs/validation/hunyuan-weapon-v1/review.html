@@ -1,0 +1,39 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ML18 · 混元 / Tripo / 本地重建枪械评估</title><style>body{max-width:1800px;margin:25px auto;padding:0 22px;background:#101923;color:#edf2f7;font:16px/1.7 system-ui}a{color:#74dbe1}img{width:100%;display:block}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}figure{margin:0;background:#192734}figcaption{padding:8px}table{border-collapse:collapse;width:100%}td,th{padding:9px;border:1px solid #455368;text-align:left}button{padding:8px 15px;background:#25394b;color:white;border:1px solid #52677a;cursor:pointer}.note{background:#213545;padding:18px}h2{margin-top:35px}@media(max-width:800px){.grid{grid-template-columns:1fr}}</style><h1>ML18 · 混元、Tripo 与本地重建枪械对照</h1>
+<p class="note"><b>结论：</b>下一轮几何候选优先混元；完整生成材质与可分件程度目前 Tripo 更齐；已接入游戏继续使用 ML06。ML07 整体重建路线不建议继续推广。混元这批“PBR”实际只有8K底色，尚不能作为完整PBR成品替换默认。</p>
+<p>本页是实际文件审计及 Godot 4.7.2 Compatibility 原生独立材料场景，不是概念图；高模灰色对照另由 Blender Workbench 离线渲染并明确标识。没有修改默认枪械、没有新增付费任务。结论只针对这批文件，未知混元任务版本、输入视图与参数，不能当作两家服务整体排名。</p><p><a href="REPORT.md">完整评估与后续建议</a> · <a href="channels.json">实际材质绑定</a> · <a href="audit.json">几何/UV检查</a> · <a href="verification.json">验证结果</a></p>
+<h2>文件究竟包含什么</h2><table><tr><th>文件</th><th>三角数</th><th>材质/UV</th><th>文件体积</th></tr>
+<tr><td>混元高模</td><td>1,992,214</td><td>单网格；无UV、无贴图、无存储顶点法线</td><td>35.86 MB</td></tr>
+<tr><td>混元低模</td><td>20,945</td><td>单网格；无UV/贴图/存储顶点法线；Blender导入后20,925</td><td>0.38 MB</td></tr>
+<tr><td>混元UV FBX</td><td>20,901</td><td>含UV；与最终GLB位置集合一致到1e-6</td><td>1.53 MB</td></tr>
+<tr><td>混元PBR GLB</td><td>20,901</td><td>1材质、1张8192²底色；metallic=0 / roughness=1</td><td>9.93 MB</td></tr>
+<tr><td>Tripo ML17高模</td><td>1,934,290</td><td>18网格/材质，54张图：底色+法线+MR</td><td>67.16 MB</td></tr>
+<tr><td>Tripo ML17低模</td><td>20,303</td><td>18网格/材质，54张图：底色+法线+MR</td><td>6.96 MB</td></tr>
+</table><p>MB按十进制。文件大小同时受到贴图、压缩、顶点拆分影响，不代表几何质量。混元UV边界顶点拆分会增加索引边界数，不能把这些数直接解释成破洞。未进行完整UV重叠/自交检测。</p>
+<h2>公平比较边界</h2><p>所有原生图统一1400×900、正交机位、灯光、环境、曝光、0.905m枪长，按整体包围盒居中；只刚性旋转和等比缩放，不镜像或修改模型。只比较主体，排除后加工的铜排/散热片/弹药屏/红点/局部补光；Emission和Bloom均关闭。ML07主体保留导出阶段追加螺钉，因此22,272与源配对低模20,032不同，不是计数错误。原生灰模保留各文件的顶点法线，没有烘焙法线，仍同时反映几何和顶点法线质量。</p>
+<h2>Godot原生 · 原文件材质</h2><p><button onclick="change('pbr','hero')">三分之四</button> <button onclick="change('pbr','side')">侧面</button> <button onclick="change('pbr','reverse')">反侧</button> <button onclick="change('pbr','detail')">弹夹近景</button> </p><div class="grid" id="pbr">
+<figure data-prefix="hy-pbr-native-pbr" ><a href="hy-pbr-native-pbr-hero.png"><img loading="lazy" src="hy-pbr-native-pbr-hero.png" alt="混元最终网格 · 20,901三角 · 只有底色"></a><figcaption>混元最终网格 · 20,901三角 · 只有底色</figcaption></figure>
+<figure data-prefix="tripo-low-native-pbr" ><a href="tripo-low-native-pbr-hero.png"><img loading="lazy" src="tripo-low-native-pbr-hero.png" alt="Tripo全链路低模 · 20,303三角 · 原服务PBR"></a><figcaption>Tripo全链路低模 · 20,303三角 · 原服务PBR</figcaption></figure>
+<figure data-prefix="ml06-native-pbr" ><a href="ml06-native-pbr-hero.png"><img loading="lazy" src="ml06-native-pbr-hero.png" alt="ML06主体 · 19,658三角 · 原运行时材质"></a><figcaption>ML06主体 · 19,658三角 · 原运行时材质</figcaption></figure>
+<figure data-prefix="ml07-native-pbr" ><a href="ml07-native-pbr-hero.png"><img loading="lazy" src="ml07-native-pbr-hero.png" alt="ML07主体/保留件 · 22,272三角 · 原绑定材质"></a><figcaption>ML07主体/保留件 · 22,272三角 · 原绑定材质</figcaption></figure>
+</div>
+<h2>Godot原生 · 同一灰材质 / 无贴图法线</h2><p><button onclick="change('clay','hero')">三分之四</button> <button onclick="change('clay','side')">侧面</button> <button onclick="change('clay','reverse')">反侧</button> <button onclick="change('clay','detail')">弹夹近景</button> </p><div class="grid" id="clay">
+<figure data-prefix="hy-pbr-native-clay" ><a href="hy-pbr-native-clay-hero.png"><img loading="lazy" src="hy-pbr-native-clay-hero.png" alt="混元最终网格 · 20,901三角 · 只有底色"></a><figcaption>混元最终网格 · 20,901三角 · 只有底色</figcaption></figure>
+<figure data-prefix="tripo-low-native-clay" ><a href="tripo-low-native-clay-hero.png"><img loading="lazy" src="tripo-low-native-clay-hero.png" alt="Tripo全链路低模 · 20,303三角 · 原服务PBR"></a><figcaption>Tripo全链路低模 · 20,303三角 · 原服务PBR</figcaption></figure>
+<figure data-prefix="ml06-native-clay" ><a href="ml06-native-clay-hero.png"><img loading="lazy" src="ml06-native-clay-hero.png" alt="ML06主体 · 19,658三角 · 原运行时材质"></a><figcaption>ML06主体 · 19,658三角 · 原运行时材质</figcaption></figure>
+<figure data-prefix="ml07-native-clay" ><a href="ml07-native-clay-hero.png"><img loading="lazy" src="ml07-native-clay-hero.png" alt="ML07主体/保留件 · 22,272三角 · 原绑定材质"></a><figcaption>ML07主体/保留件 · 22,272三角 · 原绑定材质</figcaption></figure>
+</div>
+<p>混元近景仍有大平面波浪阴影、凹槽边缘过渡变软；Tripo低模机匣/弹夹的三角起伏更明显。不能因混元彩色图较清爽而宣称精确硬表面已经通过。</p>
+<h2>Blender离线 · 高模来源比较</h2><p></p><div class="grid" id="high">
+<figure data-prefix="hy-high-" ><a href="hy-high-hero.png"><img loading="lazy" src="hy-high-hero.png" alt="混元高模 · 1,992,214三角"></a><figcaption>混元高模 · 1,992,214三角</figcaption></figure>
+<figure data-prefix="gun-tripo-" ><a href="gun-tripo-hero.png"><img loading="lazy" src="gun-tripo-hero.png" alt="原Tripo高模 · 1,934,304三角"></a><figcaption>原Tripo高模 · 1,934,304三角</figcaption></figure>
+<figure data-prefix="gun-ml06-high-" ><a href="gun-ml06-high-hero.png"><img loading="lazy" src="gun-ml06-high-hero.png" alt="ML06高模 · 1,934,277三角；保留/修整"></a><figcaption>ML06高模 · 1,934,277三角；保留/修整</figcaption></figure>
+<figure data-prefix="gun-ml07-high-" ><a href="gun-ml07-high-hero.png"><img loading="lazy" src="gun-ml07-high-hero.png" alt="ML07重建高模＋保留低模参照 · 42,520三角"></a><figcaption>ML07重建高模＋保留低模参照 · 42,520三角</figcaption></figure>
+</div>
+<p>高模图不是实机。ML06并非程序化重建全枪：高模保留Tripo形体，低模也包含历史Tripo重拓扑。本地只修整/烘焙/材质处理。ML07才是多主体局部重建；高模列11个未重建件仍用相同低模作装配参照。混元高模没有存储法线，导入器生成；不同法线策略可能影响高光，不能只看软硬阴影判定几何。</p>
+<h2>混元自己的高 → 低 → UV／材质网格</h2><div class="grid">
+<figure><a href="hy-high-side.png"><img loading="lazy" src="hy-high-side.png"></a><figcaption>Blender离线 / 高模；同相机，无材质</figcaption></figure>
+<figure><a href="hy-low-side.png"><img loading="lazy" src="hy-low-side.png"></a><figcaption>Blender离线 / 裸低模；同相机，无材质</figcaption></figure>
+<figure><a href="hy-uv-side.png"><img loading="lazy" src="hy-uv-side.png"></a><figcaption>Blender离线 / UV FBX；同相机，无材质</figcaption></figure>
+<figure><a href="hy-pbr-side.png"><img loading="lazy" src="hy-pbr-side.png"></a><figcaption>Blender离线 / 最终材质GLB的网格；同相机，无材质</figcaption></figure>
+</div><h2>混元原始底色与UV</h2><p>底色中的亮边和暗缝在图像本身可见，存在固定明暗；它们不会随灯光像真实粗糙度/金属反射那样变化。未将它自动猜成高度或粗糙度。</p><div class="grid"><figure><a href="textures/hy-pbr/0.jpg"><img src="hy-basecolor-preview.jpg"><figcaption>实际8192²底色 · 点击原图</figcaption></a></figure><figure><a href="hy-uv-wire.png"><img src="hy-uv-wire.png"></a><figcaption>最终GLB的UV三角线框；未做完整重叠验收</figcaption></figure></div>
+<p><a href="../tripo-weapon-v3/review.html">Tripo原始PBR三通道与高低模</a> · <a href="../source-mesh-comparison/review.html">ML06/ML07完整源网格及PBR母版</a></p><h2>建议下一步</h2><p>保留混元高模/低模造型，先核实是否漏导出Normal、Roughness、Metallic；选弹夹和机匣小范围做高→低法线、粗糙度/金属度与UV接缝验证。缺失时再补齐对应材质/烘焙，不整枪程序化重建、不套用Tripo旧UV贴图。混元是单网格，后续需要分离弹夹、枪身、能量环等动画/发光区域，再接回ML06已有附件和接口。先证明一个局部和正常第一人称都升级，再决定默认替换。</p><script>function change(id,v){document.querySelectorAll("#"+id+" figure").forEach(f=>{let p=f.dataset.prefix+"-"+v+".png";f.querySelector("img").src=p;f.querySelector("a").href=p})}</script></html>

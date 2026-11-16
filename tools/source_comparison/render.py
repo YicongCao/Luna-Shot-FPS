@@ -5,7 +5,8 @@ import bpy,json,math,sys,argparse
 from pathlib import Path
 from mathutils import Vector,Matrix
 R=Path(__file__).resolve().parents[2];D=R/'docs/validation/source-mesh-comparison';D.mkdir(parents=True,exist_ok=True)
-a=argparse.ArgumentParser();a.add_argument('--stage',required=True);args=a.parse_args(sys.argv[sys.argv.index('--')+1:]);stage=args.stage
+a=argparse.ArgumentParser();a.add_argument('--stage',required=True);a.add_argument('--output');a.add_argument('--canonical',action='store_true');args=a.parse_args(sys.argv[sys.argv.index('--')+1:]);stage=args.stage
+if args.output:D=Path(args.output).resolve();D.mkdir(parents=True,exist_ok=True)
 sources=[];notes=[];context=[]
 def open_blend(rel):
  sources.append(rel);bpy.ops.wm.open_mainfile(filepath=str(R/rel))
@@ -62,6 +63,10 @@ else:raise ValueError(stage)
 obs=[o for o in bpy.context.scene.objects if o.type=='MESH']
 for o in obs:o.hide_set(False);o.hide_render=False;o.hide_viewport=False
 lo,hi=bounds(obs);triangles=sum(sum(len(p.vertices)-2 for p in o.data.polygons) for o in obs)
+if args.canonical:
+ scale=.905/(hi.y-lo.y);tr=Matrix.Diagonal((scale,scale,scale,1))@Matrix.Translation(-(lo+hi)*.5)
+ for ob in obs:ob.matrix_world=tr@ob.matrix_world
+ notes.append('Canonical review: centered bounds, uniform .905m length; unchanged vertices/UV/normals.')
 scene=bpy.context.scene;scene.render.engine='BLENDER_WORKBENCH';scene.render.resolution_percentage=100
 scene.render.image_settings.file_format='PNG';scene.render.film_transparent=False
 if not scene.world:scene.world=bpy.data.worlds.new('ComparisonWorld')
@@ -75,6 +80,8 @@ if stage.startswith('gun'):
 else:
  scene.render.resolution_x=1100;scene.render.resolution_y=1100
  views=[('hero',Vector((0,0,3)),Vector((1,-1,.55)),8.0),('side',Vector((0,0,3)),Vector((1,0,.1)),8.0),('detail',Vector((0,-1,.65)),Vector((1,-2,.55)),4.2)]
+if args.canonical:
+ views=[('hero',Vector((0,0,0)),Vector((1.6,-1,.60)),1.12),('side',Vector((0,0,0)),Vector((2,0,.02)),1.12),('detail',Vector((0,0,-.06)),Vector((2,0,.15)),.46)]
 records=[]
 for name,center,direction,scale in views:
  cam.location=center+direction.normalized()*scale*3;cam.rotation_euler=(center-cam.location).to_track_quat('-Z','Y').to_euler();cam.data.ortho_scale=scale

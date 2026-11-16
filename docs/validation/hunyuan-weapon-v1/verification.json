@@ -1,0 +1,31 @@
+{
+  "native_checks": 67,
+  "native_failures": 0,
+  "native_screenshots": 53,
+  "uv_triangle_area_sum_not_occupancy": 0.691162869324188,
+  "uv_collapsed_triangles_epsilon_1e12": 0,
+  "uv_overlap_tested": false,
+  "original_files_unchanged": true,
+  "normal_toggle": [
+    {
+      "stage": "hy-pbr",
+      "pixels_mean_rgb_change_gt5": 0,
+      "mean_abs_channel_difference_0_255": 0.0
+    },
+    {
+      "stage": "tripo-low",
+      "pixels_mean_rgb_change_gt5": 64155,
+      "mean_abs_channel_difference_0_255": 1.2802482142857143
+    },
+    {
+      "stage": "ml06",
+      "pixels_mean_rgb_change_gt5": 124790,
+      "mean_abs_channel_difference_0_255": 3.2722336309523814
+    },
+    {
+      "stage": "ml07",
+      "pixels_mean_rgb_change_gt5": 83060,
+      "mean_abs_channel_difference_0_255": 1.8849226190476192
+    }
+  ]
+}

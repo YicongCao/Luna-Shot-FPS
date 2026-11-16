@@ -1,0 +1,88 @@
+{
+  "stage": "gun-ml07-low",
+  "renderer": "Blender Workbench offline; not game",
+  "geometry_only": true,
+  "baked_normals_enabled": false,
+  "sources": [
+    "art_source/weapons/lc01/ls01-refine-v1/02-geometry/paired.blend",
+    "art_source/weapons/lc01/ls01-refine-v1/00-baseline/lc01/lc01.glb"
+  ],
+  "notes": [
+    "ML07 rebuilt body low plus identical retained LOW meshes for assembly context in both columns. Excludes industrial kit and export-added front screw copies; source-pair comparison, not final runtime assembly.",
+    "Canonical review: centered bounds, uniform .905m length; unchanged vertices/UV/normals."
+  ],
+  "retained_low_context": [
+    "T00_CoreGrip_low",
+    "T01_FrontShroud_low",
+    "T02_CoilAssembly_low",
+    "T06_Muzzle_low",
+    "T09_StockBrace_low",
+    "T10_ButtPad_low",
+    "T12_Foregrip_low",
+    "T13_CheekRest_low",
+    "T14_FrontBracket_low",
+    "T15_RailInset_low",
+    "T16_FrontLatch_low"
+  ],
+  "objects": 68,
+  "triangles_including_context": 20032,
+  "bounds": [
+    [
+      -0.05999999865889549,
+      -0.2401006817817688,
+      -0.1478981375694275
+    ],
+    [
+      0.05999999865889549,
+      0.6648993492126465,
+      0.2160000056028366
+    ]
+  ],
+  "views": [
+    {
+      "view": "hero",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "camera": [
+        2.715290069580078,
+        -1.6970561742782593,
+        1.0182336568832397
+      ],
+      "ortho_scale": 1.12,
+      "file": "gun-ml07-low-hero.png"
+    },
+    {
+      "view": "side",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "camera": [
+        3.359832286834717,
+        0.0,
+        0.03359832242131233
+      ],
+      "ortho_scale": 1.12,
+      "file": "gun-ml07-low-side.png"
+    },
+    {
+      "view": "detail",
+      "center": [
+        0.0,
+        0.0,
+        -0.05999999865889549
+      ],
+      "camera": [
+        1.3761351108551025,
+        0.0,
+        0.04321013018488884
+      ],
+      "ortho_scale": 0.46,
+      "file": "gun-ml07-low-detail.png"
+    }
+  ]
+}
