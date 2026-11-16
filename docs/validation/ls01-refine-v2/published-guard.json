@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "stage": "build",
+      "expected_rejection": true
+    },
+    {
+      "stage": "export",
+      "expected_rejection": true
+    },
+    {
+      "stage": "pack",
+      "expected_rejection": true
+    }
+  ],
+  "asset_and_source_hashes_unchanged": true
+}

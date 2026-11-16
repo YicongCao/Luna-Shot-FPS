@@ -33,7 +33,7 @@ func run() -> void:
 	player.position = world.vector(world.layout.targets[0].shoot_from)
 	await settle()
 	var weapon: Node3D=player.weapon
-	check("mesh_parts",weapon.meshes.size()==(15 if weapon.ls01 else 17),str(weapon.meshes.size()))
+	check("mesh_parts",weapon.meshes.size()==(13 if weapon.revision=="ml09" else (15 if weapon.ls01 else 17)),str(weapon.meshes.size()))
 	var tris := 0
 	for mesh: MeshInstance3D in weapon.meshes:
 		for surface in mesh.mesh.get_surface_count():
@@ -43,7 +43,7 @@ func run() -> void:
 	if weapon.ls01:
 		for atlas in ["body","kit","retained"]:
 			for path in ["BaseColor","NormalGL","ORM"]:
-				var resource="res://assets/weapons/lc01/ls01_v1/"+atlas+"/"+path+".png"
+				var resource=weapon.asset_root+atlas+"/"+path+".png"
 				check("texture_exists_"+atlas+"_"+path,ResourceLoader.exists(resource))
 				if ResourceLoader.exists(resource):
 					var tex: Texture2D=load(resource)
@@ -57,11 +57,11 @@ func run() -> void:
 	check("orm_channels",weapon.material.ao_texture_channel==0 and weapon.material.roughness_texture_channel==1 and weapon.material.metallic_texture_channel==2)
 	check("opaque_with_backface_culling", weapon.material.transparency == BaseMaterial3D.TRANSPARENCY_DISABLED and weapon.material.cull_mode == BaseMaterial3D.CULL_BACK)
 	check("weapon_bloom_enabled", world.lighting.bloom_enabled and world.lighting.weapon_bloom.visible and world.lighting.weapon_bloom.source==player.get_node("WeaponLayer/Container/Viewport"))
-	check("local_coil_spill", weapon.energy_lights.size() == 2 and weapon.energy_lights[0].visible)
+	check("local_coil_spill", weapon.energy_lights.size() == (4 if weapon.revision=="ml09" else 2) and weapon.energy_lights.all(func(l):return l.visible))
 	weapon.set_energy_enabled(false)
-	check("energy_switch_off", not weapon.material.emission_enabled and not weapon.energy_lights[0].visible)
+	check("energy_switch_off", not weapon.material.emission_enabled and weapon.energy_lights.all(func(l):return not l.visible))
 	weapon.set_energy_enabled(true)
-	check("energy_switch_on", weapon.material.emission_enabled and weapon.energy_lights[0].visible)
+	check("energy_switch_on", weapon.material.emission_enabled and weapon.energy_lights.all(func(l):return l.visible))
 	await capture("11-range-hip")
 	player.rotation=Vector3.ZERO;player.head.look_at(world.get_node("Target1").position+Vector3(0,1.5,0));player.aiming=true
 	await settle(60)

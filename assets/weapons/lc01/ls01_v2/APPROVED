@@ -1,0 +1,36 @@
+{
+  "revision": "ML09 LS01",
+  "default_enabled": true,
+  "user_acceptance": "pending",
+  "implementation_review": "pass within declared rebuilt scope",
+  "concept_equivalence": "open",
+  "open_concept_gaps": [
+    "\u4e5d\u4ef6\u4fdd\u7559\u90e8\u4ef6\uff08\u542b\u67aa\u53e3/\u63e1\u628a\uff09\u4ecd\u6709\u65e7\u751f\u6210\u8d44\u4ea7\u8f6f\u8fb9\uff0c\u672a\u7eb3\u5165\u672c\u8f6e\u91cd\u5efa\u3002",
+    "LS01\u5b57\u6807\u5b57\u91cd\u548c\u78e8\u635f\u827a\u672f\u5e03\u5c40\u4ecd\u53ef\u7ee7\u7eed\u9760\u8fd1\u6982\u5ff5\uff1b\u4e0d\u5ba3\u79f0\u6574\u67aa\u9010\u50cf\u7d20\u7b49\u540c\u3002"
+  ],
+  "assets": {
+    "weapon.glb": "96d1aef91700d9fa4a3fefb7bf923932b664bf9f0124667682c92e259685c5ea",
+    "bindings.json": "285a80992eb8b00842d586975b300c0789b2d42535f6f60c195d346d8d78ef68",
+    "screen.json": "d489658d86ca1a74bb90f7149cd93c16b373cab74fc4942689b6d5e5a4ce1e12",
+    "resolution.json": "e9e2c5d791816f6b829ce35c88fb27377530aa4d87c1e0071603018f4adf023a",
+    "body/BaseColor.png": "e1fc28badfad164e8afacd2366400487828b5d21f2abe8d8050e2f26fb6a5c34",
+    "body/Metallic.png": "3d7520e316efb66988cc8eb4be50ac495773893d6ab7e85e17fdfeb3f878f503",
+    "body/NormalGL.png": "2ae13ec875a93197c1b0c7ca86a1e696060864a9a64c35ecae0e48a2199ce358",
+    "body/AO.png": "7233044d09933958d567dffadfd6b3f37ec2d551c65c11c3eb91cc344f36d744",
+    "body/Roughness.png": "b057f6c833e52321830e66eaa3579069346ae5a6d13b58213257a494365cc0d3",
+    "body/ORM.png": "16cffe015bbd4d06b79c39ba254946b02e46a40df1b7b34552254ec1b5985afa",
+    "kit/BaseColor.png": "db8eb2893b7fb98283ec4ee7a76fe7f629ac579625688be36d5bc1a70db74679",
+    "kit/Metallic.png": "be3ae2118e376bd6dd04c5628ee95d7d2448c291b9de76f22e2222cd1822cbc4",
+    "kit/NormalGL.png": "5477eb70083ff5a1c878f1b01d9cea01c8730840e7c6fc08850c0bc7602f3b4d",
+    "kit/AO.png": "136fd361979153ed04375db3852336a64c2c54e598d4a3801f020787c512326a",
+    "kit/Roughness.png": "d81c3124df0fc9bec23bea9782cedf93c90257febae097074107f2bca0e0d3d8",
+    "kit/ORM.png": "8374a984b9b9ba5bafb6014aeea88ac90e913ab9ab8f7d3fe67088ebe4ea6de5",
+    "retained/BaseColor.png": "61536c3b3154362cbcb2864f5b3ef4ba38b3108461616caf6eb0a3557187f12b",
+    "retained/Metallic.png": "04b4f43b663c7e22d03416941b25f615c553d244bd5fb32c196bd89fd3026a08",
+    "retained/NormalGL.png": "03da6e652a16aae53f244abd20c25e00c2a414d4d874b13e6e3577c3f5279ee5",
+    "retained/AO.png": "3faebbba6c24d6ea8d135484dceeb69465dd73e810f6475a243b55892fa239ed",
+    "retained/Roughness.png": "d50a8a6e5972e82351845215fdbd4dad35e5601b641a257f9fb6d260f4746cf0",
+    "retained/ORM.png": "c4d507e55e8d27fc1cf231544e25182fe6cae1cd7386381d6983415f27955b6c",
+    "retained/Emission.png": "17b16585165563d9803775daccc457983909695ed24ba5265c10ab1b1210e15e"
+  }
+}

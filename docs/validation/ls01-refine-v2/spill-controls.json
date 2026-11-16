@@ -1,0 +1,14 @@
+[
+  {
+    "check": "two shadowed side lights",
+    "passed": true
+  },
+  {
+    "check": "energy off hides all four lights",
+    "passed": true
+  },
+  {
+    "check": "spill off hides all four lights",
+    "passed": true
+  }
+]

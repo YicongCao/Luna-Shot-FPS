@@ -1,0 +1,56 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M5
+
+RIFLE_QA PASS mesh_parts 13
+RIFLE_QA PASS triangle_budget 38797
+RIFLE_QA PASS cell_is_two_parts 
+RIFLE_QA PASS texture_exists_body_BaseColor 
+RIFLE_QA PASS texture_size_body_BaseColor 
+RIFLE_QA PASS mipmaps_body_BaseColor 
+RIFLE_QA PASS texture_exists_body_NormalGL 
+RIFLE_QA PASS texture_size_body_NormalGL 
+RIFLE_QA PASS mipmaps_body_NormalGL 
+RIFLE_QA PASS texture_exists_body_ORM 
+RIFLE_QA PASS texture_size_body_ORM 
+RIFLE_QA PASS mipmaps_body_ORM 
+RIFLE_QA PASS texture_exists_kit_BaseColor 
+RIFLE_QA PASS texture_size_kit_BaseColor 
+RIFLE_QA PASS mipmaps_kit_BaseColor 
+RIFLE_QA PASS texture_exists_kit_NormalGL 
+RIFLE_QA PASS texture_size_kit_NormalGL 
+RIFLE_QA PASS mipmaps_kit_NormalGL 
+RIFLE_QA PASS texture_exists_kit_ORM 
+RIFLE_QA PASS texture_size_kit_ORM 
+RIFLE_QA PASS mipmaps_kit_ORM 
+RIFLE_QA PASS texture_exists_retained_BaseColor 
+RIFLE_QA PASS texture_size_retained_BaseColor 
+RIFLE_QA PASS mipmaps_retained_BaseColor 
+RIFLE_QA PASS texture_exists_retained_NormalGL 
+RIFLE_QA PASS texture_size_retained_NormalGL 
+RIFLE_QA PASS mipmaps_retained_NormalGL 
+RIFLE_QA PASS texture_exists_retained_ORM 
+RIFLE_QA PASS texture_size_retained_ORM 
+RIFLE_QA PASS mipmaps_retained_ORM 
+RIFLE_QA PASS real_bake_loaded 
+RIFLE_QA PASS orm_channels 
+RIFLE_QA PASS opaque_with_backface_culling 
+RIFLE_QA PASS weapon_bloom_enabled 
+RIFLE_QA PASS local_coil_spill 
+RIFLE_QA PASS energy_switch_off 
+RIFLE_QA PASS energy_switch_on 
+RIFLE_QA PASS capture_11-range-hip 
+RIFLE_QA PASS red_dot_center error_px=0.0000
+RIFLE_QA PASS hud_cross_hidden 
+RIFLE_QA PASS capture_12-range-ads 
+RIFLE_QA PASS red_dot_rendered 
+RIFLE_QA PASS capture_13-range-dot-unlit 
+RIFLE_QA PASS red_dot_independent_of_lights 
+RIFLE_QA PASS ads_target_hit 
+RIFLE_QA PASS capture_16-range-dot-clear-background 
+RIFLE_QA PASS cell_animates 
+RIFLE_QA PASS capture_14-range-reload 
+RIFLE_QA PASS cell_returns 
+RIFLE_QA PASS ultrawide_dot_center 0.00003051757812
+RIFLE_QA PASS capture_15-range-ultrawide-ads 
+RIFLE_QA PASS ultrawide_dot_rendered 
+RIFLE_QA_COMPLETE failures=0

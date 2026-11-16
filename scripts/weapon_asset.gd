@@ -14,11 +14,17 @@ var asset_root := "res://assets/weapons/lc01/ls01_v1/"
 var atlas_materials: Dictionary = {}
 func _ready() -> void:
 	ls01 = OS.get_environment("LS01_BASELINE") != "1" and (OS.get_environment("LS01_CANDIDATE") == "1" or FileAccess.file_exists("res://assets/weapons/lc01/ls01_v1/APPROVED"))
+	var explicit_revision := false
 	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--weapon-revision="):
+			explicit_revision=true
 			revision=argument.trim_prefix("--weapon-revision=")
 			assert(revision in ["ml06","ml07","ml09"],"Unknown weapon revision")
 			ls01=revision!="ml06"
+	if not explicit_revision:
+		if OS.get_environment("LS01_BASELINE")=="1":revision="ml06"
+		elif OS.get_environment("LS01_CANDIDATE")!="1" and FileAccess.file_exists("res://assets/weapons/lc01/ls01_v2/APPROVED"):
+			revision="ml09";ls01=true
 	if revision=="ml09":asset_root="res://assets/weapons/lc01/ls01_v2/"
 	if ls01:
 		setup_ls01()
@@ -115,3 +121,21 @@ func setup_ls01() -> void:
 	var dot_material:=ShaderMaterial.new();dot_material.shader=load("res://assets/weapons/lc01/red_dot.gdshader");$RedDot.material_override=dot_material
 	for side in [-1,1]:
 		var light:=OmniLight3D.new();light.name="CoilSpillLeft" if side<0 else "CoilSpillRight";light.position=Vector3(side*.047,.058,-.402);light.light_color=Color(.03,.8,1);light.light_energy=.045;light.omni_range=.13;light.omni_attenuation=1.7;add_child(light);energy_lights.append(light)
+
+	if revision=="ml09":
+		for side in [-1,1]:
+			var spot:=SpotLight3D.new()
+			spot.name="CoilSideWashLeft" if side<0 else "CoilSideWashRight"
+			spot.position=Vector3(side*.074,.060,-.402)
+			spot.light_color=Color(.025,.72,1.0)
+			spot.light_energy=.20
+			spot.spot_range=.43
+			spot.spot_angle=53.0
+			spot.spot_attenuation=1.15
+			spot.spot_angle_attenuation=1.0
+			spot.shadow_enabled=true
+			spot.shadow_bias=.10
+			spot.shadow_normal_bias=1.0
+			add_child(spot)
+			spot.look_at(to_global(Vector3(side*.048,.025,-.17)),Vector3.UP)
+			energy_lights.append(spot)

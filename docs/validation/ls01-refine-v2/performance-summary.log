@@ -1,0 +1,7 @@
+{
+  "before_p95_median_ms": 35.595,
+  "after_p95_median_ms": 27.8885,
+  "increase_fraction": -0.21650512712459613,
+  "within_10_percent": true,
+  "order": "ABBA ABBA: ML07 vs ML09; 150 warmup + 600 frames; 1600x1000"
+}

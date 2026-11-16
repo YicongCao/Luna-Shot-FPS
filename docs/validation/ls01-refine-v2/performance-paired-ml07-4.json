@@ -1,0 +1,14 @@
+{
+  "engine": "4.7.2-stable (official)",
+  "frames": 600,
+  "last_flare_sample_usec": 168,
+  "ls01": true,
+  "objects": 1552,
+  "p50_ms": 20.513,
+  "p95_ms": 28.622,
+  "primitives": 1049134,
+  "process_ms": 27.306,
+  "revision": "ml07",
+  "texture_memory": 855626888,
+  "viewport": "1600x1000"
+}

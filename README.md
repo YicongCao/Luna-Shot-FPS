@@ -55,7 +55,7 @@ ML01 枪械阶段实际使用 115 Tripo 积分（60 + 35 + 20），没有重抽�
 
 ## ML07 枪械返修
 
-当前 LS01 返修资源在 `assets/weapons/lc01/ls01_v1`，可编辑高低模、独立 cage 和材质源在 `art_source/weapons/lc01/ls01-refine-v1`。`APPROVED` 标记仅代表本轮技术与实施复查，不代表用户已验收。原 LC01/ML06 资源保留，双击 `launch-weapon-baseline.command` 可对照。
+保留的 ML07 LS01 返修资源在 `assets/weapons/lc01/ls01_v1`，可编辑高低模、独立 cage 和材质源在 `art_source/weapons/lc01/ls01-refine-v1`。`APPROVED` 标记仅代表本轮技术与实施复查，不代表用户已验收。原 LC01/ML06 资源保留，双击 `launch-weapon-baseline.command` 可对照。
 
 [新旧原生画面对照](docs/validation/ls01-refine-v1/review.html) · [检查报告与开放差距](docs/validation/ls01-refine-v1/REPORT.md) · [逐件规格](docs/art/ls01-refine-v1/PARTS.md) · [复现步骤](tools/ls01_refine/README.md) · [ML07 日志](docs/logs/ML07-枪械精确几何与分层材质返修.md)。
 
@@ -73,3 +73,13 @@ git lfs pull
 ```
 
 源文件、有效烘焙与验证证据已版本化；失败烘焙的重复二进制、缓存和临时产物留在本地。工作经验与提交约定见 [ML08](docs/logs/ML08-资产管线复盘与版本归档.md)。
+
+## ML09 结构还原
+
+当前默认使用 ML09；技术及本轮结构复查通过，用户验收待定。
+
+在ML07分层材质基础上，恢复ML06/概念的弹夹分段、枪托宽倒角及黑白斜接、八角瞄具和前后安装鳍片、下移端点的不规则六边形嵌入屏，以及能量环附近护罩支撑。增加两盏受遮挡的青色侧向补光。阶段证据和用户验收分开记录。
+
+[ML06/ML07/ML09 原生对照](docs/validation/ls01-refine-v2/review.html) · [验证报告](docs/validation/ls01-refine-v2/REPORT.md) · [逐件清单](docs/art/ls01-refine-v2/PARTS.md) · [ML09 日志](docs/logs/ML09-枪械结构还原与能量环侧向照明.md)。
+
+Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`或`ml09`。不传参数时采用已发布版本；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。

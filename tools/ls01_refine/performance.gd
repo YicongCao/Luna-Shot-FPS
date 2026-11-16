@@ -11,7 +11,7 @@ func run() -> void:
 		await process_frame
 		var now=Time.get_ticks_usec();times.append((now-last)/1000.0);last=now
 	times.sort()
-	var result={"p50_ms":times[300],"p95_ms":times[570],"frames":600,"ls01":w.player.weapon.ls01,"last_flare_sample_usec":w.lighting.flare_pass.sample_cost_usec,"process_ms":Performance.get_monitor(Performance.TIME_PROCESS)*1000,"viewport":"1600x1000","engine":Engine.get_version_info().string,"objects":RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TOTAL_OBJECTS_IN_FRAME),"primitives":RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TOTAL_PRIMITIVES_IN_FRAME),"texture_memory":RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TEXTURE_MEM_USED)}
+	var result={"p50_ms":times[300],"p95_ms":times[570],"frames":600,"ls01":w.player.weapon.ls01,"revision":w.player.weapon.revision,"last_flare_sample_usec":w.lighting.flare_pass.sample_cost_usec,"process_ms":Performance.get_monitor(Performance.TIME_PROCESS)*1000,"viewport":"1600x1000","engine":Engine.get_version_info().string,"objects":RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TOTAL_OBJECTS_IN_FRAME),"primitives":RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TOTAL_PRIMITIVES_IN_FRAME),"texture_memory":RenderingServer.get_rendering_info(RenderingServer.RENDERING_INFO_TEXTURE_MEM_USED)}
 	var phase=OS.get_environment("LS01_PHASE")
 	var f=FileAccess.open((OS.get_environment("LS01_REPORT_DIR")+"/" if OS.has_environment("LS01_REPORT_DIR") else "res://docs/validation/ls01-refine-v1/")+"performance-"+phase+".json",FileAccess.WRITE);f.store_string(JSON.stringify(result,"  "))
 	quit()

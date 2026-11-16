@@ -1,0 +1,15 @@
+{
+  "label3d_font_material_not_counted": true,
+  "materials": [
+    "LS01_body",
+    "ShaderMaterial",
+    "LS01_kit",
+    "LS01_retained",
+    "StandardMaterial3D",
+    "StandardMaterial3D",
+    "StandardMaterial3D"
+  ],
+  "mesh_instances": 38,
+  "triangles_including_runtime_meshes": 39748,
+  "unique_materials": 7
+}

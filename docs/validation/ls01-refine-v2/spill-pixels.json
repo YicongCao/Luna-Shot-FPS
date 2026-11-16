@@ -1,0 +1,116 @@
+{
+  "sides": {
+    "-1": {
+      "regions": {
+        "copper_well": {
+          "mean_rgb_delta": [
+            0.0,
+            0.18096832856191225,
+            0.2279911413601253
+          ],
+          "pixels_gaining_cyan": 1089,
+          "probe_center": [
+            912,
+            423
+          ]
+        },
+        "magazine_rim": {
+          "mean_rgb_delta": [
+            0.00022686760654675077,
+            0.17160193737733925,
+            0.283980626226616
+          ],
+          "pixels_gaining_cyan": 1089,
+          "probe_center": [
+            737,
+            548
+          ]
+        },
+        "receiver": {
+          "mean_rgb_delta": [
+            3.6010731197897e-05,
+            0.12755361097607204,
+            0.23161382091863447
+          ],
+          "pixels_gaining_cyan": 1045,
+          "probe_center": [
+            776,
+            373
+          ]
+        },
+        "shroud": {
+          "mean_rgb_delta": [
+            0.0008822629143484738,
+            0.11582131475179694,
+            0.18179297430634403
+          ],
+          "pixels_gaining_cyan": 920,
+          "probe_center": [
+            482,
+            486
+          ]
+        }
+      },
+      "cyan_gain_pixels": 190158
+    },
+    "1": {
+      "regions": {
+        "copper_well": {
+          "mean_rgb_delta": [
+            0.0,
+            0.08023551018203456,
+            0.11639748645096284
+          ],
+          "pixels_gaining_cyan": 623,
+          "probe_center": [
+            528,
+            423
+          ]
+        },
+        "magazine_rim": {
+          "mean_rgb_delta": [
+            0.0,
+            0.1172221321953944,
+            0.1749905471830621
+          ],
+          "pixels_gaining_cyan": 801,
+          "probe_center": [
+            703,
+            548
+          ]
+        },
+        "receiver": {
+          "mean_rgb_delta": [
+            0.0,
+            0.245114244044725,
+            0.33850807540647365
+          ],
+          "pixels_gaining_cyan": 1089,
+          "probe_center": [
+            664,
+            373
+          ]
+        },
+        "shroud": {
+          "mean_rgb_delta": [
+            0.0018761590954104264,
+            0.23118529321737918,
+            0.3245971299447236
+          ],
+          "pixels_gaining_cyan": 886,
+          "probe_center": [
+            958,
+            486
+          ]
+        }
+      },
+      "cyan_gain_pixels": 190034
+    }
+  },
+  "occlusion": {
+    "pixels_darker_with_shadow": 123497,
+    "mean_gain_without_shadow": 0.004354350490196078
+  },
+  "passed": true,
+  "method": "fixed camera/exposure; two off/on images; 33x33 projected receiver/copper/rim/shroud probes; actual shadows-only blocker"
+}

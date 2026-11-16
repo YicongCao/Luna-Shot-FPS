@@ -1,0 +1,88 @@
+{
+  "issues": [
+    {
+      "id": "S01",
+      "implementation_review": "pass",
+      "evidence": [
+        "ml09-pbr-screen.png",
+        "ml09-pbr-screen-side.png"
+      ],
+      "judgment": "左右极点下移；玻璃、框和底座为三层相配轮廓，四角十字螺钉可见。"
+    },
+    {
+      "id": "S02",
+      "implementation_review": "pass",
+      "evidence": [
+        "ml09-clay-stock.png",
+        "ml09-clay-stock-reverse.png"
+      ],
+      "judgment": "大倒角保留独立面，不用磨损贴图代替几何。"
+    },
+    {
+      "id": "S03",
+      "implementation_review": "pass",
+      "evidence": [
+        "ml09-pbr-joint.png"
+      ],
+      "judgment": "白色舌片与黑色台阶插块形成斜面错层。"
+    },
+    {
+      "id": "S04",
+      "implementation_review": "pass",
+      "evidence": [
+        "ml09-pbr-optic.png",
+        "ml09-pbr-optic-front.png",
+        "ml09-pbr-optic-side.png"
+      ],
+      "judgment": "外框和内孔均为八角，上窄下宽；前后侧切可辨，红点轴未移动。"
+    },
+    {
+      "id": "S05",
+      "implementation_review": "pass",
+      "evidence": [
+        "ml09-pbr-optic-side.png",
+        "ads.png"
+      ],
+      "judgment": "前后各三片，与脚座连接；不遮住红点。"
+    },
+    {
+      "id": "S06",
+      "implementation_review": "pass",
+      "evidence": [
+        "ml09-pbr-magazine.png",
+        "ml09-pbr-magazine-reverse.png",
+        "ml09-pbr-magazine-rig-1.png",
+        "reverse-channel-8.png",
+        "rifle/14-range-reload.png"
+      ],
+      "judgment": "分段顶盖、槽、斜槽、卡扣、端盖、底阶恢复；新旧同镜头对照。三角化法线修正后大平面斜向伪影消除。"
+    },
+    {
+      "id": "S07",
+      "implementation_review": "pass",
+      "evidence": [
+        "ml09-pbr-coil.png",
+        "ml09-pbr-coil-reverse.png"
+      ],
+      "judgment": "开窗护罩、上下支撑、内条、六肋和末端套筒形成实际连接；线圈本体保持。"
+    },
+    {
+      "id": "S08",
+      "implementation_review": "pass",
+      "evidence": [
+        "spill-1-on.png",
+        "spill-1-off.png",
+        "spill--1-on.png",
+        "spill--1-off.png",
+        "spill-blocker-shadow-on.png",
+        "spill-blocker-shadow-off.png"
+      ],
+      "judgment": "关闭Bloom同曝光对照可见机匣前端、铜管槽、弹夹上沿及护罩内支撑反光；阴影偏移修正后无先前条纹，遮挡像素检查通过。"
+    }
+  ],
+  "user_acceptance": "pending",
+  "open_concept_gaps": [
+    "九件保留部件（含枪口/握把）仍有旧生成资产软边，未纳入本轮重建。",
+    "LS01字标字重和磨损艺术布局仍可继续靠近概念；不宣称整枪逐像素等同。"
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "features": [
+    {
+      "id": "S01",
+      "name": "不规则六边屏及同形嵌入底座",
+      "status": "pass",
+      "evidence": [
+        "ml09-pbr-screen.png",
+        "ml09-pbr-screen-side.png"
+      ],
+      "judgment": "左右极点下移；玻璃、框和底座为三层相配轮廓，四角十字螺钉可见。"
+    },
+    {
+      "id": "S02",
+      "name": "枪托宽倒角与双棱",
+      "status": "pass",
+      "evidence": [
+        "ml09-clay-stock.png",
+        "ml09-clay-stock-reverse.png"
+      ],
+      "judgment": "大倒角保留独立面，不用磨损贴图代替几何。"
+    },
+    {
+      "id": "S03",
+      "name": "黑白斜接结构",
+      "status": "pass",
+      "evidence": [
+        "ml09-pbr-joint.png"
+      ],
+      "judgment": "白色舌片与黑色台阶插块形成斜面错层。"
+    },
+    {
+      "id": "S04",
+      "name": "八角瞄具与浅侧切",
+      "status": "pass",
+      "evidence": [
+        "ml09-pbr-optic.png",
+        "ml09-pbr-optic-front.png",
+        "ml09-pbr-optic-side.png"
+      ],
+      "judgment": "外框和内孔均为八角，上窄下宽；前后侧切可辨，红点轴未移动。"
+    },
+    {
+      "id": "S05",
+      "name": "前后鳍片安装结构",
+      "status": "pass",
+      "evidence": [
+        "ml09-pbr-optic-side.png",
+        "ads.png"
+      ],
+      "judgment": "前后各三片，与脚座连接；不遮住红点。"
+    },
+    {
+      "id": "S06",
+      "name": "ML06基础上的弹夹结构",
+      "status": "pass",
+      "evidence": [
+        "ml09-pbr-magazine.png",
+        "ml09-pbr-magazine-reverse.png",
+        "ml09-pbr-magazine-rig-1.png",
+        "reverse-channel-8.png",
+        "rifle/14-range-reload.png"
+      ],
+      "judgment": "分段顶盖、槽、斜槽、卡扣、端盖、底阶恢复；新旧同镜头对照。三角化法线修正后大平面斜向伪影消除。"
+    },
+    {
+      "id": "S07",
+      "name": "能量环附近护罩与支撑",
+      "status": "pass",
+      "evidence": [
+        "ml09-pbr-coil.png",
+        "ml09-pbr-coil-reverse.png"
+      ],
+      "judgment": "开窗护罩、上下支撑、内条、六肋和末端套筒形成实际连接；线圈本体保持。"
+    },
+    {
+      "id": "S08",
+      "name": "侧向照明与遮挡",
+      "status": "pass",
+      "evidence": [
+        "spill-1-on.png",
+        "spill-1-off.png",
+        "spill--1-on.png",
+        "spill--1-off.png",
+        "spill-blocker-shadow-on.png",
+        "spill-blocker-shadow-off.png"
+      ],
+      "judgment": "关闭Bloom同曝光对照可见机匣前端、铜管槽、弹夹上沿及护罩内支撑反光；阴影偏移修正后无先前条纹，遮挡像素检查通过。"
+    }
+  ],
+  "implementation_structure_review": "pass",
+  "user_acceptance": "pending",
+  "reviewed_hashes": {
+    "assets/weapons/lc01/ls01_v2/weapon.glb": "96d1aef91700d9fa4a3fefb7bf923932b664bf9f0124667682c92e259685c5ea",
+    "assets/weapons/lc01/ls01_v2/bindings.json": "285a80992eb8b00842d586975b300c0789b2d42535f6f60c195d346d8d78ef68",
+    "assets/weapons/lc01/ls01_v2/screen.json": "d489658d86ca1a74bb90f7149cd93c16b373cab74fc4942689b6d5e5a4ce1e12",
+    "assets/weapons/lc01/ls01_v2/resolution.json": "e9e2c5d791816f6b829ce35c88fb27377530aa4d87c1e0071603018f4adf023a",
+    "assets/weapons/lc01/ls01_v2/weapon.glb.import": "5062e37e249a87191e16036845fc717e3e377d400bfd3ea4a8619e7f37c5eb43",
+    "assets/weapons/lc01/ls01_v2/body/Metallic.png.import": "32b8144a55f93fdf30395448ac039a11a622f4a2185de4b710fa562a17d2afc8",
+    "assets/weapons/lc01/ls01_v2/body/BaseColor.png": "e1fc28badfad164e8afacd2366400487828b5d21f2abe8d8050e2f26fb6a5c34",
+    "assets/weapons/lc01/ls01_v2/body/Metallic.png": "3d7520e316efb66988cc8eb4be50ac495773893d6ab7e85e17fdfeb3f878f503",
+    "assets/weapons/lc01/ls01_v2/body/AO.png.import": "0c0f74b5ff88875a7db6f77391a2b80bdf381af5179ed45076ecaa8765f99595",
+    "assets/weapons/lc01/ls01_v2/body/Roughness.png.import": "f5da4f40614597ffd76f5119d450264883c9c33b4939df6db81aae6f0515a2dd",
+    "assets/weapons/lc01/ls01_v2/body/ORM.png.import": "5cee9ba980e5516eeef6a5fab1f1cd106abc7f37ab945b1c790b232432230782",
+    "assets/weapons/lc01/ls01_v2/body/NormalGL.png": "2ae13ec875a93197c1b0c7ca86a1e696060864a9a64c35ecae0e48a2199ce358",
+    "assets/weapons/lc01/ls01_v2/body/AO.png": "7233044d09933958d567dffadfd6b3f37ec2d551c65c11c3eb91cc344f36d744",
+    "assets/weapons/lc01/ls01_v2/body/Roughness.png": "b057f6c833e52321830e66eaa3579069346ae5a6d13b58213257a494365cc0d3",
+    "assets/weapons/lc01/ls01_v2/body/NormalGL.png.import": "0410f357b9f5b400188bbaf37802d134d8efdd6c208b44522db7a1fa70554a8f",
+    "assets/weapons/lc01/ls01_v2/body/ORM.png": "16cffe015bbd4d06b79c39ba254946b02e46a40df1b7b34552254ec1b5985afa",
+    "assets/weapons/lc01/ls01_v2/body/BaseColor.png.import": "167f6db7aeda11629b5ee2c9ec92dabddbf93509e6c9f87ff589b9dcf76ae0d9",
+    "assets/weapons/lc01/ls01_v2/kit/Metallic.png.import": "f45410297fa6da700bd48f839188dd979e73e9d1d7f7e4f17613a2429ef58cc5",
+    "assets/weapons/lc01/ls01_v2/kit/BaseColor.png": "db8eb2893b7fb98283ec4ee7a76fe7f629ac579625688be36d5bc1a70db74679",
+    "assets/weapons/lc01/ls01_v2/kit/Metallic.png": "be3ae2118e376bd6dd04c5628ee95d7d2448c291b9de76f22e2222cd1822cbc4",
+    "assets/weapons/lc01/ls01_v2/kit/AO.png.import": "0b6c934b03add15572fed43eeb91259e7ddcb539da962328ec33219871819dc9",
+    "assets/weapons/lc01/ls01_v2/kit/Roughness.png.import": "e61da8c6403277f7a05f75f69c23af358e2b1f33e92aef86c0283a7d51ab1438",
+    "assets/weapons/lc01/ls01_v2/kit/ORM.png.import": "3f62f6a6fbfbd1dea88596ad7ced6d98bba085eb27075cdaf32ac197ed0812a4",
+    "assets/weapons/lc01/ls01_v2/kit/NormalGL.png": "5477eb70083ff5a1c878f1b01d9cea01c8730840e7c6fc08850c0bc7602f3b4d",
+    "assets/weapons/lc01/ls01_v2/kit/AO.png": "136fd361979153ed04375db3852336a64c2c54e598d4a3801f020787c512326a",
+    "assets/weapons/lc01/ls01_v2/kit/Roughness.png": "d81c3124df0fc9bec23bea9782cedf93c90257febae097074107f2bca0e0d3d8",
+    "assets/weapons/lc01/ls01_v2/kit/NormalGL.png.import": "6c4364183415079b9b5dcb93cad5fbee4053509ea3338a1796160323ad955016",
+    "assets/weapons/lc01/ls01_v2/kit/ORM.png": "8374a984b9b9ba5bafb6014aeea88ac90e913ab9ab8f7d3fe67088ebe4ea6de5",
+    "assets/weapons/lc01/ls01_v2/kit/BaseColor.png.import": "3a6229ac04e7456bfca0072cf332eab7f189a11f8c9b4e3922e420512b2a7361",
+    "assets/weapons/lc01/ls01_v2/retained/Metallic.png.import": "60f8531cbdcc461d42202178c5e0d8e3849c036f6fd9a51443d433f0281c54fb",
+    "assets/weapons/lc01/ls01_v2/retained/Emission.png.import": "844409d8c044cd2990db4509dfd81aff8297c98d9692e2bd9836418fcdab5cd9",
+    "assets/weapons/lc01/ls01_v2/retained/BaseColor.png": "61536c3b3154362cbcb2864f5b3ef4ba38b3108461616caf6eb0a3557187f12b",
+    "assets/weapons/lc01/ls01_v2/retained/Metallic.png": "04b4f43b663c7e22d03416941b25f615c553d244bd5fb32c196bd89fd3026a08",
+    "assets/weapons/lc01/ls01_v2/retained/AO.png.import": "da6d47b9f53371d96b76e44a73a5af0dbd13643105352985b7e0caecdfe9d273",
+    "assets/weapons/lc01/ls01_v2/retained/Roughness.png.import": "8bcd8b53b468b3cb2ae6757bf4da568a52e693c5844ed590d0cb973dfcd4c427",
+    "assets/weapons/lc01/ls01_v2/retained/ORM.png.import": "d011556341fefe52f97cb87275cddacdce145862b4483d5a9afbe6de1ca0a703",
+    "assets/weapons/lc01/ls01_v2/retained/NormalGL.png": "03da6e652a16aae53f244abd20c25e00c2a414d4d874b13e6e3577c3f5279ee5",
+    "assets/weapons/lc01/ls01_v2/retained/AO.png": "3faebbba6c24d6ea8d135484dceeb69465dd73e810f6475a243b55892fa239ed",
+    "assets/weapons/lc01/ls01_v2/retained/Roughness.png": "d50a8a6e5972e82351845215fdbd4dad35e5601b641a257f9fb6d260f4746cf0",
+    "assets/weapons/lc01/ls01_v2/retained/NormalGL.png.import": "37445bbe8770aa58ccebe928dd2f839a177104ebdfcc94e2066f60708a804212",
+    "assets/weapons/lc01/ls01_v2/retained/ORM.png": "c4d507e55e8d27fc1cf231544e25182fe6cae1cd7386381d6983415f27955b6c",
+    "assets/weapons/lc01/ls01_v2/retained/Emission.png": "17b16585165563d9803775daccc457983909695ed24ba5265c10ab1b1210e15e",
+    "assets/weapons/lc01/ls01_v2/retained/BaseColor.png.import": "bd5c11d8ee89db64b4fbafb88100c508417ab7fed29a7b84eb00a151ab6a43e1",
+    "scripts/weapon_asset.gd": "11661f6ebbfa5155da781f8dd2115144c399c3cfccfe52ddf7df73dcb18699e4",
+    "scripts/ls01_field_kit.gd": "fad8c086b5a7c25c9820f01d4a5f2142c69b5a831593ce042a8422cead8340ef",
+    "scripts/ls01_materials.gd": "5759f0e7a765827ba2f553da9aae2cd9f31a836655f7ad7aded41c336d43f3a6",
+    "art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend": "49cb299b957e336aeebebf7296a0a7a780b72acfdf106ccbaad2b0b4e39d2e11"
+  }
+}

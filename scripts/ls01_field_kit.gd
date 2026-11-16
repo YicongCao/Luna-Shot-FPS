@@ -26,7 +26,7 @@ func _ready() -> void:
 	active_material=mat(Color(.01,.7,.85));active_material.emission_enabled=true;active_material.emission=Color(.01,.8,1);active_material.emission_energy_multiplier=1.6
 	off_material=mat(Color(.014,.045,.052))
 	for i in 20:
-		var x: float=-.037+i*.0025+floori(i/4.0)*.0008
+		var x: float=float(mount.get("cells_origin",[-.037,0,.0041])[0])+i*.0025+floori(i/4.0)*.0008
 		cells.append(box(panel,"AmmoCell%02d"%i,Vector3(x,float(mount.get("cells_origin",[0,0,.0041])[1]),float(mount.get("cells_origin",[0,0,.0041])[2])),Vector3(.0018,.010,.00010),off_material))
 	readout=Label3D.new();readout.name="AmmoDigits";readout.font_size=48;readout.pixel_size=.000085;var rp=mount.get("readout_position",[.030,0,.0042]);readout.position=Vector3(rp[0],rp[1],rp[2]);readout.outline_size=0;readout.modulate=Color(.02,.85,1);panel.add_child(readout)
 	# Analytic planar markings, independent of generated UV phases.

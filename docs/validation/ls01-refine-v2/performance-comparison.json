@@ -1,0 +1,123 @@
+{
+  "ml07": [
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 209,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 11.509,
+      "p95_ms": 16.722,
+      "primitives": 1049134,
+      "process_ms": 19.875,
+      "revision": "ml07",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 238,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 27.436,
+      "p95_ms": 42.568,
+      "primitives": 1049134,
+      "process_ms": 34.886,
+      "revision": "ml07",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 344,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 29.529,
+      "p95_ms": 47.102,
+      "primitives": 1049134,
+      "process_ms": 55.61,
+      "revision": "ml07",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 168,
+      "ls01": true,
+      "objects": 1552,
+      "p50_ms": 20.513,
+      "p95_ms": 28.622,
+      "primitives": 1049134,
+      "process_ms": 27.306,
+      "revision": "ml07",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    }
+  ],
+  "ml09": [
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 187,
+      "ls01": true,
+      "objects": 1550,
+      "p50_ms": 12.407,
+      "p95_ms": 19.266,
+      "primitives": 1039967,
+      "process_ms": 20.372,
+      "revision": "ml09",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 178,
+      "ls01": true,
+      "objects": 1550,
+      "p50_ms": 18.017,
+      "p95_ms": 26.465,
+      "primitives": 1039967,
+      "process_ms": 24.644,
+      "revision": "ml09",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 164,
+      "ls01": true,
+      "objects": 1550,
+      "p50_ms": 23.215,
+      "p95_ms": 31.947,
+      "primitives": 1039967,
+      "process_ms": 30.704,
+      "revision": "ml09",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    },
+    {
+      "engine": "4.7.2-stable (official)",
+      "frames": 600,
+      "last_flare_sample_usec": 198,
+      "ls01": true,
+      "objects": 1550,
+      "p50_ms": 21.627,
+      "p95_ms": 29.312,
+      "primitives": 1039967,
+      "process_ms": 28.138,
+      "revision": "ml09",
+      "texture_memory": 855626888,
+      "viewport": "1600x1000"
+    }
+  ],
+  "before_p95_median_ms": 35.595,
+  "after_p95_median_ms": 27.8885,
+  "increase_fraction": -0.21650512712459613,
+  "within_10_percent": true,
+  "order": "ABBA ABBA: ML07 vs ML09; 150 warmup + 600 frames; 1600x1000"
+}
