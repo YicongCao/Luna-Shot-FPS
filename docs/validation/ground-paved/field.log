@@ -1,0 +1,29 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M5
+
+GROUND_FIELD candidate_loaded true
+GROUND_FIELD paving_BaseColor_2k_compressed_mips true
+GROUND_FIELD paving_ORM_2k_compressed_mips true
+GROUND_FIELD paving_NormalGL_2k_compressed_mips true
+GROUND_FIELD regolith_BaseColor_2k_compressed_mips true
+GROUND_FIELD regolith_ORM_2k_compressed_mips true
+GROUND_FIELD regolith_NormalGL_2k_compressed_mips true
+GROUND_FIELD metal_BaseColor_2k_compressed_mips true
+GROUND_FIELD metal_ORM_2k_compressed_mips true
+GROUND_FIELD metal_NormalGL_2k_compressed_mips true
+GROUND_FIELD 40_seats_8_shared_covers true
+GROUND_FIELD no_new_colliders true
+GROUND_FIELD default_is_full_paving true
+GROUND_FIELD routes_keep_paving true
+GROUND_FIELD mask_is_deterministic true
+GROUND_FIELD capture_before-spawn true
+GROUND_FIELD capture_before-overview true
+GROUND_FIELD capture_before-road true
+GROUND_FIELD capture_before-equipment true
+GROUND_FIELD capture_before-underbridge true
+GROUND_FIELD capture_after-spawn true
+GROUND_FIELD capture_after-overview true
+GROUND_FIELD capture_after-road true
+GROUND_FIELD capture_after-equipment true
+GROUND_FIELD capture_after-underbridge true
+GROUND_FIELD_COMPLETE 0

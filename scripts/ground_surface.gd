@@ -26,7 +26,10 @@ func _ready() -> void:
 		for c in [["color","BaseColor"],["orm","ORM"],["normal","NormalGL"]]:
 			surface.set_shader_parameter(pair[0]+"_"+c[0],load(DIR+pair[1]+"/"+c[1]+".png"))
 	var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://docs/design/ground-sample.json" if sample else "res://docs/design/energy-layout.json"))
-	surface.set_shader_parameter("soil_mask",load(DIR+"sample_mask.png") if sample else ImageTexture.create_from_image(make_field_mask(layout)))
+	# User selected full paving. Keep the historical sample and regolith PBR/source
+	# assets: future impact damage may expose regolith beneath broken paving.
+	# That damage/decal/deformation behaviour is NOT implemented here.
+	surface.set_shader_parameter("soil_mask",load(DIR+"sample_mask.png") if sample else ImageTexture.create_from_image(make_paved_mask()))
 	surface.set_shader_parameter("area_origin",Vector2(-4,-4) if sample else Vector2(-32,-33))
 	surface.set_shader_parameter("area_size",Vector2(8,8) if sample else Vector2(64,66))
 	var metal:=StandardMaterial3D.new();metal.albedo_texture=load(DIR+"metal/BaseColor.png");metal.metallic=1;metal.metallic_texture=load(DIR+"metal/ORM.png");metal.metallic_texture_channel=BaseMaterial3D.TEXTURE_CHANNEL_BLUE
@@ -99,6 +102,12 @@ func flush_batches() -> void:
 		for i in batch.poses.size():multi.set_instance_transform(i,batch.poses[i])
 		var node:=MultiMeshInstance3D.new();node.name=id.validate_node_name();node.multimesh=multi;node.material_override=batch.material;node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;add_child(node)
 
+static func make_paved_mask() -> Image:
+	var mask:=Image.create(4,4,false,Image.FORMAT_R8)
+	mask.fill(Color.BLACK)
+	return mask
+
+# Retained for historical mixed-ground comparisons, not impact-damage logic.
 static func paved_rectangles(layout: Dictionary) -> Array[Rect2]:
 	var rects: Array[Rect2]=[Rect2(-4.3,-33,8.6,66),Rect2(-32,-4.3,64,8.6),Rect2(-4.3,24.7,8.6,8.3)]
 	for name in layout.routes:

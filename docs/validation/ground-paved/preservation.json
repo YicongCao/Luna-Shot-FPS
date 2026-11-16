@@ -1,0 +1,38 @@
+{
+  "regolith_preserved": [
+    {
+      "path": "assets/environment/ground_v1/regolith/BaseColor.png",
+      "sha256": "457ef22ed5ff72e5635363d4e56cdb29c5454d1bd154e6f2df8e9b2ae323dd34",
+      "matches_previous_commit": true
+    },
+    {
+      "path": "assets/environment/ground_v1/regolith/NormalGL.png",
+      "sha256": "3773c189bff016a984e81dd45bd8f771cc0ae069b9261dcd2e05dac99fe8aeed",
+      "matches_previous_commit": true
+    },
+    {
+      "path": "assets/environment/ground_v1/regolith/ORM.png",
+      "sha256": "8f6888142a566576a8f937960d73a07512b298a5977066b6e511e638aefd91cb",
+      "matches_previous_commit": true
+    },
+    {
+      "path": "art_source/environment/ground-v1/regolith-height16.png",
+      "sha256": "f39ba11950bad03757531b4b8ec584b01a0712fcdf876752cb30ba52b1d7825f",
+      "matches_previous_commit": true
+    }
+  ],
+  "protected_paths_unchanged": [
+    "assets/weapons",
+    "assets/environment/A",
+    "assets/environment/B1",
+    "assets/environment/B2",
+    "assets/environment/C",
+    "assets/environment/D",
+    "assets/environment/E",
+    "docs/design/energy-layout.json",
+    "scripts/player.gd",
+    "scripts/pulsed_arc.gd",
+    "scenes/training.tscn"
+  ],
+  "impact_damage_implemented": false
+}

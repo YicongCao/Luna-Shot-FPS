@@ -7,3 +7,5 @@
 复现：`/Applications/Godot.app/Contents/MacOS/Godot --path . --script tools/ground_surface/compare_coverage.gd`。不可设置GROUND_BASELINE=1。对照页review.html可切换材质与机位。
 
 视觉观察：全铺装更整齐，格线强化设备的尺度与布置；全月壤少了格线，但当前灰黑颗粒的均匀分布偏像沥青。此演示没有增加真实地形、岩石或沙尘。用户尚未选择最终覆盖方案，默认保持ML16混合地面。
+
+后续决定：用户在查看本页对照后选择全铺装，现已进入默认关卡；混合图保留为历史参照，最新验证见../ground-paved。

@@ -1,0 +1,421 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+WARNING: UID duplicate detected between res://artifacts/ml15/regression-baseline/knockdown-targets/01-fallen.png and res://artifacts/b2-fans/knockdown-baseline/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml15/regression-baseline/knockdown-targets/02-restored.png and res://artifacts/b2-fans/knockdown-baseline/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/01-spawn.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/01-spawn.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/02-overview.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/02-overview.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/03-ads.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/03-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/04-reload.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/04-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/05-array.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/05-array.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/06-reset.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/06-reset.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/07-ultrawide.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/07-ultrawide.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/east_elevated-deck.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/east_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/underbridge_18.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/underbridge_18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/underbridge_-18.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/underbridge_-18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/west_elevated-deck.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/map/west_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/targets/01-fallen.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/targets/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/targets/02-restored.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/targets/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/01-original.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/01-original.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/02-installed.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/02-installed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/03-close.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/03-close.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/04-rotated.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/04-rotated.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/b2-cooling-fans/05-player-view.png and res://artifacts/ml15/regression-baseline/b2-cooling-fans/05-player-view.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/knockdown-targets/01-fallen.png and res://artifacts/ml15/regression-baseline/knockdown-targets/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://artifacts/ml16/regression-baseline/knockdown-targets/02-restored.png and res://artifacts/ml15/regression-baseline/knockdown-targets/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/AO.png and res://assets/weapons/lc01/ls01_v1/retained/AO.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/BaseColor.png and res://assets/weapons/lc01/ls01_v1/retained/BaseColor.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/Emission.png and res://assets/weapons/lc01/ls01_v1/retained/Emission.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/Metallic.png and res://assets/weapons/lc01/ls01_v1/retained/Metallic.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/NormalGL.png and res://assets/weapons/lc01/ls01_v1/retained/NormalGL.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/ORM.png and res://assets/weapons/lc01/ls01_v1/retained/ORM.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/Roughness.png and res://assets/weapons/lc01/ls01_v1/retained/Roughness.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/01-spawn.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/01-spawn.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/02-overview.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/02-overview.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/03-ads.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/03-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/04-reload.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/04-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/05-array.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/05-array.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/06-reset.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/06-reset.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/07-ultrawide.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/07-ultrawide.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/east_elevated-deck.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/east_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/underbridge_18.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/underbridge_18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/underbridge_-18.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/underbridge_-18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/map/west_elevated-deck.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/map/west_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/targets/01-fallen.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/targets/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/targets/02-restored.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/targets/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/01-original.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/01-original.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/02-installed.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/02-installed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/03-close.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/03-close.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/04-rotated.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/04-rotated.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/b2-cooling-fans/05-player-view.png and res://artifacts/ml16/regression-baseline/b2-cooling-fans/05-player-view.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/01-spawn.png and res://docs/validation/b2-cooling-fans/map/01-spawn.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/02-overview.png and res://docs/validation/b2-cooling-fans/map/02-overview.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/03-ads.png and res://docs/validation/b2-cooling-fans/map/03-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/04-reload.png and res://docs/validation/b2-cooling-fans/map/04-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/05-array.png and res://docs/validation/b2-cooling-fans/map/05-array.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/06-reset.png and res://docs/validation/b2-cooling-fans/map/06-reset.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/07-ultrawide.png and res://docs/validation/b2-cooling-fans/map/07-ultrawide.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/east_elevated-deck.png and res://docs/validation/b2-cooling-fans/map/east_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/underbridge_18.png and res://docs/validation/b2-cooling-fans/map/underbridge_18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/underbridge_-18.png and res://docs/validation/b2-cooling-fans/map/underbridge_-18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/west_elevated-deck.png and res://docs/validation/b2-cooling-fans/map/west_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/targets/01-fallen.png and res://docs/validation/b2-cooling-fans/targets/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/targets/02-restored.png and res://docs/validation/b2-cooling-fans/targets/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/01-original.png and res://docs/validation/b2-cooling-fans/01-original.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/02-installed.png and res://docs/validation/b2-cooling-fans/02-installed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/03-close.png and res://docs/validation/b2-cooling-fans/03-close.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/04-rotated.png and res://docs/validation/b2-cooling-fans/04-rotated.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/05-player-view.png and res://docs/validation/b2-cooling-fans/05-player-view.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/knockdown-targets/01-fallen.png and res://artifacts/ml16/regression-baseline/knockdown-targets/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/knockdown-targets/02-restored.png and res://artifacts/ml16/regression-baseline/knockdown-targets/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/01-hero-pbr.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/01-hero-pbr.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/02-hero-no-normal.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/02-hero-no-normal.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/03-hero-uniform-response.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/03-hero-uniform-response.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/04-hero-clay.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/04-hero-clay.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/05-hero-warm.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/05-hero-warm.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/06-hero-cool.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/06-hero-cool.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/07-side.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/07-side.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/08-reverse.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/08-reverse.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/09-surface-close.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/09-surface-close.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/10-surface-no-normal.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/10-surface-no-normal.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/11-range-hip.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/11-range-hip.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/12-range-ads.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/12-range-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/13-range-dot-unlit.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/13-range-dot-unlit.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/14-range-reload.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/14-range-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/15-range-ultrawide-ads.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/15-range-ultrawide-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/16-range-dot-clear-background.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/16-range-dot-clear-background.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/17-coils-on-right.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/17-coils-on-right.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/18-coils-off-right.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/18-coils-off-right.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/19-coils-on-left.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/19-coils-on-left.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/20-stock-right.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/20-stock-right.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/21-stock-left.png and res://artifacts/ml15/regression-baseline/lighting-v1/rifle/21-stock-left.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/00-baseline.png and res://artifacts/ml15/regression-baseline/lighting-v1/00-baseline.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/01-emission.png and res://artifacts/ml15/regression-baseline/lighting-v1/01-emission.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/02-local-spill.png and res://artifacts/ml15/regression-baseline/lighting-v1/02-local-spill.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/03-bloom.png and res://artifacts/ml15/regression-baseline/lighting-v1/03-bloom.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/03a-weapon-bloom-only.png and res://artifacts/ml15/regression-baseline/lighting-v1/03a-weapon-bloom-only.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/04-flare.png and res://artifacts/ml15/regression-baseline/lighting-v1/04-flare.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/05-ads.png and res://artifacts/ml15/regression-baseline/lighting-v1/05-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/06-reload.png and res://artifacts/ml15/regression-baseline/lighting-v1/06-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/10-spawn-final.png and res://artifacts/ml15/regression-baseline/lighting-v1/10-spawn-final.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/20-lamp-no-bloom.png and res://artifacts/ml15/regression-baseline/lighting-v1/20-lamp-no-bloom.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/21-lamp-bloom.png and res://artifacts/ml15/regression-baseline/lighting-v1/21-lamp-bloom.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/22-lamp-flare.png and res://artifacts/ml15/regression-baseline/lighting-v1/22-lamp-flare.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/30-sun-facing.png and res://artifacts/ml15/regression-baseline/lighting-v1/30-sun-facing.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/31-sun-occluded.png and res://artifacts/ml15/regression-baseline/lighting-v1/31-sun-occluded.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/32-sun-side.png and res://artifacts/ml15/regression-baseline/lighting-v1/32-sun-side.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/33-sun-behind.png and res://artifacts/ml15/regression-baseline/lighting-v1/33-sun-behind.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/40-underbridge.png and res://artifacts/ml15/regression-baseline/lighting-v1/40-underbridge.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/41-overview.png and res://artifacts/ml15/regression-baseline/lighting-v1/41-overview.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/42-ultrawide.png and res://artifacts/ml15/regression-baseline/lighting-v1/42-ultrawide.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/50-flare-hip-fixed.png and res://artifacts/ml15/regression-baseline/lighting-v1/50-flare-hip-fixed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/51-flare-ads-fixed.png and res://artifacts/ml15/regression-baseline/lighting-v1/51-flare-ads-fixed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/52-flare-none-fixed.png and res://artifacts/ml15/regression-baseline/lighting-v1/52-flare-none-fixed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/weapon-bloom-pass.png and res://artifacts/ml15/regression-baseline/lighting-v1/weapon-bloom-pass.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/weapon-bloom-rgba.png and res://artifacts/ml15/regression-baseline/lighting-v1/weapon-bloom-rgba.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B1/lighting-v1/weapon-no-bloom-rgba.png and res://artifacts/ml15/regression-baseline/lighting-v1/weapon-no-bloom-rgba.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/01-spawn.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/01-spawn.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/02-overview.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/02-overview.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/03-ads.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/03-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/04-reload.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/04-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/05-array.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/05-array.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/06-reset.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/06-reset.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/07-ultrawide.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/07-ultrawide.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/east_elevated-deck.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/east_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/underbridge_18.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/underbridge_18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/underbridge_-18.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/underbridge_-18.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/map/west_elevated-deck.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/map/west_elevated-deck.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/targets/01-fallen.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/targets/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/targets/02-restored.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/targets/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/01-original.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/01-original.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/02-installed.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/02-installed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/03-close.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/03-close.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/04-rotated.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/04-rotated.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/environment-refine-v2/B2/fans/05-player-view.png and res://docs/validation/environment-refine-v2/B1/b2-cooling-fans/05-player-view.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/knockdown-targets/01-fallen.png and res://docs/validation/environment-refine-v2/B1/knockdown-targets/01-fallen.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/knockdown-targets/02-restored.png and res://docs/validation/environment-refine-v2/B1/knockdown-targets/02-restored.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/01-hero-pbr.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/01-hero-pbr.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/02-hero-no-normal.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/02-hero-no-normal.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/03-hero-uniform-response.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/03-hero-uniform-response.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/04-hero-clay.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/04-hero-clay.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/05-hero-warm.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/05-hero-warm.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/06-hero-cool.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/06-hero-cool.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/07-side.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/07-side.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/08-reverse.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/08-reverse.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/09-surface-close.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/09-surface-close.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/10-surface-no-normal.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/10-surface-no-normal.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/11-range-hip.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/11-range-hip.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/12-range-ads.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/12-range-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/13-range-dot-unlit.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/13-range-dot-unlit.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/14-range-reload.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/14-range-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/15-range-ultrawide-ads.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/15-range-ultrawide-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/16-range-dot-clear-background.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/16-range-dot-clear-background.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/17-coils-on-right.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/17-coils-on-right.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/18-coils-off-right.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/18-coils-off-right.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/19-coils-on-left.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/19-coils-on-left.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/20-stock-right.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/20-stock-right.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/rifle/21-stock-left.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/rifle/21-stock-left.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/00-baseline.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/00-baseline.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/01-emission.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/01-emission.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/02-local-spill.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/02-local-spill.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/03-bloom.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/03-bloom.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/03a-weapon-bloom-only.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/03a-weapon-bloom-only.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/04-flare.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/04-flare.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/05-ads.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/05-ads.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/06-reload.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/06-reload.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/10-spawn-final.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/10-spawn-final.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/20-lamp-no-bloom.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/20-lamp-no-bloom.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/21-lamp-bloom.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/21-lamp-bloom.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/22-lamp-flare.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/22-lamp-flare.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/30-sun-facing.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/30-sun-facing.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/31-sun-occluded.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/31-sun-occluded.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/32-sun-side.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/32-sun-side.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/33-sun-behind.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/33-sun-behind.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/40-underbridge.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/40-underbridge.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/41-overview.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/41-overview.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/42-ultrawide.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/42-ultrawide.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/50-flare-hip-fixed.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/50-flare-hip-fixed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/51-flare-ads-fixed.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/51-flare-ads-fixed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/52-flare-none-fixed.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/52-flare-none-fixed.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/weapon-bloom-pass.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/weapon-bloom-pass.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/weapon-bloom-rgba.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/weapon-bloom-rgba.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/lighting-v1/weapon-no-bloom-rgba.png and res://docs/validation/environment-refine-v2/B1/lighting-v1/weapon-no-bloom-rgba.png.
+     at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started 正在注册全局类…… (3 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  25% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1m_update_scan_actions[22m | Started 正在扫描动作…… (11 steps)[39m[0m
+[   0% ] [90m[1m_update_scan_actions[22m | model.glb[39m[0m
+[   8% ] [90m[1m_update_scan_actions[22m | preview.png[39m[0m
+[  16% ] [90m[1m_update_scan_actions[22m | close-mixed.png[39m[0m
+[  25% ] [90m[1m_update_scan_actions[22m | close-paving.png[39m[0m
+[  33% ] [90m[1m_update_scan_actions[22m | close-regolith.png[39m[0m
+[  41% ] [90m[1m_update_scan_actions[22m | overview-mixed.png[39m[0m
+[  50% ] [90m[1m_update_scan_actions[22m | overview-paving.png[39m[0m
+[  58% ] [90m[1m_update_scan_actions[22m | overview-regolith.png[39m[0m
+[  66% ] [90m[1m_update_scan_actions[22m | player-mixed.png[39m[0m
+[  75% ] [90m[1m_update_scan_actions[22m | player-paving.png[39m[0m
+[  83% ] [90m[1m_update_scan_actions[22m | player-regolith.png[39m[0m
+[92m[ DONE ][39m [1m_update_scan_actions[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started 正在导入或重新导入资产 (9 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  10% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  20% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  30% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  40% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  50% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  60% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  70% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[  80% ] [90m[1mreimport[22m | 正在准备重新导入文件……[39m[0m
+[   0% ] [90m[1mreimport[22m | 正在执行重新导入的前置操作……[39m[0m
+[   0% ] [90m[1mreimport[22m | close-mixed.png[39m[0m
+[  10% ] [90m[1mreimport[22m | close-paving.png[39m[0m
+[  20% ] [90m[1mreimport[22m | close-regolith.png[39m[0m
+[  30% ] [90m[1mreimport[22m | overview-mixed.png[39m[0m
+[  40% ] [90m[1mreimport[22m | overview-paving.png[39m[0m
+[  50% ] [90m[1mreimport[22m | overview-regolith.png[39m[0m
+[  60% ] [90m[1mreimport[22m | player-mixed.png[39m[0m
+[  70% ] [90m[1mreimport[22m | player-paving.png[39m[0m
+[  80% ] [90m[1mreimport[22m | player-regolith.png[39m[0m
+[  90% ] [90m[1mreimport[22m | 正在结束资产导入……[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mreimport[22m | Started 正在导入或重新导入资产 (9 steps)[39m[0m
+[   0% ] [90m[1mreimport[22m | 正在执行重新导入的后置操作……[39m[0m
+[92m[ DONE ][39m [1mreimport[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m

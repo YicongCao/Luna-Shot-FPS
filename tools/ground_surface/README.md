@@ -12,3 +12,9 @@
 `report.py`从检查结果生成HTML/Markdown，`publish.py`检查日志、JSON和60秒性能门禁，再生成默认场景。`APPROVED`是构建记录，场景存储published=true，避免导出包缺少扩展名文件时失效。
 
 无需Tripo或imagegen。微细节由高度场生成，不冒充高模投射烘焙；主地面平面保持，盖板等几何为薄装饰，无新碰撞。仅当前固定摄影机/本机验证通过，用户视觉验收独立记录。
+
+## 当前覆盖选择
+
+用户已选择全铺装，训练场使用make_paved_mask()，历史8×8m样板保留混合表面。make_field_mask()仍用于三模式对照；compare_coverage.gd显式生成历史混合遮罩并在结束时恢复实际默认遮罩，不能把当前全铺装误标成混合模式。
+
+月壤保留说明见assets/environment/ground_v1/REGOLITH_RESERVE.md。当前检查用`GROUND_QA_OUTPUT=docs/validation/ground-paved/field godot --path . --script tools/ground_surface/validate_field.gd`，避免覆盖ML16最初混合版证据。原ground-v1报告记录历史推广阶段；最新决定与验证见docs/validation/ground-paved。

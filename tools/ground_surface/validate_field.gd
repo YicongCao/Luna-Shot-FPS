@@ -1,6 +1,6 @@
 extends SceneTree
 var checks: Array=[]
-var out:="res://docs/validation/ground-v1/field/"
+var out:="res://docs/validation/ground-paved/field/"
 func _initialize() -> void:run.call_deferred()
 func frames(n:=24) -> void:
 	for i in n:await process_frame
@@ -10,6 +10,7 @@ func shot(name: String) -> void:
 	await frames();await RenderingServer.frame_post_draw
 	check("capture_"+name,root.get_texture().get_image().save_png(out+name+".png")==OK)
 func run() -> void:
+	if not OS.get_environment("GROUND_QA_OUTPUT").is_empty():out="res://"+OS.get_environment("GROUND_QA_OUTPUT").trim_suffix("/")+"/"
 	DirAccess.make_dir_recursive_absolute(out);root.size=Vector2i(1280,800)
 	var world: Node3D=load("res://scenes/training.tscn").instantiate();root.add_child(world)
 	world.player.qa_mode=true;Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
@@ -24,17 +25,18 @@ func run() -> void:
 	check("40_seats_8_shared_covers",floor.counts.seats==40 and floor.counts.covers==8,floor.counts)
 	check("no_new_colliders",floor.find_children("*","CollisionShape3D",true,false).is_empty())
 	var mask: Image=floor.surface.get_shader_parameter("soil_mask").get_image();mask.save_png(out+"soil-mask.png")
+	check("default_is_full_paving",mask.get_data().count(0)==mask.get_data().size())
 	var route_samples:=0;var contaminated:=0
 	for name in world.layout.routes:
 		var route: Array=world.layout.routes[name]
 		for i in range(1,route.size()):
 			var a:=Vector2(route[i-1][0],route[i-1][2]);var b:=Vector2(route[i][0],route[i][2])
 			for t in range(101):
-				var point:=a.lerp(b,t/100.0);var uv:=(point+Vector2(32,33))*8
+				var point:=a.lerp(b,t/100.0);var uv:=(point+Vector2(32,33))/Vector2(64,66)*Vector2(mask.get_size())
 				route_samples+=1
-				if mask.get_pixel(clampi(int(uv.x),0,511),clampi(int(uv.y),0,527)).r>.01:contaminated+=1
+				if mask.get_pixel(clampi(int(uv.x),0,mask.get_width()-1),clampi(int(uv.y),0,mask.get_height()-1)).r>.01:contaminated+=1
 	check("routes_keep_paving",contaminated==0,{"samples":route_samples,"soil_hits":contaminated})
-	var duplicate: Image=floor.make_field_mask(world.layout)
+	var duplicate: Image=floor.make_paved_mask()
 	check("mask_is_deterministic",mask.get_data()==duplicate.get_data())
 	world.lighting.flares_enabled=false;world.lighting.set_bloom(false);world.set_paused(true);world.pause_panel.hide()
 	for phase in ["before","after"]:

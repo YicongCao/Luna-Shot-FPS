@@ -20,7 +20,8 @@ func run() -> void:
 	var floor: Node3D = world.get_node("GroundSurface")
 	if floor.surface == null:
 		push_error("Published ML16 ground required"); quit(1); return
-	var mixed: Texture2D = floor.surface.get_shader_parameter("soil_mask")
+	var original: Texture2D = floor.surface.get_shader_parameter("soil_mask")
+	var mixed: Texture2D = ImageTexture.create_from_image(floor.make_field_mask(world.layout))
 	var masks := {"mixed": mixed}
 	for mode in ["regolith", "paving"]:
 		var mask := Image.create(4, 4, false, Image.FORMAT_R8)
@@ -56,8 +57,8 @@ func run() -> void:
 		if camera:
 			camera.queue_free()
 			await frames(2)
-	floor.surface.set_shader_parameter("soil_mask", mixed)
-	check("mixed_restored", floor.surface.get_shader_parameter("soil_mask") == mixed)
+	floor.surface.set_shader_parameter("soil_mask", original)
+	check("published_mask_restored", floor.surface.get_shader_parameter("soil_mask") == original)
 	var failures := checks.filter(func(c): return not c.passed).size()
 	FileAccess.open(OUT + "checks.json", FileAccess.WRITE).store_string(JSON.stringify({"checks": checks, "failures": failures, "renderer": RenderingServer.get_current_rendering_method(), "engine": Engine.get_version_info().string, "resolution": [1600, 1000], "bloom": false, "flares": false, "published_assets_changed": false}, "\t"))
 	quit(0 if failures == 0 else 1)

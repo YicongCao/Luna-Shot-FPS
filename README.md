@@ -20,9 +20,9 @@ WASD 移动 · 鼠标视角 · Shift 冲刺 · 空格跳跃 · 左键射击（�
 
 ## 当前地面版本：ML16
 
-8×8m地面样板已验证并推广全场：2×4m工业铺装、检修盖、A设备座基和月壤过渡。双击 `launch-ground-sample.command` 可玩样板，B键对比前后；`GROUND_BASELINE=1 ./launch.command` 查看旧地面。
+当前默认关卡已按用户选择改为全铺装：2×4m工业铺装、检修盖及A设备座基。月壤PBR、高度源和混合遮罩代码保留，未来可研究弹着破损露出月壤，本次未实现破损。双击 `launch-ground-sample.command` 仍可查看历史8×8m混合样板；`GROUND_BASELINE=1 ./launch.command` 查看ML15旧地面。
 
-[原生前后对照](docs/validation/ground-v1/review.html) · [验证与限制](docs/validation/ground-v1/REPORT.md) · [ML16经验](docs/logs/ML16-工业铺装与月壤地面.md)。
+[当前全铺装验证](docs/validation/ground-paved/README.md) · [三种覆盖对照](docs/validation/ground-coverage/review.html) · [场景与地图进度](docs/design/scene-map-status-2026-11-16.md) · [ML16经验](docs/logs/ML16-工业铺装与月壤地面.md)。
 
 ## 环境模块版本：ML15
 
