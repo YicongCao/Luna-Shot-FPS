@@ -1,6 +1,9 @@
 {
-  "source": "art_source/environment/pipeline-v1/B2/07-final",
-  "triangles": 13695,
-  "normal": "genuine high-to-low Cycles bake",
-  "asset": "B2"
+  "asset": "B2",
+  "revision": "ml15-v1",
+  "triangles": 8708,
+  "source": "art_source/environment/refine-v2/B2",
+  "normal": "Cycles selected-to-active explicit cage bake",
+  "texture_resolution": 2048,
+  "source_resolution": 4096
 }

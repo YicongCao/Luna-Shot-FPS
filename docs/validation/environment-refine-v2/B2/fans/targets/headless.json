@@ -1,0 +1,101 @@
+{
+	"checks": [
+		{
+			"check": "Target1_hit_and_disable",
+			"passed": true
+		},
+		{
+			"check": "Target1_reject_duplicate",
+			"passed": true
+		},
+		{
+			"check": "Target1_lies_flat",
+			"passed": true
+		},
+		{
+			"check": "Target1_no_score_on_empty_space",
+			"passed": true
+		},
+		{
+			"check": "Target2_hit_and_disable",
+			"passed": true
+		},
+		{
+			"check": "Target2_reject_duplicate",
+			"passed": true
+		},
+		{
+			"check": "Target2_lies_flat",
+			"passed": true
+		},
+		{
+			"check": "Target2_no_score_on_empty_space",
+			"passed": true
+		},
+		{
+			"check": "Target3_hit_and_disable",
+			"passed": true
+		},
+		{
+			"check": "Target3_reject_duplicate",
+			"passed": true
+		},
+		{
+			"check": "Target3_lies_flat",
+			"passed": true
+		},
+		{
+			"check": "Target3_no_score_on_empty_space",
+			"passed": true
+		},
+		{
+			"check": "Target4_hit_and_disable",
+			"passed": true
+		},
+		{
+			"check": "Target4_reject_duplicate",
+			"passed": true
+		},
+		{
+			"check": "Target4_lies_flat",
+			"passed": true
+		},
+		{
+			"check": "Target4_no_score_on_empty_space",
+			"passed": true
+		},
+		{
+			"check": "Target5_hit_and_disable",
+			"passed": true
+		},
+		{
+			"check": "Target5_reject_duplicate",
+			"passed": true
+		},
+		{
+			"check": "Target5_lies_flat",
+			"passed": true
+		},
+		{
+			"check": "Target5_no_score_on_empty_space",
+			"passed": true
+		},
+		{
+			"check": "reset_all_five",
+			"passed": true
+		},
+		{
+			"check": "pause_freezes_fall",
+			"passed": true
+		},
+		{
+			"check": "reset_during_fall_stays_upright",
+			"passed": true
+		},
+		{
+			"check": "can_hit_again",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

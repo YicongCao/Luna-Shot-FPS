@@ -96,11 +96,52 @@ def pipes():
    box('PipeClamp',(1.69,y,z),(.22,.27,.055),'steel',.006)
    bolt((1.82,y-.135,z),(0,-1,0),.022)
 
+def b2_frame():
+ box('Base',(0,0,.16),(3.7,3.6,.30),'dark',.025)
+ for x in [-1.55,1.55]:
+  for y in [-1.5,1.5]:
+   box('Foot',(x,y,.04),(.42,.42,.08),'steel',.012)
+   box('Post',(x,y,3),(.16,.16,5.72),'dark',.012)
+ for y in [-1.5,1.5]:box('TopCrossbar',(0,y,5.73),(3.45,.30,.15),'coat',.015)
+ for x in [-1.5,1.5]:box('TopSide',(x,0,5.73),(.30,3.0,.15),'coat',.015)
+ # Central light service strut keeps a real open shaft down the middle.
+ box('TopTie',(0,0,5.73),(.20,3,.15),'dark',.012)
+
+def b2_bank(sign):
+ x=sign*1.04
+ for z in [.85,5.25]:box('BankCap',(x,0,z),(1.05,2.9,.18),'coat',.015)
+ for y in [-1.55,1.55]:
+  for z in [1.0,5.1]:box('BankEndRail',(x,y,z),(1.05,.08,.10),'dark',.008)
+ for j in range(9):
+  xx=x+(j-4)*.105
+  box('VerticalFin',(xx,0,3.05),(.045,3.10,4.20),'coat',.004)
+ # Visible vertical ivory protection blades, not solid side boxes.
+ for xx in [x-.50,x+.50]:
+  for y in [-1.48,1.48]:
+   box('BankGuard',(xx,y,3.05),(.065,.08,4.35),'coat',.008)
+   for z in [1.02,3.05,5.08]:bolt((xx,y,z),(0,1 if y>0 else -1,0))
+
+def b2_pipes():
+ for x in [-.22,.22]:
+  tube('CentralCoolant',[(x*3,-1.32,.65),(x,-1.32,.95),(x,-1.32,1.5),(x,-1.32,4.4),(x,-1.32,4.9),(x*3,-1.32,5.40)],.065)
+  for z in [1.3,2.6,3.9,5.0]:
+   cyl('Coupling',(x,-1.32,z),.09,.10,'yellow')
+   box('Clamp',(x,-1.4,z),(.21,.05,.06),'steel',.005)
+ # Clear mounting pads behind ML14's cassette; no generated or duplicate blades.
+ for z in [1.7,3.0,4.3]:
+  for y in [-.70,.70]:
+   box('FanMount',(1.62,y,z),(.10,.13,1.10),'dark',.01)
+   bolt((1.68,y,z),(1,0,0))
+
 def build():
  if A=='B1':
   group('Frame',frame);group('BaseCabinet',cabinet)
   for i in range(6):group('Radiator%02d'%i,lambda i=i:layer(i),.004)
   group('CoolantPipes',pipes,.018)
+ elif A=='B2':
+  group('Frame',b2_frame);group('BaseCabinet',cabinet)
+  for sign in [-1,1]:group('VerticalBank'+str(sign),lambda sign=sign:b2_bank(sign),.005)
+  group('PipesAndMounts',b2_pipes,.018)
  else:raise RuntimeError('Asset recipe not authored yet; do not fall back to generic geometry')
 
 for HIGH in [True,False]:build()

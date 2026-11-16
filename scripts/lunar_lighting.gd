@@ -128,17 +128,17 @@ func update_module_lights() -> void:
 		for fixture: Dictionary in module.fixtures:
 			fixture.material.emission_enabled = facility_enabled
 			var distance: float = camera.global_position.distance_squared_to(fixture.mesh.global_position)
-			if fixture.level > .001 and distance < 24.0 * 24.0:
+			if fixture.level > .001 and distance < 8.0 * 8.0:
 				candidates.append({"fixture":fixture,"distance":distance})
 	candidates.sort_custom(func(a, b): return a.distance < b.distance)
 	for i in module_light_pool.size():
 		var light := module_light_pool[i]
-		light.visible = facility_enabled and i < candidates.size()
+		light.visible = facility_enabled and i < mini(candidates.size(), 4)
 		if not light.visible: continue
 		var fixture: Dictionary = candidates[i].fixture
 		light.global_position = fixture.mesh.global_position + Vector3(0,.07,0)
 		light.light_color = fixture.color
-		light.light_energy = .45 * fixture.level
+		light.light_energy = .45 * fixture.level * (1.0 - smoothstep(7.0, 8.0, sqrt(candidates[i].distance)))
 		light.omni_attenuation = 2.0
 		light.omni_range = fixture.range
 

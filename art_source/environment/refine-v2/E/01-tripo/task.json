@@ -1,0 +1,13 @@
+{
+  "task_id": "0529593a-9ff4-46f6-aebf-84b4fce6e355",
+  "asset": "E",
+  "model": "v3.1-20260211",
+  "geometry_quality": "detailed",
+  "generate_parts": true,
+  "texture": false,
+  "pbr": false,
+  "seed": 20261120,
+  "credits": 60,
+  "status": "success",
+  "role": "Shape and assembly reference; local precise counterpart enforces dimensions, openings and dynamic interfaces."
+}

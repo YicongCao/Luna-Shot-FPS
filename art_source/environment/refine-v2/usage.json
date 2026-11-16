@@ -1,10 +1,32 @@
 {
   "budget": 400,
-  "actual_credits": 60,
+  "actual_credits": 300,
+  "ledger_verified": true,
+  "rerolls": 0,
   "tasks": [
     {
       "asset": "B1",
       "task_id": "cc81773f-6a6e-4d03-944e-2886fecc3461",
+      "credits": 60
+    },
+    {
+      "asset": "B2",
+      "task_id": "5c61f41c-8a68-4e24-b2aa-37187905b63f",
+      "credits": 60
+    },
+    {
+      "asset": "C",
+      "task_id": "bdb6cf20-24c9-45e8-b98e-e0bd6775b7a2",
+      "credits": 60
+    },
+    {
+      "asset": "D",
+      "task_id": "4ba2b008-4f27-4459-9158-b8af7d5b2259",
+      "credits": 60
+    },
+    {
+      "asset": "E",
+      "task_id": "0529593a-9ff4-46f6-aebf-84b4fce6e355",
       "credits": 60
     }
   ]

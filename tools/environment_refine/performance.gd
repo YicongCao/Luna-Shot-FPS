@@ -8,13 +8,16 @@ func run() -> void:
 	world.set_overview(true)
 	world.hud.hide()
 	var cam:=Camera3D.new();world.add_child(cam);cam.current=true
+	if OS.get_environment("ENV_PERF_NO_SPILL")=="1": world.lighting.set_facility_enabled(false)
+	var duration:=60000
+	if not OS.get_environment("ENV_PERF_SECONDS").is_empty():duration=int(OS.get_environment("ENV_PERF_SECONDS"))*1000
 	var started:=Time.get_ticks_msec()
 	while Time.get_ticks_msec()-started<3000:
 		cam.position=Vector3(15,5,17);cam.look_at(Vector3(0,3,0));await process_frame
 	var samples: Array[float]=[]
 	started=Time.get_ticks_msec();var last:=Time.get_ticks_usec()
-	while Time.get_ticks_msec()-started<60000:
-		var t: float=(Time.get_ticks_msec()-started)/60000.0
+	while Time.get_ticks_msec()-started<duration:
+		var t: float=(Time.get_ticks_msec()-started)/float(duration)
 		cam.position=Vector3(sin(t*TAU)*25,5+3*sin(t*PI),cos(t*TAU)*25)
 		cam.look_at(Vector3(0,3,0))
 		await process_frame

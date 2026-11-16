@@ -1,0 +1,416 @@
+{
+	"checks": [
+		{
+			"check": "spawn_floor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "module_instances",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_01-spawn",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_02-overview",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "signal_loop_1",
+			"detail": "end=(2.483333, 0.000195, 2.6), planar_error=0.117",
+			"passed": true
+		},
+		{
+			"check": "signal_loop_2",
+			"detail": "end=(2.597354, 0.000195, -2.482054), planar_error=0.118",
+			"passed": true
+		},
+		{
+			"check": "signal_loop_3",
+			"detail": "end=(-2.484671, 0.000195, -2.597383), planar_error=0.115",
+			"passed": true
+		},
+		{
+			"check": "signal_loop_4",
+			"detail": "end=(-2.597442, 0.000195, 2.4847), planar_error=0.115",
+			"passed": true
+		},
+		{
+			"check": "perimeter_1",
+			"detail": "end=(0.0, 0.000195, 26.08331), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "perimeter_2",
+			"detail": "end=(25.91645, 0.000195, 26.00027), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "perimeter_3",
+			"detail": "end=(25.99986, 0.000195, -25.91645), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "perimeter_4",
+			"detail": "end=(-25.91685, 0.000195, -25.99987), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "perimeter_5",
+			"detail": "end=(-25.99987, 0.000195, 25.91685), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "perimeter_6",
+			"detail": "end=(-0.083418, 0.000195, 25.99973), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "cross_1",
+			"detail": "end=(0.0, 0.000195, 14.08327), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "cross_2",
+			"detail": "end=(2.915545, 0.000195, 14.00234), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "cross_3",
+			"detail": "end=(2.999819, 0.000195, -25.9143), planar_error=0.086",
+			"passed": true
+		},
+		{
+			"check": "cross_4",
+			"detail": "end=(0.084341, 0.000195, -25.99759), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "cross_5",
+			"detail": "end=(0.000285, 0.000195, -2.081135), planar_error=0.081",
+			"passed": true
+		},
+		{
+			"check": "cross_6",
+			"detail": "end=(-25.91617, 0.000195, -2.000262), planar_error=0.084",
+			"passed": true
+		},
+		{
+			"check": "cross_7",
+			"detail": "end=(25.91727, 0.000195, -2.0), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "west_service_1",
+			"detail": "end=(-10.0, 0.000195, -25.91671), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "east_service_1",
+			"detail": "end=(10.0, 0.000195, -25.91671), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_1",
+			"detail": "end=(-18.0, 2.400294, 6.106517), planar_error=0.107",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_height_1",
+			"detail": "2.40029382705688",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_2",
+			"detail": "end=(-18.0, 2.400294, 0.106514), planar_error=0.107",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_height_2",
+			"detail": "2.40029382705688",
+			"passed": true
+		},
+		{
+			"check": "screenshot_west_elevated-deck",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_3",
+			"detail": "end=(-18.0, 2.400294, -5.893488), planar_error=0.107",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_height_3",
+			"detail": "2.40029382705688",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_4",
+			"detail": "end=(-18.0, 0.000856, -17.87435), planar_error=0.126",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_5",
+			"detail": "end=(-18.0, 2.400027, -6.142368), planar_error=0.142",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_height_5",
+			"detail": "2.40002703666687",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_6",
+			"detail": "end=(-18.0, 2.400027, 5.857637), planar_error=0.142",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_height_6",
+			"detail": "2.40002703666687",
+			"passed": true
+		},
+		{
+			"check": "west_elevated_7",
+			"detail": "end=(-18.0, 0.000813, 17.92293), planar_error=0.077",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_1",
+			"detail": "end=(18.0, 2.400294, 6.106517), planar_error=0.107",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_height_1",
+			"detail": "2.40029382705688",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_2",
+			"detail": "end=(18.0, 2.400294, 0.106514), planar_error=0.107",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_height_2",
+			"detail": "2.40029382705688",
+			"passed": true
+		},
+		{
+			"check": "screenshot_east_elevated-deck",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_3",
+			"detail": "end=(18.0, 2.400294, -5.893488), planar_error=0.107",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_height_3",
+			"detail": "2.40029382705688",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_4",
+			"detail": "end=(18.0, 0.000856, -17.87435), planar_error=0.126",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_5",
+			"detail": "end=(18.0, 2.400027, -6.142368), planar_error=0.142",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_height_5",
+			"detail": "2.40002703666687",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_6",
+			"detail": "end=(18.0, 2.400027, 5.857637), planar_error=0.142",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_height_6",
+			"detail": "2.40002703666687",
+			"passed": true
+		},
+		{
+			"check": "east_elevated_7",
+			"detail": "end=(18.0, 0.000849, 17.92293), planar_error=0.077",
+			"passed": true
+		},
+		{
+			"check": "bridge_underpass_-18",
+			"detail": "end=(-14.0833, 0.000195, 0.0), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "underpass_ground_-18",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_underbridge_-18",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "bridge_underpass_18",
+			"detail": "end=(21.9167, 0.000195, 0.0), planar_error=0.083",
+			"passed": true
+		},
+		{
+			"check": "underpass_ground_18",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_underbridge_18",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "bridge_guardrail_-18",
+			"detail": "(-16.58332, 2.400195, 0.0)",
+			"passed": true
+		},
+		{
+			"check": "bridge_guardrail_18",
+			"detail": "(19.41668, 2.400195, 0.0)",
+			"passed": true
+		},
+		{
+			"check": "boundary_[-1.0, 0.0, 0.0]",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "boundary_[1.0, 0.0, 0.0]",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "boundary_[0.0, 0.0, 1.0]",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "boundary_[0.0, 0.0, -1.0]",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hit_Target1",
+			"detail": "{ \"position\": (0.0, 1.500901, 10.06), \"normal\": (0.0, 0.0, 1.0), \"face_index\": -1, \"collider_id\": 73349992397, \"collider\": Target1:<StaticBody3D#73349992397>, \"shape\": 0, \"rid\": RID(8224862372308) }",
+			"passed": true
+		},
+		{
+			"check": "hit_Target2",
+			"detail": "{ \"position\": (1.5, 1.500451, 0.059999), \"normal\": (0.0, 0.0, 1.0), \"face_index\": -1, \"collider_id\": 73467432916, \"collider\": Target2:<StaticBody3D#73467432916>, \"shape\": 0, \"rid\": RID(8267812045269) }",
+			"passed": true
+		},
+		{
+			"check": "hit_Target3",
+			"detail": "{ \"position\": (-1.5, 1.5003, -9.940001), \"normal\": (0.0, 0.0, 1.0), \"face_index\": -1, \"collider_id\": 73584873435, \"collider\": Target3:<StaticBody3D#73584873435>, \"shape\": 0, \"rid\": RID(8306466750934) }",
+			"passed": true
+		},
+		{
+			"check": "hit_Target4",
+			"detail": "{ \"position\": (-11.3, 1.500452, -7.940001), \"normal\": (0.0, 0.0, 1.0), \"face_index\": -1, \"collider_id\": 73702313954, \"collider\": Target4:<StaticBody3D#73702313954>, \"shape\": 0, \"rid\": RID(8345121456599) }",
+			"passed": true
+		},
+		{
+			"check": "hit_Target5",
+			"detail": "{ \"position\": (11.3, 1.500452, -7.940001), \"normal\": (0.0, 0.0, 1.0), \"face_index\": -1, \"collider_id\": 73819754473, \"collider\": Target5:<StaticBody3D#73819754473>, \"shape\": 0, \"rid\": RID(8383776162264) }",
+			"passed": true
+		},
+		{
+			"check": "cooldown",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "sight_axis",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_03-ads",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reload_fire_lock",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_04-reload",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reload_complete",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "empty_lock",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "architecture_occludes",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_05-array",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "pause_freezes",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reset_state",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reset_marker",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_06-reset",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "screenshot_07-ultrawide",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ultrawide_aspect",
+			"detail": "",
+			"passed": true
+		}
+	],
+	"display": "macOS",
+	"elapsed_seconds": 148.383,
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"frame_ms_p95": 8.33333333333333,
+	"note": "Actual capsule traversal and native rendering; not long-duration performance acceptance.",
+	"platform": "macOS"
+}

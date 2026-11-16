@@ -1,0 +1,75 @@
+{
+  "asset": "B2",
+  "seed": 20261117,
+  "pairs": [
+    {
+      "name": "Frame",
+      "group": "body",
+      "low": "Frame_low",
+      "high": "Frame_high",
+      "cage": "Frame_cage",
+      "cage_distance": 0.014,
+      "triangles": 616
+    },
+    {
+      "name": "BaseCabinet",
+      "group": "body",
+      "low": "BaseCabinet_low",
+      "high": "BaseCabinet_high",
+      "cage": "BaseCabinet_cage",
+      "cage_distance": 0.014,
+      "triangles": 964
+    },
+    {
+      "name": "VerticalBank-1",
+      "group": "body",
+      "low": "VerticalBank-1_low",
+      "high": "VerticalBank-1_high",
+      "cage": "VerticalBank-1_cage",
+      "cage_distance": 0.005,
+      "triangles": 2220
+    },
+    {
+      "name": "VerticalBank1",
+      "group": "body",
+      "low": "VerticalBank1_low",
+      "high": "VerticalBank1_high",
+      "cage": "VerticalBank1_cage",
+      "cage_distance": 0.005,
+      "triangles": 2220
+    },
+    {
+      "name": "PipesAndMounts",
+      "group": "body",
+      "low": "PipesAndMounts_low",
+      "high": "PipesAndMounts_high",
+      "cage": "PipesAndMounts_cage",
+      "cage_distance": 0.018,
+      "triangles": 2688
+    }
+  ],
+  "triangles": 8708,
+  "bounds_blender": [
+    [
+      -1.850000023841858,
+      -1.7999999523162842,
+      0.0
+    ],
+    [
+      1.850000023841858,
+      1.7999999523162842,
+      5.859999656677246
+    ]
+  ],
+  "uv_version": "ml15-v1",
+  "tripo_role": "Shape reference; precise open assemblies authored locally; generated candidate archived separately",
+  "materials": [
+    "coat",
+    "dark",
+    "steel",
+    "rubber",
+    "yellow",
+    "core"
+  ],
+  "high_triangles": 32748
+}
