@@ -1,0 +1,31 @@
+{
+  "milestone": "ML17",
+  "status": "awaiting_tool_plan_confirmation",
+  "source": "art_source/weapons/lc01/pipeline-v1/01-tripo-geometry/model.glb",
+  "estimated_credits": 55,
+  "rerolls": false,
+  "steps": [
+    {
+      "tool": "tripo_texture",
+      "input": "original_high",
+      "model": "v3.5",
+      "pbr": true,
+      "bake": true,
+      "delight": true,
+      "texture_quality": "detailed",
+      "estimated_credits": 20
+    },
+    {
+      "tool": "tripo_decimate",
+      "input": "previous_texture_task",
+      "model": "v3.0",
+      "face_limit": 20000,
+      "quad": false,
+      "smart_uv": true,
+      "bake": true,
+      "estimated_credits": 35
+    }
+  ],
+  "normal_projection_claim": "Not guaranteed by exposed API; inspect actual output",
+  "default_replacement": "Only after comparative validation"
+}
