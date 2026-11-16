@@ -1,0 +1,166 @@
+{
+	"checks": [
+		{
+			"check": "B01_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B01_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B03_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B03_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B05_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B05_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B07_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B07_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B09_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B09_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B11_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B11_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "red_count",
+			"passed": true
+		},
+		{
+			"check": "tower_phase_variation",
+			"passed": true
+		},
+		{
+			"check": "local_pool_limit",
+			"passed": true
+		},
+		{
+			"check": "facility_switch_disables_spill",
+			"passed": true
+		}
+	],
+	"failures": 0,
+	"red_lenses": 24
+}

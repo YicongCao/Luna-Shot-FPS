@@ -1,0 +1,42 @@
+{
+  "fixed_camera_effects": [
+    {
+      "effect": "emission",
+      "changed_pixels": 3273,
+      "mean_difference": 0.11232779947916667,
+      "max_difference": 244.0
+    },
+    {
+      "effect": "local_spill",
+      "changed_pixels": 6322,
+      "mean_difference": 0.19287109375,
+      "max_difference": 247.0
+    },
+    {
+      "effect": "bloom",
+      "changed_pixels": 260491,
+      "mean_difference": 1.5960543619791667,
+      "max_difference": 254.0
+    },
+    {
+      "effect": "lens_flare",
+      "changed_pixels": 6544,
+      "mean_difference": 0.10944108072916667,
+      "max_difference": 255.0
+    },
+    {
+      "effect": "world_bloom",
+      "changed_pixels": 574947,
+      "mean_difference": 2.5968173828125,
+      "max_difference": 244.0
+    }
+  ],
+  "transparent_viewmodel": {
+    "raw_glow_pixels_outside_silhouette": 61,
+    "visible_composite_pixels_outside_silhouette": 1816,
+    "visible_glow_outside_silhouette": true,
+    "method": "Actual rendered cyan highlights, separable blur, additive composition below HUD; native transparent Glow disabled"
+  },
+  "world_lamp_halo_mean_gain": 28.394949494949493
+}
+ADS pixel ratio 0.2554278651255527

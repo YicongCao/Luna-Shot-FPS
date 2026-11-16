@@ -1,0 +1,87 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] first_scan_filesystem | Started 项目初始化 (5 steps)
+[   0% ] first_scan_filesystem | 正在扫描文件结构……
+[  16% ] first_scan_filesystem | 正在加载全局类名……
+[  33% ] first_scan_filesystem | 正在校验 GDExtension……
+[  50% ] first_scan_filesystem | 正在创建自动加载脚本……
+[  66% ] first_scan_filesystem | 正在初始化插件……
+[  83% ] first_scan_filesystem | 正在启动文件扫描……
+[ DONE ] first_scan_filesystem
+
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/AO.png and res://assets/weapons/lc01/ls01_v1/retained/AO.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/BaseColor.png and res://assets/weapons/lc01/ls01_v1/retained/BaseColor.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/Emission.png and res://assets/weapons/lc01/ls01_v1/retained/Emission.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/Metallic.png and res://assets/weapons/lc01/ls01_v1/retained/Metallic.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/NormalGL.png and res://assets/weapons/lc01/ls01_v1/retained/NormalGL.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/ORM.png and res://assets/weapons/lc01/ls01_v1/retained/ORM.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://assets/weapons/lc01/ls01_v2/retained/Roughness.png and res://assets/weapons/lc01/ls01_v1/retained/Roughness.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/knockdown-targets/01-fallen.png and res://artifacts/b2-fans/knockdown-baseline/01-fallen.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+WARNING: UID duplicate detected between res://docs/validation/knockdown-targets/02-restored.png and res://artifacts/b2-fans/knockdown-baseline/02-restored.png.
+   at: _process_file_system (editor/file_system/editor_file_system.cpp:1405)
+[   0% ] _update_scan_actions | Started 正在扫描动作…… (15 steps)
+[   0% ] _update_scan_actions | model.glb
+[   6% ] _update_scan_actions | preview.png
+[  12% ] _update_scan_actions | 01-spawn.png
+[  18% ] _update_scan_actions | 02-overview.png
+[  25% ] _update_scan_actions | 03-ads.png
+[  31% ] _update_scan_actions | 04-reload.png
+[  37% ] _update_scan_actions | 05-array.png
+[  43% ] _update_scan_actions | 06-reset.png
+[  50% ] _update_scan_actions | 07-ultrawide.png
+[  56% ] _update_scan_actions | east_elevated-deck.png
+[  62% ] _update_scan_actions | underbridge_18.png
+[  68% ] _update_scan_actions | underbridge_-18.png
+[  75% ] _update_scan_actions | west_elevated-deck.png
+[  81% ] _update_scan_actions | 01-fallen.png
+[  87% ] _update_scan_actions | 02-restored.png
+[ DONE ] _update_scan_actions
+
+[   0% ] reimport | Started 正在导入或重新导入资产 (13 steps)
+[   0% ] reimport | 正在准备重新导入文件……
+[   7% ] reimport | 正在准备重新导入文件……
+[  14% ] reimport | 正在准备重新导入文件……
+[  21% ] reimport | 正在准备重新导入文件……
+[  28% ] reimport | 正在准备重新导入文件……
+[  35% ] reimport | 正在准备重新导入文件……
+[  42% ] reimport | 正在准备重新导入文件……
+[  50% ] reimport | 正在准备重新导入文件……
+[  57% ] reimport | 正在准备重新导入文件……
+[  64% ] reimport | 正在准备重新导入文件……
+[  71% ] reimport | 正在准备重新导入文件……
+[  78% ] reimport | 正在准备重新导入文件……
+[  85% ] reimport | 正在准备重新导入文件……
+[   0% ] reimport | 正在执行重新导入的前置操作……
+[   0% ] reimport | 01-spawn.png
+[   7% ] reimport | 02-overview.png
+[  14% ] reimport | 03-ads.png
+[  21% ] reimport | 04-reload.png
+[  28% ] reimport | 05-array.png
+[  35% ] reimport | 06-reset.png
+[  42% ] reimport | 07-ultrawide.png
+[  50% ] reimport | east_elevated-deck.png
+[  57% ] reimport | underbridge_18.png
+[  64% ] reimport | underbridge_-18.png
+[  71% ] reimport | west_elevated-deck.png
+[  78% ] reimport | 01-fallen.png
+[  85% ] reimport | 02-restored.png
+[  92% ] reimport | 正在结束资产导入……
+[ DONE ] reimport
+
+[   0% ] reimport | Started 正在导入或重新导入资产 (13 steps)
+[   0% ] reimport | 正在执行重新导入的后置操作……
+[ DONE ] reimport
+
+[   0% ] loading_editor_layout | Started 正在加载编辑器 (5 steps)
+[   0% ] loading_editor_layout | 正在加载编辑器布局……
+[  16% ] loading_editor_layout | 正在加载停靠面板……
+[ DONE ] loading_editor_layout
+

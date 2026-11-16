@@ -42,4 +42,4 @@ ML13 默认开火效果为纯代码方案 C：scripts/pulsed_arc.gd 复用 ML12 
 
 ML14 B2 侧面三风扇由 scripts/b2_cooling_fans.gd 程序化构建，module_visual.gd 在 final 视觉加载后挂载，6 塔共 18 叶轮。保留原 B2 GLB/UV/材质；固定护罩与旋转叶轮分离，附件不超出原 4×4 m 占地。专项 tools/validate_b2_fans.sh，证据 docs/validation/b2-cooling-fans。白模模式不加载该附件。
 
-ML15 当前仅完成概念阶段：docs/art/environment-concept-v3/review.html 与 docs/design/ml15/{PLAN,SPEC}.md；6次imagegen，未提交Tripo任务、未修改运行时。用户要求先确认概念再启动五件Tripo；预计5×60=300积分独立于历史690。B2参考图的三空孔用于复用ML14风扇，不能生成重复叶轮。实施按B1→B2→C→D→E，保留图片偏差清单并以布局/尺寸规格为准。
+ML15 概念已获用户认可，预算400积分；B1已完成本地高低模/独立cage/4K烘焙/2K分层材质和四角红灯，Tripo形体参考60积分。其他模块顺序推进中。源文件art_source/environment/refine-v2，候选assets/environment/candidates，入口tools/environment_refine。旧模型在00-baseline及assets/environment/baselines；ENV_BASELINE、ENV_CANDIDATE按逗号列表选择，默认用已发布资源。概念阶段历史：docs/art/environment-concept-v3/review.html 与 docs/design/ml15/{PLAN,SPEC}.md；6次imagegen，未提交Tripo任务、未修改运行时。用户要求先确认概念再启动五件Tripo；预计5×60=300积分独立于历史690。B2参考图的三空孔用于复用ML14风扇，不能生成重复叶轮。实施按B1→B2→C→D→E，保留图片偏差清单并以布局/尺寸规格为准。

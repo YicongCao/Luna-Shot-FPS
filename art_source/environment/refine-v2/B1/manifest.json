@@ -1,0 +1,111 @@
+{
+  "asset": "B1",
+  "seed": 20261116,
+  "pairs": [
+    {
+      "name": "Frame",
+      "group": "body",
+      "low": "Frame_low",
+      "high": "Frame_high",
+      "cage": "Frame_cage",
+      "cage_distance": 0.014,
+      "triangles": 2072
+    },
+    {
+      "name": "BaseCabinet",
+      "group": "body",
+      "low": "BaseCabinet_low",
+      "high": "BaseCabinet_high",
+      "cage": "BaseCabinet_cage",
+      "cage_distance": 0.014,
+      "triangles": 964
+    },
+    {
+      "name": "Radiator00",
+      "group": "body",
+      "low": "Radiator00_low",
+      "high": "Radiator00_high",
+      "cage": "Radiator00_cage",
+      "cage_distance": 0.004,
+      "triangles": 1244
+    },
+    {
+      "name": "Radiator01",
+      "group": "body",
+      "low": "Radiator01_low",
+      "high": "Radiator01_high",
+      "cage": "Radiator01_cage",
+      "cage_distance": 0.004,
+      "triangles": 1244
+    },
+    {
+      "name": "Radiator02",
+      "group": "body",
+      "low": "Radiator02_low",
+      "high": "Radiator02_high",
+      "cage": "Radiator02_cage",
+      "cage_distance": 0.004,
+      "triangles": 1212
+    },
+    {
+      "name": "Radiator03",
+      "group": "body",
+      "low": "Radiator03_low",
+      "high": "Radiator03_high",
+      "cage": "Radiator03_cage",
+      "cage_distance": 0.004,
+      "triangles": 1212
+    },
+    {
+      "name": "Radiator04",
+      "group": "body",
+      "low": "Radiator04_low",
+      "high": "Radiator04_high",
+      "cage": "Radiator04_cage",
+      "cage_distance": 0.004,
+      "triangles": 1180
+    },
+    {
+      "name": "Radiator05",
+      "group": "body",
+      "low": "Radiator05_low",
+      "high": "Radiator05_high",
+      "cage": "Radiator05_cage",
+      "cage_distance": 0.004,
+      "triangles": 1180
+    },
+    {
+      "name": "CoolantPipes",
+      "group": "body",
+      "low": "CoolantPipes_low",
+      "high": "CoolantPipes_high",
+      "cage": "CoolantPipes_cage",
+      "cage_distance": 0.018,
+      "triangles": 2576
+    }
+  ],
+  "triangles": 12884,
+  "bounds_blender": [
+    [
+      -1.850000023841858,
+      -1.7999999523162842,
+      0.0
+    ],
+    [
+      1.9415032863616943,
+      1.7999999523162842,
+      5.859999656677246
+    ]
+  ],
+  "uv_version": "ml15-v1",
+  "tripo_role": "Shape reference; precise open assemblies authored locally; generated candidate archived separately",
+  "materials": [
+    "coat",
+    "dark",
+    "steel",
+    "rubber",
+    "yellow",
+    "core"
+  ],
+  "high_triangles": 49252
+}

@@ -1,8 +1,15 @@
 {
-  "status": "awaiting_concept_visual_confirmation",
+  "status": "B1_in_progress",
   "model": "v3.1-20260211",
   "estimated_credits": 300,
-  "actual_tasks": [],
+  "actual_tasks": [
+    {
+      "asset": "B1",
+      "task_id": "cc81773f-6a6e-4d03-944e-2886fecc3461",
+      "status": "running",
+      "quoted_credits": 60
+    }
+  ],
   "actual_credits": 0,
   "rerolls_authorized": false,
   "steps": [
@@ -121,5 +128,7 @@
         "godot_validation"
       ]
     }
-  ]
+  ],
+  "budget_ceiling": 400,
+  "concept_approved": true
 }

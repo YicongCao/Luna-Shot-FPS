@@ -1,0 +1,13 @@
+{
+  "version": "ml15-v1",
+  "asset": "B1",
+  "meshes": {
+    "B1_Static": "body"
+  },
+  "atlases": {
+    "body": "body"
+  },
+  "fixtures": {
+    "type": "red_corners"
+  }
+}

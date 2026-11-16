@@ -16,6 +16,7 @@ var sun_target_visibility := 1.0
 var weapon_key: DirectionalLight3D
 var shadow_clock := 0.0
 var weapon_bloom: CanvasLayer
+var module_light_pool: Array[OmniLight3D] = []
 
 func _ready() -> void:
 	world=get_parent();player=world.get_node("Player")
@@ -60,6 +61,13 @@ func _ready() -> void:
 	weapon_bloom.set_script(load("res://scripts/weapon_bloom.gd"))
 	weapon_bloom.source=player.get_node("WeaponLayer/Container/Viewport")
 	add_child(weapon_bloom)
+	for i in 8:
+		var light := OmniLight3D.new()
+		light.name = "ModuleSpill" + str(i)
+		light.visible = false
+		light.shadow_enabled = true
+		add_child(light)
+		module_light_pool.append(light)
 	set_bloom(true)
 
 func add_fixture(pos: Vector3, color: Color, post: bool, label: String) -> void:
@@ -106,10 +114,33 @@ func _physics_process(delta: float) -> void:
 
 func _process(_delta: float) -> void:
 	if not weapon_key:return
+	update_module_lights()
 	weapon_bloom.set_active(bloom_enabled and not world.overview and player.weapon.energy_enabled,.8 if player.aiming else 1.6)
 	weapon_key.basis=player.camera.global_basis.inverse()*sun.global_basis
 	weapon_key.light_color=sun.light_color
 	weapon_key.light_energy=sun.light_energy*lerpf(.12,1.0,sun_visibility)
+
+func update_module_lights() -> void:
+	var candidates: Array[Dictionary] = []
+	var camera: Camera3D = get_viewport().get_camera_3d()
+	if not camera: return
+	for module in get_tree().get_nodes_in_group("facility_lamp_modules"):
+		for fixture: Dictionary in module.fixtures:
+			fixture.material.emission_enabled = facility_enabled
+			var distance: float = camera.global_position.distance_squared_to(fixture.mesh.global_position)
+			if fixture.level > .001 and distance < 24.0 * 24.0:
+				candidates.append({"fixture":fixture,"distance":distance})
+	candidates.sort_custom(func(a, b): return a.distance < b.distance)
+	for i in module_light_pool.size():
+		var light := module_light_pool[i]
+		light.visible = facility_enabled and i < candidates.size()
+		if not light.visible: continue
+		var fixture: Dictionary = candidates[i].fixture
+		light.global_position = fixture.mesh.global_position + Vector3(0,.07,0)
+		light.light_color = fixture.color
+		light.light_energy = .45 * fixture.level
+		light.omni_attenuation = 2.0
+		light.omni_range = fixture.range
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if not event is InputEventKey or not event.pressed or event.echo:return

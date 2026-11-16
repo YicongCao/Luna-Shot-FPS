@@ -1,0 +1,53 @@
+{
+	"checks": [
+		{
+			"check": "capture_range",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-front",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-back",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-left",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-right",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-front",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-back",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-left",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-right",
+			"passed": true
+		},
+		{
+			"check": "capture_distance-3",
+			"passed": true
+		},
+		{
+			"check": "capture_distance-10",
+			"passed": true
+		},
+		{
+			"check": "capture_distance-20",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

@@ -50,5 +50,5 @@
   "imagegen_cost": "Tool did not report monetary cost; do not infer zero.",
   "tripo_tasks": [],
   "tripo_credits_consumed": 0,
-  "user_visual_approval": "pending"
+  "user_visual_approval": "approved 2026-11-16; geometry corrections follow SPEC"
 }

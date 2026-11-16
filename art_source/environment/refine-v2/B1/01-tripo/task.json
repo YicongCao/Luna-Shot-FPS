@@ -1,0 +1,13 @@
+{
+  "task_id": "cc81773f-6a6e-4d03-944e-2886fecc3461",
+  "status": "success",
+  "type": "image_to_model",
+  "model": "v3.1-20260211",
+  "credits_consumed": 60,
+  "seed": 20261116,
+  "texture": false,
+  "pbr": false,
+  "generate_parts": true,
+  "geometry_quality": "detailed",
+  "role": "Reference for six radiator cassettes, side risers and cap corner fittings; manufactured local counterpart has independently authored controlled topology. No remote decimation or PBR."
+}

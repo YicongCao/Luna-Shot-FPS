@@ -1,0 +1,11 @@
+{
+  "budget": 400,
+  "actual_credits": 60,
+  "tasks": [
+    {
+      "asset": "B1",
+      "task_id": "cc81773f-6a6e-4d03-944e-2886fecc3461",
+      "credits": 60
+    }
+  ]
+}
