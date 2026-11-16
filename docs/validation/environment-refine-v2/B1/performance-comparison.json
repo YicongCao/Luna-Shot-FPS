@@ -11,16 +11,24 @@
     "viewport": "1600x1000"
   },
   "after": {
+    "active_omni_frames": {
+      "0": 6547,
+      "1": 66,
+      "2": 362
+    },
+    "blue_spill_frames": 0,
     "engine": "4.7.2-stable (official)",
-    "frames": 7072,
-    "objects_last_frame": 1032,
-    "p50_ms": 8.319,
-    "p95_ms": 9.677,
-    "primitives_last_frame": 1461997,
-    "seconds": 60.001,
-    "texture_bytes": 870166144,
-    "viewport": "1600x1000"
+    "frames": 6975,
+    "objects_last_frame": 985,
+    "p50_ms": 8.334,
+    "p95_ms": 9.7,
+    "primitives_last_frame": 1489968,
+    "seconds": 60.002,
+    "spot_spill_frames": 0,
+    "texture_bytes": 825426904,
+    "viewport": "1600x1000",
+    "vsync_disabled": false
   },
-  "p95_increase": 0.0030058043117744404,
+  "p95_increase": 0.005389718076285188,
   "passed": true
 }

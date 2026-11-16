@@ -8,6 +8,39 @@
     "body": "body"
   },
   "fixtures": {
-    "type": "red_corners"
+    "mounts": [
+      {
+        "kind": "red",
+        "position": [
+          -1.5,
+          5.82,
+          -1.5
+        ]
+      },
+      {
+        "kind": "red",
+        "position": [
+          -1.5,
+          5.82,
+          1.5
+        ]
+      },
+      {
+        "kind": "red",
+        "position": [
+          1.5,
+          5.82,
+          -1.5
+        ]
+      },
+      {
+        "kind": "red",
+        "position": [
+          1.5,
+          5.82,
+          1.5
+        ]
+      }
+    ]
   }
 }

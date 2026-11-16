@@ -1,17 +1,17 @@
 {
   "asset": "B1",
-  "triangles": 12884,
-  "high_triangles": 49252,
+  "triangles": 13460,
+  "high_triangles": 51316,
   "pairs": 9,
   "non_manifold_edges": 0,
   "degenerate_uv_triangles": 0,
   "uv_oob": 0,
   "overlap_pixels": 0,
-  "coverage": 0.19583415985107422,
+  "coverage": 0.19211578369140625,
   "cage_mismatch": 0,
   "bake": {
     "contract": {
-      "source_sha256": "4c1ba8b7d671c1921c0c4486c996a4d456f5ad81811562197e77597d2b4d9700",
+      "source_sha256": "9ec54cf31a6e2b9e52d57dd162d8f94dc7f523de843c806bef15aefeaf8ea1f9",
       "resolution": 4096,
       "normal": "OpenGL +Y",
       "explicit_cage": true,
@@ -29,62 +29,62 @@
     "maps": [
       {
         "name": "NormalGL",
-        "seconds": 5.67013692855835,
+        "seconds": 6.6929779052734375,
         "bake_type": "NORMAL"
       },
       {
         "name": "AO",
-        "seconds": 9.163372993469238,
+        "seconds": 7.679276943206787,
         "bake_type": "AO"
       },
       {
         "name": "BaseColor",
-        "seconds": 7.17464280128479,
+        "seconds": 7.146489143371582,
         "bake_type": "EMIT"
       },
       {
         "name": "Roughness",
-        "seconds": 8.00635290145874,
+        "seconds": 6.964166879653931,
         "bake_type": "EMIT"
       },
       {
         "name": "Metallic",
-        "seconds": 8.616803169250488,
+        "seconds": 7.398694276809692,
         "bake_type": "EMIT"
       },
       {
         "name": "Curvature",
-        "seconds": 7.864790916442871,
+        "seconds": 7.674088001251221,
         "bake_type": "EMIT"
       },
       {
         "name": "EdgeMask",
-        "seconds": 6.7859039306640625,
+        "seconds": 9.5575270652771,
         "bake_type": "EMIT"
       },
       {
         "name": "Position",
-        "seconds": 6.872936964035034,
+        "seconds": 9.837170124053955,
         "bake_type": "EMIT"
       },
       {
         "name": "WorldNormal",
-        "seconds": 7.033300876617432,
+        "seconds": 9.322876930236816,
         "bake_type": "EMIT"
       },
       {
         "name": "MaterialID",
-        "seconds": 7.229173183441162,
+        "seconds": 9.211802959442139,
         "bake_type": "EMIT"
       },
       {
         "name": "WearMask",
-        "seconds": 10.330299854278564,
+        "seconds": 10.499833822250366,
         "bake_type": "EMIT"
       },
       {
         "name": "OilMask",
-        "seconds": 8.442520141601562,
+        "seconds": 23.03246784210205,
         "bake_type": "EMIT"
       }
     ],

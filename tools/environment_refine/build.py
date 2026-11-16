@@ -69,6 +69,11 @@ def frame():
   for y in [-.81,.81]:
    box('CapPanel',(x,y,5.787),(1.62,1.56,.025),'dark',.005)
    for dx in [-.65,.65]:bolt((x+dx,y,5.81),(0,0,1))
+ # Small lifting eyes fit inside the six metre envelope; retained as real geometry.
+ for x in [-1.2,1.2]:
+  tube('LiftingEye',[(x,-.14,5.79),(x,-.10,5.90),(x,0,5.93),(x,.10,5.90),(x,.14,5.79)],.025,'steel')
+  for y in [-.14,.14]:box('EyeFoot',(x,y,5.805),(.12,.10,.03),'steel',.004)
+
 def cabinet():
  box('Cabinet',(0,0,.53),(2.95,2.85,.46),'coat',.018)
  for x in [-.72,.72]:
@@ -166,5 +171,5 @@ triangles=sum(p['triangles'] for p in records);assert triangles<=dict(B1=20000,B
 extent=dict(B1=(2,2,6),B2=(2,2,6),C=(2,4.01,3.5),D=(2,6.03,3.5),E=(1.91,1.01,14.2))[A]
 assert all(bounds[0][i]>=-extent[i]-.0001 and bounds[1][i]<=extent[i]+.0001 for i in [0,1]) and bounds[1][2]<=extent[2],bounds
 (O/'02-geometry').mkdir(exist_ok=True);bpy.ops.wm.save_as_mainfile(filepath=str(O/'02-geometry/paired.blend'))
-manifest={'asset':A,'seed':args.seed,'pairs':records,'triangles':triangles,'bounds_blender':bounds,'uv_version':'ml15-v1','tripo_role':'Shape reference; precise open assemblies authored locally; generated candidate archived separately','materials':list(M),'high_triangles':sum(sum(len(f.vertices)-2 for f in p['high'].data.polygons) for p in groups.values())}
+manifest={'asset':A,'seed':args.seed,'pairs':records,'triangles':triangles,'bounds_blender':bounds,'uv_version':'ml15-B1-v2' if A=='B1' else 'ml15-v1','tripo_role':'Shape reference; precise open assemblies authored locally; generated candidate archived separately','materials':list(M),'high_triangles':sum(sum(len(f.vertices)-2 for f in p['high'].data.polygons) for p in groups.values())}
 (O/'manifest.json').write_text(json.dumps(manifest,indent=2));print('ENV_BUILD_COMPLETE',A,triangles,len(records),flush=True)

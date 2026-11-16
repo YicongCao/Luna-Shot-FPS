@@ -9,7 +9,7 @@
       "high": "Frame_high",
       "cage": "Frame_cage",
       "cage_distance": 0.014,
-      "triangles": 2072
+      "triangles": 2648
     },
     {
       "name": "BaseCabinet",
@@ -84,7 +84,7 @@
       "triangles": 2576
     }
   ],
-  "triangles": 12884,
+  "triangles": 13460,
   "bounds_blender": [
     [
       -1.850000023841858,
@@ -94,10 +94,10 @@
     [
       1.9415032863616943,
       1.7999999523162842,
-      5.859999656677246
+      5.951650619506836
     ]
   ],
-  "uv_version": "ml15-v1",
+  "uv_version": "ml15-B1-v2",
   "tripo_role": "Shape reference; precise open assemblies authored locally; generated candidate archived separately",
   "materials": [
     "coat",
@@ -105,7 +105,8 @@
     "steel",
     "rubber",
     "yellow",
-    "core"
+    "core",
+    "tread"
   ],
-  "high_triangles": 49252
+  "high_triangles": 51316
 }

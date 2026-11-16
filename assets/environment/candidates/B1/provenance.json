@@ -1,7 +1,7 @@
 {
   "asset": "B1",
   "revision": "ml15-v1",
-  "triangles": 12884,
+  "triangles": 13460,
   "source": "art_source/environment/refine-v2/B1",
   "normal": "Cycles selected-to-active explicit cage bake",
   "texture_resolution": 2048,
