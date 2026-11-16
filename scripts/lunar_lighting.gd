@@ -131,7 +131,7 @@ func update_module_lights() -> void:
 	if not camera: return
 	for module in get_tree().get_nodes_in_group("facility_lamp_modules"):
 		for fixture: Dictionary in module.fixtures:
-			fixture.material.emission_enabled = facility_enabled
+			if fixture.material.emission_enabled != facility_enabled: fixture.material.emission_enabled = facility_enabled
 			var distance: float = camera.global_position.distance_squared_to(fixture.mesh.global_position)
 			var max_distance:=4.5 if fixture.get("kind", "red")=="blue" else 8.0
 			if distance < max_distance * max_distance:
@@ -158,9 +158,13 @@ func update_module_lights() -> void:
 	for candidate in candidates:
 		var fixture: Dictionary=candidate.fixture
 		var light: OmniLight3D=module_light_pool[slots[fixture.mesh.get_instance_id()]]
-		light.global_position=fixture.mesh.global_position+fixture.get("spill_offset",Vector3(0,.07,0))
-		light.light_color=fixture.color;light.omni_range=fixture.range;light.omni_attenuation=2.0
-		light.light_energy=.45*fixture.level*(1.0-smoothstep(candidate.max_distance-1.0,candidate.max_distance,sqrt(candidate.distance)))
+		var pos: Vector3=fixture.mesh.global_position+fixture.get("spill_offset",Vector3(0,.07,0))
+		if not light.global_position.is_equal_approx(pos):light.global_position=pos
+		if light.light_color!=fixture.color:light.light_color=fixture.color
+		if light.omni_range!=fixture.range:light.omni_range=fixture.range
+		if light.omni_attenuation!=2.0:light.omni_attenuation=2.0
+		var energy: float=.45*fixture.level*(1.0-smoothstep(candidate.max_distance-1.0,candidate.max_distance,sqrt(candidate.distance)))
+		if not is_equal_approx(light.light_energy,energy):light.light_energy=energy
 		light.visible=facility_enabled and fixture.level>.001 and activated<2
 		if light.visible:activated+=1
 

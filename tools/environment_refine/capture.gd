@@ -23,6 +23,8 @@ func run() -> void:
 		if module.asset_id==asset:tower=module;break
 	var cam:=Camera3D.new();world.add_child(cam);cam.current=true;cam.fov=65
 	cam.global_position=tower.to_global(Vector3(8,4,8));cam.look_at(tower.to_global(Vector3(0,3,0)))
+	if asset in ["D","E"]:
+		cam.global_position=tower.to_global(Vector3(14,10 if asset=="E" else 6,14));cam.look_at(tower.to_global(Vector3(0,7 if asset=="E" else 1.7,0)))
 	await shot("range")
 	var lamps:=tower.get_node_or_null("FacilityLamps")
 	if lamps:
@@ -32,7 +34,7 @@ func run() -> void:
 		if asset in ["B1","B2"]:
 			cam.global_position=tower.to_global(Vector3(3.5,6.9,3.5));cam.look_at(tower.to_global(Vector3(0,5.7,0)));cam.fov=48
 		else:
-			var fixture: Dictionary=lamps.fixtures[0]
+			var fixture: Dictionary=lamps.fixtures[1 if asset=="D" else 0]
 			var local: Vector3=tower.to_local(fixture.mesh.global_position)
 			cam.global_position=tower.to_global(local+Vector3(-3,1.1,2));cam.look_at(fixture.mesh.global_position);cam.fov=48
 			world.lighting.sun.light_energy=.08;world.lighting.environment.ambient_light_energy=.07
@@ -78,7 +80,7 @@ func run() -> void:
 	sun.rotation_degrees=Vector3(-6,-35,0);await shot("pbr-grazing");sun.rotation_degrees=Vector3(-30,-35,0)
 	cam.projection=Camera3D.PROJECTION_PERSPECTIVE;cam.fov=65
 	for distance in [3,10,20]:
-		cam.position=Vector3(0,1.65,distance+1.8);cam.look_at(Vector3(0,3,0));await shot("distance-"+str(distance))
+		cam.position=Vector3(0,1.65,distance+1.8);cam.look_at(Vector3(0,7 if asset=="E" else 3,0));await shot("distance-"+str(distance))
 	var failures:=checks.filter(func(c):return not c.passed).size()
 	FileAccess.open(out+"checks.json",FileAccess.WRITE).store_string(JSON.stringify({"checks":checks,"failures":failures},"\t"))
 	print("ENV_CAPTURE_COMPLETE ",phase," failures=",failures);quit(0 if failures==0 else 1)

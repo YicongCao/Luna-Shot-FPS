@@ -1,0 +1,32 @@
+{
+  "before": {
+    "engine": "4.7.2-stable (official)",
+    "frames": 7173,
+    "objects_last_frame": 941,
+    "p50_ms": 8.27,
+    "p95_ms": 9.648,
+    "primitives_last_frame": 1357069,
+    "seconds": 60.001,
+    "texture_bytes": 881350954,
+    "viewport": "1600x1000"
+  },
+  "after": {
+    "active_omni_frames": {
+      "0": 6338,
+      "1": 141,
+      "2": 389
+    },
+    "blue_spill_frames": 0,
+    "engine": "4.7.2-stable (official)",
+    "frames": 6868,
+    "objects_last_frame": 1124,
+    "p50_ms": 8.403,
+    "p95_ms": 10.04,
+    "primitives_last_frame": 1534715,
+    "seconds": 60.002,
+    "texture_bytes": 836611714,
+    "viewport": "1600x1000"
+  },
+  "p95_increase": 0.04063018242122718,
+  "passed": true
+}

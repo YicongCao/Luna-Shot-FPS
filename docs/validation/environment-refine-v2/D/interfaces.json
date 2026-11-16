@@ -1,0 +1,485 @@
+{
+  "checks": [
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -5.37,
+        "expected": 0.18899999999999997,
+        "actual": 0.18899917602539062
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -4.37,
+        "expected": 0.48899999999999993,
+        "actual": 0.4889984130859375
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -3.37,
+        "expected": 0.7889999999999999,
+        "actual": 0.7890005111694336
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -2.37,
+        "expected": 1.089,
+        "actual": 1.0890007019042969
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -1.37,
+        "expected": 1.389,
+        "actual": 1.3889999389648438
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": -0.37,
+        "expected": 1.6889999999999998,
+        "actual": 1.689000129699707
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 0.37,
+        "expected": 1.911,
+        "actual": 1.9109992980957031
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 1.37,
+        "expected": 2.211,
+        "actual": 2.2109999656677246
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 4.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -1.35,
+        "y": 5.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -5.37,
+        "expected": 0.18899999999999997,
+        "actual": 0.18899917602539062
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -4.37,
+        "expected": 0.48899999999999993,
+        "actual": 0.4889993667602539
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -3.37,
+        "expected": 0.7889999999999999,
+        "actual": 0.7890005111694336
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -2.37,
+        "expected": 1.089,
+        "actual": 1.0889997482299805
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -1.37,
+        "expected": 1.389,
+        "actual": 1.3889999389648438
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": -0.37,
+        "expected": 1.6889999999999998,
+        "actual": 1.689000129699707
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 0.37,
+        "expected": 1.911,
+        "actual": 1.9109992980957031
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 1.37,
+        "expected": 2.211,
+        "actual": 2.211000442504883
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.399998664855957
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 4.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": -0.45,
+        "y": 5.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -5.37,
+        "expected": 0.18899999999999997,
+        "actual": 0.18899917602539062
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -4.37,
+        "expected": 0.48899999999999993,
+        "actual": 0.4889984130859375
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -3.37,
+        "expected": 0.7889999999999999,
+        "actual": 0.7890005111694336
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -2.37,
+        "expected": 1.089,
+        "actual": 1.0890007019042969
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -1.37,
+        "expected": 1.389,
+        "actual": 1.3889999389648438
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": -0.37,
+        "expected": 1.6889999999999998,
+        "actual": 1.689000129699707
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 0.37,
+        "expected": 1.911,
+        "actual": 1.9109992980957031
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 1.37,
+        "expected": 2.211,
+        "actual": 2.2109994888305664
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 4.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 0.45,
+        "y": 5.37,
+        "expected": 2.4,
+        "actual": 2.3999996185302734
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -5.37,
+        "expected": 0.18899999999999997,
+        "actual": 0.18899917602539062
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -4.37,
+        "expected": 0.48899999999999993,
+        "actual": 0.4889993667602539
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -3.37,
+        "expected": 0.7889999999999999,
+        "actual": 0.7889995574951172
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -2.37,
+        "expected": 1.089,
+        "actual": 1.0889997482299805
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -1.37,
+        "expected": 1.389,
+        "actual": 1.3889999389648438
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": -0.37,
+        "expected": 1.6889999999999998,
+        "actual": 1.689000129699707
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 0.37,
+        "expected": 1.911,
+        "actual": 1.9109983444213867
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 1.37,
+        "expected": 2.211,
+        "actual": 2.211000442504883
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 2.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 3.37,
+        "expected": 2.4,
+        "actual": 2.4000000953674316
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 4.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    },
+    {
+      "check": "walk_height",
+      "passed": true,
+      "detail": {
+        "x": 1.35,
+        "y": 5.37,
+        "expected": 2.4,
+        "actual": 2.3999991416931152
+      }
+    }
+  ],
+  "failures": 0
+}

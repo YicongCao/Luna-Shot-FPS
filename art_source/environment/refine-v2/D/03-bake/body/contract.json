@@ -1,0 +1,7 @@
+{
+  "source_sha256": "d1ab658093944ca62045bd23f552095a9c16c13b3eda740ecb3ddb316474d061",
+  "resolution": 4096,
+  "normal": "OpenGL +Y",
+  "explicit_cage": true,
+  "margin_px": 32
+}

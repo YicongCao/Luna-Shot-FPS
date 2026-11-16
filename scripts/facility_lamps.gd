@@ -40,9 +40,9 @@ func add_red(pos: Vector3) -> void:
 	lens.mesh = shape; lens.position = pos + Vector3(0, .085, 0)
 	var mat := StandardMaterial3D.new()
 	mat.albedo_color = Color(.22, .006, .003); mat.roughness = .22
-	mat.emission_enabled = true; mat.emission = Color(1, .015, .005)
+	mat.emission_enabled = true; mat.emission = Color(1, .015, .005); mat.emission_energy_multiplier = 0.0
 	lens.material_override = mat; add_child(lens)
-	fixtures.append({"mesh":lens, "material":mat, "color":Color(1,.025,.008), "range":1.4, "level":0.0,"kind":"red","spill_offset":Vector3(0,.07,0)})
+	fixtures.append({"mesh":lens, "material":mat, "color":Color(1,.025,.008), "range":1.0, "level":0.0,"kind":"red","spill_offset":Vector3(0,.07,0)})
 
 func _process(delta: float) -> void:
 	if is_instance_valid(training) and training.get("paused") == true: return
@@ -55,8 +55,9 @@ func refresh() -> void:
 	if asset_id in ["C", "D"]: level = 1.0
 	if forced_level >= 0: level = forced_level
 	for fixture in fixtures:
-		fixture.level = level
-		fixture.material.emission_energy_multiplier = level * 7.0
+		if not is_equal_approx(fixture.level,level):
+			fixture.level = level
+			fixture.material.emission_energy_multiplier = level * 7.0
 
 func add_blue(pos: Vector3, angle: float, side: float) -> void:
 	var lens:=MeshInstance3D.new();var shape:=BoxMesh.new();shape.size=Vector3(.015,.05,1.20)
