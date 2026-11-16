@@ -2,6 +2,7 @@
 extends Node3D
 # ML16: shared metre-scaled surface, one cover assembly, and local equipment seats.
 @export var sample:=true
+@export var published:=false
 var baseline:=false
 var surface: ShaderMaterial
 var original_material: Material
@@ -9,8 +10,12 @@ var ground: MeshInstance3D
 var originals: Array[MeshInstance3D]=[]
 var batches: Dictionary={}
 var counts: Dictionary={}
+var last_ambient:=Vector3(-1,-1,-1)
 const DIR:="res://assets/environment/ground_v1/"
 func _ready() -> void:
+	if not sample:
+		if OS.get_environment("GROUND_BASELINE")=="1" or "--whitebox" in OS.get_cmdline_user_args():return
+		if OS.get_environment("GROUND_CANDIDATE")!="1" and not published:return
 	ground=get_parent().get_node("Ground/Mesh")
 	original_material=ground.get_active_material(0)
 	for node in get_parent().get_children():
@@ -20,7 +25,8 @@ func _ready() -> void:
 	for pair in [["paving","paving"],["soil","regolith"]]:
 		for c in [["color","BaseColor"],["orm","ORM"],["normal","NormalGL"]]:
 			surface.set_shader_parameter(pair[0]+"_"+c[0],load(DIR+pair[1]+"/"+c[1]+".png"))
-	surface.set_shader_parameter("soil_mask",load(DIR+("sample_mask.png" if sample else "field_mask.png")))
+	var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://docs/design/ground-sample.json" if sample else "res://docs/design/energy-layout.json"))
+	surface.set_shader_parameter("soil_mask",load(DIR+"sample_mask.png") if sample else ImageTexture.create_from_image(make_field_mask(layout)))
 	surface.set_shader_parameter("area_origin",Vector2(-4,-4) if sample else Vector2(-32,-33))
 	surface.set_shader_parameter("area_size",Vector2(8,8) if sample else Vector2(64,66))
 	var metal:=StandardMaterial3D.new();metal.albedo_texture=load(DIR+"metal/BaseColor.png");metal.metallic=1;metal.metallic_texture=load(DIR+"metal/ORM.png");metal.metallic_texture_channel=BaseMaterial3D.TEXTURE_CHANNEL_BLUE
@@ -28,7 +34,6 @@ func _ready() -> void:
 	var trim:=StandardMaterial3D.new();trim.albedo_color=Color(.10,.12,.13);trim.metallic=.8;trim.roughness=.46
 	var steel:=StandardMaterial3D.new();steel.albedo_color=Color(.35,.38,.39);steel.metallic=1;steel.roughness=.32
 	var dark:=StandardMaterial3D.new();dark.albedo_color=Color(.025,.03,.032);dark.roughness=.9
-	var layout: Dictionary=JSON.parse_string(FileAccess.get_file_as_string("res://docs/design/ground-sample.json" if sample else "res://docs/design/energy-layout.json"))
 	for module in layout.modules:
 		if module.type=="A":seat(Vector3(module.position[0],0,module.position[2]),trim,steel,deg_to_rad(module.rotation_y))
 	if sample:cover(Vector3(1.45,0,1.45),metal,trim,steel,dark)
@@ -43,7 +48,7 @@ func _ready() -> void:
 	set_baseline(OS.get_environment("GROUND_BASELINE")=="1")
 func set_baseline(value: bool) -> void:
 	baseline=value;ground.material_override=original_material if value else surface
-	for mesh in originals:mesh.visible=value
+	for mesh in originals:mesh.visible=value and sample
 	for node in get_children():
 		if node is GeometryInstance3D:node.visible=not value
 	var markings:=get_parent().get_node_or_null("ReflectiveMarkings")
@@ -93,3 +98,35 @@ func flush_batches() -> void:
 		var multi:=MultiMesh.new();multi.transform_format=MultiMesh.TRANSFORM_3D;multi.mesh=batch.mesh;multi.instance_count=batch.poses.size()
 		for i in batch.poses.size():multi.set_instance_transform(i,batch.poses[i])
 		var node:=MultiMeshInstance3D.new();node.name=id.validate_node_name();node.multimesh=multi;node.material_override=batch.material;node.cast_shadow=GeometryInstance3D.SHADOW_CASTING_SETTING_OFF;add_child(node)
+
+static func paved_rectangles(layout: Dictionary) -> Array[Rect2]:
+	var rects: Array[Rect2]=[Rect2(-4.3,-33,8.6,66),Rect2(-32,-4.3,64,8.6),Rect2(-4.3,24.7,8.6,8.3)]
+	for name in layout.routes:
+		var route: Array=layout.routes[name]
+		for i in range(1,route.size()):
+			var a:=Vector2(route[i-1][0],route[i-1][2]);var b:=Vector2(route[i][0],route[i][2])
+			var lo:=Vector2(minf(a.x,b.x),minf(a.y,b.y))-Vector2.ONE*2.3
+			var hi:=Vector2(maxf(a.x,b.x),maxf(a.y,b.y))+Vector2.ONE*2.3
+			rects.append(Rect2(lo,hi-lo))
+	for module in layout.modules+layout.landmarks:
+		var size:=Vector2(module.footprint[0],module.footprint[1])
+		if int(module.rotation_y)%180!=0:size=Vector2(size.y,size.x)
+		var center:=Vector2(module.position[0],module.position[2]);size+=Vector2.ONE*.6
+		rects.append(Rect2(center-size*.5,size))
+	return rects
+static func make_field_mask(layout: Dictionary) -> Image:
+	var im:=Image.create(512,528,false,Image.FORMAT_R8);im.fill(Color.WHITE)
+	for rect in paved_rectangles(layout):
+		var low: Vector2=(rect.position+Vector2(32,33))*8
+		var high: Vector2=(rect.end+Vector2(32,33))*8
+		var area:=Rect2i(Vector2i(floor(low.x),floor(low.y)),Vector2i(ceil(high.x)-floor(low.x),ceil(high.y)-floor(low.y)))
+		im.fill_rect(area.intersection(Rect2i(0,0,512,528)),Color.BLACK)
+	return im
+
+func _process(_delta: float) -> void:
+	if surface==null:return
+	var environment: Environment=get_parent().get_node("Environment").environment
+	var c:=environment.ambient_light_color
+	var value:=Vector3(c.r,c.g,c.b)*environment.ambient_light_energy
+	if not value.is_equal_approx(last_ambient):
+		surface.set_shader_parameter("ground_ambient",value);last_ambient=value

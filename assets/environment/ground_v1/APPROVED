@@ -1,0 +1,12 @@
+{
+  "milestone": "ML16",
+  "technical": "passed",
+  "implementation_visual_review": "passed",
+  "user_visual_acceptance": "pending",
+  "source_sha256": {
+    "scripts/ground_surface.gd": "9859d50141473cae114d0fb1cdfea554bdaf89ae8ed2685721a09ab86bb7dcf5",
+    "assets/environment/ground_v1/surface.gdshader": "28a5e0cd2c6fe572222a11274422798411965479ee8b199b839cf9d74c4c3c49",
+    "art_source/environment/ground-v1/manifest.json": "e6fd3f7c46658eafdd64f00539d3acfaabc53489167a7c44fbccb2b4284ea0a6"
+  },
+  "note": "Build-time marker. Generator writes published=true into the scene; runtime does not depend on packaging this marker."
+}

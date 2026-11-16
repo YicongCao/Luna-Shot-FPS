@@ -18,7 +18,13 @@ WASD 移动 · 鼠标视角 · Shift 冲刺 · 空格跳跃 · 左键射击（�
 
 [日志索引](docs/logs/README.md) · [ML01-枪械建模](docs/logs/ML01-枪械建模.md) · [ML02-过程生成白模](docs/logs/ML02-过程生成白模.md)
 
-## 当前环境版本：ML15
+## 当前地面版本：ML16
+
+8×8m地面样板已验证并推广全场：2×4m工业铺装、检修盖、A设备座基和月壤过渡。双击 `launch-ground-sample.command` 可玩样板，B键对比前后；`GROUND_BASELINE=1 ./launch.command` 查看旧地面。
+
+[原生前后对照](docs/validation/ground-v1/review.html) · [验证与限制](docs/validation/ground-v1/REPORT.md) · [ML16经验](docs/logs/ML16-工业铺装与月壤地面.md)。
+
+## 环境模块版本：ML15
 
 B1/B2/C/D/E 已精修并接入默认关卡：分层散热结构、开放桁架、连续坡道、48红灯/32蓝灯/旋转橙色警灯和黄色反光标线。Tripo本轮300/400积分；A与ML06枪械保持。
 

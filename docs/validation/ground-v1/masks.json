@@ -1,0 +1,125 @@
+{
+	"checks": [
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261115.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261116.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261117.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261118.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261119.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261120.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261121.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261122.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261123.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261124.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261125.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261126.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261127.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261128.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261129.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261130.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261131.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261132.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261133.0,
+			"soil_hits": 0
+		},
+		{
+			"passed": true,
+			"road_samples": 4059,
+			"seed": 20261134.0,
+			"soil_hits": 0
+		}
+	],
+	"failures": 0
+}

@@ -1,0 +1,133 @@
+{
+	"checks": [
+		{
+			"check": "candidate_loaded",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "paving_BaseColor_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "paving_ORM_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "paving_NormalGL_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "regolith_BaseColor_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "regolith_ORM_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "regolith_NormalGL_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "metal_BaseColor_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "metal_ORM_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "metal_NormalGL_2k_compressed_mips",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "40_seats_8_shared_covers",
+			"detail": {
+				"covers": 8,
+				"seats": 40
+			},
+			"passed": true
+		},
+		{
+			"check": "no_new_colliders",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "routes_keep_paving",
+			"detail": {
+				"samples": 3333,
+				"soil_hits": 0
+			},
+			"passed": true
+		},
+		{
+			"check": "mask_is_deterministic",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-spawn",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-overview",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-road",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-equipment",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-underbridge",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-spawn",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-overview",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-road",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-equipment",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-underbridge",
+			"detail": null,
+			"passed": true
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"renderer": "gl_compatibility"
+}

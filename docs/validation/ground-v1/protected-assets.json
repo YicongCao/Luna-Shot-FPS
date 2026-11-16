@@ -1,0 +1,15 @@
+{
+  "baseline_commit": "591b1f8",
+  "paths": [
+    "assets/weapons",
+    "docs/design/energy-layout.json",
+    "scripts/b2_cooling_fans.gd",
+    "assets/environment/A",
+    "assets/environment/B1",
+    "assets/environment/B2",
+    "assets/environment/C",
+    "assets/environment/D",
+    "assets/environment/E"
+  ],
+  "unchanged": true
+}
