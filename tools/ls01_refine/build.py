@@ -228,7 +228,7 @@ for group in ['body','kit']:
  objs=[p['low'] for p in pairs if p['group']==group]
  bpy.ops.object.select_all(action='DESELECT')
  for ob in objs:
-  active(ob);m=ob.modifiers.new('Frozen triangles','TRIANGULATE');bpy.ops.object.modifier_apply(modifier=m.name)
+  active(ob);m=ob.modifiers.new('Frozen triangles','TRIANGULATE');m.keep_custom_normals=args.revision=='ml09';bpy.ops.object.modifier_apply(modifier=m.name)
  bpy.ops.object.select_all(action='DESELECT')
  for ob in objs:ob.select_set(True)
  bpy.context.view_layer.objects.active=objs[0];bpy.ops.object.mode_set(mode='EDIT');bpy.ops.mesh.select_all(action='SELECT');bpy.ops.uv.smart_project(angle_limit=1.10,island_margin=.016);bpy.ops.uv.pack_islands(rotate=True,margin=.008,margin_method='FRACTION');bpy.ops.object.mode_set(mode='OBJECT')

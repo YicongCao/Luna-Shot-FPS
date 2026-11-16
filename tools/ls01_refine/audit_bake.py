@@ -3,7 +3,10 @@ from PIL import Image
 import numpy as np,json
 from paths import parse
 args,R,O,D,REPORT=parse();report={};fail=[]
+from bake_contract import source_digest
 for group in ['body','kit']:
+ contract=json.loads((O/'03-bake'/group/'contract.json').read_text())
+ if contract['source_sha256']!=source_digest(O/'02-geometry/paired.blend'):fail.append(group+'_stale_source_contract')
  covered=np.flipud(np.load(O/(group+'-uv-coverage.npz'))['owners']>=0)
  # Erode strict raster mask to avoid filter / gutter boundaries in channel statistics.
  mask=covered.copy()

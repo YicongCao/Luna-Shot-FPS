@@ -1,4 +1,5 @@
 {
+  "minimum_cell_planar_normal_dot": 0.9999768733978271,
   "retained": {
     "T00_CoreGrip_low": {
       "geometry_and_uv_equal": true,

@@ -1,0 +1,52 @@
+00:00.302  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
+BlenderMCP addon registered
+NORMAL Cell_LeftSkin low 38 0.000295 3 0.9999771 True
+NORMAL Cell_LeftSkin low 46 0.0046076 3 0.9999769 True
+NORMAL Cell_LeftSkin low 71 0.0003397 3 0.9999769 True
+NORMAL Cell_LeftSkin low 72 0.0002621 3 0.9999769 True
+NORMAL Cell_LeftSkin low 73 0.0046076 3 0.9999769 True
+NORMAL Cell_LeftSkin low 74 0.0045014 3 0.9999769 True
+NORMAL Cell_LeftSkin low 75 0.0003214 3 0.9999771 True
+NORMAL Cell_LeftSkin low 83 0.0002621 3 0.9999769 True
+NORMAL Cell_LeftSkin low 84 0.0003397 3 0.9999769 True
+NORMAL Cell_LeftSkin low 85 0.0045014 3 0.9999769 True
+NORMAL Cell_LeftSkin low 86 0.000295 3 0.999977 True
+NORMAL Cell_LeftSkin low 87 0.0003214 3 0.999977 True
+NORMAL Cell_LeftSkin high 636 0.0005105 6 0.9999976 True
+NORMAL Cell_LeftSkin high 637 0.0081468 28 0.9999992 True
+NORMAL Cell_LeftSkin high 639 0.001206 5 0.9999926 True
+NORMAL Cell_LeftSkin high 642 8.2e-05 4 0.9999993 True
+NORMAL Cell_LeftSkin high 647 3.9e-05 4 0.9997754 True
+NORMAL Cell_LeftSkin high 650 3.9e-05 4 0.9997752 True
+NORMAL Cell_LeftSkin high 654 1.6e-05 4 0.9979745 True
+NORMAL Cell_LeftSkin high 659 1.6e-05 4 0.9979746 True
+NORMAL Cell_LeftSkin high 665 1.6e-05 4 0.9979742 True
+NORMAL Cell_LeftSkin high 673 0.0103272 8 0.9999994 True
+NORMAL Cell_LeftSkin high 675 6.7e-05 4 0.9999999 True
+NORMAL T11_CellSide low 38 0.000295 3 0.9999771 True
+NORMAL T11_CellSide low 46 0.0046076 3 0.9999769 True
+NORMAL T11_CellSide low 71 0.0003397 3 0.9999769 True
+NORMAL T11_CellSide low 72 0.0002621 3 0.9999769 True
+NORMAL T11_CellSide low 73 0.0046076 3 0.9999769 True
+NORMAL T11_CellSide low 74 0.0045014 3 0.9999769 True
+NORMAL T11_CellSide low 75 0.0003214 3 0.9999771 True
+NORMAL T11_CellSide low 83 0.0002621 3 0.9999769 True
+NORMAL T11_CellSide low 84 0.0003397 3 0.9999769 True
+NORMAL T11_CellSide low 85 0.0045014 3 0.9999769 True
+NORMAL T11_CellSide low 86 0.000295 3 0.999977 True
+NORMAL T11_CellSide low 87 0.0003214 3 0.999977 True
+NORMAL T11_CellSide high 642 4.5e-05 4 0.9999231 True
+NORMAL T11_CellSide high 646 0.0104045 8 0.9999998 True
+NORMAL T11_CellSide high 649 4.5e-05 4 0.9999229 True
+NORMAL T11_CellSide high 654 2.38e-05 4 0.9994912 True
+NORMAL T11_CellSide high 659 2.38e-05 4 0.9994912 True
+NORMAL T11_CellSide high 664 2.38e-05 4 0.999491 True
+NORMAL T11_CellSide high 676 0.0013207 10 0.9999977 True
+NORMAL T11_CellSide high 677 0.0085749 29 0.9999996 True
+NORMAL T11_CellSide high 678 8.4e-05 4 0.9999997 True
+NORMAL T11_CellSide high 679 7.16e-05 4 0.9999999 True
+NORMAL T11_CellSide high 680 7.14e-05 4 0.9999999 True
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

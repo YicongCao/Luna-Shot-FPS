@@ -1,67 +1,67 @@
-00:00.337  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
+00:00.307  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
 BlenderMCP addon registered
 BAKE_DEVICE [('Apple M5', 'CPU', False), ('Apple M5 (GPU - 10 cores)', 'METAL', True)]
 /Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/bake.py:52: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
   mat=bpy.data.materials.new('BakeTarget');mat.use_nodes=True;lo.data.materials.clear();lo.data.materials.append(mat)
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body NormalGL 5.754852056503296
+BAKED body NormalGL 6.575238943099976
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body AO 5.628063201904297
+BAKED body AO 7.094055891036987
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body BaseColor 5.221528768539429
+BAKED body BaseColor 6.0209801197052
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body Roughness 4.713521957397461
+BAKED body Roughness 5.221908807754517
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body Metallic 4.541598081588745
+BAKED body Metallic 5.599272966384888
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body Curvature 5.027050971984863
+BAKED body Curvature 5.377846956253052
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body EdgeMask 5.252291202545166
+BAKED body EdgeMask 5.323394060134888
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body Position 5.444947957992554
+BAKED body Position 6.5559327602386475
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body WorldNormal 4.634310722351074
+BAKED body WorldNormal 6.892836093902588
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body MaterialID 4.615457057952881
+BAKED body MaterialID 5.8640100955963135
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body WearMask 5.008013963699341
+BAKED body WearMask 6.548792839050293
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED body OilMask 5.015516996383667
+BAKED body OilMask 8.746677160263062
 Info: Saved as "bake-pairs.blend"
 BAKE_COMPLETE
 BlenderMCP addon unregistered
 Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
 
 Blender quit
-00:00.954  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
+00:00.815  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
 BlenderMCP addon registered
 BAKE_DEVICE [('Apple M5', 'CPU', False), ('Apple M5 (GPU - 10 cores)', 'METAL', True)]
 /Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/bake.py:52: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
   mat=bpy.data.materials.new('BakeTarget');mat.use_nodes=True;lo.data.materials.clear();lo.data.materials.append(mat)
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit NormalGL 4.714503765106201
+BAKED kit NormalGL 6.5703370571136475
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit AO 5.62237811088562
+BAKED kit AO 8.252611875534058
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit BaseColor 5.2645769119262695
+BAKED kit BaseColor 8.855613946914673
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit Roughness 6.445888996124268
+BAKED kit Roughness 7.277600049972534
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit Metallic 5.957442760467529
+BAKED kit Metallic 7.166021823883057
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit Curvature 7.118551015853882
+BAKED kit Curvature 6.8901190757751465
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit EdgeMask 11.789301872253418
+BAKED kit EdgeMask 10.134520053863525
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit Position 5.969880104064941
+BAKED kit Position 8.192176103591919
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit WorldNormal 5.680129051208496
+BAKED kit WorldNormal 8.794470310211182
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit MaterialID 5.797073841094971
+BAKED kit MaterialID 7.247530937194824
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit WearMask 6.199465990066528
+BAKED kit WearMask 7.138478994369507
 Info: Baking map saved to internal image, save it externally or pack it
-BAKED kit OilMask 6.6528990268707275
+BAKED kit OilMask 8.349638938903809
 Info: Saved as "bake-pairs.blend"
 BAKE_COMPLETE
 BlenderMCP addon unregistered

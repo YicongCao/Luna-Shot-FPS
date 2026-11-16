@@ -1,6 +1,6 @@
 {
   "contract": {
-    "source_sha256": "96ec831bc8f4b60d388eb7203a875913013c9fd097fc0d072d7069844e00c8b6",
+    "source_sha256": "49cb299b957e336aeebebf7296a0a7a780b72acfdf106ccbaad2b0b4e39d2e11",
     "resolution": 4096,
     "normal": "OpenGL +Y",
     "explicit_cage": true,
@@ -18,62 +18,62 @@
   "maps": [
     {
       "name": "NormalGL",
-      "seconds": 4.713866949081421,
+      "seconds": 6.569596767425537,
       "bake_type": "NORMAL"
     },
     {
       "name": "AO",
-      "seconds": 5.621743202209473,
+      "seconds": 8.25223684310913,
       "bake_type": "AO"
     },
     {
       "name": "BaseColor",
-      "seconds": 5.263931035995483,
+      "seconds": 8.850342988967896,
       "bake_type": "EMIT"
     },
     {
       "name": "Roughness",
-      "seconds": 6.445127010345459,
+      "seconds": 7.277066946029663,
       "bake_type": "EMIT"
     },
     {
       "name": "Metallic",
-      "seconds": 5.956789016723633,
+      "seconds": 7.165333032608032,
       "bake_type": "EMIT"
     },
     {
       "name": "Curvature",
-      "seconds": 7.117634057998657,
+      "seconds": 6.88949179649353,
       "bake_type": "EMIT"
     },
     {
       "name": "EdgeMask",
-      "seconds": 11.788508176803589,
+      "seconds": 10.133100032806396,
       "bake_type": "EMIT"
     },
     {
       "name": "Position",
-      "seconds": 5.969454050064087,
+      "seconds": 8.191690921783447,
       "bake_type": "EMIT"
     },
     {
       "name": "WorldNormal",
-      "seconds": 5.679472208023071,
+      "seconds": 8.793636322021484,
       "bake_type": "EMIT"
     },
     {
       "name": "MaterialID",
-      "seconds": 5.7964558601379395,
+      "seconds": 7.246831893920898,
       "bake_type": "EMIT"
     },
     {
       "name": "WearMask",
-      "seconds": 6.198892116546631,
+      "seconds": 7.137814998626709,
       "bake_type": "EMIT"
     },
     {
       "name": "OilMask",
-      "seconds": 6.652191877365112,
+      "seconds": 8.34881591796875,
       "bake_type": "EMIT"
     }
   ],

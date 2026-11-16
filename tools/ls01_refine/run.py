@@ -1,5 +1,5 @@
 """Reproducible staged ML07 entry. Does not publish by default."""
-import argparse,subprocess,sys,json
+import argparse,subprocess,sys,json,shutil
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];B='/Applications/Blender.app/Contents/MacOS/Blender'
 p=argparse.ArgumentParser();p.add_argument('stage',choices=['build','bake','export','pack','audit']);p.add_argument('--revision',choices=['ml07','ml09'],default='ml07');p.add_argument('--out');p.add_argument('--runtime');p.add_argument('--size',type=int,default=0);p.add_argument('--report-dir');p.add_argument('--seed',type=int,default=20261115);p.add_argument('--group',choices=['body','kit','all'],default='all');a=p.parse_args()
@@ -7,6 +7,16 @@ v='2' if a.revision=='ml09' else '1'
 a.out=a.out or str(R/f'art_source/weapons/lc01/ls01-refine-v{v}')
 a.runtime=a.runtime or str(R/f'assets/weapons/lc01/ls01_v{v}')
 a.report_dir=a.report_dir or str(R/f'docs/validation/ls01-refine-v{v}')
+if a.stage in ['build','export','pack']:
+ assert not (Path(a.runtime)/'APPROVED').exists(),'Published runtime is protected; select a new --out and --runtime candidate'
+if a.stage=='build' and a.revision=='ml09':
+ # Fresh isolated output can reuse immutable ML07 inputs without external generation.
+ source=R/'art_source/weapons/lc01/ls01-refine-v1';out=Path(a.out);out.mkdir(parents=True,exist_ok=True);(out/'.gdignore').touch()
+ for folder in ['00-baseline','01-imagegen']:
+  if not (out/folder).exists():shutil.copytree(source/folder,out/folder)
+ runtime=Path(a.runtime);runtime.mkdir(parents=True,exist_ok=True)
+ if not (runtime/'retained').exists():shutil.copytree(R/'assets/weapons/lc01/ls01_v1/retained',runtime/'retained')
+ if not (runtime/'resolution.json').exists():shutil.copy2(R/'assets/weapons/lc01/ls01_v1/resolution.json',runtime/'resolution.json')
 def blender(script,extras=[]):subprocess.run([B,'--background','--python-exit-code','1','--python',str(R/'tools/ls01_refine'/script),'--',*extras],cwd=R,check=True)
 if a.stage=='build':blender('build.py',['--out',a.out,'--seed',str(a.seed),'--revision',a.revision])
 if a.stage=='bake':

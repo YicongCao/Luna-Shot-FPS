@@ -7,6 +7,8 @@ a=argparse.ArgumentParser();a.add_argument('--group',choices=['body','kit'],requ
 assert not (D/'APPROVED').exists(),'Active validated runtime is protected: choose a new --runtime directory'
 report=json.loads((src/'report.json').read_text())
 assert report.get('completed'), 'Bake is not complete; wait for both atlas groups before packing'
+from bake_contract import check
+check(src,O/'02-geometry/paired.blend',report['resolution'])
 for name in ['BaseColor','AO','Roughness','Metallic','NormalGL']:
  p=src/(name+'.png')
  assert p.exists(),p

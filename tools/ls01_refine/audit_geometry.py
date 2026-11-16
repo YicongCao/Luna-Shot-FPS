@@ -7,6 +7,9 @@ for p in m['pairs']:
  bm=bmesh.new();bm.from_mesh(lo.data);open_edges=sum(not e.is_manifold for e in bm.edges);degenerate=sum(f.calc_area()<1e-14 for f in bm.faces);volume=bm.calc_volume(signed=True);bm.free()
  hb=bmesh.new();hb.from_mesh(hi.data);high_bad=sum(not e.is_manifold for e in hb.edges);high_volume=hb.calc_volume(signed=True);hb.free()
  uv=np.array([x.uv[:] for x in lo.data.uv_layers.active.data]);same=[tuple(f.vertices) for f in lo.data.polygons]==[tuple(f.vertices) for f in c.data.polygons]
+ if m.get('revision')=='ml09' and p['name'] in ['Cell_LeftSkin','T11_CellSide']:
+  dots=[lo.data.corner_normals[i].vector.dot(f.normal) for f in lo.data.polygons if f.area>.000015 and abs(f.normal.x)>.999 for i in f.loop_indices]
+  if min(dots)<.995:failed.append(p['name']+'_planar_corner_normals')
  rec={'part':p['name'],'triangles':len(lo.data.polygons),'high_polygons':len(hi.data.polygons),'high_nonmanifold_edges':high_bad,'high_signed_volume':high_volume,'open_or_nonmanifold_edges':open_edges,'degenerate_faces':degenerate,'signed_volume':volume,'uv_in_range':bool(uv.min()>=0 and uv.max()<=1),'cage_matches_topology':same};records.append(rec)
  if high_bad or high_volume<=0 or open_edges or degenerate or volume<=0 or not rec['uv_in_range'] or not same:failed.append(p['name'])
 # Rasterize strict interiors, excluding numerical/shared-edge contacts.
@@ -39,3 +42,5 @@ for atlas in ['body','kit']:
  if overlaps:failed.append(atlas+'_uv_overlap')
 report={'parts':records,'atlases':{k:m[k] for k in ['body_uv','kit_uv']},'failures':failed,'completed':not failed}
 (REPORT/'geometry-audit.json').write_text(json.dumps(report,indent=2));print('AUDIT',failed)
+
+assert not failed, failed
