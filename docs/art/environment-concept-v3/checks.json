@@ -1,0 +1,419 @@
+{
+  "phase": "concept-only",
+  "checks": [
+    {
+      "check": "six_single_generation_calls",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "board_png_integrity",
+      "passed": true,
+      "detail": "(1672, 941)"
+    },
+    {
+      "check": "board_prompt_saved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "board_original_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "B1_png_integrity",
+      "passed": true,
+      "detail": "(1312, 1199)"
+    },
+    {
+      "check": "B1_prompt_saved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "B1_original_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "B2_png_integrity",
+      "passed": true,
+      "detail": "(1312, 1199)"
+    },
+    {
+      "check": "B2_prompt_saved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "B2_original_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "C_png_integrity",
+      "passed": true,
+      "detail": "(1536, 1024)"
+    },
+    {
+      "check": "C_prompt_saved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "C_original_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "D_png_integrity",
+      "passed": true,
+      "detail": "(1774, 887)"
+    },
+    {
+      "check": "D_prompt_saved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "D_original_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "E_png_integrity",
+      "passed": true,
+      "detail": "(1024, 1536)"
+    },
+    {
+      "check": "E_prompt_saved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "E_original_preserved",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_REVIEW.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../../design/ml15/SPEC.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../../design/ml15/PLAN.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_generation.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_concept-board.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_concept-board.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../environment-concept-v2/concept-board.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../environment-concept-v2/concept-board.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../../validation/b2-cooling-fans/map/02-overview.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../../validation/b2-cooling-fans/map/02-overview.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_B1.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_B1.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_B2.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_B2.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_C.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_C.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_D.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_D.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_E.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_E.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../../logs/ML15-月球能源设施概念更新与五模块精修.md",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "html_link_../../validation/A-refine-v2/review.html",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_docs/design/energy-layout.json",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_scripts/b2_cooling_fans.gd",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_scripts/lunar_lighting.gd",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_scripts/module_visual.gd",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/A_NormalGL.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/BaseColor.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/A_BaseColor.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/A_Emission.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/A.glb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/NormalGL.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/ORM.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/A_ORM.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/A/Emission.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B1/BaseColor.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B1/B1.glb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B1/NormalGL.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B1/ORM.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B1/Emission.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B2/BaseColor.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B2/B2.glb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B2/NormalGL.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B2/ORM.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/B2/Emission.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/C/BaseColor.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/C/C.glb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/C/NormalGL.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/C/ORM.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/C/Emission.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/D/BaseColor.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/D/D.glb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/D/NormalGL.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/D/ORM.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/D/Emission.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/E/BaseColor.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/E/E.glb",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/E/NormalGL.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/E/ORM.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "baseline_assets/environment/E/Emission.png",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "no_tripo_tasks_started",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "tripo_budget_300",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "check": "lamp_counts",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "failures": 0,
+  "browser_preview": "not performed: browser policy blocks file://; no workaround attempted",
+  "godot_regression": "not run; no runtime changes",
+  "user_visual_approval": "pending"
+}

@@ -1,0 +1,125 @@
+{
+  "status": "awaiting_concept_visual_confirmation",
+  "model": "v3.1-20260211",
+  "estimated_credits": 300,
+  "actual_tasks": [],
+  "actual_credits": 0,
+  "rerolls_authorized": false,
+  "steps": [
+    {
+      "asset": "B1",
+      "tool": "tripo_image_to_3d",
+      "input": "docs/art/environment-concept-v3/B1.png",
+      "generation": {
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "texture": false,
+        "pbr": false,
+        "model_seed": 20261116
+      },
+      "estimated_credits": 60,
+      "dry_run_before_submit": true,
+      "then": [
+        "wait_until_terminal",
+        "download",
+        "local_precision_high",
+        "low_uv_cage",
+        "bake",
+        "layered_pbr",
+        "godot_validation"
+      ]
+    },
+    {
+      "asset": "B2",
+      "tool": "tripo_image_to_3d",
+      "input": "docs/art/environment-concept-v3/B2.png",
+      "generation": {
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "texture": false,
+        "pbr": false,
+        "model_seed": 20261117
+      },
+      "estimated_credits": 60,
+      "dry_run_before_submit": true,
+      "then": [
+        "wait_until_terminal",
+        "download",
+        "local_precision_high",
+        "low_uv_cage",
+        "bake",
+        "layered_pbr",
+        "godot_validation"
+      ]
+    },
+    {
+      "asset": "C",
+      "tool": "tripo_image_to_3d",
+      "input": "docs/art/environment-concept-v3/C.png",
+      "generation": {
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "texture": false,
+        "pbr": false,
+        "model_seed": 20261118
+      },
+      "estimated_credits": 60,
+      "dry_run_before_submit": true,
+      "then": [
+        "wait_until_terminal",
+        "download",
+        "local_precision_high",
+        "low_uv_cage",
+        "bake",
+        "layered_pbr",
+        "godot_validation"
+      ]
+    },
+    {
+      "asset": "D",
+      "tool": "tripo_image_to_3d",
+      "input": "docs/art/environment-concept-v3/D.png",
+      "generation": {
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "texture": false,
+        "pbr": false,
+        "model_seed": 20261119
+      },
+      "estimated_credits": 60,
+      "dry_run_before_submit": true,
+      "then": [
+        "wait_until_terminal",
+        "download",
+        "local_precision_high",
+        "low_uv_cage",
+        "bake",
+        "layered_pbr",
+        "godot_validation"
+      ]
+    },
+    {
+      "asset": "E",
+      "tool": "tripo_image_to_3d",
+      "input": "docs/art/environment-concept-v3/E.png",
+      "generation": {
+        "geometry_quality": "detailed",
+        "generate_parts": true,
+        "texture": false,
+        "pbr": false,
+        "model_seed": 20261120
+      },
+      "estimated_credits": 60,
+      "dry_run_before_submit": true,
+      "then": [
+        "wait_until_terminal",
+        "download",
+        "local_precision_high",
+        "low_uv_cage",
+        "bake",
+        "layered_pbr",
+        "godot_validation"
+      ]
+    }
+  ]
+}
