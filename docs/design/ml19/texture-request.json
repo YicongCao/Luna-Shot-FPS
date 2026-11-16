@@ -1,0 +1,12 @@
+{
+  "input": "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/hunyuan-v1/pbr.glb",
+  "model": "v3.5",
+  "pbr": true,
+  "bake": true,
+  "delight": true,
+  "texture_quality": "detailed",
+  "texture_alignment": "geometry",
+  "texture_seed": 20261116,
+  "prompt": "Material pass for the supplied fictional sci-fi rifle. Preserve the existing ivory armor, orange energy-cell casing, charcoal frame and black rubber grip color zones. Painted alloy armor is dielectric except sparse chipped edges exposing metal. Steel fasteners and exposed dark metal have credible metallic response; rubber stays nonmetallic. Subtle directional scuffs and localized oily roughness variation on the orange casing, with broad clean areas. Cyan coil strips remain localized. Do not add fake seams, panels, bolts or silhouette details in paint. Avoid heavy grunge, baked shadows, bright painted specular streaks and uniform chrome. Use the supplied reference for material palette.",
+  "style_image": "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/pipeline-v1/input/lc01-single-reference.png"
+}

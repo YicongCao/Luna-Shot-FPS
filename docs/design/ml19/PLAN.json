@@ -1,0 +1,36 @@
+{
+  "status": "prepared_not_submitted",
+  "input": "art_source/weapons/lc01/hunyuan-v1/pbr.glb",
+  "input_sha256": "d7591f026d423e57339de505650690eeb8fd7da30e7871007a6662106bef8319",
+  "estimated_credits": 20,
+  "pricing_url": "https://developers.tripo3d.ai/en/pricing",
+  "paid_calls": 1,
+  "rerolls": false,
+  "forbidden_steps": [
+    "decimate",
+    "smart_uv",
+    "generation",
+    "local_geometry_rebuild"
+  ],
+  "public_uv_lock_parameter": false,
+  "texture_tool_has_dry_run": false,
+  "preflight": "Reviewed exact payload against exposed MCP schema and official v3 texture documentation; no server dry-run endpoint exposed by texture tool.",
+  "steps": [
+    "tripo_texture",
+    "tripo_task_wait until terminal",
+    "tripo_download",
+    "tripo_usage",
+    "local geometry/UV/channel checks",
+    "Godot same-camera comparison with original Hunyuan and ML06",
+    "milestone and commit"
+  ],
+  "acceptance": [
+    "Original file SHA256 unchanged",
+    "Compare face count and oriented per-corner position/UV/normal correspondences; do not rely on count alone or require identical vertex ordering",
+    "If output changes geometry or UV, preserve as rejected evidence and do not claim preservation or silently remesh/re-unwrap",
+    "Actual BaseColor/Normal/MetallicRoughness bindings and images present",
+    "Same native camera, exposure, neutral light and grazing light; original Hunyuan and ML06 controls",
+    "Keep ML06 default and all environment assets unchanged"
+  ],
+  "tool_confirmation": "Tripo tool requires returned plan to be shown and explicitly confirmed before task creation."
+}

@@ -1,0 +1,61 @@
+{
+  "source": "art_source/weapons/lc01/hunyuan-v1/pbr.glb",
+  "sha256": "d7591f026d423e57339de505650690eeb8fd7da30e7871007a6662106bef8319",
+  "triangles": 20901,
+  "indices": {
+    "count": 62703,
+    "type": "SCALAR",
+    "component_type": 5125,
+    "sha256": "79f101c91852982f51f22003f543a769a4c243c8c71ff738aef78cc56299269b"
+  },
+  "attributes": {
+    "POSITION": {
+      "count": 17971,
+      "type": "VEC3",
+      "component_type": 5126,
+      "sha256": "5cf06d4a2b78fdfe5c9f6cd970ee53e6d188309cfe556bb5ba3898505a7060c9"
+    },
+    "NORMAL": {
+      "count": 17971,
+      "type": "VEC3",
+      "component_type": 5126,
+      "sha256": "3103fd48a37cb4753b54581bedf65ff6c95b99fe138799d011ef561c5173a178"
+    },
+    "TEXCOORD_0": {
+      "count": 17971,
+      "type": "VEC2",
+      "component_type": 5126,
+      "sha256": "c51a128d8d3058770e0a24c714fc3ab79b64a58b55b1de7814de9b83ea0038a8"
+    }
+  },
+  "nodes": [
+    {
+      "mesh": 0
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 1.0,
+        "baseColorTexture": {
+          "index": 0,
+          "texCoord": 0
+        }
+      },
+      "emissiveFactor": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "alphaMode": "OPAQUE",
+      "doubleSided": false
+    }
+  ]
+}
