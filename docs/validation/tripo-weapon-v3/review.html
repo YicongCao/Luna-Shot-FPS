@@ -1,0 +1,47 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ML17 Tripo枪械候选</title><style>body{max-width:1500px;margin:24px auto;padding:0 20px;background:#121a23;color:#eef;font:16px/1.6 system-ui}a{color:#7ee5e5}img{width:100%}.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}figure{margin:0}h2{margin-top:36px}@media(max-width:800px){.pair{grid-template-columns:1fr}}</style><h1>ML17 · 原高模 → Tripo PBR → Tripo低模与贴图转移</h1><p>本轮两项任务成功，20+35=55积分，无重抽。全部以下比较为原生Godot4.7.2 Compatibility独立材料场景；服务返回PBR直接加载，只进行统一坐标、等比恢复0.905m枪长。不代表游戏第一人称或射击/换弹已接入。</p><p>几何结构比ML07重建分支保留得更多；但20k低模仍可见软边、起伏与局部三角阴影。法线图存在且有实际画面作用，不能据此认定视觉已经通过。默认ML06保留，候选未发布。</p><p><a href="REPORT.md">结果/限制/任务账单</a> · <a href="audit.json">真实GLB检查</a> · <a href="normal-response.json">法线开关响应</a></p>
+<h2>pbr / hero</h2><div class="pair">
+<figure>01-high-pbr<a href="01-high-pbr-pbr-hero.png"><img src="01-high-pbr-pbr-hero.png" loading="lazy"></a></figure>
+<figure>02-low-pbr<a href="02-low-pbr-pbr-hero.png"><img src="02-low-pbr-pbr-hero.png" loading="lazy"></a></figure>
+</div>
+<h2>pbr / side</h2><div class="pair">
+<figure>01-high-pbr<a href="01-high-pbr-pbr-side.png"><img src="01-high-pbr-pbr-side.png" loading="lazy"></a></figure>
+<figure>02-low-pbr<a href="02-low-pbr-pbr-side.png"><img src="02-low-pbr-pbr-side.png" loading="lazy"></a></figure>
+</div>
+<h2>clay / hero</h2><div class="pair">
+<figure>01-high-pbr<a href="01-high-pbr-clay-hero.png"><img src="01-high-pbr-clay-hero.png" loading="lazy"></a></figure>
+<figure>02-low-pbr<a href="02-low-pbr-clay-hero.png"><img src="02-low-pbr-clay-hero.png" loading="lazy"></a></figure>
+</div>
+<h2>clay / side</h2><div class="pair">
+<figure>01-high-pbr<a href="01-high-pbr-clay-side.png"><img src="01-high-pbr-clay-side.png" loading="lazy"></a></figure>
+<figure>02-low-pbr<a href="02-low-pbr-clay-side.png"><img src="02-low-pbr-clay-side.png" loading="lazy"></a></figure>
+</div>
+<h2>normal-off / hero</h2><div class="pair">
+<figure>01-high-pbr<a href="01-high-pbr-normal-off-hero.png"><img src="01-high-pbr-normal-off-hero.png" loading="lazy"></a></figure>
+<figure>02-low-pbr<a href="02-low-pbr-normal-off-hero.png"><img src="02-low-pbr-normal-off-hero.png" loading="lazy"></a></figure>
+</div>
+<h2>normal-off / side</h2><div class="pair">
+<figure>01-high-pbr<a href="01-high-pbr-normal-off-side.png"><img src="01-high-pbr-normal-off-side.png" loading="lazy"></a></figure>
+<figure>02-low-pbr<a href="02-low-pbr-normal-off-side.png"><img src="02-low-pbr-normal-off-side.png" loading="lazy"></a></figure>
+</div>
+<h2>原始PBR：机匣／弹夹／枪托</h2><p>每行依次底色、法线、金属/粗糙度。仅缩小原图，没有重绘或自动对比度增强；全部54张/阶段原图位于对应textures目录，以下列出所示18张原图链接。</p>
+<a href="01-high-pbr-maps.png"><img loading="lazy" src="01-high-pbr-maps.png"></a>
+<a href="02-low-pbr-maps.png"><img loading="lazy" src="02-low-pbr-maps.png"></a>
+<p>01-high-pbr part3 BaseColor (1024, 1024) <a href="01-high-pbr-textures/image-49.jpg">原始文件</a></p>
+<p>01-high-pbr part3 NormalGL (1024, 1024) <a href="01-high-pbr-textures/image-48.jpg">原始文件</a></p>
+<p>01-high-pbr part3 MetallicRoughness (1024, 1024) <a href="01-high-pbr-textures/image-50.png">原始文件</a></p>
+<p>01-high-pbr part4 BaseColor (1024, 1024) <a href="01-high-pbr-textures/image-22.jpg">原始文件</a></p>
+<p>01-high-pbr part4 NormalGL (1024, 1024) <a href="01-high-pbr-textures/image-21.jpg">原始文件</a></p>
+<p>01-high-pbr part4 MetallicRoughness (1024, 1024) <a href="01-high-pbr-textures/image-23.png">原始文件</a></p>
+<p>01-high-pbr part8 BaseColor (1024, 1024) <a href="01-high-pbr-textures/image-52.jpg">原始文件</a></p>
+<p>01-high-pbr part8 NormalGL (1024, 1024) <a href="01-high-pbr-textures/image-51.jpg">原始文件</a></p>
+<p>01-high-pbr part8 MetallicRoughness (1024, 1024) <a href="01-high-pbr-textures/image-53.png">原始文件</a></p>
+<p>02-low-pbr part3 BaseColor (1024, 1024) <a href="02-low-pbr-textures/image-13.jpg">原始文件</a></p>
+<p>02-low-pbr part3 NormalGL (512, 512) <a href="02-low-pbr-textures/image-12.jpg">原始文件</a></p>
+<p>02-low-pbr part3 MetallicRoughness (512, 512) <a href="02-low-pbr-textures/image-14.png">原始文件</a></p>
+<p>02-low-pbr part4 BaseColor (1024, 1024) <a href="02-low-pbr-textures/image-52.jpg">原始文件</a></p>
+<p>02-low-pbr part4 NormalGL (512, 512) <a href="02-low-pbr-textures/image-51.jpg">原始文件</a></p>
+<p>02-low-pbr part4 MetallicRoughness (512, 512) <a href="02-low-pbr-textures/image-53.png">原始文件</a></p>
+<p>02-low-pbr part8 BaseColor (1024, 1024) <a href="02-low-pbr-textures/image-49.jpg">原始文件</a></p>
+<p>02-low-pbr part8 NormalGL (512, 512) <a href="02-low-pbr-textures/image-48.jpg">原始文件</a></p>
+<p>02-low-pbr part8 MetallicRoughness (512, 512) <a href="02-low-pbr-textures/image-50.png">原始文件</a></p>
+<p>ML06/ML07历史：<a href="../source-mesh-comparison/review.html">源网格与PBR对照</a>。本轮使用原始枪械，不包含ML06后加的工业kit、弹药屏和自定义主动发光接口。</p>

@@ -1,0 +1,63 @@
+{
+	"checks": [
+		{
+			"check": "01-high-pbr_gltf_import",
+			"passed": true
+		},
+		{
+			"check": "01-high-pbr-pbr-hero",
+			"passed": true
+		},
+		{
+			"check": "01-high-pbr-pbr-side",
+			"passed": true
+		},
+		{
+			"check": "01-high-pbr-clay-hero",
+			"passed": true
+		},
+		{
+			"check": "01-high-pbr-clay-side",
+			"passed": true
+		},
+		{
+			"check": "01-high-pbr-normal-off-hero",
+			"passed": true
+		},
+		{
+			"check": "01-high-pbr-normal-off-side",
+			"passed": true
+		},
+		{
+			"check": "02-low-pbr_gltf_import",
+			"passed": true
+		},
+		{
+			"check": "02-low-pbr-pbr-hero",
+			"passed": true
+		},
+		{
+			"check": "02-low-pbr-pbr-side",
+			"passed": true
+		},
+		{
+			"check": "02-low-pbr-clay-hero",
+			"passed": true
+		},
+		{
+			"check": "02-low-pbr-clay-side",
+			"passed": true
+		},
+		{
+			"check": "02-low-pbr-normal-off-hero",
+			"passed": true
+		},
+		{
+			"check": "02-low-pbr-normal-off-side",
+			"passed": true
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"renderer": "gl_compatibility"
+}

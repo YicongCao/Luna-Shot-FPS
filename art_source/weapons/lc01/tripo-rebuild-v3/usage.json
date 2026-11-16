@@ -1,0 +1,23 @@
+{
+  "total_entries": 2,
+  "returned_entries": 2,
+  "truncated": false,
+  "total_credits": 55,
+  "usage": [
+    {
+      "type": "highpoly_to_lowpoly",
+      "status": "success",
+      "task_id": "beeb5377-422a-4028-bc0d-a452188847a9",
+      "created_at": "2026-11-16T08:37:12.478554Z",
+      "credits_consumed": 35
+    },
+    {
+      "type": "texture_model",
+      "status": "success",
+      "task_id": "212a9dac-9cdb-43e5-9379-75ea6bf74903",
+      "created_at": "2026-11-16T08:32:42.756700Z",
+      "credits_consumed": 20
+    }
+  ],
+  "missed": []
+}

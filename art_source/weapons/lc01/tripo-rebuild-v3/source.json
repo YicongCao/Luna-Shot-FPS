@@ -1,0 +1,6 @@
+{
+  "source": "art_source/weapons/lc01/pipeline-v1/01-tripo-geometry/model.glb",
+  "sha256": "f46f0e917cbcc0b8aec7adbada155ce84d33d34c280b1058306c3a31a7e7389c",
+  "geometry_processing": "Remote texture then remote retopology; no local geometry rebuilding",
+  "budget": 55
+}

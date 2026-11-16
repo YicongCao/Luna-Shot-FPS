@@ -1,0 +1,10 @@
+[
+  {
+    "stage": "01-high-pbr",
+    "normal_toggle_changed_pixels_over_2percent": 25012
+  },
+  {
+    "stage": "02-low-pbr",
+    "normal_toggle_changed_pixels_over_2percent": 34795
+  }
+]

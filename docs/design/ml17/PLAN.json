@@ -1,6 +1,6 @@
 {
   "milestone": "ML17",
-  "status": "awaiting_tool_plan_confirmation",
+  "status": "tasks_completed_candidate_reviewed",
   "source": "art_source/weapons/lc01/pipeline-v1/01-tripo-geometry/model.glb",
   "estimated_credits": 55,
   "rerolls": false,
@@ -27,5 +27,10 @@
     }
   ],
   "normal_projection_claim": "Not guaranteed by exposed API; inspect actual output",
-  "default_replacement": "Only after comparative validation"
+  "default_replacement": "Only after comparative validation",
+  "user_confirmed": true,
+  "actual_credits": 55,
+  "technical": "native_asset_import_passed",
+  "visual": "open_soft_edges_and_shading",
+  "default_replaced": false
 }

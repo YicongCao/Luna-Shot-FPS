@@ -1,0 +1,15 @@
+{
+  "texture": {
+    "task_id": "212a9dac-9cdb-43e5-9379-75ea6bf74903",
+    "status": "success",
+    "credits": 20,
+    "normalize_scale": 1.0200661395875994
+  },
+  "retopology": {
+    "task_id": "beeb5377-422a-4028-bc0d-a452188847a9",
+    "status": "success",
+    "quoted_credits": 35,
+    "credits": 35
+  },
+  "total_credits": 55
+}

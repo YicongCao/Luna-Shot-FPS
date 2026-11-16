@@ -1,0 +1,25 @@
+[
+  {
+    "tool": "tripo_texture",
+    "input": "art_source/weapons/lc01/pipeline-v1/01-tripo-geometry/model.glb",
+    "image": "art_source/weapons/lc01/pipeline-v1/input/lc01-single-reference.png",
+    "model": "v3.5",
+    "pbr": true,
+    "bake": true,
+    "delight": true,
+    "texture_quality": "detailed",
+    "texture_alignment": "geometry",
+    "texture_seed": 20261116,
+    "task_id": "212a9dac-9cdb-43e5-9379-75ea6bf74903"
+  },
+  {
+    "tool": "tripo_decimate",
+    "input": "212a9dac-9cdb-43e5-9379-75ea6bf74903",
+    "model": "v3.0",
+    "face_limit": 20000,
+    "quad": false,
+    "smart_uv": true,
+    "bake": true,
+    "task_id": "beeb5377-422a-4028-bc0d-a452188847a9"
+  }
+]

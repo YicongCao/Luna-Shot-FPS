@@ -1,0 +1,182 @@
+[
+  {
+    "stage": "01-high-pbr",
+    "part": 3,
+    "channel": "BaseColor",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-49.jpg"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 3,
+    "channel": "NormalGL",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-48.jpg"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 3,
+    "channel": "MetallicRoughness",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-50.png"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 4,
+    "channel": "BaseColor",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-22.jpg"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 4,
+    "channel": "NormalGL",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-21.jpg"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 4,
+    "channel": "MetallicRoughness",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-23.png"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 8,
+    "channel": "BaseColor",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-52.jpg"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 8,
+    "channel": "NormalGL",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-51.jpg"
+  },
+  {
+    "stage": "01-high-pbr",
+    "part": 8,
+    "channel": "MetallicRoughness",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/01-high-pbr-textures/image-53.png"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 3,
+    "channel": "BaseColor",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-13.jpg"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 3,
+    "channel": "NormalGL",
+    "size": [
+      512,
+      512
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-12.jpg"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 3,
+    "channel": "MetallicRoughness",
+    "size": [
+      512,
+      512
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-14.png"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 4,
+    "channel": "BaseColor",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-52.jpg"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 4,
+    "channel": "NormalGL",
+    "size": [
+      512,
+      512
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-51.jpg"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 4,
+    "channel": "MetallicRoughness",
+    "size": [
+      512,
+      512
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-53.png"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 8,
+    "channel": "BaseColor",
+    "size": [
+      1024,
+      1024
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-49.jpg"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 8,
+    "channel": "NormalGL",
+    "size": [
+      512,
+      512
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-48.jpg"
+  },
+  {
+    "stage": "02-low-pbr",
+    "part": 8,
+    "channel": "MetallicRoughness",
+    "size": [
+      512,
+      512
+    ],
+    "file": "docs/validation/tripo-weapon-v3/02-low-pbr-textures/image-50.png"
+  }
+]
