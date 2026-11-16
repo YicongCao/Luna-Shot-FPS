@@ -1,0 +1,62 @@
+{
+	"bloom": false,
+	"checks": [
+		{
+			"check": "regolith_uniform_mask",
+			"passed": true
+		},
+		{
+			"check": "paving_uniform_mask",
+			"passed": true
+		},
+		{
+			"check": "player_mixed",
+			"passed": true
+		},
+		{
+			"check": "player_regolith",
+			"passed": true
+		},
+		{
+			"check": "player_paving",
+			"passed": true
+		},
+		{
+			"check": "overview_mixed",
+			"passed": true
+		},
+		{
+			"check": "overview_regolith",
+			"passed": true
+		},
+		{
+			"check": "overview_paving",
+			"passed": true
+		},
+		{
+			"check": "close_mixed",
+			"passed": true
+		},
+		{
+			"check": "close_regolith",
+			"passed": true
+		},
+		{
+			"check": "close_paving",
+			"passed": true
+		},
+		{
+			"check": "mixed_restored",
+			"passed": true
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"flares": false,
+	"published_assets_changed": false,
+	"renderer": "gl_compatibility",
+	"resolution": [
+		1600,
+		1000
+	]
+}

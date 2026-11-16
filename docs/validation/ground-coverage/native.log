@@ -1,0 +1,15 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M5
+
+COVERAGE regolith_uniform_mask true
+COVERAGE paving_uniform_mask true
+COVERAGE player_mixed true
+COVERAGE player_regolith true
+COVERAGE player_paving true
+COVERAGE overview_mixed true
+COVERAGE overview_regolith true
+COVERAGE overview_paving true
+COVERAGE close_mixed true
+COVERAGE close_regolith true
+COVERAGE close_paving true
+COVERAGE mixed_restored true

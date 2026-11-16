@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>ML16 · 地面覆盖率实机对照</title>
+<style>body{margin:24px auto;padding:0 20px;max-width:1400px;background:#111922;color:#e9edf2;font:16px/1.6 system-ui}button{padding:10px 18px;background:#243346;color:#fff;border:1px solid #506176;border-radius:6px;cursor:pointer;margin:4px}button[aria-pressed=true]{background:#127780;border-color:#72f3e2}img{display:block;width:100%;height:auto;border:1px solid #435263}small{color:#afbfcc}h1{font-size:26px}.bar{position:sticky;top:0;background:#111922ef;padding:10px 0}a{color:#71dedc}</style>
+<h1>地面覆盖率 · Godot 原生实机对照</h1>
+<p>同一场景、相机、1600×1000 分辨率和曝光；冻结动态相位，关闭 Bloom 与光晕。只切换地面材质遮罩，保留黄色标线、金属检修盖、设备底座与全部建筑。没有重绘截图，也没有改变默认混合地面。</p>
+<div class="bar"><div id="modes"><button data-mode="regolith" aria-pressed="true">1 · 全月壤</button><button data-mode="paving" aria-pressed="false">2 · 无月壤／全铺装</button><button data-mode="mixed" aria-pressed="false">3 · 当前混合</button></div><div id="views"><button data-view="player" aria-pressed="true">第一人称</button><button data-view="overview" aria-pressed="false">全场总览</button><button data-view="close" aria-pressed="false">地面近景</button></div></div>
+<p id="caption">第一人称 · 全月壤</p><a id="full" href="player-regolith.png"><img id="shot" src="player-regolith.png" alt="Godot 原生截图：第一人称全月壤"></a>
+<p><small>可按 1 / 2 / 3 切换；点击画面打开原图。全月壤指可见主地面，不覆盖金属附件，也未增加沙丘、地形起伏或扬尘。</small></p>
+<p>观察：全铺装更利于阅读工业设施与通行空间；全月壤减少格线，但现有颗粒材质大面积重复后偏向沥青观感。这是当前材质的对照，尚不代表经过地形与岩石层次精修的最终月表。</p>
+<script>
+let mode='regolith',view='player';const labels={regolith:'全月壤',paving:'无月壤／全铺装',mixed:'当前混合',player:'第一人称',overview:'全场总览',close:'地面近景'};
+// Preload to keep toggles immediate, preserving the exact same screen position.
+for(const v of ['player','overview','close'])for(const m of ['regolith','paving','mixed']){const i=new Image();i.src=`${v}-${m}.png`;}
+function update(){const src=`${view}-${mode}.png`;document.querySelector('#shot').src=src;document.querySelector('#shot').alt=`Godot 原生截图：${labels[view]} ${labels[mode]}`;document.querySelector('#full').href=src;document.querySelector('#caption').textContent=`${labels[view]} · ${labels[mode]}`;document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.mode===mode));document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.view===view));}
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;update()});document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{view=b.dataset.view;update()});document.onkeydown=e=>{const m={'1':'regolith','2':'paving','3':'mixed'}[e.key];if(m){mode=m;update()}};
+</script></html>
