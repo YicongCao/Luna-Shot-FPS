@@ -1,6 +1,10 @@
 extends SceneTree
-const OUT = "res://docs/validation/magnetic-pulse-v1/"
+var OUT = OS.get_environment("LUNA_EFFECT_QA_OUTPUT") if OS.has_environment("LUNA_EFFECT_QA_OUTPUT") else "res://docs/validation/magnetic-pulse-v1/"
+var expected_effect := "MagneticPulse"
 var checks: Array = []
+func check_effect() -> void: pass
+func extra_checks() -> void: pass
+func extra_capture(_label: String) -> void: pass
 var world: Node3D
 var p: CharacterBody3D
 var fx: Node3D
@@ -41,6 +45,7 @@ func run() -> void:
 	p.qa_mode = true
 	fx = p.fire_effect
 	fx.manual_clock = true
+	check("selected_effect",fx.name == expected_effect)
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	check("default_ml06", p.weapon.revision == "ml06")
 	var original_nodes := get_node_count()
@@ -62,10 +67,12 @@ func run() -> void:
 		check(label+"_muzzle_visible",fx.flash.visible and fx.muzzle_clear)
 		var count: int = fx.shot_count
 		check(label+"_cooldown_no_fx",not p.fire() and fx.shot_count == count)
+		check_effect()
 		# Freeze pose/target for reproducible photographic evidence; effect still renders natively.
 		p.set_process(false)
 		world.get_node("Target1").animation_paused = true
 		await capture(label+"-008ms",.008)
+		await extra_capture(label)
 		await capture(label+"-045ms",.045)
 		fx.age = .070; fx.refresh()
 		check(label+"_flash_expired",not fx.flash.visible)
@@ -159,6 +166,7 @@ func run() -> void:
 		var screen_a: Vector2 = p.camera.unproject_position(fx.start)/root.get_visible_rect().size
 		var screen_b: Vector2 = p.weapon_camera.unproject_position(p.weapon.get_node("Muzzle").global_position)/Vector2(p.weapon_camera.get_viewport().size)
 		check("ultrawide_muzzle_alignment",screen_a.distance_to(screen_b)<.001)
+	await extra_checks()
 	var failures := checks.filter(func(c):return not c.passed)
 	FileAccess.open(OUT+("native.json" if native else "headless.json"),FileAccess.WRITE).store_string(JSON.stringify({"checks":checks,"failures":failures.size(),"engine":Engine.get_version_info().string,"note":"Timing frames held for labelled screenshots; burst uses elapsed runtime. Not sustained performance acceptance."},"\t"))
 	print("PULSE_QA_COMPLETE failures=",failures.size())

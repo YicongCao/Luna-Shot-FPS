@@ -27,7 +27,11 @@ func _ready() -> void:
 	lighting.environment = load("res://scripts/weapon_lighting.gd").environment()
 	$WeaponLayer/Container/Viewport.add_child(lighting)
 	fire_effect = Node3D.new()
-	fire_effect.set_script(preload("res://scripts/magnetic_pulse.gd"))
+	var effect_script = preload("res://scripts/pulsed_arc.gd")
+	# Explicit comparison only; normal launch uses C. No alternate damage mode.
+	for argument in OS.get_cmdline_user_args():
+		if argument == "--fire-effect=a": effect_script = preload("res://scripts/magnetic_pulse.gd")
+	fire_effect.set_script(effect_script)
 	fire_effect.player = self
 	# Same level world, independent from the moving player and viewmodel viewport.
 	get_parent().add_child.call_deferred(fire_effect)

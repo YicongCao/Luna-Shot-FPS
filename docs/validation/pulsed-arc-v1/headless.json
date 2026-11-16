@@ -1,0 +1,587 @@
+{
+	"checks": [
+		{
+			"check": "selected_effect",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "default_ml06",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_muzzle_projection",
+			"detail": "0.0000000842937",
+			"passed": true
+		},
+		{
+			"check": "hip_shot",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_hit",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_endpoint",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_pulse",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_muzzle_visible",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_cooldown_no_fx",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "two_seeded_variants",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "arc_exact_endpoints",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "bounded_visible_jagged_shape",
+			"detail": "0.17726218700409",
+			"passed": true
+		},
+		{
+			"check": "arc_exact_endpoints",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "bounded_visible_jagged_shape",
+			"detail": "0.17163333296776",
+			"passed": true
+		},
+		{
+			"check": "two_short_branches",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "two_short_branches",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "local_coil_discharge",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "first_arc_phase",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "local_arc_expired",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "stable_first_phase",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "single_restrike",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "stable_second_phase",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "no_sustained_beam",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_flash_expired",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_all_expired",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "hip_emission_restored",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_muzzle_projection",
+			"detail": "0.0",
+			"passed": true
+		},
+		{
+			"check": "ads_shot",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_hit",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_endpoint",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_pulse",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_muzzle_visible",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_cooldown_no_fx",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "two_seeded_variants",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "arc_exact_endpoints",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "bounded_visible_jagged_shape",
+			"detail": "0.09251126646996",
+			"passed": true
+		},
+		{
+			"check": "arc_exact_endpoints",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "bounded_visible_jagged_shape",
+			"detail": "0.08187231421471",
+			"passed": true
+		},
+		{
+			"check": "two_short_branches",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "two_short_branches",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_bounded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "local_coil_discharge",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "first_arc_phase",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "local_arc_expired",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "stable_first_phase",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "single_restrike",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "stable_second_phase",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "no_sustained_beam",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_flash_expired",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_all_expired",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_emission_restored",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "near_wall_shot",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "near_wall_blocks_target",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "near_wall_hides_viewmodel_flash",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "near_wall_trace_no_penetration",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "wall_ahead_shortens_flash",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "impact_world_anchored",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "sky_miss_shot",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "sky_miss_no_impact",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "energy_off_respected",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "spill_off_respected",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_00",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_00",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_01",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_01",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_02",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_02",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_03",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_03",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_04",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_04",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_05",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_05",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_06",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_06",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_07",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_07",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_08",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_08",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_09",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_09",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_10",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_10",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_11",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_11",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_12",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_12",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_13",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_13",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_14",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_14",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_15",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_15",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_16",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_16",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_17",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_17",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_18",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_18",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_shot_19",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_decay_19",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "burst_exact_ammo",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "empty_no_fx",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "pooled_nodes",
+			"detail": "[2326, 2326]",
+			"passed": true
+		},
+		{
+			"check": "reload_no_fx",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reload_returns",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "overview_clears",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "reset_clears",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "branch_stops_at_first_obstacle",
+			"detail": "",
+			"passed": true
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"note": "Timing frames held for labelled screenshots; burst uses elapsed runtime. Not sustained performance acceptance."
+}
