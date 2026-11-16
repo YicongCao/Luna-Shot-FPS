@@ -83,3 +83,7 @@ git lfs pull
 [ML06/ML07/ML09 原生对照](docs/validation/ls01-refine-v2/review.html) · [验证报告](docs/validation/ls01-refine-v2/REPORT.md) · [逐件清单](docs/art/ls01-refine-v2/PARTS.md) · [ML09 日志](docs/logs/ML09-枪械结构还原与能量环侧向照明.md)。
 
 Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`或`ml09`。不传参数时固定采用 ML06，APPROVED 不再自动切换默认；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。
+
+## 聚束磁脉冲开火效果
+
+默认 ML06 枪械已接入纯代码方案 A：青白尖闪、细光迹、短促命中火花、能量环脉冲及合成音效。双击 `launch.command` 游玩；[原生演示](docs/validation/magnetic-pulse-v1/review.html) · [ML12 记录](docs/logs/ML12-纯代码聚束磁脉冲开火效果.md)。专项验证入口 `tools/validate_magnetic_pulse.sh`。

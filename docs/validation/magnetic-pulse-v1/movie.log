@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M5
+
+Movie Maker mode enabled, recording movie in 1280×800 @ 60 FPS...
+--------------------------------------------------------------------------------
+Done recording movie at path: /Users/cong/Documents/Projects/Luna-Shot-FPS/artifacts/magnetic-pulse/native.avi
+450 frames at 60 FPS (movie length: 00:00:07:30), recorded in 00:00:08 (87% of real-time speed).
+CPU render time: 1.15 seconds (average: 2.55 ms/frame)
+GPU render time: 0.00 seconds (average: 0.00 ms/frame)
+Encoding time: 2.14 seconds (average: 4.75 ms/frame)
+--------------------------------------------------------------------------------

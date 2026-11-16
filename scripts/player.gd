@@ -17,6 +17,7 @@ var qa_mode: bool = false
 var qa_direction := Vector3.ZERO
 var qa_jump := false
 var last_hit: Dictionary = {}
+var fire_effect: Node3D
 var steps: float = 0
 var spawn_position := Vector3.ZERO
 
@@ -25,6 +26,11 @@ func _ready() -> void:
 	lighting.name = "WeaponEnvironment"
 	lighting.environment = load("res://scripts/weapon_lighting.gd").environment()
 	$WeaponLayer/Container/Viewport.add_child(lighting)
+	fire_effect = Node3D.new()
+	fire_effect.set_script(preload("res://scripts/magnetic_pulse.gd"))
+	fire_effect.player = self
+	# Same level world, independent from the moving player and viewmodel viewport.
+	get_parent().add_child.call_deferred(fire_effect)
 
 func _unhandled_input(event: InputEvent) -> void:
 	if qa_mode or blocked: return
@@ -80,21 +86,33 @@ func fire() -> bool:
 	var end := origin - camera.global_basis.z * 100
 	var query := PhysicsRayQueryParameters3D.create(origin, end, 5, [get_rid()])
 	last_hit = get_world_3d().direct_space_state.intersect_ray(query)
-	# Prevent a camera-over-cover ray shooting through an obstacle at muzzle height.
+	# Map the actual viewmodel socket through the two cameras' different FOVs.
+	var muzzle_world := muzzle_world_position()
+	var space := get_world_3d().direct_space_state
+	var obstruction := space.intersect_ray(PhysicsRayQueryParameters3D.create(origin, muzzle_world, 5, [get_rid()]))
+	var clear_muzzle := obstruction.is_empty()
+	var endpoint: Vector3 = last_hit.get("position", end)
+	if clear_muzzle:
+		obstruction = space.intersect_ray(PhysicsRayQueryParameters3D.create(muzzle_world, endpoint, 5, [get_rid()]))
+	if not obstruction.is_empty(): last_hit = obstruction
+	endpoint = last_hit.get("position", end)
 	var hit := false
 	var distance := 0.0
 	if not last_hit.is_empty():
-		var muzzle_world := camera.global_transform * Vector3(0.18, -0.19, -0.55)
-		var obstruction := get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(origin, muzzle_world, 1, [get_rid()]))
-		if obstruction.is_empty():
-			obstruction = get_world_3d().direct_space_state.intersect_ray(PhysicsRayQueryParameters3D.create(muzzle_world, last_hit.position, 1, [get_rid()]))
-		if not obstruction.is_empty() and origin.distance_to(obstruction.position) + .08 < origin.distance_to(last_hit.position):
-			last_hit = obstruction
-		distance = origin.distance_to(last_hit.position)
+		distance = origin.distance_to(endpoint)
 		if last_hit.collider.has_method("register_hit"):
 			hit = last_hit.collider.register_hit()
+	if is_instance_valid(fire_effect) and fire_effect.is_node_ready():
+		fire_effect.emit_shot(muzzle_world if clear_muzzle else endpoint, endpoint, last_hit, clear_muzzle)
 	shot.emit(hit, distance)
 	return true
+
+func muzzle_world_position() -> Vector3:
+	var socket: Vector3 = weapon.get_node("Muzzle").global_position
+	var uv := weapon_camera.unproject_position(socket) / Vector2(weapon_camera.get_viewport().size)
+	var pixel := uv * camera.get_viewport().get_visible_rect().size
+	var depth := maxf(camera.near, -weapon_camera.to_local(socket).z)
+	return camera.project_position(pixel, depth)
 
 func reload_weapon() -> void:
 	if ammo < CAPACITY and reload_left == 0:
@@ -102,6 +120,7 @@ func reload_weapon() -> void:
 		aiming = false
 
 func reset_position() -> void:
+	if is_instance_valid(fire_effect) and fire_effect.is_node_ready(): fire_effect.clear()
 	position = spawn_position
 	rotation = Vector3.ZERO
 	head.rotation = Vector3.ZERO
