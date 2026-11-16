@@ -1,0 +1,10 @@
+{
+  "observed_at": "2026-11-16 around 16:57 Asia/Shanghai",
+  "snapshot_only": true,
+  "chrome_renderer_cpu_percent": 196.1,
+  "window_server_cpu_percent": 41.9,
+  "pmset_thermal": "No thermal/performance warning level recorded",
+  "gpu_load_measured": false,
+  "other_apps_closed": false,
+  "interpretation": "Background activity is a confound; not a causal diagnosis of GPU/thermal fluctuations."
+}

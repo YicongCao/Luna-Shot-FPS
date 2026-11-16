@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M5
+
+RIFLE_PERF {"average_fps":65.6890518246959,"engine":"4.7.2-stable (official)","frames":3942,"import_ms":446,"max_fps":0,"mean_frame_ms":15.0245192795535,"mode":"normal-off","objects_last_frame":1185,"p50_ms":14.006,"p95_ms":20.302,"primitives_last_frame":3295945,"renderer":"gl_compatibility","resolution":[1600,1000],"route":"full training map, spawn yaw sweep +-0.55rad; no shooting, no physics movement; default lighting/bloom active; weapon energy off","seconds":60.01,"source":"Tripo 1,934,290 triangle high PBR; normal map toggle only","texture_bytes":1091131819,"vsync":"disabled","weapon_viewport_size":"(1440, 900)"}

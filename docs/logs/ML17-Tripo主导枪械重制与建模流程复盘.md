@@ -53,3 +53,15 @@ ML15环境：imagegen概念/规格→Tripo详细分件高密度候选→归档�
 原生Godot同机位PBR、灰模、关闭法线共12图/14项检查通过，法线有实际像素响应；但低模软边和三角起伏仍明显，故技术导入通过与美术未达标分开记录。证明保留Tripo高模能保住更多装配设计，不能证明只换成Tripo低模就能解决全部质量问题。本轮原始枪械不含后来工业kit/弹药屏，且没有接入开火/动画，不替换默认ML06。
 
 [候选对照与原始贴图](../validation/tripo-weapon-v3/review.html) · [完整报告与限制](../validation/tripo-weapon-v3/REPORT.md)。源文件/实际请求/账单位于art_source/weapons/lc01/tripo-rebuild-v3，可复现本地检查位于tools/tripo_weapon。后续路线与增加预算另议，不自动重抽。
+
+## 高模直接进入训练场与低模平滑诊断
+
+按用户要求，将服务原始高模直接加载到完整关卡的独立武器视口，分别关闭/开启Normal，恢复0.905m枪长，只替换测试进程视觉。macOS Apple M5/Godot4.7.2 Compatibility；窗口1600×1000、武器视口1440×900，无VSync/帧率限制，各5秒预热+60秒。同机位出生区左右扫视，不射击、不移动胶囊；现有场景动态和后期继续。没有接入新武器功能或更改默认ML06。
+
+独立两轮normal-off平均156.7/65.7FPS，normal-pbr73.1/86.1FPS，ML06一轮147.5FPS。波动大，不能选最快值或把首次差异归因于Normal。诊断观察后台Chrome渲染进程高CPU，未关闭用户应用；热警告查询无记录不等于证明无降频。追加同进程交替六段各10秒、排除段首1.5秒：off97.1–122.5FPS、on79.7–104.6FPS。全部数字与限制保留；可说明高模在本机能实时渲染，不能承诺其他路线或后台状态稳定60FPS。
+
+低模使用相同顶点/UV，诊断shader替换为逐面法线，与原平滑灰模比较。去掉插值后鼓包感减少但显露三角分面，轮廓/几何损失没有自动恢复。该诊断不写回GLB，也不是正式修复；正式改顶点法线仍应重做相关烘焙。
+
+当前公开Tripo API重拓扑参数没有smooth=false/硬边角度；Studio文档有500–50k和Smart Mesh P1.0开关，不能混同API v3.0的20k上限或关闭平滑。通用博客提及Smoothing Pass，缺少对应本次接口字段，不能冒认已可调用。v1基础减面支持更高面数但缺少bake，后续需要另外规划预算；本次新增付费0。
+
+用户可在官方在线Viewer打开本地GLB查看；API平台History查任务/费用，Studio上传外部网格也可检查。未核实API资产自动同步Studio Models，不编造task_id直达链接。详细参数、官方来源、截图与完整FPS证据见[高模性能与平滑诊断](../validation/tripo-high-performance/review.html)及[核查文档](../validation/tripo-high-performance/PARAMETERS.md)。

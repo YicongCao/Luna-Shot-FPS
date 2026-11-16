@@ -1,0 +1,13 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>ML17 高模实机帧率与平滑诊断</title><style>body{max-width:1500px;margin:30px auto;padding:0 20px;background:#141c26;color:#eef;font:16px/1.6 system-ui}a{color:#7edee9}table{border-collapse:collapse}td,th{padding:8px 16px;border:1px solid #53616e}img{width:100%}.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:800px){.pair{grid-template-columns:1fr}}</style><h1>高模直接进入训练场：法线开／关帧率</h1><p>原生Godot4.7.2 / Apple M5。1600×1000窗口、1440×900武器视口；无帧率限制，每轮5秒预热+60秒。默认游戏资源未改变，候选仅替换测试进程视觉。<a href="REPORT.md">完整测量与限制</a> · <a href="PARAMETERS.md">Tripo参数／网页查看</a></p><table><tr><th>轮次</th><th>平均FPS</th><th>P50 ms</th><th>P95 ms</th></tr>
+<tr><td>baseline</td><td>147.5</td><td>6.609</td><td>8.384</td></tr>
+<tr><td>normal-off-run1</td><td>156.7</td><td>6.264</td><td>7.258</td></tr>
+<tr><td>normal-pbr-run1</td><td>73.1</td><td>11.599</td><td>21.641</td></tr>
+<tr><td>normal-pbr</td><td>86.1</td><td>10.987</td><td>14.960</td></tr>
+<tr><td>normal-off</td><td>65.7</td><td>14.006</td><td>20.302</td></tr>
+</table><p>normal-off复测波动大，两种模式范围重叠，不能据首轮差异认定法线让帧率减半。追加交替测试见完整报告。</p><h2>原生训练场截图</h2><div class="pair">
+<div>normal-off<a href="normal-off.png"><img src="normal-off.png"></a></div>
+<div>normal-pbr<a href="normal-pbr.png"><img src="normal-pbr.png"></a></div>
+</div><h2>同一个低模：原平滑法线与逐面法线诊断</h2><p>几何、顶点和UV相同。此图只排查法线插值，不是发布修复。</p><div class="pair">
+<div>low-smooth<a href="low-smooth.png"><img src="low-smooth.png"></a></div>
+<div>low-flat<a href="low-flat.png"><img src="low-flat.png"></a></div>
+</div>

@@ -1,0 +1,12 @@
+{
+  "independent_runs": 5,
+  "seconds_per_run": 60,
+  "paired_blocks": 6,
+  "paired_seconds": 60.01,
+  "normal_diagnostic": "same geometry; fragment face normals only",
+  "shader_diagnostic_completed": true,
+  "logs_clean": true,
+  "html_sources_exist": true,
+  "paid_calls": 0,
+  "visual_or_performance_release_approval": false
+}

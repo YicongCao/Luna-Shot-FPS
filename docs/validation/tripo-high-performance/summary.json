@@ -1,0 +1,142 @@
+{
+  "runs": [
+    {
+      "average_fps": 147.475959535357,
+      "engine": "4.7.2-stable (official)",
+      "frames": 8849,
+      "import_ms": 0,
+      "max_fps": 0,
+      "mean_frame_ms": 6.7413317889027,
+      "mode": "baseline",
+      "objects_last_frame": 1208,
+      "p50_ms": 6.609,
+      "p95_ms": 8.384,
+      "primitives_last_frame": 1445058,
+      "renderer": "gl_compatibility",
+      "resolution": [
+        1600,
+        1000
+      ],
+      "route": "full training map, spawn yaw sweep +-0.55rad; no shooting, no physics movement; default lighting/bloom active; weapon energy off",
+      "seconds": 60.003,
+      "source": "ML06 default",
+      "texture_bytes": 903162337,
+      "vsync": "disabled",
+      "weapon_viewport_size": "(1440, 900)",
+      "run_file": "baseline"
+    },
+    {
+      "average_fps": 156.656222918472,
+      "engine": "4.7.2-stable (official)",
+      "frames": 9400,
+      "import_ms": 471,
+      "max_fps": 0,
+      "mean_frame_ms": 6.35179734042556,
+      "mode": "normal-off",
+      "objects_last_frame": 1185,
+      "p50_ms": 6.264,
+      "p95_ms": 7.258,
+      "primitives_last_frame": 3295945,
+      "renderer": "gl_compatibility",
+      "resolution": [
+        1600,
+        1000
+      ],
+      "route": "full training map, spawn yaw sweep +-0.55rad; no shooting, no physics movement; default lighting/bloom active; weapon energy off",
+      "seconds": 60.004,
+      "source": "Tripo 1,934,290 triangle high PBR; normal map toggle only",
+      "texture_bytes": 1091131819,
+      "vsync": "disabled",
+      "weapon_viewport_size": "(1440, 900)",
+      "run_file": "normal-off-run1"
+    },
+    {
+      "average_fps": 73.1183153966614,
+      "engine": "4.7.2-stable (official)",
+      "frames": 4389,
+      "import_ms": 482,
+      "max_fps": 0,
+      "mean_frame_ms": 13.4986992481203,
+      "mode": "normal-pbr",
+      "objects_last_frame": 1185,
+      "p50_ms": 11.599,
+      "p95_ms": 21.641,
+      "primitives_last_frame": 3295945,
+      "renderer": "gl_compatibility",
+      "resolution": [
+        1600,
+        1000
+      ],
+      "route": "full training map, spawn yaw sweep +-0.55rad; no shooting, no physics movement; default lighting/bloom active; weapon energy off",
+      "seconds": 60.026,
+      "source": "Tripo 1,934,290 triangle high PBR; normal map toggle only",
+      "texture_bytes": 1091131819,
+      "vsync": "disabled",
+      "weapon_viewport_size": "(1440, 900)",
+      "run_file": "normal-pbr-run1"
+    },
+    {
+      "average_fps": 86.0718570857219,
+      "engine": "4.7.2-stable (official)",
+      "frames": 5165,
+      "import_ms": 497,
+      "max_fps": 0,
+      "mean_frame_ms": 11.4857182962246,
+      "mode": "normal-pbr",
+      "objects_last_frame": 1185,
+      "p50_ms": 10.987,
+      "p95_ms": 14.96,
+      "primitives_last_frame": 3295945,
+      "renderer": "gl_compatibility",
+      "resolution": [
+        1600,
+        1000
+      ],
+      "route": "full training map, spawn yaw sweep +-0.55rad; no shooting, no physics movement; default lighting/bloom active; weapon energy off",
+      "seconds": 60.008,
+      "source": "Tripo 1,934,290 triangle high PBR; normal map toggle only",
+      "texture_bytes": 1091131819,
+      "vsync": "disabled",
+      "weapon_viewport_size": "(1440, 900)",
+      "run_file": "normal-pbr"
+    },
+    {
+      "average_fps": 65.6890518246959,
+      "engine": "4.7.2-stable (official)",
+      "frames": 3942,
+      "import_ms": 446,
+      "max_fps": 0,
+      "mean_frame_ms": 15.0245192795535,
+      "mode": "normal-off",
+      "objects_last_frame": 1185,
+      "p50_ms": 14.006,
+      "p95_ms": 20.302,
+      "primitives_last_frame": 3295945,
+      "renderer": "gl_compatibility",
+      "resolution": [
+        1600,
+        1000
+      ],
+      "route": "full training map, spawn yaw sweep +-0.55rad; no shooting, no physics movement; default lighting/bloom active; weapon energy off",
+      "seconds": 60.01,
+      "source": "Tripo 1,934,290 triangle high PBR; normal map toggle only",
+      "texture_bytes": 1091131819,
+      "vsync": "disabled",
+      "weapon_viewport_size": "(1440, 900)",
+      "run_file": "normal-off"
+    }
+  ],
+  "platform": "macOS Apple M5 / Godot4.7.2 Compatibility",
+  "resolution": [
+    1600,
+    1000
+  ],
+  "weapon_viewport": [
+    1440,
+    900
+  ],
+  "warmup_seconds": 5,
+  "sample_seconds": 60,
+  "paid_calls": 0,
+  "default_unchanged": true
+}
