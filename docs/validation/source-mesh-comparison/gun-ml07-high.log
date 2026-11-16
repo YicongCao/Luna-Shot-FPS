@@ -1,0 +1,29 @@
+00:00.249  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v1/02-geometry/paired.blend"
+BlenderMCP addon registered
+15:52:59 | INFO: Data are loaded, start creating Blender stuff
+15:52:59 | INFO: Blender create Mesh node T00_CoreGrip_high.001
+15:52:59 | INFO: Blender create Mesh node T01_FrontShroud_high.001
+15:52:59 | INFO: Blender create Mesh node T02_CoilAssembly_high.001
+15:52:59 | INFO: Blender create Mesh node T03_ReceiverShell_high.001
+15:52:59 | INFO: Blender create Mesh node T04_EnergyCell_high.001
+15:52:59 | INFO: Blender create Mesh node T05_Optic_high.001
+15:52:59 | INFO: Blender create Mesh node T06_Muzzle_high.001
+15:52:59 | INFO: Blender create Mesh node T07_TopRail_high.001
+15:52:59 | INFO: Blender create Mesh node T08_StockShell_high.001
+15:52:59 | INFO: Blender create Mesh node T09_StockBrace_high.001
+15:52:59 | INFO: Blender create Mesh node T10_ButtPad_high.001
+15:52:59 | INFO: Blender create Mesh node T11_CellSide_high.001
+15:52:59 | INFO: Blender create Mesh node T12_Foregrip_high.001
+15:52:59 | INFO: Blender create Mesh node T13_CheekRest_high.001
+15:52:59 | INFO: Blender create Mesh node T14_FrontBracket_high.001
+15:52:59 | INFO: Blender create Mesh node T15_RailInset_high.001
+15:52:59 | INFO: Blender create Mesh node T16_FrontLatch_high.001
+15:52:59 | INFO: glTF import finished in 0.04s
+00:00.755  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/source-mesh-comparison/gun-ml07-high-hero.png'
+00:00.888  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/source-mesh-comparison/gun-ml07-high-side.png'
+00:01.034  render           | Saved: '/Users/cong/Documents/Projects/Luna-Shot-FPS/docs/validation/source-mesh-comparison/gun-ml07-high-detail.png'
+COMPARISON_RENDERED gun-ml07-high 42520
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

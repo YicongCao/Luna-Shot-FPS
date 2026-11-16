@@ -1,0 +1,332 @@
+[
+  {
+    "id": "b2",
+    "title": "B2 / ML15 - original 4K bake",
+    "maps": [
+      {
+        "channel": "BaseColor",
+        "source": "art_source/environment/refine-v2/B2/03-bake/body/BaseColor.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/b2-BaseColor.png"
+      },
+      {
+        "channel": "NormalGL",
+        "source": "art_source/environment/refine-v2/B2/03-bake/body/NormalGL.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/b2-NormalGL.png"
+      },
+      {
+        "channel": "Roughness",
+        "source": "art_source/environment/refine-v2/B2/03-bake/body/Roughness.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/b2-Roughness.png"
+      },
+      {
+        "channel": "Metallic",
+        "source": "art_source/environment/refine-v2/B2/03-bake/body/Metallic.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/b2-Metallic.png"
+      },
+      {
+        "channel": "AO",
+        "source": "art_source/environment/refine-v2/B2/03-bake/body/AO.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/b2-AO.png"
+      },
+      {
+        "channel": "ORM",
+        "source": "assets/environment/B2/body/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/b2-ORM.png"
+      }
+    ]
+  },
+  {
+    "id": "gun-ml07-body",
+    "title": "LS01 / ML07 body - original 4K bake",
+    "maps": [
+      {
+        "channel": "BaseColor",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/body/BaseColor.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-body-BaseColor.png"
+      },
+      {
+        "channel": "NormalGL",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/body/NormalGL.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-body-NormalGL.png"
+      },
+      {
+        "channel": "Roughness",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/body/Roughness.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-body-Roughness.png"
+      },
+      {
+        "channel": "Metallic",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/body/Metallic.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-body-Metallic.png"
+      },
+      {
+        "channel": "AO",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/body/AO.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-body-AO.png"
+      },
+      {
+        "channel": "ORM",
+        "source": "assets/weapons/lc01/ls01_v1/body/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-body-ORM.png"
+      }
+    ]
+  },
+  {
+    "id": "gun-ml07-kit",
+    "title": "LS01 / ML07 kit - original 4K bake",
+    "maps": [
+      {
+        "channel": "BaseColor",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/kit/BaseColor.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-kit-BaseColor.png"
+      },
+      {
+        "channel": "NormalGL",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/kit/NormalGL.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-kit-NormalGL.png"
+      },
+      {
+        "channel": "Roughness",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/kit/Roughness.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-kit-Roughness.png"
+      },
+      {
+        "channel": "Metallic",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/kit/Metallic.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-kit-Metallic.png"
+      },
+      {
+        "channel": "AO",
+        "source": "art_source/weapons/lc01/ls01-refine-v1/03-bake/kit/AO.png",
+        "size": [
+          4096,
+          4096
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-kit-AO.png"
+      },
+      {
+        "channel": "ORM",
+        "source": "assets/weapons/lc01/ls01_v1/kit/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml07-kit-ORM.png"
+      }
+    ]
+  },
+  {
+    "id": "gun-ml06-body",
+    "title": "LS01 / ML06 body - current texture files",
+    "maps": [
+      {
+        "channel": "BaseColor",
+        "source": "assets/weapons/lc01/BaseColor.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml06-body-BaseColor.png"
+      },
+      {
+        "channel": "NormalGL",
+        "source": "assets/weapons/lc01/NormalGL.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml06-body-NormalGL.png"
+      },
+      {
+        "channel": "Roughness",
+        "source": "assets/weapons/lc01/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": 1,
+        "preview": "textures/gun-ml06-body-Roughness.png"
+      },
+      {
+        "channel": "Metallic",
+        "source": "assets/weapons/lc01/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": 2,
+        "preview": "textures/gun-ml06-body-Metallic.png"
+      },
+      {
+        "channel": "AO",
+        "source": "assets/weapons/lc01/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": 0,
+        "preview": "textures/gun-ml06-body-AO.png"
+      },
+      {
+        "channel": "ORM",
+        "source": "assets/weapons/lc01/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml06-body-ORM.png"
+      }
+    ]
+  },
+  {
+    "id": "gun-ml06-kit",
+    "title": "LS01 / ML06 kit - current texture files",
+    "maps": [
+      {
+        "channel": "BaseColor",
+        "source": "assets/weapons/lc01/field_kit/BaseColor.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml06-kit-BaseColor.png"
+      },
+      {
+        "channel": "NormalGL",
+        "source": "assets/weapons/lc01/field_kit/NormalGL.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml06-kit-NormalGL.png"
+      },
+      {
+        "channel": "Roughness",
+        "source": "assets/weapons/lc01/field_kit/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": 1,
+        "preview": "textures/gun-ml06-kit-Roughness.png"
+      },
+      {
+        "channel": "Metallic",
+        "source": "assets/weapons/lc01/field_kit/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": 2,
+        "preview": "textures/gun-ml06-kit-Metallic.png"
+      },
+      {
+        "channel": "AO",
+        "source": "assets/weapons/lc01/field_kit/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": 0,
+        "preview": "textures/gun-ml06-kit-AO.png"
+      },
+      {
+        "channel": "ORM",
+        "source": "assets/weapons/lc01/field_kit/ORM.png",
+        "size": [
+          2048,
+          2048
+        ],
+        "extracted_orm_channel": null,
+        "preview": "textures/gun-ml06-kit-ORM.png"
+      }
+    ]
+  }
+]

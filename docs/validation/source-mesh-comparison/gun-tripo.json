@@ -1,0 +1,74 @@
+{
+  "stage": "gun-tripo",
+  "renderer": "Blender Workbench offline; not game",
+  "geometry_only": true,
+  "baked_normals_enabled": false,
+  "sources": [
+    "art_source/weapons/lc01/pipeline-v1/01-tripo-geometry/model.glb"
+  ],
+  "notes": [
+    "Original mesh, including original tiny residual part; only rigid rotation + uniform scale/translation for comparison."
+  ],
+  "retained_low_context": [],
+  "objects": 18,
+  "triangles_including_context": 1934304,
+  "bounds": [
+    [
+      -0.06087455153465271,
+      -0.2401006519794464,
+      -0.14793792366981506
+    ],
+    [
+      0.060804396867752075,
+      0.6648992896080017,
+      0.2158532440662384
+    ]
+  ],
+  "views": [
+    {
+      "view": "hero",
+      "center": [
+        0.0,
+        0.21250000596046448,
+        0.019999999552965164
+      ],
+      "camera": [
+        2.715290069580078,
+        -1.4845561981201172,
+        1.0382336378097534
+      ],
+      "ortho_scale": 1.12,
+      "file": "gun-tripo-hero.png"
+    },
+    {
+      "view": "side",
+      "center": [
+        0.0,
+        0.21250000596046448,
+        0.019999999552965164
+      ],
+      "camera": [
+        3.359832286834717,
+        0.21250000596046448,
+        0.053598321974277496
+      ],
+      "ortho_scale": 1.12,
+      "file": "gun-tripo-side.png"
+    },
+    {
+      "view": "detail",
+      "center": [
+        0.0,
+        0.17000000178813934,
+        -0.03500000014901161
+      ],
+      "camera": [
+        1.3761351108551025,
+        0.17000000178813934,
+        0.06821012496948242
+      ],
+      "ortho_scale": 0.46,
+      "file": "gun-tripo-detail.png"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "stage": "b2-tripo",
+  "renderer": "Blender Workbench offline; not game",
+  "geometry_only": true,
+  "baked_normals_enabled": false,
+  "sources": [
+    "art_source/environment/refine-v2/B2/01-tripo/model.glb"
+  ],
+  "notes": [
+    "Original Tripo geometry; uniform normalization to 6m height, -90 degree Z rotation aligning central-pipe face to -Y, centered module frame. No mirroring, per-axis stretching or part deletion. Raw side mounts may differ from local placement."
+  ],
+  "retained_low_context": [],
+  "objects": 33,
+  "triangles_including_context": 1862945,
+  "bounds": [
+    [
+      -2.2391865253448486,
+      -2.076770782470703,
+      4.470348358154297e-08
+    ],
+    [
+      2.2391865253448486,
+      2.076770544052124,
+      6.000000476837158
+    ]
+  ],
+  "views": [
+    {
+      "view": "hero",
+      "center": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "camera": [
+        15.816537857055664,
+        -15.816537857055664,
+        11.699095726013184
+      ],
+      "ortho_scale": 8.0,
+      "file": "b2-tripo-hero.png"
+    },
+    {
+      "view": "side",
+      "center": [
+        0.0,
+        0.0,
+        3.0
+      ],
+      "camera": [
+        23.880891799926758,
+        0.0,
+        5.388089179992676
+      ],
+      "ortho_scale": 8.0,
+      "file": "b2-tripo-side.png"
+    },
+    {
+      "view": "detail",
+      "center": [
+        0.0,
+        -1.0,
+        0.6499999761581421
+      ],
+      "camera": [
+        5.471799850463867,
+        -11.943599700927734,
+        3.6594901084899902
+      ],
+      "ortho_scale": 4.2,
+      "file": "b2-tripo-detail.png"
+    }
+  ]
+}

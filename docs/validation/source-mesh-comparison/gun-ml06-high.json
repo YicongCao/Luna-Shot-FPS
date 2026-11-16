@@ -1,0 +1,74 @@
+{
+  "stage": "gun-ml06-high",
+  "renderer": "Blender Workbench offline; not game",
+  "geometry_only": true,
+  "baked_normals_enabled": false,
+  "sources": [
+    "art_source/weapons/lc01/industrial-wear-v1/02-high/lc01-high.blend"
+  ],
+  "notes": [
+    "ML06 source body: preserved/repaired Tripo-derived geometry, NOT whole-body procedural rebuild. Later field kit excluded."
+  ],
+  "retained_low_context": [],
+  "objects": 17,
+  "triangles_including_context": 1934277,
+  "bounds": [
+    [
+      -0.060874536633491516,
+      -0.2401006817817688,
+      -0.14793793857097626
+    ],
+    [
+      0.06080439314246178,
+      0.6648992896080017,
+      0.2158532291650772
+    ]
+  ],
+  "views": [
+    {
+      "view": "hero",
+      "center": [
+        0.0,
+        0.21250000596046448,
+        0.019999999552965164
+      ],
+      "camera": [
+        2.715290069580078,
+        -1.4845561981201172,
+        1.0382336378097534
+      ],
+      "ortho_scale": 1.12,
+      "file": "gun-ml06-high-hero.png"
+    },
+    {
+      "view": "side",
+      "center": [
+        0.0,
+        0.21250000596046448,
+        0.019999999552965164
+      ],
+      "camera": [
+        3.359832286834717,
+        0.21250000596046448,
+        0.053598321974277496
+      ],
+      "ortho_scale": 1.12,
+      "file": "gun-ml06-high-side.png"
+    },
+    {
+      "view": "detail",
+      "center": [
+        0.0,
+        0.17000000178813934,
+        -0.03500000014901161
+      ],
+      "camera": [
+        1.3761351108551025,
+        0.17000000178813934,
+        0.06821012496948242
+      ],
+      "ortho_scale": 0.46,
+      "file": "gun-ml06-high-detail.png"
+    }
+  ]
+}

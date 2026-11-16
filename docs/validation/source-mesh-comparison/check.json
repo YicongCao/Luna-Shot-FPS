@@ -1,0 +1,59 @@
+{
+  "stages": [
+    {
+      "stage": "b2-tripo",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    },
+    {
+      "stage": "b2-high",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    },
+    {
+      "stage": "b2-low",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    },
+    {
+      "stage": "gun-tripo",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    },
+    {
+      "stage": "gun-ml06-high",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    },
+    {
+      "stage": "gun-ml06-low",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    },
+    {
+      "stage": "gun-ml07-high",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    },
+    {
+      "stage": "gun-ml07-low",
+      "three_views": true,
+      "source_paths_exist": true,
+      "render_completed": true
+    }
+  ],
+  "render_count": 24,
+  "texture_sets": 5,
+  "texture_channels": 30,
+  "camera_match": true,
+  "static_html_links": true,
+  "source_runtime_unchanged": true,
+  "browser_interaction_tested": false
+}
