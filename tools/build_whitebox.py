@@ -205,6 +205,8 @@ def training(data):
  for i,t in enumerate(data['targets']):s.nodes.append(f'[node name="{t["id"]}" parent="." instance=ExtResource("target")]\nposition = {v(t["position"])}\nlabel_text = "T{i+1:02}"')
  s.node('Overview','Camera3D',props=f'position = {v(data["markers"]["OverviewCamera"])}\nfov = 53.0\nfar = 220.0')
  s.box('FiringLine',(0,.015,20),(7,.025,.12),'mark',solid=False)
+ s.ext.append('[ext_resource type="Script" path="res://scripts/ground_markings.gd" id="reflective_markings"]')
+ s.node('ReflectiveMarkings','Node3D',props='script = ExtResource("reflective_markings")')
  for dist in [10,20,30]:s.label('Distance'+str(dist),str(dist)+' m',(-3,.02,20-dist),25,rot=(-math.pi/2,0,0))
  for x,label in [(-18,'WEST / POWER'),(18,'EAST / POWER')]:s.label('Zone'+str(x),label,(x,.025,23),32,rot=(-math.pi/2,0,0))
  s.label('Entry','LUNAR ENERGY / TRAINING',(0,.03,31),36,rot=(-math.pi/2,0,0))

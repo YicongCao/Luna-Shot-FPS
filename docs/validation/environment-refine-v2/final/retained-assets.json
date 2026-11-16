@@ -1,0 +1,62 @@
+{
+  "files": [
+    {
+      "path": "docs/design/energy-layout.json",
+      "sha256": "39c32aeceea37a425b769f1f14a6097ded9262913cda13c5ec0de883d086ea8a",
+      "unchanged": true
+    },
+    {
+      "path": "scripts/b2_cooling_fans.gd",
+      "sha256": "1e77dbef63a6e3de4ea488278de310612ceeb015aa472b0861c110066a9b54d4",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/A_NormalGL.png",
+      "sha256": "234f6b1a9149fe1b1eb5e57281f4434faf0dec54159c744ffd0609684f42d964",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/BaseColor.png",
+      "sha256": "2baa582b9372fc7d8aea4ae4099c080160f497f75d147b63087e85eea4f94e51",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/A_BaseColor.png",
+      "sha256": "8b83a40b75d83ce85124a9255dcc3aaba4c906ec72f27511dd79611d06475315",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/A_Emission.png",
+      "sha256": "98af1805c2d325e0d84b365ca83126f8297f3994debc43ee46b2cee121eb471a",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/A.glb",
+      "sha256": "b52119e180569d3b8b335e1d0c7fbdec3a55bb433516f158db60726b8d8d8943",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/NormalGL.png",
+      "sha256": "c634700977ae5c0d858f22c104d2a01c545024b0b6350c9be5a39ec609ce01a5",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/ORM.png",
+      "sha256": "0db740d7bb4f814a7162b5133b710b70bbdb55161a5bfa4d5f4c3ec7e1ca6f37",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/A_ORM.png",
+      "sha256": "350d2723d4d7b60e0ce02fe14ffa76782c62b2e5a1ec661cbe07e948089e27e3",
+      "unchanged": true
+    },
+    {
+      "path": "assets/environment/A/Emission.png",
+      "sha256": "da0a82703dc4afe9fe600fca3afa2a83e593353d60f14872e7331f8991d78af4",
+      "unchanged": true
+    }
+  ],
+  "passed": true,
+  "git_diff_against_baseline": [],
+  "weapon_A_fans_tracked_unchanged": true
+}

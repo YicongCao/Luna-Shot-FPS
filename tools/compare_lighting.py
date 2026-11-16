@@ -17,8 +17,16 @@ alpha_native=np.asarray(Image.fromarray(a[:,:,3].astype(np.uint8)).resize((x.sha
 visible=(np.max(y-x,axis=2)>2)&(alpha_native==0)
 assert visible.sum()>20, int(visible.sum())
 alpha=dict(raw_glow_pixels_outside_silhouette=int(spill.sum()),visible_composite_pixels_outside_silhouette=int(visible.sum()),visible_glow_outside_silhouette=True,method='Actual rendered cyan highlights, separable blur, additive composition below HUD; native transparent Glow disabled')
-# Lamp occupies ~13 px radius at the fixed 1280x800 camera; inspect the surrounding halo.
-x=rgb('20-lamp-no-bloom');y=rgb('21-lamp-bloom');yy,xx=np.indices(x.shape[:2]);distance=np.sqrt((xx-640)**2+(yy-392)**2);annulus=(distance>17)&(distance<42)
+# Follow the actual cyan strip silhouette, rather than the old spherical lamp's pixel center.
+x=rgb('20-lamp-no-bloom');y=rgb('21-lamp-bloom')
+yy,xx=np.indices(x.shape[:2]);central=(abs(xx-640)<250)&(abs(yy-400)<150)
+core=central&(x[:,:,2]>180)&(x[:,:,1]>100)&(x[:,:,2]>x[:,:,0]*1.2)
+assert core.sum()>20, 'The actual blue lamp must be visible'
+dilated=np.zeros_like(core)
+for dy in range(-12,13):
+ for dx in range(-12,13):
+  if dx*dx+dy*dy<=144:dilated|=np.roll(np.roll(core,dy,0),dx,1)
+annulus=dilated&~core
 halo=float(np.maximum(y-x,0)[annulus].mean());assert halo>.2,halo
 result=dict(fixed_camera_effects=rows,transparent_viewmodel=alpha,world_lamp_halo_mean_gain=halo)
 (p/'pixel-comparison.json').write_text(json.dumps(result,indent=2));print(json.dumps(result,indent=2))

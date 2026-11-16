@@ -14,8 +14,7 @@ func _ready() -> void:
 	training = get_parent()
 	while training and not training.has_method("set_paused"): training = training.get_parent()
 	if asset_id in ["B1", "B2"]:
-		for x in [-1.5, 1.5]:
-			for z in [-1.5, 1.5]: add_red(Vector3(x, 5.82, z))
+		for mount in mounts: add_red(Vector3(mount.position[0],mount.position[1],mount.position[2]))
 	if asset_id in ["C", "D"]:
 		for mount in mounts: add_blue(Vector3(mount.position[0],mount.position[1],mount.position[2]), mount.rotation_x, mount.side)
 	if asset_id=="E":

@@ -63,10 +63,13 @@ func run() -> void:
 	check("energy_off_suppresses_gun_flare",light.flare_pass.gun_visible_samples==0)
 	player.weapon.set_energy_enabled(true)
 	# Fixed lamp shot isolates actual scene Bloom from imagegen flare.
-	await position_camera(Vector3(-18,.05,18),Vector3(-19.75,1.2,15.6))
+	var bridge=scene.get_tree().get_nodes_in_group("facility_lamp_modules").filter(func(m):return m.asset_id=="C")[0]
+	var lamp: Vector3=bridge.fixtures[0].mesh.global_position
+	await position_camera(lamp+Vector3(-2,-1.65,1),lamp)
 	light.flares_enabled=false;light.set_bloom(false);await capture("20-lamp-no-bloom")
 	light.set_bloom(true);await capture("21-lamp-bloom")
 	light.flares_enabled=true;await capture("22-lamp-flare")
+	check("module_lamp_flare_present",light.flare_pass.visible_sources.any(func(s):return s.kind=="lamp"))
 	light.set_facility_enabled(false);await create_timer(.7).timeout
 	check("lamps_off_suppress_flares",light.flare_pass.visible_sources.filter(func(s):return s.kind=="lamp").is_empty())
 	light.set_facility_enabled(true)

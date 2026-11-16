@@ -1,0 +1,39 @@
+{
+  "fixed_camera_effects": [
+    {
+      "effect": "emission",
+      "changed_pixels": 435,
+      "mean_difference": 0.020541666666666666,
+      "max_difference": 142.0
+    },
+    {
+      "effect": "local_spill",
+      "changed_pixels": 3971,
+      "mean_difference": 0.1139423828125,
+      "max_difference": 233.0
+    },
+    {
+      "effect": "bloom",
+      "changed_pixels": 267414,
+      "mean_difference": 1.672984375,
+      "max_difference": 191.0
+    },
+    {
+      "effect": "lens_flare",
+      "changed_pixels": 3334,
+      "mean_difference": 0.028351888020833334,
+      "max_difference": 102.0
+    },
+    {
+      "effect": "world_bloom",
+      "changed_pixels": 597430,
+      "mean_difference": 2.815533203125,
+      "max_difference": 241.0
+    }
+  ],
+  "transparent_viewmodel": {
+    "pixels_outside_original_silhouette": 0,
+    "mean_alpha_change": 0.0,
+    "visible_glow_outside_silhouette": false
+  }
+}

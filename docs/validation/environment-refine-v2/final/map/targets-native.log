@@ -1,0 +1,28 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M5
+
+TARGET_QA Target1_hit_and_disable true
+TARGET_QA Target1_reject_duplicate true
+TARGET_QA Target1_lies_flat true
+TARGET_QA Target1_no_score_on_empty_space true
+TARGET_QA Target2_hit_and_disable true
+TARGET_QA Target2_reject_duplicate true
+TARGET_QA Target2_lies_flat true
+TARGET_QA Target2_no_score_on_empty_space true
+TARGET_QA Target3_hit_and_disable true
+TARGET_QA Target3_reject_duplicate true
+TARGET_QA Target3_lies_flat true
+TARGET_QA Target3_no_score_on_empty_space true
+TARGET_QA Target4_hit_and_disable true
+TARGET_QA Target4_reject_duplicate true
+TARGET_QA Target4_lies_flat true
+TARGET_QA Target4_no_score_on_empty_space true
+TARGET_QA Target5_hit_and_disable true
+TARGET_QA Target5_reject_duplicate true
+TARGET_QA Target5_lies_flat true
+TARGET_QA Target5_no_score_on_empty_space true
+TARGET_QA reset_all_five true
+TARGET_QA pause_freezes_fall true
+TARGET_QA reset_during_fall_stays_upright true
+TARGET_QA can_hit_again true
+TARGET_QA_COMPLETE 24 failures=0

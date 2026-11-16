@@ -34,6 +34,8 @@ func _ready() -> void:
 		lamps.set_script(load("res://scripts/facility_lamps.gd"))
 		lamps.asset_id = asset_id
 		lamps.mounts = bindings.fixtures.get("mounts", [])
+		if lamps.mounts.size() != {"B1":4,"B2":4,"C":4,"D":6,"E":1}.get(asset_id,0):
+			push_error("Invalid ML15 fixture mount count: " + asset_id)
 		add_child(lamps)
 	# Added after whitebox hiding/material binding so animated parts stay visible
 	# and keep their own metal/paint materials. Regenerating the map retains this.

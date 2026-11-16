@@ -19,6 +19,7 @@ var weapon_bloom: CanvasLayer
 var module_light_pool: Array[OmniLight3D] = []
 var beacon_spot: SpotLight3D
 var module_spill_enabled:=true
+var module_flare_fixtures: Array[Dictionary]=[]
 
 func _ready() -> void:
 	world=get_parent();player=world.get_node("Player")
@@ -156,6 +157,10 @@ func update_module_lights() -> void:
 	candidates.sort_custom(func(a, b): return a.distance < b.distance)
 	# Stable fixture-to-slot ownership keeps blink phases from moving all shadow maps.
 	candidates=candidates.slice(0,8)
+	module_flare_fixtures.clear()
+	for candidate in candidates:
+		if candidate.fixture.level>.01 and module_flare_fixtures.size()<2:module_flare_fixtures.append(candidate.fixture)
+	if not amber.is_empty() and camera.global_position.distance_to(amber.mesh.global_position)<24:module_flare_fixtures.append(amber)
 	var used: Array[int]=[]
 	var slots: Dictionary={}
 	for candidate in candidates:
@@ -175,7 +180,7 @@ func update_module_lights() -> void:
 	for candidate in candidates:
 		var fixture: Dictionary=candidate.fixture
 		var light: OmniLight3D=module_light_pool[slots[fixture.mesh.get_instance_id()]]
-		var pos: Vector3=fixture.mesh.global_position+fixture.get("spill_offset",Vector3(0,.07,0))
+		var pos: Vector3=fixture.mesh.to_global(fixture.get("spill_offset",Vector3(0,.07,0)))
 		if not light.global_position.is_equal_approx(pos):light.global_position=pos
 		if light.light_color!=fixture.color:light.light_color=fixture.color
 		if light.omni_range!=fixture.range:light.omni_range=fixture.range

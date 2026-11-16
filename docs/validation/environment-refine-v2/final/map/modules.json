@@ -1,0 +1,766 @@
+{
+	"checks": [
+		{
+			"check": "C01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "C02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D03_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "D04_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B03_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B04_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B05_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B06_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B07_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B08_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B09_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B10_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B11_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "B12_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A01_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A02_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A03_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A04_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A05_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A06_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A07_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A08_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A09_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A10_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A11_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A12_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A13_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A14_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A15_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A16_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A17_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A18_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A19_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A20_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A21_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A22_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A23_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A24_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A25_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A26_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A27_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A28_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A29_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A30_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A31_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A32_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A33_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A34_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A35_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A36_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A37_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A38_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A39_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "A40_unit_scale",
+			"passed": true
+		},
+		{
+			"check": "five_module_resources_with_B_subtypes",
+			"passed": true
+		},
+		{
+			"check": "six_each_thermal_subtype",
+			"passed": true
+		},
+		{
+			"check": "C01_final_visual",
+			"passed": true
+		},
+		{
+			"check": "C01_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "D01_final_visual",
+			"passed": true
+		},
+		{
+			"check": "D01_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "D02_final_visual",
+			"passed": true
+		},
+		{
+			"check": "D02_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "C02_final_visual",
+			"passed": true
+		},
+		{
+			"check": "C02_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "D03_final_visual",
+			"passed": true
+		},
+		{
+			"check": "D03_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "D04_final_visual",
+			"passed": true
+		},
+		{
+			"check": "D04_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B01_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B01_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B02_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B02_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B03_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B03_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B04_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B04_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B05_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B05_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B06_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B06_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B07_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B07_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B08_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B08_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B09_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B09_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B10_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B10_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B11_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B11_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "B12_final_visual",
+			"passed": true
+		},
+		{
+			"check": "B12_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A01_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A01_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A02_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A02_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A03_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A03_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A04_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A04_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A05_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A05_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A06_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A06_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A07_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A07_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A08_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A08_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A09_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A09_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A10_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A10_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A11_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A11_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A12_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A12_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A13_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A13_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A14_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A14_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A15_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A15_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A16_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A16_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A17_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A17_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A18_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A18_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A19_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A19_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A20_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A20_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A21_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A21_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A22_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A22_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A23_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A23_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A24_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A24_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A25_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A25_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A26_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A26_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A27_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A27_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A28_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A28_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A29_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A29_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A30_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A30_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A31_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A31_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A32_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A32_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A33_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A33_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A34_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A34_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A35_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A35_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A36_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A36_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A37_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A37_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A38_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A38_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A39_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A39_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "A40_final_visual",
+			"passed": true
+		},
+		{
+			"check": "A40_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "SignalTower_final_visual",
+			"passed": true
+		},
+		{
+			"check": "SignalTower_single_mesh",
+			"passed": true
+		},
+		{
+			"check": "six_assets_59_instances",
+			"passed": true
+		},
+		{
+			"check": "six_shared_materials",
+			"passed": true
+		},
+		{
+			"check": "signal_at_center",
+			"passed": true
+		},
+		{
+			"check": "three_metre_side_clearance",
+			"passed": true
+		},
+		{
+			"check": "socket_D01",
+			"passed": true
+		},
+		{
+			"check": "socket_D02",
+			"passed": true
+		},
+		{
+			"check": "socket_D03",
+			"passed": true
+		},
+		{
+			"check": "socket_D04",
+			"passed": true
+		},
+		{
+			"check": "C01_headroom",
+			"metres": 2.25000004470348,
+			"passed": true
+		},
+		{
+			"check": "C02_headroom",
+			"metres": 2.25000004470348,
+			"passed": true
+		}
+	],
+	"failures": 0,
+	"sources": [
+		"res://assets/industrial/module_C.tscn",
+		"res://assets/industrial/module_D.tscn",
+		"res://assets/industrial/module_B1.tscn",
+		"res://assets/industrial/module_B2.tscn",
+		"res://assets/industrial/module_A.tscn"
+	]
+}

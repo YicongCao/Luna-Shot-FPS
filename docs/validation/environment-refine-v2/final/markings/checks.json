@@ -1,0 +1,37 @@
+{
+	"checks": [
+		{
+			"check": "48_segmented_edge_markings",
+			"detail": 48,
+			"passed": true
+		},
+		{
+			"check": "same_geometry_grid_batch",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "paint_has_real_specular_response",
+			"detail": {
+				"peak": 0.780392155051231,
+				"pixels": 5733
+			},
+			"passed": true
+		},
+		{
+			"check": "unlit_paint_pixels_are_dark",
+			"detail": [
+				0.0,
+				0.0,
+				0.0
+			],
+			"passed": true
+		},
+		{
+			"check": "paint_shader_is_nonmetal_nonemissive",
+			"detail": null,
+			"passed": true
+		}
+	],
+	"failures": 0
+}

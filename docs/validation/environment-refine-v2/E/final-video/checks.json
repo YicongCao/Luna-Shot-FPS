@@ -1,0 +1,121 @@
+{
+	"checks": [
+		{
+			"check": "capture_range",
+			"passed": true
+		},
+		{
+			"check": "fixture_count",
+			"passed": true
+		},
+		{
+			"check": "capture_lights-on-no-bloom",
+			"passed": true
+		},
+		{
+			"check": "capture_emission-only",
+			"passed": true
+		},
+		{
+			"check": "real_local_spill_pixels",
+			"passed": true
+		},
+		{
+			"check": "capture_lights-off",
+			"passed": true
+		},
+		{
+			"check": "capture_lights-bloom",
+			"passed": true
+		},
+		{
+			"check": "amber_pulse_peak",
+			"passed": true
+		},
+		{
+			"check": "amber_between_pulses",
+			"passed": true
+		},
+		{
+			"check": "one_revolution_per_second",
+			"passed": true
+		},
+		{
+			"check": "capture_beacon-phase-0",
+			"passed": true
+		},
+		{
+			"check": "capture_beacon-phase-1",
+			"passed": true
+		},
+		{
+			"check": "capture_beacon-phase-2",
+			"passed": true
+		},
+		{
+			"check": "rotating_sector_visible_pixels",
+			"passed": true
+		},
+		{
+			"check": "capture_beacon-phase-3",
+			"passed": true
+		},
+		{
+			"check": "spot_tracks_rotor",
+			"passed": true
+		},
+		{
+			"check": "pause_freezes_phase",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-front",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-back",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-left",
+			"passed": true
+		},
+		{
+			"check": "capture_gray-right",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-front",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-back",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-left",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-right",
+			"passed": true
+		},
+		{
+			"check": "capture_pbr-grazing",
+			"passed": true
+		},
+		{
+			"check": "capture_distance-3",
+			"passed": true
+		},
+		{
+			"check": "capture_distance-10",
+			"passed": true
+		},
+		{
+			"check": "capture_distance-20",
+			"passed": true
+		}
+	],
+	"failures": 0
+}

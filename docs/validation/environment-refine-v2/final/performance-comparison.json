@@ -1,0 +1,42 @@
+{
+  "before": {
+    "active_omni_frames": {
+      "0": 7154
+    },
+    "blue_spill_frames": 0,
+    "engine": "4.7.2-stable (official)",
+    "frames": 7154,
+    "objects_last_frame": 1014,
+    "p50_ms": 8.271,
+    "p95_ms": 9.728,
+    "primitives_last_frame": 1629970,
+    "route": "facility",
+    "seconds": 60.001,
+    "spot_spill_frames": 0,
+    "texture_bytes": 881350954,
+    "viewport": "1600x1000",
+    "vsync_disabled": false
+  },
+  "after": {
+    "active_omni_frames": {
+      "0": 2321,
+      "1": 243,
+      "2": 4584
+    },
+    "blue_spill_frames": 4497,
+    "engine": "4.7.2-stable (official)",
+    "frames": 7148,
+    "objects_last_frame": 506,
+    "p50_ms": 8.214,
+    "p95_ms": 9.958,
+    "primitives_last_frame": 1733404,
+    "route": "facility",
+    "seconds": 60.001,
+    "spot_spill_frames": 4949,
+    "texture_bytes": 825426904,
+    "viewport": "1600x1000",
+    "vsync_disabled": false
+  },
+  "p95_increase": 0.023643092105263275,
+  "passed": true
+}

@@ -1,0 +1,32 @@
+{
+  "html_local_links": "passed",
+  "videos": [
+    {
+      "file": "docs/validation/environment-refine-v2/B1/red-cycle.mp4",
+      "seconds": "5.000000",
+      "resolution": [
+        1280,
+        800
+      ],
+      "fps": "60/1"
+    },
+    {
+      "file": "docs/validation/environment-refine-v2/D/blue-closeup.mp4",
+      "seconds": "5.000000",
+      "resolution": [
+        1280,
+        800
+      ],
+      "fps": "60/1"
+    },
+    {
+      "file": "docs/validation/environment-refine-v2/E/beacon-cycle.mp4",
+      "seconds": "5.000000",
+      "resolution": [
+        1280,
+        800
+      ],
+      "fps": "60/1"
+    }
+  ]
+}

@@ -41,6 +41,22 @@ func run() -> void:
 		module.elapsed=1.25;module.refresh();checks.append({"check":"beacon_period_one_second","passed":is_equal_approx(beacon.rotor.rotation.y,PI*.5)})
 		module.set_process(true)
 	checks.append({"check":"local_pool_limit","passed":world.lighting.module_light_pool.size()==8})
+	var cam:=Camera3D.new();world.add_child(cam);cam.current=true
+	cam.position=Vector3(4,13,4);cam.look_at(Vector3(0,14,0))
+	await process_frame;await process_frame
+	checks.append({"check":"nearby_beacon_spot_active","passed":world.lighting.beacon_spot.visible})
+	var toggle:=InputEventKey.new();toggle.physical_keycode=KEY_F9;toggle.pressed=true
+	world.lighting._unhandled_key_input(toggle);await process_frame;await process_frame
+	checks.append({"check":"F9_disables_actual_spill","passed":not world.lighting.beacon_spot.visible and world.lighting.module_light_pool.all(func(l):return not l.visible)})
+	checks.append({"check":"F9_preserves_emissive_lenses","passed":modules.all(func(m):return m.fixtures.all(func(f):return f.material.emission_enabled))})
+	world.lighting._unhandled_key_input(toggle);await process_frame;await process_frame
+	checks.append({"check":"F9_restores_spot","passed":world.lighting.beacon_spot.visible})
+	# Reverse-facing ramps must rotate the spill offset with their local socket.
+	for module in modules:
+		if module.asset_id!="D":continue
+		var fixture: Dictionary=module.fixtures[1]
+		var offset: Vector3=fixture.mesh.to_global(fixture.spill_offset)-fixture.mesh.global_position
+		checks.append({"check":str(module.get_parent().name)+"_rotated_spill_offset","passed":offset.dot(fixture.mesh.global_basis.x*float(signf(fixture.spill_offset.x)))>.1})
 	world.lighting.set_facility_enabled(false);await process_frame;await process_frame
 	checks.append({"check":"facility_switch_disables_spill","passed":world.lighting.module_light_pool.all(func(l):return not l.visible)})
 	var out:=OS.get_environment("ENV_QA_OUT")

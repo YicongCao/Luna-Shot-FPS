@@ -1,0 +1,639 @@
+{
+	"blue_segments": 32,
+	"checks": [
+		{
+			"check": "B01_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B01_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B02_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B02_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B03_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B03_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B04_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B04_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B05_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B05_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B06_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B06_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B07_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B07_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B08_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B08_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B09_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B09_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B10_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B10_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B11_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B11_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "B12_all_four_on",
+			"passed": true
+		},
+		{
+			"check": "B12_all_four_off",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "lamp_envelope",
+			"passed": true
+		},
+		{
+			"check": "red_count",
+			"passed": true
+		},
+		{
+			"check": "C01_blue_count",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "D01_blue_count",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "D02_blue_count",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "C02_blue_count",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "D03_blue_count",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "D04_blue_count",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "blue_always_on",
+			"passed": true
+		},
+		{
+			"check": "blue_inside_boundary",
+			"passed": true
+		},
+		{
+			"check": "tower_phase_variation",
+			"passed": true
+		},
+		{
+			"check": "one_amber_beacon",
+			"passed": true
+		},
+		{
+			"check": "beacon_14_2m_envelope",
+			"passed": true
+		},
+		{
+			"check": "beacon_quarter_rotation",
+			"passed": true
+		},
+		{
+			"check": "beacon_period_one_second",
+			"passed": true
+		},
+		{
+			"check": "local_pool_limit",
+			"passed": true
+		},
+		{
+			"check": "nearby_beacon_spot_active",
+			"passed": true
+		},
+		{
+			"check": "F9_disables_actual_spill",
+			"passed": true
+		},
+		{
+			"check": "F9_preserves_emissive_lenses",
+			"passed": true
+		},
+		{
+			"check": "F9_restores_spot",
+			"passed": true
+		},
+		{
+			"check": "D01_rotated_spill_offset",
+			"passed": true
+		},
+		{
+			"check": "D02_rotated_spill_offset",
+			"passed": true
+		},
+		{
+			"check": "D03_rotated_spill_offset",
+			"passed": true
+		},
+		{
+			"check": "D04_rotated_spill_offset",
+			"passed": true
+		},
+		{
+			"check": "facility_switch_disables_spill",
+			"passed": true
+		}
+	],
+	"failures": 0,
+	"red_lenses": 48
+}

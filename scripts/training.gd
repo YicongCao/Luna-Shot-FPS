@@ -83,7 +83,7 @@ func build_hud() -> void:
 	layer.add_child(hud)
 	hud.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	title = text_label("LUNA SHOT / TRAINING", 25, Vector2(28,22), hud)
-	text_label("ML—04   /   LUNAR ENERGY   /   %d × %d m" % [layout.size[0],layout.size[1]], 13, Vector2(29,57), hud)
+	text_label("ML—15   /   LUNAR ENERGY   /   %d × %d m" % [layout.size[0],layout.size[1]], 13, Vector2(29,57), hud)
 	status = text_label("", 17, Vector2(28,92), hud)
 	help = text_label("WASD  Move     SHIFT  Sprint     SPACE  Jump     LMB  Fire     RMB  Aim     R  Reload\nF2  Survey view     F3  Material studio     F5  Reset range     ESC  Release mouse", 15, Vector2.ZERO, hud)
 	help.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_LEFT)

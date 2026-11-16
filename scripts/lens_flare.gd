@@ -20,6 +20,8 @@ func _ready() -> void:
 	sources.append({"id":"Sun","position":Vector3.ZERO,"color":Color(1,.78,.48),"weight":0.0,"screen":Vector2.ZERO,"kind":"sun"})
 	for fixture in lighting.fixtures:
 		sources.append({"id":fixture.mesh.name,"position":fixture.mesh.global_position,"color":fixture.color,"weight":0.0,"screen":Vector2.ZERO,"kind":"lamp"})
+	for i in 3:
+		sources.append({"id":"ModuleLamp"+str(i),"module_index":i,"position":Vector3.ZERO,"color":Color.WHITE,"weight":0.0,"screen":Vector2.ZERO,"kind":"lamp"})
 	build_weapon_samples()
 
 func build_weapon_samples() -> void:
@@ -84,6 +86,12 @@ func _process(delta: float) -> void:
 		refresh=.05
 		sample_weapon()
 		for source in sources:
+			var lamp_level:=1.0
+			if source.has("module_index"):
+				source.target=0.0
+				if source.module_index>=lighting.module_flare_fixtures.size():continue
+				var fixture: Dictionary=lighting.module_flare_fixtures[source.module_index]
+				source.position=fixture.mesh.global_position;source.color=fixture.color;lamp_level=fixture.level
 			var point: Vector3=cam.global_position+lighting.sun.global_basis.z*180 if source.kind=="sun" else source.position
 			source.target=0.0
 			if cam.is_position_behind(point):continue
@@ -97,7 +105,7 @@ func _process(delta: float) -> void:
 			var forward:=-cam.global_basis.z
 			var facing:=maxf(0,forward.dot((point-cam.global_position).normalized()))
 			var strength:=1.0 if source.kind=="sun" else minf(.6,8.0/maxf(1,cam.global_position.distance_to(point)))
-			source.target=edge*pow(facing,4)*strength
+			source.target=edge*pow(facing,4)*strength*lamp_level
 	visible_sources.clear()
 	for source in sources:
 		source.weight=lerpf(source.weight,source.get("target",0.0),1-exp(-14*delta))

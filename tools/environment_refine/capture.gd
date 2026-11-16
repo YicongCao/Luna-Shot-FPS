@@ -20,7 +20,7 @@ func run() -> void:
 	Input.mouse_mode=Input.MOUSE_MODE_VISIBLE
 	var tower: Node3D
 	for module in world.get_node("Facility").get_children()+world.get_node("Landmarks").get_children():
-		if module.asset_id==asset:tower=module;break
+		if module.asset_id==asset and (OS.get_environment("ENV_MODULE_ID").is_empty() or str(module.name)==OS.get_environment("ENV_MODULE_ID")):tower=module;break
 	var cam:=Camera3D.new();world.add_child(cam);cam.current=true;cam.fov=65
 	cam.global_position=tower.to_global(Vector3(8,4,8));cam.look_at(tower.to_global(Vector3(0,3,0)))
 	if asset in ["D","E"]:

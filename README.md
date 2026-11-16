@@ -18,10 +18,18 @@ WASD 移动 · 鼠标视角 · Shift 冲刺 · 空格跳跃 · 左键射击（�
 
 [日志索引](docs/logs/README.md) · [ML01-枪械建模](docs/logs/ML01-枪械建模.md) · [ML02-过程生成白模](docs/logs/ML02-过程生成白模.md)
 
-## 本轮产物
+## 当前环境版本：ML15
+
+B1/B2/C/D/E 已精修并接入默认关卡：分层散热结构、开放桁架、连续坡道、48红灯/32蓝灯/旋转橙色警灯和黄色反光标线。Tripo本轮300/400积分；A与ML06枪械保持。
+
+[原生对照与视频](docs/validation/environment-refine-v2/review.html) · [完整验证与限制](docs/validation/environment-refine-v2/final/REPORT.md) · [复现入口](tools/environment_refine/README.md)。技术与实施视觉复查通过，用户实机美术验收待定。
+
+![ML15 原生总览](docs/validation/environment-refine-v2/final/release/02-overview.png)
+
+## 历史环境阶段
 
 - [ML05-A 配电机组精修](docs/logs/ML05-A配电机组精修.md)：六块顶盖、检修门、三路接口和线缆；5,180 三角，无新增 Tripo 消费。
-- [A 新旧原生对照](docs/validation/A-refine-v2/review.html)。A 的最新可编辑来源为 `art_source/environment/A-refine-v2/`，其余五件仍使用 ML03 来源。
+- [A 新旧原生对照](docs/validation/A-refine-v2/review.html)。A 的 ML05 基础来源为 `art_source/environment/A-refine-v2/`，后续工业磨损见 ML06；其余五件当前来源为 `art_source/environment/refine-v2/`。
 
 - [ML03-环境模块建模](docs/logs/ML03-环境模块建模.md)：六资产共 690 Tripo 积分，18 次任务全部成功。
 - [ML04-光照与镜头效果](docs/logs/ML04-光照与镜头效果.md) · [原生光照对照页面](docs/validation/lighting-v1/review.html)
@@ -51,7 +59,7 @@ ML01 枪械阶段实际使用 115 Tripo 积分（60 + 35 + 20），没有重抽�
 
 `tools/validate.sh` 检查训练场回归，`tools/validate_rifle.sh` 检查枪械、红点、场景切换及实际材质截图。二者会打开原生窗口并自动退出。构建入口与范围见 AGENTS.md。
 
-光照专项：`tools/validate_lighting.sh`。运行时环境 GLB 位于 `assets/environment/{A,B1,B2,C,D,E}/`，可编辑源文件位于 `art_source/environment/pipeline-v1/`；生成器默认保留精模，`--art whitebox` 可导出原白模。
+光照专项：`tools/validate_lighting.sh`。运行时环境 GLB 位于 `assets/environment/{A,B1,B2,C,D,E}/`，ML03历史源位于 `art_source/environment/pipeline-v1/`，B1/B2/C/D/E最新精修源位于 `art_source/environment/refine-v2/`；生成器默认保留精模，`--art whitebox` 可导出原白模。
 
 ## ML07 枪械返修
 

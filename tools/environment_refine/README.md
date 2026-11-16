@@ -19,3 +19,11 @@ python3 tools/environment_refine/run.py audit --asset B1
 - 灯罩不投射不透明阴影，结构继续投影，避免光源自遮挡产生假暗锥；灯罩Emission与实际局部灯分开验收。
 
 当前实现进度以 docs/logs/ML15 和每件验证报告为准，不以候选文件存在推断已发布。
+
+## 最终集成复现
+
+`ENV_PERF_ROUTE=facility` 启用近蓝灯/警灯的60秒路线；旧版使用 `ENV_BASELINE=B1,B2,C,D,E` 跑同一路线。比较脚本 `--baseline <performance.json>` 不允许混用不同路线或不足60秒的采样。
+
+`validate_markings.gd` 检查真实 specular 像素与无光不自发光；`validate_lamps.gd` 检查完整灯具计数、F9和旋转挂点；`capture.gd` 的 `ENV_MODULE_ID=D02` 可指定反向坡道。
+
+`record_videos.py` 录制原生红灯、蓝灯近景和警灯周期；先停止其他 Godot/Blender GPU 任务。`final_report.py` 从已完成的回归证据生成最终报告/HTML，不允许失败结果进入交付索引。`publish.py --phase <证据目录>` 可选择同一资产的后续检查，不得用旧候选结果代替新几何检查。

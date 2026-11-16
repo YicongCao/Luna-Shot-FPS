@@ -18,6 +18,8 @@
 
 [ext_resource type="PackedScene" path="res://scenes/target.tscn" id="target"]
 
+[ext_resource type="Script" path="res://scripts/ground_markings.gd" id="reflective_markings"]
+
 [sub_resource type="StandardMaterial3D" id="R1"]
 albedo_color = Color(0.76, 0.78, 0.78, 1)
 roughness = 0.88
@@ -1909,6 +1911,9 @@ rotation = Vector3(0.000000, 0.000000, 0.000000)
 
 [node name="Mesh" type="MeshInstance3D" parent="FiringLine"]
 mesh = SubResource("R150")
+
+[node name="ReflectiveMarkings" type="Node3D" parent="."]
+script = ExtResource("reflective_markings")
 
 [node name="Distance10" type="Label3D" parent="."]
 position = Vector3(-3.000000, 0.020000, 10.000000)
