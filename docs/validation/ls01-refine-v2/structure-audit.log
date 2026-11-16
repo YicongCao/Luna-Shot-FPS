@@ -1,0 +1,149 @@
+00:00.419  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
+BlenderMCP addon registered
+{
+  "checks": [
+    {
+      "check": "OpticMountRearFin",
+      "passed": true,
+      "detail": {
+        "expected": 3,
+        "actual": 3
+      }
+    },
+    {
+      "check": "OpticMountFrontFin",
+      "passed": true,
+      "detail": {
+        "expected": 3,
+        "actual": 3
+      }
+    },
+    {
+      "check": "Cell_TopCover",
+      "passed": true,
+      "detail": {
+        "expected": 3,
+        "actual": 3
+      }
+    },
+    {
+      "check": "Cell_LatchSeat",
+      "passed": true,
+      "detail": {
+        "expected": 2,
+        "actual": 2
+      }
+    },
+    {
+      "check": "Cell_LatchNotch",
+      "passed": true,
+      "detail": {
+        "expected": 2,
+        "actual": 2
+      }
+    },
+    {
+      "check": "StockJointInsert",
+      "passed": true,
+      "detail": {
+        "expected": 2,
+        "actual": 2
+      }
+    },
+    {
+      "check": "StockJointTongue",
+      "passed": true,
+      "detail": {
+        "expected": 2,
+        "actual": 2
+      }
+    },
+    {
+      "check": "ShroudRib",
+      "passed": true,
+      "detail": {
+        "expected": 6,
+        "actual": 6
+      }
+    },
+    {
+      "check": "ShroudInnerRail",
+      "passed": true,
+      "detail": {
+        "expected": 2,
+        "actual": 2
+      }
+    },
+    {
+      "check": "ShroudBolt",
+      "passed": true,
+      "detail": {
+        "expected": 8,
+        "actual": 8
+      }
+    },
+    {
+      "check": "lower outward screen vertices",
+      "passed": true,
+      "detail": 0.2
+    },
+    {
+      "check": "screen symmetric left/right",
+      "passed": true,
+      "detail": [
+        [
+          -0.054,
+          -0.0102
+        ],
+        [
+          -0.05076,
+          -0.017
+        ],
+        [
+          0.05076,
+          -0.017
+        ],
+        [
+          0.054,
+          -0.0102
+        ],
+        [
+          0.04428,
+          0.017
+        ],
+        [
+          -0.04428,
+          0.017
+        ]
+      ]
+    },
+    {
+      "check": "stock real broad chamfer band",
+      "passed": true,
+      "detail": {
+        "vertices": 86
+      }
+    },
+    {
+      "check": "OpticMountRearFin below ADS axis",
+      "passed": true,
+      "detail": 0.1274999976158142
+    },
+    {
+      "check": "OpticMountFrontFin below ADS axis",
+      "passed": true,
+      "detail": 0.1274999976158142
+    },
+    {
+      "check": "full static budget plus dynamic allowance",
+      "passed": true,
+      "detail": 39197
+    }
+  ],
+  "passed": true,
+  "note": "Numeric structure checks supplement native grey and PBR screenshots; not visual acceptance."
+}
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

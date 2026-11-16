@@ -1,0 +1,14 @@
+PACKED body 2048
+Traceback (most recent call last):
+  File "/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/pack.py", line 10, in <module>
+    assert p.exists(),p
+           ^^^^^^^^^^
+AssertionError: /Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/03-bake/kit/Roughness.png
+Traceback (most recent call last):
+  File "/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/run.py", line 16, in <module>
+    for group in (['body','kit'] if a.group=='all' else [a.group]):subprocess.run(['uv','run','--with','numpy','--with','pillow','python','tools/ls01_refine/pack.py','--group',group,'--out',a.out,'--runtime',a.runtime,'--size',str(a.size)],cwd=R,check=True)
+                                                                   ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['uv', 'run', '--with', 'numpy', '--with', 'pillow', 'python', 'tools/ls01_refine/pack.py', '--group', 'kit', '--out', '/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2', '--runtime', '/Users/cong/Documents/Projects/Luna-Shot-FPS/assets/weapons/lc01/ls01_v2', '--size', '0']' returned non-zero exit status 1.

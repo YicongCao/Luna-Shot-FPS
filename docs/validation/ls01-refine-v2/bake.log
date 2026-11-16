@@ -1,0 +1,70 @@
+00:00.337  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
+BlenderMCP addon registered
+BAKE_DEVICE [('Apple M5', 'CPU', False), ('Apple M5 (GPU - 10 cores)', 'METAL', True)]
+/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/bake.py:52: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('BakeTarget');mat.use_nodes=True;lo.data.materials.clear();lo.data.materials.append(mat)
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body NormalGL 5.754852056503296
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body AO 5.628063201904297
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body BaseColor 5.221528768539429
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body Roughness 4.713521957397461
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body Metallic 4.541598081588745
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body Curvature 5.027050971984863
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body EdgeMask 5.252291202545166
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body Position 5.444947957992554
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body WorldNormal 4.634310722351074
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body MaterialID 4.615457057952881
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body WearMask 5.008013963699341
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED body OilMask 5.015516996383667
+Info: Saved as "bake-pairs.blend"
+BAKE_COMPLETE
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit
+00:00.954  blend            | Read blend: "/Users/cong/Documents/Projects/Luna-Shot-FPS/art_source/weapons/lc01/ls01-refine-v2/02-geometry/paired.blend"
+BlenderMCP addon registered
+BAKE_DEVICE [('Apple M5', 'CPU', False), ('Apple M5 (GPU - 10 cores)', 'METAL', True)]
+/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/bake.py:52: DeprecationWarning: 'Material.use_nodes' is expected to be removed in Blender 6.0
+  mat=bpy.data.materials.new('BakeTarget');mat.use_nodes=True;lo.data.materials.clear();lo.data.materials.append(mat)
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit NormalGL 4.714503765106201
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit AO 5.62237811088562
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit BaseColor 5.2645769119262695
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit Roughness 6.445888996124268
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit Metallic 5.957442760467529
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit Curvature 7.118551015853882
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit EdgeMask 11.789301872253418
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit Position 5.969880104064941
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit WorldNormal 5.680129051208496
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit MaterialID 5.797073841094971
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit WearMask 6.199465990066528
+Info: Baking map saved to internal image, save it externally or pack it
+BAKED kit OilMask 6.6528990268707275
+Info: Saved as "bake-pairs.blend"
+BAKE_COMPLETE
+BlenderMCP addon unregistered
+Blender 5.2.2 LTS (hash d13f752e3b9c built 2026-09-15 01:49:19)
+
+Blender quit

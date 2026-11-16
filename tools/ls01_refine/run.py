@@ -1,5 +1,5 @@
 """Reproducible staged ML07 entry. Does not publish by default."""
-import argparse,subprocess,sys
+import argparse,subprocess,sys,json
 from pathlib import Path
 R=Path(__file__).resolve().parents[2];B='/Applications/Blender.app/Contents/MacOS/Blender'
 p=argparse.ArgumentParser();p.add_argument('stage',choices=['build','bake','export','pack','audit']);p.add_argument('--revision',choices=['ml07','ml09'],default='ml07');p.add_argument('--out');p.add_argument('--runtime');p.add_argument('--size',type=int,default=0);p.add_argument('--report-dir');p.add_argument('--seed',type=int,default=20261115);p.add_argument('--group',choices=['body','kit','all'],default='all');a=p.parse_args()
@@ -13,5 +13,8 @@ if a.stage=='bake':
  for group in (['body','kit'] if a.group=='all' else [a.group]):blender('bake.py',['--out',a.out,'--group',group])
 if a.stage=='export':blender('export.py',['--out',a.out,'--runtime',a.runtime])
 if a.stage=='pack':
+ for group in (['body','kit'] if a.group=='all' else [a.group]):
+  report=Path(a.out)/'03-bake'/group/'report.json'
+  assert report.exists() and json.loads(report.read_text()).get('completed'),f'Incomplete {group} bake; runtime not modified'
  for group in (['body','kit'] if a.group=='all' else [a.group]):subprocess.run(['uv','run','--with','numpy','--with','pillow','python','tools/ls01_refine/pack.py','--group',group,'--out',a.out,'--runtime',a.runtime,'--size',str(a.size)],cwd=R,check=True)
 if a.stage=='audit':blender('audit_geometry.py',['--out',a.out,'--report-dir',a.report_dir])

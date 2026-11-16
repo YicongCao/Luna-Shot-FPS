@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/audit_bake.py", line 11, in <module>
+    images={n:np.asarray(Image.open(D/group/(n+'.png')).convert('RGB').resize((2048,2048),Image.Resampling.NEAREST)).astype(float)/255 for n in ['BaseColor','ORM','NormalGL']}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cong/Documents/Projects/Luna-Shot-FPS/tools/ls01_refine/audit_bake.py", line 11, in <dictcomp>
+    images={n:np.asarray(Image.open(D/group/(n+'.png')).convert('RGB').resize((2048,2048),Image.Resampling.NEAREST)).astype(float)/255 for n in ['BaseColor','ORM','NormalGL']}
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/cong/.cache/uv/archive-v0/8aL-uBMOoWvefR2Q/lib/python3.11/site-packages/PIL/Image.py", line 3654, in open
+    fp = builtins.open(filename, "rb")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/cong/Documents/Projects/Luna-Shot-FPS/assets/weapons/lc01/ls01_v2/kit/ORM.png'

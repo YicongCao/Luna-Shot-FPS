@@ -5,6 +5,8 @@ import numpy as np,json,shutil,argparse
 R=Path(__file__).resolve().parents[2];O=R/'art_source/weapons/lc01/ls01-refine-v1';D=R/'assets/weapons/lc01/ls01_v1'
 a=argparse.ArgumentParser();a.add_argument('--group',choices=['body','kit'],required=True);a.add_argument('--size',type=int,default=0);a.add_argument('--out',default=str(O));a.add_argument('--runtime',default=str(D));args=a.parse_args();O=Path(args.out);D=Path(args.runtime);D.mkdir(parents=True,exist_ok=True);profile=D/'resolution.json';explicit_size=args.size;args.size=args.size or (json.loads(profile.read_text()).get(args.group,2048) if profile.exists() else 2048);src=O/'03-bake'/args.group;dst=D/args.group;dst.mkdir(exist_ok=True)
 assert not (D/'APPROVED').exists(),'Active validated runtime is protected: choose a new --runtime directory'
+report=json.loads((src/'report.json').read_text())
+assert report.get('completed'), 'Bake is not complete; wait for both atlas groups before packing'
 for name in ['BaseColor','AO','Roughness','Metallic','NormalGL']:
  p=src/(name+'.png')
  assert p.exists(),p

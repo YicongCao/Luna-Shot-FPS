@@ -1,0 +1,85 @@
+{
+  "contract": {
+    "source_sha256": "96ec831bc8f4b60d388eb7203a875913013c9fd097fc0d072d7069844e00c8b6",
+    "resolution": 4096,
+    "normal": "OpenGL +Y",
+    "explicit_cage": true,
+    "margin_px": 32
+  },
+  "group": "kit",
+  "resolution": 4096,
+  "device": "Apple M5 Metal GPU",
+  "actual_cycles_bake": true,
+  "selected_to_active": true,
+  "explicit_cage": true,
+  "exploded_pairs": 63,
+  "source_batch": "joined high; per-part object-coordinate anchors preserved",
+  "margin_px": 32,
+  "maps": [
+    {
+      "name": "NormalGL",
+      "seconds": 4.713866949081421,
+      "bake_type": "NORMAL"
+    },
+    {
+      "name": "AO",
+      "seconds": 5.621743202209473,
+      "bake_type": "AO"
+    },
+    {
+      "name": "BaseColor",
+      "seconds": 5.263931035995483,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Roughness",
+      "seconds": 6.445127010345459,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Metallic",
+      "seconds": 5.956789016723633,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Curvature",
+      "seconds": 7.117634057998657,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "EdgeMask",
+      "seconds": 11.788508176803589,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "Position",
+      "seconds": 5.969454050064087,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "WorldNormal",
+      "seconds": 5.679472208023071,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "MaterialID",
+      "seconds": 5.7964558601379395,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "WearMask",
+      "seconds": 6.198892116546631,
+      "bake_type": "EMIT"
+    },
+    {
+      "name": "OilMask",
+      "seconds": 6.652191877365112,
+      "bake_type": "EMIT"
+    }
+  ],
+  "curvature_encoding": "Cycles high-mesh Pointiness, .5 flat; not a signed metric curvature",
+  "edge_mask": "controlled edge-distance wear proxy, distinct from Curvature",
+  "ao_scope": "per-part local AO; exploded to avoid unrelated parts",
+  "position_encoding": "Blender source xyz + (.5,.5,.5)",
+  "completed": true
+}
