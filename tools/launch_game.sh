@@ -24,7 +24,8 @@ fi
 case "$MODE" in
   training) SCENE='res://scenes/training.tscn' ;;
   lab) SCENE='res://scenes/weapon_lab.tscn' ;;
-  *) print -u2 "未知启动模式：$MODE（可用 training / lab）"; exit 2 ;;
+  ground) SCENE='res://scenes/ground_studio.tscn' ;;
+  *) print -u2 "未知启动模式：$MODE（可用 training / lab / ground）"; exit 2 ;;
 esac
 
 mkdir -p artifacts/launch

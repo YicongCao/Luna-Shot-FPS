@@ -1,0 +1,294 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/ground_studio.gd" id="script"]
+
+[ext_resource type="PackedScene" path="res://assets/industrial/module_A.tscn" id="A"]
+
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="player"]
+
+[ext_resource type="Script" path="res://scripts/ground_surface.gd" id="surface"]
+
+[sub_resource type="StandardMaterial3D" id="R1"]
+albedo_color = Color(0.76, 0.78, 0.78, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R2"]
+albedo_color = Color(0.9, 0.9, 0.87, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R3"]
+albedo_color = Color(0.46, 0.51, 0.54, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R4"]
+albedo_color = Color(0.18, 0.23, 0.27, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R5"]
+albedo_color = Color(0.36, 0.4, 0.43, 1)
+roughness = 0.88
+
+[sub_resource type="StandardMaterial3D" id="R6"]
+albedo_color = Color(0.67, 0.47, 0.31, 1)
+roughness = 0.88
+
+[sub_resource type="BoxMesh" id="R7"]
+size = Vector3(8.000000, 0.600000, 8.000000)
+material = SubResource("R5")
+
+[sub_resource type="BoxShape3D" id="R8"]
+size = Vector3(8.000000, 0.600000, 8.000000)
+
+[sub_resource type="BoxMesh" id="R9"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R10"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R11"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R12"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R13"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R14"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R15"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R16"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R17"]
+size = Vector3(0.008000, 0.005000, 8.000000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R18"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R19"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R20"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R21"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R22"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R23"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R24"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R25"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="BoxMesh" id="R26"]
+size = Vector3(8.000000, 0.005000, 0.008000)
+material = SubResource("R3")
+
+[sub_resource type="Environment" id="R27"]
+background_mode = 1
+
+[node name="GroundStudio" type="Node3D"]
+script = ExtResource("script")
+metadata/layout_path = "res://docs/design/ground-sample.json"
+
+[node name="Ground" type="StaticBody3D" parent="."]
+position = Vector3(0.000000, -0.300000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+collision_layer = 1
+collision_mask = 0
+
+[node name="Mesh" type="MeshInstance3D" parent="Ground"]
+mesh = SubResource("R7")
+
+[node name="Collision" type="CollisionShape3D" parent="Ground"]
+shape = SubResource("R8")
+
+[node name="GridX0" type="Node3D" parent="."]
+position = Vector3(-4.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX0"]
+mesh = SubResource("R9")
+
+[node name="GridX1" type="Node3D" parent="."]
+position = Vector3(-3.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX1"]
+mesh = SubResource("R10")
+
+[node name="GridX2" type="Node3D" parent="."]
+position = Vector3(-2.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX2"]
+mesh = SubResource("R11")
+
+[node name="GridX3" type="Node3D" parent="."]
+position = Vector3(-1.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX3"]
+mesh = SubResource("R12")
+
+[node name="GridX4" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX4"]
+mesh = SubResource("R13")
+
+[node name="GridX5" type="Node3D" parent="."]
+position = Vector3(1.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX5"]
+mesh = SubResource("R14")
+
+[node name="GridX6" type="Node3D" parent="."]
+position = Vector3(2.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX6"]
+mesh = SubResource("R15")
+
+[node name="GridX7" type="Node3D" parent="."]
+position = Vector3(3.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX7"]
+mesh = SubResource("R16")
+
+[node name="GridX8" type="Node3D" parent="."]
+position = Vector3(4.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridX8"]
+mesh = SubResource("R17")
+
+[node name="GridZ0" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, -4.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ0"]
+mesh = SubResource("R18")
+
+[node name="GridZ1" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, -3.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ1"]
+mesh = SubResource("R19")
+
+[node name="GridZ2" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, -2.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ2"]
+mesh = SubResource("R20")
+
+[node name="GridZ3" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, -1.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ3"]
+mesh = SubResource("R21")
+
+[node name="GridZ4" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, 0.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ4"]
+mesh = SubResource("R22")
+
+[node name="GridZ5" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, 1.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ5"]
+mesh = SubResource("R23")
+
+[node name="GridZ6" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, 2.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ6"]
+mesh = SubResource("R24")
+
+[node name="GridZ7" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, 3.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ7"]
+mesh = SubResource("R25")
+
+[node name="GridZ8" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.003000, 4.000000)
+rotation = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Mesh" type="MeshInstance3D" parent="GridZ8"]
+mesh = SubResource("R26")
+
+[node name="Facility" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Landmarks" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Markers" type="Node3D" parent="."]
+position = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="Spawn" type="Marker3D" parent="Markers"]
+position = Vector3(-2.000000, 0.050000, 3.000000)
+
+[node name="OverviewFocus" type="Marker3D" parent="Markers"]
+position = Vector3(0.000000, 0.000000, 0.000000)
+
+[node name="OverviewCamera" type="Marker3D" parent="Markers"]
+position = Vector3(9.000000, 10.000000, 11.000000)
+
+[node name="A01" parent="Facility" instance=ExtResource("A")]
+position = Vector3(2,0,-2)
+
+[node name="Player" parent="." instance=ExtResource("player")]
+position = Vector3(-2,0.05,3)
+
+[node name="Overview" type="Camera3D" parent="."]
+fov = 53.0
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("R27")
+
+[node name="GroundSurface" type="Node3D" parent="."]
+script = ExtResource("surface")
+sample = true

@@ -1,0 +1,58 @@
+{
+  "seed": 20261116,
+  "resolution": 2048,
+  "materials": {
+    "paving": {
+      "meters": [
+        2,
+        4
+      ],
+      "height_min_max_m": [
+        -0.003201235318556428,
+        4.583198096952401e-05
+      ],
+      "normal": "OpenGL tangent +Y; U=world X, V=-world Z",
+      "channels": "sRGB BaseColor; linear ORM R=AO/G=roughness/B=metallic; NormalGL linear",
+      "source": "deterministic height field; not high-poly selected-to-active bake"
+    },
+    "regolith": {
+      "meters": [
+        1,
+        1
+      ],
+      "height_min_max_m": [
+        -0.0017227036878466606,
+        0.00474311038851738
+      ],
+      "normal": "OpenGL tangent +Y; U=world X, V=-world Z",
+      "channels": "sRGB BaseColor; linear ORM R=AO/G=roughness/B=metallic; NormalGL linear",
+      "source": "deterministic height field; not high-poly selected-to-active bake"
+    },
+    "metal": {
+      "meters": [
+        1,
+        1
+      ],
+      "height_min_max_m": [
+        -0.00019907980458810925,
+        0.0006899122381582856
+      ],
+      "normal": "OpenGL tangent +Y; U=world X, V=-world Z",
+      "channels": "sRGB BaseColor; linear ORM R=AO/G=roughness/B=metallic; NormalGL linear",
+      "source": "deterministic height field; not high-poly selected-to-active bake"
+    }
+  },
+  "paid_calls": 0,
+  "files": {
+    "assets/environment/ground_v1/sample_mask.png": "d23f344f734cb4348fd031733911cae72e1df3c24a45b5e859c2081646cf2c0f",
+    "assets/environment/ground_v1/paving/BaseColor.png": "fbd93ea75a3c12cdf41f3d486d0301431bd9f85ad75474c5783db15549f40e42",
+    "assets/environment/ground_v1/paving/NormalGL.png": "8cbb52a3e2a86969bd4bdfbbcedf594906f6d56006326f94f85d480c0352fdae",
+    "assets/environment/ground_v1/paving/ORM.png": "e62dcac713bfb6081dc7684248b5acab7a6e585e9caa2084cbd63223e13bbfd6",
+    "assets/environment/ground_v1/metal/BaseColor.png": "d954d9ededb156f0ee9b7db58ca31d88e77d6ee8fdb1ea931412c2fcd58eb020",
+    "assets/environment/ground_v1/metal/NormalGL.png": "ee40a1c9e46aec7d48128dbdd5e87398308e81f155a5ddeaf186dfa80254d3d8",
+    "assets/environment/ground_v1/metal/ORM.png": "9ac601aabef2b9f8148be0708162e988a07087a615fab3ce21615609f5400a6f",
+    "assets/environment/ground_v1/regolith/BaseColor.png": "457ef22ed5ff72e5635363d4e56cdb29c5454d1bd154e6f2df8e9b2ae323dd34",
+    "assets/environment/ground_v1/regolith/NormalGL.png": "3773c189bff016a984e81dd45bd8f771cc0ae069b9261dcd2e05dac99fe8aeed",
+    "assets/environment/ground_v1/regolith/ORM.png": "8f6888142a566576a8f937960d73a07512b298a5977066b6e511e638aefd91cb"
+  }
+}

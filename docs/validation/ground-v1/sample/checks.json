@@ -1,0 +1,112 @@
+{
+	"checks": [
+		{
+			"check": "8x8_base",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "one_A_seat_one_cover",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "no_new_ground_colliders",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "road_forward_capsule",
+			"detail": "(-2.0, -0.0, -2.916666)",
+			"passed": true
+		},
+		{
+			"check": "road_return_capsule",
+			"detail": "(-2.0, -0.0, 1.916668)",
+			"passed": true
+		},
+		{
+			"check": "cover_and_soil_edge_capsule",
+			"detail": "(2.749285, -0.0, 1.99912)",
+			"passed": true
+		},
+		{
+			"check": "soil_capsule",
+			"detail": "(2.797127, -0.0, 3.414978)",
+			"passed": true
+		},
+		{
+			"check": "capture_before-first-person",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-overview",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-cover",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-soil",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_before-seat",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-first-person",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-overview",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-cover",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-soil",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_after-seat",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_grazing-normal",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "capture_grazing-flat",
+			"detail": null,
+			"passed": true
+		},
+		{
+			"check": "native_normal_response",
+			"detail": 4127,
+			"passed": true
+		},
+		{
+			"check": "capture_alternate-grazing-direction",
+			"detail": null,
+			"passed": true
+		}
+	],
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"scope": "8x8 native sample, same camera/exposure, Bloom off; real player capsule; not user visual acceptance"
+}

@@ -1,0 +1,36 @@
+{
+  "size": [
+    8,
+    8
+  ],
+  "markers": {
+    "Spawn": [
+      -2,
+      0.05,
+      3
+    ],
+    "OverviewFocus": [
+      0,
+      0,
+      0
+    ],
+    "OverviewCamera": [
+      9,
+      10,
+      11
+    ]
+  },
+  "modules": [
+    {
+      "id": "A01",
+      "type": "A",
+      "position": [
+        2,
+        0,
+        -2
+      ],
+      "rotation_y": 0
+    }
+  ],
+  "targets": []
+}
