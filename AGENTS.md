@@ -23,10 +23,10 @@ ML06 工业细节来源在 art_source/industrial-wear-v1，枪械受限平面修
 
 ML07 保留枪械分支为 assets/weapons/lc01/ls01_v1，源文件在 art_source/weapons/lc01/ls01-refine-v1，入口 tools/ls01_refine。显式 bindings.json 绑定 body/kit/retained 三套材质，保留两组弹夹动画节点、红点和能量接口。局部重建允许新 UV；十一件保留件按原位置/UV 审计。不要再对本轮枪械运行 ML06 主轴微法线补丁或旧 finalize。A 与环境仍沿用原状态。
 主体法线 4K，主体底色/ORM 与其他 atlas 2K，4K 母版另存；使用 GPU 压缩、mipmap、各向异性过滤。Curvature（高模 Pointiness）与 EdgeMask（边界距离代理）分开。修改几何/法线/UV 后必须重烘焙；修改烘焙算法必须作废相关通道缓存。
-APPROVED 标记控制默认启用，LS01_BASELINE=1 强制回到 ML06，LS01_CANDIDATE=1 可预览未发布候选。原生证据在 docs/validation/ls01-refine-v1；用户验收仍 pending，保留件软边、字重和磨损艺术性差距开放，不能在后续日志中改写为全部概念还原成功。
+APPROVED 标记保护已验证资源，不再决定默认版本（用户于 2026-11-16 选择 ML06），LS01_BASELINE=1 强制回到 ML06，LS01_CANDIDATE=1 可预览未发布候选。原生证据在 docs/validation/ls01-refine-v1；用户验收仍 pending，保留件软边、字重和磨损艺术性差距开放，不能在后续日志中改写为全部概念还原成功。
 
 ## 阶段提交约定（用户于 2026-11-16 确认）
 
 每完成一个可独立说明、已做相应验证的阶段，就生成一次 Git commit，并在交付时报告提交号；不要将多个已完成阶段长期堆成未提交改动。里程碑更新与对应实现一起提交，提交说明写清变化和验证范围。保留真实历史，不把功能通过写成用户美术验收。提交前检查差异、密钥和大文件；模型、贴图与烘焙二进制使用 Git LFS。远程推送遵循用户授权，本次已授权创建并推送 GitHub 的 Luna-Shot-FPS 仓库。
 
-ML09 结构还原候选/发布路径为 `art_source/weapons/lc01/ls01-refine-v2`、`assets/weapons/lc01/ls01_v2`；`tools/ls01_refine/run.py --revision ml09`选择新配方，ML07原配方保持。`--weapon-revision=ml06|ml07|ml09`显式选择，v2的APPROVED经结构/烘焙/原生/性能门禁后控制默认。源与实际glTF都检查弹夹大平面逐角法线；三角化必须保留custom normals，改变后重烘焙，不能把斜向伪影当做划痕。灰模宽倒角/接口/分段的真实几何验收独立于磨损贴图。屏安装数据由screen.json共用。能量侧向Spot与原Omni统一受F6/F9控制，不调整环境资产。用户验收状态以最新ML09报告为准，不能因为门禁通过就写成用户通过。
+ML09 结构还原候选/发布路径为 `art_source/weapons/lc01/ls01-refine-v2`、`assets/weapons/lc01/ls01_v2`；`tools/ls01_refine/run.py --revision ml09`选择新配方，ML07原配方保持。`--weapon-revision=ml06|ml07|ml09`显式选择，v2的APPROVED保留作为当时技术门禁记录，不控制默认。源与实际glTF都检查弹夹大平面逐角法线；三角化必须保留custom normals，改变后重烘焙，不能把斜向伪影当做划痕。灰模宽倒角/接口/分段的真实几何验收独立于磨损贴图。屏安装数据由screen.json共用。能量侧向Spot与原Omni统一受F6/F9控制，不调整环境资产。用户于 2026-11-16 对照三版后明确认为 ML06 更好，默认回滚 ML06；以后枪械迭代以 ML06 为基线，不因技术门禁通过自动替换用户选定版本。

@@ -76,10 +76,10 @@ git lfs pull
 
 ## ML09 结构还原
 
-当前默认使用 ML09；技术及本轮结构复查通过，用户验收待定。
+2026-11-16 用户比较三版实机后选择 ML06，当前默认已回滚为 ML06。ML07、ML09 保留为对照，不作为用户认可的视觉升级。
 
 在ML07分层材质基础上，恢复ML06/概念的弹夹分段、枪托宽倒角及黑白斜接、八角瞄具和前后安装鳍片、下移端点的不规则六边形嵌入屏，以及能量环附近护罩支撑。增加两盏受遮挡的青色侧向补光。阶段证据和用户验收分开记录。
 
 [ML06/ML07/ML09 原生对照](docs/validation/ls01-refine-v2/review.html) · [验证报告](docs/validation/ls01-refine-v2/REPORT.md) · [逐件清单](docs/art/ls01-refine-v2/PARTS.md) · [ML09 日志](docs/logs/ML09-枪械结构还原与能量环侧向照明.md)。
 
-Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`或`ml09`。不传参数时采用已发布版本；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。
+Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`或`ml09`。不传参数时固定采用 ML06，APPROVED 不再自动切换默认；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。

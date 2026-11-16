@@ -9,23 +9,21 @@ var spill_enabled := true
 var surface_mode := 0
 var field_kit: Node3D
 var ls01 := false
-var revision := "ml07"
-var asset_root := "res://assets/weapons/lc01/ls01_v1/"
+# User-selected default after native ML06/ML07/ML09 comparison (2026-11-16).
+# APPROVED protects validated assets; it does not override the selected default.
+var revision := "ml06"
+var asset_root := "res://assets/weapons/lc01/"
 var atlas_materials: Dictionary = {}
 func _ready() -> void:
-	ls01 = OS.get_environment("LS01_BASELINE") != "1" and (OS.get_environment("LS01_CANDIDATE") == "1" or FileAccess.file_exists("res://assets/weapons/lc01/ls01_v1/APPROVED"))
-	var explicit_revision := false
+	if OS.get_environment("LS01_BASELINE") != "1" and OS.get_environment("LS01_CANDIDATE") == "1":
+		revision = "ml07"
 	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--weapon-revision="):
-			explicit_revision=true
-			revision=argument.trim_prefix("--weapon-revision=")
-			assert(revision in ["ml06","ml07","ml09"],"Unknown weapon revision")
-			ls01=revision!="ml06"
-	if not explicit_revision:
-		if OS.get_environment("LS01_BASELINE")=="1":revision="ml06"
-		elif OS.get_environment("LS01_CANDIDATE")!="1" and FileAccess.file_exists("res://assets/weapons/lc01/ls01_v2/APPROVED"):
-			revision="ml09";ls01=true
-	if revision=="ml09":asset_root="res://assets/weapons/lc01/ls01_v2/"
+			revision = argument.trim_prefix("--weapon-revision=")
+			assert(revision in ["ml06", "ml07", "ml09"], "Unknown weapon revision")
+	ls01 = revision != "ml06"
+	if revision == "ml07": asset_root = "res://assets/weapons/lc01/ls01_v1/"
+	elif revision == "ml09": asset_root = "res://assets/weapons/lc01/ls01_v2/"
 	if ls01:
 		setup_ls01()
 		return

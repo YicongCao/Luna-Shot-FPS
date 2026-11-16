@@ -99,7 +99,7 @@ func run() -> void:
 		check("ultrawide_dot_rendered",dot_visible(wide))
 	frames.sort()
 	var failures := checks.filter(func(c): return not c.passed)
-	var report := {"engine":Engine.get_version_info().string,"platform":OS.get_name(),"display":DisplayServer.get_name(),"seconds":(Time.get_ticks_msec()-started)/1000.0,"frame_ms_p95":frames[int(frames.size()*.95)],"checks":checks,"failures":failures.size(),"note":"Short automated native render/interaction test, not long-duration performance acceptance."}
+	var report := {"weapon_revision":weapon.revision,"engine":Engine.get_version_info().string,"platform":OS.get_name(),"display":DisplayServer.get_name(),"seconds":(Time.get_ticks_msec()-started)/1000.0,"frame_ms_p95":frames[int(frames.size()*.95)],"checks":checks,"failures":failures.size(),"note":"Short automated native render/interaction test, not long-duration performance acceptance."}
 	var f:=FileAccess.open(OUT+("rifle-headless.json" if DisplayServer.get_name()=="headless" else "rifle-native.json"),FileAccess.WRITE)
 	f.store_string(JSON.stringify(report,"\t")+"\n")
 	print("RIFLE_QA_COMPLETE failures=",failures.size())
