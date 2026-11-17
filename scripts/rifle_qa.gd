@@ -53,6 +53,10 @@ func run() -> void:
 		for path in ["BaseColor","NormalGL","ORM","Emission"]:
 			var tex: Texture2D=load("res://assets/weapons/lc01/"+path+".png")
 			check("texture_"+path,tex.get_size()==Vector2(2048,2048),str(tex.get_size()))
+			check("mipmaps_"+path,tex.get_image().has_mipmaps())
+		for path in ["BaseColor","NormalGL","ORM","Emission"]:
+			var kit_texture: Texture2D=load("res://assets/weapons/lc01/field_kit/"+path+".png")
+			check("mipmaps_field_kit_"+path,kit_texture.get_image().has_mipmaps())
 	check("real_bake_loaded",weapon.material.normal_enabled and weapon.material.normal_texture.resource_path.ends_with("NormalGL.png"))
 	check("orm_channels",weapon.material.ao_texture_channel==0 and weapon.material.roughness_texture_channel==1 and weapon.material.metallic_texture_channel==2)
 	check("opaque_with_backface_culling", weapon.material.transparency == BaseMaterial3D.TRANSPARENCY_DISABLED and weapon.material.cull_mode == BaseMaterial3D.CULL_BACK)

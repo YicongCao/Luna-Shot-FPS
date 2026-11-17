@@ -1,0 +1,62 @@
+[
+  {
+    "view": "11-range-hip",
+    "crop": [
+      600,
+      370,
+      1024,
+      630
+    ],
+    "weapon_laplacian_before": 25.65,
+    "weapon_laplacian_after": 25.61,
+    "reduction_pct": 0.2
+  },
+  {
+    "view": "08-reverse",
+    "crop": [
+      290,
+      240,
+      800,
+      490
+    ],
+    "weapon_laplacian_before": 34.98,
+    "weapon_laplacian_after": 31.45,
+    "reduction_pct": 10.1
+  },
+  {
+    "view": "01-hero-pbr",
+    "crop": [
+      289,
+      253,
+      913,
+      560
+    ],
+    "weapon_laplacian_before": 32.83,
+    "weapon_laplacian_after": 30.7,
+    "reduction_pct": 6.5
+  },
+  {
+    "view": "07-side",
+    "crop": [
+      300,
+      251,
+      981,
+      534
+    ],
+    "weapon_laplacian_before": 29.41,
+    "weapon_laplacian_after": 27.19,
+    "reduction_pct": 7.5
+  },
+  {
+    "view": "09-surface-close",
+    "crop": [
+      25,
+      100,
+      1280,
+      599
+    ],
+    "weapon_laplacian_before": 18.04,
+    "weapon_laplacian_after": 17.98,
+    "reduction_pct": 0.3
+  }
+]

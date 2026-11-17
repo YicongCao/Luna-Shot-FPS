@@ -1,0 +1,51 @@
+[
+  {
+    "view": "11-range-hip",
+    "changed_pixels_pct": 12.28,
+    "mean_abs_diff_changed": 31.56,
+    "laplacian_before": 37.89,
+    "laplacian_after": 33.11
+  },
+  {
+    "view": "12-range-ads",
+    "changed_pixels_pct": 0.15,
+    "mean_abs_diff_changed": 11.55,
+    "laplacian_before": 66.44,
+    "laplacian_after": 63.56
+  },
+  {
+    "view": "01-hero-pbr",
+    "changed_pixels_pct": 1.59,
+    "mean_abs_diff_changed": 11.91,
+    "laplacian_before": 74.03,
+    "laplacian_after": 65.7
+  },
+  {
+    "view": "07-side",
+    "changed_pixels_pct": 1.34,
+    "mean_abs_diff_changed": 11.41,
+    "laplacian_before": 70.03,
+    "laplacian_after": 61.96
+  },
+  {
+    "view": "08-reverse",
+    "changed_pixels_pct": 1.23,
+    "mean_abs_diff_changed": 12.14,
+    "laplacian_before": 92.75,
+    "laplacian_after": 78.21
+  },
+  {
+    "view": "09-surface-close",
+    "changed_pixels_pct": 0.37,
+    "mean_abs_diff_changed": 9.33,
+    "laplacian_before": 56.37,
+    "laplacian_after": 53.93
+  },
+  {
+    "view": "20-stock-right",
+    "changed_pixels_pct": 0.43,
+    "mean_abs_diff_changed": 11.65,
+    "laplacian_before": 62.99,
+    "laplacian_after": 61.82
+  }
+]
