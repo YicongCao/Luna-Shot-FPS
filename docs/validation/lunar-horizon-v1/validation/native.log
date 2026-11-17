@@ -1,0 +1,39 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+CONTROL CHECK no_visible_world_Label3D true
+CONTROL CHECK inspection_light_has_fixed_physical_source true
+CONTROL CHECK selected_horizon_profile true
+CONTROL CHECK selected_directional_shadow_profile true
+BENCHMARK CHECK real_hitscan_00 true
+BENCHMARK CHECK real_hitscan_01 true
+BENCHMARK CHECK real_hitscan_02 true
+BENCHMARK CHECK real_hitscan_03 true
+BENCHMARK CHECK real_hitscan_04 true
+BENCHMARK CHECK real_hitscan_05 true
+BENCHMARK CHECK real_hitscan_06 true
+BENCHMARK CHECK real_hitscan_07 true
+BENCHMARK CHECK real_hitscan_08 true
+BENCHMARK CHECK three_enemies_killed_by_nine_real_shots true
+BENCHMARK CHECK terminal_activated_by_three_second_input true
+BENCHMARK CHECK capsule_walk_completed_extraction true
+BENCHMARK RESULT docs/validation/lunar-horizon-v1/validation/native/result.json
+CONTROL CHECK closeup_lens_sampled_during_live_reel true
+CONTROL CHECK native_focus_tracks_closeup_subject true
+CONTROL CHECK non_closeup_cameras_keep_original_attributes true
+CONTROL CHECK full_reel_finishes true
+CONTROL CHECK all_reel_checks_pass true
+CONTROL CHECK pixel_resolution_not_logical_canvas true
+CONTROL CHECK R_reloads_benchmark true
+CONTROL CHECK replay_unpauses_scene true
+BENCHMARK RESULT docs/validation/lunar-horizon-v1/validation/menu-test/result.json
+CONTROL CHECK ENTER_loads_normal_playable_mission true
+CONTROL CHECK play_has_normal_input_and_health true
+CONTROL CHECK play_restores_original_camera_attributes true
+CONTROL CHECK normal_play_uses_same_inspection_fixture true
+CONTROL CHECK normal_play_keeps_rendering_profiles true
+CONTROL CHECK play_accepts_actual_movement_input true
+CONTROL CHECK normal_mission_ESC_pauses true
+CONTROL CHECK normal_mission_ESC_resumes true
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

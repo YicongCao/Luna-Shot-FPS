@@ -27,6 +27,8 @@ var sun_visibility: float = 1.0
 var sun_target: float = 1.0
 var shadow_clock: float = 0.0
 var atmosphere_style: String = "clear"
+var horizon_style: String = "baseline"
+var shadow_style: String = "project"
 
 func _ready() -> void:
 	steel = industrial_material(Color(.23,.26,.28), .82, .41)
@@ -333,6 +335,10 @@ func build_reactor() -> void:
 	add_child(charge_particles)
 
 func build_horizon() -> void:
+	if OS.get_environment("QUARANTINE_HORIZON") == "refined":
+		horizon_style = "refined"
+		preload("res://scripts/quarantine/lunar_horizon.gd").build(self)
+		return
 	var mountain: StandardMaterial3D = material(Color(.34,.38,.42),0,.96)
 	mountain.albedo_texture = load("res://assets/environment/ground_v1/regolith/BaseColor.png")
 	mountain.normal_enabled = true
@@ -423,6 +429,8 @@ func setup_environment() -> void:
 	if RenderingServer.get_current_rendering_method() == "forward_plus":
 		get_viewport().use_taa = true
 		RenderingServer.directional_shadow_atlas_set_size(4096,true)
+		shadow_style = "baseline" if OS.get_environment("QUARANTINE_SHADOWS") == "baseline" else "high"
+		RenderingServer.directional_soft_shadow_filter_set_quality(RenderingServer.SHADOW_QUALITY_SOFT_LOW if shadow_style == "baseline" else RenderingServer.SHADOW_QUALITY_SOFT_HIGH)
 		environment.ssao_enabled = true
 		environment.ssao_radius = 1.2
 		environment.ssao_intensity = 1.5

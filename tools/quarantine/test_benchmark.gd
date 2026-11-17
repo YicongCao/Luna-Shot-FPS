@@ -33,6 +33,10 @@ func run() -> void:
 		var spot: SpotLight3D=luminaire.get_node("InspectionSpot")
 		mounted_light=luminaire.has_node("Housing") and luminaire.has_node("Diffuser") and spot.shadow_enabled and spot.light_volumetric_fog_energy==0 and luminaire.position.is_equal_approx(Vector3(-3,10.5,0))
 	check("inspection_light_has_fixed_physical_source",mounted_light)
+	var expected_horizon: String="refined" if OS.get_environment("QUARANTINE_HORIZON")=="refined" else "baseline"
+	var expected_shadows: String="baseline" if OS.get_environment("QUARANTINE_SHADOWS")=="baseline" else "high"
+	check("selected_horizon_profile",world.horizon_style==expected_horizon)
+	check("selected_directional_shadow_profile",world.shadow_style==expected_shadows)
 	var start: int = Time.get_ticks_msec()
 	var saw_closeup: bool=false
 	var focus_valid: bool=true
@@ -70,6 +74,7 @@ func run() -> void:
 	check("play_has_normal_input_and_health",not current_scene.qa_mode and not current_scene.player.qa_mode and current_scene.health==100)
 	check("play_restores_original_camera_attributes",current_scene.player.camera.attributes==original_attributes)
 	check("normal_play_uses_same_inspection_fixture",current_scene.has_node("World/InspectionLuminaire")==expect_service)
+	check("normal_play_keeps_rendering_profiles",current_scene.get_node("World").horizon_style==expected_horizon and current_scene.get_node("World").shadow_style==expected_shadows)
 	var before: Vector3 = current_scene.player.position
 	Input.action_press("forward")
 	for i in 20: await physics_frame

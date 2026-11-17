@@ -2,6 +2,14 @@
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
+## ML28：方向光软阴影修正与月面候选
+
+清剿与 Benchmark 默认提高方向光软阴影采样，减轻地面细密条纹，保留暖黄雾与柔和半影；`QUARANTINE_SHADOWS=baseline ./launch-benchmark.command` 回看旧采样档。高档有 GPU 成本，实测与边界见报告。
+
+新月面网格更平滑，但同时损失山脊起伏，**未替换默认远景**；仅用 `QUARANTINE_HORIZON=refined` 预览候选，不把几何测试通过当作美术升级。
+
+[原生分项对照](docs/validation/lunar-horizon-v1/review.html) · [验证、性能与取舍](docs/validation/lunar-horizon-v1/REPORT.md)
+
 ## ML27：特写景深与实体检修灯
 
 实时 Benchmark 的害虫特写改为近距离三分之四构图，使用原生景深分离背景；实际战斗、ADS、终端和撤离保持清晰。屋架下新增一盏实体检修灯，在正常清剿与演示中共同改善局部暗部，不改变暖黄雾层和全场曝光。

@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+HORIZON NATIVE CHECK forward_plus true
+HORIZON NATIVE CHECK amber_preserved true
+HORIZON NATIVE CHECK backface_culling true
+HORIZON NATIVE CHECK no_terrain_collision true
+HORIZON NATIVE CHECK saved_overview true
+HORIZON NATIVE CHECK saved_west true
+HORIZON NATIVE CHECK saved_east true
+HORIZON NATIVE CHECK saved_inspection-left true
+HORIZON NATIVE CHECK saved_inspection-right true
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

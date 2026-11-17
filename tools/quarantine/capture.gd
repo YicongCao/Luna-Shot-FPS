@@ -36,6 +36,8 @@ func run() -> void:
 	await frames(90)
 	report.renderer = RenderingServer.get_current_rendering_method()
 	report.atmosphere = mission.get_node("World").atmosphere_style
+	report.horizon = mission.get_node("World").horizon_style
+	report.directional_shadows = mission.get_node("World").shadow_style
 	report.bug_style = mission.bugs[0].visual_style
 	report.inspection_light = mission.has_node("World/InspectionLuminaire")
 	var player: Node = mission.player
