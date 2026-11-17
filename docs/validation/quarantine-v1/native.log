@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+CAPTURE 01-arrival
+CAPTURE 02-fighter-hud
+CHECK actual_shot_0 true
+CAPTURE 03-discharge
+CHECK actual_shot_1 true
+CHECK actual_shot_2 true
+CHECK hitscan_kills_bug true
+CAPTURE 04-gantry
+CAPTURE 05-terminal
+CHECK terminal_active true
+CAPTURE 06-power-restored
+CAPTURE 06b-reactor-online
+CAPTURE 07-extraction
+CHECK walk_into_extraction_completes true
+CAPTURE 08-complete
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

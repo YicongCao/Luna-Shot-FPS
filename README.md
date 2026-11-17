@@ -2,6 +2,17 @@
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
+## ML22：SELENE / QUARANTINE 独立关卡小样
+
+双击 **`launch-quarantine.command`**：清理8只程序化 T-Bug → 在北侧终端按住 **E 3秒** → 返回南侧绿色圆形撤离区。包含生命/失败、暂停、重新部署，右键开镜显示战斗机仪表灵感HUD。原训练场入口和 ML21 枪械资产保持。
+
+新关卡单独采用 **Forward+ / 1920×810**，增加工业上部结构、场外程序月面、低角度暖光/冷色环境、SSAO/SSIL/SSR、体积光、真实遮挡的 imagegen 光学素材、能源恢复场面与合成声音。**无新增Tripo调用；无新imagegen调用，复用既有光学纹理。** 这是朝电影化画质推进的可玩样板，不宣称已达到3A照片级画质，用户美术验收待定。
+
+- [原生截图与视频](docs/validation/quarantine-v1/review.html) · [验证、性能与限制](docs/validation/quarantine-v1/REPORT.md)
+- 新关卡操作：WASD / Shift / Space / 左键开火 / 右键ADS / R换弹 / E交互 / ESC暂停 / F5重开；F7 Bloom、F8光晕、F10可选电影黑边。
+- `QUARANTINE_COMPAT=1 ./launch-quarantine.command` 为兼容渲染回退（不包含Forward+专属效果，不与高质量证据等同）。
+- 验证入口：`tools/validate_quarantine.sh --performance`；原生宽荧幕演示录制：`tools/quarantine/record.sh`。
+
 ## 运行
 
 macOS 双击 `launch.command`，或用 Godot 4.7.2 打开 `project.godot` 后按 F5。当前验证平台为 macOS / Apple M5 / Compatibility 渲染器。
