@@ -96,10 +96,14 @@ git lfs pull
 
 [ML06/ML07/ML09 原生对照](docs/validation/ls01-refine-v2/review.html) · [验证报告](docs/validation/ls01-refine-v2/REPORT.md) · [逐件清单](docs/art/ls01-refine-v2/PARTS.md) · [ML09 日志](docs/logs/ML09-枪械结构还原与能量环侧向照明.md)。
 
-Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`或`ml09`。不传参数时固定采用 ML06，APPROVED 不再自动切换默认；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。
+Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`、`ml09`或`ml20`。不传参数时采用 ML20，APPROVED 不会自动切换默认；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。ML09 新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。
+
+## ML20 混元烘焙枪械（当前默认）
+
+使用混元高模烘焙到带 UV 的约 2 万面低模，按两张概念图完成材质分区和 PBR 上色，并替换 ML06 成为默认枪械。[验证](docs/validation/ml20-hunyuan-bake/README.md) · [ML20 日志](docs/logs/ML20-混元高低模烘焙与默认枪械替换.md) · 复现 `tools/ml20_weapon/run.sh`。
 
 ## 脉冲电弧开火效果（方案 C）
 
-默认 ML06 枪械使用纯代码方案 C：短促折线主弧、少量分叉、线圈局部放电及合成电气音效。双击 `launch.command` 游玩；[原生演示](docs/validation/pulsed-arc-v1/review.html) · [ML13 记录](docs/logs/ML13-纯代码脉冲电弧开火效果.md)。专项验证入口 `tools/validate_pulsed_arc.sh`。
+默认枪械使用纯代码方案 C：短促折线主弧、少量分叉、线圈局部放电及合成电气音效。双击 `launch.command` 游玩；[原生演示](docs/validation/pulsed-arc-v1/review.html) · [ML13 记录](docs/logs/ML13-纯代码脉冲电弧开火效果.md)。专项验证入口 `tools/validate_pulsed_arc.sh`。
 
 历史 A 保留：[ML12](docs/logs/ML12-纯代码聚束磁脉冲开火效果.md)。显式 `./launch.command -- --fire-effect=a` 可对照，不改变默认 C。

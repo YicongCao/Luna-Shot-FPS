@@ -17,7 +17,7 @@ func check(label: String, passed: bool, detail: String = "") -> void:
 	print("PULSE_QA ", "PASS " if passed else "FAIL ", label, " ", detail)
 func capture(label: String, at: float) -> void:
 	if not native: return
-	p.weapon.field_kit.set_ammo(p.ammo, p.CAPACITY)
+	if is_instance_valid(p.weapon.field_kit): p.weapon.field_kit.set_ammo(p.ammo, p.CAPACITY)
 	fx.age = at
 	fx.refresh()
 	await frames(3)
@@ -47,7 +47,7 @@ func run() -> void:
 	fx.manual_clock = true
 	check("selected_effect",fx.name == expected_effect)
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	check("default_ml06", p.weapon.revision == "ml06")
+	check("default_ml20", p.weapon.revision == "ml20")
 	var original_nodes := get_node_count()
 	var baseline: float = p.weapon.material.emission_energy_multiplier
 	for ads in [false,true]:

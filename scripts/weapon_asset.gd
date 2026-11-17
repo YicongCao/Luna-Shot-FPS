@@ -9,29 +9,32 @@ var spill_enabled := true
 var surface_mode := 0
 var field_kit: Node3D
 var ls01 := false
-# User-selected default after native ML06/ML07/ML09 comparison (2026-11-16).
+# ML20 replaces ML06 as default at the user's request (2026-11-17); ML06 stays selectable.
 # APPROVED protects validated assets; it does not override the selected default.
-var revision := "ml06"
+var revision := "ml20"
 var asset_root := "res://assets/weapons/lc01/"
 var atlas_materials: Dictionary = {}
 func _ready() -> void:
 	if OS.get_environment("LS01_BASELINE") != "1" and OS.get_environment("LS01_CANDIDATE") == "1":
 		revision = "ml07"
+	if OS.get_environment("LS01_BASELINE") == "1":
+		revision = "ml06"
 	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--weapon-revision="):
 			revision = argument.trim_prefix("--weapon-revision=")
-			assert(revision in ["ml06", "ml07", "ml09"], "Unknown weapon revision")
-	ls01 = revision != "ml06"
+			assert(revision in ["ml06", "ml07", "ml09", "ml20"], "Unknown weapon revision")
+	ls01 = revision in ["ml07", "ml09"]
 	if revision == "ml07": asset_root = "res://assets/weapons/lc01/ls01_v1/"
 	elif revision == "ml09": asset_root = "res://assets/weapons/lc01/ls01_v2/"
+	elif revision == "ml20": asset_root = "res://assets/weapons/lc01/ml20/"
 	if ls01:
 		setup_ls01()
 		return
 	material = StandardMaterial3D.new()
-	material.resource_name = "LC01 ceramic / metal / rubber / coating"
-	material.albedo_texture = load("res://assets/weapons/lc01/BaseColor.png")
+	material.resource_name = "ML20 Hunyuan high-to-low bake" if revision == "ml20" else "LC01 ceramic / metal / rubber / coating"
+	material.albedo_texture = load(asset_root + "BaseColor.png")
 	material.metallic = 1.0
-	material.metallic_texture = load("res://assets/weapons/lc01/ORM.png")
+	material.metallic_texture = load(asset_root + "ORM.png")
 	material.metallic_texture_channel = BaseMaterial3D.TEXTURE_CHANNEL_BLUE
 	material.roughness = 1.0
 	material.roughness_texture = material.metallic_texture
@@ -40,25 +43,31 @@ func _ready() -> void:
 	material.ao_texture = material.metallic_texture
 	material.ao_texture_channel = BaseMaterial3D.TEXTURE_CHANNEL_RED
 	material.normal_enabled = true
-	material.normal_texture = load("res://assets/weapons/lc01/NormalGL.png")
+	material.normal_texture = load(asset_root + "NormalGL.png")
 	material.emission_enabled = true
 	material.emission = Color.WHITE
 	material.emission_operator = BaseMaterial3D.EMISSION_OP_MULTIPLY
-	material.emission_texture = load("res://assets/weapons/lc01/Emission.png")
+	material.emission_texture = load(asset_root + "Emission.png")
 	material.emission_energy_multiplier = 4.0
 	material.transparency = BaseMaterial3D.TRANSPARENCY_DISABLED
 	material.cull_mode = BaseMaterial3D.CULL_BACK
 	material.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 	var cell := $P07_Cell
+	if revision == "ml20":
+		$Geometry.free()
+		var geometry: Node3D = load(asset_root + "weapon.glb").instantiate()
+		geometry.name = "Geometry"
+		add_child(geometry)
 	for mesh: MeshInstance3D in $Geometry.find_children("*", "MeshInstance3D", true, false):
 		meshes.append(mesh)
 		mesh.material_override = material
-		if mesh.name.begins_with("T04_") or mesh.name.begins_with("T11_"):
+		if mesh.name.begins_with("T04_") or mesh.name.begins_with("T11_") or mesh.name == "ML20_Cell":
 			mesh.reparent(cell, true)
-	field_kit = Node3D.new()
-	field_kit.name = "IndustrialFieldKit"
-	field_kit.set_script(load("res://scripts/weapon_field_kit.gd"))
-	add_child(field_kit)
+	if revision == "ml06":
+		field_kit = Node3D.new()
+		field_kit.name = "IndustrialFieldKit"
+		field_kit.set_script(load("res://scripts/weapon_field_kit.gd"))
+		add_child(field_kit)
 	var dot_material := ShaderMaterial.new()
 	dot_material.shader = load("res://assets/weapons/lc01/red_dot.gdshader")
 	$RedDot.material_override = dot_material
@@ -84,9 +93,9 @@ func set_surface_mode(mode: int) -> void:
 		return
 	if is_instance_valid(field_kit): field_kit.set_surface_mode(mode)
 	material.normal_enabled = mode != 1 and mode != 3
-	material.albedo_texture = null if mode == 3 else load("res://assets/weapons/lc01/BaseColor.png")
+	material.albedo_texture = null if mode == 3 else load(asset_root + "BaseColor.png")
 	material.albedo_color = Color(.5,.5,.5) if mode == 3 else Color.WHITE
-	material.metallic_texture = null if mode == 2 or mode == 3 else load("res://assets/weapons/lc01/ORM.png")
+	material.metallic_texture = null if mode == 2 or mode == 3 else load(asset_root + "ORM.png")
 	material.roughness_texture = material.metallic_texture
 	material.metallic = 0 if mode == 2 or mode == 3 else 1
 	material.roughness = .55 if mode == 2 or mode == 3 else 1

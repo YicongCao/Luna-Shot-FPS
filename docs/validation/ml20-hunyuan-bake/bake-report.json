@@ -1,0 +1,20 @@
+{
+  "renderer": "Blender Cycles Metal GPU, selected-to-active",
+  "cage_extrusion_m": 0.003000000026077032,
+  "max_ray_distance_m": 0.008999999612569809,
+  "ao_distance_m": 0.029999999329447746,
+  "normal_space": "tangent, OpenGL +Y",
+  "low_normals": "platform custom normals cleared; >30 degree UV-seam hard edges; face-area weighted normals",
+  "hard_edges": 4415,
+  "triangles": {
+    "ML20_Body": 18794,
+    "ML20_Cell": 2107
+  },
+  "cell_faces": 2107,
+  "seconds": {
+    "NormalGL": 6.9,
+    "AO": 3.2,
+    "Position": 0.7,
+    "SurfaceNormal": 0.7
+  }
+}

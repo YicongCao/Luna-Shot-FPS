@@ -42,7 +42,7 @@ func _ready() -> void:
 	footer.position = Vector2(30,810)
 	footer.text = "DRAG  Orbit     WHEEL  Zoom     1–9  Surface modes     L  Lighting     B  Energy on/off     F3  Training range\nLS01  /  LAYERED METAL  /  ML07  /  actual Godot render"
 	if gun.revision=="ml09":footer.text=footer.text.replace("ML07", "ML09")
-	if not gun.ls01:footer.text=footer.text.replace("1–9", "1–4").replace("LS01  /  LAYERED METAL  /  ML07", "LC01  /  ML06 BASELINE")
+	if not gun.ls01:footer.text=footer.text.replace("1–9", "1–4").replace("LS01  /  LAYERED METAL  /  ML07", "LC01  /  " + revision_title())
 	footer.add_theme_font_size_override("font_size",16)
 	layer.add_child(footer)
 	set_rig(0)
@@ -50,7 +50,9 @@ func _ready() -> void:
 	update_label()
 	if qa: run_qa.call_deferred()
 func update_label() -> void:
-	label.text = ("LS01  /  MATERIAL STUDIO\n%s   ·   %s" if gun.ls01 else "LC01  /  ML06 BASELINE\n%s   ·   %s") % [MODES[mode],LIGHTS[rig]] + ("   ·   ENERGY OFF" if not gun.energy_enabled else "")
+	label.text = ("LS01  /  MATERIAL STUDIO\n%s   ·   %s" if gun.ls01 else "LC01  /  " + revision_title() + "\n%s   ·   %s") % [MODES[mode],LIGHTS[rig]] + ("   ·   ENERGY OFF" if not gun.energy_enabled else "")
+func revision_title() -> String:
+	return "ML20 HUNYUAN BAKE" if gun.revision == "ml20" else "ML06 BASELINE"
 func update_camera() -> void:
 	camera.position = center + Vector3(cos(pitch)*sin(yaw),sin(pitch),cos(pitch)*cos(yaw))*distance
 	camera.look_at(center)

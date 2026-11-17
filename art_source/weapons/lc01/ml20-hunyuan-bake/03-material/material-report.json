@@ -1,0 +1,33 @@
+{
+  "source": "Cycles bakes in 02-bake; zones voted from ML06 nearest surface samples in game frame",
+  "zones": {
+    "ceramic_white": 0.2664423170947355,
+    "charcoal_frame": 0.47852046488538513,
+    "safety_orange": 0.12401520543590586,
+    "black_polymer": 0.04870761631248759,
+    "coil_gunmetal": 0.07467522179704757,
+    "energy_teal": 0.007639174474438357
+  },
+  "uv_coverage": 0.6997592449188232,
+  "uv_islands": 1796,
+  "transfer_distance_mm": {
+    "p50": 3.8368825912475586,
+    "p95": 21.27777099609375,
+    "over_6mm_fraction": 0.3201434547085642
+  },
+  "wear_fraction": {
+    "chip": 0.00453491870366061,
+    "scuff": 0.08024046312729492
+  },
+  "concept_overrides_texels": {
+    "receiver_hazard_decal_removed": 18730,
+    "trigger_orange": 27757
+  },
+  "sizes": {
+    "NormalGL": 4096,
+    "BaseColor": 2048,
+    "ORM": 2048,
+    "Emission": 2048
+  },
+  "orm": "R ambient occlusion (0.30 floor), G roughness, B metallic"
+}
