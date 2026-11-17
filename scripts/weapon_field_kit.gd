@@ -7,6 +7,11 @@ var shown_ammo := -1
 var active_material: StandardMaterial3D
 var off_material: StandardMaterial3D
 var materials: Array[StandardMaterial3D] = []
+# ML21 reuses only the ammo panel; set before add_child.
+var screen_only := false
+var panel_position := Vector3(0, .106, .019)
+var panel_rotation_x := -PI/4
+var panel_scale := 1.0
 func metal(color: Color, rough: float, metallic: float=1.0) -> StandardMaterial3D:
 	var m:=StandardMaterial3D.new();m.albedo_color=color;m.roughness=rough;m.metallic=metallic
 	materials.append(m);return m
@@ -20,7 +25,7 @@ func _ready() -> void:
 	var dark:=metal(Color(.018,.026,.035),.43,.65)
 	var alloy:=metal(Color(.27,.32,.36),.32)
 	var copper:=metal(Color(.7,.36,.12),.38,.72)
-	var panel:=Node3D.new();panel.name="AmmoPanel";panel.position=Vector3(0,.106,.019);panel.rotation.x=-PI/4;add_child(panel)
+	var panel:=Node3D.new();panel.name="AmmoPanel";panel.position=panel_position;panel.rotation.x=panel_rotation_x;panel.scale=Vector3.ONE*panel_scale;add_child(panel)
 	box(panel,"ArmoredBack",Vector3.ZERO,Vector3(.099,.035,.004),dark)
 	box(panel,"InsetGlass",Vector3(0,0,.0021),Vector3(.087,.024,.0004),metal(Color(.003,.013,.018),.2,.2))
 	for side in [-1,1]:
@@ -33,7 +38,7 @@ func _ready() -> void:
 		var x: float=-.039+i*.0027+floori(i/4.0)*.001
 		cells.append(box(panel,"AmmoCell%02d"%i,Vector3(x,0,.0026),Vector3(.0019,.012,.00025),off_material))
 	readout=Label3D.new();readout.name="AmmoDigits";readout.font_size=48;readout.pixel_size=.00010;readout.position=Vector3(.030,0,.003);readout.outline_size=0;readout.modulate=Color(.02,.85,1);readout.no_depth_test=false;panel.add_child(readout)
-	for side in [-1,1]:
+	for side in ([] if screen_only else [-1,1]):
 		var cassette:=Node3D.new();cassette.name="ConductorCassetteLeft" if side<0 else "ConductorCassetteRight";cassette.position=Vector3(side*.056,.057,-.135);cassette.rotation.y=side*PI/2;add_child(cassette)
 		box(cassette,"RecessedChannel",Vector3.ZERO,Vector3(.17,.034,.004),dark)
 		for i in 6:box(cassette,"BronzeRibbon%02d"%i,Vector3(0,(i-2.5)*.004,.0026),Vector3(.135,.0025,.001),copper)
@@ -43,7 +48,7 @@ func _ready() -> void:
 		var fins:=Node3D.new();fins.name="Heatsink";fins.position=Vector3(side*.047,.106,-.36);add_child(fins)
 		box(fins,"HeatSpreader",Vector3.ZERO,Vector3(.015,.006,.092),dark)
 		for i in 8:box(fins,"Fin%02d"%i,Vector3(0,.009,(i-3.5)*.011),Vector3(.017,.02,.0025),alloy)
-	if ResourceLoader.exists("res://assets/weapons/lc01/field_kit/kit.glb") and OS.get_environment("LUNA_KIT_SOURCE") != "1":
+	if ResourceLoader.exists("res://assets/weapons/lc01/field_kit/kit.glb") and OS.get_environment("LUNA_KIT_SOURCE") != "1" and not screen_only:
 		for child in get_children():
 			if child != panel: child.queue_free()
 		for child in panel.get_children():

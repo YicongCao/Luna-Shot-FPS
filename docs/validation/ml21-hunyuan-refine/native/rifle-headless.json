@@ -1,0 +1,132 @@
+{
+	"checks": [
+		{
+			"check": "mesh_parts",
+			"detail": "2",
+			"passed": true
+		},
+		{
+			"check": "triangle_budget",
+			"detail": "20800",
+			"passed": true
+		},
+		{
+			"check": "cell_parts",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_BaseColor",
+			"detail": "(2048.0, 2048.0)",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_BaseColor",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_NormalGL",
+			"detail": "(4096.0, 4096.0)",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_NormalGL",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_ORM",
+			"detail": "(2048.0, 2048.0)",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_ORM",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "texture_Emission",
+			"detail": "(2048.0, 2048.0)",
+			"passed": true
+		},
+		{
+			"check": "mipmaps_Emission",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ml21_ammo_screen",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "real_bake_loaded",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "orm_channels",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "opaque_with_backface_culling",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "weapon_bloom_enabled",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "local_coil_spill",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "energy_switch_off",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "energy_switch_on",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "red_dot_center",
+			"detail": "error_px=0.0001",
+			"passed": true
+		},
+		{
+			"check": "hud_cross_hidden",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "ads_target_hit",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "cell_animates",
+			"detail": "",
+			"passed": true
+		},
+		{
+			"check": "cell_returns",
+			"detail": "",
+			"passed": true
+		}
+	],
+	"display": "headless",
+	"engine": "4.7.2-stable (official)",
+	"failures": 0,
+	"frame_ms_p95": 16.6666666666667,
+	"note": "Short automated native render/interaction test, not long-duration performance acceptance.",
+	"platform": "macOS",
+	"seconds": 0.085,
+	"weapon_revision": "ml21"
+}

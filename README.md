@@ -96,11 +96,15 @@ git lfs pull
 
 [ML06/ML07/ML09 原生对照](docs/validation/ls01-refine-v2/review.html) · [验证报告](docs/validation/ls01-refine-v2/REPORT.md) · [逐件清单](docs/art/ls01-refine-v2/PARTS.md) · [ML09 日志](docs/logs/ML09-枪械结构还原与能量环侧向照明.md)。
 
-Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`、`ml09`或`ml20`。不传参数时采用 ML20，APPROVED 不会自动切换默认；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。ML09 新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。
+Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`、`ml09`、`ml20`或`ml21`。不传参数时采用 ML21，APPROVED 不会自动切换默认；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。ML09 新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。
 
-## ML20 混元烘焙枪械（当前默认）
+## ML21 混元枪械迭代（当前默认）
 
-使用混元高模烘焙到带 UV 的约 2 万面低模，按两张概念图完成材质分区和 PBR 上色，并替换 ML06 成为默认枪械。[验证](docs/validation/ml20-hunyuan-bake/README.md) · [ML20 日志](docs/logs/ML20-混元高低模烘焙与默认枪械替换.md) · 复现 `tools/ml20_weapon/run.sh`。
+在 ML20 基础上：机身改为深藏青黑，弹夹壳全部涂橙，两侧铭牌与斜线蚀刻打平后重新烘焙，高模按角度平滑并锐化法线让线条更利，后机匣斜面加装 20 格动态弹量屏。[验证](docs/validation/ml21-hunyuan-refine/README.md) · [ML21 日志](docs/logs/ML21-混元枪械配色弹夹蚀刻与弹量屏迭代.md) · 复现 `tools/hunyuan_weapon/run.sh`。
+
+## ML20 混元烘焙枪械
+
+使用混元高模烘焙到带 UV 的约 2 万面低模，按两张概念图完成材质分区和 PBR 上色，并替换 ML06 成为默认枪械。[验证](docs/validation/ml20-hunyuan-bake/README.md) · [ML20 日志](docs/logs/ML20-混元高低模烘焙与默认枪械替换.md) · 复现：提交 `2dfee1c` 的 `tools/ml20_weapon/run.sh`（工具已改名为 `tools/hunyuan_weapon`，当前输出 ML21）。
 
 ## 脉冲电弧开火效果（方案 C）
 

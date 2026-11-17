@@ -47,7 +47,7 @@ func run() -> void:
 	fx.manual_clock = true
 	check("selected_effect",fx.name == expected_effect)
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-	check("default_ml20", p.weapon.revision == "ml20")
+	check("default_ml21", p.weapon.revision == "ml21")
 	var original_nodes := get_node_count()
 	var baseline: float = p.weapon.material.emission_energy_multiplier
 	for ads in [false,true]:

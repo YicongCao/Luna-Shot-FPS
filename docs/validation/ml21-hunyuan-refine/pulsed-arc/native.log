@@ -1,0 +1,153 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:36)
+         [1] run (res://tools/validate_magnetic_pulse.gd:42)
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:38)
+         [1] run (res://tools/validate_magnetic_pulse.gd:42)
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:47)
+         [1] run (res://tools/validate_magnetic_pulse.gd:42)
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:51)
+         [1] run (res://tools/validate_magnetic_pulse.gd:42)
+PULSE_QA PASS selected_effect 
+PULSE_QA PASS default_ml21 
+PULSE_QA PASS hip_muzzle_projection 0.0000000842937
+PULSE_QA PASS hip_shot 
+PULSE_QA PASS hip_hit 
+PULSE_QA PASS hip_endpoint 
+PULSE_QA PASS hip_pulse 
+PULSE_QA PASS hip_muzzle_visible 
+PULSE_QA PASS hip_cooldown_no_fx 
+PULSE_QA PASS two_seeded_variants 
+PULSE_QA PASS arc_exact_endpoints 
+PULSE_QA PASS bounded_visible_jagged_shape 0.17726218700409
+PULSE_QA PASS arc_exact_endpoints 
+PULSE_QA PASS bounded_visible_jagged_shape 0.17163333296776
+PULSE_QA PASS two_short_branches 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS two_short_branches 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS local_coil_discharge 
+PULSE_QA PASS first_arc_phase 
+PULSE_QA PASS local_arc_expired 
+PULSE_QA PASS stable_first_phase 
+PULSE_QA PASS single_restrike 
+PULSE_QA PASS stable_second_phase 
+PULSE_QA PASS no_sustained_beam 
+PULSE_QA PASS capture_hip-008ms 
+PULSE_QA PASS capture_hip-032ms 
+PULSE_QA PASS local_coil_visible_pixels 105
+PULSE_QA PASS capture_hip-045ms 
+PULSE_QA PASS hip_flash_expired 
+PULSE_QA PASS capture_hip-080ms 
+PULSE_QA PASS hip_all_expired 
+PULSE_QA PASS hip_emission_restored 
+PULSE_QA PASS ads_muzzle_projection 0.0
+PULSE_QA PASS ads_shot 
+PULSE_QA PASS ads_hit 
+PULSE_QA PASS ads_endpoint 
+PULSE_QA PASS ads_pulse 
+PULSE_QA PASS ads_muzzle_visible 
+PULSE_QA PASS ads_cooldown_no_fx 
+PULSE_QA PASS two_seeded_variants 
+PULSE_QA PASS arc_exact_endpoints 
+PULSE_QA PASS bounded_visible_jagged_shape 0.09251126646996
+PULSE_QA PASS arc_exact_endpoints 
+PULSE_QA PASS bounded_visible_jagged_shape 0.08187231421471
+PULSE_QA PASS two_short_branches 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS two_short_branches 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS branch_bounded 
+PULSE_QA PASS local_coil_discharge 
+PULSE_QA PASS first_arc_phase 
+PULSE_QA PASS local_arc_expired 
+PULSE_QA PASS stable_first_phase 
+PULSE_QA PASS single_restrike 
+PULSE_QA PASS stable_second_phase 
+PULSE_QA PASS no_sustained_beam 
+PULSE_QA PASS capture_ads-008ms 
+PULSE_QA PASS capture_ads-032ms 
+PULSE_QA PASS capture_ads-045ms 
+PULSE_QA PASS ads_flash_expired 
+PULSE_QA PASS capture_ads-080ms 
+PULSE_QA PASS ads_all_expired 
+PULSE_QA PASS ads_emission_restored 
+PULSE_QA PASS capture_hip-no-bloom-008ms 
+PULSE_QA PASS near_wall_shot 
+PULSE_QA PASS near_wall_blocks_target 
+PULSE_QA PASS near_wall_hides_viewmodel_flash 
+PULSE_QA PASS near_wall_trace_no_penetration 
+PULSE_QA PASS capture_near-wall 
+PULSE_QA PASS wall_ahead_shortens_flash 
+PULSE_QA PASS impact_world_anchored 
+PULSE_QA PASS sky_miss_shot 
+PULSE_QA PASS sky_miss_no_impact 
+PULSE_QA PASS energy_off_respected 
+PULSE_QA PASS spill_off_respected 
+PULSE_QA PASS burst_shot_00 
+PULSE_QA PASS burst_decay_00 
+PULSE_QA PASS burst_shot_01 
+PULSE_QA PASS burst_decay_01 
+PULSE_QA PASS burst_shot_02 
+PULSE_QA PASS burst_decay_02 
+PULSE_QA PASS burst_shot_03 
+PULSE_QA PASS burst_decay_03 
+PULSE_QA PASS burst_shot_04 
+PULSE_QA PASS burst_decay_04 
+PULSE_QA PASS burst_shot_05 
+PULSE_QA PASS burst_decay_05 
+PULSE_QA PASS burst_shot_06 
+PULSE_QA PASS burst_decay_06 
+PULSE_QA PASS burst_shot_07 
+PULSE_QA PASS burst_decay_07 
+PULSE_QA PASS burst_shot_08 
+PULSE_QA PASS burst_decay_08 
+PULSE_QA PASS burst_shot_09 
+PULSE_QA PASS burst_decay_09 
+PULSE_QA PASS burst_shot_10 
+PULSE_QA PASS burst_decay_10 
+PULSE_QA PASS burst_shot_11 
+PULSE_QA PASS burst_decay_11 
+PULSE_QA PASS burst_shot_12 
+PULSE_QA PASS burst_decay_12 
+PULSE_QA PASS burst_shot_13 
+PULSE_QA PASS burst_decay_13 
+PULSE_QA PASS burst_shot_14 
+PULSE_QA PASS burst_decay_14 
+PULSE_QA PASS burst_shot_15 
+PULSE_QA PASS burst_decay_15 
+PULSE_QA PASS burst_shot_16 
+PULSE_QA PASS burst_decay_16 
+PULSE_QA PASS burst_shot_17 
+PULSE_QA PASS burst_decay_17 
+PULSE_QA PASS burst_shot_18 
+PULSE_QA PASS burst_decay_18 
+PULSE_QA PASS burst_shot_19 
+PULSE_QA PASS burst_decay_19 
+PULSE_QA PASS burst_exact_ammo 
+PULSE_QA PASS empty_no_fx 
+PULSE_QA PASS pooled_nodes [2560, 2560]
+PULSE_QA PASS reload_no_fx 
+PULSE_QA PASS reload_returns 
+PULSE_QA PASS overview_clears 
+PULSE_QA PASS reset_clears 
+PULSE_QA PASS capture_ultrawide-ads 
+PULSE_QA PASS ultrawide_muzzle_alignment 
+PULSE_QA PASS branch_stops_at_first_obstacle 
+PULSE_QA_COMPLETE failures=0

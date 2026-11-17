@@ -33,15 +33,15 @@ func run() -> void:
 	player.position = world.vector(world.layout.targets[0].shoot_from)
 	await settle()
 	var weapon: Node3D=player.weapon
-	var expected_parts := {"ml06":17,"ml07":15,"ml09":13,"ml20":2}
+	var expected_parts := {"ml06":17,"ml07":15,"ml09":13,"ml20":2,"ml21":2}
 	check("mesh_parts",weapon.meshes.size()==expected_parts[weapon.revision],str(weapon.meshes.size()))
 	var tris := 0
 	for mesh: MeshInstance3D in weapon.meshes:
 		for surface in mesh.mesh.get_surface_count():
 			tris += mesh.mesh.surface_get_array_index_len(surface)/3
-	var expected_tris := {"ml06":19658,"ml20":20901}
+	var expected_tris := {"ml06":19658,"ml20":20901,"ml21":20800}
 	check("triangle_budget",(tris>19658 and tris<=60000) if weapon.ls01 else tris==expected_tris[weapon.revision],str(tris))
-	check("cell_parts",weapon.get_node("P07_Cell").get_child_count()==(1 if weapon.revision=="ml20" else 2))
+	check("cell_parts",weapon.get_node("P07_Cell").get_child_count()==(1 if weapon.revision in ["ml20","ml21"] else 2))
 	if weapon.ls01:
 		for atlas in ["body","kit","retained"]:
 			for path in ["BaseColor","NormalGL","ORM"]:
@@ -54,13 +54,15 @@ func run() -> void:
 	else:
 		for path in ["BaseColor","NormalGL","ORM","Emission"]:
 			var tex: Texture2D=load(weapon.asset_root+path+".png")
-			var size := 4096 if weapon.revision=="ml20" and path=="NormalGL" else 2048
+			var size := 4096 if weapon.revision in ["ml20","ml21"] and path=="NormalGL" else 2048
 			check("texture_"+path,tex.get_size()==Vector2(size,size),str(tex.get_size()))
 			check("mipmaps_"+path,tex.get_image().has_mipmaps())
 		if weapon.revision=="ml06":
 			for path in ["BaseColor","NormalGL","ORM","Emission"]:
 				var kit_texture: Texture2D=load("res://assets/weapons/lc01/field_kit/"+path+".png")
 				check("mipmaps_field_kit_"+path,kit_texture.get_image().has_mipmaps())
+	if weapon.revision=="ml21":
+		check("ml21_ammo_screen",is_instance_valid(weapon.field_kit) and weapon.field_kit.cells.size()==20 and weapon.field_kit.get_child_count()==1)
 	check("real_bake_loaded",weapon.material.normal_enabled and weapon.material.normal_texture.resource_path.ends_with("NormalGL.png"))
 	check("orm_channels",weapon.material.ao_texture_channel==0 and weapon.material.roughness_texture_channel==1 and weapon.material.metallic_texture_channel==2)
 	check("opaque_with_backface_culling", weapon.material.transparency == BaseMaterial3D.TRANSPARENCY_DISABLED and weapon.material.cull_mode == BaseMaterial3D.CULL_BACK)

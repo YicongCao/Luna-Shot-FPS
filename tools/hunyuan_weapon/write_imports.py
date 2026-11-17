@@ -1,5 +1,5 @@
-"""Godot import contracts for ML20 runtime resources: VRAM compression, mipmaps, normal-map mode."""
-from paths import RUNTIME
+"""Godot import contracts for Hunyuan rifle runtime resources: VRAM compression, mipmaps, normal-map mode."""
+from paths import REVISION, RUNTIME
 
 TEXTURE = """[remap]
 
@@ -8,7 +8,7 @@ type="CompressedTexture2D"
 
 [deps]
 
-source_file="res://assets/weapons/lc01/ml20/{name}.png"
+source_file="res://assets/weapons/lc01/{revision}/{name}.png"
 
 [params]
 
@@ -45,7 +45,7 @@ type="PackedScene"
 
 [deps]
 
-source_file="res://assets/weapons/lc01/ml20/weapon.glb"
+source_file="res://assets/weapons/lc01/{revision}/weapon.glb"
 
 [params]
 
@@ -64,7 +64,7 @@ gltf/embedded_image_handling=1
 for name in ("BaseColor", "ORM", "Emission", "NormalGL"):
     path = RUNTIME / f"{name}.png.import"
     if not path.exists():
-        path.write_text(TEXTURE.format(name=name, high_quality="true", normal=1 if name == "NormalGL" else 0))
+        path.write_text(TEXTURE.format(revision=REVISION, name=name, high_quality="true", normal=1 if name == "NormalGL" else 0))
 if not (RUNTIME / "weapon.glb.import").exists():
-    (RUNTIME / "weapon.glb.import").write_text(SCENE)
-print("ML20_IMPORT_CONTRACTS", sorted(p.name for p in RUNTIME.glob("*.import")))
+    (RUNTIME / "weapon.glb.import").write_text(SCENE.format(revision=REVISION))
+print(f"{REVISION.upper()}_IMPORT_CONTRACTS", sorted(p.name for p in RUNTIME.glob("*.import")))

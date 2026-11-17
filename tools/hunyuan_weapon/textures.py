@@ -1,7 +1,8 @@
-"""ML20 material IDs and PBR maps from actual high-to-low bakes.
+"""Hunyuan rifle material IDs and PBR maps from actual high-to-low bakes.
 
 Material zones are transferred from the user-selected ML06 surface by nearest-surface voting in the
 shared game frame, quantized to the concept palette, then cleaned in UV space. No paid generation.
+ML21: deep navy-black frame, fully orange magazine shell, unsharp-masked normal detail.
 """
 import json
 import struct
@@ -14,7 +15,7 @@ from scipy.sparse import coo_matrix
 from scipy.sparse.csgraph import connected_components
 from scipy.spatial import cKDTree
 
-from paths import ATLAS_SIZE, ML06_GLB, ML06_TEXTURES, NORMAL_SIZE, RUNTIME, WORK
+from paths import ATLAS_SIZE, MAGAZINE_SHELL, ML06_GLB, ML06_TEXTURES, NORMAL_SIZE, REVISION, RUNTIME, WORK
 
 BAKE = WORK / "02-bake"
 MATERIAL = WORK / "03-material"
@@ -24,12 +25,14 @@ rng = np.random.default_rng(20261117)
 # name, sRGB base, roughness, metallic. Palette follows the two supplied concept views.
 ZONES = [
     ("ceramic_white", (214, 209, 199), 0.40, 0.0),
-    ("charcoal_frame", (74, 79, 86), 0.50, 0.0),
+    ("navy_black_frame", (28, 35, 46), 0.48, 0.0),
     ("safety_orange", (226, 94, 36), 0.43, 0.0),
-    ("black_polymer", (33, 34, 37), 0.72, 0.0),
+    ("black_polymer", (19, 20, 22), 0.78, 0.0),
     ("coil_gunmetal", (132, 137, 143), 0.36, 0.85),
     ("energy_teal", (40, 206, 214), 0.25, 0.0),
 ]
+# Tangent-space normal unsharp mask (4K pixels): restores crisp panel lines softened by projection.
+NORMAL_SHARPEN = {"sigma_px": 1.6, "amount": 0.55}
 ML06_COLORS = np.array([(207, 203, 193), (96, 110, 124), (230, 94, 35), (31, 36, 43), (35, 195, 220), (149, 149, 149)], float)
 ML06_TO_ZONE = np.array([0, 1, 2, 3, 5, -1])
 
@@ -68,6 +71,7 @@ def glb(path):
                     accessor(attributes["POSITION"]).astype(np.float64),
                     accessor(attributes["TEXCOORD_0"]).astype(np.float64),
                     accessor(primitive["indices"]).reshape(-1, 3).astype(np.int64),
+                    mesh.get("name", ""),
                 )
             )
     return parts
@@ -89,9 +93,9 @@ def ml06_samples(count=3_000_000):
     emission = np.asarray(Image.open(ML06_TEXTURES / "Emission.png").convert("RGB"), float)
     points, uvs = [], []
     meshes = glb(ML06_GLB)
-    areas = [np.linalg.norm(np.cross(p[f[:, 1]] - p[f[:, 0]], p[f[:, 2]] - p[f[:, 0]]), axis=1) / 2 for p, _, f in meshes]
+    areas = [np.linalg.norm(np.cross(p[f[:, 1]] - p[f[:, 0]], p[f[:, 2]] - p[f[:, 0]]), axis=1) / 2 for p, _, f, _ in meshes]
     total = sum(a.sum() for a in areas)
-    for (position, uv, faces), area in zip(meshes, areas):
+    for (position, uv, faces, _), area in zip(meshes, areas):
         per = rng.poisson(area / total * count)
         tri = np.repeat(np.arange(len(faces)), per)
         a, b = rng.random((2, len(tri)))
@@ -111,10 +115,12 @@ def ml06_samples(count=3_000_000):
 
 
 def rasterize(size):
-    """Triangle coverage and UV island ids from the exported runtime GLB."""
+    """Triangle coverage, UV island ids and magazine-cell mask from the exported runtime GLB."""
     island_map = np.full((size, size), -1, np.int32)
+    cell_map = np.zeros((size, size), bool)
     next_id = 0
-    for _, uv, faces in glb(RUNTIME / "weapon.glb"):
+    for _, uv, faces, name in glb(RUNTIME / "weapon.glb"):
+        is_cell = name.endswith("_Cell")
         rows = np.r_[faces[:, 0], faces[:, 1], faces[:, 2]]
         cols = np.r_[faces[:, 1], faces[:, 2], faces[:, 0]]
         _, labels = connected_components(coo_matrix((np.ones(len(rows)), (rows, cols)), shape=(len(uv), len(uv))), directed=False)
@@ -135,8 +141,9 @@ def rasterize(size):
             l2 = ((cy - ay) * (gx - cx) + (ax - cx) * (gy - cy)) / det
             inside = (l1 >= -0.02) & (l2 >= -0.02) & (1 - l1 - l2 >= -0.02)
             island_map[gy[inside], gx[inside]] = next_id + label
+            cell_map[gy[inside], gx[inside]] = is_cell
         next_id += labels.max() + 1
-    return island_map
+    return island_map, cell_map
 
 
 def value_noise(position, cell, seed):
@@ -177,7 +184,7 @@ surface_normal = read_exr("SurfaceNormal")
 ao_raw = read_exr("AO")[..., 0]
 normal = read_exr("NormalGL")
 
-islands = rasterize(ATLAS_SIZE)
+islands, cell_texels = rasterize(ATLAS_SIZE)
 covered = islands >= 0
 
 sample_points, sample_zone = ml06_samples()
@@ -212,10 +219,25 @@ grip = box(-0.07, 0.14, -0.2, 0.005, 0.035)
 zone[(zone == 3) & ~grip] = 1
 trigger = box(0.05, 0.13, -0.035, 0.05, 0.012) & np.isin(zone, [1, 3])
 zone[trigger] = 2
+# ML21 magazine: the whole cell shell between the end blocks and above the bottom rail is orange;
+# end blocks and rail read as frame. Removes the mixed charcoal patches on the lower chamfers.
+in_shell = (
+    covered & cell_texels
+    & (position[..., 1] > MAGAZINE_SHELL["y"][0]) & (position[..., 1] < MAGAZINE_SHELL["y"][1])
+    & (position[..., 2] > MAGAZINE_SHELL["z_min"])
+)
+# Whole UV islands vote so the colour break follows modelled panel edges, not the box plane.
+cell_islands = np.where(covered & cell_texels, islands, 0)
+island_shell = np.nan_to_num(ndimage.mean(in_shell, cell_islands, np.arange(islands.max() + 1))) > 0.5
+shell = covered & cell_texels & island_shell[cell_islands]
+magazine_orange = shell & (zone != 2) & (zone != 5)
+zone[shell & (zone != 5)] = 2
+magazine_frame = covered & cell_texels & ~shell & (zone != 5)
+zone[magazine_frame] = 1
 
 one_hot = np.stack([(zone == z) & covered for z in range(len(ZONES))]).astype(np.float32)
 filtered = np.stack([ndimage.uniform_filter(layer, 5) for layer in one_hot])
-zone = np.where(covered, filtered.argmax(0), zone)
+zone = np.where(covered & ~cell_texels, filtered.argmax(0), zone)
 
 # Signed curvature from the actual baked tangent-space normal (OpenGL: +V is image up).
 nx = ndimage.gaussian_filter(normal[..., 0] * 2 - 1, 1.4)
@@ -269,9 +291,20 @@ if edge_fill.any():
 save("BaseColor", linear_to_srgb(base))
 save("ORM", np.dstack([ao, rough, metal]))
 save("Emission", linear_to_srgb(emission))
-length = np.linalg.norm(normal * 2 - 1, axis=-1, keepdims=True)
-normal_unit = np.where(length > 1e-4, (normal * 2 - 1) / np.maximum(length, 1e-4), [0, 0, 1])
+covered_4k = ndimage.binary_erosion(np.kron(covered, np.ones((factor, factor), bool)), iterations=3)
+tangent = normal[..., :2] * 2 - 1
+blurred = np.stack([ndimage.gaussian_filter(tangent[..., c], NORMAL_SHARPEN["sigma_px"]) for c in range(2)], -1)
+sharpened = np.where(covered_4k[..., None], tangent + NORMAL_SHARPEN["amount"] * (tangent - blurred), tangent)
+sharpened = np.clip(sharpened, -0.97, 0.97)
+z_component = np.sqrt(np.clip(1 - (sharpened ** 2).sum(-1, keepdims=True), 0.0025, 1))
+sharp_normal = np.concatenate([sharpened, np.where(covered_4k[..., None], z_component, normal[..., 2:] * 2 - 1)], -1)
+length = np.linalg.norm(sharp_normal, axis=-1, keepdims=True)
+normal_unit = np.where(length > 1e-4, sharp_normal / np.maximum(length, 1e-4), [0, 0, 1])
 save("NormalGL", normal_unit * 0.5 + 0.5 + rng.uniform(-0.5, 0.5, normal.shape) / 255)
+edge_energy = {
+    "before": float(np.hypot(*np.gradient(tangent[..., 0]))[covered_4k].mean()),
+    "after": float(np.hypot(*np.gradient(normal_unit[..., 0]))[covered_4k].mean()),
+}
 
 zone_colors = np.array([z[1] for z in ZONES], float) / 255
 save("MaterialID", np.where(covered[..., None], zone_colors[zone], 0), MATERIAL)
@@ -282,6 +315,7 @@ for name, pixels in (("Position", position), ("SurfaceNormal", surface_normal), 
     compact_exr(name, pixels)
 
 report = {
+    "revision": REVISION,
     "source": "Cycles bakes in 02-bake; zones voted from ML06 nearest surface samples in game frame",
     "zones": {name: float(((zone == i) & covered).sum() / covered.sum()) for i, (name, *_rest) in enumerate(ZONES)},
     "uv_coverage": float(covered.mean()),
@@ -295,7 +329,10 @@ report = {
     "concept_overrides_texels": {
         "receiver_hazard_decal_removed": int(hazard_decal.sum()),
         "trigger_orange": int(trigger.sum()),
+        "magazine_shell_repainted_orange": int(magazine_orange.sum()),
+        "magazine_end_blocks_frame": int(magazine_frame.sum()),
     },
+    "normal_sharpen": {**NORMAL_SHARPEN, "mean_gradient_x": edge_energy},
     "sizes": {"NormalGL": NORMAL_SIZE, "BaseColor": ATLAS_SIZE, "ORM": ATLAS_SIZE, "Emission": ATLAS_SIZE},
     "orm": "R ambient occlusion (0.30 floor), G roughness, B metallic",
 }

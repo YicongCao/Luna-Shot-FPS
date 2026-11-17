@@ -52,7 +52,7 @@ func _ready() -> void:
 func update_label() -> void:
 	label.text = ("LS01  /  MATERIAL STUDIO\n%s   ·   %s" if gun.ls01 else "LC01  /  " + revision_title() + "\n%s   ·   %s") % [MODES[mode],LIGHTS[rig]] + ("   ·   ENERGY OFF" if not gun.energy_enabled else "")
 func revision_title() -> String:
-	return "ML20 HUNYUAN BAKE" if gun.revision == "ml20" else "ML06 BASELINE"
+	return {"ml20":"ML20 HUNYUAN BAKE","ml21":"ML21 HUNYUAN REFINE"}.get(gun.revision,"ML06 BASELINE")
 func update_camera() -> void:
 	camera.position = center + Vector3(cos(pitch)*sin(yaw),sin(pitch),cos(pitch)*cos(yaw))*distance
 	camera.look_at(center)

@@ -1,0 +1,69 @@
+{
+  "renderer": "Blender Cycles Metal GPU, selected-to-active",
+  "cage_extrusion_m": 0.003000000026077032,
+  "max_ray_distance_m": 0.008999999612569809,
+  "ao_distance_m": 0.029999999329447746,
+  "normal_space": "tangent, OpenGL +Y",
+  "low_normals": "platform custom normals cleared; >30 degree UV-seam hard edges; face-area weighted normals",
+  "high_smoothing_angle_deg": 35,
+  "hard_edges": 4165,
+  "flattened_vertices": {
+    "high": [
+      19522,
+      5471
+    ],
+    "low": [
+      330,
+      8
+    ]
+  },
+  "folded_faces_removed": {
+    "high": 4675,
+    "low": 44
+  },
+  "stacked_low_faces_removed": 41,
+  "flat_shading_loops": 1613,
+  "etch_panel_planes_m": {
+    "receiver_text_plate:-1": [
+      0.05064526142142983,
+      0.0036840071592903812,
+      0.003157631068697641
+    ],
+    "receiver_text_plate:1": [
+      0.050534391386359,
+      0.003387799482861071,
+      0.0034644356886179006
+    ],
+    "receiver_slash_etch:-1": [
+      0.05072956518510507,
+      0.021273304044470885,
+      -0.013154810365355145
+    ],
+    "receiver_slash_etch:1": [
+      0.05071793837364681,
+      0.02010400002652358,
+      -0.014112448308520896
+    ],
+    "shroud_small_etch:-1": [
+      0.05058405328383682,
+      -0.00011320827681990207,
+      0.03866646980217566
+    ],
+    "shroud_small_etch:1": [
+      0.0493099313957776,
+      0.00256983683330518,
+      0.017804966745978743
+    ]
+  },
+  "triangles": {
+    "ML21_Body": 18693,
+    "ML21_Cell": 2107
+  },
+  "cell_faces": 2107,
+  "seconds": {
+    "NormalGL": 5.8,
+    "AO": 3.3,
+    "Position": 0.8,
+    "SurfaceNormal": 0.8
+  }
+}

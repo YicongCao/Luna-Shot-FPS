@@ -9,9 +9,10 @@ var spill_enabled := true
 var surface_mode := 0
 var field_kit: Node3D
 var ls01 := false
-# ML20 replaces ML06 as default at the user's request (2026-11-17); ML06 stays selectable.
+# ML20 replaced ML06 as default at the user's request (2026-11-17); ML21 iterates ML20 (navy frame,
+# flattened etches, orange magazine, ammo screen). ML06/ML20 stay selectable.
 # APPROVED protects validated assets; it does not override the selected default.
-var revision := "ml20"
+var revision := "ml21"
 var asset_root := "res://assets/weapons/lc01/"
 var atlas_materials: Dictionary = {}
 func _ready() -> void:
@@ -22,16 +23,16 @@ func _ready() -> void:
 	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--weapon-revision="):
 			revision = argument.trim_prefix("--weapon-revision=")
-			assert(revision in ["ml06", "ml07", "ml09", "ml20"], "Unknown weapon revision")
+			assert(revision in ["ml06", "ml07", "ml09", "ml20", "ml21"], "Unknown weapon revision")
 	ls01 = revision in ["ml07", "ml09"]
 	if revision == "ml07": asset_root = "res://assets/weapons/lc01/ls01_v1/"
 	elif revision == "ml09": asset_root = "res://assets/weapons/lc01/ls01_v2/"
-	elif revision == "ml20": asset_root = "res://assets/weapons/lc01/ml20/"
+	elif revision in ["ml20", "ml21"]: asset_root = "res://assets/weapons/lc01/%s/" % revision
 	if ls01:
 		setup_ls01()
 		return
 	material = StandardMaterial3D.new()
-	material.resource_name = "ML20 Hunyuan high-to-low bake" if revision == "ml20" else "LC01 ceramic / metal / rubber / coating"
+	material.resource_name = revision.to_upper() + " Hunyuan high-to-low bake" if hunyuan() else "LC01 ceramic / metal / rubber / coating"
 	material.albedo_texture = load(asset_root + "BaseColor.png")
 	material.metallic = 1.0
 	material.metallic_texture = load(asset_root + "ORM.png")
@@ -53,7 +54,7 @@ func _ready() -> void:
 	material.cull_mode = BaseMaterial3D.CULL_BACK
 	material.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 	var cell := $P07_Cell
-	if revision == "ml20":
+	if hunyuan():
 		$Geometry.free()
 		var geometry: Node3D = load(asset_root + "weapon.glb").instantiate()
 		geometry.name = "Geometry"
@@ -61,12 +62,18 @@ func _ready() -> void:
 	for mesh: MeshInstance3D in $Geometry.find_children("*", "MeshInstance3D", true, false):
 		meshes.append(mesh)
 		mesh.material_override = material
-		if mesh.name.begins_with("T04_") or mesh.name.begins_with("T11_") or mesh.name == "ML20_Cell":
+		if mesh.name.begins_with("T04_") or mesh.name.begins_with("T11_") or (hunyuan() and mesh.name.ends_with("_Cell")):
 			mesh.reparent(cell, true)
-	if revision == "ml06":
+	if revision in ["ml06", "ml21"]:
 		field_kit = Node3D.new()
-		field_kit.name = "IndustrialFieldKit"
+		field_kit.name = "IndustrialFieldKit" if revision == "ml06" else "AmmoScreen"
 		field_kit.set_script(load("res://scripts/weapon_field_kit.gd"))
+		if revision == "ml21":
+			# Screen only, flush on the ML21 rear receiver slope (measured normal 37.6 deg back, 4 mm proud).
+			field_kit.screen_only = true
+			field_kit.panel_position = Vector3(0, .1078, .0176)
+			field_kit.panel_rotation_x = deg_to_rad(-37.6)
+			field_kit.panel_scale = .7
 		add_child(field_kit)
 	var dot_material := ShaderMaterial.new()
 	dot_material.shader = load("res://assets/weapons/lc01/red_dot.gdshader")
@@ -83,6 +90,9 @@ func _ready() -> void:
 		light.shadow_enabled = false
 		add_child(light)
 		energy_lights.append(light)
+func hunyuan() -> bool:
+	return revision in ["ml20", "ml21"]
+
 func set_surface_mode(mode: int) -> void:
 	# 0 final / 1 normal off / 2 constant response / 3 clay.
 	surface_mode = mode

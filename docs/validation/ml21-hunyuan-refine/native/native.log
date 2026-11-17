@@ -1,0 +1,54 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 91.7 - Compatibility - Using Device: Apple - Apple M4 Pro
+
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:36)
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:38)
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:47)
+WARNING: Image format BPTC_RGBA not supported by hardware, converting to RGBA8.
+     at: _get_gl_image_and_format (drivers/gles3/storage/texture_storage.cpp:987)
+     GDScript backtrace (most recent call first):
+         [0] _ready (res://scripts/weapon_asset.gd:51)
+RIFLE_QA PASS mesh_parts 2
+RIFLE_QA PASS triangle_budget 20800
+RIFLE_QA PASS cell_parts 
+RIFLE_QA PASS texture_BaseColor (2048.0, 2048.0)
+RIFLE_QA PASS mipmaps_BaseColor 
+RIFLE_QA PASS texture_NormalGL (4096.0, 4096.0)
+RIFLE_QA PASS mipmaps_NormalGL 
+RIFLE_QA PASS texture_ORM (2048.0, 2048.0)
+RIFLE_QA PASS mipmaps_ORM 
+RIFLE_QA PASS texture_Emission (2048.0, 2048.0)
+RIFLE_QA PASS mipmaps_Emission 
+RIFLE_QA PASS ml21_ammo_screen 
+RIFLE_QA PASS real_bake_loaded 
+RIFLE_QA PASS orm_channels 
+RIFLE_QA PASS opaque_with_backface_culling 
+RIFLE_QA PASS weapon_bloom_enabled 
+RIFLE_QA PASS local_coil_spill 
+RIFLE_QA PASS energy_switch_off 
+RIFLE_QA PASS energy_switch_on 
+RIFLE_QA PASS capture_11-range-hip 
+RIFLE_QA PASS red_dot_center error_px=0.0001
+RIFLE_QA PASS hud_cross_hidden 
+RIFLE_QA PASS capture_12-range-ads 
+RIFLE_QA PASS red_dot_rendered 
+RIFLE_QA PASS capture_13-range-dot-unlit 
+RIFLE_QA PASS red_dot_independent_of_lights 
+RIFLE_QA PASS ads_target_hit 
+RIFLE_QA PASS capture_16-range-dot-clear-background 
+RIFLE_QA PASS cell_animates 
+RIFLE_QA PASS capture_14-range-reload 
+RIFLE_QA PASS cell_returns 
+RIFLE_QA PASS ultrawide_dot_center 0.00006103515625
+RIFLE_QA PASS capture_15-range-ultrawide-ads 
+RIFLE_QA PASS ultrawide_dot_rendered 
+RIFLE_QA_COMPLETE failures=0
