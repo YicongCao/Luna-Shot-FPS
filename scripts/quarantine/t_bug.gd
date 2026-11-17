@@ -25,6 +25,7 @@ var _avoid_side: float = 1.0
 var _avoid_left: float = 0.0
 var plates: Array[MeshInstance3D] = []
 var electrical_damage: Node3D
+var visual_style: String = "baseline"
 
 func _ready() -> void:
 	collision_layer = 4
@@ -88,6 +89,10 @@ func _build_model() -> void:
 	model = Node3D.new()
 	model.name = "MechanicalShell"
 	add_child(model)
+	if OS.get_environment("QUARANTINE_BUG_STYLE") != "baseline":
+		visual_style = "refined"
+		preload("res://scripts/quarantine/bug_visual.gd").build(self)
+		return
 	var shell: StandardMaterial3D = _material(Color(0.17, 0.21, 0.24), 0.8)
 	var pale: StandardMaterial3D = _material(Color(0.52, 0.56, 0.55), 0.7)
 	var dark: StandardMaterial3D = _material(Color(0.035, 0.045, 0.05), 0.6)

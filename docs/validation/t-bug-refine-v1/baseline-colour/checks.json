@@ -1,0 +1,39 @@
+{
+	"boundary": "Staged native in-world turntable. Gray-only local fill is identical in both versions; colour images use unchanged game lighting. No unassisted playthrough claim.",
+	"checks": [
+		{
+			"id": "six_independent_damage_panels",
+			"ok": true
+		},
+		{
+			"id": "six_animated_leg_roots",
+			"ok": true
+		},
+		{
+			"id": "unchanged_three_hit_health",
+			"ok": true
+		},
+		{
+			"id": "unchanged_capsule",
+			"ok": true
+		},
+		{
+			"id": "armor_exterior_normals",
+			"ok": true
+		},
+		{
+			"id": "armor_clockwise_front_faces",
+			"ok": true
+		},
+		{
+			"id": "armor_has_real_beveled_sides",
+			"ok": true
+		},
+		{
+			"id": "diagnostic_lens_43_degrees",
+			"ok": true
+		}
+	],
+	"gray": false,
+	"style": "baseline"
+}

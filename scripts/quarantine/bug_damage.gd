@@ -59,10 +59,16 @@ func hit(point: Vector3, _normal: Vector3) -> void:
 			nearest = plate
 	if nearest != null:
 		if not burned.has(nearest.get_instance_id()):
-			var damaged: StandardMaterial3D = nearest.material_override.duplicate()
-			damaged.albedo_color = damaged.albedo_color.darkened(.58)
-			damaged.roughness = .88
-			damaged.metallic = .28
+			var damaged: Material = nearest.material_override.duplicate()
+			if damaged is ShaderMaterial:
+				var paint: Color = damaged.get_shader_parameter("coating")
+				damaged.set_shader_parameter("coating",paint.darkened(.58))
+				damaged.set_shader_parameter("base_roughness",.88)
+				damaged.set_shader_parameter("base_metal",.28)
+			else:
+				damaged.albedo_color = damaged.albedo_color.darkened(.58)
+				damaged.roughness = .88
+				damaged.metallic = .28
 			nearest.material_override = damaged
 			burned[nearest.get_instance_id()] = true
 		if bug.dead:

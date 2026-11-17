@@ -13,6 +13,8 @@ func aim(point: Vector3) -> void:
 	var d: Vector3 = point-p.camera.global_position
 	p.rotation.y=atan2(-d.x,-d.z)
 	p.head.rotation.x=atan2(d.y,Vector2(d.x,d.z).length())
+func coating(material: Material) -> Color:
+	return material.get_shader_parameter("coating") if material is ShaderMaterial else material.albedo_color
 func capture(name: String) -> void:
 	await frames(5)
 	await RenderingServer.frame_post_draw
@@ -43,11 +45,17 @@ func run() -> void:
 	await frames(25)
 	var effect: Node3D=bug.electrical_damage
 	var node_count: int=effect.get_child_count()
+	var untouched_coatings: Array[Color]=[]
+	for plate in mission.bugs[1].plates: untouched_coatings.append(coating(plate.material_override))
 	player.cooldown=0
 	check("first_real_shot",player.fire())
 	check("damage_still_one_hp_per_hit",bug.health==2 and not bug.dead)
 	check("effect_uses_authoritative_hit_point",effect.hits==1 and effect.last_world_hit.is_equal_approx(player.last_hit.position))
 	check("local_plate_damage_persists",effect.burned.size()==1)
+	var isolated: bool=true
+	for i in untouched_coatings.size():
+		isolated=isolated and coating(mission.bugs[1].plates[i].material_override).is_equal_approx(untouched_coatings[i])
+	check("damage_material_is_local_to_hit_bug",isolated)
 	check("arc_budget_bounded",effect.segment_count>0 and effect.segment_count<=24)
 	effect.set_process(false)
 	effect.age=.09

@@ -2,6 +2,12 @@
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
+## ML26：T-Bug 机械结构精修
+
+清剿关卡与实时 Benchmark 的害虫默认使用分层厚装甲、机械关节、执行器/脚垫及嵌入式发光件；保留六足、三发击杀和当前暖黄氛围。`QUARANTINE_BUG_STYLE=baseline ./launch-benchmark.command` 对照旧版。
+
+[新旧灰模与材质对照](docs/validation/t-bug-refine-v1/review.html) · [验证与取舍](docs/validation/t-bug-refine-v1/REPORT.md)。无新增模型/图像生成调用；用户视觉验收待定。
+
 ## 当前氛围：ML25 暖黄体积雾
 
 清剿关卡与 Benchmark 默认恢复暖黄、灰金色的末世氛围，同时保留最新结构、图标 HUD、全息终端与电击反馈。`QUARANTINE_ATMOSPHERE=clear ./launch-benchmark.command` 可查看 ML24 清淡光照对照，不回退玩法或资产。

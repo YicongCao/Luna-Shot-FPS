@@ -36,6 +36,7 @@ func run() -> void:
 	await frames(90)
 	report.renderer = RenderingServer.get_current_rendering_method()
 	report.atmosphere = mission.get_node("World").atmosphere_style
+	report.bug_style = mission.bugs[0].visual_style
 	var player: Node = mission.player
 	player.qa_mode = true
 	for bug in mission.bugs: bug.set_physics_process(false)
