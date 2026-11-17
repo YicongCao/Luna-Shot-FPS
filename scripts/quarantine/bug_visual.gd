@@ -166,20 +166,46 @@ static func build(bug: Node3D) -> void:
 			bug.legs.append(leg)
 			var knee: Vector3=Vector3(side*.37,.02,(segment-1)*.09)
 			var foot: Vector3=Vector3(side*.51,-.38,(segment-1)*.16)
-			var arm: MeshInstance3D=box(leg,knee*.5,Vector3(.085,knee.length(),.085),pale,"UpperLink")
+			# Author in the original leg frame, then recenter each rigid assembly.
+			var upper := leg
+			var lower := leg
+			var pad := leg
+			if bug.gait != null:
+				upper = pivot(leg,"Upper")
+				lower = pivot(leg,"Lower")
+				pad = pivot(leg,"Pad")
+			var arm: MeshInstance3D=box(upper,knee*.5,Vector3(.085,knee.length(),.085),pale,"UpperLink")
 			arm.quaternion=Quaternion(Vector3.UP,knee.normalized())
-			var shin: MeshInstance3D=box(leg,knee.lerp(foot,.46),Vector3(.06,knee.distance_to(foot)*.86,.07),shell,"LowerLink")
+			var shin: MeshInstance3D=box(lower,knee.lerp(foot,.46),Vector3(.06,knee.distance_to(foot)*.86,.07),shell,"LowerLink")
 			shin.quaternion=Quaternion(Vector3.UP,(foot-knee).normalized())
 			for p in [Vector3.ZERO,knee]:
-				rod(leg,p-Vector3(0,0,.059),p+Vector3(0,0,.059),.068,dark,"RotaryJoint")
-				rod(leg,p+Vector3(0,0,.058),p+Vector3(0,0,.066),.049,metal,"JointCap")
-				rod(leg,p+Vector3(0,0,.066),p+Vector3(0,0,.072),.018,dark,"JointPin")
+				var joint_parent := upper if p==Vector3.ZERO else lower
+				rod(joint_parent,p-Vector3(0,0,.059),p+Vector3(0,0,.059),.068,dark,"RotaryJoint")
+				rod(joint_parent,p+Vector3(0,0,.058),p+Vector3(0,0,.066),.049,metal,"JointCap")
+				rod(joint_parent,p+Vector3(0,0,.066),p+Vector3(0,0,.072),.018,dark,"JointPin")
 			var piston_a: Vector3=knee*.18+Vector3(0,-.05,.06)
 			var piston_b: Vector3=knee.lerp(foot,.35)+Vector3(0,0,.06)
 			rod(leg,piston_a,piston_a.lerp(piston_b,.60),.027,dark,"ActuatorSleeve")
 			rod(leg,piston_a.lerp(piston_b,.45),piston_b,.012,metal,"ActuatorRod")
-			rod(leg,knee.lerp(foot,.80),foot+Vector3(0,.025,0),.023,metal,"AnkleShaft")
-			box(leg,foot,Vector3(.13,.05,.15),dark,"TractionPad")
-			box(leg,foot+Vector3(0,.025,0),Vector3(.09,.025,.10),metal,"FootMount")
-			merge_hardware(leg)
+			rod(lower,knee.lerp(foot,.80),foot+Vector3(0,.025,0),.023,metal,"AnkleShaft")
+			box(pad,foot,Vector3(.13,.05,.15),dark,"TractionPad")
+			box(pad,foot+Vector3(0,.025,0),Vector3(.09,.025,.10),metal,"FootMount")
+			if bug.gait == null:
+				merge_hardware(leg)
+			else:
+				center_assembly(upper,Vector3.ZERO)
+				center_assembly(lower,knee)
+				center_assembly(pad,foot-Vector3.UP*.025)
+				bug.gait.bind_leg(leg,knee,foot)
 	merge_hardware(root,bug.plates)
+
+static func pivot(parent: Node3D, label: String) -> Node3D:
+	var node := Node3D.new()
+	node.name = label
+	parent.add_child(node)
+	return node
+
+static func center_assembly(node: Node3D, origin: Vector3) -> void:
+	for child in node.get_children(): child.position -= origin
+	node.position = origin
+	merge_hardware(node)

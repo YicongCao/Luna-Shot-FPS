@@ -1,0 +1,9 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+ERROR: GAIT CHECK FAILED: default/flat/falls_with_no_support
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tools/quarantine/test_bug_gait.gd:24)
+       [1] fixture (res://tools/quarantine/test_bug_gait.gd:199)
+       [2] measure (res://tools/quarantine/test_bug_gait.gd:144)
+GAIT fixtures: 76 checks, pass=false

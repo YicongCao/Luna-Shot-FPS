@@ -1,0 +1,760 @@
+{
+	"boundary": "Scripted 60 Hz capsule motion; no autonomous AI, performance or art acceptance claim. Near-floor = |vertical sole-to-box gap| <= 35 mm, not a force/contact measurement. Observed steps require departure from and return to this band with >= 40 mm horizontal travel. Declared-plant drift is maximum 3D displacement from first measured stance sample; baseline has no stance flags. Fall measured after six grace ticks. Native sequence uses the flat fixture's .85 m/s walk on the facility floor, with an unobstructed diagnostic camera and unchanged scene lighting.",
+	"checks": [
+		{
+			"id": "baseline/flat/expected_rig",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/capsule",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/turned_180_in_place",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/idle_still",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/walk_grounded",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/chase_grounded",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/turn_grounded",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/idle_grounded",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/walk_displacement",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/falls_with_no_support",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/walk_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/chase_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/turn_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/idle_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/fall_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "baseline/flat/dies_on_third_hit",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/expected_rig",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/capsule",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/idle_still",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/walk_grounded",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/idle_grounded",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/walk_displacement",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/actually_ascended",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/walk_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/idle_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "baseline/ramp/dies_on_third_hit",
+			"ok": true
+		},
+		{
+			"id": "default/flat/expected_rig",
+			"ok": true
+		},
+		{
+			"id": "default/flat/capsule",
+			"ok": true
+		},
+		{
+			"id": "default/flat/turned_180_in_place",
+			"ok": true
+		},
+		{
+			"id": "default/flat/idle_still",
+			"ok": true
+		},
+		{
+			"id": "default/flat/walk_grounded",
+			"ok": true
+		},
+		{
+			"id": "default/flat/walk_support",
+			"ok": true
+		},
+		{
+			"id": "default/flat/walk_floor",
+			"ok": true
+		},
+		{
+			"id": "default/flat/walk_steps",
+			"ok": true
+		},
+		{
+			"id": "default/flat/chase_grounded",
+			"ok": true
+		},
+		{
+			"id": "default/flat/chase_support",
+			"ok": true
+		},
+		{
+			"id": "default/flat/chase_floor",
+			"ok": true
+		},
+		{
+			"id": "default/flat/chase_steps",
+			"ok": true
+		},
+		{
+			"id": "default/flat/turn_grounded",
+			"ok": true
+		},
+		{
+			"id": "default/flat/turn_support",
+			"ok": true
+		},
+		{
+			"id": "default/flat/turn_floor",
+			"ok": true
+		},
+		{
+			"id": "default/flat/turn_steps",
+			"ok": true
+		},
+		{
+			"id": "default/flat/idle_grounded",
+			"ok": true
+		},
+		{
+			"id": "default/flat/idle_support",
+			"ok": true
+		},
+		{
+			"id": "default/flat/idle_floor",
+			"ok": true
+		},
+		{
+			"id": "default/flat/walk_displacement",
+			"ok": true
+		},
+		{
+			"id": "default/flat/falls_with_no_support",
+			"ok": true
+		},
+		{
+			"id": "default/flat/walk_links_connected",
+			"ok": true
+		},
+		{
+			"id": "default/flat/walk_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "default/flat/chase_links_connected",
+			"ok": true
+		},
+		{
+			"id": "default/flat/chase_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "default/flat/turn_links_connected",
+			"ok": true
+		},
+		{
+			"id": "default/flat/turn_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "default/flat/idle_links_connected",
+			"ok": true
+		},
+		{
+			"id": "default/flat/idle_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "default/flat/fall_links_connected",
+			"ok": true
+		},
+		{
+			"id": "default/flat/fall_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "default/flat/dies_on_third_hit",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/expected_rig",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/capsule",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/idle_still",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/walk_grounded",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/walk_support",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/walk_floor",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/walk_steps",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/idle_grounded",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/idle_support",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/idle_floor",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/walk_displacement",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/actually_ascended",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/walk_links_connected",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/walk_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/idle_links_connected",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/idle_bounded_soles",
+			"ok": true
+		},
+		{
+			"id": "default/ramp/dies_on_third_hit",
+			"ok": true
+		},
+		{
+			"id": "flat/walk/comparable_body_path",
+			"ok": true
+		},
+		{
+			"id": "flat/walk/reduced_near_floor_slip",
+			"ok": true
+		},
+		{
+			"id": "flat/chase/comparable_body_path",
+			"ok": true
+		},
+		{
+			"id": "flat/chase/reduced_near_floor_slip",
+			"ok": true
+		},
+		{
+			"id": "flat/turn/comparable_body_path",
+			"ok": true
+		},
+		{
+			"id": "flat/turn/reduced_near_floor_slip",
+			"ok": true
+		},
+		{
+			"id": "ramp/walk/comparable_body_path",
+			"ok": true
+		},
+		{
+			"id": "ramp/walk/reduced_near_floor_slip",
+			"ok": true
+		}
+	],
+	"dt_s": 0.0166666666666667,
+	"engine": "4.7.2-stable (official)",
+	"platform": "macOS",
+	"results": {
+		"baseline": {
+			"flat": {
+				"chase": {
+					"body_dy_m": -0.000000330153852701187,
+					"body_grounded_ticks": 90,
+					"body_xz_m": 3.22500228881836,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": 0.0408229827880859,
+					"max_joint_gap_m": null,
+					"max_observed_step_m": 0.3299440741539,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.949568212032318,
+					"max_sole_delta_m": 0.0641065016388893,
+					"mean_near_floor_xz_speed_mps": 2.25899815494411,
+					"min_gap_m": -0.0801259577274323,
+					"min_planted": null,
+					"near_floor_pairs": 258,
+					"observed_steps_per_leg": [
+						3,
+						3,
+						3,
+						3,
+						3,
+						3
+					],
+					"plant_samples": null,
+					"speed_mps": 2.15,
+					"ticks": 90,
+					"yaw_deg_s": 0.0
+				},
+				"fall": {
+					"body_dy_m": -3.32500042021275,
+					"body_grounded_ticks": 0,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": null,
+					"max_joint_gap_m": null,
+					"max_observed_step_m": 0.0,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.924730479717255,
+					"max_sole_delta_m": 0.183333396911621,
+					"mean_near_floor_xz_speed_mps": null,
+					"min_gap_m": null,
+					"min_planted": null,
+					"near_floor_pairs": 0,
+					"observed_steps_per_leg": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"plant_samples": null,
+					"speed_mps": 0.0,
+					"ticks": 30,
+					"yaw_deg_s": 0.0
+				},
+				"idle": {
+					"body_dy_m": 0.0,
+					"body_grounded_ticks": 45,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": 0.0258331894874573,
+					"max_joint_gap_m": null,
+					"max_observed_step_m": 0.0,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.924730479717255,
+					"max_sole_delta_m": 0.0,
+					"mean_near_floor_xz_speed_mps": 0.0,
+					"min_gap_m": 0.0258331894874573,
+					"min_planted": null,
+					"near_floor_pairs": 264,
+					"observed_steps_per_leg": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"plant_samples": null,
+					"speed_mps": 0.0,
+					"ticks": 45,
+					"yaw_deg_s": 0.0
+				},
+				"turn": {
+					"body_dy_m": 0.0,
+					"body_grounded_ticks": 90,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": 0.0258331894874573,
+					"max_joint_gap_m": null,
+					"max_observed_step_m": 0.0,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.924730837345123,
+					"max_sole_delta_m": 0.032266441732645,
+					"mean_near_floor_xz_speed_mps": 1.84212542693602,
+					"min_gap_m": 0.0258331894874573,
+					"min_planted": null,
+					"near_floor_pairs": 534,
+					"observed_steps_per_leg": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"plant_samples": null,
+					"speed_mps": 0.0,
+					"ticks": 90,
+					"yaw_deg_s": 120.0
+				},
+				"walk": {
+					"body_dy_m": 0.000829847936984152,
+					"body_grounded_ticks": 120,
+					"body_xz_m": 1.70000040531158,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": 0.0385808646678925,
+					"max_joint_gap_m": null,
+					"max_observed_step_m": 0.208530634641647,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.946766257286072,
+					"max_sole_delta_m": 0.0247717220336199,
+					"mean_near_floor_xz_speed_mps": 0.869317909100038,
+					"min_gap_m": -0.0655884742736816,
+					"min_planted": null,
+					"near_floor_pairs": 408,
+					"observed_steps_per_leg": [
+						2,
+						2,
+						2,
+						1,
+						2,
+						1
+					],
+					"plant_samples": null,
+					"speed_mps": 0.85,
+					"ticks": 120,
+					"yaw_deg_s": 0.0
+				}
+			},
+			"ramp": {
+				"idle": {
+					"body_dy_m": 0.0,
+					"body_grounded_ticks": 45,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": 0.137488088949928,
+					"max_joint_gap_m": null,
+					"max_observed_step_m": 0.0,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.924729645252228,
+					"max_sole_delta_m": 0.0,
+					"mean_near_floor_xz_speed_mps": null,
+					"min_gap_m": -0.0665661930229658,
+					"min_planted": null,
+					"near_floor_pairs": 0,
+					"observed_steps_per_leg": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"plant_samples": null,
+					"speed_mps": 0.0,
+					"ticks": 45,
+					"yaw_deg_s": 0.0
+				},
+				"walk": {
+					"body_dy_m": 0.350310888141394,
+					"body_grounded_ticks": 120,
+					"body_xz_m": 1.64435243606567,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": 0.167823559421705,
+					"max_joint_gap_m": null,
+					"max_observed_step_m": 0.568561136722565,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.946766257286072,
+					"max_sole_delta_m": 0.0236852560192347,
+					"mean_near_floor_xz_speed_mps": 0.829762301733156,
+					"min_gap_m": -0.164708456226393,
+					"min_planted": null,
+					"near_floor_pairs": 83,
+					"observed_steps_per_leg": [
+						0,
+						3,
+						0,
+						0,
+						1,
+						0
+					],
+					"plant_samples": null,
+					"speed_mps": 0.85,
+					"ticks": 120,
+					"yaw_deg_s": 0.0
+				}
+			}
+		},
+		"default": {
+			"flat": {
+				"chase": {
+					"body_dy_m": -0.000000330153852701187,
+					"body_grounded_ticks": 90,
+					"body_xz_m": 3.22500228881836,
+					"finite": true,
+					"max_abs_plant_gap_m": 0.0000000298023223876953,
+					"max_gap_m": 0.105210214853287,
+					"max_joint_gap_m": 0.000000481157712783897,
+					"max_observed_step_m": 0.590808629989624,
+					"max_plant_drift_m": 0.0000000596046447753906,
+					"max_reach_m": 1.12075114250183,
+					"max_sole_delta_m": 0.119779989123344,
+					"mean_near_floor_xz_speed_mps": 0.0,
+					"min_gap_m": -0.0000000298023223876953,
+					"min_planted": 3,
+					"near_floor_pairs": 267,
+					"observed_steps_per_leg": [
+						6,
+						6,
+						6,
+						6,
+						6,
+						6
+					],
+					"plant_samples": 309,
+					"speed_mps": 2.15,
+					"ticks": 90,
+					"yaw_deg_s": 0.0
+				},
+				"fall": {
+					"body_dy_m": -3.32500042021275,
+					"body_grounded_ticks": 0,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": null,
+					"max_gap_m": null,
+					"max_joint_gap_m": 0.000000961096020546393,
+					"max_observed_step_m": 0.0,
+					"max_plant_drift_m": null,
+					"max_reach_m": 0.961944282054901,
+					"max_sole_delta_m": 0.254752159118652,
+					"mean_near_floor_xz_speed_mps": null,
+					"min_gap_m": null,
+					"min_planted": 0,
+					"near_floor_pairs": 0,
+					"observed_steps_per_leg": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"plant_samples": 0,
+					"speed_mps": 0.0,
+					"ticks": 30,
+					"yaw_deg_s": 0.0
+				},
+				"idle": {
+					"body_dy_m": 0.0,
+					"body_grounded_ticks": 45,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": 0.0000000298023223876953,
+					"max_gap_m": 0.0,
+					"max_joint_gap_m": 0.00000049581711891733,
+					"max_observed_step_m": 0.0,
+					"max_plant_drift_m": 0.0,
+					"max_reach_m": 0.959085762500763,
+					"max_sole_delta_m": 0.0,
+					"mean_near_floor_xz_speed_mps": 0.0,
+					"min_gap_m": -0.0000000298023223876953,
+					"min_planted": 6,
+					"near_floor_pairs": 264,
+					"observed_steps_per_leg": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"plant_samples": 270,
+					"speed_mps": 0.0,
+					"ticks": 45,
+					"yaw_deg_s": 0.0
+				},
+				"turn": {
+					"body_dy_m": 0.0,
+					"body_grounded_ticks": 90,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": 0.0000000298023223876953,
+					"max_gap_m": 0.108137130737305,
+					"max_joint_gap_m": 0.00000104097705388995,
+					"max_observed_step_m": 0.759081423282623,
+					"max_plant_drift_m": 0.00000239607697949396,
+					"max_reach_m": 1.04507637023926,
+					"max_sole_delta_m": 0.158343493938446,
+					"mean_near_floor_xz_speed_mps": 0.00332175555582437,
+					"min_gap_m": -0.0000000298023223876953,
+					"min_planted": 2,
+					"near_floor_pairs": 267,
+					"observed_steps_per_leg": [
+						6,
+						6,
+						6,
+						6,
+						6,
+						6
+					],
+					"plant_samples": 307,
+					"speed_mps": 0.0,
+					"ticks": 90,
+					"yaw_deg_s": 120.0
+				},
+				"walk": {
+					"body_dy_m": 0.000829847936984152,
+					"body_grounded_ticks": 120,
+					"body_xz_m": 1.70000040531158,
+					"finite": true,
+					"max_abs_plant_gap_m": 0.0000000298023223876953,
+					"max_gap_m": 0.107721209526062,
+					"max_joint_gap_m": 0.000000240274005136598,
+					"max_observed_step_m": 0.348358243703842,
+					"max_plant_drift_m": 0.0000000596046447753906,
+					"max_reach_m": 1.05994260311127,
+					"max_sole_delta_m": 0.0721318423748016,
+					"mean_near_floor_xz_speed_mps": 0.0000000868412043085161,
+					"min_gap_m": -0.0000000298023223876953,
+					"min_planted": 3,
+					"near_floor_pairs": 453,
+					"observed_steps_per_leg": [
+						6,
+						6,
+						6,
+						6,
+						6,
+						6
+					],
+					"plant_samples": 495,
+					"speed_mps": 0.85,
+					"ticks": 120,
+					"yaw_deg_s": 0.0
+				}
+			},
+			"ramp": {
+				"idle": {
+					"body_dy_m": 0.0,
+					"body_grounded_ticks": 45,
+					"body_xz_m": 0.0,
+					"finite": true,
+					"max_abs_plant_gap_m": 0.0000000559400212818417,
+					"max_gap_m": 0.0000000559400212818417,
+					"max_joint_gap_m": 0.0000000842936955791629,
+					"max_observed_step_m": 0.0,
+					"max_plant_drift_m": 0.0,
+					"max_reach_m": 0.973606884479523,
+					"max_sole_delta_m": 0.0,
+					"mean_near_floor_xz_speed_mps": 0.0,
+					"min_gap_m": -0.000000035834651967992,
+					"min_planted": 6,
+					"near_floor_pairs": 264,
+					"observed_steps_per_leg": [
+						0,
+						0,
+						0,
+						0,
+						0,
+						0
+					],
+					"plant_samples": 270,
+					"speed_mps": 0.0,
+					"ticks": 45,
+					"yaw_deg_s": 0.0
+				},
+				"walk": {
+					"body_dy_m": 0.350310888141394,
+					"body_grounded_ticks": 120,
+					"body_xz_m": 1.64435243606567,
+					"finite": true,
+					"max_abs_plant_gap_m": 0.0000000735077998470501,
+					"max_gap_m": 0.117189984316032,
+					"max_joint_gap_m": 0.000000168587391158326,
+					"max_observed_step_m": 0.330840706825256,
+					"max_plant_drift_m": 0.0000000596046447753906,
+					"max_reach_m": 1.03142261505127,
+					"max_sole_delta_m": 0.0702546387910843,
+					"mean_near_floor_xz_speed_mps": 0.00420512452672254,
+					"min_gap_m": -0.0000000581391907533702,
+					"min_planted": 2,
+					"near_floor_pairs": 453,
+					"observed_steps_per_leg": [
+						6,
+						6,
+						6,
+						6,
+						6,
+						6
+					],
+					"plant_samples": 489,
+					"speed_mps": 0.85,
+					"ticks": 120,
+					"yaw_deg_s": 0.0
+				}
+			}
+		}
+	}
+}

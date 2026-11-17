@@ -26,6 +26,7 @@ var _avoid_left: float = 0.0
 var plates: Array[MeshInstance3D] = []
 var electrical_damage: Node3D
 var visual_style: String = "baseline"
+var gait: RefCounted
 
 func _ready() -> void:
 	collision_layer = 4
@@ -91,6 +92,8 @@ func _build_model() -> void:
 	add_child(model)
 	if OS.get_environment("QUARANTINE_BUG_STYLE") != "baseline":
 		visual_style = "refined"
+		if OS.get_environment("QUARANTINE_GAIT") != "baseline":
+			gait = preload("res://scripts/quarantine/bug_gait.gd").new()
 		preload("res://scripts/quarantine/bug_visual.gd").build(self)
 		return
 	var shell: StandardMaterial3D = _material(Color(0.17, 0.21, 0.24), 0.8)
@@ -183,6 +186,12 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 	if direction.length_squared() > 0.01:
 		rotation.y = lerp_angle(rotation.y, atan2(-direction.x, -direction.z), minf(1.0, delta * 7.0))
+	animate_legs(delta)
+
+func animate_legs(delta: float) -> void:
+	if gait != null:
+		gait.update(self,delta)
+		return
 	var moving: float = Vector2(velocity.x, velocity.z).length()
 	gait_time += delta * moving * 6.0
 	for index: int in range(legs.size()):
