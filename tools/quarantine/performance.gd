@@ -15,6 +15,8 @@ var previous_position: Vector3
 
 func _initialize() -> void: call_deferred("run")
 func run() -> void:
+	if OS.get_environment("QUARANTINE_UNCAPPED") == "1":
+		DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 	mission = load("res://scenes/quarantine.tscn").instantiate()
 	root.add_child(mission)
 	mission.player.qa_mode = true
@@ -61,7 +63,8 @@ func sample() -> void:
 	mission.player.qa_direction = Vector3.ZERO
 	samples.sort()
 	var data: Dictionary = {"platform":OS.get_name(),"engine":Engine.get_version_info().string,"renderer":RenderingServer.get_current_rendering_method(),"resolution":str(root.size),"seconds":measured,"frames":samples.size(),"median_ms":samples[int(samples.size()*.5)],"p95_ms":samples[int(samples.size()*.95)],"p99_ms":samples[int(samples.size()*.99)],"mean_fps":samples.size()/measured,"route_waypoints_reached":route_reached,"capsule_distance_m":movement,"maximum_capsule_height_m":max_height,"shot_requests":shots,"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"primitives":Performance.get_monitor(Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME),"video_memory_bytes":Performance.get_monitor(Performance.RENDER_VIDEO_MEM_USED),"boundary":"Health replenished for rendering stress, no completion assertion; includes active bugs, ADS, shots, local lights, bridge and exterior lane."}
-	var out: String = "res://docs/validation/quarantine-v1/performance"
+	var out: String = OS.get_environment("QUARANTINE_PERFORMANCE_OUTPUT")
+	if out.is_empty(): out = "res://docs/validation/quarantine-v1/performance"
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(out))
 	var f: FileAccess = FileAccess.open(out+"/native.json",FileAccess.WRITE)
 	f.store_string(JSON.stringify(data,"\t"))

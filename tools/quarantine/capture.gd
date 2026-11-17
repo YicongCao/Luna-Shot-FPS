@@ -28,6 +28,8 @@ func check(id: String, ok: bool) -> void:
 	print("CHECK ",id," ",ok)
 
 func run() -> void:
+	if not OS.get_environment("QUARANTINE_CAPTURE_OUTPUT").is_empty():
+		output = OS.get_environment("QUARANTINE_CAPTURE_OUTPUT")
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(output))
 	mission = load("res://scenes/quarantine.tscn").instantiate()
 	root.add_child(mission)

@@ -1,0 +1,13 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+CHECK rounded_box_all_exterior_normals true
+CHECK rounded_box_all_clockwise_front_faces true
+CHECK rounded_box_has_real_bevel_faces true
+CHECK sealed_door_blocks_forward_hitscan true
+CHECK door_collision_outside_terminal_and_routes true
+CHECK optics_present true
+CHECK only_two_visible_practicals_optical true
+CHECK terrain_indexed_for_shared_vertices true
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

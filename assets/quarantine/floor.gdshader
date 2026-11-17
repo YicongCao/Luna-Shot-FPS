@@ -14,10 +14,11 @@ void fragment(){
  float seam=smoothstep(.482,.496,max(grid.x,grid.y));
  float slab=hash(floor(uv));
  float flow=sin(world_pos.x*.48+sin(world_pos.z*.21)*1.7)*sin(world_pos.z*.34+1.2);
- float coolant=smoothstep(.58,.87,flow)*.65;
+ float coolant=smoothstep(.78,.96,flow)*.22;
  ALBEDO=base*vec3(.57,.65,.69)*mix(.85,1.1,slab)*(1.0-seam*.42)*(1.0-coolant*.30);
- METALLIC=.28+coolant*.32;
- ROUGHNESS=mix(clamp(orm.g*.77,.34,.79),.16,coolant);
+ METALLIC=.025+coolant*.10;
+ SPECULAR=.40;
+ ROUGHNESS=mix(clamp(orm.g*.94,.62,.88),.29,coolant);
  NORMAL_MAP=texture(normal_map,uv).rgb;
  NORMAL_MAP_DEPTH=.50*(1.0-coolant*.7);
  AO=clamp(orm.r*(1.0-seam*.4),0.0,1.0);

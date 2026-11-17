@@ -1,0 +1,6 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+{"boundary":"Health replenished for rendering stress, no completion assertion; includes active bugs, ADS, shots, local lights, bridge and exterior lane.","capsule_distance_m":299.793128749356,"draw_calls":1969.0,"engine":"4.7.2-stable (official)","frames":3604,"maximum_capsule_height_m":2.40983605384827,"mean_fps":60.0537971379398,"median_ms":16.675,"p95_ms":18.38,"p99_ms":19.602,"platform":"macOS","primitives":3058696.0,"renderer":"forward_plus","resolution":"(1920, 810)","route_waypoints_reached":12,"seconds":60.0128580000002,"shot_requests":119,"video_memory_bytes":1762164736.0}
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

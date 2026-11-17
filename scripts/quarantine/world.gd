@@ -9,9 +9,9 @@ var terminal_material: StandardMaterial3D
 var extraction_material: StandardMaterial3D
 var stage_seen: int = -1
 var time: float = 0.0
-var steel: StandardMaterial3D
-var dark: StandardMaterial3D
-var concrete: StandardMaterial3D
+var steel: Material
+var dark: Material
+var concrete: Material
 var amber: StandardMaterial3D
 var ice: StandardMaterial3D
 var red: StandardMaterial3D
@@ -29,11 +29,11 @@ var sun_target: float = 1.0
 var shadow_clock: float = 0.0
 
 func _ready() -> void:
-	steel = material(Color(.21,.26,.29), .8, .32)
-	dark = material(Color(.035,.055,.065), .65, .44)
-	concrete = material(Color(.19,.21,.22), .15, .87)
-	amber = emissive(Color(1,.40,.085), 5.0)
-	ice = emissive(Color(.12,.64,.91), 3.5)
+	steel = industrial_material(Color(.23,.26,.28), .82, .41)
+	dark = industrial_material(Color(.10,.13,.15), .06, .57)
+	concrete = material(Color(.19,.21,.22), .02, .87)
+	amber = emissive(Color(1,.40,.085), 2.2)
+	ice = emissive(Color(.12,.64,.91), 1.8)
 	red = emissive(Color(1,.07,.025), 3.0)
 	load_facility()
 	build_markers()
@@ -42,8 +42,18 @@ func _ready() -> void:
 	build_extraction()
 	build_horizon()
 	build_reactor()
+	load("res://scripts/quarantine/detail_pass.gd").build(self)
 	flush_batches()
 	setup_environment()
+
+func industrial_material(color: Color, metal: float, rough: float) -> ShaderMaterial:
+	var mat: ShaderMaterial = ShaderMaterial.new()
+	mat.shader = load("res://assets/quarantine/refine/industrial.gdshader")
+	mat.set_shader_parameter("coating",color)
+	mat.set_shader_parameter("base_metal",metal)
+	mat.set_shader_parameter("base_roughness",rough)
+	mat.set_shader_parameter("wear_mask",load("res://assets/quarantine/refine/wear_mask.png"))
+	return mat
 
 func material(color: Color, metal: float, rough: float) -> StandardMaterial3D:
 	var m: StandardMaterial3D = StandardMaterial3D.new()
@@ -100,8 +110,13 @@ func build_markers() -> void:
 func box(id: String, pos: Vector3, size: Vector3, mat: Material, yaw: float = 0.0) -> void:
 	var key: String = id + str(size) + str(mat.get_instance_id())
 	if not batches.has(key):
-		var mesh: BoxMesh = BoxMesh.new()
-		mesh.size = size
+		var mesh: Mesh
+		if minf(size.x,minf(size.y,size.z)) >= .07:
+			mesh = load("res://scripts/quarantine/rounded_geometry.gd").box_mesh(size,.025)
+		else:
+			var primitive: BoxMesh = BoxMesh.new()
+			primitive.size = size
+			mesh = primitive
 		batches[key] = {"mesh":mesh,"material":mat,"poses":[]}
 	batches[key].poses.append(Transform3D(Basis(Vector3.UP,yaw),pos))
 
@@ -129,6 +144,7 @@ func text(value: String, pos: Vector3, font_size: int, tint: Color, pixel: float
 	label.outline_size = 0
 	label.position = pos
 	label.no_depth_test = false
+	label.shaded = true
 	add_child(label)
 	return label
 
@@ -188,7 +204,6 @@ func build_enclosure() -> void:
 		box("bulkhead",Vector3(x,5.1,-32),Vector3(18,10.2,1),dark)
 		for p in range(-8,9,2):
 			box("bulkheadSeam",Vector3(x+p,5.1,-31.46),Vector3(.04,9.8,.04),steel)
-		box("header",Vector3(x,8,-31.4),Vector3(16,.16,.2),amber)
 	box("centerHeader",Vector3(0,9,-32),Vector3(7,2.6,1.2),steel)
 	text("SELENE",Vector3(0,9.1,-31.32),84,Color(.78,.86,.9),.018)
 	text("03   /   POWER CONVERSION",Vector3(-12,6.8,-31.44),38,Color(.59,.70,.77),.012)
@@ -221,7 +236,9 @@ func build_terminal() -> void:
 	for x in [-.48,-.24,0.0,.24,.48]:
 		box("consoleKeys",Vector3(x,1.15,-22.115),Vector3(.10,.04,.03),steel)
 	terminal_label = text("ISOLATION CONTROL\nPURGE REQUIRED",Vector3(0,2.16,-22.155),26,Color(.76,.84,.87),.0038)
-	text("MANUAL OVERRIDE\n[ E ]   HOLD  /  03 SEC",Vector3(0,1.53,-22.17),26,Color(.62,.86,.91),.0032)
+	terminal_label.shaded = false
+	var screen_text: Label3D = text("MANUAL OVERRIDE\n[ E ]   HOLD  /  03 SEC",Vector3(0,1.53,-22.17),26,Color(.62,.86,.91),.0032)
+	screen_text.shaded = false
 	# Actual solid pedestal; interaction stands in front at z=-20.
 	var body: StaticBody3D = StaticBody3D.new()
 	body.position = Vector3(0,.9,-22.5)
@@ -231,7 +248,11 @@ func build_terminal() -> void:
 	collision.shape = shape
 	body.add_child(collision)
 	add_child(body)
-	fixture(Vector3(0,2.8,-22),Color(1,.38,.10),2.0,7,true)
+	box("consoleTaskHousing",Vector3(0,2.58,-22.30),Vector3(.86,.14,.28),dark)
+	box("consoleTaskLens",Vector3(0,2.50,-22.23),Vector3(.70,.02,.12),emissive(Color(.82,.89,1),2.0))
+	beam(Vector3(-.32,2.3,-22.3),Vector3(-.32,2.58,-22.3),.025,steel)
+	beam(Vector3(.32,2.3,-22.3),Vector3(.32,2.58,-22.3),.025,steel)
+	fixture(Vector3(0,2.43,-22.02),Color(.72,.83,1),1.2,4,true)
 
 func build_extraction() -> void:
 	extraction_material = emissive(Color(.15,.54,.7),1.8)
@@ -335,20 +356,24 @@ func build_horizon() -> void:
 			for offset in [Vector2(0,0),Vector2(1,0),Vector2(0,1),Vector2(1,1)]:
 				var px: float = (x+offset.x)*5.0
 				var pz: float = (z+offset.y)*5.0
-				var distance: float = Vector2(px,pz).length()
-				var ridge: float = smoothstep(70,170,distance)
-				var h: float = -2.0+ridge*(14.0+noise.get_noise_2d(px,pz)*45.0)
-				corners.append(Vector3(px,h,pz))
+				corners.append(Vector3(px,horizon_height(noise,px,pz),pz))
 			for index in [0,1,2,1,3,2]:
 				var p: Vector3 = corners[index]
 				surface.set_uv(Vector2(p.x,p.z)/8.0)
+				# Identical positions share the same height-gradient normal, including cell seams.
+				var dx: float = horizon_height(noise,p.x+1,p.z)-horizon_height(noise,p.x-1,p.z)
+				var dz: float = horizon_height(noise,p.x,p.z+1)-horizon_height(noise,p.x,p.z-1)
+				surface.set_normal(Vector3(-dx,2,-dz).normalized())
 				surface.add_vertex(p)
-	surface.generate_normals()
+	surface.index()
 	surface.generate_tangents()
 	var terrain: MeshInstance3D = MeshInstance3D.new()
 	terrain.name = "ProceduralLunarHorizon"
 	terrain.mesh = surface.commit()
 	add_child(terrain)
+
+func horizon_height(noise: FastNoiseLite, x: float, z: float) -> float:
+	return -2.0+smoothstep(70,170,Vector2(x,z).length())*(14.0+noise.get_noise_2d(x,z)*45.0)
 
 func flush_batches() -> void:
 	for key in batches:
@@ -428,7 +453,7 @@ func setup_environment() -> void:
 		add_child(probe)
 	# Warm north-facing pools act as readable practical sources in the factory.
 	for x in [-12.0,12.0]:
-		fixture(Vector3(x,6,-28),Color(1,.45,.15),3.5,15,true)
+		fixture(Vector3(x,7.8,-30.35),Color(1,.76,.47),4.0,18,true)
 	call_deferred("connect_presentation")
 
 func connect_presentation() -> void:
@@ -436,10 +461,13 @@ func connect_presentation() -> void:
 	var player: Node = mission.get("player")
 	if not is_instance_valid(player): return
 	var view_env: WorldEnvironment = player.get_node("WeaponLayer/Container/Viewport/WeaponEnvironment")
-	view_env.environment.ambient_light_color = Color(.3,.46,.65)
-	view_env.environment.ambient_light_energy = .45
+	view_env.environment.sky = environment.sky
+	view_env.environment.ambient_light_source = Environment.AMBIENT_SOURCE_COLOR
+	view_env.environment.ambient_light_color = environment.ambient_light_color
+	view_env.environment.ambient_light_energy = .24
+	view_env.environment.tonemap_exposure = environment.tonemap_exposure
 	view_env.environment.glow_enabled = false
-	player.get_node("WeaponLayer/Container/Viewport/Fill").light_energy = .20
+	player.get_node("WeaponLayer/Container/Viewport/Fill").light_energy = .055
 	var bloom: CanvasLayer = CanvasLayer.new()
 	bloom.set_script(load("res://scripts/weapon_bloom.gd"))
 	bloom.source = player.get_node("WeaponLayer/Container/Viewport")
@@ -484,7 +512,8 @@ func _process(delta: float) -> void:
 		var key: DirectionalLight3D = player.get_node("WeaponLayer/Container/Viewport/Key")
 		key.basis = player.camera.global_basis.inverse()*sun.global_basis
 		key.light_color = sun.light_color
-		key.light_energy = sun.light_energy*lerpf(.12,.85,sun_visibility)
+		key.light_energy = sun.light_energy*lerpf(.07,.80,sun_visibility)
+		player.get_node("WeaponLayer/Container/Viewport/WeaponEnvironment").environment.sky_rotation = player.camera.global_basis.inverse().get_euler()
 	var stage_value: Variant = mission.get("stage")
 	var current: int = int(stage_value) if stage_value != null else 0
 	if current != stage_seen:
@@ -517,4 +546,4 @@ func _process(delta: float) -> void:
 			shock_material.albedo_color.a = maxf(0.0,1.0-activation_age/3.0)
 	for i in reactor_rings.size():
 		reactor_rings[i].rotation.z = sin(time*.3+i*.8)*.09
-	ice.emission_energy_multiplier = 3.5 + (1.5+sin(time*2)*.35 if current == 2 else 0.0)
+	ice.emission_energy_multiplier = 1.8 + (1.5+sin(time*2)*.35 if current == 2 else 0.0)

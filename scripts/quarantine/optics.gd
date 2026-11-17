@@ -42,7 +42,7 @@ func sample_sources() -> void:
 	var candidates: Array[Dictionary] = []
 	candidates.append({"position":camera.global_position+world.sun.global_basis.z*250,"color":Color(1,.65,.31),"sun":true})
 	for emitter in world.emitters:
-		if camera.global_position.distance_squared_to(emitter.position)<900:
+		if emitter.get("optical",false) and camera.global_position.distance_squared_to(emitter.position)<900:
 			candidates.append({"position":emitter.position,"color":emitter.color,"sun":false})
 	for source in candidates:
 		var p: Vector3 = source.position

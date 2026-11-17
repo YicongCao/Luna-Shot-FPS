@@ -16,8 +16,11 @@ for old,new in [('viewport_width=1440','viewport_width=1920'),('viewport_height=
 for name in ['assets','scripts','scenes','docs','tools','.godot']:
     (out/name).symlink_to(root/name, target_is_directory=True)
 PY
-mkdir -p "$ROOT/artifacts/quarantine/movie" "$ROOT/docs/validation/quarantine-v1"
-"$ENGINE" --path "$TMP" --rendering-method forward_plus --resolution 1920x810 --write-movie "$ROOT/artifacts/quarantine/movie/wide.avi" --fixed-fps 60 --script res://tools/quarantine/showcase.gd -- --quarantine-qa > "$ROOT/docs/validation/quarantine-v1/showcase.log" 2>&1
-if rg 'SCRIPT ERROR|Parse Error|^ERROR:' "$ROOT/docs/validation/quarantine-v1/showcase.log"; then exit 1; fi
-ffmpeg -hide_banner -loglevel warning -y -i "$ROOT/artifacts/quarantine/movie/wide.avi" -c:v libx264 -preset medium -crf 19 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart "$ROOT/docs/validation/quarantine-v1/showcase.mp4"
+OUT="${QUARANTINE_MOVIE_OUTPUT:-$ROOT/docs/validation/quarantine-v1}"
+mkdir -p "$ROOT/artifacts/quarantine/movie"
+MOVIE_DIR="$(mktemp -d "$ROOT/artifacts/quarantine/movie/refine.XXXXXX")"
+mkdir -p "$OUT"
+"$ENGINE" --path "$TMP" --rendering-method forward_plus --resolution 1920x810 --write-movie "$MOVIE_DIR/wide.avi" --fixed-fps 60 --script res://tools/quarantine/showcase.gd -- --quarantine-qa > "$OUT/showcase.log" 2>&1
+if rg 'SCRIPT ERROR|Parse Error|^ERROR:' "$OUT/showcase.log"; then exit 1; fi
+ffmpeg -hide_banner -loglevel warning -y -i "$MOVIE_DIR/wide.avi" -c:v libx264 -preset medium -crf 19 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart "$OUT/showcase.mp4"
 print "Native reel saved; temporary configuration: $TMP"

@@ -1,5 +1,11 @@
 # Luna-Shot-FPS
 
+## UI 文案原则
+
+Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining.
+
+避免不必要的次要标签和描述，让布局本身来传达信息。不要在 UI 上添加口号式 Slogan；只保留必要的任务信息、状态、操作提示与功能文案。
+
 独立 Godot 4.7 工程；不要复制 Luna-Shot-Demo / No-Art-FPS 运行时代码或美术资产。
 训练场基线范围：一张 64×66 m 月球能源设施训练场、一个玩家、固定靶、一把分件 LS01 枪械（内部 lc01 路径兼容）。原训练场无回合、刷怪、关卡流程。用户于2026-11-17另授权ML22独立清剿/终端/撤离小样，见文末；不要将其流程注入旧训练场。
 视觉方向沿用旧策划概念，环境已授权推进 A/B1/B2/C/D/E 六资产完整建模管线，随后制作低角度日照、Bloom 与 imagegen 镜头光晕；LC01 已授权推进高低模、烘焙、PBR 和红点瞄准。不得将概念图、离线渲染当作游戏实机。

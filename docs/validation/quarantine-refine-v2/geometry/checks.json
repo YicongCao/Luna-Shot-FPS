@@ -1,0 +1,38 @@
+{
+	"boundary": "Synthetic native geometry views complement exterior normal/winding assertions; not final art acceptance.",
+	"checks": [
+		{
+			"id": "rounded_box_all_exterior_normals",
+			"ok": true
+		},
+		{
+			"id": "rounded_box_all_clockwise_front_faces",
+			"ok": true
+		},
+		{
+			"id": "rounded_box_has_real_bevel_faces",
+			"ok": true
+		},
+		{
+			"id": "sealed_door_blocks_forward_hitscan",
+			"ok": true
+		},
+		{
+			"id": "door_collision_outside_terminal_and_routes",
+			"ok": true
+		},
+		{
+			"id": "optics_present",
+			"ok": true
+		},
+		{
+			"id": "only_two_visible_practicals_optical",
+			"ok": true
+		},
+		{
+			"id": "terrain_indexed_for_shared_vertices",
+			"ok": true
+		}
+	],
+	"native": true
+}

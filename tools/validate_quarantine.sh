@@ -9,7 +9,9 @@ if [[ -z "$ENGINE" ]]; then
 fi
 if [[ -z "$ENGINE" ]]; then ENGINE="$(command -v godot4 || command -v godot || true)"; fi
 [[ -n "$ENGINE" ]] || { print -u2 'Godot 4.7.2 is required'; exit 1; }
-OUT='docs/validation/quarantine-v1'
+OUT="${QUARANTINE_QA_OUTPUT:-docs/validation/quarantine-v1}"
+export QUARANTINE_CAPTURE_OUTPUT="$OUT/native"
+export QUARANTINE_PERFORMANCE_OUTPUT="$OUT/performance"
 mkdir -p "$OUT" artifacts/quarantine
 "$ENGINE" --headless --path . --editor --import --quit > artifacts/quarantine/import-final.log 2>&1
 if rg 'SCRIPT ERROR|Parse Error|^ERROR:' artifacts/quarantine/import-final.log; then exit 1; fi
@@ -27,4 +29,4 @@ if [[ "${1:-}" == '--performance' ]]; then
   "$ENGINE" --path . --rendering-method forward_plus --resolution 1920x810 --script res://tools/quarantine/performance.gd -- --quarantine-qa > "$OUT/performance.log" 2>&1
   if rg 'SCRIPT ERROR|Parse Error|^ERROR:' "$OUT/performance.log"; then exit 1; fi
 fi
-print 'Quarantine validation finished. See docs/validation/quarantine-v1; visual acceptance remains separate.'
+print "Quarantine validation finished. See $OUT; visual acceptance remains separate."
