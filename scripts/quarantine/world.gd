@@ -43,6 +43,7 @@ func _ready() -> void:
 	build_horizon()
 	build_reactor()
 	load("res://scripts/quarantine/detail_pass.gd").build(self)
+	preload("res://scripts/quarantine/service_lighting.gd").build(self)
 	flush_batches()
 	setup_environment()
 

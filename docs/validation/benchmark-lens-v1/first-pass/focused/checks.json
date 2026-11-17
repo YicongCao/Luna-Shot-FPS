@@ -1,0 +1,28 @@
+{
+	"boundary": "Native deterministic scripted benchmark frame at 21 seconds; no new lights, no offline render. Complete live reel validated separately.",
+	"camera_position": "(-0.224, 1.0444, 14.2944)",
+	"checks": [
+		{
+			"id": "closeup_chapter",
+			"ok": true
+		},
+		{
+			"id": "lens_flag_matches_camera",
+			"ok": true
+		},
+		{
+			"id": "subject_in_frustum",
+			"ok": true
+		},
+		{
+			"id": "focus_is_in_front_of_camera",
+			"ok": true
+		}
+	],
+	"dof": true,
+	"elapsed": 21.000001,
+	"far_start": 3.06495904922485,
+	"focus_distance": 2.41495895385742,
+	"fov": 43.0,
+	"framing": "lit-closeup"
+}

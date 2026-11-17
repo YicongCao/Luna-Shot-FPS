@@ -1,0 +1,33 @@
+{
+	"boundary": "Native deterministic scripted benchmark frame at 21 seconds. The inspection_light flag identifies the physical scene luminaire, also used in normal play. No offline render. Complete live reel validated separately.",
+	"camera_position": "(3.383199, 0.912, 18.324)",
+	"checks": [
+		{
+			"id": "closeup_chapter",
+			"ok": true
+		},
+		{
+			"id": "whole_subject_has_frame_margin",
+			"ok": true
+		},
+		{
+			"id": "lens_flag_matches_camera",
+			"ok": true
+		},
+		{
+			"id": "subject_in_frustum",
+			"ok": true
+		},
+		{
+			"id": "focus_is_in_front_of_camera",
+			"ok": true
+		}
+	],
+	"dof": false,
+	"elapsed": 21.000002,
+	"far_start": 3.73150110244751,
+	"focus_distance": 3.08150100708008,
+	"fov": 48.0,
+	"framing": "baseline",
+	"inspection_light": false
+}

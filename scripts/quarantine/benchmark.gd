@@ -25,6 +25,8 @@ var result_panel: PanelContainer
 var result_text: Label
 var old_vsync: int
 var report: Dictionary = {}
+var cinema_lens: RefCounted
+var framing_style: String = "baseline" if OS.get_environment("QUARANTINE_BENCHMARK_FRAMING") == "baseline" else "lit-closeup"
 
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -41,6 +43,7 @@ func _ready() -> void:
 	mission.qa_mode = true
 	mission.set_process_input(false)
 	player = mission.player
+	cinema_lens = preload("res://scripts/quarantine/benchmark_lens.gd").new(player.camera)
 	player.qa_mode = true
 	player.set_process_unhandled_input(false)
 	for bug in mission.bugs: bug.set_physics_process(false)
@@ -137,6 +140,7 @@ func scenic(from: Vector3, to: Vector3, focus: Vector3, fraction: float, fov: fl
 
 func change_chapter(value: int) -> void:
 	chapter = value
+	cinema_lens.clear(player.camera)
 	heading.text = "SELENE"
 	var gameplay: bool = value in [4,5,7]
 	mission.hud.visible = gameplay
@@ -146,7 +150,13 @@ func change_chapter(value: int) -> void:
 	player.velocity = Vector3.ZERO
 	player.aiming = false
 	heading.visible = value == 0
-	if value == 4:
+	if value == 3 and framing_style != "baseline":
+		# Presentation staging: keep the close-up camera out of another frozen bug.
+		mission.bugs[1].position = Vector3(-3.5,.05,18.5)
+		mission.bugs[2].position = Vector3(-1.8,.05,20)
+	elif value == 4:
+		mission.bugs[1].position = Vector3(-1.6,.05,16)
+		mission.bugs[2].position = Vector3(0,.05,14)
 		player.position = Vector3(0,.05,22)
 		stage_kills = mission.kills
 	elif value == 5:
@@ -184,7 +194,13 @@ func _process(_delta: float) -> void:
 		0: scenic(Vector3(-4,3.4,27),Vector3(-4,3.4,27),Vector3(0,5,0),0,60)
 		1: scenic(Vector3(-4,3.4,27),Vector3(-2,2.3,20),Vector3(0,5,0),local/8,60)
 		2: scenic(Vector3(-8,3,-18),Vector3(-4,2.5,-18),Vector3(0,3.5,-28),local/7,55)
-		3: scenic(Vector3(3.7,1.0,18.5),Vector3(2.8,.75,18),Vector3(1.4,.45,16),local/5,48)
+		3:
+			var focus: Vector3 = mission.bugs[0].global_position+Vector3(0,.46,0)
+			if framing_style == "baseline":
+				scenic(Vector3(3.7,1.0,18.5),Vector3(2.8,.75,18),focus,local/5,48)
+			else:
+				scenic(Vector3(-.6,1.15,14.2),Vector3(-.1,.85,13.9),focus,local/5,46)
+			cinema_lens.focus(player.camera,focus)
 		4:
 			var target: int = mini(next_shot/3,2)
 			aim(mission.bugs[target].global_position+Vector3(0,.45,0))
@@ -231,7 +247,7 @@ func finish() -> void:
 	var average: float = 1000.0*samples.size()/maxf(1,total_ms)
 	var p95: float = ordered[mini(ordered.size()-1,int(ordered.size()*.95))] if not ordered.is_empty() else 0
 	var p99: float = ordered[mini(ordered.size()-1,int(ordered.size()*.99))] if not ordered.is_empty() else 0
-	report = {"engine":Engine.get_version_info().string,"platform":OS.get_name(),"gpu":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"atmosphere":mission.get_node("World").atmosphere_style,"bug_style":mission.bugs[0].visual_style,"resolution":str(get_viewport().size),"logical_canvas_size":str(get_viewport().get_visible_rect().size),"vsync":DisplayServer.window_get_vsync_mode(),"warmup_seconds":4,"measured_seconds":total_ms/1000,"frames":samples.size(),"mean_fps":average,"p95_ms":p95,"p99_ms":p99,"capture_enabled":capture_enabled,"checks":checks,"frame_ms":samples,"boundary":"Scripted cameras, frozen enemy positions, nine real shots into three enemies; remaining five cleared at cut; actual E input and physical evacuation. Health replenished. Not unassisted gameplay or a comparison with the separate 60s route benchmark."}
+	report = {"engine":Engine.get_version_info().string,"platform":OS.get_name(),"gpu":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"atmosphere":mission.get_node("World").atmosphere_style,"bug_style":mission.bugs[0].visual_style,"closeup_framing":framing_style,"closeup_dof":cinema_lens.enabled,"inspection_light":mission.has_node("World/InspectionLuminaire"),"resolution":str(get_viewport().size),"logical_canvas_size":str(get_viewport().get_visible_rect().size),"vsync":DisplayServer.window_get_vsync_mode(),"warmup_seconds":4,"measured_seconds":total_ms/1000,"frames":samples.size(),"mean_fps":average,"p95_ms":p95,"p99_ms":p99,"capture_enabled":capture_enabled,"checks":checks,"frame_ms":samples,"boundary":"Scripted cameras, frozen enemy positions, nine real shots into three enemies; remaining five cleared at cut; actual E input and physical evacuation. Health replenished. Not unassisted gameplay or a comparison with the separate 60s route benchmark."}
 	var file: FileAccess = FileAccess.open(output+"/result.json",FileAccess.WRITE)
 	file.store_string(JSON.stringify(report,"\t"))
 	file.close()

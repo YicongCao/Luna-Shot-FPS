@@ -2,6 +2,12 @@
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
+## ML27：特写景深与实体检修灯
+
+实时 Benchmark 的害虫特写改为近距离三分之四构图，使用原生景深分离背景；实际战斗、ADS、终端和撤离保持清晰。屋架下新增一盏实体检修灯，在正常清剿与演示中共同改善局部暗部，不改变暖黄雾层和全场曝光。
+
+[构图／景深／灯光分项对照](docs/validation/benchmark-lens-v1/review.html) · [验证与边界](docs/validation/benchmark-lens-v1/REPORT.md)。`QUARANTINE_BENCHMARK_LENS=off` 关闭景深；`QUARANTINE_SERVICE_LIGHT=off` 关闭新增检修灯。
+
 ## ML26：T-Bug 机械结构精修
 
 清剿关卡与实时 Benchmark 的害虫默认使用分层厚装甲、机械关节、执行器/脚垫及嵌入式发光件；保留六足、三发击杀和当前暖黄氛围。`QUARANTINE_BUG_STYLE=baseline ./launch-benchmark.command` 对照旧版。
