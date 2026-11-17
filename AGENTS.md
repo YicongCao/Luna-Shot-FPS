@@ -70,3 +70,5 @@ ML27 Benchmark特写使用benchmark_lens.gd原生景深，仅19–24秒启用，
 ML28 清剿Forward+默认方向光软阴影HIGH采样，QUARANTINE_SHADOWS=baseline恢复LOW；不修改全局project.godot、暖雾、曝光或训练场。scripts/quarantine/lunar_horizon.gd为2.5m网格月面候选，仅QUARANTINE_HORIZON=refined启用，默认仍旧月面：候选虽然减少折面，也损失崎岖轮廓，不因29项几何门禁通过自动发布。纯程序网格复用既有月壤贴图，无新增生成调用、无高模烘焙声明。tools/validate_lunar_horizon.sh复现几何/原生/完整演示验证，docs/validation/lunar-horizon-v1保留诊断失败与最终对照；环境截图必须单独关闭world.weapon_bloom，隐藏WeaponLayer不足以关闭独立合成层。19项双版本原生捕获检查不等于美术验收；用户视觉验收仍待定。
 
 ML29 当前清剿/Benchmark默认月面为scripts/quarantine/lunar_ridges.gd：保留旧seed221117、.011基础频率、.5 gain与前三层的原振幅（28/31归一化补偿），移除两层高频；1.25m基础网格由terrain_refinement.gd作共享边局部细分，350382顶点/698391三角，上限700000。lunar_horizon.gd仍保留ML28候选，同时提供通用网格构建；QUARANTINE_HORIZON=baseline回旧5m版，=refined看ML28平滑候选，=ridges或缺省为ML29。程序网格/连续法线复用原月壤材质，不是新增高模烘焙。首次生成有CPU成本，重播复用静态网格；完整实机性能必须包含新几何，不能引用旧月面数据。tools/validate_lunar_ridges.sh与docs/validation/lunar-ridges-v1记录保形指标、局部细分失败/修正、31项几何和原生左右剔除。原训练场/共享资产/暖雾/HIGH阴影保持，无新增生成服务调用；技术与实施视觉复查不代替用户美术验收。
+
+ML30 仅清剿/Benchmark 使用装配式绕组、无端盖能量柱和沿铺装材质传播的上电脉冲；QUARANTINE_REACTOR=baseline 对照旧效果。启动原训练场仍为launch.command，当前可玩小样为launch-quarantine.command。原生对照与画质判断见docs/validation/reactor-induction-v1；纯着色器反馈不是体积流体模拟，不增加伤害/碰撞。

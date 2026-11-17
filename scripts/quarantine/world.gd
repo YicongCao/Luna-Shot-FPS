@@ -5,6 +5,9 @@ var environment: Environment
 var sun: DirectionalLight3D
 var emitters: Array[Dictionary] = []
 var reactor_rings: Array[Node3D] = []
+var induction_enabled: bool = OS.get_environment("QUARANTINE_REACTOR") != "baseline"
+var winding_materials: Array[StandardMaterial3D] = []
+var floor_material: ShaderMaterial
 var terminal_material: StandardMaterial3D
 var extraction_material: StandardMaterial3D
 var stage_seen: int = -1
@@ -96,7 +99,7 @@ func load_facility() -> void:
 	var ground_surface: Node = facility.get_node_or_null("GroundSurface")
 	if ground_surface:
 		ground_surface.set_process(false)
-	var floor_material: ShaderMaterial = ShaderMaterial.new()
+	floor_material = ShaderMaterial.new()
 	floor_material.shader = load("res://assets/quarantine/floor.gdshader")
 	for pair in [["color_map","BaseColor"],["normal_map","NormalGL"],["orm_map","ORM"]]:
 		floor_material.set_shader_parameter(pair[0],load("res://assets/environment/ground_v1/paving/"+pair[1]+".png"))
@@ -278,18 +281,33 @@ func build_reactor() -> void:
 		torus.ring_segments = 8
 		ring.mesh = torus
 		ring.material_override = ice
+		if induction_enabled:
+			var winding := emissive(Color(.08,.34,.44),.25)
+			winding_materials.append(winding)
+			ring.material_override = winding
+			# Fixed yoke halves leave the luminous winding exposed in the gaps.
+			for j in 8:
+				var phi := j*TAU/8
+				var axis := Vector3(sin(phi),0,cos(phi))
+				var center := Vector3.UP*float(y)
+				box("yoke",center+axis*1.20,Vector3(.39,.34,.32),steel,phi)
+				box("socket",center+axis*.94,Vector3(.18,.19,.51),dark,phi)
+				if j%2==0:
+					beam(center+axis*.58-Vector3.UP*.5,center+axis*1.18,.068,steel)
 		ring.position = Vector3(0,y,0)
 		add_child(ring)
 		reactor_rings.append(ring)
 	fixture(Vector3(0,7,0),Color(.12,.52,.88),3.0,13)
 	energy_material = ShaderMaterial.new()
-	energy_material.shader = load("res://assets/quarantine/energy.gdshader")
+	energy_material.shader = preload("res://assets/quarantine/induction.gdshader") if induction_enabled else preload("res://assets/quarantine/energy.gdshader")
 	energy_column = MeshInstance3D.new()
 	var column: CylinderMesh = CylinderMesh.new()
 	column.top_radius = .6
 	column.bottom_radius = 1.0
 	column.height = 22
 	column.radial_segments = 48
+	column.cap_top = not induction_enabled
+	column.cap_bottom = not induction_enabled
 	energy_column.mesh = column
 	energy_column.position = Vector3(0,12,0)
 	energy_column.material_override = energy_material
@@ -530,7 +548,8 @@ func _process(delta: float) -> void:
 	if current != stage_seen:
 		stage_seen = current
 		if current >= 2 and current != 4:
-			activation_age = 0.0
+			# Extraction success leaves the equipment running; do not ignite a second time.
+			if activation_age < 0.0: activation_age = 0.0
 			energy_column.visible = true
 			charge_particles.emitting = true
 			terminal_material.emission = Color(.1,.9,.65)
@@ -542,17 +561,31 @@ func _process(delta: float) -> void:
 			energy_column.visible = false
 			charge_particles.emitting = false
 			shockwave.visible = false
+			floor_material.set_shader_parameter("surge_age",-1.)
 			terminal_material.emission = Color(.025,.14,.19)
 			terminal_material.albedo_color = Color(.025,.14,.19)
 			extraction_material.emission = Color(.15,.54,.7)
 			extraction_material.emission_energy_multiplier = 1.8
 	if activation_age >= 0:
+		var previous_age := activation_age
 		activation_age += delta
+		if induction_enabled and previous_age < 3.:
+			floor_material.set_shader_parameter("surge_age",activation_age)
 		energy_material.set_shader_parameter("power",minf(1.0,activation_age*.7))
-		shockwave.visible = activation_age < 3.0
+		shockwave.visible = not induction_enabled and activation_age < 3.0
 		if shockwave.visible:
 			shockwave.scale = Vector3.ONE * (1.0+activation_age*9.0)
 			shock_material.albedo_color.a = maxf(0.0,1.0-activation_age/3.0)
-	for i in reactor_rings.size():
-		reactor_rings[i].rotation.z = sin(time*.3+i*.8)*.09
+	if induction_enabled:
+		# Bottom, middle, crown: one travelling charge front, then a steady run state.
+		var front := clampf(activation_age/1.8,0.,1.1)
+		energy_material.set_shader_parameter("front",front)
+		for i in winding_materials.size():
+			var coil_height := (reactor_rings[i].position.y-1.)/22.
+			var charge := smoothstep(coil_height-.06,coil_height+.02,front)
+			var crest := charge*(1.-smoothstep(coil_height+.02,coil_height+.18,front))
+			winding_materials[i].emission_energy_multiplier = .25+charge*3.5+crest*5.0
+	else:
+		for i in reactor_rings.size():
+			reactor_rings[i].rotation.z = sin(time*.3+i*.8)*.09
 	ice.emission_energy_multiplier = 1.8 + (1.5+sin(time*2)*.35 if current == 2 else 0.0)

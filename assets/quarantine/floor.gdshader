@@ -3,6 +3,8 @@ render_mode diffuse_burley, specular_schlick_ggx;
 uniform sampler2D color_map : source_color, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D normal_map : hint_normal, filter_linear_mipmap_anisotropic, repeat_enable;
 uniform sampler2D orm_map : filter_linear_mipmap_anisotropic, repeat_enable;
+// Negative while offline; visible only in exposed paving during the one-shot restart.
+uniform float surge_age = -1.;
 varying vec3 world_pos;
 void vertex(){ world_pos = (MODEL_MATRIX * vec4(VERTEX,1.0)).xyz; }
 float hash(vec2 p){ return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }
@@ -22,4 +24,9 @@ void fragment(){
  NORMAL_MAP=texture(normal_map,uv).rgb;
  NORMAL_MAP_DEPTH=.50*(1.0-coolant*.7);
  AO=clamp(orm.r*(1.0-seam*.4),0.0,1.0);
+ if (surge_age >= 0. && surge_age < 3.) {
+  float dist = abs(length(world_pos.xz) - (1.+9.*surge_age));
+  float wave = (1.-smoothstep(.15,1.8,dist))*(1.-smoothstep(1.7,3.,surge_age));
+  EMISSION=vec3(.035,.48,.76)*wave*(.16+1.65*seam+.25*coolant);
+ }
 }

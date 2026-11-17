@@ -1,5 +1,9 @@
 # Luna-Shot-FPS
 
+**体验新版：** 双击 [`launch-quarantine.command`](launch-quarantine.command) 直接游玩，或双击 [`launch-benchmark.command`](launch-benchmark.command) 观看实时演示。`launch.command` 和编辑器 F5 仍进入原 Compatibility 训练场；无需清缓存。
+
+[ML30 · 原生画质评估与反应塔上电对照](docs/validation/reactor-induction-v1/review.html)。`QUARANTINE_REACTOR=baseline` 可单独回看旧塔环与能量柱，不回退地形或玩法。
+
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
 ## ML29：保留山形的远景细分

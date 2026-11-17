@@ -1,0 +1,43 @@
+{
+	"atmosphere": "amber",
+	"bug_style": "refined",
+	"checks": [
+		{
+			"id": "actual_shot_0",
+			"ok": true
+		},
+		{
+			"id": "actual_shot_1",
+			"ok": true
+		},
+		{
+			"id": "actual_shot_2",
+			"ok": true
+		},
+		{
+			"id": "hitscan_kills_bug",
+			"ok": true
+		},
+		{
+			"id": "terminal_active",
+			"ok": true
+		},
+		{
+			"id": "walk_into_extraction_completes",
+			"ok": true
+		}
+	],
+	"directional_shadows": "high",
+	"engine": "4.7.2-stable (official)",
+	"fixed_camera": true,
+	"horizon": "ridges",
+	"inspection_light": true,
+	"platform": "macOS",
+	"render": {
+		"draw_calls": 790.0,
+		"objects": 13917.0,
+		"primitives": 5065019.0,
+		"video_memory": 1778925568.0
+	},
+	"renderer": "forward_plus"
+}

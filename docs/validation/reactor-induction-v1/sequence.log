@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+REACTOR CHECK offline true
+REACTOR CHECK three_unique_windings true
+REACTOR CHECK no_caps true
+REACTOR CHECK waiting_for_terminal true
+REACTOR CHECK lower_coil_first true
+REACTOR CHECK surface_not_floating_ring true
+REACTOR CHECK online true
+REACTOR CHECK no_second_ignition true
+REACTOR CHECK restart_clears_surge true
