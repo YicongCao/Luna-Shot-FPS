@@ -1,0 +1,63 @@
+{
+	"atmosphere": "amber",
+	"boundary": "Native frozen-camera comparison; inspection cameras outside the facility are diagnostic only. No offline rendering or added fill.",
+	"checks": {
+		"amber_preserved": true,
+		"backface_culling": true,
+		"camera_clears_all_surfaces_east": true,
+		"camera_clears_all_surfaces_inspection-left": true,
+		"camera_clears_all_surfaces_inspection-right": true,
+		"camera_clears_all_surfaces_overview": true,
+		"camera_clears_all_surfaces_west": true,
+		"camera_pose_east": true,
+		"camera_pose_inspection-left": true,
+		"camera_pose_inspection-right": true,
+		"camera_pose_overview": true,
+		"camera_pose_west": true,
+		"forward_plus": true,
+		"no_terrain_collision": true,
+		"saved_east": true,
+		"saved_inspection-left": true,
+		"saved_inspection-right": true,
+		"saved_overview": true,
+		"saved_west": true
+	},
+	"engine": "4.7.2-stable (official)",
+	"gpu": "Apple M6 (Apple9)",
+	"horizon": "ridges",
+	"renderer": "forward_plus",
+	"resolution": "(1920, 810)",
+	"shadows": "high",
+	"views": [
+		{
+			"at": "(-4.0, 3.4, 27.0)",
+			"fov": 60.0,
+			"name": "overview",
+			"target": "(0.0, 5.0, 0.0)"
+		},
+		{
+			"at": "(-29.0, 12.0, 22.0)",
+			"fov": 55.0,
+			"name": "west",
+			"target": "(-180.0, 9.0, -80.0)"
+		},
+		{
+			"at": "(29.0, 12.0, -22.0)",
+			"fov": 55.0,
+			"name": "east",
+			"target": "(180.0, 9.0, 80.0)"
+		},
+		{
+			"at": "(-110.0, 65.0, 80.0)",
+			"fov": 65.0,
+			"name": "inspection-left",
+			"target": "(-180.0, 5.0, -110.0)"
+		},
+		{
+			"at": "(-230.0, 65.0, -170.0)",
+			"fov": 65.0,
+			"name": "inspection-right",
+			"target": "(-150.0, 5.0, -70.0)"
+		}
+	]
+}

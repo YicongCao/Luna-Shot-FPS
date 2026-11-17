@@ -1,0 +1,33 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+LUNAR HORIZON CHECK named_single_mesh_child true
+LUNAR HORIZON CHECK no_collision_or_other_children true
+LUNAR HORIZON CHECK identity_transform true
+LUNAR HORIZON CHECK single_triangle_surface true
+LUNAR HORIZON CHECK triangle_budget_and_expected_coverage true
+LUNAR HORIZON CHECK indexed_compact_grid true
+LUNAR HORIZON CHECK complete_vertex_attributes true
+LUNAR HORIZON CHECK grid_at_most_2_5m true
+LUNAR HORIZON CHECK conservative_octave_sampling true
+LUNAR HORIZON CHECK flat_facility_apron true
+LUNAR HORIZON CHECK finite_bounded_vertices true
+LUNAR HORIZON CHECK unit_upward_normals true
+LUNAR HORIZON CHECK normals_match_cached_height_gradient true
+LUNAR HORIZON CHECK orthonormal_uv_tangent_frames true
+LUNAR HORIZON CHECK mesh_matches_public_height_sampler true
+LUNAR HORIZON CHECK baseline_8m_texture_scale true
+LUNAR HORIZON CHECK shared_vertices_without_seam_duplicates true
+LUNAR HORIZON CHECK indices_in_range true
+LUNAR HORIZON CHECK clockwise_nondegenerate_upward_faces true
+LUNAR HORIZON CHECK face_and_smooth_normals_agree false
+LUNAR HORIZON CHECK facility_and_clearance_hole_empty true
+LUNAR HORIZON CHECK every_triangle_uses_dense_grid true
+LUNAR HORIZON CHECK all_vertices_referenced true
+LUNAR HORIZON CHECK manifold_no_internal_cracks true
+LUNAR HORIZON CHECK original_600m_span true
+LUNAR HORIZON CHECK repeat_build_identical_arrays true
+LUNAR HORIZON CHECK independent_sampler_determinism true
+LUNAR HORIZON CHECK reuse_existing_regolith_textures true
+LUNAR HORIZON CHECK baseline_material_settings true
+LUNAR HORIZON RESULT checks=29 failures=1 vertices=227392 triangles=452608 min_face_normal_dot=0.91219574213028 bounds=[P: (-300.0, -19.08637, -300.0), S: (600.0, 62.30694, 600.0)] elapsed_ms=901
+Geometry-only headless result; native left/right culling, horizon silhouette, warm atmosphere and GPU cost remain unverified.

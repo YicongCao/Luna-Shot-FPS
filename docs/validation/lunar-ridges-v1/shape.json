@@ -1,0 +1,29 @@
+{
+	"boundary": "Height samples and radial silhouette from facility center; not pixel evidence, topology acceptance, or user visual approval.",
+	"checks": {
+		"baseline_frequency_preserved": true,
+		"baseline_gain_preserved": true,
+		"baseline_seed_preserved": true,
+		"height_rmse_below_2m": true,
+		"height_rmse_reduced_vs_smooth": true,
+		"silhouette_better_than_smooth": true,
+		"silhouette_rms_below_1deg": true
+	},
+	"height_rmse_m": {
+		"ridges": 1.26898926124772,
+		"smooth": 16.1006390438726
+	},
+	"max_height_delta_m": {
+		"ridges": 4.18016629353646,
+		"smooth": 52.0914575457573
+	},
+	"max_silhouette_delta_degrees": {
+		"ridges": 1.05292853262234,
+		"smooth": 7.38341818806597
+	},
+	"samples": 38692,
+	"silhouette_rms_degrees": {
+		"ridges": 0.377084358324157,
+		"smooth": 2.97918432113724
+	}
+}

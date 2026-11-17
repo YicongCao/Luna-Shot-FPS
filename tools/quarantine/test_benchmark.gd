@@ -33,7 +33,8 @@ func run() -> void:
 		var spot: SpotLight3D=luminaire.get_node("InspectionSpot")
 		mounted_light=luminaire.has_node("Housing") and luminaire.has_node("Diffuser") and spot.shadow_enabled and spot.light_volumetric_fog_energy==0 and luminaire.position.is_equal_approx(Vector3(-3,10.5,0))
 	check("inspection_light_has_fixed_physical_source",mounted_light)
-	var expected_horizon: String="refined" if OS.get_environment("QUARANTINE_HORIZON")=="refined" else "baseline"
+	var expected_horizon: String=OS.get_environment("QUARANTINE_HORIZON")
+	if expected_horizon not in ["baseline","refined"]: expected_horizon="ridges"
 	var expected_shadows: String="baseline" if OS.get_environment("QUARANTINE_SHADOWS")=="baseline" else "high"
 	check("selected_horizon_profile",world.horizon_style==expected_horizon)
 	check("selected_directional_shadow_profile",world.shadow_style==expected_shadows)

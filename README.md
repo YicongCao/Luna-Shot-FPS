@@ -2,11 +2,17 @@
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
+## ML29：保留山形的远景细分
+
+清剿与 Benchmark 默认使用保留旧山体种子、基础频率和主要起伏的新月面。仅移除最细两层噪声，并对陡峭转折局部细分，减少折面高光而非压平整体轮廓。`QUARANTINE_HORIZON=baseline` 回看原版；`QUARANTINE_HORIZON=refined` 保留ML28未发布的平滑候选。
+
+[同机位原生对照](docs/validation/lunar-ridges-v1/review.html) · [几何、性能与视觉取舍](docs/validation/lunar-ridges-v1/REPORT.md)。新增几何与首次生成有成本，重播复用网格；仍不以此宣称整体照片级完成。
+
 ## ML28：方向光软阴影修正与月面候选
 
 清剿与 Benchmark 默认提高方向光软阴影采样，减轻地面细密条纹，保留暖黄雾与柔和半影；`QUARANTINE_SHADOWS=baseline ./launch-benchmark.command` 回看旧采样档。高档有 GPU 成本，实测与边界见报告。
 
-新月面网格更平滑，但同时损失山脊起伏，**未替换默认远景**；仅用 `QUARANTINE_HORIZON=refined` 预览候选，不把几何测试通过当作美术升级。
+ML28平滑候选损失山脊起伏，**当时未替换默认远景**；仅用 `QUARANTINE_HORIZON=refined` 预览。当前默认是上方ML29保形版本，并非该候选。
 
 [原生分项对照](docs/validation/lunar-horizon-v1/review.html) · [验证、性能与取舍](docs/validation/lunar-horizon-v1/REPORT.md)
 

@@ -41,7 +41,8 @@ func run() -> void:
 	for shot in views:
 		var baseline_y: float=world.horizon_height(baseline_noise,shot.at.x,shot.at.z)
 		var refined_y: float=preload("res://scripts/quarantine/lunar_horizon.gd").sample_height(shot.at.x,shot.at.z)
-		checks["camera_clears_both_surfaces_"+shot.name]=shot.at.y>maxf(baseline_y,refined_y)+5
+		var ridges_y: float=preload("res://scripts/quarantine/lunar_ridges.gd").sample_height(shot.at.x,shot.at.z)
+		checks["camera_clears_all_surfaces_"+shot.name]=shot.at.y>maxf(maxf(baseline_y,refined_y),ridges_y)+5
 		player.position=shot.at-Vector3(0,1.65,0)
 		var d: Vector3=shot.target-player.camera.global_position
 		player.rotation.y=atan2(-d.x,-d.z)

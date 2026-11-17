@@ -1,0 +1,20 @@
+正在检查并导入项目资源……
+启动 Luna-Shot-FPS / benchmark
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+BENCHMARK CHECK real_hitscan_00 true
+BENCHMARK CHECK real_hitscan_01 true
+BENCHMARK CHECK real_hitscan_02 true
+BENCHMARK CHECK real_hitscan_03 true
+BENCHMARK CHECK real_hitscan_04 true
+BENCHMARK CHECK real_hitscan_05 true
+BENCHMARK CHECK real_hitscan_06 true
+BENCHMARK CHECK real_hitscan_07 true
+BENCHMARK CHECK real_hitscan_08 true
+BENCHMARK CHECK three_enemies_killed_by_nine_real_shots true
+BENCHMARK CHECK terminal_activated_by_three_second_input true
+BENCHMARK CHECK capsule_walk_completed_extraction true
+BENCHMARK RESULT docs/validation/lunar-ridges-v1/validation/performance/result.json
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

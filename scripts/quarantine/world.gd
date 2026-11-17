@@ -335,6 +335,10 @@ func build_reactor() -> void:
 	add_child(charge_particles)
 
 func build_horizon() -> void:
+	if OS.get_environment("QUARANTINE_HORIZON") not in ["baseline","refined"]:
+		horizon_style = "ridges"
+		preload("res://scripts/quarantine/lunar_ridges.gd").build(self)
+		return
 	if OS.get_environment("QUARANTINE_HORIZON") == "refined":
 		horizon_style = "refined"
 		preload("res://scripts/quarantine/lunar_horizon.gd").build(self)

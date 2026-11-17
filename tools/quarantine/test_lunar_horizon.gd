@@ -1,7 +1,8 @@
 extends SceneTree
 # Geometry-only: --headless --path . --script res://tools/quarantine/test_lunar_horizon.gd
 # Does not instantiate the mission or run native/GPU captures.
-const Horizon = preload("res://scripts/quarantine/lunar_horizon.gd")
+var Horizon: Script = preload("res://scripts/quarantine/lunar_horizon.gd")
+var ridges: bool = false
 var failures: int = 0
 var checks: int = 0
 
@@ -22,6 +23,9 @@ func run() -> void:
 		push_error("This geometry test must be launched with --headless.")
 		quit(1)
 		return
+	ridges = OS.get_environment("TEST_HORIZON_STYLE") == "ridges"
+	if ridges:
+		Horizon = preload("res://scripts/quarantine/lunar_ridges.gd")
 	var started: int = Time.get_ticks_msec()
 	var world: Node3D = Node3D.new()
 	var terrain: MeshInstance3D = Horizon.build(world)
@@ -37,8 +41,8 @@ func run() -> void:
 	var uvs: PackedVector2Array = data[Mesh.ARRAY_TEX_UV]
 	var indices: PackedInt32Array = data[Mesh.ARRAY_INDEX]
 	var triangle_count: int = indices.size() / 3
-	check("triangle_budget_and_expected_coverage", triangle_count == 113152 and triangle_count < 160000)
-	check("indexed_compact_grid", vertices.size() == 57120 and indices.size() > vertices.size() * 5)
+	check("triangle_budget_and_expected_coverage", (triangle_count >= 452608 and triangle_count < 700000) if ridges else (triangle_count == 113152 and triangle_count < 160000))
+	check("indexed_compact_grid", (vertices.size() >= 227392 if ridges else vertices.size() == 57120) and indices.size() > vertices.size() * 5)
 	check("complete_vertex_attributes", normals.size() == vertices.size() and uvs.size() == vertices.size() and tangents.size() == vertices.size() * 4)
 	check("grid_at_most_2_5m", Horizon.GRID_STEP <= 2.5 and is_equal_approx(Horizon.CELLS * Horizon.GRID_STEP, Horizon.SPAN))
 	var noise: FastNoiseLite = Horizon.create_sampler()
@@ -62,7 +66,7 @@ func run() -> void:
 		uv_match = uv_match and uvs[i].distance_to(Vector2(p.x, p.z) / 8.0) < 0.00001
 		unique[Vector2(p.x, p.z)] = true
 		if i % 113 == 0:
-			var step: float = Horizon.GRID_STEP
+			var step: float = Horizon.NORMAL_STEP if ridges else Horizon.GRID_STEP
 			var dx: float = (Horizon.sample_height(p.x + step, p.z, noise) - Horizon.sample_height(p.x - step, p.z, noise)) / (2.0 * step)
 			var dz: float = (Horizon.sample_height(p.x, p.z + step, noise) - Horizon.sample_height(p.x, p.z - step, noise)) / (2.0 * step)
 			gradient_match = gradient_match and n.dot(Vector3(-dx, 1.0, -dz).normalized()) > 0.99999
@@ -88,24 +92,32 @@ func run() -> void:
 	var used: Dictionary = {}
 	var edges: Dictionary = {}
 	var min_normal_dot: float = 1.0
+	var worst_face: Dictionary = {}
+	var angle_failures: int = 0
+	var projected_area: float = 0.0
 	for i in range(0, indices.size(), 3):
 		var a: Vector3 = vertices[indices[i]]
 		var b: Vector3 = vertices[indices[i + 1]]
 		var c: Vector3 = vertices[indices[i + 2]]
 		var face: Vector3 = (c - a).cross(b - a)
-		winding = winding and face.y > 0.0 and face.length_squared() > 0.0001
+		projected_area += face.y * .5
+		winding = winding and face.y > 0.0 and face.length_squared() > 0.000000000001
 		var min_x: float = minf(a.x, minf(b.x, c.x))
 		var max_x: float = maxf(a.x, maxf(b.x, c.x))
 		var min_z: float = minf(a.z, minf(b.z, c.z))
 		var max_z: float = maxf(a.z, maxf(b.z, c.z))
 		# No triangle's projected interior can enter the whole 80x80m opening.
 		hole_clear = hole_clear and (max_x <= -40.0 or min_x >= 40.0 or max_z <= -40.0 or min_z >= 40.0)
-		spacing = spacing and is_equal_approx(max_x - min_x, 2.5) and is_equal_approx(max_z - min_z, 2.5)
+		spacing = spacing and max_x - min_x <= Horizon.GRID_STEP and max_z - min_z <= Horizon.GRID_STEP
 		for j in 3:
 			var start: int = indices[i + j]
 			var end: int = indices[i + (j + 1) % 3]
 			used[start] = true
-			min_normal_dot = minf(min_normal_dot, face.normalized().dot(normals[start]))
+			var agreement: float = face.normalized().dot(normals[start])
+			if agreement < .98: angle_failures += 1
+			if agreement < min_normal_dot:
+				min_normal_dot = agreement
+				worst_face = {"a":a,"b":b,"c":c,"normal":normals[start],"face":face.normalized()}
 			var edge: Vector2i = Vector2i(mini(start, end), maxi(start, end))
 			edges[edge] = edges.get(edge, 0) + 1
 	var manifold: bool = true
@@ -121,11 +133,13 @@ func run() -> void:
 			var inner: bool = (absf(a.x) == 40.0 and a.x == b.x and maxf(absf(a.z), absf(b.z)) <= 40.0) or (absf(a.z) == 40.0 and a.z == b.z and maxf(absf(a.x), absf(b.x)) <= 40.0)
 			boundary_location = boundary_location and (outer or inner)
 	check("clockwise_nondegenerate_upward_faces", winding)
+	print("NORMAL DIAGNOSTIC corners_below_0.98=",angle_failures," worst=",worst_face)
 	check("face_and_smooth_normals_agree", min_normal_dot > 0.98)
 	check("facility_and_clearance_hole_empty", hole_clear)
+	check("projected_area_conserved",absf(projected_area-(600.0*600.0-80.0*80.0))<.001)
 	check("every_triangle_uses_dense_grid", spacing)
 	check("all_vertices_referenced", used.size() == vertices.size())
-	check("manifold_no_internal_cracks", manifold and boundary_location and boundary_count == 1088)
+	check("manifold_no_internal_cracks", manifold and boundary_location and (boundary_count >= 2176 if ridges else boundary_count == 1088))
 	var bounds: AABB = mesh.get_aabb()
 	check("original_600m_span", is_equal_approx(bounds.position.x, -300.0) and is_equal_approx(bounds.position.z, -300.0) and is_equal_approx(bounds.size.x, 600.0) and is_equal_approx(bounds.size.z, 600.0))
 	var repeat: Array = Horizon.build_mesh().surface_get_arrays(0)
@@ -137,6 +151,9 @@ func run() -> void:
 	var material: StandardMaterial3D = mesh.surface_get_material(0)
 	check("reuse_existing_regolith_textures", material.albedo_texture != null and material.normal_texture != null and material.albedo_texture.resource_path == Horizon.BASE_COLOR_PATH and material.normal_texture.resource_path == Horizon.NORMAL_PATH)
 	check("baseline_material_settings", material.albedo_color == Color(0.34, 0.38, 0.42) and is_equal_approx(material.roughness, 0.96) and material.normal_enabled and is_equal_approx(material.normal_scale, 0.55) and material.cull_mode == BaseMaterial3D.CULL_BACK and material.texture_filter == BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC)
+	if ridges:
+		var cached: MeshInstance3D = Horizon.build(world)
+		check("runtime_reuses_generated_mesh", cached.mesh == terrain.mesh)
 	world.free()
 	print("LUNAR HORIZON RESULT checks=", checks, " failures=", failures, " vertices=", vertices.size(), " triangles=", triangle_count, " min_face_normal_dot=", min_normal_dot, " bounds=", bounds, " elapsed_ms=", Time.get_ticks_msec() - started)
 	print("Geometry-only headless result; native left/right culling, horizon silhouette, warm atmosphere and GPU cost remain unverified.")

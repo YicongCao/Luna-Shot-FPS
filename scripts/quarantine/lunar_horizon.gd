@@ -29,16 +29,20 @@ static func create_sampler() -> FastNoiseLite:
 	return noise
 
 
-static func sample_height(x: float, z: float, noise: FastNoiseLite = null) -> float:
+static func sample_height(x: float, z: float, noise: FastNoiseLite = null, noise_amplitude: float = 1.0) -> float:
 	if noise == null:
 		noise = create_sampler()
 	# Retain the baseline's flat -2m apron and broad 70–170m terrain rise.
-	return -2.0 + smoothstep(70.0, 170.0, Vector2(x, z).length()) * (14.0 + noise.get_noise_2d(x, z) * 45.0)
+	return -2.0 + smoothstep(70.0, 170.0, Vector2(x, z).length()) * (14.0 + noise.get_noise_2d(x, z) * 45.0 * noise_amplitude)
 
 
-static func build_mesh() -> ArrayMesh:
-	var noise: FastNoiseLite = create_sampler()
-	var side: int = CELLS + 1
+static func build_mesh(noise: FastNoiseLite = null, grid_step: float = GRID_STEP, noise_amplitude: float = 1.0) -> ArrayMesh:
+	if noise == null:
+		noise = create_sampler()
+	var cells: int = roundi(SPAN / grid_step)
+	assert(is_equal_approx(cells * grid_step, SPAN))
+	assert(is_equal_approx(roundf(HOLE_HALF_SIZE / grid_step) * grid_step, HOLE_HALF_SIZE))
+	var side: int = cells + 1
 	var cache_side: int = side + 2
 	var heights: PackedFloat32Array = PackedFloat32Array()
 	heights.resize(cache_side * cache_side)
@@ -46,7 +50,7 @@ static func build_mesh() -> ArrayMesh:
 	# outer-edge normals use the same central difference as interior normals.
 	for z in cache_side:
 		for x in cache_side:
-			heights[z * cache_side + x] = sample_height((x - 1) * GRID_STEP - SPAN * 0.5, (z - 1) * GRID_STEP - SPAN * 0.5, noise)
+			heights[z * cache_side + x] = sample_height((x - 1) * grid_step - SPAN * 0.5, (z - 1) * grid_step - SPAN * 0.5, noise, noise_amplitude)
 
 	var vertices: PackedVector3Array = PackedVector3Array()
 	var normals: PackedVector3Array = PackedVector3Array()
@@ -57,15 +61,15 @@ static func build_mesh() -> ArrayMesh:
 	grid_indices.fill(-1)
 	for z in side:
 		for x in side:
-			var px: float = x * GRID_STEP - SPAN * 0.5
-			var pz: float = z * GRID_STEP - SPAN * 0.5
+			var px: float = x * grid_step - SPAN * 0.5
+			var pz: float = z * grid_step - SPAN * 0.5
 			# No unused vertices inside the 80x80m opening. The 64x66m facility
 			# has at least 7m clearance; boundary vertices themselves are retained.
 			if absf(px) < HOLE_HALF_SIZE and absf(pz) < HOLE_HALF_SIZE:
 				continue
 			var h: int = (z + 1) * cache_side + x + 1
-			var dx: float = (heights[h + 1] - heights[h - 1]) / (2.0 * GRID_STEP)
-			var dz: float = (heights[h + cache_side] - heights[h - cache_side]) / (2.0 * GRID_STEP)
+			var dx: float = (heights[h + 1] - heights[h - 1]) / (2.0 * grid_step)
+			var dz: float = (heights[h + cache_side] - heights[h - cache_side]) / (2.0 * grid_step)
 			grid_indices[z * side + x] = vertices.size()
 			vertices.append(Vector3(px, heights[h], pz))
 			normals.append(Vector3(-dx, 1.0, -dz).normalized())
@@ -75,12 +79,12 @@ static func build_mesh() -> ArrayMesh:
 			tangents.append_array(PackedFloat32Array([tangent.x, tangent.y, tangent.z, -1.0]))
 
 	var indices: PackedInt32Array = PackedInt32Array()
-	var hole_cells: int = int(2.0 * HOLE_HALF_SIZE / GRID_STEP)
-	indices.resize((CELLS * CELLS - hole_cells * hole_cells) * 6)
+	var hole_cells: int = int(2.0 * HOLE_HALF_SIZE / grid_step)
+	indices.resize((cells * cells - hole_cells * hole_cells) * 6)
 	var cursor: int = 0
-	for z in CELLS:
-		for x in CELLS:
-			var center: Vector2 = Vector2((x + 0.5) * GRID_STEP, (z + 0.5) * GRID_STEP) - Vector2.ONE * SPAN * 0.5
+	for z in cells:
+		for x in cells:
+			var center: Vector2 = Vector2((x + 0.5) * grid_step, (z + 0.5) * grid_step) - Vector2.ONE * SPAN * 0.5
 			if absf(center.x) < HOLE_HALF_SIZE and absf(center.y) < HOLE_HALF_SIZE:
 				continue
 			var a: int = grid_indices[z * side + x]
@@ -108,7 +112,7 @@ static func build_mesh() -> ArrayMesh:
 	return mesh
 
 
-static func build(world: Node3D) -> MeshInstance3D:
+static func build(world: Node3D, mesh: ArrayMesh = null) -> MeshInstance3D:
 	var mountain: StandardMaterial3D = StandardMaterial3D.new()
 	# Same tint/texture scale/roughness/normal strength as the old horizon.
 	# Warm art direction continues to come from the unchanged world atmosphere.
@@ -122,7 +126,7 @@ static func build(world: Node3D) -> MeshInstance3D:
 	mountain.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS_ANISOTROPIC
 	var terrain: MeshInstance3D = MeshInstance3D.new()
 	terrain.name = "ProceduralLunarHorizon"
-	terrain.mesh = build_mesh()
+	terrain.mesh = build_mesh() if mesh == null else mesh
 	terrain.mesh.surface_set_material(0, mountain)
 	world.add_child(terrain)
 	return terrain
