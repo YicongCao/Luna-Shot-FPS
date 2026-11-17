@@ -1,0 +1,97 @@
+{
+	"boundary": "Actual native hitscan and architecture occlusion. Hit inspection holds effect age at 90ms; death inspection at 380ms. Not an unassisted playthrough or physical fracture simulation.",
+	"checks": [
+		{
+			"id": "locked_hologram_has_no_enabled_action",
+			"ok": false
+		},
+		{
+			"id": "first_real_shot",
+			"ok": true
+		},
+		{
+			"id": "damage_still_one_hp_per_hit",
+			"ok": true
+		},
+		{
+			"id": "effect_uses_authoritative_hit_point",
+			"ok": true
+		},
+		{
+			"id": "local_plate_damage_persists",
+			"ok": true
+		},
+		{
+			"id": "arc_budget_bounded",
+			"ok": true
+		},
+		{
+			"id": "damage_effect_obeys_true_pause",
+			"ok": true
+		},
+		{
+			"id": "additional_real_shot_0",
+			"ok": true
+		},
+		{
+			"id": "additional_real_shot_1",
+			"ok": true
+		},
+		{
+			"id": "three_hits_one_death",
+			"ok": true
+		},
+		{
+			"id": "effects_do_not_allocate_nodes_per_hit",
+			"ok": true
+		},
+		{
+			"id": "residual_arcs_expire",
+			"ok": true
+		},
+		{
+			"id": "dead_core_stays_unpowered",
+			"ok": true
+		},
+		{
+			"id": "wall_prevents_enemy_damage_and_electrics",
+			"ok": true
+		},
+		{
+			"id": "objective_front_projects_inside",
+			"ok": true
+		},
+		{
+			"id": "objective_right_clamps_to_right_edge",
+			"ok": true
+		},
+		{
+			"id": "objective_behind_has_edge_direction",
+			"ok": true
+		},
+		{
+			"id": "aft_ground_target_never_points_into_sky",
+			"ok": true
+		},
+		{
+			"id": "ready_hologram_owns_interaction_prompt",
+			"ok": true
+		},
+		{
+			"id": "hold_keeps_item_incomplete_until_committed",
+			"ok": true
+		},
+		{
+			"id": "release_resets_hologram_action",
+			"ok": true
+		},
+		{
+			"id": "activated_terminal_item_is_one",
+			"ok": true
+		},
+		{
+			"id": "terminal_to_extraction_stage",
+			"ok": true
+		}
+	]
+}

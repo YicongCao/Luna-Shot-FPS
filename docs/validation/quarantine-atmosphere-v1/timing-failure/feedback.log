@@ -1,0 +1,28 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+FEEDBACK CHECK locked_hologram_has_no_enabled_action false
+FEEDBACK CHECK first_real_shot true
+FEEDBACK CHECK damage_still_one_hp_per_hit true
+FEEDBACK CHECK effect_uses_authoritative_hit_point true
+FEEDBACK CHECK local_plate_damage_persists true
+FEEDBACK CHECK arc_budget_bounded true
+FEEDBACK CHECK damage_effect_obeys_true_pause true
+FEEDBACK CHECK additional_real_shot_0 true
+FEEDBACK CHECK additional_real_shot_1 true
+FEEDBACK CHECK three_hits_one_death true
+FEEDBACK CHECK effects_do_not_allocate_nodes_per_hit true
+FEEDBACK CHECK residual_arcs_expire true
+FEEDBACK CHECK dead_core_stays_unpowered true
+FEEDBACK CHECK wall_prevents_enemy_damage_and_electrics true
+FEEDBACK CHECK objective_front_projects_inside true
+FEEDBACK CHECK objective_right_clamps_to_right_edge true
+FEEDBACK CHECK objective_behind_has_edge_direction true
+FEEDBACK CHECK aft_ground_target_never_points_into_sky true
+FEEDBACK CHECK ready_hologram_owns_interaction_prompt true
+FEEDBACK CHECK hold_keeps_item_incomplete_until_committed true
+FEEDBACK CHECK release_resets_hologram_action true
+FEEDBACK CHECK activated_terminal_item_is_one true
+FEEDBACK CHECK terminal_to_extraction_stage true
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

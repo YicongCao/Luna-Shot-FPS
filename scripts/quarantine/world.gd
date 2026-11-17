@@ -26,6 +26,7 @@ var weapon_bloom: CanvasLayer
 var sun_visibility: float = 1.0
 var sun_target: float = 1.0
 var shadow_clock: float = 0.0
+var atmosphere_style: String = "clear"
 
 func _ready() -> void:
 	steel = industrial_material(Color(.23,.26,.28), .82, .41)
@@ -434,6 +435,7 @@ func setup_environment() -> void:
 		environment.volumetric_fog_length = 90
 		environment.volumetric_fog_anisotropy = .45
 		environment.volumetric_fog_ambient_inject = .18
+	atmosphere_style = preload("res://scripts/quarantine/atmosphere.gd").apply(self)
 	var world_environment: WorldEnvironment = WorldEnvironment.new()
 	world_environment.name = "Environment"
 	world_environment.environment = environment

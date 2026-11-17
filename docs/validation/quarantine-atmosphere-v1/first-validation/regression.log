@@ -1,0 +1,5 @@
+./tools/validate_quarantine.sh:17: command not found: rg
+./tools/validate_quarantine.sh:20: command not found: rg
+./tools/validate_quarantine.sh:23: command not found: rg
+./tools/validate_quarantine.sh:26: command not found: rg
+Quarantine validation finished. See docs/validation/quarantine-atmosphere-v1/validation/regression; visual acceptance remains separate.

@@ -35,6 +35,7 @@ func run() -> void:
 	root.add_child(mission)
 	await frames(90)
 	report.renderer = RenderingServer.get_current_rendering_method()
+	report.atmosphere = mission.get_node("World").atmosphere_style
 	var player: Node = mission.player
 	player.qa_mode = true
 	for bug in mission.bugs: bug.set_physics_process(false)

@@ -2,6 +2,12 @@
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
+## 当前氛围：ML25 暖黄体积雾
+
+清剿关卡与 Benchmark 默认恢复暖黄、灰金色的末世氛围，同时保留最新结构、图标 HUD、全息终端与电击反馈。`QUARANTINE_ATMOSPHERE=clear ./launch-benchmark.command` 可查看 ML24 清淡光照对照，不回退玩法或资产。
+
+[同机位原生对照](docs/validation/quarantine-atmosphere-v1/review.html) · [参数与验证](docs/validation/quarantine-atmosphere-v1/REPORT.md)
+
 ## ML24：实机 Benchmark 与全息终端
 
 双击 **`launch-benchmark.command`**：约52秒的实时引擎演示，包含设施镜头、T-Bug交战、终端上电和撤离；不是预录视频。结束后 **R重播 / Enter进入可玩关卡 / Esc退出**。可传入 `--fullscreen`。

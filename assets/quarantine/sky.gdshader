@@ -1,12 +1,14 @@
 shader_type sky;
 uniform vec3 sun_direction = vec3(.3,.18,-.9);
+uniform float amber_haze = 0.0;
 float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453);}
 float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x),f.y);}
 float fbm(vec2 p){return noise(p)*.57+noise(p*2.03+7.)*.28+noise(p*4.11-3.)*.15;}
 void sky(){
  vec3 d=normalize(EYEDIR);
  float horizon=exp(-abs(d.y)*14.0);
- vec3 col=mix(vec3(.002,.004,.009),vec3(.065,.105,.14),horizon*.7);
+ vec3 horizon_color=mix(vec3(.065,.105,.14),vec3(.12,.078,.025),amber_haze);
+ vec3 col=mix(vec3(.002,.004,.009),horizon_color,horizon*.7);
  float s=max(dot(d,normalize(sun_direction)),0.0);
  col+=vec3(1.0,.55,.20)*(pow(s,120.0)*.18+pow(s,4000.0)*12.0);
  // Distant Earth: a procedural sphere, not an image or a painted scene.

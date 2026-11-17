@@ -30,7 +30,8 @@ func run() -> void:
 	player.position=Vector3(0,.05,-20.2)
 	await frames(4)
 	aim(Vector3(0,2.14,-21.94))
-	await frames(35)
+	# Visibility is sampled at 10 Hz and fades over time; frame counts vary with GPU speed.
+	await create_timer(1.0).timeout
 	var hologram: Node=mission.get_node("World/HolographicTerminal")
 	check("locked_hologram_has_no_enabled_action",hologram.readable and not hologram.panel.can_interact)
 	await capture("00-terminal-locked")
@@ -123,7 +124,8 @@ func run() -> void:
 	player.position=Vector3(0,.05,-20.2)
 	await frames(4)
 	aim(Vector3(0,2.14,-21.94))
-	await frames(35)
+	# Visibility is sampled at 10 Hz and fades over time; frame counts vary with GPU speed.
+	await create_timer(1.0).timeout
 	check("ready_hologram_owns_interaction_prompt",hologram.readable and hologram.panel.can_interact and mission.hud._terminal_panel_readable())
 	await capture("07-terminal-E")
 	Input.action_press("interact")
