@@ -60,8 +60,7 @@ static func build(w: Node3D) -> void:
 		w.box("doorIndicator",Vector3(side*3.45,4.5,-30.42),Vector3(.045,1.8,.03),lamp)
 	w.box("doorHeader",Vector3(0,7.5,-30.87),Vector3(7.2,.55,.78),white)
 	w.box("doorThreshold",Vector3(0,.03,-30.5),Vector3(6.7,.06,1.3),w.steel)
-	w.text("REACTOR ACCESS   /   AUTHORIZED PERSONNEL",Vector3(0,7.49,-30.46),34,Color(.11,.16,.18),.004)
-	w.text("03",Vector3(0,5.1,-30.48),110,Color(.57,.63,.61),.009)
+	w.sign_icon("lock",Vector3(0,5.1,-30.48),.9,Color(.57,.63,.61))
 	# Terminal feet, grips, service connectors and a routed cable bundle establish scale.
 	for x in [-.70,.70]:
 		for z in [-22.0,-22.8]:
@@ -74,11 +73,10 @@ static func build(w: Node3D) -> void:
 		var x: float = -.12+i*.08
 		w.beam(Vector3(x,.04,-23),Vector3(x,.04,-30.4),.024,rubber)
 		w.beam(Vector3(x,.04,-23),Vector3(x,.4,-22.8),.024,rubber)
-	w.text("SELENE POWER SYSTEMS\nISOLATION UNIT  03.21",Vector3(0,.70,-22.135),20,Color(.57,.63,.65),.0028)
 	# Discreet maintenance labels anchor a human scale, no oversized floating prompts.
 	for side in [-1,1]:
 		w.box("safetyPlaque",Vector3(side*5,1.6,-30.87),Vector3(1.4,.60,.06),white)
-		w.text("DANGER\nHIGH VOLTAGE",Vector3(side*5,1.6,-30.83),25,Color(.17,.13,.08),.0036)
+		w.sign_icon("bolt",Vector3(side*5,1.6,-30.83),.48,Color(.17,.13,.08))
 	# Physical emitter housings on existing guide strips soften the digital-line appearance.
 	for x in [-3.75,3.75]:
 		for z in range(-28,29,8):

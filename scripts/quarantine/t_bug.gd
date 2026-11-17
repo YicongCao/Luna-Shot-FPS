@@ -23,6 +23,8 @@ var legs: Array[Node3D] = []
 var core_material: StandardMaterial3D
 var _avoid_side: float = 1.0
 var _avoid_left: float = 0.0
+var plates: Array[MeshInstance3D] = []
+var electrical_damage: Node3D
 
 func _ready() -> void:
 	collision_layer = 4
@@ -41,6 +43,11 @@ func _ready() -> void:
 	collider.position.y = 0.45
 	add_child(collider)
 	_build_model()
+	electrical_damage = Node3D.new()
+	electrical_damage.name = "ElectricalDamage"
+	electrical_damage.set_script(preload("res://scripts/quarantine/bug_damage.gd"))
+	electrical_damage.bug = self
+	model.add_child(electrical_damage)
 
 func _material(color: Color, metallic: float = 0.0) -> StandardMaterial3D:
 	var material: StandardMaterial3D = StandardMaterial3D.new()
@@ -97,6 +104,7 @@ func _build_model() -> void:
 				Vector3(float(side) * 0.21, 0.57, -0.27 + float(segment) * 0.3),
 				Vector3(0.38, 0.27, 0.28), pale if segment == 1 else shell)
 			plate.rotation.z = float(side) * -0.18
+			plates.append(plate)
 	_ellipsoid(model, Vector3(0, 0.44, -0.51), Vector3(0.43, 0.3, 0.3), shell)
 	for side: int in [-1, 1]:
 		_ellipsoid(model, Vector3(float(side) * 0.14, 0.49, -0.65), Vector3(0.08, 0.07, 0.06), core_material)
@@ -117,6 +125,10 @@ func _build_model() -> void:
 			_strut(leg, knee, foot, 0.029, dark)
 			_ellipsoid(leg, knee, Vector3.ONE * 0.12, shell)
 			_ellipsoid(leg, foot, Vector3(0.13, 0.06, 0.12), pale)
+
+func show_electrical_hit(point: Vector3, normal: Vector3) -> void:
+	# Presentation only; authoritative health/death stays in register_hit().
+	electrical_damage.hit(point,normal)
 
 func register_hit() -> bool:
 	if dead or not is_instance_valid(mission) or bool(mission.get("paused")) or int(mission.get("stage")) >= 3:

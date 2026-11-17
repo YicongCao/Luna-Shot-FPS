@@ -23,6 +23,7 @@ var total_bugs: int = 8
 var objective_text: String = ""
 var interact_hint: String = ""
 var progress: float = 0.0
+var terminal_completed: bool = false
 var elapsed: float = 0.0
 var hit_flash: float = 0.0
 var damage_flash: float = 0.0
@@ -114,13 +115,25 @@ func _update_activation(delta: float, held: bool) -> void:
 	if paused or stage != ACTIVATE:
 		return
 	# Full 3D distance also prevents interaction from the overhead walkway.
-	if not held or player.global_position.distance_to(_marker("Terminal")) > 3.0:
+	if not held or not can_use_terminal():
 		progress = 0.0
 		return
 	progress = minf(1.0, progress + maxf(0.0, delta) / ACTIVATION_SECONDS)
 	if progress >= 0.99999:
 		progress = 1.0
+		terminal_completed = true
 		stage = EXTRACT
+
+func can_use_terminal() -> bool:
+	if stage != ACTIVATE or paused or not is_instance_valid(player): return false
+	var base: Vector3 = _marker("Terminal")
+	if player.global_position.distance_to(base)>3.0 or player.global_position.z<base.z+.35: return false
+	var target: Vector3 = base+Vector3(0,2.14,.06)
+	var camera: Camera3D = player.camera
+	if (-camera.global_basis.z).dot((target-camera.global_position).normalized()) < .72: return false
+	var query: PhysicsRayQueryParameters3D = PhysicsRayQueryParameters3D.create(camera.global_position,target,1,[player.get_rid()])
+	var hit: Dictionary = get_world_3d().direct_space_state.intersect_ray(query)
+	return hit.is_empty() or hit.get("collider")==get_node("World/TerminalCollision")
 
 func _inside_extraction() -> bool:
 	var offset: Vector3 = player.global_position - _marker("Extraction")
@@ -153,8 +166,8 @@ func _update_objective() -> void:
 				interact_hint = "终端锁定 · 先清除全部 T-Bug"
 		ACTIVATE:
 			objective_text = "前往北侧终端 · 恢复工厂控制"
-			if player.global_position.distance_to(_marker("Terminal")) <= 3.0:
-				interact_hint = "按住 E 激活终端 · 3 秒"
+			if can_use_terminal():
+				interact_hint = "E"
 		EXTRACT:
 			objective_text = "控制已恢复 · 返回南侧圆形撤离区"
 		COMPLETE:
@@ -215,6 +228,7 @@ func restart() -> void:
 	kills = 0
 	total_bugs = BUG_STARTS.size()
 	progress = 0.0
+	terminal_completed = false
 	elapsed = 0.0
 	hit_flash = 0.0
 	damage_flash = 0.0

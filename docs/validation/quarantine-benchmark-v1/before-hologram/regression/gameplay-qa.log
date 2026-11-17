@@ -1,0 +1,47 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PASS: real scene starts CLEAR with eight T-Bugs
+PASS: existing player/weapon scene instantiated
+PASS: player uses world Spawn marker
+PASS: TBug01 spawns clear of actual facility solids
+PASS: TBug02 spawns clear of actual facility solids
+PASS: TBug03 spawns clear of actual facility solids
+PASS: TBug04 spawns clear of actual facility solids
+PASS: TBug05 spawns clear of actual facility solids
+PASS: TBug06 spawns clear of actual facility solids
+PASS: TBug07 spawns clear of actual facility solids
+PASS: TBug08 spawns clear of actual facility solids
+PASS: terminal cannot activate before clearance
+PASS: bug collision layers match rifle/player contract
+PASS: first hit accepted
+PASS: two hits do not kill
+PASS: third hit kills
+PASS: corpse ignores further hits and emits death/scores once
+PASS: duplicate death cannot score; corpse has no collisions
+PASS: nearby unobstructed player is attackable
+PASS: wall blocks contact damage via physics LOS
+PASS: wall prevents actual attack damage
+PASS: player above bug cannot be bitten through bridge
+PASS: visible close attack applies damage
+PASS: attack cooldown prevents repeated frame damage
+PASS: ESC pause freezes tree/player/enemies
+PASS: deferred rifle effect is also paused
+PASS: paused mission rejects damage and elapsed time
+PASS: death enters FAILED and stops simulation
+PASS: resume cannot bypass FAILED state
+PASS: F5 restarts from FAILED
+PASS: restart resets ammo, score and exactly eight live enemies
+PASS: F5 works while explicitly paused
+PASS: all eight kills unlock ACTIVATE
+PASS: remote terminal activation is rejected
+PASS: extraction before activation cannot complete
+PASS: hold E accumulates three-second progress
+PASS: releasing E resets uninterrupted hold
+PASS: leaving interaction radius resets hold
+PASS: three-second hold enters EXTRACT
+PASS: overhead position does not trigger ground extraction
+PASS: outside extraction circle cannot complete
+PASS: entering south circle completes and freezes mission
+PASS: COMPLETE is terminal until restart
+PASS: F5 also restarts completed mission
+QUARANTINE QA: 44 checks, 0 failures. Direct-call/teleport logic and physics LOS only; no visual/playthrough claim.

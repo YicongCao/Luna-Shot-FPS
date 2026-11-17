@@ -16,7 +16,6 @@ var amber: StandardMaterial3D
 var ice: StandardMaterial3D
 var red: StandardMaterial3D
 var batches: Dictionary = {}
-var terminal_label: Label3D
 var activation_age: float = -1.0
 var energy_column: MeshInstance3D
 var energy_material: ShaderMaterial
@@ -83,6 +82,8 @@ func load_facility() -> void:
 	# (30,6) is an empty outer equipment slot, outside the x=26 perimeter route.
 	facility.get_node("Facility/B11").position = Vector3(30,0,6)
 	add_child(facility)
+	# Mission-instance labels only; never edit shared meshes, baked textures or training.
+	for label in facility.find_children("*","Label3D",true,false): label.hide()
 	for n in ["BoundaryWest", "BoundaryEast", "BoundaryNorth", "BoundarySouth"]:
 		var boundary: Node3D = facility.get_node(n)
 		for mesh in boundary.find_children("*", "MeshInstance3D", true, false):
@@ -135,18 +136,18 @@ func beam(a: Vector3, b: Vector3, radius: float, mat: Material) -> void:
 	var basis: Basis = Basis(x,direction*a.distance_to(b),x.cross(direction).normalized())
 	batches[key].poses.append(Transform3D(basis,(a+b)*.5))
 
-func text(value: String, pos: Vector3, font_size: int, tint: Color, pixel: float = .009) -> Label3D:
-	var label: Label3D = Label3D.new()
-	label.text = value
-	label.font_size = font_size
-	label.pixel_size = pixel
-	label.modulate = tint
-	label.outline_size = 0
-	label.position = pos
-	label.no_depth_test = false
-	label.shaded = true
-	add_child(label)
-	return label
+func sign_icon(kind: String, pos: Vector3, size: float, tint: Color, lit: bool = false, yaw: float = 0.0) -> MeshInstance3D:
+	var icon: MeshInstance3D = MeshInstance3D.new()
+	icon.name = "Sign_"+kind
+	var quad: QuadMesh = QuadMesh.new()
+	quad.size = Vector2.ONE*size
+	icon.mesh = quad
+	icon.material_override = load("res://scripts/quarantine/pictograms.gd").material_for(kind,tint,lit)
+	icon.position = pos
+	icon.rotation.y = yaw
+	icon.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	add_child(icon)
+	return icon
 
 func fixture(pos: Vector3, color: Color, energy: float, range_m: float, shadow: bool = false) -> void:
 	var lamp: OmniLight3D = OmniLight3D.new()
@@ -205,9 +206,7 @@ func build_enclosure() -> void:
 		for p in range(-8,9,2):
 			box("bulkheadSeam",Vector3(x+p,5.1,-31.46),Vector3(.04,9.8,.04),steel)
 	box("centerHeader",Vector3(0,9,-32),Vector3(7,2.6,1.2),steel)
-	text("SELENE",Vector3(0,9.1,-31.32),84,Color(.78,.86,.9),.018)
-	text("03   /   POWER CONVERSION",Vector3(-12,6.8,-31.44),38,Color(.59,.70,.77),.012)
-	text("CAUTION   ·   CONTAINMENT",Vector3(12,6.8,-31.44),34,Color(.93,.47,.19),.012)
+	sign_icon("bolt",Vector3(0,9.1,-31.32),1.7,Color(.78,.86,.9))
 	# Long narrow service lights establish routes, not random neon everywhere.
 	for x in [-3.75,3.75]:
 		for z in range(-28,29,8):
@@ -224,8 +223,8 @@ func build_terminal() -> void:
 	terminal_material = emissive(Color(.025,.14,.19),.8)
 	box("consoleBase",Vector3(0,.25,-22.4),Vector3(1.8,.5,1.2),steel)
 	box("consoleBody",Vector3(0,.90,-22.5),Vector3(1.4,1.2,.7),dark)
-	box("consoleFrame",Vector3(0,1.53,-22.3),Vector3(1.65,.82,.18),steel)
-	box("consoleScreen",Vector3(0,1.53,-22.195),Vector3(1.38,.57,.025),terminal_material)
+	box("consoleFrame",Vector3(0,1.53,-22.18),Vector3(1.65,.82,.18),steel)
+	box("consoleProjectorSlot",Vector3(0,1.60,-22.0725),Vector3(1.18,.035,.025),terminal_material)
 	for x in [-.73,.73]:
 		box("consoleRail",Vector3(x,.96,-22.1),Vector3(.06,.78,.08),amber)
 	box("consolePlaque",Vector3(0,2.16,-22.22),Vector3(1.9,.48,.10),dark)
@@ -234,13 +233,15 @@ func build_terminal() -> void:
 		for y in [.6,.75,.9,1.05]:
 			box("consoleVent",Vector3(side*.715,y,-22.5),Vector3(.035,.045,.42),steel)
 	for x in [-.48,-.24,0.0,.24,.48]:
-		box("consoleKeys",Vector3(x,1.15,-22.115),Vector3(.10,.04,.03),steel)
-	terminal_label = text("ISOLATION CONTROL\nPURGE REQUIRED",Vector3(0,2.16,-22.155),26,Color(.76,.84,.87),.0038)
-	terminal_label.shaded = false
-	var screen_text: Label3D = text("MANUAL OVERRIDE\n[ E ]   HOLD  /  03 SEC",Vector3(0,1.53,-22.17),26,Color(.62,.86,.91),.0032)
-	screen_text.shaded = false
+		box("consoleKeys",Vector3(x,1.15,-22.04),Vector3(.10,.04,.03),steel)
+	# One projected interaction surface replaces the duplicated status/power signs.
+	var hologram: Node3D = Node3D.new()
+	hologram.name = "HolographicTerminal"
+	hologram.set_script(preload("res://scripts/quarantine/terminal_hologram.gd"))
+	add_child(hologram)
 	# Actual solid pedestal; interaction stands in front at z=-20.
 	var body: StaticBody3D = StaticBody3D.new()
+	body.name = "TerminalCollision"
 	body.position = Vector3(0,.9,-22.5)
 	var collision: CollisionShape3D = CollisionShape3D.new()
 	var shape: BoxShape3D = BoxShape3D.new()
@@ -248,11 +249,7 @@ func build_terminal() -> void:
 	collision.shape = shape
 	body.add_child(collision)
 	add_child(body)
-	box("consoleTaskHousing",Vector3(0,2.58,-22.30),Vector3(.86,.14,.28),dark)
-	box("consoleTaskLens",Vector3(0,2.50,-22.23),Vector3(.70,.02,.12),emissive(Color(.82,.89,1),2.0))
-	beam(Vector3(-.32,2.3,-22.3),Vector3(-.32,2.58,-22.3),.025,steel)
-	beam(Vector3(.32,2.3,-22.3),Vector3(.32,2.58,-22.3),.025,steel)
-	fixture(Vector3(0,2.43,-22.02),Color(.72,.83,1),1.2,4,true)
+	fixture(Vector3(0,1.65,-21.95),Color(.25,.72,.92),.7,3,true)
 
 func build_extraction() -> void:
 	extraction_material = emissive(Color(.15,.54,.7),1.8)
@@ -260,8 +257,7 @@ func build_extraction() -> void:
 		box("exitPost",Vector3(x,2.5,31.4),Vector3(.6,5,1),steel)
 		box("exitStrip",Vector3(x,2.5,30.86),Vector3(.12,3.8,.05),extraction_material)
 	box("exitLintel",Vector3(0,5,31.4),Vector3(6.6,.7,1),steel)
-	var label: Label3D = text("AIRLOCK  /  01",Vector3(0,4.95,30.82),43,Color(.72,.84,.9),.009)
-	label.rotation.y = PI
+	sign_icon("exit",Vector3(0,4.95,30.82),.57,Color(.72,.84,.9),true,PI)
 	for i in 48:
 		var angle: float = TAU*float(i)/48
 		box("extractRing",Vector3(cos(angle)*2.6,.031,27+sin(angle)*2.6),Vector3(.24,.018,.055),extraction_material,-angle)
@@ -526,7 +522,6 @@ func _process(delta: float) -> void:
 			terminal_material.albedo_color = Color(.1,.9,.65)
 			extraction_material.emission = Color(.1,1,.6)
 			extraction_material.emission_energy_multiplier = 5
-			terminal_label.text = "GRID SYNCHRONIZED\nPROCEED TO AIRLOCK 01"
 		else:
 			activation_age = -1.0
 			energy_column.visible = false
@@ -534,7 +529,6 @@ func _process(delta: float) -> void:
 			shockwave.visible = false
 			terminal_material.emission = Color(.025,.14,.19)
 			terminal_material.albedo_color = Color(.025,.14,.19)
-			terminal_label.text = "ISOLATION CONTROL\nPURGE REQUIRED"
 			extraction_material.emission = Color(.15,.54,.7)
 			extraction_material.emission_energy_multiplier = 1.8
 	if activation_age >= 0:

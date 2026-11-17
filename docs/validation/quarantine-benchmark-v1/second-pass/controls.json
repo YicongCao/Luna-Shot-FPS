@@ -1,0 +1,45 @@
+{
+	"boundary": "Full live reel, then actual R/ENTER/ESC events. Second result screen invoked directly only for menu transition test.",
+	"checks": [
+		{
+			"id": "full_reel_finishes",
+			"ok": true
+		},
+		{
+			"id": "all_reel_checks_pass",
+			"ok": true
+		},
+		{
+			"id": "pixel_resolution_not_logical_canvas",
+			"ok": true
+		},
+		{
+			"id": "R_reloads_benchmark",
+			"ok": true
+		},
+		{
+			"id": "replay_unpauses_scene",
+			"ok": true
+		},
+		{
+			"id": "ENTER_loads_normal_playable_mission",
+			"ok": true
+		},
+		{
+			"id": "play_has_normal_input_and_health",
+			"ok": true
+		},
+		{
+			"id": "play_accepts_actual_movement_input",
+			"ok": true
+		},
+		{
+			"id": "normal_mission_ESC_pauses",
+			"ok": true
+		},
+		{
+			"id": "normal_mission_ESC_resumes",
+			"ok": true
+		}
+	]
+}

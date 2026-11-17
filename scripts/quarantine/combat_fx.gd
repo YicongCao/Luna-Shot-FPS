@@ -141,6 +141,9 @@ func _on_shot(_hit: bool, _distance: float) -> void:
 	if normal.length_squared() < 0.001:
 		normal = Vector3.UP
 	normal = normal.normalized()
+	var collider: Object = impact.get("collider")
+	if _hit and is_instance_valid(collider) and collider.has_method("show_electrical_hit"):
+		collider.call("show_electrical_hit",point,normal)
 	# Read the authoritative impact, never cast a different ray or chase a target.
 	var location: Vector3 = point + normal * 0.025
 	var sparks: CPUParticles3D = _sparks[_cursor]

@@ -5,6 +5,8 @@
 Avoid unnecessary secondary labels and descriptions. Let the layout do the explaining.
 
 避免不必要的次要标签和描述，让布局本身来传达信息。不要在 UI 上添加口号式 Slogan；只保留必要的任务信息、状态、操作提示与功能文案。
+场景中避免裸 text；英文标牌优先使用安装在实体牌面/设备上的抽象功能图标，而非悬浮文字。HUD 同样图标优先，用数字、形状与进度传达状态，降低阅读成本；必要按键和功能菜单保留简短文案，不以难懂的图标牺牲操作可理解性。
+HUD 任务进度显示已完成/总 items 数量（如8/8、0/1），不显示百分比；按住交互可使用时长和无百分比填充反馈。相同终端不要重复相同状态/电源图标。以目标发现、条件理解、唯一主操作、结果确认、下一步引导检查交互；必要引导可放在设备投射的有承载面全息UI上，保留简短功能文案而非装饰性说明。
 
 独立 Godot 4.7 工程；不要复制 Luna-Shot-Demo / No-Art-FPS 运行时代码或美术资产。
 训练场基线范围：一张 64×66 m 月球能源设施训练场、一个玩家、固定靶、一把分件 LS01 枪械（内部 lc01 路径兼容）。原训练场无回合、刷怪、关卡流程。用户于2026-11-17另授权ML22独立清剿/终端/撤离小样，见文末；不要将其流程注入旧训练场。
@@ -56,3 +58,5 @@ ML15 B1/B2/C/D/E 已完成第二轮精修并发布默认路径；Tripo 5次共30
 ML16 地面已从8×8m样板推广至全场，源tools/ground_surface与art_source/environment/ground-v1，运行时assets/environment/ground_v1、scripts/ground_surface.gd。launch-ground-sample.command可玩样板，B前后切换；GROUND_BASELINE=1恢复ML15地面。2×4m重复铺装、三套2K材质、40组A座片及8个检修盖，不改变原碰撞平面/布局。用户现已选择默认全铺装，运行时使用全黑soil_mask；历史混合遮罩仍按布局动态生成，只供样板与对照。月壤PBR、高度源及遮罩代码不得删除，将来可研究弹着破损露出地下月壤；当前只保留素材和注释，不实施破损、弹坑或可破坏地形。微细节是高度场法线，不是高模投射烘焙；GPU压缩/mipmap导入配置须保留。地面IRRADIANCE同步WorldEnvironment，避免探针漫反射色带，镜面/直接光保留。生成器根据构建门禁写published=true，运行时不依赖APPROVED文件。技术与实施视觉通过，用户实机美术验收待定；证据docs/validation/ground-v1。
 
 ML22 用户于2026-11-17授权不调用Tripo，以纯代码+imagegen方向制作电影化T-Bug清剿、终端激活、撤离小样。独立入口launch-quarantine.command / scenes/quarantine.tscn，代码scripts/quarantine，着色器assets/quarantine；只在此入口启用Forward+，原Compatibility训练场与ML21资产不变。world.gd实例化训练场副本后去掉旧玩法，B11仅在副本移至(30,0,6)打开出生视线；原布局/生成器不得为此覆盖。8只程序害虫3发击杀，近战必须有LOS/高度检查；终端清剿后3秒近距离按E，南侧撤离，死亡/成功/暂停都可F5重启。HUD括号只显示可见目标，无自动瞄准。增强火花/声音保留ML13伤害与遮挡契约。无新增Tripo或imagegen调用，复用ML04的streak/halo；不要将程序素材描述成新imagegen产物。tools/validate_quarantine.sh覆盖44项任务物理门禁、69项旧训练场headless检查、原生截图和60秒性能；证据docs/validation/quarantine-v1。宽荧幕视频是原生引擎脚本化镜头，不是无人为干预通关；Forward+/Metal退出有7个Texture RID警告尚待定位。3A照片级仍为目标、用户视觉验收pending，不凭技术通过升级为最终美术成功。
+
+ML24 实时演示入口 launch-benchmark.command / scenes/quarantine_benchmark.tscn，代码 benchmark.gd；约52秒实时编排镜头，9发真实射击击杀3只，其余5只切镜清除，真实E与胶囊撤离，不能描述成无人干预通关。R重播/Enter进入正常实玩/Esc退出；不播放预录视频。HUD任务显示items数量，终端/撤离定位和离屏方向不扩展到透墙敌人。terminal_hologram.gd / terminal_panel.gd是设备投射的唯一操作面板；近距离可读时隐藏重复HUD提示。终端需要3m内、前侧、注视与LOS，连续3秒；terminal_completed保存已完成项目。bug_damage.gd由真实命中回调驱动，最多24段有建筑遮挡检查的短暂电弧，局部装甲变暗/偏移不是完整物理破碎。验证 tools/validate_quarantine_benchmark.sh；证据 docs/validation/quarantine-benchmark-v1，任务门禁增至49项。ML22/ML23历史证据保留，输出支持目录覆盖。用户视觉/可用性验收仍待定。

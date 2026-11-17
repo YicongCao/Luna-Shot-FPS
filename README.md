@@ -2,6 +2,16 @@
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
 
+## ML24：实机 Benchmark 与全息终端
+
+双击 **`launch-benchmark.command`**：约52秒的实时引擎演示，包含设施镜头、T-Bug交战、终端上电和撤离；不是预录视频。结束后 **R重播 / Enter进入可玩关卡 / Esc退出**。可传入 `--fullscreen`。
+
+HUD任务以 `n/8、0/1、0/1` 显示数量，终端/撤离有定位和离屏方向提示。终端只保留一块设备投射的全息面板；靠近、看向且无遮挡时按住E三秒。T-Bug增加命中短路、抽动、局部损伤和残余放电，仍保持三发击杀。
+
+[原生画面与交互](docs/validation/quarantine-benchmark-v1/review.html) · [UX复查](docs/validation/quarantine-benchmark-v1/UX-REVIEW.md) · [验证与性能](docs/validation/quarantine-benchmark-v1/REPORT.md)
+
+镜头/敌人站位有编排，三只由真实射击击杀，其余五只在切镜时清除；不是无人干预通关。结果保存在Godot `user://benchmarks/`，可用 `QUARANTINE_BENCHMARK_OUTPUT` 指定目录。验证入口：`tools/validate_quarantine_benchmark.sh`。
+
 ## ML22：SELENE / QUARANTINE 独立关卡小样
 
 双击 **`launch-quarantine.command`**：清理8只程序化 T-Bug → 在北侧终端按住 **E 3秒** → 返回南侧绿色圆形撤离区。包含生命/失败、暂停、重新部署，右键开镜显示战斗机仪表灵感HUD。原训练场入口和 ML21 枪械资产保持。

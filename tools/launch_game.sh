@@ -26,7 +26,8 @@ case "$MODE" in
   lab) SCENE='res://scenes/weapon_lab.tscn' ;;
   ground) SCENE='res://scenes/ground_studio.tscn' ;;
   quarantine) SCENE='res://scenes/quarantine.tscn' ;;
-  *) print -u2 "未知启动模式：$MODE（可用 training / lab / ground / quarantine）"; exit 2 ;;
+  benchmark) SCENE='res://scenes/quarantine_benchmark.tscn' ;;
+  *) print -u2 "未知启动模式：$MODE（可用 training / lab / ground / quarantine / benchmark）"; exit 2 ;;
 esac
 
 mkdir -p artifacts/launch
@@ -44,8 +45,8 @@ if /usr/bin/grep -Eq 'SCRIPT ERROR|Parse Error|^ERROR:' "$IMPORT_LOG"; then
   exit 1
 fi
 print "启动 Luna-Shot-FPS / $MODE"
-if [[ "$MODE" == quarantine ]]; then
-  if [[ "${QUARANTINE_COMPAT:-0}" == 1 ]]; then
+if [[ "$MODE" == quarantine || "$MODE" == benchmark ]]; then
+  if [[ "$MODE" == quarantine && "${QUARANTINE_COMPAT:-0}" == 1 ]]; then
     exec "$ENGINE" --path "$PROJECT_ROOT" --rendering-method gl_compatibility --resolution 1600x900 "$SCENE" "$@"
   fi
   # Only this standalone slice opts into Forward+; the training baseline is unchanged.
