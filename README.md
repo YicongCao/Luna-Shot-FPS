@@ -2,6 +2,18 @@
 
 **体验新版：** 双击 [`launch-quarantine.command`](launch-quarantine.command) 直接游玩，或双击 [`launch-benchmark.command`](launch-benchmark.command) 观看实时演示。`launch.command` 和编辑器 F5 仍进入原 Compatibility 训练场；无需清缓存。
 
+## 实时 Benchmark 分镜
+
+以下画面截自同一次 Godot 4.7.2 Forward+ 实时演示。镜头与敌人站位有编排，不是预录视频或无辅助通关。
+
+![反应塔上电：宽幅镜头同时拍到塔顶能量柱和左侧撤离门](docs/readme/benchmark/reactor.webp)
+
+| | |
+| :---: | :---: |
+| ![暖雾中的月球能源设施](docs/readme/benchmark/facility.webp)<br>设施全景 | ![北侧机柜和待上电的终端](docs/readme/benchmark/terminal-approach.webp)<br>北侧终端外景 |
+| ![浅景深中的六足机械猎犬](docs/readme/benchmark/hound.webp)<br>T-Bug 特写 | ![第一人称红点瞄具对准场内的机械猎犬](docs/readme/benchmark/engagement.webp)<br>红点瞄准 |
+| ![设备投射的全息面板显示按住 E 接通电源](docs/readme/benchmark/terminal.webp)<br>终端上电 | ![南侧撤离门亮起，地面显示撤离圈](docs/readme/benchmark/extraction.webp)<br>南门撤离 |
+
 **T‑Bug 现在是六足机械猎犬。** 在清剿关卡观察它巡逻扫视、发现玩家后转头，以及命中侧护板的压入和复位。`QUARANTINE_BUG_STYLE=refined ./launch-quarantine.command` 对照上一版六足机械虫，`baseline` 对照最早的球体版。两版机械造型都可用 `QUARANTINE_GAIT=baseline` 单独切回旧摆腿。[ML33 阴影中腰射距离的肩甲三版对照](docs/validation/hound-rails-v1/review.html) · [ML32 实机对照与验证](docs/validation/t-bug-hound-v1/REPORT.md) · [ML31 同步步态对照](docs/validation/t-bug-gait-v1/review.html)
 
 实时演示在终端上电后切到东侧高位，把整座反应塔和撤离门放入同一宽幅画面。[ML34 · 新旧远景对照](docs/validation/tower-shot-v1/review.html)；`QUARANTINE_TOWER_SHOT=baseline` 回看贴近绕组的旧镜头，不改实玩。
