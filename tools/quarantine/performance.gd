@@ -71,6 +71,7 @@ func sample() -> void:
 	samples.sort()
 	var data: Dictionary = {"platform":OS.get_name(),"engine":Engine.get_version_info().string,"renderer":RenderingServer.get_current_rendering_method(),"resolution":str(root.size),"seconds":measured,"frames":samples.size(),"median_ms":samples[int(samples.size()*.5)],"p95_ms":samples[int(samples.size()*.95)],"p99_ms":samples[int(samples.size()*.99)],"mean_fps":samples.size()/measured,"route_waypoints_reached":route_reached,"capsule_distance_m":movement,"maximum_capsule_height_m":max_height,"shot_requests":shots,"draw_calls":Performance.get_monitor(Performance.RENDER_TOTAL_DRAW_CALLS_IN_FRAME),"primitives":Performance.get_monitor(Performance.RENDER_TOTAL_PRIMITIVES_IN_FRAME),"video_memory_bytes":Performance.get_monitor(Performance.RENDER_VIDEO_MEM_USED),"boundary":"Health replenished for rendering stress, no completion assertion; includes active bugs, ADS, shots, local lights, bridge and exterior lane."}
 	data.gait = "planted" if mission.bugs[0].gait != null else "baseline"
+	data.bug_style = mission.bugs[0].visual_style
 	data.live_bug_travel_m = live_bug_travel
 	var out: String = OS.get_environment("QUARANTINE_PERFORMANCE_OUTPUT")
 	if out.is_empty(): out = "res://docs/validation/quarantine-v1/performance"

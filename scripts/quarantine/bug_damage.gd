@@ -43,7 +43,7 @@ func _ready() -> void:
 	add_child(audio)
 	set_process(false)
 
-func hit(point: Vector3, _normal: Vector3) -> void:
+func hit(point: Vector3, normal: Vector3) -> void:
 	last_world_hit = point
 	origin_local = to_local(point)
 	hits += 1
@@ -57,6 +57,8 @@ func hit(point: Vector3, _normal: Vector3) -> void:
 		if d < distance:
 			distance = d
 			nearest = plate
+	if bug.hound_action != null:
+		bug.hound_action.impact(nearest,global_basis.inverse()*normal,bug.dead)
 	if nearest != null:
 		if not burned.has(nearest.get_instance_id()):
 			var damaged: Material = nearest.material_override.duplicate()
@@ -85,23 +87,31 @@ func _process(delta: float) -> void:
 	if age >= duration:
 		arc_node.hide()
 		if not bug.dead:
-			bug.model.rotation.x = 0
-			bug.model.rotation.z = 0
+			if legacy_shudder():
+				bug.model.rotation.x = 0
+				bug.model.rotation.z = 0
 			bug.core_material.emission_energy_multiplier = 3
-		for leg: Node3D in bug.legs: leg.rotation.x = 0
+		if legacy_shudder():
+			for leg: Node3D in bug.legs: leg.rotation.x = 0
 		set_process(false)
 		return
 	var envelope: float = exp(-age*(2.1 if bug.dead else 7.0))
 	if not bug.dead:
-		bug.model.rotation.x = sin(age*103)*.045*envelope
-		bug.model.rotation.z = sin(age*81)*.035*envelope
+		if legacy_shudder():
+			bug.model.rotation.x = sin(age*103)*.045*envelope
+			bug.model.rotation.z = sin(age*81)*.035*envelope
 		bug.core_material.emission_energy_multiplier = 1.0+absf(sin(age*79))*5.0*envelope
-	for i in bug.legs.size():
-		bug.legs[i].rotation.x = sin(age*74+i*1.7)*.34*envelope
+	if legacy_shudder():
+		for i in bug.legs.size():
+			bug.legs[i].rotation.x = sin(age*74+i*1.7)*.34*envelope
 	refresh_clock -= delta
 	if refresh_clock <= 0:
 		refresh_clock = .045
 		refresh_arcs()
+
+func legacy_shudder() -> bool:
+	# Never rotate the parents of a planted pad after its physics-frame solve.
+	return bug.hound_action == null and bug.gait == null
 
 func shell_point(value: Vector3) -> Vector3:
 	var center: Vector3 = Vector3(0,.49,.02)

@@ -27,6 +27,8 @@ var plates: Array[MeshInstance3D] = []
 var electrical_damage: Node3D
 var visual_style: String = "baseline"
 var gait: RefCounted
+var hound_head: Node3D
+var hound_action: RefCounted
 
 func _ready() -> void:
 	collision_layer = 4
@@ -45,6 +47,9 @@ func _ready() -> void:
 	collider.position.y = 0.45
 	add_child(collider)
 	_build_model()
+	if hound_head != null:
+		hound_action = preload("res://scripts/quarantine/hound_action.gd").new(hound_head)
+	set_process(hound_action != null)
 	electrical_damage = Node3D.new()
 	electrical_damage.name = "ElectricalDamage"
 	electrical_damage.set_script(preload("res://scripts/quarantine/bug_damage.gd"))
@@ -90,8 +95,9 @@ func _build_model() -> void:
 	model = Node3D.new()
 	model.name = "MechanicalShell"
 	add_child(model)
-	if OS.get_environment("QUARANTINE_BUG_STYLE") != "baseline":
-		visual_style = "refined"
+	var requested := OS.get_environment("QUARANTINE_BUG_STYLE")
+	if requested != "baseline":
+		visual_style = "refined" if requested == "refined" else "hound"
 		if OS.get_environment("QUARANTINE_GAIT") != "baseline":
 			gait = preload("res://scripts/quarantine/bug_gait.gd").new()
 		preload("res://scripts/quarantine/bug_visual.gd").build(self)
@@ -144,6 +150,9 @@ func register_hit() -> bool:
 	health -= 1
 	if health <= 0:
 		dead = true
+		if hound_action != null:
+			hound_action.release_plate()
+			hound_action.folded = true
 		collision_layer = 0
 		collision_mask = 0
 		velocity = Vector3.ZERO
@@ -180,6 +189,7 @@ func _physics_process(delta: float) -> void:
 		if attack_cooldown <= 0.0:
 			attack_cooldown = ATTACK_INTERVAL
 			mission.call("damage_player", ATTACK_DAMAGE)
+			if hound_action != null: hound_action.strike()
 	velocity.x = direction.x * speed
 	velocity.z = direction.z * speed
 	velocity.y = -0.5 if is_on_floor() else velocity.y - 18.0 * delta
@@ -187,6 +197,13 @@ func _physics_process(delta: float) -> void:
 	if direction.length_squared() > 0.01:
 		rotation.y = lerp_angle(rotation.y, atan2(-direction.x, -direction.z), minf(1.0, delta * 7.0))
 	animate_legs(delta)
+	if hound_action != null:
+		var sight := Vector3.ZERO
+		if chase: sight = global_basis.inverse()*(target.global_position+Vector3.UP*.95-hound_head.global_position)
+		hound_action.posture(delta,patrol_time,chase,sight)
+
+func _process(delta: float) -> void:
+	hound_action.tick(delta)
 
 func animate_legs(delta: float) -> void:
 	if gait != null:

@@ -288,7 +288,8 @@ func capture_pair() -> void:
 
 func run() -> void:
 	Engine.physics_ticks_per_second = 60
-	OS.unset_environment("QUARANTINE_BUG_STYLE") # Always compare ML26 hardware, not ML22 sphere-style.
+	# Keep the historical ML31 comparison reproducible; allow an explicit hound rerun.
+	if OS.get_environment("QUARANTINE_BUG_STYLE") != "hound": OS.set_environment("QUARANTINE_BUG_STYLE","refined")
 	if output.is_empty(): output = "res://docs/validation/t-bug-gait-v1/recheck"
 	if DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(output)) != OK:
 		push_error("Cannot create gait evidence directory")

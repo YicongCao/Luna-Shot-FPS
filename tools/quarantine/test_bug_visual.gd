@@ -32,6 +32,8 @@ func capture(name: String) -> void:
 	await RenderingServer.frame_post_draw
 	root.get_texture().get_image().save_png(output+"/"+name+".png")
 func run() -> void:
+	# This is the ML26 turntable, not the ML32 hound comparison.
+	if OS.get_environment("QUARANTINE_BUG_STYLE").is_empty(): OS.set_environment("QUARANTINE_BUG_STYLE","refined")
 	output=OS.get_environment("BUG_VISUAL_OUTPUT")
 	if output.is_empty(): output="res://artifacts/bug-visual"
 	DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(output))

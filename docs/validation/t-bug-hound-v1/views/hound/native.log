@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+VIEW hound 01-gray-left
+VIEW hound 02-gray-right
+VIEW hound 03-hip-scale
+VIEW hound 04-patrol-a
+VIEW hound 05-patrol-b
+VIEW hound 06-pursuit
+VIEW hound 07-impact
+VIEW hound 08-release
+VIEW hound 09-recovered
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)

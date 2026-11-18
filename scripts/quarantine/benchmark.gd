@@ -195,7 +195,12 @@ func _process(_delta: float) -> void:
 		1: scenic(Vector3(-4,3.4,27),Vector3(-2,2.3,20),Vector3(0,5,0),local/8,60)
 		2: scenic(Vector3(-8,3,-18),Vector3(-4,2.5,-18),Vector3(0,3.5,-28),local/7,55)
 		3:
-			var focus: Vector3 = mission.bugs[0].global_position+Vector3(0,.46,0)
+			var subject: Node3D = mission.bugs[0]
+			var focus: Vector3 = subject.global_position+Vector3(0,.46,0)
+			if subject.hound_action != null:
+				# A staged patrol glance only; this chapter freezes AI and capsule motion.
+				subject.hound_action.posture(dt,local,false,Vector3.ZERO)
+				focus += Vector3(0,.10,-.08)
 			if framing_style == "baseline":
 				scenic(Vector3(3.7,1.0,18.5),Vector3(2.8,.75,18),focus,local/5,48)
 			else:

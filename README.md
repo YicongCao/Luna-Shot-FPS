@@ -2,6 +2,8 @@
 
 **体验新版：** 双击 [`launch-quarantine.command`](launch-quarantine.command) 直接游玩，或双击 [`launch-benchmark.command`](launch-benchmark.command) 观看实时演示。`launch.command` 和编辑器 F5 仍进入原 Compatibility 训练场；无需清缓存。
 
+**T‑Bug 现在是六足机械猎犬。** 在清剿关卡观察它巡逻扫视、发现玩家后转头，以及命中侧护板的压入和复位。`QUARANTINE_BUG_STYLE=refined ./launch-quarantine.command` 对照上一版六足机械虫，`baseline` 对照最早的球体版。两版机械造型都可用 `QUARANTINE_GAIT=baseline` 单独切回旧摆腿。[ML32 实机对照与验证](docs/validation/t-bug-hound-v1/REPORT.md) · [ML31 同步步态对照](docs/validation/t-bug-gait-v1/review.html)
+
 [ML30 · 原生画质评估与反应塔上电对照](docs/validation/reactor-induction-v1/review.html)。`QUARANTINE_REACTOR=baseline` 可单独回看旧塔环与能量柱，不回退地形或玩法。
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。
@@ -28,7 +30,7 @@ ML28平滑候选损失山脊起伏，**当时未替换默认远景**；仅用 `Q
 
 ## ML26：T-Bug 机械结构精修
 
-清剿关卡与实时 Benchmark 的害虫默认使用分层厚装甲、机械关节、执行器/脚垫及嵌入式发光件；保留六足、三发击杀和当前暖黄氛围。`QUARANTINE_BUG_STYLE=baseline ./launch-benchmark.command` 对照旧版。
+ML26 版本的清剿害虫使用分层厚装甲、机械关节、执行器/脚垫及嵌入式发光件；保留六足、三发击杀和当前暖黄氛围。`QUARANTINE_BUG_STYLE=baseline ./launch-benchmark.command` 对照旧版。
 
 [新旧灰模与材质对照](docs/validation/t-bug-refine-v1/review.html) · [验证与取舍](docs/validation/t-bug-refine-v1/REPORT.md)。无新增模型/图像生成调用；用户视觉验收待定。
 

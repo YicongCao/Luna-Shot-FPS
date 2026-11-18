@@ -124,16 +124,25 @@ static func build(bug: Node3D) -> void:
 	bug.core_material.emission=Color(1,.16,.015)
 	bug.core_material.emission_energy_multiplier=3.0
 	var light: Material=bug.core_material
-	box(root,Vector3(0,.44,.02),Vector3(.57,.25,.9),dark,"SealedChassis")
-	box(root,Vector3(0,.305,.02),Vector3(.40,.045,.76),metal,"BellySkid")
-	box(root,Vector3(0,.605,.025),Vector3(.16,.16,.91),dark,"RecessedSpine")
-	# Recessed luminous cells, not a broad glowing sphere.
-	for i in 9:
-		box(root,Vector3(0,.692,-.34+i*.09),Vector3(.075,.015,.047),light,"PowerCell")
+	var hound: bool = bug.visual_style == "hound"
+	if hound:
+		bug.hound_head = preload("res://scripts/quarantine/hound_shell.gd").build(bug,shell,pale,dark,metal,orange,light)
+	else:
+		box(root,Vector3(0,.44,.02),Vector3(.57,.25,.9),dark,"SealedChassis")
+		box(root,Vector3(0,.305,.02),Vector3(.40,.045,.76),metal,"BellySkid")
+		box(root,Vector3(0,.605,.025),Vector3(.16,.16,.91),dark,"RecessedSpine")
+		for i in 9:
+			box(root,Vector3(0,.692,-.34+i*.09),Vector3(.075,.015,.047),light,"PowerCell")
 	for segment in 3:
 		for side in [-1,1]:
 			var plate: MeshInstance3D=finish_mesh(root,panel_mesh(),Vector3(side*.21,.57,-.27+segment*.3),pale if segment==1 else shell,"ArmorPanel")
 			plate.rotation.z=side*-.18
+			if hound:
+				var mount: Vector3 = [Vector3(.25,.65,-.29),Vector3(.17,.65,.01),Vector3(.22,.59,.32)][segment]
+				plate.position = Vector3(side*mount.x,mount.y,mount.z)
+				plate.rotation.z = -side*deg_to_rad(30)
+				# Smaller middle service cover breaks the straight row and exposes the waist.
+				if segment == 1: plate.scale = Vector3(.78,.80,.74)
 			bug.plates.append(plate)
 			# Raised top strip and gasket seam; hardware follows the loosened plate.
 			box(plate,Vector3(side*.11,.094,0),Vector3(.025,.012,.16),orange if segment==1 else metal,"EdgeRail")
@@ -144,20 +153,22 @@ static func build(bug: Node3D) -> void:
 			for slot in 4:
 				box(plate,Vector3(-side*.015,.092,-.055+slot*.036),Vector3(.09,.009,.011),dark,"RecessedVent")
 			merge_hardware(plate)
-	box(root,Vector3(0,.43,-.51),Vector3(.43,.22,.23),shell,"SensorHousing")
-	box(root,Vector3(0,.47,-.633),Vector3(.32,.12,.025),dark,"SensorGasket")
-	box(root,Vector3(0,.343,-.59),Vector3(.29,.04,.16),metal,"ImpactJaw")
+	if not hound:
+		box(root,Vector3(0,.43,-.51),Vector3(.43,.22,.23),shell,"SensorHousing")
+		box(root,Vector3(0,.47,-.633),Vector3(.32,.12,.025),dark,"SensorGasket")
+		box(root,Vector3(0,.343,-.59),Vector3(.29,.04,.16),metal,"ImpactJaw")
+		for side in [-1,1]:
+			rod(root,Vector3(side*.12,.48,-.64),Vector3(side*.12,.48,-.67),.047,metal,"OpticBezel")
+			rod(root,Vector3(side*.12,.48,-.67),Vector3(side*.12,.48,-.674),.029,light,"OpticLens")
+			var base: Vector3=Vector3(side*.16,.53,-.53)
+			var joint: Vector3=Vector3(side*.27,.79,-.7)
+			var tip: Vector3=Vector3(side*.4,.78,-.93)
+			rod(root,base,base.lerp(joint,.32),.034,dark,"AntennaBoot")
+			rod(root,base,joint,.014,metal)
+			rod(root,joint,tip,.011,metal)
+			box(root,tip,Vector3(.05,.04,.065),dark,"AntennaCap")
+			box(root,tip+Vector3(0,.025,0),Vector3(.028,.008,.035),light,"AntennaStatus")
 	for side in [-1,1]:
-		rod(root,Vector3(side*.12,.48,-.64),Vector3(side*.12,.48,-.67),.047,metal,"OpticBezel")
-		rod(root,Vector3(side*.12,.48,-.67),Vector3(side*.12,.48,-.674),.029,light,"OpticLens")
-		var base: Vector3=Vector3(side*.16,.53,-.53)
-		var joint: Vector3=Vector3(side*.27,.79,-.7)
-		var tip: Vector3=Vector3(side*.4,.78,-.93)
-		rod(root,base,base.lerp(joint,.32),.034,dark,"AntennaBoot")
-		rod(root,base,joint,.014,metal)
-		rod(root,joint,tip,.011,metal)
-		box(root,tip,Vector3(.05,.04,.065),dark,"AntennaCap")
-		box(root,tip+Vector3(0,.025,0),Vector3(.028,.008,.035),light,"AntennaStatus")
 		for segment in 3:
 			var leg: Node3D=Node3D.new()
 			leg.name="ArticulatedLeg"

@@ -72,3 +72,5 @@ ML28 清剿Forward+默认方向光软阴影HIGH采样，QUARANTINE_SHADOWS=basel
 ML29 当前清剿/Benchmark默认月面为scripts/quarantine/lunar_ridges.gd：保留旧seed221117、.011基础频率、.5 gain与前三层的原振幅（28/31归一化补偿），移除两层高频；1.25m基础网格由terrain_refinement.gd作共享边局部细分，350382顶点/698391三角，上限700000。lunar_horizon.gd仍保留ML28候选，同时提供通用网格构建；QUARANTINE_HORIZON=baseline回旧5m版，=refined看ML28平滑候选，=ridges或缺省为ML29。程序网格/连续法线复用原月壤材质，不是新增高模烘焙。首次生成有CPU成本，重播复用静态网格；完整实机性能必须包含新几何，不能引用旧月面数据。tools/validate_lunar_ridges.sh与docs/validation/lunar-ridges-v1记录保形指标、局部细分失败/修正、31项几何和原生左右剔除。原训练场/共享资产/暖雾/HIGH阴影保持，无新增生成服务调用；技术与实施视觉复查不代替用户美术验收。
 
 ML30 仅清剿/Benchmark 使用装配式绕组、无端盖能量柱和沿铺装材质传播的上电脉冲；QUARANTINE_REACTOR=baseline 对照旧效果。启动原训练场仍为launch.command，当前可玩小样为launch-quarantine.command。原生对照与画质判断见docs/validation/reactor-induction-v1；纯着色器反馈不是体积流体模拟，不增加伤害/碰撞。
+
+ML31/ML32 清剿与演示默认六足机械犬。`QUARANTINE_BUG_STYLE=refined` 看 ML26 虫壳，`baseline` 看球体版；机械造型均可用 `QUARANTINE_GAIT=baseline` 独立对照旧摆腿。`bug_gait.gd` 锁的是支撑脚世界位姿，不驱动胶囊；受击不得在渲染帧旋转其活体髋根。`hound_shell.gd` 替换躯壳，`hound_action.gd` 只做头/单片护板表现；追视只复用 AI 的可见追逐判定，受击只响应已接受的命中，不扩张胶囊或添加伤害。演示特写为编排扫视，非真实巡逻。`tools/validate_hound.sh` 串行复现各项；原生图与已知视觉取舍见 docs/validation/t-bug-hound-v1。
