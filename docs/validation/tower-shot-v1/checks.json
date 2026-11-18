@@ -1,0 +1,7 @@
+{
+	"baseline_minimum_frame_margin": -0.260255336761475,
+	"boundary": "101 samples of base/crown projection per camera; six native pictures for occlusion. Powered state is staged. No full playthrough claim.",
+	"passed": true,
+	"power": 1.0,
+	"wide_minimum_frame_margin": 0.0753957033157349
+}

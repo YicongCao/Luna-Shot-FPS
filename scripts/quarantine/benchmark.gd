@@ -14,6 +14,7 @@ var stage_kills: int = 0
 var finished: bool = false
 var result_age: float = 0
 var output: String
+var tower_wide := OS.get_environment("QUARANTINE_TOWER_SHOT") != "baseline"
 var qa: bool = false
 var capture_enabled: bool = false
 var captured: Dictionary = {}
@@ -138,6 +139,13 @@ func scenic(from: Vector3, to: Vector3, focus: Vector3, fraction: float, fov: fl
 	aim(focus)
 	player.camera.fov = fov
 
+func tower_shot(seconds: float) -> void:
+	if tower_wide:
+		# Stay above the east roof; side-light separates the column from the ridgeline.
+		scenic(Vector3(24,16,-7),Vector3(25,20,-12),Vector3(0,11.7,-2.2),seconds/10,59)
+	else:
+		scenic(Vector3(-8,3,-17),Vector3(-10,6,-12),Vector3(0,8,0),seconds/10,58)
+
 func change_chapter(value: int) -> void:
 	chapter = value
 	cinema_lens.clear(player.camera)
@@ -218,7 +226,7 @@ func _process(_delta: float) -> void:
 			aim(Vector3(0,1.55,-22.4))
 			if local > 1.0 and local < 5.5: Input.action_press("interact")
 			else: Input.action_release("interact")
-		6: scenic(Vector3(-8,3,-17),Vector3(-10,6,-12),Vector3(0,8,0),local/10,58)
+		6: tower_shot(local)
 		7:
 			aim(Vector3(0,2.5,31))
 			if mission.stage == mission.COMPLETE:
@@ -253,6 +261,7 @@ func finish() -> void:
 	var p95: float = ordered[mini(ordered.size()-1,int(ordered.size()*.95))] if not ordered.is_empty() else 0
 	var p99: float = ordered[mini(ordered.size()-1,int(ordered.size()*.99))] if not ordered.is_empty() else 0
 	report = {"engine":Engine.get_version_info().string,"platform":OS.get_name(),"gpu":RenderingServer.get_video_adapter_name(),"renderer":RenderingServer.get_current_rendering_method(),"atmosphere":mission.get_node("World").atmosphere_style,"horizon":mission.get_node("World").horizon_style,"directional_shadows":mission.get_node("World").shadow_style,"bug_style":mission.bugs[0].visual_style,"closeup_framing":framing_style,"closeup_dof":cinema_lens.enabled,"inspection_light":mission.has_node("World/InspectionLuminaire"),"resolution":str(get_viewport().size),"logical_canvas_size":str(get_viewport().get_visible_rect().size),"vsync":DisplayServer.window_get_vsync_mode(),"warmup_seconds":4,"measured_seconds":total_ms/1000,"frames":samples.size(),"mean_fps":average,"p95_ms":p95,"p99_ms":p99,"capture_enabled":capture_enabled,"checks":checks,"frame_ms":samples,"boundary":"Scripted cameras, frozen enemy positions, nine real shots into three enemies; remaining five cleared at cut; actual E input and physical evacuation. Health replenished. Not unassisted gameplay or a comparison with the separate 60s route benchmark."}
+	report.tower_shot = "wide" if tower_wide else "baseline"
 	var file: FileAccess = FileAccess.open(output+"/result.json",FileAccess.WRITE)
 	file.store_string(JSON.stringify(report,"\t"))
 	file.close()

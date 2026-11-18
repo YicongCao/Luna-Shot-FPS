@@ -4,6 +4,8 @@
 
 **T‑Bug 现在是六足机械猎犬。** 在清剿关卡观察它巡逻扫视、发现玩家后转头，以及命中侧护板的压入和复位。`QUARANTINE_BUG_STYLE=refined ./launch-quarantine.command` 对照上一版六足机械虫，`baseline` 对照最早的球体版。两版机械造型都可用 `QUARANTINE_GAIT=baseline` 单独切回旧摆腿。[ML33 阴影中腰射距离的肩甲三版对照](docs/validation/hound-rails-v1/review.html) · [ML32 实机对照与验证](docs/validation/t-bug-hound-v1/REPORT.md) · [ML31 同步步态对照](docs/validation/t-bug-gait-v1/review.html)
 
+实时演示在终端上电后切到东侧高位，把整座反应塔和撤离门放入同一宽幅画面。[ML34 · 新旧远景对照](docs/validation/tower-shot-v1/review.html)；`QUARANTINE_TOWER_SHOT=baseline` 回看贴近绕组的旧镜头，不改实玩。
+
 [ML30 · 原生画质评估与反应塔上电对照](docs/validation/reactor-induction-v1/review.html)。`QUARANTINE_REACTOR=baseline` 可单独回看旧塔环与能量柱，不回退地形或玩法。
 
 独立月球能源设施训练场，64×66 m。A/B1/B2/C/D/E 六件资产完成白模、高模、低模/UV、真实 Normal/AO 烘焙、PBR 和 Godot 集成，复用为 59 个实例。LS01 保留红点瞄准和可击倒靶；新增低角度日照、设施灯、反射探针、能量环轮廓外 Bloom 与 imagegen 镜头光晕。无回合、无刷怪、无游戏流程。

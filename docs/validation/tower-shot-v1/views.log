@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+BENCHMARK CHECK terminal_activated_by_three_second_input true
+TOWER SHOT { "power": 1.0, "baseline_minimum_frame_margin": -0.26025533676147, "wide_minimum_frame_margin": 0.07539570331573, "passed": true, "boundary": "101 samples of base/crown projection per camera; six native pictures for occlusion. Powered state is staged. No full playthrough claim." }
+WARNING: 7 RIDs of type "Texture" were leaked.
+   at: finalize (servers/rendering/rendering_device.cpp:8900)
