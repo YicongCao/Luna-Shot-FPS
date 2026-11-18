@@ -1,0 +1,450 @@
+{
+	"adapter": "Apple M6 (Apple9)",
+	"checks": {
+		"01-gray-left_image": true,
+		"02-gray-right_image": true,
+		"03-hip-scale_image": true,
+		"04-patrol-a_image": true,
+		"05-patrol-b_image": true,
+		"06-pursuit_image": true,
+		"07-impact_image": true,
+		"08-release_image": true,
+		"09-recovered_image": true,
+		"accepted_rifle_hit": true,
+		"actual_chase": true,
+		"hip_view": true,
+		"native": true,
+		"only_one_accepted_hit": true,
+		"outside_detection_-59": true,
+		"outside_detection_35": true,
+		"selected_style": true
+	},
+	"engine": "4.7.2-stable (official)",
+	"frames": [
+		{
+			"ammo": 20,
+			"body": [
+				0.00123683398123831,
+				0.000839407439343631,
+				17.7740421295166
+			],
+			"body_euler_deg": [
+				0.0,
+				-2.38303327560425,
+				0.0
+			],
+			"camera": [
+				-2.44795274734497,
+				1.04083931446075,
+				16.5011043548584
+			],
+			"camera_euler_deg": [
+				-10.8692188262939,
+				-117.462623596191,
+				0.0
+			],
+			"fixed_step": 16,
+			"flinch_clock_s": 0.42,
+			"flinching_plate": false,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				-2.9128086566925,
+				1.4903849363327,
+				0.0
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 3,
+			"hud": false,
+			"id": "01-gray-left",
+			"neutral_fill": true,
+			"player_los": false,
+			"range_m": 19.7740421295166,
+			"speed": 0.849999964237213,
+			"ticks_since_shot": null,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		},
+		{
+			"ammo": 20,
+			"body": [
+				0.00123683398123831,
+				0.000839407439343631,
+				17.7740421295166
+			],
+			"body_euler_deg": [
+				0.0,
+				-2.38303327560425,
+				0.0
+			],
+			"camera": [
+				2.54772329330444,
+				1.04083931446075,
+				16.7090034484863
+			],
+			"camera_euler_deg": [
+				-10.8692188262939,
+				112.696548461914,
+				0.0
+			],
+			"fixed_step": 16,
+			"flinch_clock_s": 0.42,
+			"flinching_plate": false,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				-2.9128086566925,
+				1.4903849363327,
+				0.0
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 3,
+			"hud": false,
+			"id": "02-gray-right",
+			"neutral_fill": true,
+			"player_los": false,
+			"range_m": 19.7740421295166,
+			"speed": 0.849999964237213,
+			"ticks_since_shot": null,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		},
+		{
+			"ammo": 20,
+			"body": [
+				0.00123683398123831,
+				0.000839407439343631,
+				17.7740421295166
+			],
+			"body_euler_deg": [
+				0.0,
+				-2.38303327560425,
+				0.0
+			],
+			"camera": [
+				1.54999995231628,
+				1.65097653865814,
+				12.3999996185303
+			],
+			"camera_euler_deg": [
+				-11.8171586990356,
+				163.923355102539,
+				0.0
+			],
+			"fixed_step": 16,
+			"flinch_clock_s": 0.42,
+			"flinching_plate": false,
+			"fov": 72.0,
+			"head_local_euler_deg": [
+				-2.9128086566925,
+				1.4903849363327,
+				0.0
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 3,
+			"hud": true,
+			"id": "03-hip-scale",
+			"neutral_fill": false,
+			"player_los": true,
+			"range_m": 5.59276294708252,
+			"speed": 0.849999964237213,
+			"ticks_since_shot": null,
+			"weapon_bloom": true,
+			"weapon_layer": true
+		},
+		{
+			"ammo": 20,
+			"body": [
+				-0.168771639466286,
+				0.000839400629047304,
+				17.6036224365234
+			],
+			"body_euler_deg": [
+				0.0,
+				38.2837028503418,
+				0.0
+			],
+			"camera": [
+				1.06872951984406,
+				1.04083931446075,
+				15.1363382339478
+			],
+			"camera_euler_deg": [
+				-10.8692188262939,
+				153.363296508789,
+				0.0
+			],
+			"fixed_step": 33,
+			"flinch_clock_s": 0.42,
+			"flinching_plate": false,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				-11.7300777435303,
+				-19.3610401153564,
+				0.0
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 3,
+			"hud": false,
+			"id": "04-patrol-a",
+			"neutral_fill": false,
+			"player_los": false,
+			"range_m": 19.6043491363525,
+			"speed": 0.849999964237213,
+			"ticks_since_shot": null,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		},
+		{
+			"ammo": 20,
+			"body": [
+				0.255993604660034,
+				0.000839401909615844,
+				17.1913051605225
+			],
+			"body_euler_deg": [
+				0.0,
+				-77.4942626953125,
+				0.0
+			],
+			"camera": [
+				1.93957781791687,
+				1.04083931446075,
+				19.3786430358887
+			],
+			"camera_euler_deg": [
+				-10.8692188262939,
+				37.5853157043457,
+				0.0
+			],
+			"fixed_step": 127,
+			"flinch_clock_s": 0.42,
+			"flinching_plate": false,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				-9.52181339263916,
+				20.7724266052246,
+				0.0
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 3,
+			"hud": false,
+			"id": "05-patrol-b",
+			"neutral_fill": false,
+			"player_los": false,
+			"range_m": 19.1930122375488,
+			"speed": 0.850000023841858,
+			"ticks_since_shot": null,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		},
+		{
+			"ammo": 20,
+			"body": [
+				0.254959464073181,
+				0.000839328218717128,
+				16.2954235076904
+			],
+			"body_euler_deg": [
+				0.0,
+				-3.42328667640686,
+				0.0
+			],
+			"camera": [
+				2.82036161422729,
+				1.04083931446075,
+				15.2767915725708
+			],
+			"camera_euler_deg": [
+				-10.8692197799683,
+				111.656295776367,
+				0.0
+			],
+			"fixed_step": 153,
+			"flinch_clock_s": 0.42,
+			"flinching_plate": false,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				1.1544748544693,
+				10.2383518218994,
+				0.0
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 3,
+			"hud": false,
+			"id": "06-pursuit",
+			"neutral_fill": false,
+			"player_los": true,
+			"range_m": 4.29542636871338,
+			"speed": 2.15000009536743,
+			"ticks_since_shot": null,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		},
+		{
+			"ammo": 19,
+			"body": [
+				0.25454580783844,
+				0.000839331478346139,
+				15.9370727539062
+			],
+			"body_euler_deg": [
+				0.0,
+				-0.943103909492493,
+				0.0
+			],
+			"camera": [
+				2.77346467971802,
+				1.04083931446075,
+				14.8083801269531
+			],
+			"camera_euler_deg": [
+				-10.8692207336426,
+				114.13648223877,
+				0.0
+			],
+			"fixed_step": 163,
+			"flinch_clock_s": 0.0666666666666667,
+			"flinching_plate": true,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				17.0355606079102,
+				3.57030940055847,
+				-0.253652602434158
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 2,
+			"hud": false,
+			"id": "07-impact",
+			"neutral_fill": false,
+			"player_los": true,
+			"range_m": 3.93707537651062,
+			"speed": 2.15000009536743,
+			"ticks_since_shot": 3,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		},
+		{
+			"ammo": 19,
+			"body": [
+				0.254173517227173,
+				0.000839332584291697,
+				15.6145725250244
+			],
+			"body_euler_deg": [
+				0.0,
+				-0.264308929443359,
+				0.0
+			],
+			"camera": [
+				2.75954437255859,
+				1.04083931446075,
+				14.4561176300049
+			],
+			"camera_euler_deg": [
+				-10.8692207336426,
+				114.815284729004,
+				0.0
+			],
+			"fixed_step": 172,
+			"flinch_clock_s": 0.216666666666667,
+			"flinching_plate": true,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				1.40026593208313,
+				1.65602731704712,
+				0.00720518315210938
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 2,
+			"hud": false,
+			"id": "08-release",
+			"neutral_fill": false,
+			"player_los": true,
+			"range_m": 3.61457490921021,
+			"speed": 2.14999985694885,
+			"ticks_since_shot": 12,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		},
+		{
+			"ammo": 19,
+			"body": [
+				0.252891182899475,
+				0.000839331478346139,
+				14.5037384033203
+			],
+			"body_euler_deg": [
+				0.0,
+				0.0590970329940319,
+				0.0
+			],
+			"camera": [
+				2.7516827583313,
+				1.04083931446075,
+				13.3311605453491
+			],
+			"camera_euler_deg": [
+				-10.8692216873169,
+				115.138679504395,
+				0.0
+			],
+			"fixed_step": 203,
+			"flinch_clock_s": 0.42,
+			"flinching_plate": false,
+			"fov": 43.0,
+			"head_local_euler_deg": [
+				2.80978560447693,
+				0.0550581105053425,
+				0.0
+			],
+			"head_local_m": [
+				0.0,
+				0.841000020503998,
+				-0.504999995231628
+			],
+			"health": 2,
+			"hud": false,
+			"id": "09-recovered",
+			"neutral_fill": false,
+			"player_los": true,
+			"range_m": 2.50374007225037,
+			"speed": 2.15000009536743,
+			"ticks_since_shot": 43,
+			"weapon_bloom": false,
+			"weapon_layer": false
+		}
+	],
+	"renderer": "forward_plus",
+	"style": "hound"
+}

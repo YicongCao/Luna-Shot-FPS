@@ -133,6 +133,11 @@ static func build(bug: Node3D) -> void:
 		box(root,Vector3(0,.605,.025),Vector3(.16,.16,.91),dark,"RecessedSpine")
 		for i in 9:
 			box(root,Vector3(0,.692,-.34+i*.09),Vector3(.075,.015,.047),light,"PowerCell")
+	var finish := OS.get_environment("QUARANTINE_HOUND_FINISH")
+	var rail_lenses := hound and finish == "lit"
+	var ceramic: Material
+	if hound and finish != "baseline" and not rail_lenses:
+		ceramic = coat("shoulder_enamel",Color(.83,.80,.69),.03,.45)
 	for segment in 3:
 		for side in [-1,1]:
 			var plate: MeshInstance3D=finish_mesh(root,panel_mesh(),Vector3(side*.21,.57,-.27+segment*.3),pale if segment==1 else shell,"ArmorPanel")
@@ -143,9 +148,14 @@ static func build(bug: Node3D) -> void:
 				plate.rotation.z = -side*deg_to_rad(30)
 				# Smaller middle service cover breaks the straight row and exposes the waist.
 				if segment == 1: plate.scale = Vector3(.78,.80,.74)
+			if ceramic != null and segment == 0: plate.material_override = ceramic
 			bug.plates.append(plate)
 			# Raised top strip and gasket seam; hardware follows the loosened plate.
 			box(plate,Vector3(side*.11,.094,0),Vector3(.025,.012,.16),orange if segment==1 else metal,"EdgeRail")
+			if rail_lenses:
+				# A narrow insert seated on the existing rail, not a painted outline or a scene light.
+				var lens_length: float = [.115,.085,.058][segment]
+				box(plate,Vector3(side*.11,.101,-.012),Vector3(.019,.008,lens_length),light,"ServiceLens")
 			for z in [-.082,.082]:
 				for x in [-.09,.07]:
 					rod(plate,Vector3(x,.089,z),Vector3(x,.098,z),.012,metal,"CaptiveBolt")

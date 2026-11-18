@@ -1,0 +1,213 @@
+{
+	"boundary": "Actual mission player.fire, accepted-shot signal, hit callback, capsule physics and melee cooldown on a controlled platform. AI frozen only for the two render-only stance/impact measurements; unmodified chase/attack ticks in behavior trials. No native frames, performance or art acceptance.",
+	"checks": [
+		{
+			"id": "hound_selector_and_rig",
+			"ok": true
+		},
+		{
+			"id": "stance_grounded_before_impact",
+			"ok": true
+		},
+		{
+			"id": "shot_1_fired",
+			"ok": true
+		},
+		{
+			"id": "left/one_accepted_ray",
+			"ok": true
+		},
+		{
+			"id": "left/contact_on_requested_flank",
+			"ok": true
+		},
+		{
+			"id": "left/electrical_contact_once",
+			"ok": true
+		},
+		{
+			"id": "left/nearest_mount_deflects_inward_and_rotates",
+			"ok": true
+		},
+		{
+			"id": "left/mount_and_local_head_recover",
+			"ok": true
+		},
+		{
+			"id": "left/only_nearest_mount_and_hit_hound_respond",
+			"ok": true
+		},
+		{
+			"id": "left/render_callbacks_preserve_world_stance",
+			"ok": true
+		},
+		{
+			"id": "shot_2_fired",
+			"ok": true
+		},
+		{
+			"id": "right/one_accepted_ray",
+			"ok": true
+		},
+		{
+			"id": "right/contact_on_requested_flank",
+			"ok": true
+		},
+		{
+			"id": "right/electrical_contact_once",
+			"ok": true
+		},
+		{
+			"id": "right/nearest_mount_deflects_inward_and_rotates",
+			"ok": true
+		},
+		{
+			"id": "right/mount_and_local_head_recover",
+			"ok": true
+		},
+		{
+			"id": "right/only_nearest_mount_and_hit_hound_respond",
+			"ok": true
+		},
+		{
+			"id": "right/render_callbacks_preserve_world_stance",
+			"ok": true
+		},
+		{
+			"id": "opposing_side_hits_reverse_local_head_response",
+			"ok": true
+		},
+		{
+			"id": "shot_3_fired",
+			"ok": true
+		},
+		{
+			"id": "third_ray_kills_once",
+			"ok": true
+		},
+		{
+			"id": "shot_4_fired",
+			"ok": true
+		},
+		{
+			"id": "fourth_ray_not_accepted_or_scored",
+			"ok": true
+		},
+		{
+			"id": "visible_left_perception_and_action",
+			"ok": true
+		},
+		{
+			"id": "visible_right_perception_and_action",
+			"ok": true
+		},
+		{
+			"id": "occluded_left_perception_and_action",
+			"ok": true
+		},
+		{
+			"id": "occluded_right_perception_and_action",
+			"ok": true
+		},
+		{
+			"id": "hidden_player_bearing_cannot_steer_head_or_body",
+			"ok": true
+		},
+		{
+			"id": "close_visible_player_is_attackable",
+			"ok": true
+		},
+		{
+			"id": "melee_head_stroke_and_recovery",
+			"ok": true
+		},
+		{
+			"id": "existing_melee_damage_and_interval",
+			"ok": true
+		},
+		{
+			"id": "select_refined",
+			"ok": true
+		},
+		{
+			"id": "select_baseline",
+			"ok": true
+		}
+	],
+	"command": "godot --headless --fixed-fps 60 --path . --script res://tools/quarantine/test_hound.gd -- --quarantine-qa",
+	"engine": "4.7.2-stable (official)",
+	"metrics": {
+		"hidden_pair": {
+			"max_local_yaw_difference_rad": 0.0,
+			"max_world_path_difference_m": 0.0
+		},
+		"left": {
+			"local_ray_contact_m": [
+				-0.414764404296875,
+				0.583399772644043,
+				0.0000152587890625
+			],
+			"max_pad_drift_m": 0.0,
+			"nearest_index": 2,
+			"peak_mount_angle_rad": 0.230389088392258,
+			"peak_mount_translation_m": 0.047079361975193,
+			"signed_peak_head_yaw_rad": -0.347842008290968,
+			"stance_samples": 366
+		},
+		"melee": {
+			"damage_ticks": [
+				0,
+				69
+			],
+			"hp_lost": 24.0,
+			"peak_head_dip_rad": 0.549429580569267
+		},
+		"occluded_left": {
+			"damage": 0.0,
+			"distance_closed_m": -1.16649031639099,
+			"los_ticks": 0,
+			"scan_yaw_range_rad": 0.378215887933038,
+			"tick7_local_yaw_rad": 0.0378891192376614,
+			"ticks": 85
+		},
+		"occluded_right": {
+			"damage": 0.0,
+			"distance_closed_m": -1.02067303657532,
+			"los_ticks": 0,
+			"scan_yaw_range_rad": 0.378215887933038,
+			"tick7_local_yaw_rad": 0.0378891192376614,
+			"ticks": 85
+		},
+		"right": {
+			"local_ray_contact_m": [
+				0.414794921875,
+				0.583396434783936,
+				0.00000762939453125
+			],
+			"max_pad_drift_m": 0.0,
+			"nearest_index": 3,
+			"peak_mount_angle_rad": 0.230389088392258,
+			"peak_mount_translation_m": 0.047079361975193,
+			"signed_peak_head_yaw_rad": 0.347842722715654,
+			"stance_samples": 366
+		},
+		"visible_left": {
+			"damage": 0.0,
+			"distance_closed_m": 3.0100564956665,
+			"los_ticks": 85,
+			"scan_yaw_range_rad": 0.209061696696153,
+			"tick7_local_yaw_rad": 0.207605242729187,
+			"ticks": 85
+		},
+		"visible_right": {
+			"damage": 0.0,
+			"distance_closed_m": 3.0100314617157,
+			"los_ticks": 85,
+			"scan_yaw_range_rad": 0.209062408706814,
+			"tick7_local_yaw_rad": -0.207604914903641,
+			"ticks": 85
+		}
+	},
+	"pass": true,
+	"platform": "macOS"
+}

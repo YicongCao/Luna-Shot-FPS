@@ -2,7 +2,7 @@
 
 **体验新版：** 双击 [`launch-quarantine.command`](launch-quarantine.command) 直接游玩，或双击 [`launch-benchmark.command`](launch-benchmark.command) 观看实时演示。`launch.command` 和编辑器 F5 仍进入原 Compatibility 训练场；无需清缓存。
 
-**T‑Bug 现在是六足机械猎犬。** 在清剿关卡观察它巡逻扫视、发现玩家后转头，以及命中侧护板的压入和复位。`QUARANTINE_BUG_STYLE=refined ./launch-quarantine.command` 对照上一版六足机械虫，`baseline` 对照最早的球体版。两版机械造型都可用 `QUARANTINE_GAIT=baseline` 单独切回旧摆腿。[ML32 实机对照与验证](docs/validation/t-bug-hound-v1/REPORT.md) · [ML31 同步步态对照](docs/validation/t-bug-gait-v1/review.html)
+**T‑Bug 现在是六足机械猎犬。** 在清剿关卡观察它巡逻扫视、发现玩家后转头，以及命中侧护板的压入和复位。`QUARANTINE_BUG_STYLE=refined ./launch-quarantine.command` 对照上一版六足机械虫，`baseline` 对照最早的球体版。两版机械造型都可用 `QUARANTINE_GAIT=baseline` 单独切回旧摆腿。[ML33 阴影中腰射距离的肩甲三版对照](docs/validation/hound-rails-v1/review.html) · [ML32 实机对照与验证](docs/validation/t-bug-hound-v1/REPORT.md) · [ML31 同步步态对照](docs/validation/t-bug-gait-v1/review.html)
 
 [ML30 · 原生画质评估与反应塔上电对照](docs/validation/reactor-induction-v1/review.html)。`QUARANTINE_REACTOR=baseline` 可单独回看旧塔环与能量柱，不回退地形或玩法。
 
