@@ -1,0 +1,25 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+Metal 4.0 - Forward+ - Using Device #0: Apple - Apple M6 (Apple9)
+
+POLAR_FRAME 01-arrival 1440x900 true at (1.8, 0.000125, 68.6)
+POLAR_FRAME 02-pit-rim 1440x900 true at (9.3, 0.001094, 42.82)
+POLAR_FRAME 03-exterior-steps 1440x900 true at (17.8, -2.848906, 35.17)
+POLAR_FRAME 04-pressurized-hab 1440x900 true at (-27.9, -8.498906, 26.25)
+POLAR_FRAME 05-hab-window 1440x900 true at (-25.95, -8.498906, 23.78)
+POLAR_FRAME 06-drill 1440x900 true at (8.25, -16.99992, -19.1)
+POLAR_FRAME 07-record 1440x900 true at (5.31, -16.99891, -28.02)
+POLAR_FRAME 08-crawler 1440x900 true at (4.8, -16.99992, -18.66)
+POLAR_FRAME 09-mid-dock 1440x900 true at (-0.78, -8.500004, 37.73)
+POLAR_FRAME 10-ship 1440x900 true at (-10.7, 1.049961, 54.98)
+POLAR_LIGHT_CHECK native AO, zero global density and no extra full-screen GI or reflections true
+POLAR_LIGHT_CHECK one bounded exhaust volume true
+POLAR_LIGHT_CHECK matching stage lighting profile true
+POLAR_LIGHT_PROFILE enhanced
+POLAR_FRAME 11-exhaust 1440x900 true at (-2.72, -16.99891, -20.87)
+POLAR_LIGHT_CHECK exhaust is lit by a fixed shadowed work light true
+POLAR_FRAME 12-exhaust-no-work-light-scatter 1440x900 true at (-2.72, -16.99891, -20.87)
+POLAR_LIGHT_CHECK visible scattering below the work light (4531 samples) true
+POLAR_FRAME 13-record-ml35-ao 1440x900 true at (5.31, -16.99891, -28.02)
+POLAR_LIGHT_CHECK AO adds visible contact contrast at the recorder (194 samples) true
+POLAR_FRAME 14-hab-no-glow 1440x900 true at (-27.9, -8.498906, 26.25)
+POLAR_LIGHT_CHECK native glow reaches the immediate lamp surround (2124 samples) true

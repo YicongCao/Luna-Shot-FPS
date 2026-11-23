@@ -3,7 +3,9 @@ extends Node3D
 const Kit = preload("res://scripts/polar/kit.gd")
 const Layout = preload("res://scripts/polar/layout.gd")
 const Signs = preload("res://scripts/polar/signs.gd")
+const Lighting = preload("res://scripts/polar/lighting.gd")
 
+var polish := Lighting.polished()
 var pale := Kit.surface(Color(.71,.747,.768),.18,.55)
 var alloy := Kit.surface(Color(.39,.431,.46),.63,.43,1)
 var steel := Kit.surface(Color(.23,.273,.31),.58,.54,1)
@@ -188,9 +190,22 @@ func _drill() -> void:
 		Kit.box(self,Vector3(x,Layout.PIT+1.74,-26.976),Vector3(.17,2.35,.026),pale,.011)
 	Kit.box(self,Vector3(5.30,Layout.PIT+3.17,-26.95),Vector3(6.65,.40,.48),pale,.072)
 	Signs.plate(self,Vector3(5.30,Layout.PIT+3.21,-26.697),"record",.36)
+	var tube_light := Kit.glow(Color(.86,.92,.97),3.45) if polish else frost
 	for x in [2.9,7.65]:
-		Kit.box(self,Vector3(x,Layout.PIT+2.95,-29.35),Vector3(.10,.09,2.71),frost,.017)
-		Kit.lamp(self,Vector3(x,Layout.PIT+2.70,-29.42),Color(.79,.87,.94),1.85,5.9)
+		Kit.box(self,Vector3(x,Layout.PIT+2.95,-29.35),Vector3(.10,.09,2.71),tube_light,.017)
+		var lamp_at := Vector3(x,Layout.PIT+2.70,-29.42)
+		if polish and x > 5.0:
+			# Key and fill instead of two unshadowed bulbs flattening the recorder and back wall.
+			lamp_at.z += .72 # mount the key near the front of the strip, ahead of the cartridge
+			var key := Kit.spot(self,lamp_at,Layout.RECORD+Vector3(0,-.23,.28),Color(.86,.92,.97),4.5,5.9,39)
+			key.name = "RecorderKey"
+			key.light_size = .17
+			key.distance_fade_enabled = true
+			key.distance_fade_shadow = 14.0
+			key.distance_fade_begin = 18.0
+			key.distance_fade_length = 7.0
+		else:
+			Kit.lamp(self,lamp_at,Color(.79,.87,.94),1.30 if polish else 1.85,5.9)
 	for x in [2.56,3.47,4.38,5.29,6.20,7.11,8.02]:
 		Kit.box(self,Vector3(x,Layout.PIT+1.67,-33.264),Vector3(.88,2.70,.12),alloy,.035)
 		Kit.box(self,Vector3(x,Layout.PIT+.43,-33.197),Vector3(.70,.16,.031),shade,.008)
@@ -222,11 +237,43 @@ func _drill() -> void:
 		Kit.box(self,Vector3(3.02,Layout.PIT+.64,z),Vector3(1.09,1.28,.91),pale,.065,true)
 		for i in 6:
 			Kit.box(self,Vector3(3.03,Layout.PIT+.78+i*.051,z+.466),Vector3(.8,.028,.022),steel,.004)
-	# White spots are fixed to the tower; the pit remains a different exposure from the rim.
+	_drill_lighting(base)
+
+func _drill_lighting(base: Vector3) -> void:
+	var mouth := base + Vector3(.016,.88,1.26)
+	if polish:
+		Kit.pipe(self,mouth-Vector3.BACK*.54,mouth-Vector3.BACK*.12,.19,steel,20)
+		Kit.pipe(self,mouth-Vector3.BACK*.14,mouth,.235,alloy,24)
+		Kit.pipe(self,mouth-Vector3.BACK*.004,mouth+Vector3.BACK*.002,.164,shade,20)
+		Lighting.drill_plume(self,mouth)
+	# Fixed work lights, not a camera-following shaft or an extra unshadowed fill over the pit.
+	var lens := Kit.glow(Color(.85,.91,.97),4.2) if polish else frost
 	for x in [-5.93,-.76]:
 		var at := Vector3(x,Layout.PIT+7.88,-27.04)
-		Kit.box(self,at,Vector3(.73,.28,.35),frost,.027)
-		Kit.spot(self,at+Vector3(0,-.17,.10),Vector3(x*.5,Layout.PIT,-17.8),Color(.74,.83,.94),4.3,20,38)
+		var source := at + Vector3(0,-.17,.10)
+		var wash := Vector3(x*.5,Layout.PIT,-17.8)
+		if not polish:
+			Kit.box(self,at,Vector3(.73,.28,.35),frost,.027)
+			Kit.spot(self,source,wash,Color(.74,.83,.94),4.3,20,38)
+			continue
+		var crosses_plume: bool = x > -2.0
+		var target := mouth + Vector3(-.22,-.34,2.15) if crosses_plume else wash
+		if crosses_plume:
+			# Hang below the lower catwalk so the deck itself cannot shadow the whole plume.
+			source = base + Vector3(1.98,3.04,2.71)
+			Kit.box(self,source+Vector3(.09,.37,-.04),Vector3(.29,.48,.28),steel,.03)
+		var fixture := Kit.spot(self,source,target,Color(.85,.91,.97),5.8 if crosses_plume else 4.3,
+			7.2 if crosses_plume else 20.0,29.0 if crosses_plume else 38.0)
+		if crosses_plume:
+			fixture.name = "ExhaustWorkLight"
+			fixture.light_volumetric_fog_energy = 4.8
+			fixture.distance_fade_enabled = true
+			fixture.distance_fade_shadow = 24.0
+			fixture.distance_fade_begin = 28.0
+			fixture.distance_fade_length = 9.0
+		Kit.box(fixture,Vector3(0,0,.24),Vector3(.73,.34,.32),steel,.045)
+		Kit.box(fixture,Vector3(0,0,.106),Vector3(.64,.26,.068),shade,.024)
+		Kit.box(fixture,Vector3(0,0,.067),Vector3(.55,.18,.034),lens,.016)
 
 func _services() -> void:
 	# Pump assemblies provide actual hard cover without filling the central freight path.

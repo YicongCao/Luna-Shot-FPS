@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ML36 · 南极采冰站光照对照</title>
+<style>
+:root{color-scheme:dark;background:#0d1218;color:#e5ebf1;font:16px/1.6 system-ui,sans-serif}body{max-width:1440px;margin:auto;padding:20px}h1{font-size:clamp(1.45rem,3vw,2.15rem);margin:0}h2{font-size:1.2rem;margin:26px 0 8px}a{color:#a7d8f0}p{max-width:74ch}figure{margin:0;background:#151d26;border:1px solid #303c49}img{display:block;width:100%;height:auto}figcaption{padding:6px 10px}summary{cursor:pointer;margin:8px 0}.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:10px}
+</style>
+</head>
+<body>
+<h1>ML36 · 南极采冰站光照对照</h1>
+<p>Godot 4.7.2 / Metal Forward+。1440 × 900 游戏相机同机位截图，点击看原尺寸。除出生点外为验证摆位；不使用离线渲染或后期调色。<a href="REPORT.md">验证与帧时</a></p>
+<h2>钻机排气</h2>
+<div class="pair">
+<figure><a href="baseline/11-exhaust.webp"><img width="1440" height="900" src="baseline/11-exhaust.webp" alt="ML35 钻台下方几乎看不见排气"></a><figcaption>ML35</figcaption></figure>
+<figure><a href="current/11-exhaust.webp"><img width="1440" height="900" src="current/11-exhaust.webp" alt="固定检修灯照亮钻机出口近地面的一小团冷灰排气"></a><figcaption>ML36</figcaption></figure>
+</div>
+<details><summary>只关检修灯的体积散射</summary>
+<figure><a href="diagnostic/12-exhaust-no-work-light-scatter.webp"><img width="1440" height="900" loading="lazy" src="diagnostic/12-exhaust-no-work-light-scatter.webp" alt="保留同一体积和灯面，只将检修灯的体积散射贡献设为零"></a></figure>
+</details>
+<h2>生活舱灯面</h2>
+<div class="pair">
+<figure><a href="baseline/04-pressurized-hab.webp"><img width="1440" height="900" loading="lazy" src="baseline/04-pressurized-hab.webp" alt="ML35 的生活舱灯面、补给柜和窗外真空"></a><figcaption>ML35</figcaption></figure>
+<figure><a href="current/04-pressurized-hab.webp"><img width="1440" height="900" loading="lazy" src="current/04-pressurized-hab.webp" alt="白色灯罩边缘有局部辉光，补给柜和暗部窗框仍清楚"></a><figcaption>ML36</figcaption></figure>
+</div>
+<details><summary>保留灯具和亮度，只关原生 Glow</summary>
+<figure><a href="diagnostic/14-hab-no-glow.webp"><img width="1440" height="900" loading="lazy" src="diagnostic/14-hab-no-glow.webp" alt="同一生活舱和灯具，关闭 Glow 后的对照"></a></figure>
+</details>
+<h2>记录匣 · 只对比 SSAO</h2>
+<div class="pair">
+<figure><a href="diagnostic/13-record-ml35-ao.webp"><img width="1440" height="900" loading="lazy" src="diagnostic/13-record-ml35-ao.webp" alt="保留新灯光但使用旧 SSAO 的记录匣，柜底和背板接缝较平"></a><figcaption>ML35 的 SSAO 参数</figcaption></figure>
+<figure><a href="current/07-record.webp"><img width="1440" height="900" loading="lazy" src="current/07-record.webp" alt="短半径 SSAO 加强柜底、凸出面板与墙角的接触层次"></a><figcaption>ML36 的 SSAO 参数</figcaption></figure>
+</div>
+<h2>撤离船驾驶台</h2>
+<div class="pair">
+<figure><a href="baseline/10-ship.webp"><img width="1440" height="900" loading="lazy" src="baseline/10-ship.webp" alt="原驾驶台台面在窗前较暗"></a><figcaption>ML35</figcaption></figure>
+<figure><a href="current/10-ship.webp"><img width="1440" height="900" loading="lazy" src="current/10-ship.webp" alt="顶装工作灯照亮局部操作台，仍可清楚看到舷窗外"></a><figcaption>ML36</figcaption></figure>
+</div>
+<h2>着陆坪</h2>
+<div class="pair">
+<figure><a href="baseline/01-arrival.webp"><img width="1440" height="900" loading="lazy" src="baseline/01-arrival.webp" alt="ML35 出生位，黑色天空和低角度冷白日照"></a><figcaption>ML35</figcaption></figure>
+<figure><a href="current/01-arrival.webp"><img width="1440" height="900" loading="lazy" src="current/01-arrival.webp" alt="ML36 同一出生位，保留黑色天空、山脊和场外明暗关系"></a><figcaption>ML36</figcaption></figure>
+</div>
+<p><a href="current/native-sealing.webp">连续原生路线 · 封舱时从船内望向采冰站</a></p>
+</body>
+</html>

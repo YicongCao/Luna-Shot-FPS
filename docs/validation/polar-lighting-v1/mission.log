@@ -1,0 +1,99 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+POLAR_SCENARIO spawn and pre-record interlocks | natural spawn; independent pit-lift, mid call, and lander anchor fixtures
+POLAR_CHECK spawn settles upright and stationary on the rim true
+POLAR_CHECK spawn starts a clean locked mission true
+POLAR_CHECK pit lift refuses E before the record true
+POLAR_CHECK mid call refuses E before the record true
+POLAR_CHECK cabin console refuses a complete E hold before the record true
+POLAR_CHECK ship windshield blocks a level line of sight true
+POLAR_CHECK sampler cannot damage operator in lander cabin through a full sweep true
+POLAR_SCENARIO habitat and pad bypass | F5 to natural spawn; continuous WASD across the pad, down both habitat inclines, and through the mid bypass
+POLAR_CHECK landing pad reaches habitat vestibule without lift power true
+POLAR_CHECK capsule descends upper habitat grade into pressure true
+POLAR_CHECK mid bypass walks from habitat door to shaft at deck height true
+POLAR_CHECK mid bypass connects back into the pressurized room true
+POLAR_CHECK habitat glazing stops the side-strafing capsule and ray true
+POLAR_CHECK sampler cannot damage operator in pressurized habitat cabin through a full sweep true
+POLAR_CHECK capsule descends lower habitat grade into pressurized pit hall true
+POLAR_CHECK capsule exits lower airlock onto pit deck true
+POLAR_SCENARIO exterior step | F5 then one fixture on right landing apron; same continuous downhill and uphill jump pair
+POLAR_CHECK landing pad connects to exterior descent's top ledge true
+POLAR_CHECK low-gravity jump lands down the 2.85 m exterior step true
+POLAR_CHECK airborne capsule retains takeoff momentum after W release true
+POLAR_CHECK same gap returns uphill by a 2.85 m jump true
+POLAR_SCENARIO record-only success | F5 then fixture at the alcove approach; no relocation from record through ship
+POLAR_CHECK record rejected beyond the 2.58 m range true
+POLAR_CHECK record approach enters the alcove on foot true
+POLAR_CHECK record needs gaze when E is pressed, not while stale-held true
+POLAR_CHECK record interaction respects solid line-of-sight occlusion true
+POLAR_CHECK record pickup hides the cartridge and unlocks freight true
+POLAR_CHECK empty lift boards on foot from the pit true
+POLAR_CHECK record-only pit to mid hoist physically carries the grounded player true
+POLAR_CHECK record-only mid to rim hoist physically carries the grounded player true
+POLAR_CHECK rim dock opens a walkable pad exit true
+POLAR_CHECK lander console is not offered outside the ramp true
+POLAR_CHECK extract refuses E inside the cabin but beyond its 2.55 m range true
+POLAR_CHECK record-only operator boards the ship by its ramp true
+POLAR_CHECK extract refuses a full hold through a layer-1 occluder true
+POLAR_CHECK extract rejects short and interrupted 0.75 s holds true
+POLAR_CHECK record-only seals and completes physically inside the lander true
+POLAR_SCENARIO full freight | F5 then fixture at record alcove; no relocation from record through ship
+POLAR_CHECK full freight recovers the required record true
+POLAR_CHECK ice core is a physical layer-1 crate with a reachable control true
+POLAR_CHECK releasing E clears both partial 0.65 s ice holds true
+POLAR_CHECK full 0.65 s ice hold starts exactly one transfer true
+POLAR_CHECK full freight loads the same crate onto the pit deck and walks aboard true
+POLAR_CHECK full freight pit to mid hoist physically carries the grounded player true
+POLAR_CHECK full freight pit to mid same crate rides with the deck true
+POLAR_CHECK mid lift can stand near sampler without stepping onto bypass true
+POLAR_CHECK sampler cannot damage operator in mid lift through a full sweep true
+POLAR_CHECK full freight mid to rim hoist physically carries the grounded player true
+POLAR_CHECK full freight mid to rim same crate rides with the deck true
+POLAR_CHECK operator disembarks while ice remains on the top lift true
+POLAR_CHECK receiver hold starts the physical ship transfer true
+POLAR_CHECK lander console is not offered outside the ramp true
+POLAR_CHECK full freight operator boards by the physical ship ramp true
+POLAR_CHECK full freight crate completes its expected continuous path true
+POLAR_CHECK ship transfer carries the solid crate clear of architecture true
+POLAR_CHECK operator and stowed crate are separated by the pressure cell true
+POLAR_CHECK full freight seals and completes physically inside the lander true
+POLAR_SCENARIO abandoned freight | F5 then fixture at record alcove; no relocation from record through ship
+POLAR_CHECK F5 from completed freight returns the physical crate to its source true
+POLAR_CHECK abandoned freight recovers the required record true
+POLAR_CHECK ice core is a physical layer-1 crate with a reachable control true
+POLAR_CHECK releasing E clears both partial 0.65 s ice holds true
+POLAR_CHECK full 0.65 s ice hold starts exactly one transfer true
+POLAR_CHECK abandoned freight loads the same crate onto the pit deck and walks aboard true
+POLAR_CHECK abandoned freight pit to mid hoist physically carries the grounded player true
+POLAR_CHECK abandoned freight pit to mid same crate rides with the deck true
+POLAR_CHECK can abandon the crate at mid and climb through habitat true
+POLAR_CHECK lander console is not offered outside the ramp true
+POLAR_CHECK abandoned freight operator boards by the physical ship ramp true
+POLAR_CHECK abandoned freight crate completes its expected continuous path true
+POLAR_CHECK abandoned freight seals and completes physically inside the lander true
+POLAR_SCENARIO crawler timing and resupply | F5 then pit fixture; after real damage, separate habitat supply fixture preserving health and ammo
+POLAR_CHECK crawler telegraphs without premature damage true
+POLAR_CHECK unobstructed locked crawler charge fires once after 1.55 s true
+POLAR_CHECK damaged suit can resupply with health cap and reserve bonus true
+POLAR_CHECK habitat supply cannot be reused after consuming more ammo true
+POLAR_SCENARIO crawler LOS and layered weapon | F5 then pit fixture with removable static QA occluders
+POLAR_CHECK architecture blocks gun ray and prevents crawler charge true
+POLAR_CHECK late loss of crawler line of sight cancels an already locked charge true
+POLAR_SCENARIO muzzle and target layers | F5 at the same pit anchor; test boxes do not drive the live targets
+POLAR_CHECK muzzle-side obstacle blocks shot despite a clear crosshair true
+POLAR_CHECK pulse ignores wrong layer and disables crawler in three accepted shots true
+POLAR_CHECK disabled crawler no longer accepts hits true
+POLAR_SCENARIO sampler timing and weak point | F5 then one fixed mid-sweep buffer anchor; no threat ticks injected
+POLAR_CHECK sampler stays safe for 5.4 s before issuing warning true
+POLAR_CHECK sampler provides 1.75 s of nondamaging warning before sweep true
+POLAR_CHECK only the live 2.25 s sampler sweep hurts, once per pass true
+POLAR_CHECK sampler's layer-4 drive disables in four accepted shots true
+POLAR_SCENARIO sampler LOS | F5 then one bypass fixture; add a narrow solid barrier between passes without moving the operator
+POLAR_CHECK sampler cannot strike through world cover at the same reachable feet true
+POLAR_SCENARIO failure and reset | F5 then outer playable boundary anchor; WASD past boundary, then actual F5
+POLAR_CHECK leaving playable bounds by movement enters FAILED and blocks operator true
+POLAR_CHECK failed operator cannot continue moving true
+POLAR_CHECK F5 restores spawn, input, record, freight, hatch, ammo, and threats true
+POLAR_CHECK WASD movement resumes after F5 true
+POLAR_TOTAL 84 checks, 0 failed; 14952 physics ticks

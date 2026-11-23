@@ -1,0 +1,44 @@
+{
+	"first_draw_ms": 766.34,
+	"gpu": "Apple M6 (Apple9)",
+	"lighting": "enhanced",
+	"probe_failures": 0,
+	"probes": [
+		{
+			"average_fps": 169.5,
+			"average_ms": 5.9,
+			"median_ms": 5.78,
+			"p95_ms": 7.05,
+			"path": "rim and lander",
+			"samples": 288
+		},
+		{
+			"average_fps": 141.4,
+			"average_ms": 7.07,
+			"median_ms": 7.02,
+			"p95_ms": 8.16,
+			"path": "working drill and active patrol",
+			"samples": 288
+		},
+		{
+			"average_fps": 162.3,
+			"average_ms": 6.16,
+			"median_ms": 5.93,
+			"p95_ms": 7.77,
+			"path": "record alcove and key light",
+			"samples": 288
+		},
+		{
+			"average_fps": 154.7,
+			"average_ms": 6.47,
+			"median_ms": 6.26,
+			"p95_ms": 7.92,
+			"path": "habitation glazing and work lights",
+			"samples": 288
+		}
+	],
+	"resolution": [
+		1600,
+		900
+	]
+}

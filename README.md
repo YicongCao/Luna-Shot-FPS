@@ -2,15 +2,17 @@
 
 Godot 月球基地 FPS。当前主关卡是单人 PvE **南极采冰站**；保留旧清剿关卡、实时 Benchmark 和原版 64 × 66 m 训练场。
 
-## ML35 · 南极采冰站
+## 南极采冰站
 
-![从着陆坪看程序化撤离船和货梯塔，原生 Godot Forward+ 实机](docs/validation/polar-extraction-v1/01-arrival.webp)
+![从着陆坪看程序化撤离船和货梯塔，原生 Godot Forward+ 实机](docs/validation/polar-lighting-v1/current/01-arrival.webp)
 
-沿封闭生活舱或外露低重力踏台下坑。取回记录匣后即可撤离，也可用货梯把冰芯运上船；不需要清场，货运中途可以离开。新场景、机械敌人、撤离船与脉冲工具都用代码建模。真空外景用偏冷的低角度直射光，体积雾只局限在钻机排气附近。
+沿封闭生活舱或外露低重力踏台下坑。取回记录匣后即可撤离，也可用货梯把冰芯运上船；不需要清场，货运中途可以离开。新场景、机械敌人、撤离船与脉冲工具都用代码建模。
+
+**ML36 光照**：加强柜底、接缝和地面的近距离遮蔽；钻机检修灯照亮局部冷灰排气，生活舱和驾驶台有受控的灯面辉光。保留低角冷白日照、真空黑位和原玩法。`POLAR_LIGHTING=baseline ./launch-polar.command` 回看 ML35 光照。
 
 双击 [`launch-polar.command`](launch-polar.command)，或在 Godot 4.7.2 打开 [`project.godot`](project.godot) 后按 **F5**。**WASD** 移动、**Shift** 冲刺、**空格**跳跃、左右键脉冲／瞄准、**R** 换弹、**E** 交互、**Esc** 暂停、**F5** 重开。新关卡使用 Forward+，原生验证平台为 macOS / Apple M6。
 
-[设计与路线](docs/design/polar-v1/PLAN.md) · [实机图集](docs/validation/polar-extraction-v1/review.html) · [验证与画质边界](docs/validation/polar-extraction-v1/REPORT.md) · 验证命令 `./tools/validate_polar.sh --native`
+[设计与路线](docs/design/polar-v1/PLAN.md) · [光照实机对照](docs/validation/polar-lighting-v1/review.html) · [验证与帧时](docs/validation/polar-lighting-v1/REPORT.md) · [ML35 首版图集](docs/validation/polar-extraction-v1/review.html) · 验证命令 `./tools/validate_polar.sh --lighting`
 
 **旧版入口：** [`launch.command`](launch.command) 进入 Compatibility 训练场，[`launch-quarantine.command`](launch-quarantine.command) 进入清剿，[`launch-benchmark.command`](launch-benchmark.command) 播放实时演示。
 

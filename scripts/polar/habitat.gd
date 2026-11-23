@@ -2,6 +2,7 @@ extends RefCounted
 ## The shell, collision and pressure cue use the same deck sections. Locks are parked open.
 
 const Kit = preload("res://scripts/polar/kit.gd")
+const Lighting = preload("res://scripts/polar/lighting.gd")
 
 const ENTRY := Vector3(-27.0, 0.0, 51.0)
 const UPPER_KNEE := Vector3(-27.0, 0.0, 44.0)
@@ -60,6 +61,7 @@ class Wing:
 		[1, 2, 6, 5], [0, 1, 5, 4], [3, 7, 6, 2],
 	]
 	const LIGHT_COLOR := Color(1.0, 0.945, 0.865)
+	const NEUTRAL_LIGHT := Color(0.94, 0.96, 1.0)
 
 	var root: Node3D
 	var section: Node3D
@@ -77,7 +79,8 @@ class Wing:
 	var rail := Kit.surface(Color(0.44, 0.49, 0.51), 0.67, 0.35, 1)
 	var seat := Kit.surface(Color(0.255, 0.32, 0.315), 0.02, 0.80, 2)
 	var stripe := Kit.surface(Color(0.62, 0.49, 0.285), 0.07, 0.71)
-	var diffuser := Kit.glow(LIGHT_COLOR, 1.25)
+	var light_color := NEUTRAL_LIGHT if Lighting.polished() else LIGHT_COLOR
+	var diffuser := Kit.glow(light_color, 2.95 if Lighting.polished() else 1.25)
 	var dock_light := Kit.glow(Color(0.61, 0.76, 0.84), 0.85)
 	var display := Kit.glow(Color(0.46, 0.77, 0.72), 0.68)
 	var glass := StandardMaterial3D.new()
@@ -236,7 +239,7 @@ class Wing:
 		var spot := SpotLight3D.new()
 		spot.position = a.lerp(b, 0.5) + Vector3(x, height - 0.23, 0)
 		spot.rotation.x = -PI * 0.5
-		spot.light_color = LIGHT_COLOR
+		spot.light_color = light_color
 		spot.light_energy = 6.2
 		spot.spot_range = 4.15
 		spot.spot_angle = 43.0
@@ -295,7 +298,7 @@ class Wing:
 			Kit.pipe(section, bay + Vector3.UP * 0.15, bay + Vector3.UP * 0.24, 0.101, gasket, 12)
 		Kit.box(section, p + Vector3(-0.35, 0.75, 0), Vector3(0.63, 0.10, 1.85), jacket, 0.025)
 		Kit.box(section, p + Vector3(-0.14, 0.69, 0), Vector3(0.16, 0.043, 1.55), diffuser, 0.009)
-		Kit.lamp(section, p + Vector3(0.23, 0.58, 0), LIGHT_COLOR, 1.42, 2.5)
+		Kit.lamp(section, p + Vector3(0.23, 0.58, 0), light_color, 1.42, 2.5)
 		var deck := ROOM_START.y
 		# Recessed bench and cargo lockers stay on the service side, out of the dock turning area.
 		Kit.box(section, Vector3(-29.39, deck + 0.24, 24.39), Vector3(0.83, 0.48, 2.02), rib, 0.038, true)

@@ -1,0 +1,4 @@
+QUARANTINE QA: 49 checks, 0 failures. Direct-call/teleport logic and physics LOS only; no visual/playthrough claim.
+TRAINING_CHECKS 69
+QA_COMPLETE failures=0
+ENERGY_GENERATION_PASS 20 seeds, deterministic output, invalid layout rejected without overwriting

@@ -2,6 +2,7 @@ extends Node3D
 ## Polar utility lander, a lofted open hull with a walkable pressure cell and working hatch.
 const Kit = preload("res://scripts/polar/kit.gd")
 const Signs = preload("res://scripts/polar/signs.gd")
+const Lighting = preload("res://scripts/polar/lighting.gd")
 
 var hatch_panels: Array[Node3D] = []
 var hatch_lamp: OmniLight3D
@@ -125,6 +126,12 @@ func _ready() -> void:
 	Kit.lamp(self,Vector3(0,3.62,-2.30),Color(.78,.87,1),1.17,6.0)
 	Kit.lamp(self,Vector3(0,3.55,2.28),Color(.91,.95,1),1.21,6.0)
 	hatch_lamp = Kit.lamp(self,Vector3(0,3.64,4.99),Color(.68,.83,1),1.45,5.0)
+	if Lighting.polished():
+		# A recessed chart light catches the console and sill without lifting the window exposure.
+		Kit.box(self,Vector3(0,3.91,-4.17),Vector3(.51,.15,.29),graphite,.026)
+		Kit.box(self,Vector3(0,3.831,-4.17),Vector3(.39,.028,.19),Kit.glow(Color(.88,.93,.98),2.85),.01)
+		var task := Kit.spot(self,Vector3(0,3.79,-4.17),Vector3(0,1.62,-4.61),Color(.86,.93,1),2.5,3.7,39,false)
+		task.name = "CabinChartLight"
 	seal(0.0)
 
 func _section(width: float, floor_y: float, top: float) -> PackedVector2Array:

@@ -76,3 +76,5 @@ ML30 仅清剿/Benchmark 使用装配式绕组、无端盖能量柱和沿铺装�
 ML31/ML32 清剿与演示默认六足机械犬。`QUARANTINE_BUG_STYLE=refined` 看 ML26 虫壳，`baseline` 看球体版；机械造型均可用 `QUARANTINE_GAIT=baseline` 独立对照旧摆腿。`bug_gait.gd` 锁的是支撑脚世界位姿，不驱动胶囊；受击不得在渲染帧旋转其活体髋根。`hound_shell.gd` 替换躯壳，`hound_action.gd` 只做头/单片护板表现；追视只复用 AI 的可见追逐判定，受击只响应已接受的命中，不扩张胶囊或添加伤害。演示特写为编排扫视，非真实巡逻。`tools/validate_hound.sh` 串行复现各项；原生图与已知视觉取舍见 docs/validation/t-bug-hound-v1。
 
 ML35 用户于 2026-11-23 授权将南极采冰站设为新主关卡。编辑器 F5 / `launch-polar.command` 进入 `scenes/polar_extraction.tscn`（Forward+）；`launch.command` 仍为 Compatibility 训练场，旧清剿与演示入口不变。ML25 的暖雾是旧清剿美术方向；本关卡保持冷白直射、冷灰真空，唯钻井排气有局部中性体积。`scripts/polar` 与 `assets/polar` 由程序构建新网格、材质和声音，无外部资产生成调用。禁止把杀敌接入记录匣或撤离门禁；冰芯只有实体货箱抵达船外货位才计件，中层可弃货。`tools/validate_polar.sh --native` 复现输入、物理、帧图、短性能采样和原生连续无射击撤离。美术证据在 `docs/validation/polar-extraction-v1`；照片级为目标，尚无用户美术验收。
+
+ML36 南极采冰站默认使用短半径接触 SSAO、钻机局部排气散射和灯面 HDR Glow；`POLAR_LIGHTING=baseline ./launch-polar.command` 回看 ML35，不改玩法或其他场景。全局雾密度为 0，排气由平台下固定、能投影的检修 Spot 照亮；不把该效果扩展到真空或做跟随镜头的假光柱。保留 ML35 日照级联，近级联试验因生活舱帧时退步未发布。`tools/validate_polar.sh --lighting` 串行跑两版原生对照、分项像素门禁、含有效排气的成对帧时和当前路线；证据 `docs/validation/polar-lighting-v1`。SSAO 不是烘焙 AO，体积密度着色器不是流体模拟；用户视觉验收待定。

@@ -60,3 +60,5 @@
 - [ML31-六足支撑与转弯](../validation/t-bug-gait-v1/REPORT.md)：实测平地、转向、坡道及失去地面时的脚垫行为；完整活虫路线与演示数据分开。
 
 - [ML32-六足机械犬的轮廓与受击](../validation/t-bug-hound-v1/REPORT.md)：替换躯壳、分开巡逻/追视/扑击与局部受击；对照灰模、腰射距离和相同胶囊下的新旧表现。
+
+- [ML36-南极采冰站接触阴影与局部体积光](../validation/polar-lighting-v1/REPORT.md)：调校现有 SSAO、固定检修灯照亮冷灰排气、灯面 HDR Glow；用分项像素、成对帧时和连续撤离验证，保留 ML35 照明对照。
