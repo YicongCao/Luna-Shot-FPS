@@ -74,3 +74,5 @@ ML29 当前清剿/Benchmark默认月面为scripts/quarantine/lunar_ridges.gd：�
 ML30 仅清剿/Benchmark 使用装配式绕组、无端盖能量柱和沿铺装材质传播的上电脉冲；QUARANTINE_REACTOR=baseline 对照旧效果。启动原训练场仍为launch.command，当前可玩小样为launch-quarantine.command。原生对照与画质判断见docs/validation/reactor-induction-v1；纯着色器反馈不是体积流体模拟，不增加伤害/碰撞。
 
 ML31/ML32 清剿与演示默认六足机械犬。`QUARANTINE_BUG_STYLE=refined` 看 ML26 虫壳，`baseline` 看球体版；机械造型均可用 `QUARANTINE_GAIT=baseline` 独立对照旧摆腿。`bug_gait.gd` 锁的是支撑脚世界位姿，不驱动胶囊；受击不得在渲染帧旋转其活体髋根。`hound_shell.gd` 替换躯壳，`hound_action.gd` 只做头/单片护板表现；追视只复用 AI 的可见追逐判定，受击只响应已接受的命中，不扩张胶囊或添加伤害。演示特写为编排扫视，非真实巡逻。`tools/validate_hound.sh` 串行复现各项；原生图与已知视觉取舍见 docs/validation/t-bug-hound-v1。
+
+ML35 用户于 2026-11-23 授权将南极采冰站设为新主关卡。编辑器 F5 / `launch-polar.command` 进入 `scenes/polar_extraction.tscn`（Forward+）；`launch.command` 仍为 Compatibility 训练场，旧清剿与演示入口不变。ML25 的暖雾是旧清剿美术方向；本关卡保持冷白直射、冷灰真空，唯钻井排气有局部中性体积。`scripts/polar` 与 `assets/polar` 由程序构建新网格、材质和声音，无外部资产生成调用。禁止把杀敌接入记录匣或撤离门禁；冰芯只有实体货箱抵达船外货位才计件，中层可弃货。`tools/validate_polar.sh --native` 复现输入、物理、帧图、短性能采样和原生连续无射击撤离。美术证据在 `docs/validation/polar-extraction-v1`；照片级为目标，尚无用户美术验收。

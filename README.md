@@ -1,8 +1,20 @@
 # Luna-Shot-FPS
 
-**体验新版：** 双击 [`launch-quarantine.command`](launch-quarantine.command) 直接游玩，或双击 [`launch-benchmark.command`](launch-benchmark.command) 观看实时演示。`launch.command` 和编辑器 F5 仍进入原 Compatibility 训练场；无需清缓存。
+Godot 月球基地 FPS。当前主关卡是单人 PvE **南极采冰站**；保留旧清剿关卡、实时 Benchmark 和原版 64 × 66 m 训练场。
 
-## 实时 Benchmark 分镜
+## ML35 · 南极采冰站
+
+![从着陆坪看程序化撤离船和货梯塔，原生 Godot Forward+ 实机](docs/validation/polar-extraction-v1/01-arrival.webp)
+
+沿封闭生活舱或外露低重力踏台下坑。取回记录匣后即可撤离，也可用货梯把冰芯运上船；不需要清场，货运中途可以离开。新场景、机械敌人、撤离船与脉冲工具都用代码建模。真空外景用偏冷的低角度直射光，体积雾只局限在钻机排气附近。
+
+双击 [`launch-polar.command`](launch-polar.command)，或在 Godot 4.7.2 打开 [`project.godot`](project.godot) 后按 **F5**。**WASD** 移动、**Shift** 冲刺、**空格**跳跃、左右键脉冲／瞄准、**R** 换弹、**E** 交互、**Esc** 暂停、**F5** 重开。新关卡使用 Forward+，原生验证平台为 macOS / Apple M6。
+
+[设计与路线](docs/design/polar-v1/PLAN.md) · [实机图集](docs/validation/polar-extraction-v1/review.html) · [验证与画质边界](docs/validation/polar-extraction-v1/REPORT.md) · 验证命令 `./tools/validate_polar.sh --native`
+
+**旧版入口：** [`launch.command`](launch.command) 进入 Compatibility 训练场，[`launch-quarantine.command`](launch-quarantine.command) 进入清剿，[`launch-benchmark.command`](launch-benchmark.command) 播放实时演示。
+
+## 旧版实时 Benchmark 分镜
 
 以下画面截自同一次 Godot 4.7.2 Forward+ 实时演示。镜头与敌人站位有编排，不是预录视频或无辅助通关。
 
@@ -77,7 +89,7 @@ HUD任务以 `n/8、0/1、0/1` 显示数量，终端/撤离有定位和离屏方
 
 ## 运行
 
-macOS 双击 `launch.command`，或用 Godot 4.7.2 打开 `project.godot` 后按 F5。当前验证平台为 macOS / Apple M5 / Compatibility 渲染器。
+原版训练场在 macOS 用 `launch.command` 打开，保留 Compatibility；编辑器 F5 进入上方南极采冰站。训练场的历史验证平台包含 Apple M5。
 
 启动脚本会自动查找 `/Applications`、用户 Applications 目录或 PATH 中的 Godot，并先导入资源。自定义安装路径可用 `GODOT_BIN="/完整路径/Godot" ./launch.command`；导入日志位于 `artifacts/launch/import.log`。脚本支持透传 Godot 启动参数。
 
@@ -156,7 +168,7 @@ git lfs install
 git clone git@github.com:YicongCao/Luna-Shot-FPS.git
 cd Luna-Shot-FPS
 git lfs pull
-./launch.command
+./launch-polar.command
 ```
 
 源文件、有效烘焙与验证证据已版本化；失败烘焙的重复二进制、缓存和临时产物留在本地。工作经验与提交约定见 [ML08](docs/logs/ML08-资产管线复盘与版本归档.md)。
@@ -171,7 +183,7 @@ git lfs pull
 
 Godot命令行显式选择：`-- --weapon-revision=ml06`、`ml07`、`ml09`、`ml20`或`ml21`。不传参数时采用 ML21，APPROVED 不会自动切换默认；`LS01_BASELINE=1`仍可回ML06，`LS01_CANDIDATE=1`保留ML07候选语义。ML09 新源在`art_source/weapons/lc01/ls01-refine-v2`，运行资产在`assets/weapons/lc01/ls01_v2`。重建已发布资产时需选新的`--out`/`--runtime`目录。
 
-## ML21 混元枪械迭代（当前默认）
+## ML21 混元枪械迭代（旧训练场、清剿默认）
 
 在 ML20 基础上：机身改为深藏青黑，弹夹壳全部涂橙，两侧铭牌与斜线蚀刻打平后重新烘焙，高模按角度平滑并锐化法线让线条更利，后机匣斜面加装 20 格动态弹量屏。[验证](docs/validation/ml21-hunyuan-refine/README.md) · [ML21 日志](docs/logs/ML21-混元枪械配色弹夹蚀刻与弹量屏迭代.md) · 复现 `tools/hunyuan_weapon/run.sh`。
 

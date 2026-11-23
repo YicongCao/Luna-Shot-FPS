@@ -1,6 +1,7 @@
 extends SceneTree
 var checks: Array=[]
 var scene: Node3D
+var out: String
 func _initialize() -> void: run.call_deferred()
 func check(name: String, passed: bool) -> void:
 	checks.append({"check":name,"passed":passed})
@@ -10,8 +11,10 @@ func settle(n: int) -> void:
 func capture(name: String) -> void:
 	if DisplayServer.get_name()=="headless": return
 	await RenderingServer.frame_post_draw
-	root.get_texture().get_image().save_png("res://docs/validation/knockdown-targets/"+name+".png")
+	root.get_texture().get_image().save_png(out.path_join(name+".png"))
 func run() -> void:
+	out = OS.get_environment("KNOCKDOWN_QA_OUTPUT")
+	if out.is_empty(): out = "res://docs/validation/knockdown-targets"
 	scene=load("res://scenes/training.tscn").instantiate()
 	root.add_child(scene)
 	scene.player.qa_mode=true
@@ -56,7 +59,7 @@ func run() -> void:
 	await capture("02-restored")
 	check("can_hit_again",first.register_hit() and first.hits==1)
 	var failures:=checks.filter(func(c):return not c.passed)
-	var f:=FileAccess.open("res://docs/validation/knockdown-targets/"+DisplayServer.get_name()+".json",FileAccess.WRITE)
+	var f:=FileAccess.open(out.path_join(DisplayServer.get_name()+".json"),FileAccess.WRITE)
 	f.store_string(JSON.stringify({"checks":checks,"failures":failures.size()},"\t"))
 	print("TARGET_QA_COMPLETE ",checks.size()," failures=",failures.size())
 	quit(0 if failures.is_empty() else 1)

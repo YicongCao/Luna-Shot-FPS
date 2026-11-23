@@ -2,7 +2,7 @@
 # Shared macOS launcher. Optional GODOT_BIN overrides automatic discovery.
 set -eu
 PROJECT_ROOT="${0:A:h:h}"
-MODE="${1:-training}"
+MODE="${1:-polar}"
 if (( $# > 0 )); then shift; fi
 cd "$PROJECT_ROOT"
 
@@ -22,12 +22,13 @@ if [[ -z "$ENGINE" || ! -x "$ENGINE" ]]; then
   exit 1
 fi
 case "$MODE" in
+  polar) SCENE='res://scenes/polar_extraction.tscn' ;;
   training) SCENE='res://scenes/training.tscn' ;;
   lab) SCENE='res://scenes/weapon_lab.tscn' ;;
   ground) SCENE='res://scenes/ground_studio.tscn' ;;
   quarantine) SCENE='res://scenes/quarantine.tscn' ;;
   benchmark) SCENE='res://scenes/quarantine_benchmark.tscn' ;;
-  *) print -u2 "未知启动模式：$MODE（可用 training / lab / ground / quarantine / benchmark）"; exit 2 ;;
+  *) print -u2 "未知启动模式：$MODE（可用 polar / training / lab / ground / quarantine / benchmark）"; exit 2 ;;
 esac
 
 mkdir -p artifacts/launch
@@ -45,11 +46,14 @@ if /usr/bin/grep -Eq 'SCRIPT ERROR|Parse Error|^ERROR:' "$IMPORT_LOG"; then
   exit 1
 fi
 print "启动 Luna-Shot-FPS / $MODE"
+if [[ "$MODE" == polar ]]; then
+  exec "$ENGINE" --path "$PROJECT_ROOT" --rendering-method forward_plus --resolution 1600x900 "$SCENE" "$@"
+fi
 if [[ "$MODE" == quarantine || "$MODE" == benchmark ]]; then
   if [[ "$MODE" == quarantine && "${QUARANTINE_COMPAT:-0}" == 1 ]]; then
     exec "$ENGINE" --path "$PROJECT_ROOT" --rendering-method gl_compatibility --resolution 1600x900 "$SCENE" "$@"
   fi
-  # Only this standalone slice opts into Forward+; the training baseline is unchanged.
   exec "$ENGINE" --path "$PROJECT_ROOT" --rendering-method forward_plus --resolution 1920x810 "$SCENE" "$@"
 fi
-exec "$ENGINE" --path "$PROJECT_ROOT" "$SCENE" "$@"
+# Legacy standalone scenes must retain their original renderer after changing the editor default.
+exec "$ENGINE" --path "$PROJECT_ROOT" --rendering-method gl_compatibility "$SCENE" "$@"

@@ -13,8 +13,8 @@ uv run --with numpy --with scipy python tools/ls01_refine/audit_padding.py --rev
 uv run --with numpy --with pillow python tools/ls01_refine/audit_bake.py --revision ml09 > "$OUT/bake-audit.log" 2>&1
 uv run --with numpy python tools/ls01_refine/audit_runtime.py --revision ml09 > "$OUT/runtime-audit.log" 2>&1
 "$GODOT" --headless --path . --script tools/ls01_refine/ammo_qa.gd -- --weapon-revision=ml09 > "$OUT/ammo-qa.log" 2>&1
-LUNA_QA_OUTPUT="$OUT/rifle" "$GODOT" --headless --path . -- --rifle-qa --weapon-revision=ml09 > "$OUT/rifle/headless.log" 2>&1
-LUNA_QA_OUTPUT="$OUT/rifle" "$GODOT" --path . -- --rifle-qa --weapon-revision=ml09 > "$OUT/rifle/native.log" 2>&1
+LUNA_QA_OUTPUT="$OUT/rifle" "$GODOT" --headless --path . --rendering-method gl_compatibility res://scenes/training.tscn -- --rifle-qa --weapon-revision=ml09 > "$OUT/rifle/headless.log" 2>&1
+LUNA_QA_OUTPUT="$OUT/rifle" "$GODOT" --path . --rendering-method gl_compatibility res://scenes/training.tscn -- --rifle-qa --weapon-revision=ml09 > "$OUT/rifle/native.log" 2>&1
 LUNA_QA_OUTPUT="$OUT/rifle" "$GODOT" --headless --path . --script tools/validate_scene_switch.gd -- --weapon-revision=ml09 > "$OUT/scene-switch.log" 2>&1
 "$GODOT" --path . --script tools/ls01_refine/capture_game.gd -- --weapon-revision=ml09 > "$OUT/game.log" 2>&1
 "$GODOT" --path . --script tools/ls01_refine/spill_capture.gd -- --weapon-revision=ml09 > "$OUT/spill.log" 2>&1

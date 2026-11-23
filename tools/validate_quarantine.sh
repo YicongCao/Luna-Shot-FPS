@@ -20,7 +20,7 @@ LUNA_QA_OUTPUT="$OUT/training-regression" python3 tools/test_energy_layout.py > 
 "$ENGINE" --headless --path . --script res://tools/quarantine/test_mission.gd -- --quarantine-qa > "$OUT/gameplay-qa.log" 2>&1
 check_log "$OUT/gameplay-qa.log"
 # Preserve historical evidence: legacy QA output is redirected to the new milestone.
-LUNA_QA_OUTPUT="$OUT/training-regression" "$ENGINE" --headless --path . --fixed-fps 60 -- --qa > "$OUT/training-regression.log" 2>&1
+LUNA_QA_OUTPUT="$OUT/training-regression" "$ENGINE" --headless --path . --rendering-method gl_compatibility --fixed-fps 60 res://scenes/training.tscn -- --qa > "$OUT/training-regression.log" 2>&1
 check_log "$OUT/training-regression.log"
 if [[ "${1:-}" == '--native' || "${1:-}" == '--performance' ]]; then
   "$ENGINE" --path . --rendering-method forward_plus --resolution 1920x810 --script res://tools/quarantine/capture.gd -- --quarantine-qa > "$OUT/native.log" 2>&1

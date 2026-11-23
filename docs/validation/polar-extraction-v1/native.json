@@ -1,0 +1,32 @@
+{
+	"first_draw_ms": 759.26,
+	"gpu": "Apple M6 (Apple9)",
+	"interaction_failures": 0,
+	"probes": [
+		{
+			"average_fps": 151.1,
+			"average_ms": 6.62,
+			"p95_ms": 8.56,
+			"path": "rim and lander",
+			"samples": 114
+		},
+		{
+			"average_fps": 143.8,
+			"average_ms": 6.95,
+			"p95_ms": 8.54,
+			"path": "working drill and active patrol",
+			"samples": 114
+		},
+		{
+			"average_fps": 153.0,
+			"average_ms": 6.53,
+			"p95_ms": 8.39,
+			"path": "habitation glazing and work lights",
+			"samples": 114
+		}
+	],
+	"resolution": [
+		1600,
+		900
+	]
+}
